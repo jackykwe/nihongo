@@ -5,6 +5,7 @@
 %\usepackage[hidelinks]{hyperref}
 \usepackage{lastpage}       % ``n of m'' page numbering
 % \usepackage{pdflscape} % to allow some pages to be landscaped, with \begin{landscape}
+\usepackage{parskip}
 
 % File management
 \usepackage{subfiles}
@@ -15,10 +16,11 @@
 \usepackage[normalem]{ulem} % strikethrough
 \usepackage{soul} % for highlighting via \hl and underline via \ul
 % \usepackage{lmodern} % fixes pixelation
+\usepackage{fontspec}  % LuaLaTeX-specific; see lualatex-doc S1.2
+\defaultfontfeatures{Ligatures=TeX}
 
 % Language support
 % \usepackage{textgreek}  % Allows greek characters in source
-\usepackage{CJKutf8}
 
 % Figures
 \usepackage{graphicx}
@@ -108,7 +110,7 @@
 % \newcommand{\subsubsubsection}{\paragraph}
 % \newcommand{\subsubsubsubsection}{\subparagraph}
 
-% NST1A / Mathematics
+% Mathematics
 \usepackage{amsmath}  % for the \DeclareMathOperator macro
 \usepackage{siunitx}        % Correct spacing of units
 \usepackage{amssymb}        % Maths symbols
@@ -117,237 +119,10 @@
 \usepackage{cancel}
 \usepackage{bm}  % \bm command to make things bold, is a better version of \boldsymbol
 \allowdisplaybreaks % From amsmath: allows align to span pages
-\newcommand{\mf}[1]{\bm{#1}}
-\newcommand{\uniti}{\bm{\hat{\imath}}}
-\newcommand{\unitj}{\bm{\hat{\jmath}}}
-\DeclareMathOperator{\cosec}{cosec}
-\DeclareMathOperator{\cosech}{cosech}
-\DeclareMathOperator{\sech}{sech}
-\DeclareMathOperator{\cis}{cis}
-\DeclareMathOperator{\sinc}{sinc}
-\DeclareMathOperator{\D}{D}
-\DeclareMathOperator{\CD}{CD}
-\DeclareMathOperator{\grad}{grad}
-\DeclareMathOperator{\ddiv}{div}
-\DeclareMathOperator{\curl}{curl}
-\DeclareMathOperator{\divides}{\:\!|\:\!}
-\DeclareMathOperator{\erf}{erf}
-\DeclareMathOperator{\trace}{trace}
-\DeclareMathOperator{\adj}{adj}
-\DeclareMathOperator{\sgn}{sgn}
 \newcommand\perpendicular{\perp}
 \newcommand{\evalat}[2]{\left. #1 \right\rvert#2}
-\newcommand{\ccdot}{\!\cdot\!}
-\newcommand{\cmark}{$\checkmark$}
-\newcommand{\xmark}{\text{\sffamily X}}
-\newcommand{\perm}[2]{\prescript{#1\mkern-2.5mu}{}P_{#2}}
-\newcommand{\comb}[2]{\prescript{#1\mkern-0.5mu}{}C_{#2}}
-\renewcommand{\parallel}{\ /\!/\ }
 \newcommand{\pmat}[1]{\begin{pmatrix}#1\end{pmatrix}}
 \newcommand{\bmat}[1]{\begin{bmatrix}#1\end{bmatrix}}
 \newcommand{\psmat}[1]{\begin{psmallmatrix}#1\end{psmallmatrix}}
 \newcommand{\vmat}[1]{\begin{vmatrix}#1\end{vmatrix}}
 
-% IA DiscMath
-\usepackage{amsthm}
-\theoremstyle{definition}
-\newtheorem{theorem}{Theorem}
-\newtheorem{corollary}[theorem]{Corollary}
-\newtheorem{definition}{Def}[section]
-\newtheorem{proposition}[theorem]{Proposition}
-\newtheorem{lemma}[theorem]{Lemma}
-\newtheorem{axiom}{Axiom}
-\newtheorem{dmalgorithm}{Algorithm}
-\newtheorem{property}{P}
-\newtheorem*{falsehood}{\textcolor{red}{Falsehood}}
-\usepackage{tcolorbox}
-\tcbuselibrary{breakable}
-\newtcolorbox{imptbox}{colback=white, arc=0mm, boxrule=0.3mm}
-\newtcolorbox{imptredbox}{colframe=red, colback=white, arc=0mm, boxrule=0.3mm}
-\newtcolorbox{imptpurplebox}{colframe=codepurple, colback=white, arc=0mm, boxrule=0.3mm}
-\def\varmapsto{\mathrel{\mkern10mu  \vcenter{\hbox{$\scriptscriptstyle+$}}%
-        \mkern-18mu{\longrightarrow}}}
-\DeclareMathOperator{\lcm}{lcm}
-\DeclareMathOperator{\quo}{quo}
-\DeclareMathOperator{\rem}{rem}
-\DeclareMathOperator{\lcl}{lc1}
-\DeclareMathOperator{\lcr}{lc2}
-\DeclareMathOperator{\rel}{rel}
-\DeclareMathOperator{\Rel}{Rel}
-\DeclareMathOperator{\mat}{mat}
-\DeclareMathOperator{\id}{id}
-\DeclareMathOperator{\dom}{dom}
-\DeclareMathOperator{\PFun}{PFun}
-\DeclareMathOperator{\Fun}{Fun}
-\DeclareMathOperator{\Bij}{Bij}
-\DeclareMathOperator{\Sur}{Sur}
-\DeclareMathOperator{\Inj}{Inj}
-\DeclareMathOperator{\EqRel}{EqRel}
-\DeclareMathOperator{\Part}{Part}
-\DeclareMathOperator{\ppart}{part}
-\DeclareMathOperator{\fin}{fin}
-\DeclareMathOperator*{\argmax}{argmax}
-\DeclareMathOperator*{\argmin}{argmin}
-\newcommand{\rightharpoondb}{\mspace{2mu} \rightharpoonup \mspace{-25mu} \raisebox{1.5pt}{$\rightharpoonup$}\mspace{6mu}}
-\newcommand{\floor}[1]{\left\lfloor #1 \right\rfloor}
-\newcommand{\ceil}[1]{\left\lceil #1 \right\rceil}
-\usepackage{mathrsfs}
-
-% IA ITP
-\DeclareMathOperator{\Ber}{Ber}
-\DeclareMathOperator{\Bin}{Bin}
-\DeclareMathOperator{\Pois}{Pois}
-\DeclareMathOperator{\Geo}{Geo}
-\DeclareMathOperator{\NegBin}{NegBin}
-\DeclareMathOperator{\Hyp}{Hyp}
-\DeclareMathOperator{\Uni}{Uni}
-\DeclareMathOperator{\Exp}{Exp}
-\DeclareMathOperator{\Cov}{Cov}
-
-% IA MLRWD
-\DeclareMathOperator*{\mean}{mean}
-
-% IA SSE
-\newcommand{\tto}{$\to\ $}
-\newcommand{\tsub}[1]{\textsubscript{#1}}
-\newcommand{\tsup}[1]{\textsuperscript{#1}}
-
-% IA SoPL
-\DeclareMathOperator{\fv}{fv}
-\DeclareMathOperator{\ran}{ran}
-\newcommand{\GammaLoc}{\Gamma_\text{Loc}}
-\newcommand{\GammaVar}{\Gamma_\text{Var}}
-\newcommand{\skipkw}{\textbf{skip}}
-\newcommand{\ifkw}[3]{\textbf{if}\ #1\ \textbf{then}\ #2\ \textbf{else}\ #3}
-\newcommand{\whilekw}[2]{\textbf{while}\ #1\ \textbf{do}\ #2}
-\newcommand{\fnkw}[3]{\textbf{fn}\ #1:#2\Rightarrow#3}
-\newcommand{\seqkw}[3]{\textbf{fn}\ #1:#2\Rightarrow#3}
-\newcommand{\letkw}[2]{\textbf{let}\ #1\ \textbf{in}\ #2}
-
-% IB DataSci
-\DeclareMathOperator{\Randpair}{Randpair}
-\DeclareMathOperator{\Cat}{Cat}
-\DeclareMathOperator{\Beta}{Beta}
-\DeclareMathOperator{\pdf}{pdf}
-\DeclareMathOperator{\cdf}{cdf}
-\DeclareMathOperator{\ecdf}{ecdf}
-\def\Pr{\mathop{\rm Pr}\nolimits}
-\DeclareMathOperator{\lik}{lik}
-
-% II Bioinfo
-\usepackage{blkarray}
-\DeclareMathOperator{\BWT}{BWT}
-
-% II Crypto
-\DeclareMathOperator{\Enc}{Enc}
-\DeclareMathOperator{\Gen}{Gen}
-\DeclareMathOperator{\Dec}{Dec}
-\DeclareMathOperator{\Mac}{Mac}
-\DeclareMathOperator{\Sign}{Sign}
-\DeclareMathOperator{\Vrfy}{Vrfy}
-\DeclareMathOperator{\DHellman}{DH}
-\DeclareMathOperator{\negl}{negl}
-\DeclareMathOperator{\Adv}{Adv}
-\DeclareMathOperator{\PrivK}{PrivK}
-\DeclareMathOperator{\PubK}{PubK}
-\DeclareMathOperator{\Macforge}{Mac-forge}
-\DeclareMathOperator{\Sigforge}{Sig-forge}
-\DeclareMathOperator{\GF}{GF}
-\DeclareMathOperator{\CI}{CI}
-\DeclareMathOperator{\GMAC}{GMAC}
-\DeclareMathOperator{\DLog}{DLog}
-\DeclareMathOperator{\TDInv}{TDInv}
-\DeclareMathOperator{\Cert}{Cert}
-\DeclareMathOperator{\egcd}{egcd}
-\DeclareMathOperator{\ord}{ord}
-\newcommand{\angbrac}[1]{\left<#1\right>}
-
-% II HLog+ModC
-\usepackage{bussproofs}
-\usepackage{varwidth}
-\usepackage{stmaryrd}  % for lightning symbol
-\newcommand{\pct}[3]{\left\{#1\right\}\;#2\;\left\{#3\right\}}
-\newcommand{\tct}[3]{\left[#1\right]\;#2\;\left[#3\right]}
-\newcommand{\truekw}{\textbf{T}}
-\newcommand{\falsekw}{\textbf{F}}
-\newcommand{\cand}{\ \wedge\ }
-\newcommand{\cor}{\ \vee\ }
-\newenvironment{prooftreemath}{\varwidth{.9\textwidth}\centering\leavevmode}{\DisplayProof\endvarwidth}
-\newcommand{\conf}[1]{\left< #1 \right>}
-\newcommand{\tmodel}[1]{\left< #1 \right>}
-\newcommand{\evalarith}[2]{\mathcal{E}[\![#1]\!](#2)}
-\newcommand{\evalbool}[2]{\mathcal{B}[\![#1]\!](#2)}
-\newcommand{\termsem}[2]{[\![#1]\!](#2)}
-\newcommand{\assertsem}[1]{[\![#1]\!]}
-\newcommand{\assertsemsep}[2]{[\![#1]\!](#2)}
-\newcommand{\fnsymsem}[1]{[\![#1]\!]}
-\newcommand{\predsymsem}[1]{[\![#1]\!]}
-\newcommand{\powerset}[1]{\mathcal{P}\left(#1\right)}
-\newcommand{\setsimple}[1]{\left\{#1\right\}}
-\newcommand{\allockw}[1]{\textbf{alloc}\left(#1\right)}
-\newcommand{\disposekw}[1]{\textbf{dispose}\left(#1\right)}
-\newcommand{\nullkw}{\textbf{null}}
-\DeclareMathOperator{\Stack}{Stack}
-\DeclareMathOperator{\Var}{Var}
-\DeclareMathOperator{\AExp}{AExp}
-\DeclareMathOperator{\BExp}{BExp}
-\DeclareMathOperator{\Term}{Term}
-\DeclareMathOperator{\Assertion}{Assertion}
-\DeclareMathOperator{\FnSym}{FnSym}
-\DeclareMathOperator{\PredSym}{PredSym}
-\DeclareMathOperator{\Loc}{Loc}
-\DeclareMathOperator{\Heap}{Heap}
-\DeclareMathOperator{\StateSet}{State}
-\DeclareMathOperator{\Cmd}{Cmd}
-\DeclareMathOperator{\modi}{mod}
-\DeclareMathOperator{\FV}{FV}
-\DeclareMathOperator{\TModel}{TModel}
-\DeclareMathOperator{\stream}{stream}
-\DeclareMathOperator{\IsPath}{IsPath}
-\DeclareMathOperator{\Path}{Path}
-\DeclareMathOperator{\Reachable}{Reachable}
-\DeclareMathOperator{\tailn}{tailn}
-\DeclareMathOperator{\stuttering}{stuttering}
-\DeclareMathOperator{\PathProp}{PathProp}
-\DeclareMathOperator{\StateProp}{StateProp}
-\DeclareMathOperator{\injp}{injp}
-\DeclareMathOperator{\injs}{injs}
-\DeclareMathOperator{\Xop}{X}
-\DeclareMathOperator{\Gop}{G}
-\DeclareMathOperator{\Fop}{F}
-\DeclareMathOperator{\Uop}{U}
-\DeclareMathOperator{\Aop}{A}
-\DeclareMathOperator{\Eop}{E}
-\DeclareMathOperator{\Witness}{Witness}
-\DeclareMathOperator{\listtype}{list}
-\DeclareMathOperator{\witby}{wit-by}
-\DeclareMathOperator{\listconc}{+\!\!+}
-
-% II InfoTheory
-\DeclareMathAlphabet{\mathbbb}{U}{bbold}{m}{n}  % for things like \mathbb{1} to work, courtesy of https://tex.stackexchange.com/a/601142
-\newcommand{\dkl}[2]{D_{KL}\left(#1\;\middle\|\;#2\right)}
-
-% II UoA ADS
-\DeclareMathOperator{\logit}{logit}
-\DeclareMathOperator{\Gammadist}{Gamma}
-
-% II QuantComp
-\usepackage{braket}
-\renewcommand{\set}[2]{\left\{#1\;\middle|\;#2\right\}}  % braket defines \set
-\DeclareMathOperator{\CNOT}{CNOT}
-\DeclareMathOperator{\SWAP}{SWAP}
-\DeclareMathOperator{\CX}{CX}
-\DeclareMathOperator{\CCX}{CCX}
-\DeclareMathOperator{\QFT}{QFT}
-\DeclareMathOperator{\QPE}{QPE}
-
-% III DSP
-%\usepackage{txfonts}
-%\newcommand{\fouriertf}{\ \multimapdotbothB\ }
-\DeclareSymbolFont{symbolsC}{U}{txsyc}{m}{n}
-\SetSymbolFont{symbolsC}{bold}{U}{txsyc}{bx}{n}
-\DeclareFontSubstitution{U}{txsyc}{m}{n}
-\DeclareMathSymbol{\fouriertf}{\mathrel}{symbolsC}{24}  % Courtesy of https://tex.stackexchange.com/a/269163
-\DeclareMathOperator{\rect}{rect}
-\newcommand{\intinf}{\int_{-\infty}^\infty}
-\DeclareMathOperator{\Cor}{Cor}

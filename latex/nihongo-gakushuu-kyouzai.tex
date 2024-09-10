@@ -1,0 +1,46 @@
+\documentclass{article}
+
+\input{templates/unified_template.tex}
+\graphicspath{ {imgs/} }
+
+% Heading
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhf{}
+\lhead{\textbf{ジャッキー・カン}\\kung.jwe@gmail.com}
+\rhead{\textbf{日本語\ruby{学習}{がく|しゅう}\ruby{教材}{きょう|ざい}}}
+% Date formatting courtesy of https://tex.stackexchange.com/a/638289
+\usepackage{datetime2}
+\DTMnewstyle{myformat}{
+    \renewcommand*\DTMdisplay[9]{
+        \DTMtwodigits{##1}\DTMtwodigits{##2}\DTMtwodigits{##3} \DTMtwodigits{##5}\DTMtwodigits{##6}\DTMtwodigits{##7}
+    }
+}{}{}{}
+\chead{\textlightgrey{\DTMsetstyle{myformat} \DTMnow}}
+\setlength{\headheight}{24.10pt}  % Adjust according to compilation warnings
+\cfoot{Page \thepage\ of \pageref{LastPage}}
+\renewcommand{\headrulewidth}{0.5pt}
+\renewcommand{\footrulewidth}{0.5pt}
+
+\usepackage[match]{luatexja-fontspec}
+\setmainjfont{Noto Serif CJK JP}  % use {\rmfamily ...} to activate (default)
+\setsansjfont{Noto Sans CJK JP}  % use {\sffamily ...} to activate
+\setmonojfont{Noto Sans Mono CJK JP}  % use {\ttfamily ...} to activate
+\usepackage{pxrubrica}  % Support for ふりがな
+\rubysetup{j}  % Jukugo ruby by default, use | to separate word boundaries if available
+
+\begin{document}
+
+% \tableofcontents
+%\pagebreak
+
+\pagebreak
+
+\section{仮名}
+\subsection{平仮名（ひらがな）}
+\subsubsection{Mnemonics}
+\subsection{片仮名（カタカナ）}
+\subsubsection{Mnemonics}
+
+
+\end{document}
