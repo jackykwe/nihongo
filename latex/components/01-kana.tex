@@ -1,6 +1,7 @@
 \documentclass[../nihongo-gakushuu-kyouzai.tex]{subfiles}
 \graphicspath{ {../imgs/} }
 \begin{document}
+\onehalfspacing  % for 振り仮名
 
 \section{The writing system}
 \subsection{平仮名（ひらがな）}
@@ -47,8 +48,8 @@ Some general notes:
     じゅ & {\sffamily じゅ} & ju & \textlightgrey{\texttt{jyu}/}\texttt{ju} &  \\
     じょ & {\sffamily じょ} & jo & \textlightgrey{\texttt{jyo}/}\texttt{jo} &  \\
     す & {\sffamily す} & su & \texttt{su} & \ul{sw}ing \\
-    ず & {\sffamily ず} & zu & \texttt{zu} &  \\
-    せ & {\sffamily せ} & se & \texttt{se} & 世界 \\
+    ず & {\sffamily ず} & zu & \texttt{zu} & \\
+    せ & {\sffamily せ} & se & \texttt{se} & \ruby{世界}{せ|かい} \\
     ぜ & {\sffamily ぜ} & ze & \texttt{ze} &  \\
     そ & {\sffamily そ} & so & \texttt{so} & \ul{so}da / ``sword'' shape \\
     ぞ & {\sffamily ぞ} & zo & \texttt{zo} &  \\
@@ -63,7 +64,7 @@ Some general notes:
     ぢゅ & {\sffamily ぢゅ} & ju & \textred{\texttt{dyu}} &  \\
     ぢょ & {\sffamily ぢょ} & jo & \textred{\texttt{dyo}} &  \\
     つ & {\sffamily つ} & tsu & \textlightgrey{\texttt{tu}/}\texttt{tsu} & \ul{tsu}nami \\
-    づ & {\sffamily づ} & zu & \texttt{zu} &  \\
+    づ & {\sffamily づ} & zu & \color{red} \texttt{du} &  \\
     て & {\sffamily て} & te & \texttt{te} & \ul{te}lescope \\
     で & {\sffamily で} & de & \texttt{de} &  \\
     と & {\sffamily と} & to & \texttt{to} & \ul{to}e with splinter \\
@@ -137,6 +138,10 @@ Some general notes:
 
 
 \subsection{片仮名（カタカナ）}
+Some general notes:
+\begin{itemize}
+    \item Usage of the ・ symbol to denote word boundaries is completely optional.
+\end{itemize}
 \subsubsection{Mnemonics}
 \begin{longtable}[c]{@{}ccccl@{}}
     \toprule
@@ -215,7 +220,7 @@ Some general notes:
     \color{blue} ツィ & \color{blue} {\sffamily ツィ} & \color{blue} tsi & \color{blue} \texttt{tsi} & \emph{Italian ``z''}\\
     \color{blue} ツェ & \color{blue} {\sffamily ツェ} & \color{blue} tse & \color{blue} \texttt{tse} & \emph{Italian ``z''}\\
     \color{blue} ツォ & \color{blue} {\sffamily ツォ} & \color{blue} tso & \color{blue} \texttt{tso} & \emph{Italian ``z''}\\
-    ズ & {\sffamily ズ} & zu & \texttt{zu} &  \\
+    ヅ & {\sffamily ヅ} & zu & \color{red} \texttt{du} &  \\
     テ & {\sffamily テ} & te & \texttt{te} & \ul{te}lephone pole \\
     \color{blue} ティ & \color{blue}{\sffamily ティ} & \color{blue} ti & \color{red} \texttt{texi} & \emph{``par\ul{ty}''}\\
     \color{blue} テュ & \color{blue}{\sffamily ティ} & \color{blue} tyu & \color{red} \texttt{texyu} & \\
@@ -233,7 +238,7 @@ Some general notes:
     ニョ & {\sffamily ニョ} & nyo & \texttt{nyo} &  \\
     ヌ & {\sffamily ヌ} & nu & \texttt{nu} & \ul{noo}dles with chopsticks \\
     ネ & {\sffamily ネ} & ne & \texttt{ne} & \ul{ne}ckerchief \\
-    ノ & {\sffamily ノ} & no & \texttt{no} & long \ul{no}se \\[0.5em]
+    ノ & {\sffamily ノ} & no & \texttt{no} & long \ul{no}se \\
     ハ & {\sffamily ハ} & ha & \textred{\texttt{ha}} & \ruby{八}{ハチ} / 八 (CN) \\
     バ & {\sffamily バ} & ba & \texttt{ba} &  \\
     パ & {\sffamily パ} & pa & \texttt{pa} &  \\
@@ -378,7 +383,7 @@ Some general notes:
      & {\sffamily } & ツィ & {\sffamily ツィ} & tsi & \texttt{tsi} \\
      & {\sffamily } & ツェ & {\sffamily ツェ} & tse & \texttt{tse} \\
      & {\sffamily } & ツォ & {\sffamily ツォ} & tso & \texttt{tso} \\
-    づ & {\sffamily づ} & ズ & {\sffamily ズ} & zu & \texttt{zu} \\
+    づ & {\sffamily づ} & ヅ & {\sffamily ヅ} & zu & \color{red} \texttt{du} \\
     て & {\sffamily て} & テ & {\sffamily テ} & te & \texttt{te} \\
      & {\sffamily } & ティ &{\sffamily ティ} & ti & \color{red} \texttt{texi} \\
      & {\sffamily } & テュ &{\sffamily ティ} & tyu & \color{red} \texttt{texyu} \\
@@ -463,26 +468,140 @@ Some general notes:
     \label{tbl:kana-summary} \\
 \end{longtable}
 
+\subsection{[Interlude] Morphemes, phonemes, phones}
+\emph{This entire section is courtesy of SL.}
+
+\textbf{Phonemes} are the smallest unit of mental representation of sound. They do not carry meaning by themselves, but they can alter the meaning pictured by the listener.
+
+\textbf{Morphemes} are the smallest unit of meaning, and comprise two levels: a phonological level and a semantic level. The phonological level states how it is pronounced (a string of phonemes), and the semantic level states what meaning is attached to the phonology.
+
+For instance, \ruby{日々}{ひ|び} contains a repetition of the same phoneme because the sound and meaning of the two 漢字 are identical. In contrast, \ruby{日日}{ひ|にち} contains two different morphemes, because the sound (and meaning) of the two 漢字 are different!
+
+When determining whether a morpheme is repeated or not, consider the sound and meaning first before looking at the orthography. ``Orthography is truly an afterthought[, in the design of languages].''
+
+
+\subsection{Iteration marks}
+\emph{Read main article on \href{https://en.wikipedia.org/wiki/Iteration_mark\#Japanese}{Wikipedia}.}
+
+Only the (horizontal) 漢字 iteration mark 々 is commonly used today. It is used to represent a \ul{duplicated character representing the same morpheme}. For example, \ruby{日々}{ひ|び} means ``daily, day after day''.
+
+Writing 々 instead of repeating the 漢字 is preferred, provided that:
+\begin{enumerate}[label=\arabic*.]
+    \item (tl;dr: morpheme is repeated) the reading of the repeated 漢字 must be the same, though certain changes are permitted such as \emph{rendaku} (unvoiced consonant becomes voiced, i.e.\ the hakuten, e.g.\ in \ruby{人々}{ひと|びと}, ひ $\to$ び) and \emph{gemination} (consonant lengthening, i.e.\ the っ, e.g.\ in \ruby{刻々}{こっ|こく}), and
+    \item the repetition must be within a single word/phrase.
+\end{enumerate}
+If the above aren't satisfied:
+\begin{itemize}
+    \item If repetition isn't repetition of the same morpheme, for disambiguation the second 漢字 is spelt out in 平仮名 (e.g.\ 日にち).
+    \item If repetition crosses word boundaries, then the 漢字 is repeated (e.g.\ \ruby{民主主義}{みん|しゅ|しゅ|ぎ}, democracy).
+
+    There are exceptions to this! 民主々義 is rarely used but exists. A notable exception is in the signages for neighbourhood associations 「〜\ruby{町内会}{ちょう|ない|かい}」. Because the name of neighbourhoods often end in 〜\ruby{町}{ちょう}, suffixing with 〜町内会 yields 〜\ruby{町町内会}{ちょう|ちょう|ない|かい}, which is then informally abbreviated to 〜町々内会, despite the repetition crossing a word boundary.
+
+\end{itemize}
+
+Intrepretations when 々 is used:
+\begin{itemize}
+    \item Reduplication (linguistics terminology) to indicate plurality
+
+    \ruby{人々}{ひと|びと} (people)、\ruby{日々}{ひ|び} (daily/day after day)、\ruby{山々}{やま|やま} (mountains)
+    \item Various alterations in meaning
+    \begin{itemize}
+        \item \ruby{個}{こ} (piece) $\to$ \ruby{個々}{こ|こ} (individually)
+        \item \ruby{時}{とき} (time) $\to$ \ruby{時々}{とき|どき} (sometimes)
+        \item \ruby{翌日}{よく|じつ} (next day, as in 隔天/隔一天 (CN)) $\to$ \ruby{翌々日}{よく|よく|じつ} (next next day, as in 隔两天 (CN))
+
+        \emph{Note that 翌日 is not the same as \ruby[g]{明日}{あした}, just like how 隔天 and 明天 are used in different contexts in CN!}
+    \end{itemize}
+\end{itemize}
+
+Repetition marks can be typed using commands in Table~\ref{tbl:miscellaneous-keyboard-commands}.
+\begin{table}[h]
+\centering
+% \resizebox{\textwidth}{!}{%
+% Help: \multicolumn{2}{c}{}, \multirow{2}{*}{}, cmidrule(l){3-5}
+\begin{tabular}{@{}cccl@{}}
+    \toprule
+    \multicolumn{2}{c}{\multirow{2}{*}{}} & Keyboard & \multirow{2}{*}{Purpose} \\
+    \multicolumn{2}{c}{}                  & command  & \\ \midrule
+    ゝ & {\sffamily ゝ} & \texttt{onaji} $\to$ space$^\texttt{*}$ & 平仮名 previous character repeater (enforce without dakuten) \\
+    ゞ & {\sffamily ゞ} & \texttt{onaji} $\to$ space$^\texttt{*}$ & 平仮名 previous character repeater (enforce with dakuten)\\
+    ヽ & {\sffamily ヽ} & \texttt{onaji} $\to$ space$^\texttt{*}$ & 片仮名 previous character repeater (enforce without dakuten)\\
+    ヾ & {\sffamily ヾ} & \texttt{onaji} $\to$ space$^\texttt{*}$ & 片仮名 previous character repeater (enforce with dakuten)\\
+    々 & {\sffamily 々} & \texttt{noma} $\to$ space$^\texttt{*}$ & 漢字 previous character repeater (ノ$+$マ) \\
+    % & {\sffamily } &  &  \\
+    % & {\sffamily } &  &  \\
+    % & {\sffamily } &  &  \\
+    % & {\sffamily } &  &  \\
+    % & {\sffamily } &  &  \\
+    % & {\sffamily } &  &  \\
+    % & {\sffamily } &  &  \\
+    \bottomrule
+\end{tabular}%
+% }
+\caption{Miscellaneous keyboard commands. Today, ゝ, ゞ, ヽ and ヾ only appear in proper names. As examples, じゝ $=$ じし and じゞ $=$ じじ.}
+\label{tbl:miscellaneous-keyboard-commands}
+\end{table}
+
 \subsection{漢字}
 Some preliminary notes:
 \begin{itemize}
     \item There exists over $\SI{40000}{}$ 漢字 but only about $\SI{2000}{}$ account for $>95\%$ of characters actually used in written text.
     \item There are no spaces in Japanese, so 漢字 is necessary for distinguishing separate words within a sentence, and discriminating between homophones.
+    \item Words that mean practically the same thing can have different 漢字 to distinguish nuances.
+
+    Here's an example:
+    \begin{itemize}
+        \item \ruby{訊}{き}く means to ask.
+        \item \ruby{聞}{き}く means to listen, or to ask.
+        \item \ruby{聴}{き}く means to listen attentively. Preferred when talking about listening to music.
+    \end{itemize}
+
+    Another example:
+    \begin{itemize}
+        \item \ruby{見}{み}る means to see.
+        \item \ruby{観}{み}る means to watch a movie.
+    \end{itemize}
+
+    Another example:
+    \begin{itemize}
+        \item \ruby{書}{か}く means to write.
+        \item \ruby{描}{か}く means to draw.
+
+        When depicting an abstract image (e.g.\ a scene in a book), we use \ruby{描}{えが}く.
+    \end{itemize}
+
+    Another example:
+    \begin{itemize}
+        \item The different pronuncations \ruby[g]{今日}{きょう}, \ruby{今日}{こん|にち} and \ruby{今日}{こん|じつ} are each preferred in different contexts.
+    \end{itemize}
 \end{itemize}
 
-\subsection{Pronunciation}
+\subsection{Pronunciation} \label{sec:pronunciation}
 It is not practical to memorise or attempt to logically create rules for pitches, especially since it can change depending on the context or the dialect. Even the intonations provided in dictionaries are there for guidance; they morph when used in different contexts.
 
 The only practical approach is to get the general sense of pitches is by mimicking native Japanese speakers with careful listening and practice.
 
 Some special notes:
 \begin{itemize}
-    \item In the modern 東京 dialect, ず and づ are pronounced exactly the same way: ``zu'', as expressed in their identical Hepburn romanisation (\S\ref{hepburn-romanisation}).
+    \item In the modern 東京 dialect, ず and づ are pronounced exactly the same way: ``zu'', as expressed in their identical Hepburn romanisation (\S\ref{sec:hepburn-romanisation}).
+    \item The native Japanese speaker will pronounce the ``v'' family (ヴ、ヴァ、ヴィ、ヴェ、ヴォ、ヴュ) as /b/.
+    \item Vowel extensions (\S\ref{sec:vowel-extension}) are pronounced as vowel extensions; do not pronounce the extender if it's a different vowel! For example, \ruby{先生}{せん|せい} is pronounced \emph{sen-se} with an elongated trailing ``e'' vowel. There is no ``i'' vowel sound!
+    \item Almost every 漢字 character has two different readings:
+    \begin{itemize}
+        \item \ruby{音読}{おん|よ}み: Chinese-derived. Used in compound 漢字 and idioms (both known as \ruby{熟語}{じゅく|ご}).
+        \item \ruby{訓読}{くん|よ}み: native Japanese. Used in solo 漢字, solo 漢字 appended with \ruby{送}{おく}り仮名, adjectives and verbs.
+
+        The purpose of trailing 送り仮名 is to preserve the 音読み pronunciation of the 漢字, even as the word is conjugated\footnote{\textbf{Conjugation}: change of word form to fit a given context.} to different forms. It is also used to differentiate transitive and intransitive verbs (\S\hl{???}).  % TODO
+    \end{itemize}
+    \item The actual readings of 漢字 can change slightly in compound words to make them easier to say (e.g.\ 一本 is いっぽん instead of いっほん).
+
+    When repeating 漢字 using 々, \emph{rendaku} (unvoiced consonant becomes voiced, i.e.\ the hakuten, e.g.\ in 人々, ひ $\to$ び) and \emph{gemination} (consonant lengthening, i.e.\ the っ, e.g.\ \ruby{刻々}{こっ|こく}) \emph{may} occur.
 \end{itemize}
 
-\subsubsection{Vowel extension}
+\subsubsection{Vowel extension} \label{sec:vowel-extension}
+Vowel extensions follow the rules in Table~\ref{tbl:vowel-extension}. For notes on pronunciation, see Section~\ref{sec:pronunciation}.
 
-\begin{table}[]
+\begin{table}[h]
 \centering
 % \resizebox{\textwidth}{!}{%
 % Help: \multirow{2}{*}{} & \multirow{2}{*}{} & \multicolumn{3}{c}{} \\ \cmidrule(l){3-5}
@@ -490,23 +609,61 @@ Some special notes:
     \toprule
     \multirow{2.5}{*}{Vowel to extend} & \multicolumn{2}{c}{Extend by appending} & \multirow{2.5}{*}{Example} \\ \cmidrule(l){2-3}
     & 平仮名 & 片仮名 & \\ \midrule
-    /a/ & あ & \multirow{5}{*}{ー} & \\
+    /a/ & あ & \multirow{5}{*}{ー} & お\underline{ばあ}さん、お\underline{かあ}さん\\
     /i/ & い & & \\
-    /u/ & う & & \\[0.5em]
-    /e/ & \textred{い} & & \ruby{先生}{せん|せい}\\
-    /o/ & \textred{う} & & \\ \bottomrule
+    /u/ & う & & \\
+    /e/ & \textred{い} \textblue{(え)} & & \ruby{先生}{せん|せい}、\ruby{学生}{がく|せい}、\textblue{(お\underline{ねえ}さん)}\\
+    /o/ & \textred{う} \textblue{(お)} & & き\underline{ょう}、おは\underline{よう}、\textblue{(\underline{おお}きい)}\\ \bottomrule
 \end{tabular}%
 % }
-\caption{Vowel extension rules. PHONEME REPRESENTATION // AND PHONE REP // (S)}
-\label{tbl:}
+\caption{Vowel extension rules. Exceptions are bracketed in \textblue{blue}. /a/ is the phoneme representation.}
+\label{tbl:vowel-extension}
 \end{table}
 
 
-In 片仮名, vowel extension is done using ー. However, in 平仮名,
-
-\subsection{Hepburn romanisation} \label{hepburn-romanisation}
+\subsection{Hepburn romanisation} \label{sec:hepburn-romanisation}
 \emph{Read main article on \href{https://en.wikipedia.org/wiki/Hepburn_romanization}{Wikipedia}.}
 
+The official (as of Jan 2024) romanisation system of Japan. There are only a few rules.
+\begin{description}
+    \item[Vowel extension (\S\ref{sec:vowel-extension})] When vowels ``a'', ``e'', ``o'', ``u'' are extended \ul{as part of the same morpheme}, it is expressed with a macron (overbar), and the extender vowel is dropped. \textred{Extension of ``i'' and the ``e+i'' combination are exceptions: they remain repeated.}
 
+    \begin{itemize}
+        \item お\ruby{婆}{ばあ}さん obaasan $\to$ ob\=asan
+        \item \textred{新潟 (city name) niigata}
+        \item \ruby{数学}{すう|がく} suugaku $\to$ s\=ugaku
+        \item お\ruby{姉}{ねえ}さん oneesan $\to$ on\=esan\\
+        \textred{先生 sensei}
+        \item \ruby{遠回}{とお|まわ}り toomawari $\to$ t\=omawari\\
+        勉強 benkyou $\to$ benky\=o
+    \end{itemize}
+
+    This does not apply when the repetition crosses word boundaries or morpheme boundaries.
+
+    \begin{itemize}
+        \item \ruby{邪悪}{じゃ|あく} jaaku
+        \item \ruby{灰色}{はい|いろ} haiiro
+
+        Also for terminal adjectives (\hl{???}): いい ii
+        \item \ruby{湖}{みずうみ} mizuumi
+
+        Also for terminal verbs (\hl{???}): \ruby{食}{く}う kuu (eat)
+        \item \ruby{濡}{ぬ}れ\ruby{縁}{えん} nureen (``open veranda (roofed hallway)'')
+        \item \ruby{小躍}{こ|おど}り koodori (dance of joy)
+
+        \ruby{仔牛}{こ|うし} koushi (calf)
+
+        Also for terminal verbs (\hl{???}): \ruby{迷う}{まよ|う} mayou (to get lost)
+    \end{itemize}
+    \item[片仮名 loanwords] The macron is used iff ー is used to extend a vowel.
+    \item[Japanese words adopted into English] Common place names like Tokyo, Kyoto and Osaka, while properly romanised as t\=oky\=o, ky\=oto and \=osaka, are simply romanised as Tokyo, Kyoto and Osaka.
+    \item[Particles] When は、へ、を are used as particles, they are romanised as wa, e and o respectively.
+    \item[Syllabic ん] ん is romanised as n' (with the apostrophe) if appearing immediately before any lone vowels or ``y''. This is to disambiguate んあ、んい、んう、んえ、んお、んや、んゆ、んよ (n'a, n'i, n'u, n'e, n'o, n'ya, n'yu, n'yo) from な、に、ぬ、ね、の、にゃ、にゅ、にょ (na, ni, nu, ne, no, nya, nyu, nyo) respectively.
+
+    Examples: \ruby{簡易}{かん|に} kan'i (simple), \ruby{信用}{しん|よう} shin'y\=o (trust).
+    \item[Geminated consonants (っ、ッ)] Double the next consonant, except if ``ch'' is repeated: in that case we use ``tch'' instead of ``cch''.
+
+    Examples: \ruby{抹茶}{まっ|ちゃ} maccha $\to$ matcha, こっち kocchi $\to$ kotchi
+\end{description}
 
 \end{document}

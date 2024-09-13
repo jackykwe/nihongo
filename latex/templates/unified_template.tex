@@ -8,18 +8,18 @@
 \usepackage{lastpage}       % ``n of m'' page numbering
 % \usepackage{pdflscape} % to allow some pages to be landscaped, with \begin{landscape}
 \usepackage{parskip}
+\usepackage{setspace}  % for the \onehalfspacing command for 振り仮名 support
 
 % File management
 \usepackage{subfiles}
 \usepackage{zref-xr} % for references to labels across subfiles
 
 % Font
-\usepackage{cmap} % allow ff / fi ligatures to be searchable
-\usepackage[normalem]{ulem} % strikethrough
-\usepackage{soul} % for highlighting via \hl and underline via \ul
-% \usepackage{lmodern} % fixes pixelation
 \usepackage{fontspec}  % LuaLaTeX-specific; see lualatex-doc S1.2
 \defaultfontfeatures{Ligatures=TeX}
+\usepackage{cmap} % allow ff / fi ligatures to be searchable
+\usepackage[normalem]{ulem} % strikethrough
+\usepackage{soul} % for highlighting via \hl and underline via \ul.
 
 % Language support
 % \usepackage{textgreek}  % Allows greek characters in source
@@ -29,6 +29,7 @@
 % \usepackage{graphbox}  % adds [align=c] option to includegraphics, courtesy of https://tex.stackexchange.com/a/350374
 \usepackage{float}
 \usepackage{caption}
+\usepackage{placeins}  % for the \FloatBarrier command
 
 % Tables
 \usepackage{hhline}         % Horizontal lines in tables
