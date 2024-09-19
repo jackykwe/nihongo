@@ -16,7 +16,7 @@ Some preliminary notes:
 \subsection{Building clauses and sentences}
 \emph{Read the main article on \href{https://www.tofugu.com/japanese-grammar/sentences-and-clauses/}{Tofugu}.}
 
-\textbf{Essential clause elements} are necessary parts of any clause. In 日本語, the only essential clause element is the \textbf{predicate}, which is the information about the subject (which is often omitted if clear from context). \ul{This can be just a verb!} In contrast, in English, both subject and predicate are essential to every valid clause.
+\textbf{Essential clause elements} are necessary parts of any clause. In 日本語, the only essential clause element is the \textbf{predicate}, which is the information about the subject (which is often omitted if clear from context). Concretely, the predicate is either a clause-trailing verb (e.g.\ 「食べる。」 is a complete sentence) or an [implied] state-of-being (e.g.\ 「学生[だ]。」 is a complete sentence). In contrast, in English, both subject and predicate are essential to every valid clause.
 
 \textbf{Non-essential clause elements} add complexity to the conveyed meaning. There are multiple:
 \begin{itemize}
@@ -411,26 +411,61 @@ Table~\ref{tbl:grammar-conjugation-summary} shows all the conjugation rules we'v
 \label{tbl:grammar-conjugation-summary}
 \end{table}
 
+
+
+\begin{table}[h]
+\centering
+\resizebox{\textwidth}{!}{%
+% Help: \multicolumn{2}{c}{}, \multirow{2}{*}{}, cmidrule(l){3-5}
+\begin{tabular}{@{}crrrrl@{}}
+    \toprule
+    \multirow{2}{*}{\textbf{Category}} & \multicolumn{2}{c}{\textbf{Positive}} & \multicolumn{2}{c}{\textbf{Negative}} & \multirow{2}{*}{\textbf{Examples}} \\ \cmidrule(lr){2-3} \cmidrule(l){4-5}
+    & \textbf{Present} & \textbf{Past} & \textbf{Present} & \textbf{Past} \\ \midrule
+    Noun/な-adjective & 「」\textwhite{[だ]} & 「」\textwhite{だった} & 「」\textwhite{じゃない} & 「」\textwhite{じゃなかった} & 学生、友達 \\ \midrule
+    な-adjective & 「」\textwhite{な} & 「」\textwhite{だった} & 「」\textwhite{じゃない} & 「」\textwhite{じゃなかった} & 綺麗、好き、\textred{嫌い}  \\ \midrule
+    \multirow{3}{*}{い-adjective} & 「」い & 「」\textwhite{かった} & 「」\textwhite{く[は]ない} & 「」\textwhite{く[は]なかった} & 高い、難しい、おいしい \\
+    & いい & \textwhite{よ}\textwhite{かった} & \textwhite{よ}\textwhite{く[は]ない} & \textwhite{よ}\textwhite{く[は]なかった} & \\
+    & かっこいい & かっこ\textwhite{よ}\textwhite{かった} & かっこ\textwhite{よ}\textwhite{く[は]ない} & かっこ\textwhite{よ}\textwhite{く[は]なかった} & \\ \midrule
+    \multirow{10}{*}{う-verb} & 「」　す & 「」\textwhite{した} & 「」\textwhite{さない} & 「」\textwhite{さなかった} & 話す \\
+    & 「」　く & 「」\textwhite{いた} & 「」\textwhite{かない} & 「」\textwhite{かなかった} & 聞く、書く、描く \\
+    & 行　く & 行\textwhite{った} & 行\textwhite{かない} & 行\textwhite{かなかった} & \\
+    & 「」　ぐ & 「」\textwhite{いだ} & 「」\textwhite{がない} & 「」\textwhite{がなかった} & 泳ぐ \\
+    & 「」　む & 「」\textwhite{んだ} & 「」\textwhite{まない} & 「」\textwhite{まなかった} & 飲む \\
+    & 「」　ね & 「」\textwhite{んだ} & 「」\textwhite{なない} & 「」\textwhite{ななかった} & 死ね \\
+    & 「」　ぶ & 「」\textwhite{んだ} & 「」\textwhite{ばない} & 「」\textwhite{ばなかった} & 遊ぶ \\
+    & 「」　る & 「」\textwhite{っだ} & 「」\textwhite{らない} & 「」\textwhite{らなかった} & ある、\textred{\ruby{帰}{かえ}る} \\
+    & 「」　つ & 「」\textwhite{っだ} & 「」\textwhite{たない} & 「」\textwhite{たなかった} & 待つ \\
+    & 「」　う & 「」\textwhite{っだ} & 「」\textwhite{わない} & 「」\textwhite{わなかった} & 買う、\ruby{会}{あ}う \\ \midrule
+    る-verb & 「」　る &「」　\textwhite{た} & 「」　\textwhite{ない} & 「」　\textwhite{なかった} & いる、食べる、\ruby{出}{で}る、見る* \\ \midrule
+    % \multirow{3.85}{*}{Exception verb} & 「」する & 「」した & 「」しない & 「」しなかった & \\[0.5em]
+    \multirow{3.5}{*}{Exception verb} & 「」する & 「」\textwhite{した} & 「」\textwhite{しない} & 「」\textwhite{しなかった} & 勉強する \\[0.5em]
+    & \ruby{来}{く}る & 来\textwhite{た} & 来\textwhite{ない} & 来\textwhite{なかった} & \\
+    & くる & \textwhite{き}\textwhite{た} & \textwhite{こ}\textwhite{ない} & \textwhite{こ}\textwhite{なかった} & \\ \bottomrule
+\end{tabular}%
+}
+\caption{Practice table.}
+\end{table}
+
 \subsection{Verb particles を、に、へ、で}
 \begin{itemize}
-    \item を: direct object particle, suffixed to the target object of transitive verbs.
+    \item を: direct object particle, suffixed to the target object \ul{of transitive verbs}.
 
     E.g.\ 魚\textbf{を}食べる。(Eat fish.)
 
     E.g.\ ジュース\textbf{を}飲んだ。(Drank juice.)
 
-    Direct objects, i.e.\ targets of transitive verbs, can be \textbf{places} in Japanese too, since the motion verb is done \emph{to} the place.
+    Direct objects can be \textbf{places} in Japanese too, since the motion verb is done \emph{to} the place. \textred{This is the only exception where を can be used for intransitive verbs.}
 
-    E.g.\ \ruby{街}{まち}\textbf{を}ぶらぶら\ruby{歩}{ある}く。(ぶらぶら: aimlessly, 歩く: walk).
+    E.g.\ \ruby{街}{まち}\textbf{を}ぶらぶら\ruby{歩}{ある}く。(ぶらぶら: aimlessly, 歩く: walk (intransitive)).
 
-    E.g.\ \ruby{高速道路}{こう|そく|どう|ろ}\textbf{を}\ruby{走}{はし}る。(走る: run)
+    E.g.\ \ruby{高速道路}{こう|そく|どう|ろ}\textbf{を}\ruby{走}{はし}る。(走る: run (intransitive))
 
     \textbf{Invisible を in <noun>\cancel{を}する}: する (do) can be suffixed to nouns, and the を while technically needed, is optional.
 
     E.g.\ 今日、日本語を勉強\cancel{[を]}する。(勉強\cancel{[を]}する)
 
     E.g.\ メールアドレスを\ruby{登録}{とう|ろく}\cancel{[を]}した。(登録\cancel{[を]}する)
-    \item に: target particle, suffixed to the \ul{target} (physical or abstract) of transitive verbs. The transitive verb does something \emph{towards} the word suffixed with に, and \ul{the target is emphasised as the final destination}. The notion of a ``target'' is not restricted to motion verbs; the \ul{location of objects} is the target of the verbs for existence (ある and いる); \ul{time} (e.g.\ today, last week) is also a common target.
+    \item に: target particle, suffixed to the \ul{target} (physical or abstract) of any verb (transitive or non-transitive). The target is \ul{emphasised as the final destination}. The notion of a ``target'' is not restricted to motion verbs; the \ul{location of objects} is the target of the verbs for existence (ある and いる); \ul{time} (e.g.\ today, last week) is also a common target.
 
     % E.g.\ ボブは日本\textbf{に}行った。(Bob went to Japan.)
 
@@ -460,7 +495,7 @@ Table~\ref{tbl:grammar-conjugation-summary} shows all the conjugation rules we'v
 
     E.g.\ \ruby{宿題}{しゅく|だい}を今日\textbf{から}明日\textbf{まで}する。(Will do homework from today to tomorrow.)
 
-    \item へ: directional particle, suffixed to direction of transitive verbs. Pronounced え. Unlike に, which specifies target/destination, へ specifies the general direction we're heading towards, from the starting point. Also, unlike に, it does not guarantee that the target is the final destination. \textred{へ is restricted to verbs with a physical direction (in the physical or abstract sense) like 行く、来る、\ruby{向}{む}かう; verbs like なる (become) have no direction associated with it and so clauses containing なる as the trailing verb cannot use へ!}
+    \item へ: directional particle, suffixed to direction of verbs (transitive or non-transitive). Pronounced え. Unlike に, which specifies target/destination, へ specifies the general direction we're heading towards, from the starting point. Also, unlike に, it does not guarantee that the target is the final destination. \textred{へ is restricted to verbs with a physical direction (in the physical or abstract sense) like 行く、来る、\ruby{向}{む}かう; verbs like なる (become) have no direction associated with it and so clauses containing なる as the trailing verb cannot use へ!}
 
     E.g.\ \ruby{部屋}{へ|や}\{に/へ\}来る。(Come \{towards/to\} room.)
 
@@ -472,6 +507,21 @@ Table~\ref{tbl:grammar-conjugation-summary} shows all the conjugation rules we'v
     E.g.\ バスで帰る。(Go home by bus.)
 
     E.g.\ レストランで\ruby{昼}{ひる}ご飯を食べった。(Ate lunch at restaurant.)
+\end{itemize}
+
+Note that を can only be used with transitive verbs, unless the direct object is the \textbf{location} of an intransitive motion verb, as mentioned above when introducing 「を」.
+\begin{itemize}
+    \item 私が\ruby{電気}{でん|き}をつけた。(I turned on the lights; past tense of つける)
+
+    電気を\ruby{消}{け}す。(Turn off the lights.)
+
+    電気がついた。(The lights turned on; \textred{incorrect to use を here as つく is intransitive and doesn't have any active agent})
+
+    電気が\ruby{消}{き}えた。(The lights turned off; past tense of 消える; \textred{incorrect to use を here as 消える is intransitive and doesn't have any active agent})
+    \item 誰が\ruby{窓}{まど}を\ruby{開}{あ}けた？ (Who opened the window?; 窓: window)
+
+    窓がどうして\ruby{開}{ひら}いた？ (Why did the window open?; past tense of 開く; \textred{incorrect to use を here as 開く is intransitive and doesn't have any active agent})
+    \item 部屋\textbf{を}\ruby{出}{で}た。(past tense of 出る)
 \end{itemize}
 
 \subsubsection{\ruby{何}{なに}で and \ruby{何}{なん}で in questions}
@@ -497,4 +547,58 @@ E.g.\ どこで食べる？イタリアレストラン\textbf{では}\ruby{思}{
 
 E.g.\ 日本語\{を/は\}\ruby{習}{なら}う。\textred{(It is incorrect to use をは; that compound particle doesn't exist.)}
 
+\subsection{Noun modification}
+な-adjectives and い-adjectives can be used to modify a following noun, using connectors like \{な、だった、じゃない、じゃなかった\} and \{$\emptyset$、かった、くない、くなかった\} respectively.
+
+Verbs and nouns too can be used to modify a following noun.
+
+\subsubsection{Verb-phrases as adjectives: verbs modifying following nouns}
+Verb-phrases can be directly used to modify nouns.
+\begin{itemize}
+    \item (present-positive) ボブは、\textbf{いつも勉強する人}だ。
+    \item (past-positive) \textbf{先週に映画を見た人}は誰？
+    \item (present-negative) \textbf{\ruby{赤}{あか}いズボンを買った友達}はボブだ。 (ズボン: pants)
+    \item (past-negative) \textbf{晩ご飯を食べなかった人}は、\textbf{映画で見た\ruby{銀行}{ぎん|こう}}に行った。(Person who did not eat dinner went to the bank she saw at the movie.)
+\end{itemize}
+
+\subsubsection{Noun chain}
+A string of present-positive nouns is grammatically correct only if they are not meant to modify each other.
+
+E.g.\ \ruby{国際教育}{こく|さい|きょう|いく}センタ (International Education Centre)、\ruby{登場人物}{とう|じょう|にん|ぶつ} (stage character)、\ruby{立入禁止}{たち|いり|きん|し} (no entry/trespassing)、\ruby{通勤手当}{つう|きん|て|あて} (travel allowance).
+
+\subsubsection{Noun phrases as adjectives: nouns modifying following nouns}
+Present-positive modifiers require noun-related particles (\S\ref{sec:noun-related-particles}). The other three cases can directly modify nouns without any additional particle.
+\begin{itemize}
+    \item (past-positive) \textbf{先週医者だったボブ}は、仕事を\ruby{辞}{や}めた。(Bob who was a doctor last week quit his job.)
+    \item (present-negative) \textbf{学生じゃない人}は、学校に行かない。(Person who is not a student do not go to school.)
+    \item (past-negative) \textbf{友達じゃなかったアリス}は、いい友達なった。(Alice who was not a friend, became a good friend.)
+\end{itemize}
+
+\subsubsection{Noun-related particles と、や、とか、の}\label{sec:noun-related-particles}
+Noun-related particles are used to connect nouns together.
+\begin{itemize}
+    \item と: inclusive noun particle (exclusive list or together-action). It is similar to 「も」in terms of \ul{inclusivity}. It can also be used to show an \ul{action was done together} with something or someone.
+
+    E.g.\ 本\textbf{と}雑誌\textbf{と}\ruby{葉書}{は|がき}を買った。(Bought book, magazine and postcard.)
+
+    E.g.\ 友達\textbf{と}話した。(Talked with friend.)
+
+    E.g.\ 先生と\ruby{会}{あ}った。(Met with teacher.)
+    \item や: vague listing particle. Similar to と, with the implied meaning that the list is non-exhaustive, and some items on the list may not apply. In English, this is like the ``and/or, etc.'' constructs.
+
+    E.g.\ 飲み物\textbf{や}カップ\textbf{や}ナプキンは、いらない？ (present-negative of いる as in 要る)
+
+    E.g.\ \ruby{靴}{くつ}\textbf{や}シャツを買う。(Buy shoes and shirt, etc.)
+    \item とか: vague listing particle (colloquial). Used exactly like や but in informal settings.
+
+    E.g.\ 飲み物\textbf{とか}カップ\textbf{とか}ナプキンは、いらない？ (present-negative of いる as in 要る)
+
+    E.g.\ \ruby{靴}{くつ}\textbf{とか}シャツを買う。(Buy shoes and shirt, etc.)
+    \item の: possession (owner-の-ownee) marker, generic noun, or explanatory particle. The の particle has three uses:
+    \begin{description}
+        \item[Possession marker]
+        \item[Generic noun]
+        \item[Explanatory]
+    \end{description}
+\end{itemize}
 \end{document}
