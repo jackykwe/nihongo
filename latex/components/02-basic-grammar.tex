@@ -3,8 +3,9 @@
 \begin{document}
 \onehalfspacing  % for 振り仮名
 
+\setcounter{section}{1}
 \section{Basic grammar}
-This section will grant you an overview of basic grammatical structures. The vocabulary associated with this section is fragmented by nature and only present to illustrate the grammatical concepts; vocabulary required for day-to-day conversation is left to Section~\hl{??? (Essential grammar)}.
+This section will grant you an overview of basic grammatical structures. The vocabulary associated with this section is fragmented by nature and only present to illustrate the grammatical concepts; vocabulary required for day-to-day conversation is left to Section~\ref{sec:essential-grammar}.
 
 Some preliminary notes:
 \begin{itemize}
@@ -316,18 +317,6 @@ Table~\ref{tbl:adjective-conjugations} shows the conjugations and usage syntax f
 \label{tbl:adjective-conjugations}
 \end{table}
 
-\subsection{Adverbs} \label{sec:adverb}
-Just as adjectives describe nouns, adverbs describe adjectives. They come before adjectives, and the common ones are:
-\begin{itemize}
-    \item それは/そりゃ: very/extremely
-    \item すごく: super
-    \item とても: very
-    \item かなり: fairly
-    \item ちょっと: a little
-    \item \ruby{少}{すこ}し: a little
-    \item あまり<negative conj>: not very
-\end{itemize}
-
 \subsection{Verbs}
 Verbs always come at the end of clauses.
 
@@ -335,19 +324,18 @@ Verbs are categorised into three groups, as shown in Table~\ref{tbl:verb-classif
 
 \begin{table}[h]
 \centering
-% \resizebox{\textwidth}{!}{%
-% Help: \multicolumn{2}{c}{}, \multirow{2}{*}{}, cmidrule(l){3-5}
-\begin{tabular}{@{}clll@{}}
-    \toprule
-    & \textbf{Group 1} & \textbf{Group 2} & \textbf{Group 3}\\ \midrule
-    \multirow{5}{*}{\textbf{Synonyms}} & Pentagrade verb & Monograde verb & Irregular verb \\[0.5em]
-    & \ruby{五段動詞}{ご|だん|どう|し} & \ruby{一段動詞}{いち|だん|どう|し} & \ruby{不規則動詞}{ふ|き|そく|どう|し}* \\
-    & Godan verb & Ichidan verb & Special class \\
-    & Group I verb & Group II verb & Group III verb \\
-    & う-verb & る-verb & Exception verb \\ \bottomrule
-\end{tabular}%
-% }
-\caption{Verb classifications. *There isn't a Japanese term for exception verbs; する and 来る are the only members of the  不規則動詞 subclass.}
+\subsection{Adverbs} \label{sec:adverb}
+Just as adjectives describe nouns, adverbs describe adjectives. They come before adjectives, and the common ones are:
+\begin{itemize}
+    \item それは/そりゃ: very/extremely
+    \item 大変: very
+    \item すごく: super
+    \item とても: very
+    \item かなり: fairly
+    \item ちょっと: a little
+    \item \ruby{少}{すこ}し: a little
+    \item あまり<negative conj>: not very
+\end{itemize}
 \label{tbl:verb-classification}
 \end{table}
 
@@ -409,14 +397,15 @@ Table~\ref{tbl:grammar-conjugation-summary} shows all the conjugation rules we'v
     & 「」　む & 「」\textblue{んだ} & 「」\textblue{まない} & 「」\textblue{まなかった} & 飲む \\
     & 「」　ね & 「」\textblue{んだ} & 「」\textblue{なない} & 「」\textblue{ななかった} & 死ね \\
     & 「」　ぶ & 「」\textblue{んだ} & 「」\textblue{ばない} & 「」\textblue{ばなかった} & 遊ぶ \\
-    & 「」　る & 「」\textblue{っだ} & 「」\textblue{らない} & 「」\textblue{らなかった} & ある、\textred{\ruby{帰}{かえ}る} \\
+    & 「」　る & 「」\textblue{っだ} & 「」\textblue{らない} & 「」\textblue{らなかった} & \ruby{降}{ふ}る、\textred{\ruby{帰}{かえ}る} \\
+    & ある & あ\textblue{った} & \textred{ない} & \textred{なかった} & \\
     & 「」　つ & 「」\textblue{っだ} & 「」\textblue{たない} & 「」\textblue{たなかった} & 待つ \\
     & 「」　う & 「」\textblue{っだ} & 「」\textblue{わない} & 「」\textblue{わなかった} & 買う、\ruby{会}{あ}う \\ \midrule
     る-verb & 「」　る &「」　\textblue{た} & 「」　\textblue{ない} & 「」　\textblue{なかった} & いる、食べる、\ruby{出}{で}る、見る* \\ \midrule
     % \multirow{3.85}{*}{Exception verb} & 「」する & 「」した & 「」しない & 「」しなかった & \\[0.5em]
-    \multirow{3.5}{*}{Exception verb} & 「」する & 「」\textblue{した} & 「」\textblue{しない} & 「」\textblue{しなかった} & 勉強する \\[0.5em]
-    & \ruby{来}{く}る & \textred{\ruby{来}{き}}\textblue{た} & \textred{\ruby{来}{こ}}\textblue{ない} & \textred{\ruby{来}{こ}}\textblue{なかった} & \\
-    & くる & \textred{き}\textblue{た} & \textred{こ}\textblue{ない} & \textred{こ}\textblue{なかった} & \\ \bottomrule
+    \multirow{3.5}{*}{Exception verb} & 「」する & 「」\textblue{した} & 「」\textblue{しない} & 「」\textblue{しなかった} & 勉強する \\
+    & くる & \textred{き}\textblue{た} & \textred{こ}\textblue{ない} & \textred{こ}\textblue{なかった} & \\[0.5em]
+    & \ruby{来}{く}る & \textred{\ruby{来}{き}}\textblue{た} & \textred{\ruby{来}{こ}}\textblue{ない} & \textred{\ruby{来}{こ}}\textblue{なかった} & \\ \bottomrule
 \end{tabular}%
 }
 \caption{Basic conjugation rules, for nouns, adjectives and verbs. [] means optional; 「」 is a dictionary-form placeholer; \textgreen{green means additive} (without modifying the dictionary-form); \textblue{blue means substitutive} (modifies the dictionary-form); \textred{red means exception}.}
@@ -445,14 +434,15 @@ Table~\ref{tbl:grammar-conjugation-summary} shows all the conjugation rules we'v
     & 「」　む & 「」\textwhite{んだ} & 「」\textwhite{まない} & 「」\textwhite{まなかった} & 飲む \\
     & 「」　ね & 「」\textwhite{んだ} & 「」\textwhite{なない} & 「」\textwhite{ななかった} & 死ね \\
     & 「」　ぶ & 「」\textwhite{んだ} & 「」\textwhite{ばない} & 「」\textwhite{ばなかった} & 遊ぶ \\
-    & 「」　る & 「」\textwhite{っだ} & 「」\textwhite{らない} & 「」\textwhite{らなかった} & ある、\textred{\ruby{帰}{かえ}る} \\
+    & 「」　る & 「」\textwhite{っだ} & 「」\textwhite{らない} & 「」\textwhite{らなかった} & \ruby{降}{ふ}る、\textred{\ruby{帰}{かえ}る} \\
+    & ある & \textwhite{あった} & \textwhite{ない} & \textwhite{なかった} & \\
     & 「」　つ & 「」\textwhite{っだ} & 「」\textwhite{たない} & 「」\textwhite{たなかった} & 待つ \\
     & 「」　う & 「」\textwhite{っだ} & 「」\textwhite{わない} & 「」\textwhite{わなかった} & 買う、\ruby{会}{あ}う \\ \midrule
     る-verb & 「」　る &「」　\textwhite{た} & 「」　\textwhite{ない} & 「」　\textwhite{なかった} & いる、食べる、\ruby{出}{で}る、見る* \\ \midrule
     % \multirow{3.85}{*}{Exception verb} & 「」する & 「」した & 「」しない & 「」しなかった & \\[0.5em]
-    \multirow{3.5}{*}{Exception verb} & 「」する & 「」\textwhite{した} & 「」\textwhite{しない} & 「」\textwhite{しなかった} & 勉強する \\[0.5em]
-    & \ruby{来}{く}る & 来\textwhite{た} & 来\textwhite{ない} & 来\textwhite{なかった} & \\
-    & くる & \textwhite{き}\textwhite{た} & \textwhite{こ}\textwhite{ない} & \textwhite{こ}\textwhite{なかった} & \\ \bottomrule
+    \multirow{3.5}{*}{Exception verb} & 「」する & 「」\textwhite{した} & 「」\textwhite{しない} & 「」\textwhite{しなかった} & 勉強する \\
+    & くる & \textwhite{き}\textwhite{た} & \textwhite{こ}\textwhite{ない} & \textwhite{こ}\textwhite{なかった} & \\[0.5em]
+    & \ruby{来}{く}る & 来\textwhite{た} & 来\textwhite{ない} & 来\textwhite{なかった} & \\ \bottomrule
 \end{tabular}%
 }
 \caption{Practice table.}
@@ -671,34 +661,36 @@ Noun-related particles are used to connect nouns together.
     \end{description}
 \end{itemize}
 
-\begin{table}[h]
-\centering
-\resizebox{\textwidth}{!}{%
-% Help: \multicolumn{2}{c}{}, \multirow{2}{*}{}, cmidrule(l){3-5}
-\begin{tabular}{@{}ccllll@{}}
-    \toprule
-    \multirow{2}{*}{\textbf{Category}} & \multirow{2}{*}{\textbf{の purpose}} & \multicolumn{2}{c}{\textbf{Positive}} & \multicolumn{2}{c}{\textbf{Negative}} \\ \cmidrule(lr){3-4} \cmidrule(l){5-6}
-    & & \textbf{Present} & \textbf{Past} & \textbf{Present} & \textbf{Past} \\ \midrule
-    Noun & Possession & 「」\textgreen{の[だ]} & ? & ? & ? \\
-    Noun & Explanatory I & 「」\textgreen{\textred{な$\!\!^\dagger\!\!$}の[だ]。} & 「」だった\textgreen{の[だ]。} & 「」じゃない\textgreen{の[だ]。}  & 「」じゃなかった\textgreen{の[だ]。} \\
-    Noun & Explanatory II & 「」\textgreen{\textred{な$\!\!^\dagger\!\!$}んだ。}  & 「」だった\textgreen{んだ。} & 「」じゃない\textgreen{んだ。}  & 「」じゃなかった\textgreen{んだ。} \\
-    Noun & Explanatory III & 「」\textlightgrey{\textred{な$\!\!^\dagger\!\!$}のだ。}  & 「」\textlightgrey{\textred{な}のだった。} & 「」\textlightgrey{\textred{な}のじゃない。}  & 「」\textlightgrey{\textred{な}のじゃなかった。} \\
-    Noun & Explanatory IV & 「」\textgreen{\textred{な$\!\!^\dagger\!\!$}んだ。}  & 「」\textlightgrey{\textred{な}んだった。} & 「」\textgreen{\textred{な}んじゃない。}  & 「」\textlightgrey{\textred{な}んじゃなかった。} \\ \midrule
-    な-adjective & Generic noun & 「」\textgreen{の} & 「」だった\textgreen{の} & 「」じゃない\textgreen{の}  & 「」じゃなかった\textgreen{の} \\
-    な-adjective & Explanatory I & 「」\textgreen{\textred{な$\!\!^{\ddagger?}\!\!$}の[だ]。} & 「」だった\textgreen{の[だ]。} & 「」じゃない\textgreen{の[だ]。}  & 「」じゃなかった\textgreen{の[だ]。} \\
-    な-adjective & Explanatory II & 「」\textgreen{\textred{な$\!\!^?\!\!$}んだ。}  & 「」だった\textgreen{んだ。} & 「」じゃない\textgreen{んだ。}  & 「」じゃなかった\textgreen{んだ。} \\
-    な-adjective & Explanatory III & 「」\textlightgrey{\textred{な$\!\!^?\!\!$}のだ。}  & 「」\textlightgrey{\textred{な}のだった。} & 「」\textlightgrey{\textred{な}のじゃない。}  & 「」\textlightgrey{\textred{な}のじゃなかった。} \\
-    な-adjective & Explanatory IV & 「」\textgreen{\textred{な$\!\!^?\!\!$}んだ。}  & 「」\textgreen{\textred{な}んだった。} & 「」\textgreen{\textred{な}んじゃない。}  & 「」\textgreen{\textred{な}んじゃなかった。} \\ \midrule
-    い-adjective/verbs & Generic noun & 「」\textgreen{の} & 「」<conj>\textgreen{の} & 「」<conj>\textgreen{の}  & 「」<conj>\textgreen{の} \\
-    い-adjective/verbs & Explanatory I & 「」\textgreen{の[だ]。} & 「」<conj>\textgreen{の[だ]。} & 「」<conj>\textgreen{の[だ]。} & 「」<conj>\textgreen{の[だ]。} \\
-    い-adjective/verbs & Explanatory II & 「」\textgreen{んだ。} & 「」<conj>\textgreen{んだ。} & 「」<conj>\textgreen{んだ。} & 「」<conj>\textgreen{んだ。} \\
-    い-adjective/verbs & Explanatory III & 「」\textlightgrey{のだ。} & 「」\textlightgrey{のだった。} & 「」\textlightgrey{のじゃない。} & 「」\textlightgrey{のじゃなかった。} \\
-    い-adjective/verbs & Explanatory IV & 「」\textgreen{んだ。} & 「」\textgreen{んだった。} & 「」\textgreen{んじゃない。} & 「」\textgreen{んじゃなかった。} \\ \bottomrule
-\end{tabular}%
-}
-\caption{State-of-being explanatory form conjugations. ??????????}
-\label{tbl:explanatory-conjugations-working}
-\end{table}
+% \begin{table}[h]
+% \centering
+% \resizebox{\textwidth}{!}{%
+% % Help: \multicolumn{2}{c}{}, \multirow{2}{*}{}, cmidrule(l){3-5}
+% \begin{tabular}{@{}ccllll@{}}
+%     \toprule
+%     \multirow{2}{*}{\textbf{Category}} & \multirow{2}{*}{\textbf{の purpose}} & \multicolumn{2}{c}{\textbf{Positive}} & \multicolumn{2}{c}{\textbf{Negative}} \\ \cmidrule(lr){3-4} \cmidrule(l){5-6}
+%     & & \textbf{Present} & \textbf{Past} & \textbf{Present} & \textbf{Past} \\ \midrule
+%     Noun & Possession & 「」\textgreen{の[だ]} & ? & ? & ? \\
+%     Noun & Explanatory I & 「」\textgreen{\textred{な$\!\!^\dagger\!\!$}の[だ]。} & 「」だった\textgreen{の[だ]。} & 「」じゃない\textgreen{の[だ]。}  & 「」じゃなかった\textgreen{の[だ]。} \\
+%     Noun & Explanatory II & 「」\textgreen{\textred{な$\!\!^\dagger\!\!$}んだ。}  & 「」だった\textgreen{んだ。} & 「」じゃない\textgreen{んだ。}  & 「」じゃなかった\textgreen{んだ。} \\
+%     Noun & Explanatory III & 「」\textlightgrey{\textred{な$\!\!^\dagger\!\!$}のだ。}  & 「」\textlightgrey{\textred{な}のだった。} & 「」\textlightgrey{\textred{な}のじゃない。}  & 「」\textlightgrey{\textred{な}のじゃなかった。} \\
+%     Noun & Explanatory IV & 「」\textgreen{\textred{な$\!\!^\dagger\!\!$}んだ。}  & 「」\textlightgrey{\textred{な}んだった。} & 「」\textgreen{\textred{な}んじゃない。}  & 「」\textlightgrey{\textred{な}んじゃなかった。} \\ \midrule
+%     な-adjective & Generic noun & 「」\textgreen{の} & 「」だった\textgreen{の} & 「」じゃない\textgreen{の}  & 「」じゃなかった\textgreen{の} \\
+%     な-adjective & Explanatory I & 「」\textgreen{\textred{な$\!\!^{\ddagger?}\!\!$}の[だ]。} & 「」だった\textgreen{の[だ]。} & 「」じゃない\textgreen{の[だ]。}  & 「」じゃなかった\textgreen{の[だ]。} \\
+%     な-adjective & Explanatory II & 「」\textgreen{\textred{な$\!\!^?\!\!$}んだ。}  & 「」だった\textgreen{んだ。} & 「」じゃない\textgreen{んだ。}  & 「」じゃなかった\textgreen{んだ。} \\
+%     な-adjective & Explanatory III & 「」\textlightgrey{\textred{な$\!\!^?\!\!$}のだ。}  & 「」\textlightgrey{\textred{な}のだった。} & 「」\textlightgrey{\textred{な}のじゃない。}  & 「」\textlightgrey{\textred{な}のじゃなかった。} \\
+%     な-adjective & Explanatory IV & 「」\textgreen{\textred{な$\!\!^?\!\!$}んだ。}  & 「」\textgreen{\textred{な}んだった。} & 「」\textgreen{\textred{な}んじゃない。}  & 「」\textgreen{\textred{な}んじゃなかった。} \\ \midrule
+%     い-adjective/verbs & Generic noun & 「」\textgreen{の} & 「」<conj>\textgreen{の} & 「」<conj>\textgreen{の}  & 「」<conj>\textgreen{の} \\
+%     い-adjective/verbs & Explanatory I & 「」\textgreen{の[だ]。} & 「」<conj>\textgreen{の[だ]。} & 「」<conj>\textgreen{の[だ]。} & 「」<conj>\textgreen{の[だ]。} \\
+%     い-adjective/verbs & Explanatory II & 「」\textgreen{んだ。} & 「」<conj>\textgreen{んだ。} & 「」<conj>\textgreen{んだ。} & 「」<conj>\textgreen{んだ。} \\
+%     い-adjective/verbs & Explanatory III & 「」\textlightgrey{のだ。} & 「」\textlightgrey{のだった。} & 「」\textlightgrey{のじゃない。} & 「」\textlightgrey{のじゃなかった。} \\
+%     い-adjective/verbs & Explanatory IV & 「」\textgreen{んだ。} & 「」\textgreen{んだった。} & 「」\textgreen{んじゃない。} & 「」\textgreen{んじゃなかった。} \\ \bottomrule
+% \end{tabular}%
+% }
+% \caption{State-of-being explanatory form conjugations. ??????????}
+% \label{tbl:explanatory-conjugations-working}
+% \end{table}
+
+For verbs, any form is usable (beyond \{positive, negative\} $\times$ \{present, past\}), except forms like the command form or the volitional form, which do not make sense for explanations. Also, the polite verb form 「〜ます」 and polite い-adjective form 「〜です」 cannot be used with 「〜んだ」; use the plain form. If you want to be polite, use 「〜んです」.
 
 \begin{table}[h]
 \centering
@@ -710,19 +702,23 @@ Noun-related particles are used to connect nouns together.
     & & \textbf{Present} & \textbf{Past} & \textbf{Present} & \textbf{Past} \\ \midrule
     Noun & Possession & 「」\textgreen{の[だ]$^*$} & \textlightgrey{「」のだった} & \textlightgrey{「」のじゃない} & \textlightgrey{「」のじゃなかった} \\
     な-adjective/い-adjective/verb & Generic noun & 「」\textgreen{の} & 「」<conj>\textgreen{の} & 「」<conj>\textgreen{の}  & 「」<conj>\textgreen{の} \\ \midrule
-    Noun/な-adjective & Explanatory I & 「」\textgreen{\textred{な}の[だ]$^{**}$。} & 「」だった\textgreen{の[だ]$^{**}$。} & 「」じゃない\textgreen{の[だ]$^{**}$。}  & 「」じゃなかった\textgreen{の[だ]$^{**}$。} \\
-    Noun/な-adjective & Explanatory II & 「」\textgreen{\textred{な}んだ。}  & 「」だった\textgreen{んだ。} & 「」じゃない\textgreen{んだ。}  & 「」じゃなかった\textgreen{んだ。} \\
-    Noun/な-adjective & Explanatory III & 「」\textlightgrey{\textred{な}のだ。}  & 「」\textlightgrey{\textred{な}のだった。} & 「」\textlightgrey{\textred{な}のじゃない。}  & 「」\textlightgrey{\textred{な}のじゃなかった。} \\
-    Noun/な-adjective & Explanatory IV & 「」\textgreen{\textred{な}んだ。}  & 「」\textlightgrey{\textred{な}んだった。} & 「」\textgreen{\textred{な}んじゃない。}  & 「」\textlightgrey{\textred{な}んじゃなかった。} \\ \midrule
-    い-adjective/verbs & Explanatory I & 「」\textgreen{の[だ]$^{**}$。} & 「」<conj>\textgreen{の[だ]$^{**}$。} & 「」<conj>\textgreen{の[だ]$^{**}$。} & 「」<conj>\textgreen{の[だ]$^{**}$。} \\
-    い-adjective/verbs & Explanatory II & 「」\textgreen{んだ。} & 「」<conj>\textgreen{んだ。} & 「」<conj>\textgreen{んだ。} & 「」<conj>\textgreen{んだ。} \\
-    い-adjective/verbs & Explanatory III & 「」\textlightgrey{のだ。} & 「」\textlightgrey{のだった。} & 「」\textlightgrey{のじゃない。} & 「」\textlightgrey{のじゃなかった。} \\
-    い-adjective/verbs & Explanatory IV & 「」\textgreen{んだ。} & 「」\textgreen{んだった。} & 「」\textgreen{んじゃない。} & 「」\textgreen{んじゃなかった。} \\ \bottomrule
+    Noun/な-adjective & Explanatory (Formal) & 「」\textgreen{\textred{な}の[だ]$^{**}$。} & 「」だった\textgreen{の[だ]$^{**}$。} & 「」じゃない\textgreen{の[だ]$^{**}$。}  & 「」じゃなかった\textgreen{の[だ]$^{**}$。} \\
+    Noun/な-adjective & Explanatory (Casual) & 「」\textgreen{\textred{な}んだ。}  & 「」だった\textgreen{んだ。} & 「」じゃない\textgreen{んだ。}  & 「」じゃなかった\textgreen{んだ。} \\
+    % Noun/な-adjective & Explanatory III & 「」\textlightgrey{\textred{な}のだ。}  & 「」\textlightgrey{\textred{な}のだった。} & 「」\textlightgrey{\textred{な}のじゃない。}  & 「」\textlightgrey{\textred{な}のじゃなかった。} \\
+    % Noun/な-adjective & Explanatory (Casual II) & 「」\textgreen{\textred{な}んだ。}  & 「」\textlightgrey{\textred{な}んだった。} & 「」\textgreen{\textred{な}んじゃない。}  & 「」\textlightgrey{\textred{な}んじゃなかった。} \\ \midrule
+    Noun/な-adjective & Explanatory (Casual II) &  & 「」\textlightgrey{\textred{な}んだった。} & 「」\textgreen{\textred{な}んじゃない。}  & 「」\textlightgrey{\textred{な}んじゃなかった。} \\ \midrule
+    い-adjective/verbs & Explanatory (Formal)) & 「」\textgreen{の[だ]$^{**}$。} & 「」<conj>\textgreen{の[だ]$^{**}$。} & 「」<conj>\textgreen{の[だ]$^{**}$。} & 「」<conj>\textgreen{の[だ]$^{**}$。} \\
+    い-adjective/verbs & Explanatory (Casual) & 「」\textgreen{んだ。} & 「」<conj>\textgreen{んだ。} & 「」<conj>\textgreen{んだ。} & 「」<conj>\textgreen{んだ。} \\
+    % い-adjective/verbs & Explanatory III & 「」\textlightgrey{のだ。} & 「」\textlightgrey{のだった。} & 「」\textlightgrey{のじゃない。} & 「」\textlightgrey{のじゃなかった。} \\
+    % い-adjective/verbs & Explanatory (Casual II) & 「」\textgreen{んだ。} & 「」\textgreen{んだった。} & 「」\textgreen{んじゃない。} & 「」\textgreen{んじゃなかった。} \\ \bottomrule
+    い-adjective/verbs & Explanatory (Casual II) &  & 「」\textgreen{んだった。} & 「」\textgreen{んじゃない。} & 「」\textgreen{んじゃなかった。} \\ \bottomrule
 \end{tabular}%
 }
-\caption{State-of-being explanatory form conjugations. ??????????}
+\caption{の particle usage summary. 「」 is a dictionary-form placeholder; [] is optional. $^*$: だ is the optional declarative/assertive present state-of-being marker. **: だ is used in masculine responses. \textred{な} is used by rule. \textlightgrey{Light grey ones are rarely used.} Casual I: attaching んだ to any tense of a noun/adjective/verb; Casual II: attaching んだ to the dictionary-form, then conjugating the だ. Both casual forms have slightly different nuances. \textred{\textbf{This section is downright confusing, I think it requires knowledge of how to ask questions (e.g.\ じゃない？じゃん？じゃないか？) as well as knowledge of polite form んです in order to truly appreciate these forms. Move on for now.}}}
 \label{tbl:explanatory-conjugations}
 \end{table}
+
+\emph{Read the supplementary んだ (and んです) article on \href{https://www.tofugu.com/japanese-grammar/explanatory-nda-ndesu-noda-nodesu/}{Tofugu}, if you need more clarification.}
 
 \subsubsection{の particle I: the noun modifier (label maker)}
 \emph{Read the main article on \href{https://www.tofugu.com/japanese-grammar/particle-no-noun-modifier/}{Tofugu}.}
@@ -918,11 +914,62 @@ The different parts of the spectrum are described as follows:
 
 Lastly, there is the 「\textbf{〜な\ruby{気分}{き|ぶん}}」 construct. Although 気分 is typically used as 気分がいい or 気分が悪い, we can suffix nouns with 〜な気分 to convey the ``mood'' associated with the noun. Examples include ワインな気分 (``I'm feeling like wine tonight/It's a wine kinda evening.''), 90\ruby{年代}{ねん|だい}な気分 (``I'm feeling really 90's today''), 海な気分 (``feeling those beachy vibes'') and \ruby{終}{お}わりな気分 (``feeling like it's over'').
 
-\subsubsection{Supplementary reading on んだ (a modern replacement of のだ)}
-\emph{Read the main article on \href{https://www.tofugu.com/japanese-grammar/explanatory-nda-ndesu-noda-nodesu/}{Tofugu}.}
+% \subsubsection{Supplementary reading on んだ (a modern replacement of のだ)}
 
 
 
+\subsection{Adverbs} \label{sec:adverb}
+Just as adjectives describe nouns, adverbs describe adjectives. They come before adjectives, and the common ones are:
+\begin{itemize}
+    \item それは/そりゃ: very/extremely
+    \item 大変: very
+    \item すごく: super
+    \item とても: very
+    \item \ruby{結構}{けっ|こう}/かなり: fairly
+    \item ちょっと: a little
+    \item \ruby{少}{すこ}し: a little
+    \item あまり<negative conj>: not very
+    \item たくさん: many
+    \item 全然: (not) at all
+\end{itemize}
 
+To turn adjectives into adverbs:
+\begin{itemize}
+    \item な-adjectives: 「」 $\to$ 「」に
+
+    E.g.\ アリスは自分の部屋を\textbf{きれいに}した。(Alice did her own room toward clean / Alice did her room cleanly / Alice cleaned her room; した is the past tense of する)
+
+    E.g.\ 図書館の\ruby{中}{なか}では、\textbf{静かに}する。(Inside the library, do things quietly.)
+    \item い-adjectives: 「」い $\to$ 「」く
+
+    E.g.\ ボブは朝ごはんを\textbf{早く}食べた。 (Bob ate breakfast quickly/early (depending on context); 早い $\to$ 早く)
+
+    E.g.\ この\ruby{町}{まち}は、最近\textbf{\ruby{大}{おお}きく}\ruby{変}{か}わった。(This town changed greatly lately; 大きい $\to$ おおきく)
+\end{itemize}
+
+Note that not all adverbs are derived from adjectives.
+
+E.g.\ 映画を\textbf{たくさん}見た。 (Saw a lot of movies.)
+
+E.g.\ 最近、\textbf{全然}食べない。(Lately, don't eat at all.)
+
+\subsection{Sentence ending particles ね、よ、よね}
+\begin{itemize}
+    \item の: explanatory tone. Explained above in Section~\ref{sec:noun-related-particles}.
+    \item ね: to express seeking and expectation of agreement, like ``right?/isn't it?'' in English. In the reply 「そう[だ]ね」, the optional だ is often used in masculine contexts.
+
+    E.g.\ いい天気だ\textbf{ね}？そう[だ]\textbf{ね}。 (Good weather, huh? Sure is; そう: in that way, as such; そう[だ]ね: it is indeed that way/as such.)
+
+    E.g.\ 面白い映画だった\textbf{ね}。え？全然面白くなかった。 (That was an interesting movie, wasn't it? Huh? No, it wasn't interesting at all)
+    \item よ: to express that you're informing something \emph{new}, like ``you know...'' in English.
+
+    E.g.\ 時間がない\textbf{よ}。大丈夫だ\textbf{よ}。
+
+    E.g.\ 今日はいい天気だね。うん。でも、明日う雨が\ruby{降}{ふ}る\textbf{よ}。(Good weather today, huh? Yeah. But it will rain tomorrow, you know.)
+\end{itemize}
+
+よ and ね can be combined to both inform about something new and expect agreement at the same time.
+
+E.g.\ ボブは、魚が好きなんだ\textbf{よね}。そうだね。 (You know, you like fish, don't you? It is indeed the case, huh?)
 
 \end{document}
