@@ -232,17 +232,17 @@ E.g.\ 元気じゃない / 元気だった / 元気じゃなかった。
 \subsection{Starter particles は、も、が} \label{sec:particles}
 For は and が, see Section~\ref{sec:topics-and-subjects}.
 \begin{itemize}
-    \item は: introductory topic particle ``as for/about'', suffixed to the topic you're introducing.
+    \item は: introductory topic marker ``as for/about'', suffixed to the topic you're introducing.
 
     E.g.\ アリス\textbf{は}学生？うん、学生。
 
     E.g.\ 今日\textbf{は}試験だ。ジョン\textbf{は}？ジョン\textbf{は}明日。
-    \item も: inclusive topic particle (``also''), suffixed to the topic you're including.
+    \item も: inclusive topic marker (``also''), suffixed to the topic you're including.
 
     E.g.\ アリスは学生？うん、トム\textbf{も}学生。\\
     E.g.\ アリスは学生？うん、でもトムは学生じゃない。\textred{(it is incorrect to use も here, as it is not inclusive with the positive state-of-being!)}\\
     E.g.\ アリスは学生？ううん、トム\textbf{も}学生じゃない。
-    \item が: identifier particle ``the one'', suffixed to a question or the identified. Used when the topic is unknown, and you are either asking for what the topic is, or identifying what the topic is.
+    \item が: identifier/subject marker ``the one'', suffixed to a question or the identified. Used when the topic is unknown, and you are either asking for what the topic is, or identifying what the topic is.
 
     E.g.\ 誰\textbf{が}学生？ 私\textbf{が}学生。(Who the one student? Me the one student.)\\
 \end{itemize}
@@ -324,22 +324,23 @@ Verbs are categorised into three groups, as shown in Table~\ref{tbl:verb-classif
 
 \begin{table}[h]
 \centering
-\subsection{Adverbs} \label{sec:adverb}
-Just as adjectives describe nouns, adverbs describe adjectives. They come before adjectives, and the common ones are:
-\begin{itemize}
-    \item それは/そりゃ: very/extremely
-    \item 大変: very
-    \item すごく: super
-    \item とても: very
-    \item かなり: fairly
-    \item ちょっと: a little
-    \item \ruby{少}{すこ}し: a little
-    \item あまり<negative conj>: not very
-\end{itemize}
+% \resizebox{\textwidth}{!}{%
+% Help: \multicolumn{2}{c}{}, \multirow{2}{*}{}, cmidrule(l){3-5}
+\begin{tabular}{@{}clll@{}}
+    \toprule
+    & \textbf{Group 1} & \textbf{Group 2} & \textbf{Group 3}\\ \midrule
+    \multirow{5}{*}{\textbf{Synonyms}} & Pentagrade verb & Monograde verb & Irregular verb \\[0.5em]
+    & \ruby{五段動詞}{ご|だん|どう|し} & \ruby{一段動詞}{いち|だん|どう|し} & \ruby{不規則動詞}{ふ|き|そく|どう|し}* \\
+    & Godan verb & Ichidan verb & Special class \\
+    & Group I verb & Group II verb & Group III verb \\
+    & う-verb & る-verb & Exception verb \\ \bottomrule
+\end{tabular}%
+% }
+\caption{Verb classifications. *There isn't a Japanese term for exception verbs; する and 来る are the only members of the  不規則動詞 subclass.}
 \label{tbl:verb-classification}
 \end{table}
 
-In a nutshell, \textbf{る-verbs is the class of \emph{almost all} \ul{-iru/-eru} verbs.} Exceptions include 帰る, which is a う-verb.
+In a nutshell, \textbf{る-verbs is the class of \emph{almost all} \ul{-iru/-eru} verbs.} Exceptions include 帰る、切る、知るwhich are う-verbs.
 
 Conjugations for verbs are the most complicated among all parts-of-speech, and are shown in Table~\ref{tbl:grammar-conjugation-summary}.
 
@@ -394,13 +395,13 @@ Table~\ref{tbl:grammar-conjugation-summary} shows all the conjugation rules we'v
     & 「」　く & 「」\textblue{いた} & 「」\textblue{かない} & 「」\textblue{かなかった} & 聞く、書く、描く \\
     & 行　く & 行\textblue{った} & 行\textblue{かない} & 行\textblue{かなかった} & \\
     & 「」　ぐ & 「」\textblue{いだ} & 「」\textblue{がない} & 「」\textblue{がなかった} & 泳ぐ \\
-    & 「」　む & 「」\textblue{んだ} & 「」\textblue{まない} & 「」\textblue{まなかった} & 飲む \\
+    & 「」　む & 「」\textblue{んだ} & 「」\textblue{まない} & 「」\textblue{まなかった} & 飲む、読む、\ruby{盗}{ぬす}む \\
     & 「」　ね & 「」\textblue{んだ} & 「」\textblue{なない} & 「」\textblue{ななかった} & 死ね \\
     & 「」　ぶ & 「」\textblue{んだ} & 「」\textblue{ばない} & 「」\textblue{ばなかった} & 遊ぶ \\
-    & 「」　る & 「」\textblue{っだ} & 「」\textblue{らない} & 「」\textblue{らなかった} & \ruby{降}{ふ}る、\textred{\ruby{帰}{かえ}る} \\
+    & 「」　る & 「」\textblue{った} & 「」\textblue{らない} & 「」\textblue{らなかった} & \textred{知る}、\textred{切る}、\textred{\ruby{帰}{かえ}る}、\textred{\ruby{走}{はし}る}、\ruby{降}{ふ}る \\
     & ある & あ\textblue{った} & \textred{ない} & \textred{なかった} & \\
-    & 「」　つ & 「」\textblue{っだ} & 「」\textblue{たない} & 「」\textblue{たなかった} & 待つ \\
-    & 「」　う & 「」\textblue{っだ} & 「」\textblue{わない} & 「」\textblue{わなかった} & 買う、\ruby{会}{あ}う \\ \midrule
+    & 「」　つ & 「」\textblue{った} & 「」\textblue{たない} & 「」\textblue{たなかった} & 待つ \\
+    & 「」　う & 「」\textblue{った} & 「」\textblue{わない} & 「」\textblue{わなかった} & 買う、\ruby{会}{あ}う \\ \midrule
     る-verb & 「」　る &「」　\textblue{た} & 「」　\textblue{ない} & 「」　\textblue{なかった} & いる、食べる、\ruby{出}{で}る、見る* \\ \midrule
     % \multirow{3.85}{*}{Exception verb} & 「」する & 「」した & 「」しない & 「」しなかった & \\[0.5em]
     \multirow{3.5}{*}{Exception verb} & 「」する & 「」\textblue{した} & 「」\textblue{しない} & 「」\textblue{しなかった} & 勉強する \\
@@ -431,13 +432,13 @@ Table~\ref{tbl:grammar-conjugation-summary} shows all the conjugation rules we'v
     & 「」　く & 「」\textwhite{いた} & 「」\textwhite{かない} & 「」\textwhite{かなかった} & 聞く、書く、描く \\
     & 行　く & 行\textwhite{った} & 行\textwhite{かない} & 行\textwhite{かなかった} & \\
     & 「」　ぐ & 「」\textwhite{いだ} & 「」\textwhite{がない} & 「」\textwhite{がなかった} & 泳ぐ \\
-    & 「」　む & 「」\textwhite{んだ} & 「」\textwhite{まない} & 「」\textwhite{まなかった} & 飲む \\
+    & 「」　む & 「」\textwhite{んだ} & 「」\textwhite{まない} & 「」\textwhite{まなかった} & 飲む、読む、\ruby{盗}{ぬす}む \\
     & 「」　ね & 「」\textwhite{んだ} & 「」\textwhite{なない} & 「」\textwhite{ななかった} & 死ね \\
     & 「」　ぶ & 「」\textwhite{んだ} & 「」\textwhite{ばない} & 「」\textwhite{ばなかった} & 遊ぶ \\
-    & 「」　る & 「」\textwhite{っだ} & 「」\textwhite{らない} & 「」\textwhite{らなかった} & \ruby{降}{ふ}る、\textred{\ruby{帰}{かえ}る} \\
+    & 「」　る & 「」\textwhite{った} & 「」\textwhite{らない} & 「」\textwhite{らなかった} & \textred{知る}、\textred{切る}、\textred{\ruby{帰}{かえ}る}、\textred{\ruby{走}{はし}る}、\ruby{降}{ふ}る \\
     & ある & \textwhite{あった} & \textwhite{ない} & \textwhite{なかった} & \\
-    & 「」　つ & 「」\textwhite{っだ} & 「」\textwhite{たない} & 「」\textwhite{たなかった} & 待つ \\
-    & 「」　う & 「」\textwhite{っだ} & 「」\textwhite{わない} & 「」\textwhite{わなかった} & 買う、\ruby{会}{あ}う \\ \midrule
+    & 「」　つ & 「」\textwhite{った} & 「」\textwhite{たない} & 「」\textwhite{たなかった} & 待つ \\
+    & 「」　う & 「」\textwhite{った} & 「」\textwhite{わない} & 「」\textwhite{わなかった} & 買う、\ruby{会}{あ}う \\ \midrule
     る-verb & 「」　る &「」　\textwhite{た} & 「」　\textwhite{ない} & 「」　\textwhite{なかった} & いる、食べる、\ruby{出}{で}る、見る* \\ \midrule
     % \multirow{3.85}{*}{Exception verb} & 「」する & 「」した & 「」しない & 「」しなかった & \\[0.5em]
     \multirow{3.5}{*}{Exception verb} & 「」する & 「」\textwhite{した} & 「」\textwhite{しない} & 「」\textwhite{しなかった} & 勉強する \\
@@ -450,7 +451,7 @@ Table~\ref{tbl:grammar-conjugation-summary} shows all the conjugation rules we'v
 
 \subsection{Verb particles を、に、へ、で}
 \begin{itemize}
-    \item を: direct object particle, suffixed to the target object \ul{of transitive verbs}.
+    \item を: direct object marker, suffixed to the target object \ul{of transitive verbs}.
 
     E.g.\ 魚\textbf{を}食べる。(Eat fish.)
 
@@ -467,7 +468,7 @@ Table~\ref{tbl:grammar-conjugation-summary} shows all the conjugation rules we'v
     E.g.\ 今日、日本語を勉強\cancel{[を]}する。(勉強\cancel{[を]}する)
 
     E.g.\ メールアドレスを\ruby{登録}{とう|ろく}\cancel{[を]}した。(登録\cancel{[を]}する)
-    \item に: target particle, suffixed to the \ul{target} (physical or abstract) of any verb (transitive or non-transitive). The target is \ul{emphasised as the final destination}. The notion of a ``target'' is not restricted to motion verbs; the \ul{location of objects} is the target of the verbs for existence (ある and いる); \ul{time} (e.g.\ today, last week) is also a common target.
+    \item に: target marker, suffixed to the \ul{target} (physical or abstract) of any verb (transitive or non-transitive). The target is \ul{emphasised as the final destination}. The notion of a ``target'' is not restricted to motion verbs; the \ul{location of objects} is the target of the verbs for existence (ある and いる); \ul{time} (e.g.\ today, last week) is also a common target.
 
     % E.g.\ ボブは日本\textbf{に}行った。(Bob went to Japan.)
 
@@ -497,12 +498,12 @@ Table~\ref{tbl:grammar-conjugation-summary} shows all the conjugation rules we'v
 
     E.g.\ \ruby{宿題}{しゅく|だい}を今日\textbf{から}明日\textbf{まで}する。(Will do homework from today to tomorrow.)
 
-    \item へ: directional particle, suffixed to direction of verbs (transitive or non-transitive). Pronounced え. Unlike に, which specifies target/destination, へ specifies the general direction we're heading towards, from the starting point. Also, unlike に, it does not guarantee that the target is the final destination. \textred{へ is restricted to verbs with a physical direction (in the physical or abstract sense) like 行く、来る、\ruby{向}{む}かう; verbs like なる (become) have no direction associated with it and so clauses containing なる as the trailing verb cannot use へ!}
+    \item へ: direction marker, suffixed to direction of verbs (transitive or non-transitive). Pronounced え. Unlike に, which specifies target/destination, へ specifies the general direction we're heading towards, from the starting point. Also, unlike に, it does not guarantee that the target is the final destination. \textred{へ is restricted to verbs with a physical direction (in the physical or abstract sense) like 行く、来る、\ruby{向}{む}かう; verbs like なる (become) have no direction associated with it and so clauses containing なる as the trailing verb cannot use へ!}
 
     E.g.\ \ruby{部屋}{へ|や}\{に/へ\}来る。(Come \{towards/to\} room.)
 
     E.g.\ \ruby{勝}{か}ちへ\ruby{向}{む}かう。(Go towards victory.)
-    \item で: contextual particle; ``by way of''. It provides supplementary context: where, what, how.
+    \item で: context marker; ``by way of''. It provides supplementary context: where, what, how.
 
     E.g.\ \ruby{映画館}{えい|が|かん}で見た。(Saw at movie theatre.)
 
@@ -527,7 +528,7 @@ Note that を can only be used with transitive verbs, unless the direct object i
 \end{itemize}
 
 \subsubsection{\ruby{何}{なに}で and \ruby{何}{なん}で in questions}
-``What'' is expressed as \textbf{\ruby{何}{なに}}. ``Why'' is expressed as どうして (proper)、なぜ (forceful)、\textbf{\ruby{何}{なん}で (colloquial)}. Note that \ruby{何}{なん}で has nothing to do with the で particle; it is a completely separate word.
+``What'' is expressed as \textbf{\ruby{何}{なに}}. ``Why'' is expressed as どうして (proper)、なぜ (forceful/formal)、\textbf{\ruby{何}{なん}で (colloquial)}. Note that \ruby{何}{なん}で has nothing to do with the で particle; it is a completely separate word.
 
 When asking a question as a speaker, use the correct one: なにで for ``what'', and なんで for ``why''. When reading written text, obtain context from the answer. \textorange{As a general rule of thumb, asking why (なんで) is much more common.}
 
@@ -579,19 +580,19 @@ Present-positive modifiers require noun-related particles (\S\ref{sec:noun-relat
 \subsubsection{Noun-related particles と、や、とか、の}\label{sec:noun-related-particles}
 Noun-related particles are used to connect nouns together.
 \begin{itemize}
-    \item と: inclusive noun particle (exclusive list or together-action). It is similar to 「も」in terms of \ul{inclusivity}. It can also be used to show an \ul{action was done together} with something or someone.
+    \item と: inclusive noun connector (exclusive list or together-action). \textred{It is used \emph{between} nouns in a list, not as a marker at the end of each noun.} It is similar to 「も」 in terms of \ul{inclusivity}. It can also be used to show an \ul{action was done together} with something or someone.
 
     E.g.\ 本\textbf{と}雑誌\textbf{と}\ruby{葉書}{は|がき}を買った。(Bought book, magazine and postcard.)
 
     E.g.\ 友達\textbf{と}話した。(Talked with friend.)
 
-    E.g.\ 先生と\ruby{会}{あ}った。(Met with teacher.)
-    \item や: vague listing particle. Similar to と, with the implied meaning that the list is non-exhaustive, and some items on the list may not apply. In English, this is like the ``and/or, etc.'' constructs.
+    E.g.\ 先生\textbf{と}\ruby{会}{あ}った。(Met with teacher.)
+    \item や: vague listing connector. Similar to と, \textred{it is used \emph{between} nouns in a list, not as a marker at the end of each noun,} with the implied meaning that the list is non-exhaustive, and some items on the list may not apply. In English, this is like the ``and/or, etc.'' constructs.
 
     E.g.\ 飲み物\textbf{や}カップ\textbf{や}ナプキンは、いらない？ (present-negative of いる as in 要る)
 
     E.g.\ \ruby{靴}{くつ}\textbf{や}シャツを買う。(Buy shoes and shirt, etc.)
-    \item とか: vague listing particle (colloquial). Used exactly like や but in informal settings.
+    \item とか: vague listing particle (colloquial). Used exactly like や but in informal settings. \textred{It is used \emph{between} nouns in a list, not as a marker at the end of each noun.}
 
     E.g.\ 飲み物\textbf{とか}カップ\textbf{とか}ナプキンは、いらない？ (present-negative of いる as in 要る)
 
@@ -917,7 +918,6 @@ Lastly, there is the 「\textbf{〜な\ruby{気分}{き|ぶん}}」 construct. A
 % \subsubsection{Supplementary reading on んだ (a modern replacement of のだ)}
 
 
-
 \subsection{Adverbs} \label{sec:adverb}
 Just as adjectives describe nouns, adverbs describe adjectives. They come before adjectives, and the common ones are:
 \begin{itemize}
@@ -926,11 +926,11 @@ Just as adjectives describe nouns, adverbs describe adjectives. They come before
     \item 大変: very/greatly/terribly
     \item すごく: super
     \item とても: very
+    \item たくさん: many/a lot
     \item \ruby{結構}{けっ|こう}/かなり: fairly
     \item ちょっと: a little
     \item \ruby{少}{すこ}し: a little
     \item あまり<negative conj>: not very
-    \item たくさん: many
     \item 全然: (not) at all
 \end{itemize}
 
