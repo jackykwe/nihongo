@@ -1,0 +1,51 @@
+\documentclass[../nihongo-gakushuu-kyouzai.tex]{subfiles}
+\graphicspath{ {../imgs/} }
+
+\begin{document}
+\onehalfspacing  % for 振り仮名
+
+% Full A4 dimensions: width=210, height=297
+% Width/height and LR/TB here are before turning into landscape.
+\newgeometry{top=2cm,bottom=2cm,left=1cm,right=1cm}
+\fancyhfoffset{0pt} % recalculate fancyhdr width, courtesy of https://tex.stackexchange.com/a/440307
+\begin{landscape}
+
+\section{Conjugations}
+\begin{table}[h]
+\centering
+\resizebox{\linewidth}{!}{%
+% Help: \multicolumn{2}{c}{}, \multirow{2}{*}{}, cmidrule(l){3-5}
+\begin{tabular}{@{}crrrrrrrrl@{}}
+    \toprule
+    \multirow{2}{*}{\textbf{Category}}   & \multirow{2}{*}{\textbf{Dictionary form}} & \multirow{2}{*}{\textbf{Verb stem}} & \multicolumn{3}{c}{\textbf{Positive}}                                              & \multicolumn{3}{c}{\textbf{Negative}}                                                                    & \multirow{2}{*}{\textbf{Examples}} \\ \cmidrule(lr){4-6} \cmidrule(lr){7-9}
+                                         &                                           &                                     & \textbf{Present}     & \textbf{Past}                        & \textbf{て-form}     & \textbf{Present}                        & \textbf{Past}                               & \textbf{て-form} & \\ \midrule
+    Noun/な-adjective                    & 「」                                      &                                     & 「」\textgreen{[だ]} & 「」\textgreen{だった}               &                      & 「」\textgreen{じゃない}                & 「」\textgreen{じゃなかった}                &                  & 学生、友達 \\ \midrule
+    な-adjective                         & 「」                                      &                                     & 「」\textgreen{な}   & 「」\textgreen{だった}               &                      & 「」\textgreen{じゃない}                & 「」\textgreen{じゃなかった}                &                  & 元気、綺麗、好き、\textred{嫌い}  \\ \midrule
+    \multirow{3}{*}{い-adjective}        & 「」い                                    &                                     & 「」い               & 「」\textblue{かった}                &                      & 「」\textblue{くない}                   & 「」\textblue{くなかった}                   &                  & 嬉しい、気持ち悪い、難しい \\
+                                         & いい                                      &                                     & いい                 & \textred{よ}\textblue{かった}        &                      & \textred{よ}\textblue{くない}           & \textred{よ}\textblue{くなかった}           &                  & \\
+                                         & かっこいい                                &                                     & かっこいい           & かっこ\textred{よ}\textblue{かった}  &                      & かっこ\textred{よ}\textblue{くない}     & かっこ\textred{よ}\textblue{くなかった}     &                  & \\ \midrule
+    \multirow{10}{*}{う-verb}            & 「」　す                                  & 「」\textblue{し}                   & 「」　す             & 「」\textblue{した}                  &                      & 「」\textblue{さない}                   & 「」\textblue{さなかった}                   &                  & 話す、出す \\
+                                         & 「」　く                                  & 「」\textblue{き}                   & 「」　く             & 「」\textblue{いた}                  &                      & 「」\textblue{かない}                   & 「」\textblue{かなかった}                   &                  & 聞く、書く、描く \\
+                                         & 行　く                                    & 行\textblue{き}                     & 行　く               & 行\textblue{った}                    &                      & 行\textblue{かない}                     & 行\textblue{かなかった}                     &                  & \\
+                                         & 「」　ぐ                                  & 「」\textblue{ぎ}                   & 「」　ぐ             & 「」\textblue{いだ}                  &                      & 「」\textblue{がない}                   & 「」\textblue{がなかった}                   &                  & 泳ぐ \\
+                                         & 「」　む                                  & 「」\textblue{み}                   & 「」　む             & 「」\textblue{んだ}                  &                      & 「」\textblue{まない}                   & 「」\textblue{まなかった}                   &                  & 飲む、読む、\ruby{盗}{ぬす}む \\
+                                         & 「」　ね                                  & 「」\textblue{に}                   & 「」　ね             & 「」\textblue{んだ}                  &                      & 「」\textblue{なない}                   & 「」\textblue{ななかった}                   &                  & 死ね \\
+                                         & 「」　ぶ                                  & 「」\textblue{び}                   & 「」　ぶ             & 「」\textblue{んだ}                  &                      & 「」\textblue{ばない}                   & 「」\textblue{ばなかった}                   &                  & 遊ぶ \\
+                                         & 「」　る                                  & 「」\textblue{り}                   & 「」　る             & 「」\textblue{った}                  &                      & 「」\textblue{らない}                   & 「」\textblue{らなかった}                   &                  & \textred{知る}、\textred{切る}、\textred{\ruby{帰}{かえ}る}、\textred{\ruby{走}{はし}る}、\ruby{降}{ふ}る \\
+                                         & あ　る                                    & あ\textblue{り}                     & あ　る               & あ\textblue{った}                    &                      & \textred{ない}                          & \textred{なかった}                          &                  & \\
+                                         & 「」　つ                                  & 「」\textblue{ち}                   & 「」　つ             & 「」\textblue{った}                  &                      & 「」\textblue{たない}                   & 「」\textblue{たなかった}                   &                  & 待つ \\
+                                         & 「」　う                                  & 「」\textblue{い}                   & 「」　う             & 「」\textblue{った}                  &                      & 「」\textblue{わない}                   & 「」\textblue{わなかった}                   &                  & 買う、\ruby{会}{あ}う \\ \midrule
+    る-verb                              & 「」　る                                  & 「」                                & 「」　る             & 「」　\textblue{た}                  &                      & 「」　\textblue{ない}                   & 「」　\textblue{なかった}                   &                  & いる、食べる、\ruby{出}{で}る、見る* \\ \midrule
+    \multirow{3.5}{*}{Exception verb}    & 「」する                                  & \textblue{し}                       & 「」する             & 「」\textblue{した}                  &                      & 「」\textblue{しない}                   & 「」\textblue{しなかった}                   &                  & 勉強する \\
+                                         & くる                                      & \textred{き}                        & くる                 & \textred{き}\textblue{た}            &                      & \textred{こ}\textblue{ない}             & \textred{こ}\textblue{なかった}             &                  & \\[0.5em]
+                                         & \ruby{来}{く}る                           & \textred{\ruby{来}{き}}             & \ruby{来}{く}る      & \textred{\ruby{来}{き}}\textblue{た} &                      & \textred{\ruby{来}{こ}}\textblue{ない}  & \textred{\ruby{来}{こ}}\textblue{なかった}  &                  & \\ \bottomrule
+\end{tabular}%
+}
+\caption{All conjugation rules, for nouns, adjectives and verbs. [] means optional; 「」 is a dictionary-form placeholer; \textgreen{green means additive} (without modifying the dictionary-form); \textblue{blue means substitutive} (modifies the dictionary-form); \textred{red means exception}.}
+\label{tbl:appendix-conjugation}
+\end{table}
+
+\end{landscape}
+\restoregeometry
+
+\end{document}
