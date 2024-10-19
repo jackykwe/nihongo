@@ -1,7 +1,5 @@
 \documentclass[../nihongo-gakushuu-kyouzai.tex]{subfiles}
-\graphicspath{ {../imgs/} }
 \begin{document}
-\onehalfspacing  % for 振り仮名
 
 \setcounter{section}{0}
 \section{The writing system}
@@ -15,124 +13,124 @@ Some general notes:
 % Help: \multirow{2}{*}{} & \multirow{2}{*}{} & \multicolumn{3}{c}{} \\* \cmidrule(l){3-5}
 \begin{longtable}[c]{@{}ccccl@{}}
     \toprule
-    \multicolumn{2}{c}{\multirow{2}{*}{平仮名}} & Hepburn & Keyboard & \multirow{2}{*}{Mnemonic} \\
-    \multicolumn{2}{c}{} & romanisation & command & \\* \midrule
-    あ & {\sffamily あ} & a & \texttt{a} & ``A'' shape \\
-    い & {\sffamily い} & i & \texttt{i} & \ul{ee}l \\
-    う & {\sffamily う} & u & \texttt{u} & ``u'' shape \\
-    え & {\sffamily え} & e & \texttt{e} & \ul{e}xotic swan \\
-    お & {\sffamily お} & o & \texttt{o} & double ``o'' shape \\
-    か & {\sffamily か} & ka & \texttt{ka} & 咖啡 \\
-    が & {\sffamily が} & ga & \texttt{ga} &  \\
-    き & {\sffamily き} & ki & \texttt{ki} & \ul{ke}y \\
-    きゃ & {\sffamily きゃ} & kya & \texttt{kya} &  \\
-    きゅ & {\sffamily きゅ} & kyu & \texttt{kyu} &  \\
-    きょ & {\sffamily きょ} & kyo & \texttt{kyo} &  \\
-    ぎ & {\sffamily ぎ} & gi & \texttt{gi} &  \\
-    ぎゃ & {\sffamily ぎゃ} & gya & \texttt{gya} &  \\
-    ぎゅ & {\sffamily ぎゅ} & gyu & \texttt{gyu} &  \\
-    ぎょ & {\sffamily ぎょ} & gyo & \texttt{gyo} &  \\
-    く & {\sffamily く} & ku & \texttt{ku} & bird \ul{ku}-ku \\
-    ぐ & {\sffamily ぐ} & gu & \texttt{gu} &  \\
-    け & {\sffamily け} & ke & \texttt{ke} & \ul{ke}lp (loose kelp) \\
-    げ & {\sffamily げ} & ge & \texttt{ge} &  \\
-    こ & {\sffamily こ} & ko & \texttt{ko} & \ul{co}-habiting worms \\
-    ご & {\sffamily ご} & go & \texttt{go} &  \\
-    さ & {\sffamily さ} & sa & \texttt{sa} & \ul{sa}lsa (two hand stir) / NOT ``5'' \\
-    ざ & {\sffamily ざ} & za & \texttt{za} &  \\
-    し & {\sffamily し} & shi & \textlightgrey{\texttt{si}/}\texttt{shi} & \ul{shee}p; shepherd's crook \\
-    しゃ & {\sffamily しゃ} & sha & \texttt{sha} &  \\
-    しゅ & {\sffamily しゅ} & shu & \texttt{shu} &  \\
-    しょ & {\sffamily しょ} & sho & \texttt{sho} &  \\
-    じ & {\sffamily じ} & ji & \textlightgrey{\texttt{zi}/}\texttt{ji} &  \\
-    じゃ & {\sffamily じゃ} & ja & \textlightgrey{\texttt{jya}/}\texttt{ja} &  \\
-    じゅ & {\sffamily じゅ} & ju & \textlightgrey{\texttt{jyu}/}\texttt{ju} &  \\
-    じょ & {\sffamily じょ} & jo & \textlightgrey{\texttt{jyo}/}\texttt{jo} &  \\
-    す & {\sffamily す} & su & \texttt{su} & \ul{sw}ing \\
-    ず & {\sffamily ず} & zu & \texttt{zu} & \\
-    せ & {\sffamily せ} & se & \texttt{se} & \ruby{世界}{せ|かい} \\
-    ぜ & {\sffamily ぜ} & ze & \texttt{ze} &  \\
-    そ & {\sffamily そ} & so & \texttt{so} & \ul{so}da / ``sword'' shape \\
-    ぞ & {\sffamily ぞ} & zo & \texttt{zo} &  \\
-    た & {\sffamily た} & ta & \texttt{ta} & ``ta'' shape \\
-    だ & {\sffamily だ} & da & \texttt{da} &  \\
-    ち & {\sffamily ち} & chi & \textlightgrey{\texttt{ti}/}\texttt{chi} & the ``5'' \\
-    ちゃ & {\sffamily ちゃ} & cha & \texttt{cha} &  \\
-    ちゅ & {\sffamily ちゅ} & chu & \texttt{chu} &  \\
-    ちょ & {\sffamily ちょ} & cho & \texttt{cho} &  \\
-    ぢ & {\sffamily ぢ} & ji & \textred{\texttt{di}} &  \\
-    ぢゃ & {\sffamily ぢゃ} & ja & \textred{\texttt{dya}} &  \\
-    ぢゅ & {\sffamily ぢゅ} & ju & \textred{\texttt{dyu}} &  \\
-    ぢょ & {\sffamily ぢょ} & jo & \textred{\texttt{dyo}} &  \\
-    つ & {\sffamily つ} & tsu & \textlightgrey{\texttt{tu}/}\texttt{tsu} & \ul{tsu}nami \\
-    づ & {\sffamily づ} & zu & \color{red} \texttt{du} &  \\
-    て & {\sffamily て} & te & \texttt{te} & \ul{te}lescope \\
-    で & {\sffamily で} & de & \texttt{de} &  \\
-    と & {\sffamily と} & to & \texttt{to} & \ul{to}e with splinter \\
-    ど & {\sffamily ど} & do & \texttt{do} &  \\
-    な & {\sffamily な} & na & \texttt{na} & \ul{nu}n praying to cross \\
-    に & {\sffamily に} & ni & \texttt{ni} & \ul{nee}dle \\
-    にゃ & {\sffamily にゃ} & nya & \texttt{nya} &  \\
-    にゅ & {\sffamily にゅ} & nyu & \texttt{nyu} &  \\
-    にょ & {\sffamily にょ} & nyo & \texttt{nyo} &  \\
-    ぬ & {\sffamily ぬ} & nu & \texttt{nu} & \ul{noo}dles \textbf{with tail} \\
-    ね & {\sffamily ね} & ne & \texttt{ne} & ねこ (\ul{ne}ko) \textbf{with tail} \\
-    の & {\sffamily の} & no & \texttt{no} & pig \ul{no}se \\
-    は & {\sffamily は} & ha/wa$^\dagger$ & \textred{\texttt{ha}} & ``Ha'' shape \\
-    ば & {\sffamily ば} & ba & \texttt{ba} &  \\
-    ぱ & {\sffamily ぱ} & pa & \texttt{pa} &  \\
-    ひ & {\sffamily ひ} & hi & \texttt{hi} & \ul{hee}l / \ul{he} has a big nose \\
-    ひゃ & {\sffamily ひゃ} & hya & \texttt{hya} &  \\
-    ひゅ & {\sffamily ひゅ} & hyu & \texttt{hyu} &  \\
-    ひょ & {\sffamily ひょ} & hyo & \texttt{hyo} &  \\
-    び & {\sffamily び} & bi & \texttt{bi} &  \\
-    びゃ & {\sffamily びゃ} & bya & \texttt{bya} &  \\
-    びゅ & {\sffamily びゅ} & byu & \texttt{byu} &  \\
-    びょ & {\sffamily びょ} & byo & \texttt{byo} &  \\
-    ぴ & {\sffamily ぴ} & pi & \texttt{pi} &  \\
-    ぴゃ & {\sffamily ぴゃ} & pya & \texttt{pya} &  \\
-    ぴゅ & {\sffamily ぴゅ} & pyu & \texttt{pyu} &  \\
-    ぴょ & {\sffamily ぴょ} & pyo & \texttt{pyo} &  \\
-    ふ & {\sffamily ふ} & fu & \textlightgrey{\texttt{hu}/}\texttt{fu} & Mount \ul{Fu}ji \\
-    ぶ & {\sffamily ぶ} & bu & \texttt{bu} &  \\
-    ぷ & {\sffamily ぷ} & pu & \texttt{pu} &  \\
-    へ & {\sffamily へ} & he/e$^\dagger$ & \textred{\texttt{he}} & \ul{he}adband / Mount St. \ul{He}lens \\
-    べ & {\sffamily べ} & be & \texttt{be} &  \\
-    ぺ & {\sffamily ぺ} & pe & \texttt{pe} &  \\
-    ほ & {\sffamily ほ} & ho & \texttt{ho} & mutated santa says \ul{ho} ho ho\\
-    ぼ & {\sffamily ぼ} & bo & \texttt{bo} &  \\
-    ぽ & {\sffamily ぽ} & po & \texttt{po} &  \\
-    ま & {\sffamily ま} & ma & \texttt{ma} & mutated mom with snake tail \\
-    み & {\sffamily み} & mi & \texttt{mi} & \ul{me} just turned 21 \\
-    みゃ & {\sffamily みゃ} & mya & \texttt{mya} &  \\
-    みゅ & {\sffamily みゅ} & myu & \texttt{myu} &  \\
-    みょ & {\sffamily みょ} & myo & \texttt{myo} &  \\
-    む & {\sffamily む} & mu & \texttt{mu} & cow says \ul{moo} \\
-    め & {\sffamily め} & me & \texttt{me} & eye shape \textbf{without tail} \\
-    も & {\sffamily も} & mo & \texttt{mo} & \ul{mo}re worms to catch \ul{mo}re fish \\
-    や & {\sffamily や} & ya & \texttt{ya} & \ul{ya}cht with anchor down \\
-    ゆ & {\sffamily ゆ} & yu & \texttt{yu} & \ul{u}-tensils \\
-    よ & {\sffamily よ} & yo & \texttt{yo} & ``yo'' shape \\
-    ら & {\sffamily ら} & ra & \texttt{ra} & \ul{ra}bbit \\
-    り & {\sffamily り} & ri & \texttt{ri} & reeds \\
-    りゃ & {\sffamily りゃ} & rya & \texttt{rya} &  \\
-    りゅ & {\sffamily りゅ} & ryu & \texttt{ryu} &  \\
-    りょ & {\sffamily りょ} & ryo & \texttt{ryo} &  \\
-    る & {\sffamily る} & ru & \texttt{ru} & weird \ul{rou}te \textbf{with tail} \\
-    れ & {\sffamily れ} & re & \texttt{re} & \ul{re}tching guy kneeled down \\
-    ろ & {\sffamily ろ} & ro & \texttt{ro} & normal \ul{ro}ad \textbf{without tail} \\
-    わ & {\sffamily わ} & wa & \texttt{wa} & \ul{wa}llaby / \ul{wa}sp \\
-    を & {\sffamily を} & wo/o$^\dagger$ & \texttt{wo} & \ul{wo}ah the water is cold \\
-    ん & {\sffamily ん} & nn & \textred{\texttt{nn}} & ``n'' shape \\
-    ぁ & {\sffamily ぁ} & ? & \textlightgrey{\texttt{la}/}\textred{\texttt{xa}} &  \\
-    ぃ & {\sffamily ぃ} & ? & \textlightgrey{\texttt{li}/}\textred{\texttt{xi}} &  \\
-    ぅ & {\sffamily ぅ} & ? & \textlightgrey{\texttt{lu}/}\textred{\texttt{xu}} &  \\
-    ぇ & {\sffamily ぇ} & ? & \textlightgrey{\texttt{le}/}\textred{\texttt{xe}} &  \\
-    ぉ & {\sffamily ぉ} & ? & \textlightgrey{\texttt{lo}/}\textred{\texttt{xo}} &  \\
-    ゃ & {\sffamily ゃ} & ? & \textlightgrey{\texttt{lya}/}\textred{\texttt{xya}} &  \\
-    ゅ & {\sffamily ゅ} & ? & \textlightgrey{\texttt{lyu}/}\textred{\texttt{xyu}} &  \\
-    ょ & {\sffamily ょ} & ? & \textlightgrey{\texttt{lyo}/}\textred{\texttt{xyo}} &  \\
-    っ & {\sffamily っ} & $^{\texttt{+1}}$\texttt{>} & \textlightgrey{\texttt{ltu}/\texttt{ltsu}/\textred{\texttt{xtsu}}/}repeat \texttt{>} &  \\* \bottomrule
+    \multicolumn{2}{c}{\multirow{2}{*}{\textbf{平仮名}}} & \textbf{Hepburn} & \textbf{Keyboard} & \multirow{2}{*}{\textbf{Mnemonic}} \\
+    \multicolumn{2}{c}{} & \textbf{romanisation} & \textbf{command} & \\* \midrule
+    あ & \emph{あ} & a & \texttt{a} & ``A'' shape \\
+    い & \emph{い} & i & \texttt{i} & \ul{ee}l \\
+    う & \emph{う} & u & \texttt{u} & ``u'' shape \\
+    え & \emph{え} & e & \texttt{e} & \ul{e}xotic swan \\
+    お & \emph{お} & o & \texttt{o} & double ``o'' shape \\
+    か & \emph{か} & ka & \texttt{ka} & 咖啡 \\
+    が & \emph{が} & ga & \texttt{ga} &  \\
+    き & \emph{き} & ki & \texttt{ki} & \ul{ke}y \\
+    きゃ & \emph{きゃ} & kya & \texttt{kya} &  \\
+    きゅ & \emph{きゅ} & kyu & \texttt{kyu} &  \\
+    きょ & \emph{きょ} & kyo & \texttt{kyo} &  \\
+    ぎ & \emph{ぎ} & gi & \texttt{gi} &  \\
+    ぎゃ & \emph{ぎゃ} & gya & \texttt{gya} &  \\
+    ぎゅ & \emph{ぎゅ} & gyu & \texttt{gyu} &  \\
+    ぎょ & \emph{ぎょ} & gyo & \texttt{gyo} &  \\
+    く & \emph{く} & ku & \texttt{ku} & bird \ul{ku}-ku \\
+    ぐ & \emph{ぐ} & gu & \texttt{gu} &  \\
+    け & \emph{け} & ke & \texttt{ke} & \ul{ke}lp (loose kelp) \\
+    げ & \emph{げ} & ge & \texttt{ge} &  \\
+    こ & \emph{こ} & ko & \texttt{ko} & \ul{co}-habiting worms \\
+    ご & \emph{ご} & go & \texttt{go} &  \\
+    さ & \emph{さ} & sa & \texttt{sa} & \ul{sa}lsa (two hand stir) / NOT ``5'' \\
+    ざ & \emph{ざ} & za & \texttt{za} &  \\
+    し & \emph{し} & shi & \textlightgrey{\texttt{si}/}\texttt{shi} & \ul{shee}p; shepherd's crook \\
+    しゃ & \emph{しゃ} & sha & \texttt{sha} &  \\
+    しゅ & \emph{しゅ} & shu & \texttt{shu} &  \\
+    しょ & \emph{しょ} & sho & \texttt{sho} &  \\
+    じ & \emph{じ} & ji & \textlightgrey{\texttt{zi}/}\texttt{ji} &  \\
+    じゃ & \emph{じゃ} & ja & \textlightgrey{\texttt{jya}/}\texttt{ja} &  \\
+    じゅ & \emph{じゅ} & ju & \textlightgrey{\texttt{jyu}/}\texttt{ju} &  \\
+    じょ & \emph{じょ} & jo & \textlightgrey{\texttt{jyo}/}\texttt{jo} &  \\
+    す & \emph{す} & su & \texttt{su} & \ul{sw}ing \\
+    ず & \emph{ず} & zu & \texttt{zu} & \\
+    せ & \emph{せ} & se & \texttt{se} & \ruby{世界}{せ|かい} \\
+    ぜ & \emph{ぜ} & ze & \texttt{ze} &  \\
+    そ & \emph{そ} & so & \texttt{so} & \ul{so}da / ``sword'' shape \\
+    ぞ & \emph{ぞ} & zo & \texttt{zo} &  \\
+    た & \emph{た} & ta & \texttt{ta} & ``ta'' shape \\
+    だ & \emph{だ} & da & \texttt{da} &  \\
+    ち & \emph{ち} & chi & \textlightgrey{\texttt{ti}/}\texttt{chi} & the ``5'' \\
+    ちゃ & \emph{ちゃ} & cha & \texttt{cha} &  \\
+    ちゅ & \emph{ちゅ} & chu & \texttt{chu} &  \\
+    ちょ & \emph{ちょ} & cho & \texttt{cho} &  \\
+    ぢ & \emph{ぢ} & ji & \textred{\texttt{di}} &  \\
+    ぢゃ & \emph{ぢゃ} & ja & \textred{\texttt{dya}} &  \\
+    ぢゅ & \emph{ぢゅ} & ju & \textred{\texttt{dyu}} &  \\
+    ぢょ & \emph{ぢょ} & jo & \textred{\texttt{dyo}} &  \\
+    つ & \emph{つ} & tsu & \textlightgrey{\texttt{tu}/}\texttt{tsu} & \ul{tsu}nami \\
+    づ & \emph{づ} & zu & \color{red} \texttt{du} &  \\
+    て & \emph{て} & te & \texttt{te} & \ul{te}lescope \\
+    で & \emph{で} & de & \texttt{de} &  \\
+    と & \emph{と} & to & \texttt{to} & \ul{to}e with splinter \\
+    ど & \emph{ど} & do & \texttt{do} &  \\
+    な & \emph{な} & na & \texttt{na} & \ul{nu}n praying to cross \\
+    に & \emph{に} & ni & \texttt{ni} & \ul{nee}dle \\
+    にゃ & \emph{にゃ} & nya & \texttt{nya} &  \\
+    にゅ & \emph{にゅ} & nyu & \texttt{nyu} &  \\
+    にょ & \emph{にょ} & nyo & \texttt{nyo} &  \\
+    ぬ & \emph{ぬ} & nu & \texttt{nu} & \ul{noo}dles \textbf{with tail} \\
+    ね & \emph{ね} & ne & \texttt{ne} & ねこ (\ul{ne}ko) \textbf{with tail} \\
+    の & \emph{の} & no & \texttt{no} & pig \ul{no}se \\
+    は & \emph{は} & ha/wa$^\dagger$ & \textred{\texttt{ha}} & ``Ha'' shape \\
+    ば & \emph{ば} & ba & \texttt{ba} &  \\
+    ぱ & \emph{ぱ} & pa & \texttt{pa} &  \\
+    ひ & \emph{ひ} & hi & \texttt{hi} & \ul{hee}l / \ul{he} has a big nose \\
+    ひゃ & \emph{ひゃ} & hya & \texttt{hya} &  \\
+    ひゅ & \emph{ひゅ} & hyu & \texttt{hyu} &  \\
+    ひょ & \emph{ひょ} & hyo & \texttt{hyo} &  \\
+    び & \emph{び} & bi & \texttt{bi} &  \\
+    びゃ & \emph{びゃ} & bya & \texttt{bya} &  \\
+    びゅ & \emph{びゅ} & byu & \texttt{byu} &  \\
+    びょ & \emph{びょ} & byo & \texttt{byo} &  \\
+    ぴ & \emph{ぴ} & pi & \texttt{pi} &  \\
+    ぴゃ & \emph{ぴゃ} & pya & \texttt{pya} &  \\
+    ぴゅ & \emph{ぴゅ} & pyu & \texttt{pyu} &  \\
+    ぴょ & \emph{ぴょ} & pyo & \texttt{pyo} &  \\
+    ふ & \emph{ふ} & fu & \textlightgrey{\texttt{hu}/}\texttt{fu} & Mount \ul{Fu}ji \\
+    ぶ & \emph{ぶ} & bu & \texttt{bu} &  \\
+    ぷ & \emph{ぷ} & pu & \texttt{pu} &  \\
+    へ & \emph{へ} & he/e$^\dagger$ & \textred{\texttt{he}} & \ul{he}adband / Mount St. \ul{He}lens \\
+    べ & \emph{べ} & be & \texttt{be} &  \\
+    ぺ & \emph{ぺ} & pe & \texttt{pe} &  \\
+    ほ & \emph{ほ} & ho & \texttt{ho} & mutated santa says \ul{ho} ho ho\\
+    ぼ & \emph{ぼ} & bo & \texttt{bo} &  \\
+    ぽ & \emph{ぽ} & po & \texttt{po} &  \\
+    ま & \emph{ま} & ma & \texttt{ma} & mutated mom with snake tail \\
+    み & \emph{み} & mi & \texttt{mi} & \ul{me} just turned 21 \\
+    みゃ & \emph{みゃ} & mya & \texttt{mya} &  \\
+    みゅ & \emph{みゅ} & myu & \texttt{myu} &  \\
+    みょ & \emph{みょ} & myo & \texttt{myo} &  \\
+    む & \emph{む} & mu & \texttt{mu} & cow says \ul{moo} \\
+    め & \emph{め} & me & \texttt{me} & eye shape \textbf{without tail} \\
+    も & \emph{も} & mo & \texttt{mo} & \ul{mo}re worms to catch \ul{mo}re fish \\
+    や & \emph{や} & ya & \texttt{ya} & \ul{ya}cht with anchor down \\
+    ゆ & \emph{ゆ} & yu & \texttt{yu} & \ul{u}-tensils \\
+    よ & \emph{よ} & yo & \texttt{yo} & ``yo'' shape \\
+    ら & \emph{ら} & ra & \texttt{ra} & \ul{ra}bbit \\
+    り & \emph{り} & ri & \texttt{ri} & reeds \\
+    りゃ & \emph{りゃ} & rya & \texttt{rya} &  \\
+    りゅ & \emph{りゅ} & ryu & \texttt{ryu} &  \\
+    りょ & \emph{りょ} & ryo & \texttt{ryo} &  \\
+    る & \emph{る} & ru & \texttt{ru} & weird \ul{rou}te \textbf{with tail} \\
+    れ & \emph{れ} & re & \texttt{re} & \ul{re}tching guy kneeled down \\
+    ろ & \emph{ろ} & ro & \texttt{ro} & normal \ul{ro}ad \textbf{without tail} \\
+    わ & \emph{わ} & wa & \texttt{wa} & \ul{wa}llaby / \ul{wa}sp \\
+    を & \emph{を} & wo/o$^\dagger$ & \texttt{wo} & \ul{wo}ah the water is cold \\
+    ん & \emph{ん} & nn & \textred{\texttt{nn}} & ``n'' shape \\
+    ぁ & \emph{ぁ} & ? & \textlightgrey{\texttt{la}/}\textred{\texttt{xa}} &  \\
+    ぃ & \emph{ぃ} & ? & \textlightgrey{\texttt{li}/}\textred{\texttt{xi}} &  \\
+    ぅ & \emph{ぅ} & ? & \textlightgrey{\texttt{lu}/}\textred{\texttt{xu}} &  \\
+    ぇ & \emph{ぇ} & ? & \textlightgrey{\texttt{le}/}\textred{\texttt{xe}} &  \\
+    ぉ & \emph{ぉ} & ? & \textlightgrey{\texttt{lo}/}\textred{\texttt{xo}} &  \\
+    ゃ & \emph{ゃ} & ? & \textlightgrey{\texttt{lya}/}\textred{\texttt{xya}} &  \\
+    ゅ & \emph{ゅ} & ? & \textlightgrey{\texttt{lyu}/}\textred{\texttt{xyu}} &  \\
+    ょ & \emph{ょ} & ? & \textlightgrey{\texttt{lyo}/}\textred{\texttt{xyo}} &  \\
+    っ & \emph{っ} & $^{\texttt{+1}}$\texttt{>} & \textlightgrey{\texttt{ltu}/\texttt{ltsu}/\textred{\texttt{xtsu}}/}repeat \texttt{>} &  \\* \bottomrule
     \caption{平仮名 mnemonic table. $^\dagger$Particle romanisations.}
     \label{tbl:hiragana-mnemonics} \\
 \end{longtable}
@@ -146,162 +144,162 @@ Some general notes:
 \subsubsection{Mnemonics}
 \begin{longtable}[c]{@{}ccccl@{}}
     \toprule
-    \multicolumn{2}{c}{\multirow{2}{*}{片仮名}} & Hepburn & Keyboard & \multirow{2}{*}{Mnemonic} \\
-    \multicolumn{2}{c}{} & romanisation & command & \\* \midrule
-    ア & {\sffamily ア} & a & \texttt{a} & ``A'' shape \\
-    イ & {\sffamily イ} & i & \texttt{i} & \ul{e}agle perched \\
-    \color{blue} イェ & \color{blue} {\sffamily イェ} & \color{blue} ye & \color{blue} \texttt{ye} & \\
-    ウ & {\sffamily ウ} & u & \texttt{u} & same shape as う \\
-    \color{blue} ウィ & \color{blue} {\sffamily ウィ} & \color{blue} wi & \color{blue} \texttt{wi} & \\
-    \color{blue} ウェ & \color{blue} {\sffamily ウェ} & \color{blue} we & \color{blue} \texttt{we} & \\
-    \color{blue} ウォ & \color{blue} {\sffamily ウォ} & \color{blue} wo & \color{red} \texttt{uxo} & \\
+    \multicolumn{2}{c}{\multirow{2}{*}{\textbf{片仮名}}} & \textbf{Hepburn} & \textbf{Keyboard} & \multirow{2}{*}{\textbf{Mnemonic}} \\
+    \multicolumn{2}{c}{} & \textbf{romanisation} & \textbf{command} & \\* \midrule
+    ア & \emph{ア} & a & \texttt{a} & ``A'' shape \\
+    イ & \emph{イ} & i & \texttt{i} & \ul{e}agle perched \\
+    \color{blue} イェ & \color{blue} \emph{イェ} & \color{blue} ye & \color{blue} \texttt{ye} & \\
+    ウ & \emph{ウ} & u & \texttt{u} & same shape as う \\
+    \color{blue} ウィ & \color{blue} \emph{ウィ} & \color{blue} wi & \color{blue} \texttt{wi} & \\
+    \color{blue} ウェ & \color{blue} \emph{ウェ} & \color{blue} we & \color{blue} \texttt{we} & \\
+    \color{blue} ウォ & \color{blue} \emph{ウォ} & \color{blue} wo & \color{red} \texttt{uxo} & \\
     % U R COOKED... https://en.wikipedia.org/wiki/Hepburn_romanization#Extended_katakana
-    \color{blue} ヴ & \color{blue} {\sffamily ヴ} & \color{blue} vu & \color{blue} \texttt{vu} & \\
-    \color{blue} ヴァ & \color{blue} {\sffamily ヴァ} & \color{blue} va & \color{blue} \texttt{va} & \\
-    \color{blue} ヴィ & \color{blue} {\sffamily ヴィ} & \color{blue} vi & \color{blue} \texttt{vi} & \\
-    \color{blue} ヴュ & \color{blue} {\sffamily ヴュ} & \color{blue} vyu & \color{blue} \texttt{vyu} & \\
-    \color{blue} ヴェ & \color{blue} {\sffamily ヴェ} & \color{blue} ve & \color{blue} \texttt{ve} & \\
-    \color{blue} ヴォ & \color{blue} {\sffamily ヴォ} & \color{blue} vo & \color{blue} \texttt{vo} & \\
-    エ & {\sffamily エ} & e & \texttt{e} & \ul{e}ngineer bar \\
-    オ & {\sffamily オ} & o & \texttt{o} & \ul{o}pera talent (才) singing \\
-    カ & {\sffamily カ} & ka & \texttt{ka} & same shape as か \\
-    ガ & {\sffamily ガ} & ga & \texttt{ga} &  \\
-    キ & {\sffamily キ} & ki & \texttt{ki} & same shape as き \\
-    キャ & {\sffamily キャ} & kya & \texttt{kya} &  \\
-    キュ & {\sffamily キュ} & kyu & \texttt{kyu} &  \\
-    キョ & {\sffamily キョ} & kyo & \texttt{kyo} &  \\
-    ギ & {\sffamily ギ} & gi & \texttt{gi} &  \\
-    ギャ & {\sffamily ギャ} & gya & \texttt{gya} &  \\
-    ギュ & {\sffamily ギュ} & gyu & \texttt{gyu} &  \\
-    ギョ & {\sffamily ギョ} & gyo & \texttt{gyo} &  \\
-    ク & {\sffamily ク} & ku & \texttt{ku} & \ul{coo}k's hat \\
-    \color{blue} クァ & \color{blue} {\sffamily クァ} & \color{blue} kwa & \color{blue} \texttt{kwa} & \\
-    \color{blue} クィ & \color{blue} {\sffamily クィ} & \color{blue} kwi & \color{blue} \texttt{kwi} & \\
-    \color{blue} クェ & \color{blue} {\sffamily クェ} & \color{blue} kwe & \color{blue} \texttt{kwe} & \\
-    \color{blue} クォ & \color{blue} {\sffamily クォ} & \color{blue} kwo & \color{blue} \texttt{kwo} & \\
-    グ & {\sffamily グ} & gu & \texttt{gu} &  \\
-    \color{blue} グァ & \color{blue} {\sffamily グァ} & \color{blue} gwa & \color{blue} \texttt{gwa} & \\
-    ケ & {\sffamily ケ} & ke & \texttt{ke} & ``k'' shape \\
-    ゲ & {\sffamily ゲ} & ge & \texttt{ge} &  \\
-    コ & {\sffamily コ} & ko & \texttt{ko} & broken 口 (CN) / two \ul{co}rners \\
-    ゴ & {\sffamily ゴ} & go & \texttt{go} &  \\
-    サ & {\sffamily サ} & sa & \texttt{sa} & \ul{sa}rdines and \ul{sa}lmon (bigger) \\
-    ザ & {\sffamily ザ} & za & \texttt{za} &  \\
-    シ & {\sffamily シ} & shi & \textlightgrey{\texttt{si}/}\texttt{shi} & same direction as し \\
-    シャ & {\sffamily シャ} & sha & \texttt{sha} &  \\
-    シュ & {\sffamily シュ} & shu & \texttt{shu} &  \\
-    \color{blue} シェ & \color{blue} {\sffamily シュ} & \color{blue} she & \color{blue} \texttt{she} &  \\
-    ショ & {\sffamily ショ} & sho & \texttt{sho} &  \\
-    ジ & {\sffamily ジ} & ji & \textlightgrey{\texttt{zi}/}\texttt{ji} &  \\
-    ジャ & {\sffamily ジャ} & ja & \textlightgrey{\texttt{jya}/}\texttt{ja} &  \\
-    ジュ & {\sffamily ジュ} & ju & \textlightgrey{\texttt{jyu}/}\texttt{ju} &  \\
-    \color{blue} ジェ & \color{blue} {\sffamily ジェ} & \color{blue} je & \color{blue} \textlightgrey{\texttt{jye}/}\texttt{je} &  \\
-    ジョ & {\sffamily ジョ} & jo & \textlightgrey{\texttt{jyo}/}\texttt{jo} &  \\
-    ス & {\sffamily ス} & su & \texttt{su} & \ul{su}perman \\
-    % \color{blue} スィ & \color{blue} {\sffamily スィ} & \color{blue} si & \color{red} \texttt{suxi} & \\
-    ズ & {\sffamily ズ} & zu & \texttt{zu} &  \\
-    % \color{blue} ズィ & \color{blue} {\sffamily ズィ} & \color{blue} zi & \color{red} \texttt{zuxi} & \\
-    セ & {\sffamily セ} & se & \texttt{se} & same shape as せ \\
-    ゼ & {\sffamily ゼ} & ze & \texttt{ze} &  \\
-    ソ & {\sffamily ソ} & so & \texttt{so} & \ul{se}wing needles \\
-    ゾ & {\sffamily ゾ} & zo & \texttt{zo} &  \\
-    タ & {\sffamily タ} & ta & \texttt{ta} & \ul{ti}dal wave \\
-    ダ & {\sffamily ダ} & da & \texttt{da} &  \\
-    チ & {\sffamily チ} & chi & \textlightgrey{\texttt{ti}/}\texttt{chi} & \ul{chee}r / \ruby{千}{ち} \\
-    チャ & {\sffamily チャ} & cha & \texttt{cha} &  \\
-    チュ & {\sffamily チュ} & chu & \texttt{chu} &  \\
-    \color{blue} チェ & \color{blue} {\sffamily チェ} & \color{blue} che & \color{blue} \texttt{che} &  \\
-    チョ & {\sffamily チョ} & cho & \texttt{cho} &  \\
-    ヂ & {\sffamily ヂ} & ji & \textred{\texttt{di}} &  \\
-    ヂャ & {\sffamily ヂャ} & ja & \textred{\texttt{dya}} &  \\
-    ヂュ & {\sffamily ヂュ} & ju & \textred{\texttt{dyu}} &  \\
-    ヂョ & {\sffamily ヂョ} & jo & \textred{\texttt{dyo}} &  \\
-    ツ & {\sffamily ツ} & tsu & \textlightgrey{\texttt{tu}/}\texttt{tsu} & same direction as つ \\
-    \color{blue} ツァ & \color{blue} {\sffamily ツァ} & \color{blue} tsa & \color{blue} \texttt{tsa} & \emph{Italian ``z''}\\
-    \color{blue} ツィ & \color{blue} {\sffamily ツィ} & \color{blue} tsi & \color{blue} \texttt{tsi} & \emph{Italian ``z''}\\
-    \color{blue} ツェ & \color{blue} {\sffamily ツェ} & \color{blue} tse & \color{blue} \texttt{tse} & \emph{Italian ``z''}\\
-    \color{blue} ツォ & \color{blue} {\sffamily ツォ} & \color{blue} tso & \color{blue} \texttt{tso} & \emph{Italian ``z''}\\
-    ヅ & {\sffamily ヅ} & zu & \color{red} \texttt{du} &  \\
-    テ & {\sffamily テ} & te & \texttt{te} & \ul{te}lephone pole \\
-    \color{blue} ティ & \color{blue}{\sffamily ティ} & \color{blue} ti & \color{red} \texttt{texi} & \emph{``par\ul{ty}''}\\
-    \color{blue} テュ & \color{blue}{\sffamily ティ} & \color{blue} tyu & \color{red} \texttt{texyu} & \\
-    デ & {\sffamily デ} & de & \texttt{de} &  \\
-    \color{blue} ディ & \color{blue}{\sffamily ディ} & \color{blue} di & \color{red} \texttt{dexi} & \emph{``can\ul{dy}''}\\
-    \color{blue} デュ & \color{blue}{\sffamily デュ} & \color{blue} dyu & \color{red} \texttt{dexyu} & \\
-    ト & {\sffamily ト} & to & \texttt{to} & \ul{to}tem pole \\
-    \color{blue} トゥ & \color{blue}{\sffamily トゥ} & \color{blue} tu & \color{red} \texttt{toxu} & \emph{``two''}\\
-    ド & {\sffamily ド} & do & \texttt{do} &  \\
-    \color{blue} ドゥ & \color{blue}{\sffamily ドゥ} & \color{blue} du & \color{red} \texttt{dowu} & \emph{``dew''}\\
-    ナ & {\sffamily ナ} & na & \texttt{na} & \ul{na}rwhal \\
-    ニ & {\sffamily ニ} & ni & \texttt{ni} & same shape as に \\
-    ニャ & {\sffamily ニャ} & nya & \texttt{nya} &  \\
-    ニュ & {\sffamily ニュ} & nyu & \texttt{nyu} &  \\
-    ニョ & {\sffamily ニョ} & nyo & \texttt{nyo} &  \\
-    ヌ & {\sffamily ヌ} & nu & \texttt{nu} & \ul{noo}dles with chopsticks \\
-    ネ & {\sffamily ネ} & ne & \texttt{ne} & \ul{ne}ckerchief \\
-    ノ & {\sffamily ノ} & no & \texttt{no} & long \ul{no}se \\
-    ハ & {\sffamily ハ} & ha & \textred{\texttt{ha}} & \ruby{八}{ハチ} / 八 (CN) \\
-    バ & {\sffamily バ} & ba & \texttt{ba} &  \\
-    パ & {\sffamily パ} & pa & \texttt{pa} &  \\
-    ヒ & {\sffamily ヒ} & hi & \texttt{hi} & smile \ul{he}he \\
-    ヒャ & {\sffamily ヒャ} & hya & \texttt{hya} &  \\
-    ヒュ & {\sffamily ヒュ} & hyu & \texttt{hyu} &  \\
-    ヒョ & {\sffamily ヒョ} & hyo & \texttt{hyo} &  \\
-    ビ & {\sffamily ビ} & bi & \texttt{bi} &  \\
-    ビャ & {\sffamily ビャ} & bya & \texttt{bya} &  \\
-    ビュ & {\sffamily ビュ} & byu & \texttt{byu} &  \\
-    ビョ & {\sffamily ビョ} & byo & \texttt{byo} &  \\
-    ピ & {\sffamily ピ} & pi & \texttt{pi} &  \\
-    ピャ & {\sffamily ピャ} & pya & \texttt{pya} &  \\
-    ピュ & {\sffamily ピュ} & pyu & \texttt{pyu} &  \\
-    ピョ & {\sffamily ピョ} & pyo & \texttt{pyo} &  \\
-    フ & {\sffamily フ} & fu & \textlightgrey{\texttt{hu}/}\texttt{fu} & \ul{fl}ag \\
-    \color{blue} ファ & \color{blue} {\sffamily ファ} & \color{blue} fa & \color{blue} \texttt{fa} & \\
-    \color{blue} フィ & \color{blue} {\sffamily フィ} & \color{blue} fi & \color{blue} \texttt{fi} & \\
-    \color{blue} フュ & \color{blue} {\sffamily フュ} & \color{blue} fyu & \color{blue} \texttt{fyu} & \\
-    \color{blue} フェ & \color{blue} {\sffamily フェ} & \color{blue} fe & \color{blue} \texttt{fe} & \\
-    \color{blue} フォ & \color{blue} {\sffamily フォ} & \color{blue} fo & \color{blue} \texttt{fo} & \\
-    ブ & {\sffamily ブ} & bu & \texttt{bu} &  \\
-    プ & {\sffamily プ} & pu & \texttt{pu} &  \\
-    ヘ & {\sffamily ヘ} & he & \textred{\texttt{he}} & same shape as へ \\
-    ベ & {\sffamily ベ} & be & \texttt{be} &  \\
-    ペ & {\sffamily ペ} & pe & \texttt{pe} &  \\
-    ホ & {\sffamily ホ} & ho & \texttt{ho} & \ul{ho}ly cross \\
-    % \color{blue} ホゥ & \color{blue} {\sffamily ホゥ} & \color{blue} hu & \color{red} \texttt{hoxu} & \\
-    ボ & {\sffamily ボ} & bo & \texttt{bo} &  \\
-    ポ & {\sffamily ポ} & po & \texttt{po} &  \\
-    マ & {\sffamily マ} & ma & \texttt{ma} & \ul{ma}th angles \\
-    ミ & {\sffamily ミ} & mi & \texttt{mi} & \ul{mi}ssiles \\
-    ミャ & {\sffamily ミャ} & mya & \texttt{mya} &  \\
-    ミュ & {\sffamily ミュ} & myu & \texttt{myu} &  \\
-    ミョ & {\sffamily ミョ} & myo & \texttt{myo} &  \\
-    ム & {\sffamily ム} & mu & \texttt{mu} & cow face, says \ul{moo} \\
-    メ & {\sffamily メ} & me & \texttt{me} & Arlecchino's eyes (め) \\
-    モ & {\sffamily モ} & mo & \texttt{mo} & same shape as も \\
-    ヤ & {\sffamily ヤ} & ya & \texttt{ya} & same shape as や \\
-    ユ & {\sffamily ユ} & yu & \texttt{yu} & \ul{u}-turn \\
-    ヨ & {\sffamily ヨ} & yo & \texttt{yo} & \ul{yo}ga pose \\
-    ラ & {\sffamily ラ} & ra & \texttt{ra} & \ul{ra}ptor \\
-    リ & {\sffamily リ} & ri & \texttt{ri} & reeds \\
-    リャ & {\sffamily リャ} & rya & \texttt{rya} &  \\
-    リュ & {\sffamily リュ} & ryu & \texttt{ryu} &  \\
-    リョ & {\sffamily リョ} & ryo & \texttt{ryo} &  \\
-    ル & {\sffamily ル} & ru & \texttt{ru} & tree \ul{roo}ts \\
-    レ & {\sffamily レ} & re & \texttt{re} & \ul{re}d hair / right side of ル \\
-    ロ & {\sffamily ロ} & ro & \texttt{ro} & cyclic \ul{ro}ad \\
-    ワ & {\sffamily ワ} & wa & \texttt{wa} & \ul{wa}termelon slice \\
-    ヲ & {\sffamily ヲ} & wo & \texttt{wo} & \ul{o}atmeal bowl \\
-    ン & {\sffamily ン} & nn & \textred{\texttt{nn}} & N/A \\
-    ァ & {\sffamily ァ} & ? & \textlightgrey{\texttt{la}/}\textred{\texttt{xa}} &  \\
-    ィ & {\sffamily ィ} & ? & \textlightgrey{\texttt{li}/}\textred{\texttt{xi}} &  \\
-    ゥ & {\sffamily ゥ} & ? & \textlightgrey{\texttt{lu}/}\textred{\texttt{xu}} &  \\
-    ェ & {\sffamily ェ} & ? & \textlightgrey{\texttt{le}/}\textred{\texttt{xe}} &  \\
-    ォ & {\sffamily ォ} & ? & \textlightgrey{\texttt{lo}/}\textred{\texttt{xo}} &  \\
-    ャ & {\sffamily ャ} & ? & \textlightgrey{\texttt{lya}/}\textred{\texttt{xya}} &  \\
-    ュ & {\sffamily ュ} & ? & \textlightgrey{\texttt{lyu}/}\textred{\texttt{xyu}} &  \\
-    ョ & {\sffamily ョ} & ? & \textlightgrey{\texttt{lyo}/}\textred{\texttt{xyo}} &  \\
-    ー & {\sffamily ー} & \texttt{<}$^{\texttt{+1}}$ & \textred{\texttt{$-$} key} &  \\
-    ッ & {\sffamily ッ} & $^{\texttt{+1}}$\texttt{>} & \textlightgrey{\texttt{ltu}/\texttt{ltsu}/\textred{\texttt{xtsu}}/}repeat \texttt{>} &  \\* \bottomrule
+    \color{blue} ヴ & \color{blue} \emph{ヴ} & \color{blue} vu & \color{blue} \texttt{vu} & \\
+    \color{blue} ヴァ & \color{blue} \emph{ヴァ} & \color{blue} va & \color{blue} \texttt{va} & \\
+    \color{blue} ヴィ & \color{blue} \emph{ヴィ} & \color{blue} vi & \color{blue} \texttt{vi} & \\
+    \color{blue} ヴュ & \color{blue} \emph{ヴュ} & \color{blue} vyu & \color{blue} \texttt{vyu} & \\
+    \color{blue} ヴェ & \color{blue} \emph{ヴェ} & \color{blue} ve & \color{blue} \texttt{ve} & \\
+    \color{blue} ヴォ & \color{blue} \emph{ヴォ} & \color{blue} vo & \color{blue} \texttt{vo} & \\
+    エ & \emph{エ} & e & \texttt{e} & \ul{e}ngineer bar \\
+    オ & \emph{オ} & o & \texttt{o} & \ul{o}pera talent (才) singing \\
+    カ & \emph{カ} & ka & \texttt{ka} & same shape as か \\
+    ガ & \emph{ガ} & ga & \texttt{ga} &  \\
+    キ & \emph{キ} & ki & \texttt{ki} & same shape as き \\
+    キャ & \emph{キャ} & kya & \texttt{kya} &  \\
+    キュ & \emph{キュ} & kyu & \texttt{kyu} &  \\
+    キョ & \emph{キョ} & kyo & \texttt{kyo} &  \\
+    ギ & \emph{ギ} & gi & \texttt{gi} &  \\
+    ギャ & \emph{ギャ} & gya & \texttt{gya} &  \\
+    ギュ & \emph{ギュ} & gyu & \texttt{gyu} &  \\
+    ギョ & \emph{ギョ} & gyo & \texttt{gyo} &  \\
+    ク & \emph{ク} & ku & \texttt{ku} & \ul{coo}k's hat \\
+    \color{blue} クァ & \color{blue} \emph{クァ} & \color{blue} kwa & \color{blue} \texttt{kwa} & \\
+    \color{blue} クィ & \color{blue} \emph{クィ} & \color{blue} kwi & \color{blue} \texttt{kwi} & \\
+    \color{blue} クェ & \color{blue} \emph{クェ} & \color{blue} kwe & \color{blue} \texttt{kwe} & \\
+    \color{blue} クォ & \color{blue} \emph{クォ} & \color{blue} kwo & \color{blue} \texttt{kwo} & \\
+    グ & \emph{グ} & gu & \texttt{gu} &  \\
+    \color{blue} グァ & \color{blue} \emph{グァ} & \color{blue} gwa & \color{blue} \texttt{gwa} & \\
+    ケ & \emph{ケ} & ke & \texttt{ke} & ``k'' shape \\
+    ゲ & \emph{ゲ} & ge & \texttt{ge} &  \\
+    コ & \emph{コ} & ko & \texttt{ko} & broken 口 (CN) / two \ul{co}rners \\
+    ゴ & \emph{ゴ} & go & \texttt{go} &  \\
+    サ & \emph{サ} & sa & \texttt{sa} & \ul{sa}rdines and \ul{sa}lmon (bigger) \\
+    ザ & \emph{ザ} & za & \texttt{za} &  \\
+    シ & \emph{シ} & shi & \textlightgrey{\texttt{si}/}\texttt{shi} & same direction as し \\
+    シャ & \emph{シャ} & sha & \texttt{sha} &  \\
+    シュ & \emph{シュ} & shu & \texttt{shu} &  \\
+    \color{blue} シェ & \color{blue} \emph{シュ} & \color{blue} she & \color{blue} \texttt{she} &  \\
+    ショ & \emph{ショ} & sho & \texttt{sho} &  \\
+    ジ & \emph{ジ} & ji & \textlightgrey{\texttt{zi}/}\texttt{ji} &  \\
+    ジャ & \emph{ジャ} & ja & \textlightgrey{\texttt{jya}/}\texttt{ja} &  \\
+    ジュ & \emph{ジュ} & ju & \textlightgrey{\texttt{jyu}/}\texttt{ju} &  \\
+    \color{blue} ジェ & \color{blue} \emph{ジェ} & \color{blue} je & \color{blue} \textlightgrey{\texttt{jye}/}\texttt{je} &  \\
+    ジョ & \emph{ジョ} & jo & \textlightgrey{\texttt{jyo}/}\texttt{jo} &  \\
+    ス & \emph{ス} & su & \texttt{su} & \ul{su}perman \\
+    % \color{blue} スィ & \color{blue} \emph{スィ} & \color{blue} si & \color{red} \texttt{suxi} & \\
+    ズ & \emph{ズ} & zu & \texttt{zu} &  \\
+    % \color{blue} ズィ & \color{blue} \emph{ズィ} & \color{blue} zi & \color{red} \texttt{zuxi} & \\
+    セ & \emph{セ} & se & \texttt{se} & same shape as せ \\
+    ゼ & \emph{ゼ} & ze & \texttt{ze} &  \\
+    ソ & \emph{ソ} & so & \texttt{so} & \ul{se}wing needles \\
+    ゾ & \emph{ゾ} & zo & \texttt{zo} &  \\
+    タ & \emph{タ} & ta & \texttt{ta} & \ul{ti}dal wave \\
+    ダ & \emph{ダ} & da & \texttt{da} &  \\
+    チ & \emph{チ} & chi & \textlightgrey{\texttt{ti}/}\texttt{chi} & \ul{chee}r / \ruby{千}{ち} \\
+    チャ & \emph{チャ} & cha & \texttt{cha} &  \\
+    チュ & \emph{チュ} & chu & \texttt{chu} &  \\
+    \color{blue} チェ & \color{blue} \emph{チェ} & \color{blue} che & \color{blue} \texttt{che} &  \\
+    チョ & \emph{チョ} & cho & \texttt{cho} &  \\
+    ヂ & \emph{ヂ} & ji & \textred{\texttt{di}} &  \\
+    ヂャ & \emph{ヂャ} & ja & \textred{\texttt{dya}} &  \\
+    ヂュ & \emph{ヂュ} & ju & \textred{\texttt{dyu}} &  \\
+    ヂョ & \emph{ヂョ} & jo & \textred{\texttt{dyo}} &  \\
+    ツ & \emph{ツ} & tsu & \textlightgrey{\texttt{tu}/}\texttt{tsu} & same direction as つ \\
+    \color{blue} ツァ & \color{blue} \emph{ツァ} & \color{blue} tsa & \color{blue} \texttt{tsa} & \emph{Italian ``z''}\\
+    \color{blue} ツィ & \color{blue} \emph{ツィ} & \color{blue} tsi & \color{blue} \texttt{tsi} & \emph{Italian ``z''}\\
+    \color{blue} ツェ & \color{blue} \emph{ツェ} & \color{blue} tse & \color{blue} \texttt{tse} & \emph{Italian ``z''}\\
+    \color{blue} ツォ & \color{blue} \emph{ツォ} & \color{blue} tso & \color{blue} \texttt{tso} & \emph{Italian ``z''}\\
+    ヅ & \emph{ヅ} & zu & \color{red} \texttt{du} &  \\
+    テ & \emph{テ} & te & \texttt{te} & \ul{te}lephone pole \\
+    \color{blue} ティ & \color{blue}\emph{ティ} & \color{blue} ti & \color{red} \texttt{texi} & \emph{``par\ul{ty}''}\\
+    \color{blue} テュ & \color{blue}\emph{ティ} & \color{blue} tyu & \color{red} \texttt{texyu} & \\
+    デ & \emph{デ} & de & \texttt{de} &  \\
+    \color{blue} ディ & \color{blue}\emph{ディ} & \color{blue} di & \color{red} \texttt{dexi} & \emph{``can\ul{dy}''}\\
+    \color{blue} デュ & \color{blue}\emph{デュ} & \color{blue} dyu & \color{red} \texttt{dexyu} & \\
+    ト & \emph{ト} & to & \texttt{to} & \ul{to}tem pole \\
+    \color{blue} トゥ & \color{blue}\emph{トゥ} & \color{blue} tu & \color{red} \texttt{toxu} & \emph{``two''}\\
+    ド & \emph{ド} & do & \texttt{do} &  \\
+    \color{blue} ドゥ & \color{blue}\emph{ドゥ} & \color{blue} du & \color{red} \texttt{dowu} & \emph{``dew''}\\
+    ナ & \emph{ナ} & na & \texttt{na} & \ul{na}rwhal \\
+    ニ & \emph{ニ} & ni & \texttt{ni} & same shape as に \\
+    ニャ & \emph{ニャ} & nya & \texttt{nya} &  \\
+    ニュ & \emph{ニュ} & nyu & \texttt{nyu} &  \\
+    ニョ & \emph{ニョ} & nyo & \texttt{nyo} &  \\
+    ヌ & \emph{ヌ} & nu & \texttt{nu} & \ul{noo}dles with chopsticks \\
+    ネ & \emph{ネ} & ne & \texttt{ne} & \ul{ne}ckerchief \\
+    ノ & \emph{ノ} & no & \texttt{no} & long \ul{no}se \\
+    ハ & \emph{ハ} & ha & \textred{\texttt{ha}} & \ruby{八}{ハチ} / 八 (CN) \\
+    バ & \emph{バ} & ba & \texttt{ba} &  \\
+    パ & \emph{パ} & pa & \texttt{pa} &  \\
+    ヒ & \emph{ヒ} & hi & \texttt{hi} & smile \ul{he}he \\
+    ヒャ & \emph{ヒャ} & hya & \texttt{hya} &  \\
+    ヒュ & \emph{ヒュ} & hyu & \texttt{hyu} &  \\
+    ヒョ & \emph{ヒョ} & hyo & \texttt{hyo} &  \\
+    ビ & \emph{ビ} & bi & \texttt{bi} &  \\
+    ビャ & \emph{ビャ} & bya & \texttt{bya} &  \\
+    ビュ & \emph{ビュ} & byu & \texttt{byu} &  \\
+    ビョ & \emph{ビョ} & byo & \texttt{byo} &  \\
+    ピ & \emph{ピ} & pi & \texttt{pi} &  \\
+    ピャ & \emph{ピャ} & pya & \texttt{pya} &  \\
+    ピュ & \emph{ピュ} & pyu & \texttt{pyu} &  \\
+    ピョ & \emph{ピョ} & pyo & \texttt{pyo} &  \\
+    フ & \emph{フ} & fu & \textlightgrey{\texttt{hu}/}\texttt{fu} & \ul{fl}ag \\
+    \color{blue} ファ & \color{blue} \emph{ファ} & \color{blue} fa & \color{blue} \texttt{fa} & \\
+    \color{blue} フィ & \color{blue} \emph{フィ} & \color{blue} fi & \color{blue} \texttt{fi} & \\
+    \color{blue} フュ & \color{blue} \emph{フュ} & \color{blue} fyu & \color{blue} \texttt{fyu} & \\
+    \color{blue} フェ & \color{blue} \emph{フェ} & \color{blue} fe & \color{blue} \texttt{fe} & \\
+    \color{blue} フォ & \color{blue} \emph{フォ} & \color{blue} fo & \color{blue} \texttt{fo} & \\
+    ブ & \emph{ブ} & bu & \texttt{bu} &  \\
+    プ & \emph{プ} & pu & \texttt{pu} &  \\
+    ヘ & \emph{ヘ} & he & \textred{\texttt{he}} & same shape as へ \\
+    ベ & \emph{ベ} & be & \texttt{be} &  \\
+    ペ & \emph{ペ} & pe & \texttt{pe} &  \\
+    ホ & \emph{ホ} & ho & \texttt{ho} & \ul{ho}ly cross \\
+    % \color{blue} ホゥ & \color{blue} \emph{ホゥ} & \color{blue} hu & \color{red} \texttt{hoxu} & \\
+    ボ & \emph{ボ} & bo & \texttt{bo} &  \\
+    ポ & \emph{ポ} & po & \texttt{po} &  \\
+    マ & \emph{マ} & ma & \texttt{ma} & \ul{ma}th angles \\
+    ミ & \emph{ミ} & mi & \texttt{mi} & \ul{mi}ssiles \\
+    ミャ & \emph{ミャ} & mya & \texttt{mya} &  \\
+    ミュ & \emph{ミュ} & myu & \texttt{myu} &  \\
+    ミョ & \emph{ミョ} & myo & \texttt{myo} &  \\
+    ム & \emph{ム} & mu & \texttt{mu} & cow face, says \ul{moo} \\
+    メ & \emph{メ} & me & \texttt{me} & Arlecchino's eyes (め) \\
+    モ & \emph{モ} & mo & \texttt{mo} & same shape as も \\
+    ヤ & \emph{ヤ} & ya & \texttt{ya} & same shape as や \\
+    ユ & \emph{ユ} & yu & \texttt{yu} & \ul{u}-turn \\
+    ヨ & \emph{ヨ} & yo & \texttt{yo} & \ul{yo}ga pose \\
+    ラ & \emph{ラ} & ra & \texttt{ra} & \ul{ra}ptor \\
+    リ & \emph{リ} & ri & \texttt{ri} & reeds \\
+    リャ & \emph{リャ} & rya & \texttt{rya} &  \\
+    リュ & \emph{リュ} & ryu & \texttt{ryu} &  \\
+    リョ & \emph{リョ} & ryo & \texttt{ryo} &  \\
+    ル & \emph{ル} & ru & \texttt{ru} & tree \ul{roo}ts \\
+    レ & \emph{レ} & re & \texttt{re} & \ul{re}d hair / right side of ル \\
+    ロ & \emph{ロ} & ro & \texttt{ro} & cyclic \ul{ro}ad \\
+    ワ & \emph{ワ} & wa & \texttt{wa} & \ul{wa}termelon slice \\
+    ヲ & \emph{ヲ} & wo & \texttt{wo} & \ul{o}atmeal bowl \\
+    ン & \emph{ン} & nn & \textred{\texttt{nn}} & N/A \\
+    ァ & \emph{ァ} & ? & \textlightgrey{\texttt{la}/}\textred{\texttt{xa}} &  \\
+    ィ & \emph{ィ} & ? & \textlightgrey{\texttt{li}/}\textred{\texttt{xi}} &  \\
+    ゥ & \emph{ゥ} & ? & \textlightgrey{\texttt{lu}/}\textred{\texttt{xu}} &  \\
+    ェ & \emph{ェ} & ? & \textlightgrey{\texttt{le}/}\textred{\texttt{xe}} &  \\
+    ォ & \emph{ォ} & ? & \textlightgrey{\texttt{lo}/}\textred{\texttt{xo}} &  \\
+    ャ & \emph{ャ} & ? & \textlightgrey{\texttt{lya}/}\textred{\texttt{xya}} &  \\
+    ュ & \emph{ュ} & ? & \textlightgrey{\texttt{lyu}/}\textred{\texttt{xyu}} &  \\
+    ョ & \emph{ョ} & ? & \textlightgrey{\texttt{lyo}/}\textred{\texttt{xyo}} &  \\
+    ー & \emph{ー} & \texttt{<}$^{\texttt{+1}}$ & \textred{\texttt{$-$} key} &  \\
+    ッ & \emph{ッ} & $^{\texttt{+1}}$\texttt{>} & \textlightgrey{\texttt{ltu}/\texttt{ltsu}/\textred{\texttt{xtsu}}/}repeat \texttt{>} &  \\* \bottomrule
     \caption{片仮名 mnemonic table. Some entries were taken from \href{https://en.wikipedia.org/wiki/Hepburn_romanization\#Extended_katakana}{Wikipedia (Hepburn Romanisation)} but only the orange and blue ones are taken, since the beige and purple ones are regarded as unofficial (by me).}
     \label{tbl:katakana-mnemonics} \\
 \end{longtable}
@@ -310,161 +308,162 @@ Some general notes:
 \subsection{仮名 Summary}
 \begin{longtable}[c]{@{}cccccc@{}}
     \toprule
-    \multicolumn{2}{c}{\multirow{2}{*}{平仮名}} & \multicolumn{2}{c}{\multirow{2}{*}{片仮名}} & Hepburn & Keyboard \\
-    \multicolumn{2}{c}{} & \multicolumn{2}{c}{} & romanisation & command \\* \midrule
-    あ & {\sffamily あ} & ア & {\sffamily ア} & a & \texttt{a} \\
-    い & {\sffamily い} & イ & {\sffamily イ} & i & \texttt{i}\\
- & {\sffamily } & イェ & {\sffamily イェ} & ye & \texttt{ye} \\
-    う & {\sffamily う} & ウ & {\sffamily ウ} & u & \texttt{u} \\
- & {\sffamily } & ウィ & {\sffamily ウィ} & wi & \texttt{wi} \\
- & {\sffamily } & ウェ & {\sffamily ウェ} & we & \texttt{we} \\
- & {\sffamily } & ウォ & {\sffamily ウォ} & wo & \color{red} \texttt{uxo} \\
- & {\sffamily } & ヴ & {\sffamily ヴ} & vu & \texttt{vu} \\
- & {\sffamily } & ヴァ & {\sffamily ヴァ} & va & \texttt{va} \\
- & {\sffamily } & ヴィ & {\sffamily ヴィ} & vi & \texttt{vi} \\
- & {\sffamily } & ヴュ & {\sffamily ヴュ} & vyu & \texttt{vyu} \\
- & {\sffamily } & ヴェ & {\sffamily ヴェ} & ve & \texttt{ve} \\
- & {\sffamily } & ヴォ & {\sffamily ヴォ} & vo & \texttt{vo} \\
-    え & {\sffamily え} & エ & {\sffamily エ} & e & \texttt{e} \\
-    お & {\sffamily お} & オ & {\sffamily オ} & o & \texttt{o} \\
-    か & {\sffamily か} & カ & {\sffamily カ} & ka & \texttt{ka} \\
-    が & {\sffamily が} & ガ & {\sffamily ガ} & ga & \texttt{ga} \\
-    き & {\sffamily き} & キ & {\sffamily キ} & ki & \texttt{ki} \\
-    きゃ & {\sffamily きゃ} & キャ & {\sffamily キャ} & kya & \texttt{kya} \\
-    きゅ & {\sffamily きゅ} & キュ & {\sffamily キュ} & kyu & \texttt{kyu} \\
-    きょ & {\sffamily きょ} & キョ & {\sffamily キョ} & kyo & \texttt{kyo} \\
-    ぎ & {\sffamily ぎ} & ギ & {\sffamily ギ} & gi & \texttt{gi} \\
-    ぎゃ & {\sffamily ぎゃ} & ギャ & {\sffamily ギャ} & gya & \texttt{gya} \\
-    ぎゅ & {\sffamily ぎゅ} & ギュ & {\sffamily ギュ} & gyu & \texttt{gyu} \\
-    ぎょ & {\sffamily ぎょ} & ギョ & {\sffamily ギョ} & gyo & \texttt{gyo} \\
-    く & {\sffamily く} & ク & {\sffamily ク} & ku & \texttt{ku} \\
- & {\sffamily } & クァ & {\sffamily クァ} & kwa & \texttt{kwa} \\
- & {\sffamily } & クィ & {\sffamily クィ} & kwi & \texttt{kwi} \\
- & {\sffamily } & クェ & {\sffamily クェ} & kwe & \texttt{kwe} \\
- & {\sffamily } & クォ & {\sffamily クォ} & kwo & \texttt{kwo} \\
-    ぐ & {\sffamily ぐ} & グ & {\sffamily グ} & gu & \texttt{gu} \\
- & {\sffamily } & グァ & {\sffamily グァ} & gwa & \texttt{gwa} \\
-    け & {\sffamily け} & ケ & {\sffamily ケ} & ke & \texttt{ke} \\
-    げ & {\sffamily げ} & ゲ & {\sffamily ゲ} & ge & \texttt{ge} \\
-    こ & {\sffamily こ} & コ & {\sffamily コ} & ko & \texttt{ko} \\
-    ご & {\sffamily ご} & ゴ & {\sffamily ゴ} & go & \texttt{go} \\
-    さ & {\sffamily さ} & サ & {\sffamily サ} & sa & \texttt{sa} \\
-    ざ & {\sffamily ざ} & ザ & {\sffamily ザ} & za & \texttt{za} \\
-    し & {\sffamily し} & シ & {\sffamily シ} & shi & \textlightgrey{\texttt{si}/}\texttt{shi} \\
-    しゃ & {\sffamily しゃ} & シャ & {\sffamily シャ} & sha & \texttt{sha} \\
-    しゅ & {\sffamily しゅ} & シュ & {\sffamily シュ} & shu & \texttt{shu} \\
-     & {\sffamily } & シェ & {\sffamily シュ} & she & \texttt{she} \\
-    しょ & {\sffamily しょ} & ショ & {\sffamily ショ} & sho & \texttt{sho} \\
-    じ & {\sffamily じ} & ジ & {\sffamily ジ} & ji & \textlightgrey{\texttt{zi}/}\texttt{ji} \\
-    じゃ & {\sffamily じゃ} & ジャ & {\sffamily ジャ} & ja & \textlightgrey{\texttt{jya}/}\texttt{ja} \\
-    じゅ & {\sffamily じゅ} & ジュ & {\sffamily ジュ} & ju & \textlightgrey{\texttt{jyu}/}\texttt{ju} \\
-     & {\sffamily } & ジェ & {\sffamily ジェ} & je & \textlightgrey{\texttt{jye}/}\texttt{je} \\
-    じょ & {\sffamily じょ} & ジョ & {\sffamily ジョ} & jo & \textlightgrey{\texttt{jyo}/}\texttt{jo} \\
-    す & {\sffamily す} & ス & {\sffamily ス} & su & \texttt{su} \\
-     % & {\sffamily } & スィ & {\sffamily スィ} & si & \color{red} \texttt{suxi} \\
-    ず & {\sffamily ず} & ズ & {\sffamily ズ} & zu & \texttt{zu} \\
-     % & {\sffamily } & ズィ & {\sffamily ズィ} & zi & \color{red} \texttt{zuxi} \\
-    せ & {\sffamily せ} & セ & {\sffamily セ} & se & \texttt{se} \\
-    ぜ & {\sffamily ぜ} & ゼ & {\sffamily ゼ} & ze & \texttt{ze} \\
-    そ & {\sffamily そ} & ソ & {\sffamily ソ} & so & \texttt{so} \\
-    ぞ & {\sffamily ぞ} & ゾ & {\sffamily ゾ} & zo & \texttt{zo} \\
-    た & {\sffamily た} & タ & {\sffamily タ} & ta & \texttt{ta} \\
-    だ & {\sffamily だ} & ダ & {\sffamily ダ} & da & \texttt{da} \\
-    ち & {\sffamily ち} & チ & {\sffamily チ} & chi & \textlightgrey{\texttt{ti}/}\texttt{chi} \\
-    ちゃ & {\sffamily ちゃ} & チャ & {\sffamily チャ} & cha & \texttt{cha} \\
-    ちゅ & {\sffamily ちゅ} & チュ & {\sffamily チュ} & chu & \texttt{chu} \\
-     & {\sffamily } & チェ & {\sffamily チェ} & che & \texttt{che} \\
-    ちょ & {\sffamily ちょ} & チョ & {\sffamily チョ} & cho & \texttt{cho} \\
-    ぢ & {\sffamily ぢ} & ヂ & {\sffamily ヂ} & ji & \textred{\texttt{di}} \\
-    ぢゃ & {\sffamily ぢゃ} & ヂャ & {\sffamily ヂャ} & ja & \textred{\texttt{dya}} \\
-    ぢゅ & {\sffamily ぢゅ} & ヂュ & {\sffamily ヂュ} & ju & \textred{\texttt{dyu}} \\
-    ぢょ & {\sffamily ぢょ} & ヂョ & {\sffamily ヂョ} & jo & \textred{\texttt{dyo}} \\
-    つ & {\sffamily つ} & ツ & {\sffamily ツ} & tsu & \textlightgrey{\texttt{tu}/}\texttt{tsu} \\
-     & {\sffamily } & ツァ & {\sffamily ツァ} & tsa & \texttt{tsa} \\
-     & {\sffamily } & ツィ & {\sffamily ツィ} & tsi & \texttt{tsi} \\
-     & {\sffamily } & ツェ & {\sffamily ツェ} & tse & \texttt{tse} \\
-     & {\sffamily } & ツォ & {\sffamily ツォ} & tso & \texttt{tso} \\
-    づ & {\sffamily づ} & ヅ & {\sffamily ヅ} & zu & \color{red} \texttt{du} \\
-    て & {\sffamily て} & テ & {\sffamily テ} & te & \texttt{te} \\
-     & {\sffamily } & ティ &{\sffamily ティ} & ti & \color{red} \texttt{texi} \\
-     & {\sffamily } & テュ &{\sffamily ティ} & tyu & \color{red} \texttt{texyu} \\
-    で & {\sffamily で} & デ & {\sffamily デ} & de & \texttt{de} \\
-     & {\sffamily } & ディ &{\sffamily ディ} & di & \color{red} \texttt{dexi} \\
-     & {\sffamily } & デュ &{\sffamily デュ} & dyu & \color{red} \texttt{dexyu} \\
-    と & {\sffamily と} & ト & {\sffamily ト} & to & \texttt{to} \\
-     & {\sffamily } & トゥ &{\sffamily トゥ} & tu & \color{red} \texttt{toxu} \\
-    ど & {\sffamily ど} & ド & {\sffamily ド} & do & \texttt{do} \\
-     & {\sffamily } & ドゥ &{\sffamily ドゥ} & du & \color{red} \texttt{dowu} \\
-    な & {\sffamily な} & ナ & {\sffamily ナ} & na & \texttt{na} \\
-    に & {\sffamily に} & ニ & {\sffamily ニ} & ni & \texttt{ni} \\
-    にゃ & {\sffamily にゃ} & ニャ & {\sffamily ニャ} & nya & \texttt{nya} \\
-    にゅ & {\sffamily にゅ} & ニュ & {\sffamily ニュ} & nyu & \texttt{nyu} \\
-    にょ & {\sffamily にょ} & ニョ & {\sffamily ニョ} & nyo & \texttt{nyo} \\
-    ぬ & {\sffamily ぬ} & ヌ & {\sffamily ヌ} & nu & \texttt{nu} \\
-    ね & {\sffamily ね} & ネ & {\sffamily ネ} & ne & \texttt{ne} \\
-    の & {\sffamily の} & ノ & {\sffamily ノ} & no & \texttt{no} \\
-    は & {\sffamily は} & ハ & {\sffamily ハ} & ha & \textred{\texttt{ha}} \\
-    ば & {\sffamily ば} & バ & {\sffamily バ} & ba & \texttt{ba} \\
-    ぱ & {\sffamily ぱ} & パ & {\sffamily パ} & pa & \texttt{pa} \\
-    ひ & {\sffamily ひ} & ヒ & {\sffamily ヒ} & hi & \texttt{hi} \\
-    ひゃ & {\sffamily ひゃ} & ヒャ & {\sffamily ヒャ} & hya & \texttt{hya} \\
-    ひゅ & {\sffamily ひゅ} & ヒュ & {\sffamily ヒュ} & hyu & \texttt{hyu} \\
-    ひょ & {\sffamily ひょ} & ヒョ & {\sffamily ヒョ} & hyo & \texttt{hyo} \\
-    び & {\sffamily び} & ビ & {\sffamily ビ} & bi & \texttt{bi} \\
-    びゃ & {\sffamily びゃ} & ビャ & {\sffamily ビャ} & bya & \texttt{bya} \\
-    びゅ & {\sffamily びゅ} & ビュ & {\sffamily ビュ} & byu & \texttt{byu} \\
-    びょ & {\sffamily びょ} & ビョ & {\sffamily ビョ} & byo & \texttt{byo} \\
-    ぴ & {\sffamily ぴ} & ピ & {\sffamily ピ} & pi & \texttt{pi} \\
-    ぴゃ & {\sffamily ぴゃ} & ピャ & {\sffamily ピャ} & pya & \texttt{pya} \\
-    ぴゅ & {\sffamily ぴゅ} & ピュ & {\sffamily ピュ} & pyu & \texttt{pyu} \\
-    ぴょ & {\sffamily ぴょ} & ピョ & {\sffamily ピョ} & pyo & \texttt{pyo} \\
-    ふ & {\sffamily ふ} & フ & {\sffamily フ} & fu & \textlightgrey{\texttt{hu}/}\texttt{fu} \\
-     & {\sffamily } & ファ & {\sffamily ファ} & fa & \texttt{fa} \\
-     & {\sffamily } & フィ & {\sffamily フィ} & fi & \texttt{fi} \\
-     & {\sffamily } & フュ & {\sffamily フュ} & fyu & \texttt{fyu} \\
-     & {\sffamily } & フェ & {\sffamily フェ} & fe & \texttt{fe} \\
-     & {\sffamily } & フォ & {\sffamily フォ} & fo & \texttt{fo} \\
-    ぶ & {\sffamily ぶ} & ブ & {\sffamily ブ} & bu & \texttt{bu} \\
-    ぷ & {\sffamily ぷ} & プ & {\sffamily プ} & pu & \texttt{pu} \\
-    へ & {\sffamily へ} & ヘ & {\sffamily ヘ} & he & \textred{\texttt{he}} \\
-    べ & {\sffamily べ} & ベ & {\sffamily ベ} & be & \texttt{be} \\
-    ぺ & {\sffamily ぺ} & ペ & {\sffamily ペ} & pe & \texttt{pe} \\
-    ほ & {\sffamily ほ} & ホ & {\sffamily ホ} & ho & \texttt{ho} \\
-     % & {\sffamily } & ホゥ & {\sffamily ホゥ} & hu & \color{red} \texttt{hoxu} \\
-    ぼ & {\sffamily ぼ} & ボ & {\sffamily ボ} & bo & \texttt{bo} \\
-    ぽ & {\sffamily ぽ} & ポ & {\sffamily ポ} & po & \texttt{po} \\
-    ま & {\sffamily ま} & マ & {\sffamily マ} & ma & \texttt{ma} \\
-    み & {\sffamily み} & ミ & {\sffamily ミ} & mi & \texttt{mi} \\
-    みゃ & {\sffamily みゃ} & ミャ & {\sffamily ミャ} & mya & \texttt{mya} \\
-    みゅ & {\sffamily みゅ} & ミュ & {\sffamily ミュ} & myu & \texttt{myu} \\
-    みょ & {\sffamily みょ} & ミョ & {\sffamily ミョ} & myo & \texttt{myo} \\
-    む & {\sffamily む} & ム & {\sffamily ム} & mu & \texttt{mu} \\
-    め & {\sffamily め} & メ & {\sffamily メ} & me & \texttt{me} \\
-    も & {\sffamily も} & モ & {\sffamily モ} & mo & \texttt{mo} \\
-    や & {\sffamily や} & ヤ & {\sffamily ヤ} & ya & \texttt{ya} \\
-    ゆ & {\sffamily ゆ} & ユ & {\sffamily ユ} & yu & \texttt{yu} \\
-    よ & {\sffamily よ} & ヨ & {\sffamily ヨ} & yo & \texttt{yo} \\
-    ら & {\sffamily ら} & ラ & {\sffamily ラ} & ra & \texttt{ra} \\
-    り & {\sffamily り} & リ & {\sffamily リ} & ri & \texttt{ri} \\
-    りゃ & {\sffamily りゃ} & リャ & {\sffamily リャ} & rya & \texttt{rya} \\
-    りゅ & {\sffamily りゅ} & リュ & {\sffamily リュ} & ryu & \texttt{ryu} \\
-    りょ & {\sffamily りょ} & リョ & {\sffamily リョ} & ryo & \texttt{ryo} \\
-    る & {\sffamily る} & ル & {\sffamily ル} & ru & \texttt{ru} \\
-    れ & {\sffamily れ} & レ & {\sffamily レ} & re & \texttt{re} \\
-    ろ & {\sffamily ろ} & ロ & {\sffamily ロ} & ro & \texttt{ro} \\
-    わ & {\sffamily わ} & ワ & {\sffamily ワ} & wa & \texttt{wa} \\
-    を & {\sffamily を} & ヲ & {\sffamily ヲ} & wo & \texttt{wo} \\
-    ん & {\sffamily ん} & ン & {\sffamily ン} & nn & \textred{\texttt{nn}} \\
-    ぁ & {\sffamily ぁ} & ァ & {\sffamily ァ} & ? & \textlightgrey{\texttt{la}/}\textred{\texttt{xa}} \\
-    ぃ & {\sffamily ぃ} & ィ & {\sffamily ィ} & ? & \textlightgrey{\texttt{li}/}\textred{\texttt{xi}} \\
-    ぅ & {\sffamily ぅ} & ゥ & {\sffamily ゥ} & ? & \textlightgrey{\texttt{lu}/}\textred{\texttt{xu}} \\
-    ぇ & {\sffamily ぇ} & ェ & {\sffamily ェ} & ? & \textlightgrey{\texttt{le}/}\textred{\texttt{xe}} \\
-    ぉ & {\sffamily ぉ} & ォ & {\sffamily ォ} & ? & \textlightgrey{\texttt{lo}/}\textred{\texttt{xo}} \\
-    ゃ & {\sffamily ゃ} & ャ & {\sffamily ャ} & ? & \textlightgrey{\texttt{lya}/}\textred{\texttt{xya}} \\
-    ゅ & {\sffamily ゅ} & ュ & {\sffamily ュ} & ? & \textlightgrey{\texttt{lyu}/}\textred{\texttt{xyu}} \\
-    ょ & {\sffamily ょ} & ョ & {\sffamily ョ} & ? & \textlightgrey{\texttt{lyo}/}\textred{\texttt{xyo}} \\
-     & {\sffamily } & ー & {\sffamily ー} & \texttt{<}$^{\texttt{+1}}$ & \textred{\texttt{$-$} key} \\
-    っ & {\sffamily っ} & ッ & {\sffamily ッ} & $^{\texttt{+1}}$\texttt{>} & \textlightgrey{\texttt{ltu}/\texttt{ltsu}/\textred{\texttt{xtsu}}/}repeat \texttt{>} \\* \bottomrule
+    \multicolumn{2}{c}{\multirow{2}{*}{\textbf{平仮名}}} & \multicolumn{2}{c}{\multirow{2}{*}{\textbf{片仮名}}} & \textbf{Hepburn} & \textbf{Keyboard} \\
+    \multicolumn{2}{c}{} & \multicolumn{2}{c}{} & \textbf{romanisation} & \textbf{command} \\* \midrule
+    \endhead
+    あ & \emph{あ} & ア & \emph{ア} & a & \texttt{a} \\
+    い & \emph{い} & イ & \emph{イ} & i & \texttt{i}\\
+ & \emph{} & イェ & \emph{イェ} & ye & \texttt{ye} \\
+    う & \emph{う} & ウ & \emph{ウ} & u & \texttt{u} \\
+ & \emph{} & ウィ & \emph{ウィ} & wi & \texttt{wi} \\
+ & \emph{} & ウェ & \emph{ウェ} & we & \texttt{we} \\
+ & \emph{} & ウォ & \emph{ウォ} & wo & \color{red} \texttt{uxo} \\
+ & \emph{} & ヴ & \emph{ヴ} & vu & \texttt{vu} \\
+ & \emph{} & ヴァ & \emph{ヴァ} & va & \texttt{va} \\
+ & \emph{} & ヴィ & \emph{ヴィ} & vi & \texttt{vi} \\
+ & \emph{} & ヴュ & \emph{ヴュ} & vyu & \texttt{vyu} \\
+ & \emph{} & ヴェ & \emph{ヴェ} & ve & \texttt{ve} \\
+ & \emph{} & ヴォ & \emph{ヴォ} & vo & \texttt{vo} \\
+    え & \emph{え} & エ & \emph{エ} & e & \texttt{e} \\
+    お & \emph{お} & オ & \emph{オ} & o & \texttt{o} \\
+    か & \emph{か} & カ & \emph{カ} & ka & \texttt{ka} \\
+    が & \emph{が} & ガ & \emph{ガ} & ga & \texttt{ga} \\
+    き & \emph{き} & キ & \emph{キ} & ki & \texttt{ki} \\
+    きゃ & \emph{きゃ} & キャ & \emph{キャ} & kya & \texttt{kya} \\
+    きゅ & \emph{きゅ} & キュ & \emph{キュ} & kyu & \texttt{kyu} \\
+    きょ & \emph{きょ} & キョ & \emph{キョ} & kyo & \texttt{kyo} \\
+    ぎ & \emph{ぎ} & ギ & \emph{ギ} & gi & \texttt{gi} \\
+    ぎゃ & \emph{ぎゃ} & ギャ & \emph{ギャ} & gya & \texttt{gya} \\
+    ぎゅ & \emph{ぎゅ} & ギュ & \emph{ギュ} & gyu & \texttt{gyu} \\
+    ぎょ & \emph{ぎょ} & ギョ & \emph{ギョ} & gyo & \texttt{gyo} \\
+    く & \emph{く} & ク & \emph{ク} & ku & \texttt{ku} \\
+ & \emph{} & クァ & \emph{クァ} & kwa & \texttt{kwa} \\
+ & \emph{} & クィ & \emph{クィ} & kwi & \texttt{kwi} \\
+ & \emph{} & クェ & \emph{クェ} & kwe & \texttt{kwe} \\
+ & \emph{} & クォ & \emph{クォ} & kwo & \texttt{kwo} \\
+    ぐ & \emph{ぐ} & グ & \emph{グ} & gu & \texttt{gu} \\
+ & \emph{} & グァ & \emph{グァ} & gwa & \texttt{gwa} \\
+    け & \emph{け} & ケ & \emph{ケ} & ke & \texttt{ke} \\
+    げ & \emph{げ} & ゲ & \emph{ゲ} & ge & \texttt{ge} \\
+    こ & \emph{こ} & コ & \emph{コ} & ko & \texttt{ko} \\
+    ご & \emph{ご} & ゴ & \emph{ゴ} & go & \texttt{go} \\
+    さ & \emph{さ} & サ & \emph{サ} & sa & \texttt{sa} \\
+    ざ & \emph{ざ} & ザ & \emph{ザ} & za & \texttt{za} \\
+    し & \emph{し} & シ & \emph{シ} & shi & \textlightgrey{\texttt{si}/}\texttt{shi} \\
+    しゃ & \emph{しゃ} & シャ & \emph{シャ} & sha & \texttt{sha} \\
+    しゅ & \emph{しゅ} & シュ & \emph{シュ} & shu & \texttt{shu} \\
+     & \emph{} & シェ & \emph{シュ} & she & \texttt{she} \\
+    しょ & \emph{しょ} & ショ & \emph{ショ} & sho & \texttt{sho} \\
+    じ & \emph{じ} & ジ & \emph{ジ} & ji & \textlightgrey{\texttt{zi}/}\texttt{ji} \\
+    じゃ & \emph{じゃ} & ジャ & \emph{ジャ} & ja & \textlightgrey{\texttt{jya}/}\texttt{ja} \\
+    じゅ & \emph{じゅ} & ジュ & \emph{ジュ} & ju & \textlightgrey{\texttt{jyu}/}\texttt{ju} \\
+     & \emph{} & ジェ & \emph{ジェ} & je & \textlightgrey{\texttt{jye}/}\texttt{je} \\
+    じょ & \emph{じょ} & ジョ & \emph{ジョ} & jo & \textlightgrey{\texttt{jyo}/}\texttt{jo} \\
+    す & \emph{す} & ス & \emph{ス} & su & \texttt{su} \\
+     % & \emph{} & スィ & \emph{スィ} & si & \color{red} \texttt{suxi} \\
+    ず & \emph{ず} & ズ & \emph{ズ} & zu & \texttt{zu} \\
+     % & \emph{} & ズィ & \emph{ズィ} & zi & \color{red} \texttt{zuxi} \\
+    せ & \emph{せ} & セ & \emph{セ} & se & \texttt{se} \\
+    ぜ & \emph{ぜ} & ゼ & \emph{ゼ} & ze & \texttt{ze} \\
+    そ & \emph{そ} & ソ & \emph{ソ} & so & \texttt{so} \\
+    ぞ & \emph{ぞ} & ゾ & \emph{ゾ} & zo & \texttt{zo} \\
+    た & \emph{た} & タ & \emph{タ} & ta & \texttt{ta} \\
+    だ & \emph{だ} & ダ & \emph{ダ} & da & \texttt{da} \\
+    ち & \emph{ち} & チ & \emph{チ} & chi & \textlightgrey{\texttt{ti}/}\texttt{chi} \\
+    ちゃ & \emph{ちゃ} & チャ & \emph{チャ} & cha & \texttt{cha} \\
+    ちゅ & \emph{ちゅ} & チュ & \emph{チュ} & chu & \texttt{chu} \\
+     & \emph{} & チェ & \emph{チェ} & che & \texttt{che} \\
+    ちょ & \emph{ちょ} & チョ & \emph{チョ} & cho & \texttt{cho} \\
+    ぢ & \emph{ぢ} & ヂ & \emph{ヂ} & ji & \textred{\texttt{di}} \\
+    ぢゃ & \emph{ぢゃ} & ヂャ & \emph{ヂャ} & ja & \textred{\texttt{dya}} \\
+    ぢゅ & \emph{ぢゅ} & ヂュ & \emph{ヂュ} & ju & \textred{\texttt{dyu}} \\
+    ぢょ & \emph{ぢょ} & ヂョ & \emph{ヂョ} & jo & \textred{\texttt{dyo}} \\
+    つ & \emph{つ} & ツ & \emph{ツ} & tsu & \textlightgrey{\texttt{tu}/}\texttt{tsu} \\
+     & \emph{} & ツァ & \emph{ツァ} & tsa & \texttt{tsa} \\
+     & \emph{} & ツィ & \emph{ツィ} & tsi & \texttt{tsi} \\
+     & \emph{} & ツェ & \emph{ツェ} & tse & \texttt{tse} \\
+     & \emph{} & ツォ & \emph{ツォ} & tso & \texttt{tso} \\
+    づ & \emph{づ} & ヅ & \emph{ヅ} & zu & \color{red} \texttt{du} \\
+    て & \emph{て} & テ & \emph{テ} & te & \texttt{te} \\
+     & \emph{} & ティ &\emph{ティ} & ti & \color{red} \texttt{texi} \\
+     & \emph{} & テュ &\emph{ティ} & tyu & \color{red} \texttt{texyu} \\
+    で & \emph{で} & デ & \emph{デ} & de & \texttt{de} \\
+     & \emph{} & ディ &\emph{ディ} & di & \color{red} \texttt{dexi} \\
+     & \emph{} & デュ &\emph{デュ} & dyu & \color{red} \texttt{dexyu} \\
+    と & \emph{と} & ト & \emph{ト} & to & \texttt{to} \\
+     & \emph{} & トゥ &\emph{トゥ} & tu & \color{red} \texttt{toxu} \\
+    ど & \emph{ど} & ド & \emph{ド} & do & \texttt{do} \\
+     & \emph{} & ドゥ &\emph{ドゥ} & du & \color{red} \texttt{dowu} \\
+    な & \emph{な} & ナ & \emph{ナ} & na & \texttt{na} \\
+    に & \emph{に} & ニ & \emph{ニ} & ni & \texttt{ni} \\
+    にゃ & \emph{にゃ} & ニャ & \emph{ニャ} & nya & \texttt{nya} \\
+    にゅ & \emph{にゅ} & ニュ & \emph{ニュ} & nyu & \texttt{nyu} \\
+    にょ & \emph{にょ} & ニョ & \emph{ニョ} & nyo & \texttt{nyo} \\
+    ぬ & \emph{ぬ} & ヌ & \emph{ヌ} & nu & \texttt{nu} \\
+    ね & \emph{ね} & ネ & \emph{ネ} & ne & \texttt{ne} \\
+    の & \emph{の} & ノ & \emph{ノ} & no & \texttt{no} \\
+    は & \emph{は} & ハ & \emph{ハ} & ha & \textred{\texttt{ha}} \\
+    ば & \emph{ば} & バ & \emph{バ} & ba & \texttt{ba} \\
+    ぱ & \emph{ぱ} & パ & \emph{パ} & pa & \texttt{pa} \\
+    ひ & \emph{ひ} & ヒ & \emph{ヒ} & hi & \texttt{hi} \\
+    ひゃ & \emph{ひゃ} & ヒャ & \emph{ヒャ} & hya & \texttt{hya} \\
+    ひゅ & \emph{ひゅ} & ヒュ & \emph{ヒュ} & hyu & \texttt{hyu} \\
+    ひょ & \emph{ひょ} & ヒョ & \emph{ヒョ} & hyo & \texttt{hyo} \\
+    び & \emph{び} & ビ & \emph{ビ} & bi & \texttt{bi} \\
+    びゃ & \emph{びゃ} & ビャ & \emph{ビャ} & bya & \texttt{bya} \\
+    びゅ & \emph{びゅ} & ビュ & \emph{ビュ} & byu & \texttt{byu} \\
+    びょ & \emph{びょ} & ビョ & \emph{ビョ} & byo & \texttt{byo} \\
+    ぴ & \emph{ぴ} & ピ & \emph{ピ} & pi & \texttt{pi} \\
+    ぴゃ & \emph{ぴゃ} & ピャ & \emph{ピャ} & pya & \texttt{pya} \\
+    ぴゅ & \emph{ぴゅ} & ピュ & \emph{ピュ} & pyu & \texttt{pyu} \\
+    ぴょ & \emph{ぴょ} & ピョ & \emph{ピョ} & pyo & \texttt{pyo} \\
+    ふ & \emph{ふ} & フ & \emph{フ} & fu & \textlightgrey{\texttt{hu}/}\texttt{fu} \\
+     & \emph{} & ファ & \emph{ファ} & fa & \texttt{fa} \\
+     & \emph{} & フィ & \emph{フィ} & fi & \texttt{fi} \\
+     & \emph{} & フュ & \emph{フュ} & fyu & \texttt{fyu} \\
+     & \emph{} & フェ & \emph{フェ} & fe & \texttt{fe} \\
+     & \emph{} & フォ & \emph{フォ} & fo & \texttt{fo} \\
+    ぶ & \emph{ぶ} & ブ & \emph{ブ} & bu & \texttt{bu} \\
+    ぷ & \emph{ぷ} & プ & \emph{プ} & pu & \texttt{pu} \\
+    へ & \emph{へ} & ヘ & \emph{ヘ} & he & \textred{\texttt{he}} \\
+    べ & \emph{べ} & ベ & \emph{ベ} & be & \texttt{be} \\
+    ぺ & \emph{ぺ} & ペ & \emph{ペ} & pe & \texttt{pe} \\
+    ほ & \emph{ほ} & ホ & \emph{ホ} & ho & \texttt{ho} \\
+     % & \emph{} & ホゥ & \emph{ホゥ} & hu & \color{red} \texttt{hoxu} \\
+    ぼ & \emph{ぼ} & ボ & \emph{ボ} & bo & \texttt{bo} \\
+    ぽ & \emph{ぽ} & ポ & \emph{ポ} & po & \texttt{po} \\
+    ま & \emph{ま} & マ & \emph{マ} & ma & \texttt{ma} \\
+    み & \emph{み} & ミ & \emph{ミ} & mi & \texttt{mi} \\
+    みゃ & \emph{みゃ} & ミャ & \emph{ミャ} & mya & \texttt{mya} \\
+    みゅ & \emph{みゅ} & ミュ & \emph{ミュ} & myu & \texttt{myu} \\
+    みょ & \emph{みょ} & ミョ & \emph{ミョ} & myo & \texttt{myo} \\
+    む & \emph{む} & ム & \emph{ム} & mu & \texttt{mu} \\
+    め & \emph{め} & メ & \emph{メ} & me & \texttt{me} \\
+    も & \emph{も} & モ & \emph{モ} & mo & \texttt{mo} \\
+    や & \emph{や} & ヤ & \emph{ヤ} & ya & \texttt{ya} \\
+    ゆ & \emph{ゆ} & ユ & \emph{ユ} & yu & \texttt{yu} \\
+    よ & \emph{よ} & ヨ & \emph{ヨ} & yo & \texttt{yo} \\
+    ら & \emph{ら} & ラ & \emph{ラ} & ra & \texttt{ra} \\
+    り & \emph{り} & リ & \emph{リ} & ri & \texttt{ri} \\
+    りゃ & \emph{りゃ} & リャ & \emph{リャ} & rya & \texttt{rya} \\
+    りゅ & \emph{りゅ} & リュ & \emph{リュ} & ryu & \texttt{ryu} \\
+    りょ & \emph{りょ} & リョ & \emph{リョ} & ryo & \texttt{ryo} \\
+    る & \emph{る} & ル & \emph{ル} & ru & \texttt{ru} \\
+    れ & \emph{れ} & レ & \emph{レ} & re & \texttt{re} \\
+    ろ & \emph{ろ} & ロ & \emph{ロ} & ro & \texttt{ro} \\
+    わ & \emph{わ} & ワ & \emph{ワ} & wa & \texttt{wa} \\
+    を & \emph{を} & ヲ & \emph{ヲ} & wo & \texttt{wo} \\
+    ん & \emph{ん} & ン & \emph{ン} & nn & \textred{\texttt{nn}} \\
+    ぁ & \emph{ぁ} & ァ & \emph{ァ} & ? & \textlightgrey{\texttt{la}/}\textred{\texttt{xa}} \\
+    ぃ & \emph{ぃ} & ィ & \emph{ィ} & ? & \textlightgrey{\texttt{li}/}\textred{\texttt{xi}} \\
+    ぅ & \emph{ぅ} & ゥ & \emph{ゥ} & ? & \textlightgrey{\texttt{lu}/}\textred{\texttt{xu}} \\
+    ぇ & \emph{ぇ} & ェ & \emph{ェ} & ? & \textlightgrey{\texttt{le}/}\textred{\texttt{xe}} \\
+    ぉ & \emph{ぉ} & ォ & \emph{ォ} & ? & \textlightgrey{\texttt{lo}/}\textred{\texttt{xo}} \\
+    ゃ & \emph{ゃ} & ャ & \emph{ャ} & ? & \textlightgrey{\texttt{lya}/}\textred{\texttt{xya}} \\
+    ゅ & \emph{ゅ} & ュ & \emph{ュ} & ? & \textlightgrey{\texttt{lyu}/}\textred{\texttt{xyu}} \\
+    ょ & \emph{ょ} & ョ & \emph{ョ} & ? & \textlightgrey{\texttt{lyo}/}\textred{\texttt{xyo}} \\
+     & \emph{} & ー & \emph{ー} & \texttt{<}$^{\texttt{+1}}$ & \textred{\texttt{$-$} key} \\
+    っ & \emph{っ} & ッ & \emph{ッ} & $^{\texttt{+1}}$\texttt{>} & \textlightgrey{\texttt{ltu}/\texttt{ltsu}/\textred{\texttt{xtsu}}/}repeat \texttt{>} \\* \bottomrule
     \caption{仮名 summary table. $^\dagger$Particle romanisation applies only for 平仮名.}
     \label{tbl:kana-summary} \\
 \end{longtable}
@@ -484,7 +483,7 @@ When determining whether a morpheme is repeated or not, consider the sound and m
 \subsection{Iteration marks}
 \emph{Read main article on \href{https://en.wikipedia.org/wiki/Iteration_mark\#Japanese}{Wikipedia}.}
 
-Only the (horizontal) 漢字 iteration mark 々 is commonly used today. It is used to represent a \ul{duplicated character representing the same morpheme}. For example, \ruby{日々}{ひ|び} means ``daily, day after day''.
+Only the (horizontal text) 漢字 iteration mark 々 is commonly used today. It is used to represent a \ul{duplicated character representing the same morpheme}. For example, \ruby{日々}{ひ|び} means ``daily, day after day''.
 
 Writing 々 instead of repeating the 漢字 is preferred, provided that:
 \begin{enumerate}[label=\arabic*.]
@@ -524,18 +523,18 @@ Repetition marks can be typed using commands in Table~\ref{tbl:miscellaneous-key
     \toprule
     \multicolumn{2}{c}{\multirow{2}{*}{}} & Keyboard & \multirow{2}{*}{Purpose} \\
     \multicolumn{2}{c}{}                  & command  & \\ \midrule
-    ゝ & {\sffamily ゝ} & \texttt{onaji} $\to$ space$^\texttt{*}$ & 平仮名 previous character repeater (enforce without dakuten) \\
-    ゞ & {\sffamily ゞ} & \texttt{onaji} $\to$ space$^\texttt{*}$ & 平仮名 previous character repeater (enforce with dakuten)\\
-    ヽ & {\sffamily ヽ} & \texttt{onaji} $\to$ space$^\texttt{*}$ & 片仮名 previous character repeater (enforce without dakuten)\\
-    ヾ & {\sffamily ヾ} & \texttt{onaji} $\to$ space$^\texttt{*}$ & 片仮名 previous character repeater (enforce with dakuten)\\
-    々 & {\sffamily 々} & \texttt{noma} $\to$ space$^\texttt{*}$ & 漢字 previous character repeater (ノ$+$マ) \\
-    % & {\sffamily } &  &  \\
-    % & {\sffamily } &  &  \\
-    % & {\sffamily } &  &  \\
-    % & {\sffamily } &  &  \\
-    % & {\sffamily } &  &  \\
-    % & {\sffamily } &  &  \\
-    % & {\sffamily } &  &  \\
+    ゝ & \emph{ゝ} & \texttt{onaji} $\to$ space$^\texttt{*}$ & 平仮名 previous character repeater (enforce without dakuten) \\
+    ゞ & \emph{ゞ} & \texttt{onaji} $\to$ space$^\texttt{*}$ & 平仮名 previous character repeater (enforce with dakuten)\\
+    ヽ & \emph{ヽ} & \texttt{onaji} $\to$ space$^\texttt{*}$ & 片仮名 previous character repeater (enforce without dakuten)\\
+    ヾ & \emph{ヾ} & \texttt{onaji} $\to$ space$^\texttt{*}$ & 片仮名 previous character repeater (enforce with dakuten)\\
+    々 & \emph{々} & \texttt{noma} $\to$ space$^\texttt{*}$ & 漢字 previous character repeater (ノ$+$マ) \\
+    % & \emph{} &  &  \\
+    % & \emph{} &  &  \\
+    % & \emph{} &  &  \\
+    % & \emph{} &  &  \\
+    % & \emph{} &  &  \\
+    % & \emph{} &  &  \\
+    % & \emph{} &  &  \\
     \bottomrule
 \end{tabular}%
 % }
@@ -568,7 +567,7 @@ Some preliminary notes:
         \item \ruby{書}{か}く means to write.
         \item \ruby{描}{か}く means to draw.
 
-        When depicting an abstract image (e.g.\ a scene in a book), we use \ruby{描}{えが}く.
+        When depicting/imagining an \ul{abstract} image (e.g.\ a scene in a book ), we use \ruby{描}{えが}く.
     \end{itemize}
 
     Another example:
@@ -592,7 +591,7 @@ Some special notes:
         \item \ruby{音読}{おん|よ}み: Chinese-derived. Used in compound 漢字 and idioms (both known as \ruby{熟語}{じゅく|ご}).
         \item \ruby{訓読}{くん|よ}み: native Japanese. Used in solo 漢字, solo 漢字 appended with \ruby{送}{おく}り仮名, adjectives and verbs.
 
-        The purpose of trailing 送り仮名 is to preserve the 音読み pronunciation of the 漢字, even as the word is conjugated\footnote{\textbf{Conjugation}: change of word form to fit a given context.} to different forms. It is also used to differentiate transitive and intransitive verbs (\S\hl{???}).  % TODO
+        The purpose of trailing 送り仮名 is to preserve the pronunciation of the 漢字, even as the word is conjugated\footnote{\textbf{Conjugation}: change of word form to fit a given context.} to different forms. It is also used to differentiate transitive and intransitive verbs (\S\ref{sec:transitive-intransitive-verbs}).
     \end{itemize}
     \item The actual readings of 漢字 can change slightly in compound words to make them easier to say (e.g.\ 一本 is いっぽん instead of いっほん).
 
@@ -614,7 +613,7 @@ Vowel extensions follow the rules in Table~\ref{tbl:vowel-extension}. For notes 
     /i/ & い & & \\
     /u/ & う & & \\
     /e/ & \textred{い} \textblue{(え)} & & \ruby{先生}{せん|せい}、\ruby{学生}{がく|せい}、\textblue{(お\underline{ねえ}さん)}\\
-    /o/ & \textred{う} \textblue{(お)} & & き\underline{ょう}、おは\underline{よう}、\textblue{(\underline{おお}きい)}\\ \bottomrule
+    /o/ & \textred{う} \textblue{(お)} & & き\underline{ょう}、おは\underline{よう}、\textblue{(\underline{おお}きい)}、\textblue{(\ruby{遠回}{\ul{とお}|まわ}り)}\\ \bottomrule
 \end{tabular}%
 % }
 \caption{Vowel extension rules. Exceptions are bracketed in \textblue{blue}. /a/ is the phoneme representation.}
@@ -656,7 +655,7 @@ The official (as of Jan 2024) romanisation system of Japan. There are only a few
 
         Also for terminal verbs (\hl{???}): \ruby{迷う}{まよ|う} mayou (to get lost)
     \end{itemize}
-    \item[片仮名 loanwords] The macron is used iff ー is used to extend a vowel.
+    \item[片仮名 loanwords] The macron is used iff 「ー」 is used to extend a vowel.
     \item[Japanese words adopted into English] Common place names like Tokyo, Kyoto and Osaka, while properly romanised as t\=oky\=o, ky\=oto and \=osaka, are simply romanised as Tokyo, Kyoto and Osaka.
     \item[Particles] When は、へ、を are used as particles, they are romanised as wa, e and o respectively.
     \item[Syllabic ん] ん is romanised as n' (with the apostrophe) if appearing immediately before any lone vowels or ``y''. This is to disambiguate んあ、んい、んう、んえ、んお、んや、んゆ、んよ (n'a, n'i, n'u, n'e, n'o, n'ya, n'yu, n'yo) from な、に、ぬ、ね、の、にゃ、にゅ、にょ (na, ni, nu, ne, no, nya, nyu, nyo) respectively.

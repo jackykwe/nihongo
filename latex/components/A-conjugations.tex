@@ -1,8 +1,5 @@
 \documentclass[../nihongo-gakushuu-kyouzai.tex]{subfiles}
-\graphicspath{ {../imgs/} }
-
 \begin{document}
-\onehalfspacing  % for 振り仮名
 
 % Full A4 dimensions: width=210, height=297
 % Width/height and LR/TB here are before turning into landscape.
@@ -10,7 +7,6 @@
 \fancyhfoffset{0pt} % recalculate fancyhdr width, courtesy of https://tex.stackexchange.com/a/440307
 \begin{landscape}
 
-\section{Hyper summary}
 \begin{table}[h]
 \centering
 \resizebox{0.8\linewidth}{!}{%
@@ -72,6 +68,85 @@
 \restoregeometry
 \clearpage
 
+\section{Hyper summary}
+\subsection{Conjugation rules summary}
+\subsubsection{Nouns}
+\begin{table}[h]
+\centering
+\resizebox{\linewidth}{!}{%
+% Help: \multicolumn{2}{c}{}, \multirow{2}{*}{}, cmidrule(l){3-5}
+\begin{tabular}{@{}ccll@{}}
+    \toprule
+    \textbf{Purpose}                & \textbf{Tense}   & \textbf{Casual schema} & \textbf{Polite schema}                          \\ \midrule
+    \multirow{4}{*}{State-of-being} & Present-positive & <noun>[だ]             & <noun>です。                                    \\
+                                    & Past-positive    & <noun>だった           & <noun>でした。                                  \\
+                                    & Present-negative & <noun>じゃない         & <noun>じゃないです。/じゃありません。           \\
+                                    & Past-negative    & <noun>じゃなかった     & <noun>じゃなかったです。/じゃありませんでした。 \\
+\bottomrule
+\end{tabular}%
+}
+\caption{Noun conjugation rules.}
+\label{tbl:appendix-noun-conjugations}
+\end{table}
+
+\textorange{In \textgreen{敬語}, 「〜した」indicates the past-tense.}
+
+Also, 「〜ないです。」can be replaced with「〜ありまえん。」, and 「〜なかったです。」 can be replaced with 「〜ありませんでした。」 as alternative polite forms of the present-negative and past-negative respectively.
+\subsubsection{な-adjectives}
+\begin{table}[h]
+\centering
+\resizebox{\linewidth}{!}{%
+% Help: \multicolumn{2}{c}{}, \multirow{2}{*}{}, cmidrule(l){3-5}
+\begin{tabular}{@{}ccll@{}}
+    \toprule
+    \textbf{Purpose}               & \textbf{Tense}   & \textbf{Casual schema}     & \textbf{Polite schema}                            \\ \midrule
+                                   & Present-positive & <na-adj>[だ]               & <na-adj>です。                                    \\
+    State-of-being                 & Past-positive    & <na-adj>だった             & <na-adj>でした。                                  \\
+    (same as nouns)                & Present-negative & <na-adj>じゃない           & <na-adj>じゃないです。/じゃありません。           \\
+                                   & Past-negative    & <na-adj>じゃなかった       & <na-adj>じゃなかったです。/じゃありませんでした。 \\ \midrule
+    \multirow{4}{*}{Noun modifier} & Present-positive & <na-adj>\textbf{な}<noun>           &                                          \\
+                                   & Past-positive    & <na-adj>だった<noun>       &                                                   \\
+                                   & Present-negative & <na-adj>じゃない<noun>     &                                                   \\
+                                   & Past-negative    & <na-adj>じゃなかった<noun> &                                                   \\
+    \bottomrule
+\end{tabular}%
+}
+\caption{な-adjective conjugation rules.}
+\label{tbl:appendix-な-adjective-conjugations}
+\end{table}
+
+\subsubsection{い-adjectives}
+All い-adjectives end with 〜い that is \ul{not} part of the 漢字's pronunciation.
+\begin{table}[h]
+\centering
+\resizebox{\linewidth}{!}{%
+% Help: \multicolumn{2}{c}{}, \multirow{2}{*}{}, cmidrule(l){3-5}
+\begin{tabular}{@{}ccll@{}}
+    \toprule
+    \textbf{Purpose}                & \textbf{Tense}   & \textbf{Casual schema}       & \textbf{Polite schema}                                                \\ \midrule
+    \multirow{4}{*}{State-of-being} & Present-positive & <i-adj>い                    & <i-adj>いです。                                                     \\
+                                    & Past-positive    & <i-adj>\textbf{か}った       & <i-adj>\textbf{か}ったです。                                          \\
+                                    & Present-negative & <i-adj>\textbf{く}ない       & <i-adj>\textbf{く}ないです。/\textbf{く}ありません。           \\
+                                    & Past-negative    & <i-adj>\textbf{く}なかった   & <i-adj>\textbf{く}なかったです。/\textbf{く}ありませんでした。 \\ \midrule
+    \multirow{4}{*}{Noun modifier}  & Present-positive & <i-adj>い<noun>              &                                                                       \\
+                                    & Past-positive    & <i-adj>\textbf{か}った<noun> &                                                                       \\
+                                    & Present-negative & <i-adj>\textbf{く}ない<noun> &                                                                       \\
+                                    & Past-negative    & <i-adj>\textbf{く}なかった<noun> &                                                                       \\
+    \bottomrule
+\end{tabular}%
+}
+\caption{い-adjective conjugation rules.}
+\label{tbl:appendix-い-adjective-conjugations}
+\end{table}
+
+\color{red}
+Exceptions:
+\begin{description}
+    \item[Adjectives ending with 「〜いい」] When in any form other than present-positive, the root becomes 「〜よい」.
+\end{description}
+\color{black}
+
+\subsection{Particle summary}
 % Help: \multicolumn{2}{c}{}, \multirow{2}{*}{}, cmidrule(l){3-5}
 \scriptsize
 \begin{longtable}[c]{@{}llll@{}}
