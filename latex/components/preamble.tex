@@ -94,7 +94,11 @@
         \DTMtwodigits{##1}\DTMtwodigits{##2}\DTMtwodigits{##3} \DTMtwodigits{##5}\DTMtwodigits{##6}\DTMtwodigits{##7}
     }
 }{}{}{}
-\chead{\textlightgrey{\DTMsetstyle{myformat} \DTMnow}}
+\ifcsname currentdatestring\endcsname
+    \chead{\textlightgrey{\currentdatestring}}
+\else
+    \chead{\textlightgrey{\DTMsetstyle{myformat} \DTMnow}}
+\fi
 \setlength{\headheight}{24.10pt}  % Adjust according to compilation warnings
 \cfoot{Page \thepage\ of \pageref{LastPage}}
 \renewcommand{\headrulewidth}{0.5pt}
