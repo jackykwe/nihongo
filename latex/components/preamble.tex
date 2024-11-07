@@ -76,6 +76,11 @@
 \newcommand{\prefix}{\textsc{prefix}}
 \newcommand{\suffix}{\textsc{suffix}}
 \newcommand{\htc}{\textsc{\textbf{HTC}}}
+\usepackage{tikz}
+\usetikzlibrary{patterns}
+\usepackage[no-test-for-array]{nicematrix}  % no-test-for-array is a hack to allow the Docker image to run successfully; this is necessary with the use of nicematrix package
+\newcommand{\transbothequal}{\Block[transparent, tikz={pattern = crosshatch, pattern color = gray!10}]{1-*}{}}
+\newcommand{\transboth}{\Block[transparent, tikz={pattern = grid, pattern color = gray!10}]{1-*}{}}
 
 % Rename sections for \documentclass{ltjarticle}
 % \renewcommand{\figurename}{Figure} % ltjarticle overrides this to
