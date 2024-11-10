@@ -79,8 +79,8 @@
 \usepackage{tikz}
 \usetikzlibrary{patterns}
 \usepackage[no-test-for-array]{nicematrix}  % no-test-for-array is a hack to allow the Docker image to run successfully; this is necessary with the use of nicematrix package
-\newcommand{\transbothequal}{\Block[transparent, tikz={pattern = crosshatch, pattern color = gray!10}]{1-*}{}}
-\newcommand{\transboth}{\Block[transparent, tikz={pattern = grid, pattern color = gray!10}]{1-*}{}}
+\newcommand{\viteq}{\Block[transparent, tikz={pattern = crosshatch, pattern color = gray!10}]{1-*}{}}
+\newcommand{\vit}{\Block[transparent, tikz={pattern = grid, pattern color = gray!10}]{1-*}{}}
 
 % Rename sections for \documentclass{ltjarticle}
 % \renewcommand{\figurename}{Figure} % ltjarticle overrides this to
@@ -106,7 +106,7 @@
 \else
     \chead{\textlightgrey{\DTMsetstyle{myformat} \DTMnow}}
 \fi
-\setlength{\headheight}{24.10pt}  % Adjust according to compilation warnings
+\setlength{\headheight}{28pt}  % Adjust according to compilation warnings
 \cfoot{Page \thepage\ of \pageref{LastPage}}
 \renewcommand{\headrulewidth}{0.5pt}
 \renewcommand{\footrulewidth}{0.5pt}
