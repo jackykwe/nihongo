@@ -1,5 +1,5 @@
 # FROM alpine:latest
-FROM texlive/texlive:latest
+FROM registry.gitlab.com/islandoftex/images/texlive:TL2024-2024-10-20-full
 WORKDIR /workdir
 COPY ./latex .
 # Passing definitions from CLI into LaTeX: see https://tex.stackexchange.com/a/79195
