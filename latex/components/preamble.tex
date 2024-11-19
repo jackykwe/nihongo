@@ -3,10 +3,9 @@
 \usepackage[colorlinks]{hyperref}
 % \usepackage[allbordercolors={1 0 0}]{hyperref}
 % \usepackage[hidelinks]{hyperref}
-\usepackage{lastpage}       % ``n of m'' page numbering
-\usepackage{pdflscape} % to allow some pages to be landscaped, with \begin{landscape}
+\usepackage{lastpage}  % ``n of m'' page numbering
+\usepackage{pdflscape}  % to allow some pages to be landscaped, with \begin{landscape}
 \usepackage{parskip}
-\usepackage{multicol}
 \usepackage{caption}  % for manual captions within multicol
 
 % File management
@@ -18,17 +17,29 @@
 \usepackage[soul]{lua-ul} % for highlighting via \hl and underline via \ul. LuaLaTeX version of soul courtesy of https://tex.stackexchange.com/a/586053
 \usepackage{luacolor}  % LuaLaTeX version of soul courtesy of https://tex.stackexchange.com/a/586053
 
-
 % Figures
 \usepackage{float}
 
-% Tables
-% General advice for tabulars: wrapping them with \resizebox is BAD practice because it results in inconsistent font sizes across tables! https://tex.stackexchange.com/a/600094
-% \usepackage{booktabs}
-\usepackage{longtable}
-\usepackage{tabularray}
+% Colours
+% \usepackage{xcolor}
 \usepackage{ninecolors}
 \NineColors{saturation=high}
+\newcommand{\textorange}[1]{\textcolor{brown7}{#1}}
+\newcommand{\textred}[1]{\textcolor{red5}{#1}}
+\newcommand{\exception}[1]{\textcolor{red5}{\textbf{\hl{#1}}}}
+\newcommand{\exceptiong}[1]{\textcolor{red5}{\textbf{\phantom{あ}\hl{#1}\phantom{あ}}}}  % g for guard
+\usepackage{microtype}  % required for \textls, hacky solution for furigana
+\newcommand{\textwhite}[1]{\textcolor{white}{#1}}
+\newcommand{\textblue}[1]{\textcolor{blue5}{#1}}
+\newcommand{\textgreen}[1]{\textcolor{green5}{#1}}
+\newcommand{\textpurple}[1]{\textcolor{violet5}{#1}}
+\newcommand{\textlightgrey}[1]{\textcolor{lightgray}{#1}}
+\newcommand{\textgrey}[1]{\textcolor{gray}{#1}}
+\newcommand{\textblack}[1]{\textcolor{black}{#1}}
+
+% Tables
+% General advice for tabulars: wrapping them with \resizebox is BAD practice because it results in inconsistent font sizes across tables! https://tex.stackexchange.com/a/600094
+\usepackage{tabularray}
 \UseTblrLibrary{booktabs}
 \DefTblrTemplate{contfoot-text}{default}{\emph{continued on next page\dots}}
 \DefTblrTemplate{conthead-text}{default}{(continued)}
@@ -42,14 +53,12 @@
     \dtldiv{\newdefaultaddspace}{.5}{#3}  % default is .5em
     \dtldiv{\newrulesep}{2}{#3}  % default is 2pt
     \dtldiv{\newstretch}{1}{#3}  % default is 1
-    \dtldiv{\newabovesep}{2}{#3}  % default is 2pt  % ! NO EFFECT IN BOOKTABS
-    \dtldiv{\newbelowsep}{2}{#3}  % default is 2pt  % ! NO EFFECT IN BOOKTABS
-    \dtldiv{\newrowsep}{2}{#3}  % default is 2pt  % ! NO EFFECT IN BOOKTABS
+    \dtldiv{\newabovesep}{2}{#3}  % default is 2pt
+    \dtldiv{\newbelowsep}{2}{#3}  % default is 2pt
+    \dtldiv{\newrowsep}{2}{#3}  % default is 2pt
     \dtldiv{\newleftsep}{6}{#3}  % default is 6pt
     \dtldiv{\newrightsep}{6}{#3}  % default is 6pt
     \dtldiv{\newcolsep}{6}{#3}  % default is 6pt
-    % \dtldiv{\newfontsize}{10}{#3}  % default is 10pt
-    % \dtldiv{\newbaselineskip}{15}{#3}  % default is 12pt, fine-tuned to 15
     \dtldiv{\newinversescale}{1}{#3}  % helper value for \adjustbox's scale factor
     \dtldiv{\newcelltoppadding}{1.55}{#3}  % helper value for \adjustbox's margin
     \dtldiv{\newcellbottompadding}{1.4}{#3}  % helper value for \adjustbox's margin
@@ -61,48 +70,36 @@
     \aboverulesep=\newaboverulesep ex
     \defaultaddspace=\newdefaultaddspace em
     \begin{longtabs}[#1]{
-        #2\relax,
-        rows={valign=m},  % handled by \adjustbox{stack=cc,...}
-        % cells={preto=\adjustbox{stack=cc,scale=\newinversescale}\bgroup,appto=\egroup},  % also works
-        % cells={cmd=\adjustbox{stack=cc,padding={0 ex} {\newcellbottompadding ex} {0 ex} {\newcelltoppadding ex}, scale=\newinversescale}},
+        rows={valign=m},
         cells={font=\scalefont{\newinversescale}},
         vspan=even,
         rulesep=\newrulesep pt,
         stretch=\newstretch,
-        abovesep=\newabovesep pt,  % ! NO EFFECT IN BOOKTABS
-        belowsep=\newbelowsep pt,  % ! NO EFFECT IN BOOKTABS
-        rowsep=\newrowsep pt,  % ! NO EFFECT IN BOOKTABS, DEFAULT IS 0pt
+        abovesep=\newabovesep pt,
+        belowsep=\newbelowsep pt,
+        rowsep=\newrowsep pt,
         leftsep=\newleftsep pt,
         rightsep=\newrightsep pt,
         colsep=\newcolsep pt,
+        #2\relax,
     }
 }
 {
     \end{longtabs}
 }
+\newcommand{\multirc}[2]{\SetCell[r=#1\relax,c=#2\relax]{c,m}}
+\newcommand{\aux}{\textsc{aux}}
+\newcommand{\prefix}{\textsc{prefix}}
+\newcommand{\suffix}{\textsc{suffix}}
+\newcommand{\conjunction}{\textsc{conjunction}}
+\newcommand{\htc}{\textsc{\textbf{HTC}}}
+\newcommand{\viteq}{\SetRow{cyan!10}}
+\newcommand{\vit}{\SetRow{gray!10}}
 
-% Colours
-\usepackage{xcolor}
-\definecolor{codegreen}{rgb}{0,0.6,0}
-\definecolor{codegray}{rgb}{0.5,0.5,0.5}
-\definecolor{codebg}{rgb}{0.96, 0.96, 0.96}
-\definecolor{codepurple}{rgb}{0.58,0,0.82}
-\definecolor{codered}{rgb}{1, 0.9, 0.9}
-\newcommand{\textorange}[1]{\textcolor{orange}{#1}}
-\newcommand{\textred}[1]{\textcolor{red}{#1}}
-\newcommand{\exception}[1]{\textcolor{red}{\textbf{\hl{#1}}}}
-\newcommand{\exceptiong}[1]{\textcolor{red}{\textbf{\phantom{あ}\hl{#1}\phantom{あ}}}}  % g for guard
-\usepackage{microtype}  % required for \textls, hacky solution for furigana
-\newcommand{\textwhite}[1]{\textcolor{white}{#1}}
-\newcommand{\textblue}[1]{\textcolor{blue}{#1}}
-\newcommand{\textgreen}[1]{\textcolor{codegreen}{#1}}
-\newcommand{\textpurple}[1]{\textcolor{codepurple}{#1}}
-\newcommand{\textlightgrey}[1]{\textcolor{lightgray}{#1}}
-\newcommand{\textgrey}[1]{\textcolor{gray}{#1}}
-\newcommand{\textblack}[1]{\textcolor{black}{#1}}
 
 % Basic LaTeX structures
 \usepackage{enumitem} % For custom enumerate
+
 
 % Description Labels
 % Coutesy of https://tex.stackexchange.com/a/1248
@@ -119,6 +116,7 @@
 }
 \makeatother
 
+
 % Miscellaneous
 \usepackage{pxrubrica}  % Support for ふりがな
 \rubysetup{j}  % Jukugo ruby by default, use | to separate word boundaries if available
@@ -126,29 +124,18 @@
 \usepackage{nicefrac}
 \usepackage{amssymb}  % for \lessapprox
 \usepackage{cancel}
-\newcommand{\aux}{\textsc{aux}}
-\newcommand{\prefix}{\textsc{prefix}}
-\newcommand{\suffix}{\textsc{suffix}}
-\newcommand{\conjunction}{\textsc{conjunction}}
-\newcommand{\htc}{\textsc{\textbf{HTC}}}
-\usepackage{tikz}
-\usetikzlibrary{patterns}
-\usepackage[no-test-for-array]{nicematrix}  % no-test-for-array is a hack to allow the Docker image to run successfully; this is necessary with the use of nicematrix package
-\newcommand{\viteq}{\Block[transparent, tikz={pattern = crosshatch, pattern color = gray!10}]{1-*}{}}
-\newcommand{\vit}{\Block[transparent, tikz={pattern = grid, pattern color = gray!10}]{1-*}{}}
 \usepackage{centernot}
 \usepackage{stmaryrd}  % for \shortrightarrow
 \usepackage[math=fp]{datatool-base}  % LaTeX arithmetic courtesy of https://www.dickimaw-books.com/latex/admin/html/arithmetic.shtml
-\usepackage{adjustbox}
-\usepackage{relsize}
 \usepackage{scalefnt}
-\usepackage{fontsize}
-\usepackage[regular]{newcomputermodern}
+\usepackage[regular]{newcomputermodern}  % required for scalefnt to work properly and scale character horizontal width; Latin Modern isn't good enough, need New Computer Modern.
+
 
 % Rename sections for \documentclass{ltjarticle}
-% \renewcommand{\figurename}{Figure} % ltjarticle overrides this to
+% \renewcommand{\figurename}{Figure} % ltjarticle overrides this to ... <not known yet>
 \renewcommand{\tablename}{Table} % ltjarticle overrides this to 表 (ひょう)
 \renewcommand{\contentsname}{Contents} % ltjarticle overrides this to 表 (ひょう)
+
 
 % Heading
 \usepackage{fancyhdr}
@@ -164,7 +151,7 @@
         \DTMtwodigits{##1}\DTMtwodigits{##2}\DTMtwodigits{##3} \DTMtwodigits{##5}\DTMtwodigits{##6}\DTMtwodigits{##7}
     }
 }{}{}{}
-\ifcsname currentdatestring\endcsname
+\ifcsname currentdatestring\endcsname  % if \currentdatestring is defined (passed from CLI: see Dockerfile)
     \chead{\textlightgrey{\currentdatestring}}
 \else
     \chead{\textlightgrey{\DTMsetstyle{myformat} \DTMnow}}
