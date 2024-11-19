@@ -15,7 +15,7 @@
 
 % Font
 \usepackage[normalem]{ulem} % strikethrough
-\usepackage[soul]{lua-ul} % for highlighting via \hl and underline via \ul. LuaLaTeX version of soul ourtesy of https://tex.stackexchange.com/a/586053
+\usepackage[soul]{lua-ul} % for highlighting via \hl and underline via \ul. LuaLaTeX version of soul courtesy of https://tex.stackexchange.com/a/586053
 \usepackage{luacolor}  % LuaLaTeX version of soul courtesy of https://tex.stackexchange.com/a/586053
 
 
@@ -23,9 +23,63 @@
 \usepackage{float}
 
 % Tables
-\usepackage{booktabs}
-\usepackage{multirow}
+% General advice for tabulars: wrapping them with \resizebox is BAD practice because it results in inconsistent font sizes across tables! https://tex.stackexchange.com/a/600094
+% \usepackage{booktabs}
 \usepackage{longtable}
+\usepackage{tabularray}
+\usepackage{ninecolors}
+\NineColors{saturation=high}
+\UseTblrLibrary{booktabs}
+\DefTblrTemplate{contfoot-text}{default}{\emph{continued on next page\dots}}
+\DefTblrTemplate{conthead-text}{default}{(continued)}
+\newenvironment{longtabse}[3][]
+{
+    \dtldiv{\newheavyrulewidth}{.08}{#3}  % default is .08em
+    \dtldiv{\newlightrulewidth}{.05}{#3}  % default is .05em
+    \dtldiv{\newcmidrulewidth}{.03}{#3}  % default is .03em
+    \dtldiv{\newbelowrulesep}{.65}{#3}  % default is .65ex
+    \dtldiv{\newaboverulesep}{.4}{#3}  % default is .4ex, fine-tuned to .65ex
+    \dtldiv{\newdefaultaddspace}{.5}{#3}  % default is .5em
+    \dtldiv{\newrulesep}{2}{#3}  % default is 2pt
+    \dtldiv{\newstretch}{1}{#3}  % default is 1
+    \dtldiv{\newabovesep}{2}{#3}  % default is 2pt  % ! NO EFFECT IN BOOKTABS
+    \dtldiv{\newbelowsep}{2}{#3}  % default is 2pt  % ! NO EFFECT IN BOOKTABS
+    \dtldiv{\newrowsep}{2}{#3}  % default is 2pt  % ! NO EFFECT IN BOOKTABS
+    \dtldiv{\newleftsep}{6}{#3}  % default is 6pt
+    \dtldiv{\newrightsep}{6}{#3}  % default is 6pt
+    \dtldiv{\newcolsep}{6}{#3}  % default is 6pt
+    % \dtldiv{\newfontsize}{10}{#3}  % default is 10pt
+    % \dtldiv{\newbaselineskip}{15}{#3}  % default is 12pt, fine-tuned to 15
+    \dtldiv{\newinversescale}{1}{#3}  % helper value for \adjustbox's scale factor
+    \dtldiv{\newcelltoppadding}{1.55}{#3}  % helper value for \adjustbox's margin
+    \dtldiv{\newcellbottompadding}{1.4}{#3}  % helper value for \adjustbox's margin
+
+    \heavyrulewidth=\newheavyrulewidth em
+    \lightrulewidth=\newlightrulewidth em
+    \cmidrulewidth=\newcmidrulewidth em
+    \belowrulesep=\newbelowrulesep ex
+    \aboverulesep=\newaboverulesep ex
+    \defaultaddspace=\newdefaultaddspace em
+    \begin{longtabs}[#1]{
+        #2\relax,
+        rows={valign=m},  % handled by \adjustbox{stack=cc,...}
+        % cells={preto=\adjustbox{stack=cc,scale=\newinversescale}\bgroup,appto=\egroup},  % also works
+        % cells={cmd=\adjustbox{stack=cc,padding={0 ex} {\newcellbottompadding ex} {0 ex} {\newcelltoppadding ex}, scale=\newinversescale}},
+        cells={font=\scalefont{\newinversescale}},
+        vspan=even,
+        rulesep=\newrulesep pt,
+        stretch=\newstretch,
+        abovesep=\newabovesep pt,  % ! NO EFFECT IN BOOKTABS
+        belowsep=\newbelowsep pt,  % ! NO EFFECT IN BOOKTABS
+        rowsep=\newrowsep pt,  % ! NO EFFECT IN BOOKTABS, DEFAULT IS 0pt
+        leftsep=\newleftsep pt,
+        rightsep=\newrightsep pt,
+        colsep=\newcolsep pt,
+    }
+}
+{
+    \end{longtabs}
+}
 
 % Colours
 \usepackage{xcolor}
@@ -38,7 +92,7 @@
 \newcommand{\textred}[1]{\textcolor{red}{#1}}
 \newcommand{\exception}[1]{\textcolor{red}{\textbf{\hl{#1}}}}
 \newcommand{\exceptiong}[1]{\textcolor{red}{\textbf{\phantom{あ}\hl{#1}\phantom{あ}}}}  % g for guard
-\usepackage{microtype}
+\usepackage{microtype}  % required for \textls, hacky solution for furigana
 \newcommand{\textwhite}[1]{\textcolor{white}{#1}}
 \newcommand{\textblue}[1]{\textcolor{blue}{#1}}
 \newcommand{\textgreen}[1]{\textcolor{codegreen}{#1}}
@@ -84,6 +138,12 @@
 \newcommand{\vit}{\Block[transparent, tikz={pattern = grid, pattern color = gray!10}]{1-*}{}}
 \usepackage{centernot}
 \usepackage{stmaryrd}  % for \shortrightarrow
+\usepackage[math=fp]{datatool-base}  % LaTeX arithmetic courtesy of https://www.dickimaw-books.com/latex/admin/html/arithmetic.shtml
+\usepackage{adjustbox}
+\usepackage{relsize}
+\usepackage{scalefnt}
+\usepackage{fontsize}
+\usepackage[regular]{newcomputermodern}
 
 % Rename sections for \documentclass{ltjarticle}
 % \renewcommand{\figurename}{Figure} % ltjarticle overrides this to
