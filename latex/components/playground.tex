@@ -11,13 +11,38 @@
 \section{Tables}
 \textcolor{red5}{\textbf{RED}} \textcolor{green5}{\textbf{GREEN}} \textcolor{blue5}{\textbf{BLUE}} \textcolor{brown7}{\textbf{ORANGE}} \textcolor{violet5}{\textbf{PURPLE}}
 
-\begin{longtabse}[
-    caption={(longtabse) Test A (longtabse)},
-    label={tbl:},
-]{
+% Help: \SetCell[r=2,c=2]{c,m} <content>, \cmidrule[l]{3-4}
+% Help: colspec: X[ratio, horizontal alignment] columns grow to fit width=\linewidth
+%                  negative ratios: shrink to fit content and may not grow to full ratio
+% Help: colspec: l/c/r columns do not grow
+\longtabse[1]  % scale factor
+{}  % caption
+{tbl:}  % label
+{
+    colspec={X[1,c]X[-1,c]X[1,c]X[1,c]},
+    rowhead=1,
+    % width=\linewidth,  % useful only with X columns
+}  % inner specification options
+{
+    \toprule
+    \SetCell[r=2,c=2]{c,m} 2x2 & & \SetCell[c=2]{c,m} 1x2 & \\ \cmidrule[l]{3-4}
+    & & A & B \\
+    \midrule
+    \SetCell[r=2]{c,m} 2x1 & C & D & E \\
+    \midrule
+    & F & G & H \\
+    \bottomrule
+}
+
+
+\longtabsea[0.5]
+{(longtabse) Test A (longtabse)}
+{tbl:}
+{
     colspec={X[1,c]X[2,c]X[3,c]X[4,c]X[5,c]},
     rowhead=1,
-}{3}
+}
+{
     \toprule
     00 & 01 & 02 & 03 & 04 \\
     \toprule
@@ -32,7 +57,57 @@
     \midrule
     50 & 51何これ 何これ 何これ 何これ 何これ 何これ 何これ 何これ51 & 52 Something something works but doesn't work. & 53 & 54 \\
     \bottomrule
-\end{longtabse}
+}
+
+\longtabsea
+{(longtabse) Test A (longtabse)}
+{tbl:xxx}
+{
+    colspec={X[1,c]X[2,c]X[3,c]X[4,c]X[5,c]},
+    rowhead=1,
+}
+{
+    \toprule
+    00 & 01 & 02 & 03 & 04 \\
+    \toprule
+    10 & 11何これ & 12 & 13 & 14 \\
+    \midrule
+    \midrule
+    20 & 21何これ & 22 & 23 & 24 \\
+    \midrule
+    \SetRow{cyan!10} 30 & 31何これ & {32\\is\\a\\special cell} & 33 & 34 \\
+    \midrule
+    40 & 41何これ & 42 & 43 & 44 \\
+    \midrule
+    50 & 51何これ 何これ 何これ 何これ 何これ 何これ 何これ 何これ51 & 52 Something something works but doesn't work. & 53 & 54 \\
+    \bottomrule
+}
+
+
+\longtabse
+{(longtabse) Test A (longtabse)}
+{tbl:xxx}
+{
+    colspec={X[1,c]X[2,c]X[3,c]X[4,c]X[5,c]},
+    rowhead=1,
+}
+{
+    \toprule
+    00 & 01 & 02 & 03 & 04 \\
+    \toprule
+    10 & 11何これ & 12 & 13 & 14 \\
+    \midrule
+    \midrule
+    20 & 21何これ & 22 & 23 & 24 \\
+    \midrule
+    \SetRow{cyan!10} 30 & 31何これ & {32\\is\\a\\special cell} & 33 & 34 \\
+    \midrule
+    40 & 41何これ & 42 & 43 & 44 \\
+    \midrule
+    50 & 51何これ 何これ 何これ 何これ 何これ 何これ 何これ 何これ51 & 52 Something something works but doesn't work. & 53 & 54 \\
+    \bottomrule
+}
+
 
 \begin{longtabs}[
     caption={(imitate this) Test B (imitate this)},
@@ -60,57 +135,6 @@
 \end{longtabs}
 
 
-\begin{longtabse}[
-    caption={Omega},
-    label={tbl:}
-]{
-    colspec={X[1,c]X[5,c]X[4,c]X[3,c]X[2,c]},
-    rowhead=1,
-}{1}
-    \toprule
-    00 & 01 & 02 & 03 & 04 \\
-    \toprule
-    10 & 11 & 12 & 13 & 14 \\
-    \midrule
-    \midrule
-    20 & 21 & 22 & 23 & 24 \\
-    \midrule
-    30 & 31 & {32\\is\\a\\special cell} & 33 & 34 \\
-    \midrule
-    40 & 41 & 42 & 43 & 44 \\
-    \midrule
-    50 & 51WIDE WIDE WIDE WIDE WIDE WIDE WIDE WIDE WIDE WIDE WIDE WIDE & 52 & 53 & 54 \\
-    50 & 51WIDE WIDE WIDE WIDE WIDE WIDE WIDE WIDE WIDE WIDE WIDE WIDE & 52 & 53 & 54 \\
-    50 & 51WIDE WIDE WIDE WIDE WIDE WIDE WIDE WIDE WIDE WIDE WIDE WIDE & 52 & 53 & 54 \\
-    50 & 51WIDE WIDE WIDE WIDE WIDE WIDE WIDE WIDE WIDE WIDE WIDE WIDE & 52 & 53 & 54 \\
-    50 & 51WIDE WIDE WIDE WIDE WIDE WIDE WIDE WIDE WIDE WIDE WIDE WIDE & 52 & 53 & 54 \\
-    50 & 51WIDE WIDE WIDE WIDE WIDE WIDE WIDE WIDE WIDE WIDE WIDE WIDE & 52 & 53 & 54 \\
-    50 & 51WIDE WIDE WIDE WIDE WIDE WIDE WIDE WIDE WIDE WIDE WIDE WIDE & 52 & 53 & 54 \\
-    50 & 51WIDE WIDE WIDE WIDE WIDE WIDE WIDE WIDE WIDE WIDE WIDE WIDE & 52 & 53 & 54 \\
-    50 & 51WIDE WIDE WIDE WIDE WIDE WIDE WIDE WIDE WIDE WIDE WIDE WIDE & 52 & 53 & 54 \\
-    50 & 51WIDE WIDE WIDE WIDE WIDE WIDE WIDE WIDE WIDE WIDE WIDE WIDE & 52 & 53 & 54 \\
-    50 & 51WIDE WIDE WIDE WIDE WIDE WIDE WIDE WIDE WIDE WIDE WIDE WIDE & 52 & 53 & 54 \\
-    50 & 51WIDE WIDE WIDE WIDE WIDE WIDE WIDE WIDE WIDE WIDE WIDE WIDE & 52 & 53 & 54 \\
-    50 & 51WIDE WIDE WIDE WIDE WIDE WIDE WIDE WIDE WIDE WIDE WIDE WIDE & 52 & 53 & 54 \\
-    50 & 51WIDE WIDE WIDE WIDE WIDE WIDE WIDE WIDE WIDE WIDE WIDE WIDE & 52 & 53 & 54 \\
-    50 & 51WIDE WIDE WIDE WIDE WIDE WIDE WIDE WIDE WIDE WIDE WIDE WIDE & 52 & 53 & 54 \\
-    50 & 51WIDE WIDE WIDE WIDE WIDE WIDE WIDE WIDE WIDE WIDE WIDE WIDE & 52 & 53 & 54 \\
-    50 & 51WIDE WIDE WIDE WIDE WIDE WIDE WIDE WIDE WIDE WIDE WIDE WIDE & 52 & 53 & 54 \\
-    50 & 51WIDE WIDE WIDE WIDE WIDE WIDE WIDE WIDE WIDE WIDE WIDE WIDE & 52 & 53 & 54 \\
-    50 & 51WIDE WIDE WIDE WIDE WIDE WIDE WIDE WIDE WIDE WIDE WIDE WIDE & 52 & 53 & 54 \\
-    50 & 51WIDE WIDE WIDE WIDE WIDE WIDE WIDE WIDE WIDE WIDE WIDE WIDE & 52 & 53 & 54 \\
-    50 & 51WIDE WIDE WIDE WIDE WIDE WIDE WIDE WIDE WIDE WIDE WIDE WIDE & 52 & 53 & 54 \\
-    50 & 51WIDE WIDE WIDE WIDE WIDE WIDE WIDE WIDE WIDE WIDE WIDE WIDE & 52 & 53 & 54 \\
-    50 & 51WIDE WIDE WIDE WIDE WIDE WIDE WIDE WIDE WIDE WIDE WIDE WIDE & 52 & 53 & 54 \\
-    50 & 51WIDE WIDE WIDE WIDE WIDE WIDE WIDE WIDE WIDE WIDE WIDE WIDE & 52 & 53 & 54 \\
-    50 & 51WIDE WIDE WIDE WIDE WIDE WIDE WIDE WIDE WIDE WIDE WIDE WIDE & 52 & 53 & 54 \\
-    50 & 51WIDE WIDE WIDE WIDE WIDE WIDE WIDE WIDE WIDE WIDE WIDE WIDE & 52 & 53 & 54 \\
-    50 & 51WIDE WIDE WIDE WIDE WIDE WIDE WIDE WIDE WIDE WIDE WIDE WIDE & 52 & 53 & 54 \\
-    50 & 51WIDE WIDE WIDE WIDE WIDE WIDE WIDE WIDE WIDE WIDE WIDE WIDE & 52 & 53 & 54 \\
-    50 & 51WIDE WIDE WIDE WIDE WIDE WIDE WIDE WIDE WIDE WIDE WIDE WIDE & 52 & 53 & 54 \\
-    \bottomrule
-\end{longtabse}
-
 \clearpage
 \section{Font size}
 tiny: \thefontsize{\tiny} \normalsize
@@ -124,79 +148,7 @@ LARGE: \thefontsize{\LARGE} \normalsize
 huge: \thefontsize{\huge} \normalsize
 Huge: \thefontsize{\Huge} \normalsize
 
-
 \section{Section header}
-{\textls{さん\exception{び}ゃく}}
-{\textls{さん\exception{び}ゃく}}
-{\textls{wat}}
-
-
-\ruby{三百}{さん|\exception{び}ゃく},
-\ruby{３百}{さん|\exception{び}ゃく},
-\ruby[g]{三〇〇}{さん\textls{\exception{び}}ゃく},
-\ruby[g]{３００}{さん\textls{\exception{び}}ゃく},
-EXCEPTION
-
-
-EXCEPTION
-
-\ruby{や}{や},
-\ruby{や}{\exception{や}},
-% \ruby{や}{{\fontseries{bx}\selectfont\textcolor{red}{\hl{や}}}}.
-
-\ruby[g]{やや}{\exception{や}や},
-\ruby[g]{やや}{や\exception{や}}.
-
-\ruby[g]{やや}{\exception{や}やや},
-\ruby[g]{やや}{や\exception{や}や},
-\ruby[g]{やや}{やや\exception{や}}.
-
-\ruby{やや}{\exception{や}|や},
-\ruby{やや}{や|\exception{や}}.
-
-\ruby{やや}{\exception{や}や|やや},
-\ruby{やや}{や\exception{や}|やや},
-\ruby{やや}{やや|\exception{や}や},
-\ruby{やや}{やや|や\exception{や}}.
-
-\ruby{やや}{\exception{や}やや|ややや},
-\ruby{やや}{や\exception{や}|ややや},
-\ruby{やや}{やや\exception{や}|ややや},
-\ruby{やや}{ややや|\exception{や}やや},
-\ruby{やや}{ややや|や\exception{や}や},
-\ruby{やや}{ややや|やや\exception{や}}.
-
-
-EXCEPTIONG
-
-\ruby{や}{や},
-\ruby{や}{\exceptiong{や}},
-% \ruby{や}{{\fontseries{bx}\selectfont\textcolor{red}{\hl{や}}}}.
-
-\ruby[g]{やや}{\exceptiong{や}や},
-\ruby[g]{やや}{や\exceptiong{や}}.
-
-\ruby[g]{やや}{\exceptiong{や}やや},
-\ruby[g]{やや}{や\exceptiong{や}や},
-\ruby[g]{やや}{やや\exceptiong{や}}.
-
-\ruby{やや}{\exceptiong{や}|や},
-\ruby{やや}{や|\exceptiong{や}}.
-
-\ruby{やや}{\exceptiong{や}や|やや},
-\ruby{やや}{や\exceptiong{や}|やや},
-\ruby{やや}{やや|\exceptiong{や}や},
-\ruby{やや}{やや|や\exceptiong{や}}.
-
-\ruby{やや}{\exceptiong{や}やや|ややや},
-\ruby{やや}{や\exceptiong{や}|ややや},
-\ruby{やや}{やや\exceptiong{や}|ややや},
-\ruby{やや}{ややや|\exceptiong{や}やや},
-\ruby{やや}{ややや|や\exceptiong{や}や},
-\ruby{やや}{ややや|やや\exceptiong{や}}.
-
-
-
 
 Incredibly slow!
 

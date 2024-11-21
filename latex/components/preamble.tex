@@ -1,34 +1,55 @@
-% Layout
+%%%%%%%%%%
+% LAYOUT %
+%%%%%%%%%%
 \usepackage[a4paper,top=2cm,bottom=2cm]{geometry}
 \usepackage[colorlinks]{hyperref}
 % \usepackage[allbordercolors={1 0 0}]{hyperref}
 % \usepackage[hidelinks]{hyperref}
 \usepackage{lastpage}  % ``n of m'' page numbering
-\usepackage{pdflscape}  % to allow some pages to be landscaped, with \begin{landscape}
+% \usepackage{pdflscape}  % to allow some pages to be landscaped, with \begin{landscape}
 \usepackage{parskip}
 \usepackage{caption}  % for manual captions within multicol
 
-% File management
+% Rename sections for \documentclass{ltjarticle}
+\renewcommand{\figurename}{Figure} % ltjarticle overrides this to 図 (と) ... <not known yet>
+\renewcommand{\tablename}{Table} % ltjarticle overrides this to 表 (ひょう)
+\renewcommand{\contentsname}{Contents} % ltjarticle overrides this to 表 (ひょう)
+
+
+%%%%%%%%%%%%%%%%%%%
+% FILE MANAGEMENT %
+%%%%%%%%%%%%%%%%%%%
 \usepackage{subfiles}
 \usepackage{zref-xr} % for references to labels across subfiles
 
-% Font
+
+%%%%%%%%
+% FONT %
+%%%%%%%%
 \usepackage[normalem]{ulem} % strikethrough
 \usepackage[soul]{lua-ul} % for highlighting via \hl and underline via \ul. LuaLaTeX version of soul courtesy of https://tex.stackexchange.com/a/586053
 \usepackage{luacolor}  % LuaLaTeX version of soul courtesy of https://tex.stackexchange.com/a/586053
 
-% Figures
+
+%%%%%%%%%%%
+% FIGURES %
+%%%%%%%%%%%
 \usepackage{float}
 
-% Colours
+
+%%%%%%%%%%%
+% COLOURS %
+%%%%%%%%%%%
 % \usepackage{xcolor}
 \usepackage{ninecolors}
 \NineColors{saturation=high}
 \newcommand{\textorange}[1]{\textcolor{brown7}{#1}}
 \newcommand{\textred}[1]{\textcolor{red5}{#1}}
-\newcommand{\exception}[1]{\textcolor{red5}{\textbf{\hl{#1}}}}
-\newcommand{\exceptiong}[1]{\textcolor{red5}{\textbf{\phantom{あ}\hl{#1}\phantom{あ}}}}  % g for guard
-\usepackage{microtype}  % required for \textls, hacky solution for furigana
+% \newcommand{\exception}[1]{\textcolor{red5}{\textbf{\hl{#1}}}}
+% \newcommand{\exceptiong}[1]{\textcolor{red5}{\textbf{\phantom{あ}\hl{#1}\phantom{あ}}}}  % g for guard
+% \newcommand{\exception}[1]{\textcolor{red5}{\textbf{#1}}}
+% \newcommand{\exceptiong}[1]{\textcolor{red5}{\textbf{\phantom{あ}#1\phantom{あ}}}}  % g for guard
+% \usepackage{microtype}  % required for \textls, hacky solution for furigana
 \newcommand{\textwhite}[1]{\textcolor{white}{#1}}
 \newcommand{\textblue}[1]{\textcolor{blue5}{#1}}
 \newcommand{\textgreen}[1]{\textcolor{green5}{#1}}
@@ -37,56 +58,191 @@
 \newcommand{\textgrey}[1]{\textcolor{gray}{#1}}
 \newcommand{\textblack}[1]{\textcolor{black}{#1}}
 
-% Tables
+
+%%%%%%%%%%
+% TABLES %
+%%%%%%%%%%
 % General advice for tabulars: wrapping them with \resizebox is BAD practice because it results in inconsistent font sizes across tables! https://tex.stackexchange.com/a/600094
 \usepackage{tabularray}
+\usepackage[math=fp]{datatool-base}  % LaTeX arithmetic courtesy of https://www.dickimaw-books.com/latex/admin/html/arithmetic.shtml
+\usepackage{scalefnt}
 \UseTblrLibrary{booktabs}
 \DefTblrTemplate{contfoot-text}{default}{\emph{continued on next page\dots}}
 \DefTblrTemplate{conthead-text}{default}{(continued)}
-\newenvironment{longtabse}[3][]
-{
-    \dtldiv{\newheavyrulewidth}{.08}{#3}  % default is .08em
-    \dtldiv{\newlightrulewidth}{.05}{#3}  % default is .05em
-    \dtldiv{\newcmidrulewidth}{.03}{#3}  % default is .03em
-    \dtldiv{\newbelowrulesep}{.65}{#3}  % default is .65ex
-    \dtldiv{\newaboverulesep}{.4}{#3}  % default is .4ex, fine-tuned to .65ex
-    \dtldiv{\newdefaultaddspace}{.5}{#3}  % default is .5em
-    \dtldiv{\newrulesep}{2}{#3}  % default is 2pt
-    \dtldiv{\newstretch}{1}{#3}  % default is 1
-    \dtldiv{\newabovesep}{2}{#3}  % default is 2pt
-    \dtldiv{\newbelowsep}{2}{#3}  % default is 2pt
-    \dtldiv{\newrowsep}{2}{#3}  % default is 2pt
-    \dtldiv{\newleftsep}{6}{#3}  % default is 6pt
-    \dtldiv{\newrightsep}{6}{#3}  % default is 6pt
-    \dtldiv{\newcolsep}{6}{#3}  % default is 6pt
-    \dtldiv{\newinversescale}{1}{#3}  % helper value for \adjustbox's scale factor
-    \dtldiv{\newcelltoppadding}{1.55}{#3}  % helper value for \adjustbox's margin
-    \dtldiv{\newcellbottompadding}{1.4}{#3}  % helper value for \adjustbox's margin
 
-    \heavyrulewidth=\newheavyrulewidth em
-    \lightrulewidth=\newlightrulewidth em
-    \cmidrulewidth=\newcmidrulewidth em
-    \belowrulesep=\newbelowrulesep ex
-    \aboverulesep=\newaboverulesep ex
-    \defaultaddspace=\newdefaultaddspace em
-    \begin{longtabs}[#1]{
-        rows={valign=m},
-        cells={font=\scalefont{\newinversescale}},
-        vspan=even,
-        rulesep=\newrulesep pt,
-        stretch=\newstretch,
-        abovesep=\newabovesep pt,
-        belowsep=\newbelowsep pt,
-        rowsep=\newrowsep pt,
-        leftsep=\newleftsep pt,
-        rightsep=\newrightsep pt,
-        colsep=\newcolsep pt,
-        #2\relax,
+% When developing, use \longtabsea to see the table (only maximum one will be rendered, any duplicate <\longtabsea>s will show a warning). When done, revert to \longtabse.
+% Definition of longtabse (e for enhanced)
+\ifcsname currentdatestring\endcsname
+    % DOCKER MODE (see Dockerfile)
+
+    % [#1] is the scale factor
+    % #2 is caption
+    % #3 is the label
+    % #4 is the inner specificaiton
+    % #5 is the table body
+    \newcommand{\longtabse}[5][1]{
+        \dtlmul{\newheavyrulewidth}{.08}{#1}  % default is .08em
+        \dtlmul{\newlightrulewidth}{.05}{#1}  % default is .05em
+        \dtlmul{\newcmidrulewidth}{.03}{#1}  % default is .03em
+        \dtlmul{\newbelowrulesep}{.65}{#1}  % default is .65ex
+        \dtlmul{\newaboverulesep}{.4}{#1}  % default is .4ex, fine-tuned to .65ex
+        \dtlmul{\newdefaultaddspace}{.5}{#1}  % default is .5em
+        \dtlmul{\newrulesep}{2}{#1}  % default is 2pt
+        \dtlmul{\newstretch}{1}{#1}  % default is 1
+        \dtlmul{\newabovesep}{2}{#1}  % default is 2pt
+        \dtlmul{\newbelowsep}{2}{#1}  % default is 2pt
+        \dtlmul{\newrowsep}{2}{#1}  % default is 2pt
+        \dtlmul{\newleftsep}{6}{#1}  % default is 6pt
+        \dtlmul{\newrightsep}{6}{#1}  % default is 6pt
+        \dtlmul{\newcolsep}{6}{#1}  % default is 6pt
+        \dtlmul{\newinversescale}{1}{#1}  % helper value for \adjustbox's scale factor
+        \dtlmul{\newcelltoppadding}{1.55}{#1}  % helper value for \adjustbox's margin
+        \dtlmul{\newcellbottompadding}{1.4}{#1}  % helper value for \adjustbox's margin
+
+        \heavyrulewidth=\newheavyrulewidth em
+        \lightrulewidth=\newlightrulewidth em
+        \cmidrulewidth=\newcmidrulewidth em
+        \belowrulesep=\newbelowrulesep ex
+        \aboverulesep=\newaboverulesep ex
+        \defaultaddspace=\newdefaultaddspace em
+        \begin{longtabs}[
+            caption=#2,
+            label=#3,
+        ]{
+            rows={valign=m},
+            cells={font=\scalefont{\newinversescale}},
+            vspan=even,
+            rulesep=\newrulesep pt,
+            stretch=\newstretch,
+            abovesep=\newabovesep pt,
+            belowsep=\newbelowsep pt,
+            rowsep=\newrowsep pt,
+            leftsep=\newleftsep pt,
+            rightsep=\newrightsep pt,
+            colsep=\newcolsep pt,
+            #4,
+        }
+            #5
+        \end{longtabs}
     }
-}
-{
-    \end{longtabs}
-}
+\else
+    % LOCAL MODE
+    \newcommand{\longtabse}[5][1]{
+        \vspace{1em}
+        \begin{center}
+            \textlightgrey{[DEVELOP MODE] \textbf{HIDDEN} (use \texttt{\textbackslash{}longtabsea} to show)}
+        \end{center}
+        \captionof{table}{#2}
+        \label{#3}
+        \vspace{1em}
+    }
+\fi
+% Definition of longtabsea (e for enhanced; a for active) is identical to the above
+\ifcsname currentdatestring\endcsname
+    % DOCKER MODE (see Dockerfile)
+    \newcommand{\longtabsea}[5][1]{
+        \dtlmul{\newheavyrulewidth}{.08}{#1}  % default is .08em
+        \dtlmul{\newlightrulewidth}{.05}{#1}  % default is .05em
+        \dtlmul{\newcmidrulewidth}{.03}{#1}  % default is .03em
+        \dtlmul{\newbelowrulesep}{.65}{#1}  % default is .65ex
+        \dtlmul{\newaboverulesep}{.4}{#1}  % default is .4ex, fine-tuned to .65ex
+        \dtlmul{\newdefaultaddspace}{.5}{#1}  % default is .5em
+        \dtlmul{\newrulesep}{2}{#1}  % default is 2pt
+        \dtlmul{\newstretch}{1}{#1}  % default is 1
+        \dtlmul{\newabovesep}{2}{#1}  % default is 2pt
+        \dtlmul{\newbelowsep}{2}{#1}  % default is 2pt
+        \dtlmul{\newrowsep}{2}{#1}  % default is 2pt
+        \dtlmul{\newleftsep}{6}{#1}  % default is 6pt
+        \dtlmul{\newrightsep}{6}{#1}  % default is 6pt
+        \dtlmul{\newcolsep}{6}{#1}  % default is 6pt
+        \dtlmul{\newinversescale}{1}{#1}  % helper value for \adjustbox's scale factor
+        \dtlmul{\newcelltoppadding}{1.55}{#1}  % helper value for \adjustbox's margin
+        \dtlmul{\newcellbottompadding}{1.4}{#1}  % helper value for \adjustbox's margin
+
+        \heavyrulewidth=\newheavyrulewidth em
+        \lightrulewidth=\newlightrulewidth em
+        \cmidrulewidth=\newcmidrulewidth em
+        \belowrulesep=\newbelowrulesep ex
+        \aboverulesep=\newaboverulesep ex
+        \defaultaddspace=\newdefaultaddspace em
+        \begin{longtabs}[
+            caption=#2,
+            label=#3,
+        ]{
+            rows={valign=m},
+            cells={font=\scalefont{\newinversescale}},
+            vspan=even,
+            rulesep=\newrulesep pt,
+            stretch=\newstretch,
+            abovesep=\newabovesep pt,
+            belowsep=\newbelowsep pt,
+            rowsep=\newrowsep pt,
+            leftsep=\newleftsep pt,
+            rightsep=\newrightsep pt,
+            colsep=\newcolsep pt,
+            #4,
+        }
+            #5
+        \end{longtabs}
+    }
+\else
+    % LOCAL MODE
+    \newcommand{\longtabsea}[5][1]{
+        \dtlmul{\newheavyrulewidth}{.08}{#1}  % default is .08em
+        \dtlmul{\newlightrulewidth}{.05}{#1}  % default is .05em
+        \dtlmul{\newcmidrulewidth}{.03}{#1}  % default is .03em
+        \dtlmul{\newbelowrulesep}{.65}{#1}  % default is .65ex
+        \dtlmul{\newaboverulesep}{.4}{#1}  % default is .4ex, fine-tuned to .65ex
+        \dtlmul{\newdefaultaddspace}{.5}{#1}  % default is .5em
+        \dtlmul{\newrulesep}{2}{#1}  % default is 2pt
+        \dtlmul{\newstretch}{1}{#1}  % default is 1
+        \dtlmul{\newabovesep}{2}{#1}  % default is 2pt
+        \dtlmul{\newbelowsep}{2}{#1}  % default is 2pt
+        \dtlmul{\newrowsep}{2}{#1}  % default is 2pt
+        \dtlmul{\newleftsep}{6}{#1}  % default is 6pt
+        \dtlmul{\newrightsep}{6}{#1}  % default is 6pt
+        \dtlmul{\newcolsep}{6}{#1}  % default is 6pt
+        \dtlmul{\newinversescale}{1}{#1}  % helper value for \adjustbox's scale factor
+        \dtlmul{\newcelltoppadding}{1.55}{#1}  % helper value for \adjustbox's margin
+        \dtlmul{\newcellbottompadding}{1.4}{#1}  % helper value for \adjustbox's margin
+
+        \heavyrulewidth=\newheavyrulewidth em
+        \lightrulewidth=\newlightrulewidth em
+        \cmidrulewidth=\newcmidrulewidth em
+        \belowrulesep=\newbelowrulesep ex
+        \aboverulesep=\newaboverulesep ex
+        \defaultaddspace=\newdefaultaddspace em
+        \begin{longtabs}[
+            caption=#2,
+            label=#3,
+        ]{
+            rows={valign=m},
+            cells={font=\scalefont{\newinversescale}},
+            vspan=even,
+            rulesep=\newrulesep pt,
+            stretch=\newstretch,
+            abovesep=\newabovesep pt,
+            belowsep=\newbelowsep pt,
+            rowsep=\newrowsep pt,
+            leftsep=\newleftsep pt,
+            rightsep=\newrightsep pt,
+            colsep=\newcolsep pt,
+            #4,
+        }
+            #5
+        \end{longtabs}
+        \renewcommand{\longtabsea}[5][1]{
+            \vspace{1em}
+            \begin{center}
+                \textlightgrey{[DEVELOP MODE]} \textred{\textbf{DUPLICATE \texttt{\textbackslash{}longtabsea}}}
+            \end{center}
+            \captionof{table}{#2}
+            \label{#3}
+            \vspace{1em}
+        }
+    }
+\fi
+
 \newcommand{\multirc}[2]{\SetCell[r=#1\relax,c=#2\relax]{c,m}}
 \newcommand{\aux}{\textsc{aux}}
 \newcommand{\prefix}{\textsc{prefix}}
@@ -97,12 +253,11 @@
 \newcommand{\vit}{\SetRow{gray!10}}
 
 
-% Basic LaTeX structures
+%%%%%%%%%%%%%%%%%%%%%%%%%%
+% BASIC LATEX STRUCTURES %
+%%%%%%%%%%%%%%%%%%%%%%%%%%
 \usepackage{enumitem} % For custom enumerate
-
-
-% Description Labels
-% Coutesy of https://tex.stackexchange.com/a/1248
+% Description labels/references coutesy of https://tex.stackexchange.com/a/1248
 \makeatletter
 \let\orgdescriptionlabel\descriptionlabel
 \renewcommand*{\descriptionlabel}[1]{%
@@ -117,27 +272,24 @@
 \makeatother
 
 
-% Miscellaneous
-\usepackage{pxrubrica}  % Support for ふりがな
+%%%%%%%%%%%%%%%%%
+% MISCELLANEOUS %
+%%%%%%%%%%%%%%%%%
+\usepackage{pxrubrica}  % Support for 振り仮名
 \rubysetup{j}  % Jukugo ruby by default, use | to separate word boundaries if available
 \usepackage{siunitx}
 \usepackage{nicefrac}
 \usepackage{amssymb}  % for \lessapprox
 \usepackage{cancel}
 \usepackage{centernot}
-\usepackage{stmaryrd}  % for \shortrightarrow
-\usepackage[math=fp]{datatool-base}  % LaTeX arithmetic courtesy of https://www.dickimaw-books.com/latex/admin/html/arithmetic.shtml
-\usepackage{scalefnt}
-\usepackage[regular]{newcomputermodern}  % required for scalefnt to work properly and scale character horizontal width; Latin Modern isn't good enough, need New Computer Modern.
+\ifcsname currentdatestring\endcsname  % if \currentdatestring is defined (in Docker mode; passed from CLI: see Dockerfile)
+    \usepackage[regular]{newcomputermodern}  % required for scalefnt to work properly and scale character horizontal width; Latin Modern isn't good enough, need New Computer Modern.
+\fi
 
 
-% Rename sections for \documentclass{ltjarticle}
-% \renewcommand{\figurename}{Figure} % ltjarticle overrides this to ... <not known yet>
-\renewcommand{\tablename}{Table} % ltjarticle overrides this to 表 (ひょう)
-\renewcommand{\contentsname}{Contents} % ltjarticle overrides this to 表 (ひょう)
-
-
-% Heading
+%%%%%%%%%%%
+% HEADING %
+%%%%%%%%%%%
 \usepackage{fancyhdr}
 \pagestyle{fancy}
 \fancyhf{}
@@ -151,10 +303,12 @@
         \DTMtwodigits{##1}\DTMtwodigits{##2}\DTMtwodigits{##3} \DTMtwodigits{##5}\DTMtwodigits{##6}\DTMtwodigits{##7}
     }
 }{}{}{}
-\ifcsname currentdatestring\endcsname  % if \currentdatestring is defined (passed from CLI: see Dockerfile)
+\ifcsname currentdatestring\endcsname
+    % DOCKER MODE (see Dockerfile)
     \chead{\textlightgrey{\currentdatestring}}
 \else
-    \chead{\textlightgrey{\DTMsetstyle{myformat} \DTMnow}}
+    % LOCAL MODE
+    \chead{\textlightgrey{\DTMsetstyle{myformat} [DEVELOP MODE] \DTMnow}}
 \fi
 \setlength{\headheight}{28pt}  % Adjust according to compilation warnings
 \cfoot{Page \thepage\ of \pageref{LastPage}}
