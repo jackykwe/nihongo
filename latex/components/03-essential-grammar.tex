@@ -57,37 +57,42 @@ Polite adjective examples:
     \item (past-negative) 昨日、時間が\textbf{なかったんです}。 (Yesterday, there was no time.; ある $\to$ \ul{なかった} (past negative) $\to$ なかった\ul{んだ} (explanatory) $\to$ なかったん\ul{です} (polite))
 \end{itemize}
 
-\begin{table}[h]
-\centering
-\resizebox{\linewidth}{!}{%
-% Help: \multicolumn2c{\multirow2*{}}, cmidrule(l){3-5}
-\begin{tabular}{@{}crrrrrr@{}}
+% Help: \SetCell[r=2,c=2]{c,m} <content>, \cmidrule[l]{3-4}
+% Help: colspec: X[ratio, horizontal alignment] columns grow to fit width=\linewidth
+%                  negative ratios: shrink to fit content and may not grow to full ratio
+% Help: colspec: l/c/r columns do not grow
+\longtabse[0.6]  % scale factor
+{丁寧語 forms and their conjugations. \textgreen{green means additive} (without modifying the dictionary-form); \textblue{blue means substitutive} (modifies the dictionary-form); \textred{red means exception}. $^\dagger$: Past-positive nouns and な-adjectives do not use ``だったでした'' as that contains the assertive だ, which is incompatible with polite speech. Note however that this does not apply to い-adjectives ($^\ddagger$)! \textorange{Mnemonic: でした is a ``past tense'' marker, and appears in both past-positive nouns and adjectives, and past-negative verbs.}}  % caption
+{tbl:teineigo-forms}  % label
+{
+    colspec={X[-1,c]X[-1,r]X[-1,r]X[-1,r]X[-1,r]X[-1,r]X[-1,r]},
+    rowhead=2,
+    % width=\linewidth,  % useful only with X columns
+}  % inner specification options
+{
     \toprule
-    \multirow2*{\textbf{Category}} & \multirow2*{\textbf{Dictionary form}}  & \multirow2*{\textbf{Verb stem}} & \multicolumn2c{\textbf{Positive}}                                          & \multicolumn2c{\textbf{Negative}}                                   \\ \cmidrule(lr){4-5} \cmidrule(l){6-7}
-                                       &                                            &                                     & \textbf{Present}               & \textbf{Past}                               & \textbf{Present}                 & \textbf{Past}                          \\ \midrule
-    Noun/な-adjective                  & 「」                                       &                                     & 「」\textgreen{です。}         & 「」\textgreen{でした$\!\!^\dagger$。}      & 「」じゃない\textgreen{です。}   & 「」じゃなかった\textgreen{です。}     \\
-    (formal)                           &                                            &                                     &                                &                                             & 「」じゃ\textblue{ありません。}  & 「」じゃ\textblue{ありませんでした。}  \\ \midrule
-    い-adjective                       & 「」い                                     &                                     & 「」い\textgreen{です。}       & 「」かった\textgreen{です$\!\!^\ddagger$。} & 「」くない\textgreen{です。}     & 「」くなかった\textgreen{です。}       \\
-    (formal)                           &                                            &                                     &                                &                                             & 「」く\textblue{ありません。}    & 「」く\textblue{ありませんでした。}    \\ \midrule
-    \multirow9*{う-verb}           & 「」す                                     & 「」\textblue{し}                   & 「」\textblue{します。}        & 「」\textblue{しました。}                   & 「」\textblue{しません。}        & 「」\textblue{しませんでした。}        \\
-                                       & 「」く                                     & 「」\textblue{き}                   & 「」\textblue{きます。}        & 「」\textblue{きました。}                   & 「」\textblue{きません。}        & 「」\textblue{きませんでした。}        \\
-                                       & 「」ぐ                                     & 「」\textblue{ぎ}                   & 「」\textblue{ぎます。}        & 「」\textblue{ぎました。}                   & 「」\textblue{ぎません。}        & 「」\textblue{ぎませんでした。}        \\
-                                       & 「」む                                     & 「」\textblue{み}                   & 「」\textblue{みます。}        & 「」\textblue{みました。}                   & 「」\textblue{みません。}        & 「」\textblue{みませんでした。}        \\
-                                       & 「」ね                                     & 「」\textblue{に}                   & 「」\textblue{にます。}        & 「」\textblue{にました。}                   & 「」\textblue{にません。}        & 「」\textblue{にませんでした。}        \\
-                                       & 「」ぶ                                     & 「」\textblue{び}                   & 「」\textblue{びます。}        & 「」\textblue{びました。}                   & 「」\textblue{びません。}        & 「」\textblue{びませんでした。}        \\
-                                       & 「」る                                     & 「」\textblue{り}                   & 「」\textblue{ります。}        & 「」\textblue{りました。}                   & 「」\textblue{りません。}        & 「」\textblue{りませんでした。}        \\
-                                       & 「」つ                                     & 「」\textblue{ち}                   & 「」\textblue{ちます。}        & 「」\textblue{ちました。}                   & 「」\textblue{ちません。}        & 「」\textblue{ちませんでした。}        \\
-                                       & 「」う                                     & 「」\textblue{い}                   & 「」\textblue{います。}        & 「」\textblue{いました。}                   & 「」\textblue{いません。}        & 「」\textblue{いませんでした。}        \\ \midrule
-    る-verb                            & 「」る                                     & 「」　                              & 「」　\textblue{ます。}        & 「」　\textblue{ました。}                   & 「」　\textblue{ません。}        & 「」　\textblue{ませんでした}          \\ \midrule
-    \multirow3*{Exception verb}    & 「」する                                   & 「」\textblue{し}                   & 「」\textblue{します。}        & 「」\textblue{しました。}                   & 「」\textblue{しません。}        & 「」\textblue{しませんでした}          \\
-                                       & くる                                       & \textblue{き}                       & \textblue{きます。}            & \textblue{きました。}                       & \textblue{きません。}            & \textblue{きませんでした。}            \\[0.5em]
-                                       & \ruby{来}{く}る                            & \textblue{\ruby{来}{き}}            & \textblue{\ruby{来}{き}ます。} & \textblue{\ruby{来}{き}ました。}            & \textblue{\ruby{来}{き}ません。} & \textblue{\ruby{来}{き}ませんでした。} \\[0.5em]
-    \bottomrule
-\end{tabular}%
+    \SetCell[r=2]{c,m} \textbf{Category} & \SetCell[r=2]{c,m} \textbf{Dictionary form}  & \SetCell[r=2]{c,m} \textbf{Verb stem} & \SetCell[c=2]{c,m} \textbf{Positive} &                                             & \SetCell[c=2]{c,m} \textbf{Negative} &                                        \\* \cmidrule[lr]{4-5} \cmidrule[l]{6-7}
+                                         &                                              &                                       & \textbf{Present}                     & \textbf{Past}                               & \textbf{Present}                     & \textbf{Past}                          \\ \midrule
+    Noun/な-adjective                    & 「」                                         &                                       & 「」\textgreen{です。}               & 「」\textgreen{でした$\!\!^\dagger$。}      & 「」じゃない\textgreen{です。}       & 「」じゃなかった\textgreen{です。}     \\*
+    (formal)                             &                                              &                                       &                                      &                                             & 「」じゃ\textblue{ありません。}      & 「」じゃ\textblue{ありませんでした。}  \\ \midrule
+    い-adjective                         & 「」い                                       &                                       & 「」い\textgreen{です。}             & 「」かった\textgreen{です$\!\!^\ddagger$。} & 「」くない\textgreen{です。}         & 「」くなかった\textgreen{です。}       \\*
+    (formal)                             &                                              &                                       &                                      &                                             & 「」く\textblue{ありません。}        & 「」く\textblue{ありませんでした。}    \\ \midrule
+    \SetCell[r=9]{c,m} う-verb           & 「」す                                       & 「」\textblue{し}                     & 「」\textblue{します。}              & 「」\textblue{しました。}                   & 「」\textblue{しません。}            & 「」\textblue{しませんでした。}        \\*
+                                         & 「」く                                       & 「」\textblue{き}                     & 「」\textblue{きます。}              & 「」\textblue{きました。}                   & 「」\textblue{きません。}            & 「」\textblue{きませんでした。}        \\*
+                                         & 「」ぐ                                       & 「」\textblue{ぎ}                     & 「」\textblue{ぎます。}              & 「」\textblue{ぎました。}                   & 「」\textblue{ぎません。}            & 「」\textblue{ぎませんでした。}        \\*
+                                         & 「」む                                       & 「」\textblue{み}                     & 「」\textblue{みます。}              & 「」\textblue{みました。}                   & 「」\textblue{みません。}            & 「」\textblue{みませんでした。}        \\*
+                                         & 「」ね                                       & 「」\textblue{に}                     & 「」\textblue{にます。}              & 「」\textblue{にました。}                   & 「」\textblue{にません。}            & 「」\textblue{にませんでした。}        \\*
+                                         & 「」ぶ                                       & 「」\textblue{び}                     & 「」\textblue{びます。}              & 「」\textblue{びました。}                   & 「」\textblue{びません。}            & 「」\textblue{びませんでした。}        \\*
+                                         & 「」る                                       & 「」\textblue{り}                     & 「」\textblue{ります。}              & 「」\textblue{りました。}                   & 「」\textblue{りません。}            & 「」\textblue{りませんでした。}        \\*
+                                         & 「」つ                                       & 「」\textblue{ち}                     & 「」\textblue{ちます。}              & 「」\textblue{ちました。}                   & 「」\textblue{ちません。}            & 「」\textblue{ちませんでした。}        \\*
+                                         & 「」う                                       & 「」\textblue{い}                     & 「」\textblue{います。}              & 「」\textblue{いました。}                   & 「」\textblue{いません。}            & 「」\textblue{いませんでした。}        \\ \midrule
+    る-verb                              & 「」る                                       & 「」　                                & 「」　\textblue{ます。}              & 「」　\textblue{ました。}                   & 「」　\textblue{ません。}            & 「」　\textblue{ませんでした}          \\ \midrule
+    \SetCell[r=3]{c,m} Exception verb    & 「」する                                     & 「」\textblue{し}                     & 「」\textblue{します。}              & 「」\textblue{しました。}                   & 「」\textblue{しません。}            & 「」\textblue{しませんでした}          \\*
+                                         & くる                                         & \textblue{き}                         & \textblue{きます。}                  & \textblue{きました。}                       & \textblue{きません。}                & \textblue{きませんでした。}            \\*
+                                         & \ruby{来}{く}る                              & \textblue{\ruby{来}{き}}              & \textblue{\ruby{来}{き}ます。}       & \textblue{\ruby{来}{き}ました。}            & \textblue{\ruby{来}{き}ません。}     & \textblue{\ruby{来}{き}ませんでした。} \\ \bottomrule
+
 }
-\caption{丁寧語 forms and their conjugations. \textgreen{green means additive} (without modifying the dictionary-form); \textblue{blue means substitutive} (modifies the dictionary-form); \textred{red means exception}. $^\dagger$: Past-positive nouns and な-adjectives do not use ``だったでした'' as that contains the assertive だ, which is incompatible with polite speech. Note however that this does not apply to い-adjectives ($^\ddagger$)! \textorange{Mnemonic: でした is a ``past tense'' marker, and appears in both past-positive nouns and adjectives, and past-negative verbs.}}
-\label{tbl:teineigo-forms}
-\end{table}
+
 
 \subsubsection{です is NOT the polite form of だ, they are completely separate constructs}
 This is a common misconception! です and だ are two fundamentally different concepts:
@@ -248,15 +253,23 @@ E.g.\ 先生が学校に\textbf{行ったか\ul{どうか}}か知らない。(Wh
 \subsubsection{Modifying question words with suffixes か、も、でも}
 「」か refers to a particular existence (some\textasciitilde), 「」も refers to the universal (every\textasciitilde), and 「」でも refers to a non-particular existence (any\textasciitilde) (not to be confused with でも for ``but''). Question words and their variants are showed in Table~\ref{tbl:question-word-modifications}.
 
-\begin{table}[h]
-\centering
-\resizebox{\linewidth}{!}{%
-% Help: \multicolumn2c{\multirow2*{}}, cmidrule(l){3-5}
-\begin{tabular}{@{}rcrcrcrc@{}}
+% Help: \SetCell[r=2,c=2]{c,m} <content>, \cmidrule[l]{3-4}
+% Help: colspec: X[ratio, horizontal alignment] columns grow to fit width=\linewidth
+%                  negative ratios: shrink to fit content and may not grow to full ratio
+% Help: colspec: l/c/r columns do not grow
+\longtabse[0.75]  % scale factor
+{Question words and their modified variants. Treat these all as normal nouns. $^\dagger$: 誰も is usually used in negative sentences to mean nobody can do the verb, and to express the positive universal everybody we typically use \ruby{皆}{みんあ}[さん]; $^\ddagger$: 何も is used exclusively in negative sentences.}  % caption
+{tbl:question-word-modifications}  % label
+{
+    colspec={X[-1,r]X[-1,c]X[-1,r]X[-1,c]X[-1,r]X[-1,c]X[-1,r]X[-1,c]},
+    rowhead=1,
+    % width=\linewidth,  % useful only with X columns
+}  % inner specification options
+{
     \toprule
     \textbf{「」} & \textbf{Meaning} & \textbf{「」か} & \textbf{Meaning} & \textbf{「」も} & \textbf{Meaning} & \textbf{「」でも} & \textbf{Meaning} \\
     \toprule
-    誰 & who & 誰か & someone & 誰も & nobody$^\dagger$ & 誰でも & anybody \\[0.5em]
+    誰 & who & 誰か & someone & 誰も & nobody$^\dagger$ & 誰でも & anybody \\
     \ruby{何}{なに} & what & \ruby{何}{なに}か & nothing & \ruby{何}{なに}も & everything$^\ddagger$ & \ruby{何}{なん}でも & anything \\
     いつ & when & いつか & sometime & いつも & always/never & いつでも & anytime \\
     どこ & where & どこか & somewhere & どこ[に]も & everywhere/nowhere & どこでも & anywhere \\
@@ -265,11 +278,7 @@ E.g.\ 先生が学校に\textbf{行ったか\ul{どうか}}か知らない。(Wh
     どれ & which (3 or more) & どれか & one from many & どれも & all/none & どれでも & any of many \\
     どちら & which (2) & どちらか & one of two & どちらも & both/neither & どちらでも & any of two \\
     \bottomrule
-\end{tabular}%
 }
-\caption{Question words and their modified variants. Treat these all as normal nouns. $^\dagger$: 誰も is usually used in negative sentences to mean nobody can do the verb, and to express the positive universal everybody we typically use \ruby{皆}{みんあ}[さん]; $^\ddagger$: 何も is used exclusively in negative sentences.}
-\label{tbl:question-word-modifications}
-\end{table}
 
 To mean ``For some reason...'' you can say 「どういうわけか\dots」.
 
@@ -315,38 +324,43 @@ Use one of the following (in descending order of politeness):
 
 The て-form of nouns, adjectives and verbs are used to form sequences of states (nouns/adjectives) or actions. The conjugation rules are in Table~\ref{tbl:te-form}.
 
-\begin{table}[h]
-\centering
-\resizebox{\linewidth}{!}{%
-% Help: \multicolumn2c{\multirow2*{}}, cmidrule(l){3-5}
-\begin{tabular}{@{}crrrl@{}}
+% Help: \SetCell[r=2,c=2]{c,m} <content>, \cmidrule[l]{3-4}
+% Help: colspec: X[ratio, horizontal alignment] columns grow to fit width=\linewidth
+%                  negative ratios: shrink to fit content and may not grow to full ratio
+% Help: colspec: l/c/r columns do not grow
+\longtabsea[0.75]  % scale factor
+{て-form conjugation rules, for nouns, adjectives and verbs. [] means optional; 「」 is a dictionary-form placeholer; \textgreen{green means additive} (without modifying the dictionary-form); \textblue{blue means substitutive} (modifies the dictionary-form); \textred{red means exception}.}  % caption
+{tbl:te-form}  % label
+{
+    colspec={X[-1,c]X[-1,r]X[-1,r]X[-1,r]X[-1,l]},
+    rowhead=1,
+    % width=\linewidth,  % useful only with X columns
+}  % inner specification options
+{
     \toprule
     \textbf{Category}                 & \textbf{Dictionary form} & \textbf{Positive て-form}            & \textbf{Negative て-form}                & \textbf{Examples}                                                                                         \\ \midrule
     Noun/な-adjective                 & 「」                     & 「」\textgreen{で}                   & 「」\textgreen{じゃなくて}               & 学生、友達、好き、\textred{嫌い}                                                                          \\ \midrule
-    \multirow3*{い-adjective}     & 「」い                   & 「」\textblue{くて}                  & 「」\textblue{くなくて}                  & 嬉しい、気持ち悪い、難しい                                                                                \\
-                                      & いい                     & \textred{よ}\textblue{くて}          & \textred{よ}くなくて                     &                                                                                                           \\
+    \SetCell[r=3]{c,m} い-adjective   & 「」い                   & 「」\textblue{くて}                  & 「」\textblue{くなくて}                  & 嬉しい、気持ち悪い、難しい                                                                                \\*
+                                      & いい                     & \textred{よ}\textblue{くて}          & \textred{よ}くなくて                     &                                                                                                           \\*
                                       & かっこいい               & かっこ\textred{よ}\textblue{くて}    & かっこ\textred{よ}くなくて               &                                                                                                           \\ \midrule
-    \multirow{10}*{う-verb}         & 「」　す                 & 「」\textblue{して}                  & 「」\textblue{さなくて}                  & 話す、出す                                                                                                \\
-                                      & 「」　く                 & 「」\textblue{いて}                  & 「」\textblue{かなくて}                  & 聞く、書く、描く                                                                                          \\
-                                      & 行　く                   & 行\textblue{って}                    & 行\textblue{かなくて}                    &                                                                                                           \\
-                                      & 「」　ぐ                 & 「」\textblue{いで}                  & 「」\textblue{がなくて}                  & 泳ぐ                                                                                                      \\
-                                      & 「」　む                 & 「」\textblue{んで}                  & 「」\textblue{まなくて}                  & 飲む、読む、\ruby{盗}{ぬす}む                                                                             \\
-                                      & 「」　ね                 & 「」\textblue{んで}                  & 「」\textblue{ななくて}                  & 死ね                                                                                                      \\
-                                      & 「」　ぶ                 & 「」\textblue{んで}                  & 「」\textblue{ばなくて}                  & 遊ぶ                                                                                                      \\
-                                      & 「」　る                 & 「」\textblue{って}                  & 「」\textblue{らなくて}                  & \textred{知る}、\textred{切る}、\textred{\ruby{帰}{かえ}る}、\textred{\ruby{走}{はし}る}、\ruby{降}{ふ}る \\
-                                      & ある                     & あ\textblue{って}                    & \textred{なくて}                         &                                                                                                           \\
-                                      & 「」　つ                 & 「」\textblue{って}                  & 「」\textblue{たなくて}                  & 待つ                                                                                                      \\
+    \SetCell[r=11]{c,m} う-verb       & 「」　す                 & 「」\textblue{して}                  & 「」\textblue{さなくて}                  & 話す、出す                                                                                                \\*
+                                      & 「」　く                 & 「」\textblue{いて}                  & 「」\textblue{かなくて}                  & 聞く、書く、描く                                                                                          \\*
+                                      & 行　く                   & 行\textblue{って}                    & 行\textblue{かなくて}                    &                                                                                                           \\*
+                                      & 「」　ぐ                 & 「」\textblue{いで}                  & 「」\textblue{がなくて}                  & 泳ぐ                                                                                                      \\*
+                                      & 「」　む                 & 「」\textblue{んで}                  & 「」\textblue{まなくて}                  & 飲む、読む、\ruby{盗}{ぬす}む                                                                             \\*
+                                      & 「」　ね                 & 「」\textblue{んで}                  & 「」\textblue{ななくて}                  & 死ね                                                                                                      \\*
+                                      & 「」　ぶ                 & 「」\textblue{んで}                  & 「」\textblue{ばなくて}                  & 遊ぶ                                                                                                      \\*
+                                      & 「」　る                 & 「」\textblue{って}                  & 「」\textblue{らなくて}                  & \textred{知る}、\textred{切る}、\textred{\ruby{帰}{かえ}る}、\textred{\ruby{走}{はし}る}、\ruby{降}{ふ}る \\*
+                                      & ある                     & あ\textblue{って}                    & \textred{なくて}                         &                                                                                                           \\*
+                                      & 「」　つ                 & 「」\textblue{って}                  & 「」\textblue{たなくて}                  & 待つ                                                                                                      \\*
                                       & 「」　う                 & 「」\textblue{って}                  & 「」\textblue{わなくて}                  & 買う、\ruby{会}{あ}う                                                                                     \\ \midrule
     る-verb                           & 「」　る                 &「」　\textblue{て}                   & 「」　\textblue{なくて}                  & いる、食べる、\ruby{出}{で}る、見る*                                                                      \\ \midrule
-    \multirow{3.5}*{Exception verb} & 「」する                 & 「」\textblue{して}                  & 「」\textblue{しなくて}                  & 勉強する、楽しみにする、質問をする                                                                                                  \\
-                                      & くる                     & \textred{き}\textblue{て}            & \textred{こ}\textblue{なくて}            &                                                                                                           \\[0.5em]
+    \SetCell[r=3]{c,m} Exception verb & 「」する                 & 「」\textblue{して}                  & 「」\textblue{しなくて}                  & 勉強する、楽しみにする、質問をする                                                                                                  \\*
+                                      & くる                     & \textred{き}\textblue{て}            & \textred{こ}\textblue{なくて}            &                                                                                                           \\*
                                       & \ruby{来}{く}る          & \textred{\ruby{来}{き}}\textblue{て} & \textred{\ruby{来}{こ}}\textblue{なくて} &                                                                                                           \\
     \bottomrule
-\end{tabular}%
 }
-\caption{て-form conjugation rules, for nouns, adjectives and verbs. [] means optional; 「」 is a dictionary-form placeholer; \textgreen{green means additive} (without modifying the dictionary-form); \textblue{blue means substitutive} (modifies the dictionary-form); \textred{red means exception}.}
-\label{tbl:te-form}
-\end{table}
+
 
 て-form conjugations for です/ます/ません exist but they are part of 尊敬語 and are outside the scope of 丁寧語. In a chain of nouns/adjectives/verbs, only the last one takes the polite form です/ます/ません; everything before takes the plain form. Since て is used when connecting sentences, there is no need for です/ます/ません to have a て-form in 丁寧語.
 

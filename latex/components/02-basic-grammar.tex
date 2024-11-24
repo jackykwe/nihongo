@@ -295,27 +295,34 @@ Adjectives (adjective phrases) modify a noun that comes after it.
 
 Table~\ref{tbl:adjective-conjugations} shows the conjugations and usage syntax for な- and い- adjectives.
 
-\begin{table}[h]
-\centering
-% \resizebox{\linewidth}{!}{%
-% Help: \multicolumn2c{\multirow2*{}}, cmidrule(l){3-5}
-\begin{tabular}{@{}rrr@{}}
+% Help: \SetCell[r=2,c=2]{c,m} <content>, \cmidrule[l]{3-4}
+% Help: colspec: X[ratio, horizontal alignment] columns grow to fit width=\linewidth
+%                  negative ratios: shrink to fit content and may not grow to full ratio
+% Help: colspec: l/c/r columns do not grow
+\longtabse[1]  % scale factor
+{Adjective conjugations. I purposely use よかった instead of 良かった (and their variants) here to show that you can use either; it's up to personal preference. I personally prefer the use of 漢字 (i.e.\ 良かった) because it can be more specific and it's easier to read (in that at a glance, it's easier to derive meaning from 漢字's widely varying word shapes, compared to a sea of 平仮名 characters). \textred{Note however that 良い is usually written in 仮名 alone when used as part of conjugations, as in this table.}}  % caption
+{tbl:adjective-conjugations}  % label
+{
+    colspec={rrr},
+    rowhead=1,
+    % width=\linewidth,  % useful only with X columns
+}  % inner specification options
+{
     \toprule
-    & \textbf{Positive} & \textbf{Negative} \\ \midrule
-    \multirow4*{\textbf{Present}} & <な-adjective>な<noun> & <な-adjective>じゃない<noun> \\
+    & \textbf{Positive} & \textbf{Negative} \\
+    \midrule
+    \SetCell[r=4]{c,m} \textbf{Present} & <な-adjective>な<noun> & <な-adjective>じゃない<noun> \\
     & <い-adjective>い <noun> & <い-adjective>くない <noun> \\
     & いい <noun> & よくない <noun> \\
     & かっこいい <noun> & かっこよくない <noun> \\
     \midrule
-    \multirow4*{\textbf{Past}} &  <な-adjective>だった<noun> &  <な-adjective>じゃなかった<noun> \\
+    \SetCell[r=4]{c,m} \textbf{Past} & <な-adjective>だった<noun> &  <な-adjective>じゃなかった<noun> \\
     & <い-adjective>かった <noun> & <い-adjective>くなかった <noun> \\
     & よかった <noun> & よくなかった <noun> \\
-    & かっこよかった <noun> & かっこよくなかった <noun> \\ \bottomrule
-\end{tabular}%
-% }
-\caption{Adjective conjugations. I purposely use よかった instead of 良かった (and their variants) here to show that you can use either; it's up to personal preference. I personally prefer the use of 漢字 (i.e.\ 良かった) because it can be more specific and it's easier to read (in that at a glance, it's easier to derive meaning from 漢字's widely varying word shapes, compared to a sea of 平仮名 characters). \textred{Note however that 良い is usually written in 仮名 alone when used as part of conjugations, as in this table.}}
-\label{tbl:adjective-conjugations}
-\end{table}
+    & かっこよかった <noun> & かっこよくなかった <noun> \\
+    \bottomrule
+}
+
 
 \subsection{Verbs}
 \emph{Read the main article regarding verb classes and conjugations on \href{https://www.tofugu.com/japanese-grammar/verb-conjugation-groups/}{Tofugu}.}
@@ -324,26 +331,30 @@ Verbs always come at the end of clauses.
 
 Verbs are categorised into three groups, as shown in Table~\ref{tbl:verb-classification}. Be flexible: all these terms are used in different textbooks and dictionaries. Thankfully, they are easy to remember, along with the observation that there are way more Group I verbs than Group II verbs, and there are only two Group III verbs (or up to a dozen, depending on how you count them).\footnote{Mnemonic I'm using: \textorange{Group I is the most superior; 五段 is superior to 一段; う comes before る in the 平仮名 alphabet chart.}}
 
-\begin{table}[h]
-\centering
-% \resizebox{\linewidth}{!}{%
-% Help: \multicolumn2c{\multirow2*{}}, cmidrule(l){3-5}
-\begin{tabular}{@{}clll@{}}
+% Help: \SetCell[r=2,c=2]{c,m} <content>, \cmidrule[l]{3-4}
+% Help: colspec: X[ratio, horizontal alignment] columns grow to fit width=\linewidth
+%                  negative ratios: shrink to fit content and may not grow to full ratio
+% Help: colspec: l/c/r columns do not grow
+\longtabse[1]  % scale factor
+{Verb classifications. *There isn't a Japanese term for exception verbs; する and 来る are the only members of the  不規則動詞 subclass.}  % caption
+{tbl:verb-classification}  % label
+{
+    colspec={clll},
+    rowhead=1,
+    % width=\linewidth,  % useful only with X columns
+}  % inner specification options
+{
     \toprule
     & \textbf{Group 1} & \textbf{Group 2} & \textbf{Group 3}\\
     \midrule
-    \multirow5*{\textbf{Synonyms}} & Pentagrade verb & Monograde verb & Irregular verb \\[0.5em]
+    \SetCell[r=6]{c,m} \textbf{Synonyms} & Pentagrade verb & Monograde verb & Irregular verb \\
     & \ruby{五段動詞}{ご|だん|どう|し} & \ruby{一段動詞}{いち|だん|どう|し} & \ruby{不規則動詞}{ふ|き|そく|どう|し}* \\
     & Godan verb & Ichidan verb & Special class \\
     & Group I verb & Group II verb & Group III verb \\
     & う-verb & る-verb & Exception verb \\
     & Consonant-root/stem verb & Vowel-root/stem verb & - \\
     \bottomrule
-\end{tabular}%
-% }
-\caption{Verb classifications. *There isn't a Japanese term for exception verbs; する and 来る are the only members of the  不規則動詞 subclass.}
-\label{tbl:verb-classification}
-\end{table}
+}
 
 In a nutshell, \textbf{る-verbs is the class of \emph{almost all} \ul{-iru/-eru} verbs.} Exceptions include 帰る、切る、知るwhich are う-verbs.
 
@@ -379,69 +390,81 @@ A counterexample to \eqref{eqn:passive-voice-notimplies-intransitive} is ``The a
 
 Thus we can't use the passive voice as a marker for intransitivity. In fact, in Japanese, the passive voice has a conjugation of its own, which applies for both transitive and intransitive verbs. \textred{Take special care NOT to interpret the passive voice ``to be \dots'' (endemic to English definitions) in Appendix~\ref{appendix:verbs} as equivalent to intransitivity. \textbf{Transitivity and passiveness are intertwined (SL) but remain independent concepts.}}
 
-\begin{table}[h]
-\centering
-% \resizebox{\linewidth}{!}{%
-% Help: \multicolumn2c{\multirow2*{}}, cmidrule(l){3-5}
-\begin{tabular}{@{}rlrl@{}}
+% Help: \SetCell[r=2,c=2]{c,m} <content>, \cmidrule[l]{3-4}
+% Help: colspec: X[ratio, horizontal alignment] columns grow to fit width=\linewidth
+%                  negative ratios: shrink to fit content and may not grow to full ratio
+% Help: colspec: l/c/r columns do not grow
+\longtabse[1]  % scale factor
+{Example transitive verbs and their intransitive counterparts.}  % caption
+{tbl:transitive-intransitive-verbs}  % label
+{
+    colspec={rlrl},
+    rowhead=1,
+    % width=\linewidth,  % useful only with X columns
+}  % inner specification options
+{
     \toprule
-    \textbf{Transitive} & \textbf{Meaning} & \textbf{Intransitive} & \textbf{Meaning} \\ \midrule \\[-0.75em]
-    \ruby{起}{お}こす & to pick up & \ruby{起}{お}きる & to rise \\[0.5em]
-    \ruby{落}{お}とす & to drop & \ruby{落}{お}ちる & to fall \\ \midrule \\[-0.75em]
-    \ruby{入}{い}れる & to put in & \ruby{入}{はい}る & to enter/go in \\[0.5em]
-    \ruby{出}{だ}す & to take out & \ruby{出}{で}る & to exit/come out \\ \midrule \\[-0.75em]
-    \ruby{開}{あ}ける & to open & \ruby{開}{あ}く & to open \\[0.5em]
-    \ruby{閉}{し}める & to close & \ruby{閉}{し}まる & to close \\ \midrule \\[-0.75em]
-    つける & to turn on (lights/appliance) & つく & to turn on (lights/appliance) \\[0.5em]
-    \ruby{消}{け}す & to turn off (lights/appliance) & \ruby{消}{き}える & to turn off (lights/appliance) \\ \midrule \\[-0.75em]
-    \ruby{刺}{さ}す & to pierce & \ruby{刺}{さ}さる & to pierce \\[0.5em]
-    \ruby{抜}{ぬ}く & to pull out/extract & \ruby{抜}{ぬ}ける & to fall out/extract \\ \bottomrule
-\end{tabular}%
-% }
-\caption{Example transitive verbs and their intransitive counterparts.}
-\label{tbl:transitive-intransitive-verbs}
-\end{table}
-
-
-
+    \textbf{Transitive} & \textbf{Meaning} & \textbf{Intransitive} & \textbf{Meaning} \\
+    \midrule
+    \ruby{起}{お}こす & to pick up & \ruby{起}{お}きる & to rise \\
+    \ruby{落}{お}とす & to drop & \ruby{落}{お}ちる & to fall \\
+    \midrule
+    \ruby{入}{い}れる & to put in & \ruby{入}{はい}る & to enter/go in \\
+    \ruby{出}{だ}す & to take out & \ruby{出}{で}る & to exit/come out \\
+    \midrule
+    \ruby{開}{あ}ける & to open & \ruby{開}{あ}く & to open \\
+    \ruby{閉}{し}める & to close & \ruby{閉}{し}まる & to close \\
+    \midrule
+    つける & to turn on (lights/appliance) & つく & to turn on (lights/appliance) \\
+    \ruby{消}{け}す & to turn off (lights/appliance) & \ruby{消}{き}える & to turn off (lights/appliance) \\
+    \midrule
+    \ruby{刺}{さ}す & to pierce & \ruby{刺}{さ}さる & to pierce \\
+    \ruby{抜}{ぬ}く & to pull out/extract & \ruby{抜}{ぬ}ける & to fall out/extract \\
+    \bottomrule
+}
 
 
 \subsection{Nouns, adjectives, verbs conjugation summary}
 Table~\ref{tbl:grammar-conjugation-summary} shows all the conjugation rules we've seen so far.
 
-\begin{table}[h]
-\centering
-\resizebox{\linewidth}{!}{%
-% Help: \multicolumn2c{\multirow2*{}}, cmidrule(l){3-5}
-\begin{tabular}{@{}crrrrl@{}}
+% Help: \SetCell[r=2,c=2]{c,m} <content>, \cmidrule[l]{3-4}
+% Help: colspec: X[ratio, horizontal alignment] columns grow to fit width=\linewidth
+%                  negative ratios: shrink to fit content and may not grow to full ratio
+% Help: colspec: l/c/r columns do not grow
+\longtabse[0.75]  % scale factor
+{Basic conjugation rules, for nouns, adjectives and verbs. [] means optional; 「」 is a dictionary-form placeholer; \textgreen{green means additive} (without modifying the dictionary-form); \textblue{blue means substitutive} (modifies the dictionary-form); \textred{red means exception}.}  % caption
+{tbl:grammar-conjugation-summary}  % label
+{
+    colspec={X[-1,c]X[-1,r]X[-1,r]X[-1,r]X[-1,r]X[1,l]},
+    rowhead=1,
+    % width=\linewidth,  % useful only with X columns
+}  % inner specification options
+{
     \toprule
-    \multirow2*{\textbf{Category}}  & \multicolumn2c{\textbf{Positive}}                       & \multicolumn2c{\textbf{Negative}}                                               & \multirow2*{\textbf{Examples}} \\ \cmidrule(lr){2-3} \cmidrule(lr){4-5}
-                                    & \textbf{Present}     & \textbf{Past}                        & \textbf{Present}                       & \textbf{Past}                              & \\ \midrule
-    Noun/な-adjective               & 「」\textgreen{[だ]} & 「」\textgreen{だった}               & 「」\textgreen{じゃない}               & 「」\textgreen{じゃなかった}               & 学生、友達 \\ \midrule
-    な-adjective                    & 「」\textgreen{な}   & 「」\textgreen{だった}               & 「」\textgreen{じゃない}               & 「」\textgreen{じゃなかった}               & 元気、綺麗、好き、\textred{嫌い}  \\ \midrule
-    \multirow3*{い-adjective}       & 「」い               & 「」\textblue{かった}                & 「」\textblue{くない}                  & 「」\textblue{くなかった}                  & 嬉しい、気持ち悪い、難しい \\
-                                    & いい                 & \textred{よ}\textblue{かった}        & \textred{よ}\textblue{くない}          & \textred{よ}\textblue{くなかった}          & \\
-                                    & かっこいい           & かっこ\textred{よ}\textblue{かった}  & かっこ\textred{よ}\textblue{くない}    & かっこ\textred{よ}\textblue{くなかった}    & \\ \midrule
-    \multirow{10}*{う-verb}         & 「」　す             & 「」\textblue{した}                  & 「」\textblue{さない}                  & 「」\textblue{さなかった}                  & 話す、出す \\
-                                    & 「」　く             & 「」\textblue{いた}                  & 「」\textblue{かない}                  & 「」\textblue{かなかった}                  & 聞く、書く、描く \\
-                                    & 行　く               & 行\textblue{った}                    & 行\textblue{かない}                    & 行\textblue{かなかった}                    & \\
-                                    & 「」　ぐ             & 「」\textblue{いだ}                  & 「」\textblue{がない}                  & 「」\textblue{がなかった}                  & 泳ぐ \\
-                                    & 「」　む             & 「」\textblue{んだ}                  & 「」\textblue{まない}                  & 「」\textblue{まなかった}                  & 飲む、読む、\ruby{盗}{ぬす}む \\
-                                    & 「」　ね             & 「」\textblue{んだ}                  & 「」\textblue{なない}                  & 「」\textblue{ななかった}                  & 死ね \\
-                                    & 「」　ぶ             & 「」\textblue{んだ}                  & 「」\textblue{ばない}                  & 「」\textblue{ばなかった}                  & 遊ぶ \\
-                                    & 「」　る             & 「」\textblue{った}                  & 「」\textblue{らない}                  & 「」\textblue{らなかった}                  & \textred{知る}、\textred{切る}、\textred{\ruby{帰}{かえ}る}、\textred{\ruby{走}{はし}る}、\ruby{降}{ふ}る \\
-                                    & ある                 & あ\textblue{った}                    & \textred{ない}                         & \textred{なかった}                         & \\
-                                    & 「」　つ             & 「」\textblue{った}                  & 「」\textblue{たない}                  & 「」\textblue{たなかった}                  & 待つ \\
-                                    & 「」　う             & 「」\textblue{った}                  & 「」\textblue{わない}                  & 「」\textblue{わなかった}                  & 買う、\ruby{会}{あ}う \\ \midrule
-    る-verb                         & 「」　る             &「」　\textblue{た}                   & 「」　\textblue{ない}                  & 「」　\textblue{なかった}                  & いる、食べる、\ruby{出}{で}る、見る* \\ \midrule
-    \multirow{3.5}*{Exception verb} & 「」する             & 「」\textblue{した}                  & 「」\textblue{しない}                  & 「」\textblue{しなかった}                  & 勉強する、楽しみにする、質問をする \\
-                                    & くる                 & \textred{き}\textblue{た}            & \textred{こ}\textblue{ない}            & \textred{こ}\textblue{なかった}            & \\[0.5em]
-                                    & \ruby{来}{く}る      & \textred{\ruby{来}{き}}\textblue{た} & \textred{\ruby{来}{こ}}\textblue{ない} & \textred{\ruby{来}{こ}}\textblue{なかった} & \\ \bottomrule
-\end{tabular}%
+    \SetCell[r=2]{c,m} \textbf{Category} & \SetCell[c=2]{c,m} \textbf{Positive} &                                      & \SetCell[c=2]{c,m} \textbf{Negative}   &                                            & \SetCell[r=2]{c,m} \textbf{Examples} \\* \cmidrule[lr]{2-3} \cmidrule[lr]{4-5}
+                                         & \textbf{Present}                     & \textbf{Past}                        & \textbf{Present}                       & \textbf{Past}                              & \\ \midrule
+    Noun/な-adjective                    & 「」\textgreen{[だ]}                 & 「」\textgreen{だった}               & 「」\textgreen{じゃない}               & 「」\textgreen{じゃなかった}               & 学生、友達 \\ \midrule
+    な-adjective                         & 「」\textgreen{な}                   & 「」\textgreen{だった}               & 「」\textgreen{じゃない}               & 「」\textgreen{じゃなかった}               & 元気、綺麗、好き、\textred{嫌い}  \\ \midrule
+    \SetCell[r=3]{c,m} い-adjective      & 「」い                               & 「」\textblue{かった}                & 「」\textblue{くない}                  & 「」\textblue{くなかった}                  & 嬉しい、気持ち悪い、難しい \\*
+                                         & いい                                 & \textred{よ}\textblue{かった}        & \textred{よ}\textblue{くない}          & \textred{よ}\textblue{くなかった}          & \\*
+                                         & かっこいい                           & かっこ\textred{よ}\textblue{かった}  & かっこ\textred{よ}\textblue{くない}    & かっこ\textred{よ}\textblue{くなかった}    & \\ \midrule
+    \SetCell[r=11]{c,m} う-verb          & 「」　す                             & 「」\textblue{した}                  & 「」\textblue{さない}                  & 「」\textblue{さなかった}                  & 話す、出す \\*
+                                         & 「」　く                             & 「」\textblue{いた}                  & 「」\textblue{かない}                  & 「」\textblue{かなかった}                  & 聞く、書く、描く \\*
+                                         & 行　く                               & 行\textblue{った}                    & 行\textblue{かない}                    & 行\textblue{かなかった}                    & \\*
+                                         & 「」　ぐ                             & 「」\textblue{いだ}                  & 「」\textblue{がない}                  & 「」\textblue{がなかった}                  & 泳ぐ \\*
+                                         & 「」　む                             & 「」\textblue{んだ}                  & 「」\textblue{まない}                  & 「」\textblue{まなかった}                  & 飲む、読む、\ruby{盗}{ぬす}む \\*
+                                         & 「」　ね                             & 「」\textblue{んだ}                  & 「」\textblue{なない}                  & 「」\textblue{ななかった}                  & 死ね \\*
+                                         & 「」　ぶ                             & 「」\textblue{んだ}                  & 「」\textblue{ばない}                  & 「」\textblue{ばなかった}                  & 遊ぶ \\*
+                                         & 「」　る                             & 「」\textblue{った}                  & 「」\textblue{らない}                  & 「」\textblue{らなかった}                  & \textred{知る}、\textred{切る}、\textred{\ruby{帰}{かえ}る}、\textred{\ruby{走}{はし}る}、\ruby{降}{ふ}る \\*
+                                         & ある                                 & あ\textblue{った}                    & \textred{ない}                         & \textred{なかった}                         & \\*
+                                         & 「」　つ                             & 「」\textblue{った}                  & 「」\textblue{たない}                  & 「」\textblue{たなかった}                  & 待つ \\*
+                                         & 「」　う                             & 「」\textblue{った}                  & 「」\textblue{わない}                  & 「」\textblue{わなかった}                  & 買う、\ruby{会}{あ}う \\ \midrule
+    る-verb                              & 「」　る                             &「」　\textblue{た}                   & 「」　\textblue{ない}                  & 「」　\textblue{なかった}                  & いる、食べる、\ruby{出}{で}る、見る* \\ \midrule
+    \SetCell[r=3]{c,m} Exception verb    & 「」する                             & 「」\textblue{した}                  & 「」\textblue{しない}                  & 「」\textblue{しなかった}                  & 勉強する、楽しみにする、質問をする \\*
+                                         & くる                                 & \textred{き}\textblue{た}            & \textred{こ}\textblue{ない}            & \textred{こ}\textblue{なかった}            & \\*
+                                         & \ruby{来}{く}る                      & \textred{\ruby{来}{き}}\textblue{た} & \textred{\ruby{来}{こ}}\textblue{ない} & \textred{\ruby{来}{こ}}\textblue{なかった} & \\ \bottomrule
 }
-\caption{Basic conjugation rules, for nouns, adjectives and verbs. [] means optional; 「」 is a dictionary-form placeholer; \textgreen{green means additive} (without modifying the dictionary-form); \textblue{blue means substitutive} (modifies the dictionary-form); \textred{red means exception}.}
-\label{tbl:grammar-conjugation-summary}
-\end{table}
+
 
 \subsection{Verb particles を、に、へ、で}\label{sec:verb-particles}
 \begin{itemize}
@@ -727,34 +750,38 @@ For verbs, any form is usable (beyond \{positive, negative\} $\times$ \{present,
 
 Read more about these nuances at Sources \href{https://bunpro.jp/grammar_points/%E3%82%93%E3%81%98%E3%82%83%E3%81%AA%E3%81%84}{1}, \href{https://hinative.com/questions/9228841}{2}, \href{https://ja.hinative.com/questions/5027480}{3}.
 
-\begin{table}[h]
-\centering
-\resizebox{\linewidth}{!}{%
-% Help: \multicolumn2c{\multirow2*{}}, cmidrule(l){3-5}
-\begin{tabular}{@{}cclllll@{}}
+% Help: \SetCell[r=2,c=2]{c,m} <content>, \cmidrule[l]{3-4}
+% Help: colspec: X[ratio, horizontal alignment] columns grow to fit width=\linewidth
+%                  negative ratios: shrink to fit content and may not grow to full ratio
+% Help: colspec: l/c/r columns do not grow
+\longtabse[0.5]  % scale factor
+{の particle usage summary. 「」 is a dictionary-form placeholder; [] is optional; \textgreen{green means additive} (without modifying the dictionary-form); \textblue{blue means substitutive} (modifies the dictionary-form). $^*$: だ is the optional declarative/assertive present state-of-being marker. **: だ is used in masculine responses. For explanatory の, \textred{な} is used by rule for both nouns and な-adjectives. \textlightgrey{Light grey ones are rarely used.}}  % caption
+{tbl:explanatory-conjugations}  % label
+{
+    colspec={X[-1,c]X[-1,c]X[-1,l]X[-1,l]X[-1,l]X[-1,l]X[-1,l]},
+    rowhead=2,
+    % width=\linewidth,  % useful only with X columns
+}  % inner specification options
+{
     \toprule
-    \multirow2*{\textbf{の Purpose}} & \multirow2*{\textbf{Category}}  & \multirow2*{\textbf{Dictionary form}} &  \multicolumn2c{\textbf{Positive}}                                                     & \multicolumn2c{\textbf{Negative}}                                                                 \\ \cmidrule(lr){4-5} \cmidrule(l){6-7}
-                                     &                                 &                                       & \textbf{Present}                            & \textbf{Past}                                & \textbf{Present}                                   & \textbf{Past}                                    \\ \midrule
-    Possession                       & Noun                            & 「」                                  & 「」\textgreen{の[だ]$^*$}                  & \textlightgrey{「」のだった}                 & \textlightgrey{「」のじゃない}                     & \textlightgrey{「」のじゃなかった}               \\ \midrule
-    \multirow2*{Generic noun}        & \multirow{1}{*}{な-adjective}   & 「」                                  & 「」\textred{な}\textgreen{の}              & 「」だった\textgreen{の}                     & 「」じゃない\textgreen{の}                         & 「」じゃなかった\textgreen{の}                   \\
-                                     & \multirow1*{い-adjective/verb}  & 「」                                  & 「」\textgreen{の}                          & 「」<conj>\textgreen{の}                     & 「」<conj>\textgreen{の}                           & 「」<conj>\textgreen{の}                         \\ \midrule
-    \multirow{8.5}*{Explanatory}     & \multirow4*{Noun/な-adjective}  & 「」                                  & 「」\textred{な}\textgreen{の[だ]$^{**}$。} & 「」だった\textgreen{の[だ]$^{**}$。}        & 「」じゃない\textgreen{の[だ]$^{**}$。}            & 「」じゃなかった\textgreen{の[だ]$^{**}$。}      \\
-                                     &                                 &                                       & 「」\textred{な}\textgreen{のです。}        & 「」だった\textgreen{のです。}               & 「」じゃない\textgreen{のです。}                   & 「」じゃなかった\textgreen{のです。}             \\
-                                     &                                 &                                       & 「」\textgreen{\textred{な}んだ。}          & 「」だった\textgreen{んだ。}                 & 「」じゃない\textgreen{んだ。}                     & 「」じゃなかった\textgreen{んだ。}               \\
-                                     &                                 &                                       & 「」\textgreen{\textred{な}んです。}        & 「」だった\textgreen{んです。}               & 「」じゃない\textgreen{んです。}                   & 「」じゃなかった\textgreen{んです。}             \\ \cmidrule(l){2-7}
-                                     & \multirow4*{い-adjective/verbs} & 「」                                  & 「」\textgreen{の[だ]$^{**}$。}             & 「」<conj>\textgreen{の[だ]$^{**}$。}        & 「」<conj>\textgreen{の[だ]$^{**}$。}              & 「」<conj>\textgreen{の[だ]$^{**}$。}            \\
-                                     &                                 &                                       & 「」\textgreen{のです。}                    & 「」<conj>\textgreen{のです。}               & 「」<conj>\textgreen{のです。}                     & 「」<conj>\textgreen{のです。}                   \\
-                                     &                                 &                                       & 「」\textgreen{んだ。}                      & 「」<conj>\textgreen{んだ。}                 & 「」<conj>\textgreen{んだ。}                       & 「」<conj>\textgreen{んだ。}                     \\
-                                     &                                 &                                       & 「」\textgreen{んです。}                    & 「」<conj>\textgreen{んです。}               & 「」<conj>\textgreen{んです。}                     & 「」<conj>\textgreen{んです。}                   \\ \midrule
-    \multirow{4.5}*{Special}         & \multirow2*{Noun/な-adjective}  & 「」                                  &                                             & \textlightgrey{「」\textred{な}んだった。}   & \textlightgrey{「」\textred{な}んじゃない。}       & \textlightgrey{「」\textred{な}んじゃなかった。} \\
-                                     &                                 &                                       &                                             & \textwhite{「」\textwhite{な}んだったです。} & \textlightgrey{「」\textred{な}んじゃありません。} & \textwhite{「」\textwhite{な}んじゃなかった。}   \\ \cmidrule(l){2-7}
-                                     & \multirow2*{い-adjective/verbs} & 「」                                  &                                             & 「」\textgreen{んだった。}                   & 「」\textgreen{んじゃない。}                       & 「」\textgreen{んじゃなかった。}                 \\
-                                     &                                 &                                       &                                             & \textwhite{「」んだったです。}               & 「」\textgreen{んじゃありません。}                 & \textwhite{「」んじゃなかったです。}             \\ \bottomrule
-\end{tabular}%
+    \SetCell[r=2]{c,m} \textbf{の Purpose} & \SetCell[r=2]{c,m} \textbf{Category}  & \SetCell[r=2]{c,m} \textbf{Dictionary form} & \SetCell[c=2]{c,m} \textbf{Positive}        &                                              & \SetCell[c=2]{c,m} \textbf{Negative}               &                                                  \\* \cmidrule[lr]{4-5} \cmidrule[l]{6-7}
+                                           &                                       &                                             & \textbf{Present}                            & \textbf{Past}                                & \textbf{Present}                                   & \textbf{Past}                                    \\ \midrule
+    Possession                             & Noun                                  & 「」                                        & 「」\textgreen{の[だ]$^*$}                  & \textlightgrey{「」のだった}                 & \textlightgrey{「」のじゃない}                     & \textlightgrey{「」のじゃなかった}               \\ \midrule
+    \SetCell[r=2]{c,m} Generic noun        & \SetCell[r=1]{c,m} な-adjective       & 「」                                        & 「」\textred{な}\textgreen{の}              & 「」だった\textgreen{の}                     & 「」じゃない\textgreen{の}                         & 「」じゃなかった\textgreen{の}                   \\*
+                                           & \SetCell[r=1]{c,m} い-adjective/verb  & 「」                                        & 「」\textgreen{の}                          & 「」<conj>\textgreen{の}                     & 「」<conj>\textgreen{の}                           & 「」<conj>\textgreen{の}                         \\ \midrule
+    \SetCell[r=8]{c,m} Explanatory         & \SetCell[r=4]{c,m} Noun/な-adjective  & 「」                                        & 「」\textred{な}\textgreen{の[だ]$^{**}$。} & 「」だった\textgreen{の[だ]$^{**}$。}        & 「」じゃない\textgreen{の[だ]$^{**}$。}            & 「」じゃなかった\textgreen{の[だ]$^{**}$。}      \\*
+                                           &                                       &                                             & 「」\textred{な}\textgreen{のです。}        & 「」だった\textgreen{のです。}               & 「」じゃない\textgreen{のです。}                   & 「」じゃなかった\textgreen{のです。}             \\*
+                                           &                                       &                                             & 「」\textgreen{\textred{な}んだ。}          & 「」だった\textgreen{んだ。}                 & 「」じゃない\textgreen{んだ。}                     & 「」じゃなかった\textgreen{んだ。}               \\*
+                                           &                                       &                                             & 「」\textgreen{\textred{な}んです。}        & 「」だった\textgreen{んです。}               & 「」じゃない\textgreen{んです。}                   & 「」じゃなかった\textgreen{んです。}             \\* \cmidrule[l]{2-7}
+                                           & \SetCell[r=4]{c,m} い-adjective/verbs & 「」                                        & 「」\textgreen{の[だ]$^{**}$。}             & 「」<conj>\textgreen{の[だ]$^{**}$。}        & 「」<conj>\textgreen{の[だ]$^{**}$。}              & 「」<conj>\textgreen{の[だ]$^{**}$。}            \\*
+                                           &                                       &                                             & 「」\textgreen{のです。}                    & 「」<conj>\textgreen{のです。}               & 「」<conj>\textgreen{のです。}                     & 「」<conj>\textgreen{のです。}                   \\*
+                                           &                                       &                                             & 「」\textgreen{んだ。}                      & 「」<conj>\textgreen{んだ。}                 & 「」<conj>\textgreen{んだ。}                       & 「」<conj>\textgreen{んだ。}                     \\*
+                                           &                                       &                                             & 「」\textgreen{んです。}                    & 「」<conj>\textgreen{んです。}               & 「」<conj>\textgreen{んです。}                     & 「」<conj>\textgreen{んです。}                   \\ \midrule
+    \SetCell[r=4]{c,m} Special             & \SetCell[r=2]{c,m} Noun/な-adjective  & 「」                                        &                                             & \textlightgrey{「」\textred{な}んだった。}   & \textlightgrey{「」\textred{な}んじゃない。}       & \textlightgrey{「」\textred{な}んじゃなかった。} \\*
+                                           &                                       &                                             &                                             & \textwhite{「」\textwhite{な}んだったです。} & \textlightgrey{「」\textred{な}んじゃありません。} & \textwhite{「」\textwhite{な}んじゃなかった。}   \\* \cmidrule[l]{2-7}
+                                           & \SetCell[r=2]{c,m} い-adjective/verbs & 「」                                        &                                             & 「」\textgreen{んだった。}                   & 「」\textgreen{んじゃない。}                       & 「」\textgreen{んじゃなかった。}                 \\*
+                                           &                                       &                                             &                                             & \textwhite{「」んだったです。}               & 「」\textgreen{んじゃありません。}                 & \textwhite{「」んじゃなかったです。}             \\ \bottomrule
 }
-\caption{の particle usage summary. 「」 is a dictionary-form placeholder; [] is optional; \textgreen{green means additive} (without modifying the dictionary-form); \textblue{blue means substitutive} (modifies the dictionary-form). $^*$: だ is the optional declarative/assertive present state-of-being marker. **: だ is used in masculine responses. For explanatory の, \textred{な} is used by rule for both nouns and な-adjectives. \textlightgrey{Light grey ones are rarely used.}}
-\label{tbl:explanatory-conjugations}
-\end{table}
 
 % \textred{\textbf{This section is downright confusing, I think it requires knowledge of how to ask questions (e.g.\ じゃない？じゃん？じゃないか？) as well as knowledge of polite form んです in order to truly appreciate these forms. Move on for now.}}
 
@@ -891,45 +918,51 @@ Many な-adjectives exhibit this flexibility of converting between adjectives an
 
 There exists a adjective-noun spectrum for adjectives: some are suffixed with な more often, and others の more often. Table~\ref{tbl:na-no-spectrum} provides examples.
 
-\begin{table}[h]
-\centering
-\resizebox{\linewidth}{!}{%
-% Help: \multicolumn2c{\multirow2*{}}, cmidrule(l){3-5}
-\begin{tabular}{@{}cccccccc@{}}
+% Help: \SetCell[r=2,c=2]{c,m} <content>, \cmidrule[l]{3-4}
+% Help: colspec: X[ratio, horizontal alignment] columns grow to fit width=\linewidth
+%                  negative ratios: shrink to fit content and may not grow to full ratio
+% Help: colspec: l/c/r columns do not grow
+\longtabsea[0.6]  % scale factor
+{な/の-adjectives on the adjective-noun spectrum. い-adjectives do not apply.}  % caption
+{tbl:na-no-spectrum}  % label
+{
+    colspec={X[-1,c]X[-1,c]X[-1,c]X[-1,c]X[-1,c]X[-1,c]X[-1,c]X[-1,c]},
+    rowhead=1,
+    % width=\linewidth,  % useful only with X columns
+}  % inner specification options
+{
     \toprule
-    \textbf{な $\gg$ の} & \textbf{Meaning} & \textbf{な $>$ の} & \textbf{Meaning} & \textbf{の $>$ な} & \textbf{Meaning} & \textbf{の $\gg$ な} & \textbf{Meaning} \\ \midrule \\[-0.5em]
-    好き & like & 元気 & well/fine & \ruby{大量}{たい|りょう} & large amount & \ruby{少}{すこ}し & a little \\[0.5em]
-    簡単 & simple & \ruby{健康}{けん|こう} & health(y) & \ruby{病気}{びょう|き} & illness/desease & 本当 & true/truth \\[0.5em]
-    \ruby{大切}{たい|せつ} & important & \ruby{安全}{あん|ぜん} & safe(ty) & \ruby{最高}{さい|こう} & best/highest & \ruby{永遠}{えい|えん} & eternity \\[0.5em]
-    だめ & no good/not allowed & \ruby{美人}{び|じん} & beautiful woman & \ruby{普通}{ふ|つう} & normal/ordinary & \ruby{最大}{さい|だい} & largest/maximum \\[0.5em]
-    静か & quiet & \ruby{不思議}{ふ|し|ぎ} & wonderful/miraculous & \ruby{未定}{み|てい} & to be decided/pending & \ruby{最小}{さい|しょう} & smallest/minimum \\[0.5em]
-    大変 & very & \ruby{平和}{へい|わ} & peace/harmony & \ruby{独自}{どく|じ} & unique/original & たくさん & a lot \\[0.5em]
-    \ruby{素敵}{す|てき} & splendid & \ruby{幸せ}{しあ|わせ} & happiness & \ruby{最速}{さい|そく} & fastest & \ruby{真実}{しん|じつ} & truth/reality \\[0.5em]
-    \ruby{勝手}{かっ|て} & selfish(ness) & \ruby{不幸}{ふ|こう} & misfortune/disaster & \ruby{一流}{いち|りゅう} & first-class/top-ranking & \ruby{一杯}{いっ|ぱい} & one cup \\[0.5em]
-    \ruby{複雑}{ふく|ざつ} & complicated/complex & \ruby{不安}{ふ|あん} & anxiety/worry/fear & \ruby{個別}{こ|べつ} & individual/separate &  & \\[0.5em]
-    \ruby{妙}{たえ} & strange & \ruby{高級}{こう|きゅう} & premium/luxury & \ruby{固有}{こ|ゆう} & characteristic/native &  & \\[0.5em]
-    \ruby{正解}{せい|かい} & correct & \ruby{平等}{びょう|どう} & equality/impartiality & \ruby{別}{べつ} & another/difference &  & \\[0.5em]
-    変 & strange &  &  & \ruby{無名}{む|めい} & anonymous/nameless &  & \\[0.5em]
-    \ruby{必要}{ひつ|よう} & necessary/needed &  &  & \ruby{未知}{み|ち} & unknown &  & \\[0.5em]
-    \ruby{深刻}{しん|こく} & serious &  &  & \ruby{少量}{しょう|りょう} & small amount &  & \\[0.5em]
-    \ruby{困難}{こん|なん} & difficulty/hardship &  &  &  &  &  & \\[0.5em]
-    \ruby{苦手}{に|がて} & weak at/bad at &  &  &  &  &  & \\[0.5em]
-    \ruby{危険}{き|けん} & danger &  &  &  &  &  & \\[0.5em]
-    嫌い & disliked &  &  &  &  &  & \\[0.5em]
-    無理 & impossible &  &  &  &  &  & \\[0.5em]
-    \ruby{異常}{い|じょう} & strange/abnormal &  &  &  &  &  & \\[0.5em]
-    \ruby{正直}{しょう|じき} & honest(ly) &  &  &  &  &  & \\[0.5em]
-    親切 & kind/generous &  &  &  &  &  & \\[0.5em]
-    \ruby{残酷}{ざん|こく} & cruel &  &  &  &  &  & \\[0.5em]
-    \ruby{有能}{ゆう|のう} & competent &  &  &  &  &  & \\[0.5em]
-    \ruby{冷静}{れい|せい} & calm &  &  &  &  &  & \\[0.5em]
-    \ruby{真剣}{しん|けん} & serious &  &  &  &  &  & \\[0.5em]
-    \ruby{慎重}{しん|ちょう} & cautious &  &  &  &  &  & \\ \bottomrule
-\end{tabular}%
+    \textbf{な $\gg$ の} & \textbf{Meaning} & \textbf{な $>$ の} & \textbf{Meaning} & \textbf{の $>$ な} & \textbf{Meaning} & \textbf{の $\gg$ な} & \textbf{Meaning} \\
+    \midrule
+    好き & like & 元気 & well/fine & \ruby{大量}{たい|りょう} & large amount & \ruby{少}{すこ}し & a little \\
+    簡単 & simple & \ruby{健康}{けん|こう} & health(y) & \ruby{病気}{びょう|き} & illness/desease & 本当 & true/truth \\
+    \ruby{大切}{たい|せつ} & important & \ruby{安全}{あん|ぜん} & safe(ty) & \ruby{最高}{さい|こう} & best/highest & \ruby{永遠}{えい|えん} & eternity \\
+    だめ & no good/not allowed & \ruby{美人}{び|じん} & beautiful woman & \ruby{普通}{ふ|つう} & normal/ordinary & \ruby{最大}{さい|だい} & largest/maximum \\
+    静か & quiet & \ruby{不思議}{ふ|し|ぎ} & wonderful/miraculous & \ruby{未定}{み|てい} & to be decided/pending & \ruby{最小}{さい|しょう} & smallest/minimum \\
+    大変 & very & \ruby{平和}{へい|わ} & peace/harmony & \ruby{独自}{どく|じ} & unique/original & たくさん & a lot \\
+    \ruby{素敵}{す|てき} & splendid & \ruby{幸せ}{しあ|わせ} & happiness & \ruby{最速}{さい|そく} & fastest & \ruby{真実}{しん|じつ} & truth/reality \\
+    \ruby{勝手}{かっ|て} & selfish(ness) & \ruby{不幸}{ふ|こう} & misfortune/disaster & \ruby{一流}{いち|りゅう} & first-class/top-ranking & \ruby{一杯}{いっ|ぱい} & one cup \\
+    \ruby{複雑}{ふく|ざつ} & complicated/complex & \ruby{不安}{ふ|あん} & anxiety/worry/fear & \ruby{個別}{こ|べつ} & individual/separate &  & \\
+    \ruby{妙}{たえ} & strange & \ruby{高級}{こう|きゅう} & premium/luxury & \ruby{固有}{こ|ゆう} & characteristic/native &  & \\
+    \ruby{正解}{せい|かい} & correct & \ruby{平等}{びょう|どう} & equality/impartiality & \ruby{別}{べつ} & another/difference &  & \\
+    変 & strange &  &  & \ruby{無名}{む|めい} & anonymous/nameless &  & \\
+    \ruby{必要}{ひつ|よう} & necessary/needed &  &  & \ruby{未知}{み|ち} & unknown &  & \\
+    \ruby{深刻}{しん|こく} & serious &  &  & \ruby{少量}{しょう|りょう} & small amount &  & \\
+    \ruby{困難}{こん|なん} & difficulty/hardship &  &  &  &  &  & \\
+    \ruby{苦手}{に|がて} & weak at/bad at &  &  &  &  &  & \\
+    \ruby{危険}{き|けん} & danger &  &  &  &  &  & \\
+    嫌い & disliked &  &  &  &  &  & \\
+    無理 & impossible &  &  &  &  &  & \\
+    \ruby{異常}{い|じょう} & strange/abnormal &  &  &  &  &  & \\
+    \ruby{正直}{しょう|じき} & honest(ly) &  &  &  &  &  & \\
+    親切 & kind/generous &  &  &  &  &  & \\
+    \ruby{残酷}{ざん|こく} & cruel &  &  &  &  &  & \\
+    \ruby{有能}{ゆう|のう} & competent &  &  &  &  &  & \\
+    \ruby{冷静}{れい|せい} & calm &  &  &  &  &  & \\
+    \ruby{真剣}{しん|けん} & serious &  &  &  &  &  & \\
+    \ruby{慎重}{しん|ちょう} & cautious &  &  &  &  &  & \\
+    \bottomrule
 }
-\caption{な/の-adjectives on the adjective-noun spectrum. い-adjectives do not apply.}
-\label{tbl:na-no-spectrum}
-\end{table}
 
 The different parts of the spectrum are described as follows:
 \begin{itemize}

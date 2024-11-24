@@ -10,11 +10,22 @@ Some general notes:
 \end{itemize}
 \subsubsection{Mnemonics}
 
-% Help: \multirow2*{} & \multirow2*{} & \multicolumn{3}{c}{} \\* \cmidrule(l){3-5}
-\begin{longtable}[c]{@{}ccccl@{}}
+% Help: \SetCell[r=2,c=2]{c,m} <content>, \cmidrule[l]{3-4}
+% Help: colspec: X[ratio, horizontal alignment] columns grow to fit width=\linewidth
+%                  negative ratios: shrink to fit content and may not grow to full ratio
+% Help: colspec: l/c/r columns do not grow
+\longtabse[1]  % scale factor
+{平仮名 mnemonic table. $^\dagger$Particle romanisations.}  % caption
+{tbl:hiragana-mnemonics}  % label
+{
+    colspec={ccccl},
+    rowhead=1,
+    % width=\linewidth,  % useful only with X columns
+}  % inner specification options
+{
     \toprule
-    \multicolumn2c{\multirow2*{\textbf{平仮名}}} & \textbf{Hepburn} & \textbf{Keyboard} & \multirow2*{\textbf{Mnemonic}} \\
-    \multicolumn2c{} & \textbf{romanisation} & \textbf{command} & \\* \midrule
+    \SetCell[c=2]{c,m} \textbf{平仮名} & & {\textbf{Hepburn}\\\textbf{romanisation}} & {\textbf{Keyboard}\\\textbf{command}} & \textbf{Mnemonic} \\
+    \midrule
     あ & \emph{あ} & a & \texttt{a} & ``A'' shape \\
     い & \emph{い} & i & \texttt{i} & \ul{ee}l \\
     う & \emph{う} & u & \texttt{u} & ``u'' shape \\
@@ -130,10 +141,9 @@ Some general notes:
     ゃ & \emph{ゃ} & ? & \textlightgrey{\texttt{lya}/}\textred{\texttt{xya}} &  \\
     ゅ & \emph{ゅ} & ? & \textlightgrey{\texttt{lyu}/}\textred{\texttt{xyu}} &  \\
     ょ & \emph{ょ} & ? & \textlightgrey{\texttt{lyo}/}\textred{\texttt{xyo}} &  \\
-    っ & \emph{っ} & $^{\texttt{+1}}$\texttt{>} & \textlightgrey{\texttt{ltu}/\texttt{ltsu}/\textred{\texttt{xtsu}}/}repeat \texttt{>} &  \\* \bottomrule
-    \caption{平仮名 mnemonic table. $^\dagger$Particle romanisations.}
-    \label{tbl:hiragana-mnemonics} \\
-\end{longtable}
+    っ & \emph{っ} & $^{\texttt{+1}}$\texttt{>} & \textlightgrey{\texttt{ltu}/\texttt{ltsu}/\textred{\texttt{xtsu}}/}repeat \texttt{>} & \\
+    \bottomrule
+}
 
 
 \subsection{片仮名（カタカナ）}
@@ -142,10 +152,23 @@ Some general notes:
     \item Usage of the ・ symbol to denote word boundaries is completely optional.
 \end{itemize}
 \subsubsection{Mnemonics}
-\begin{longtable}[c]{@{}ccccl@{}}
+
+% Help: \SetCell[r=2,c=2]{c,m} <content>, \cmidrule[l]{3-4}
+% Help: colspec: X[ratio, horizontal alignment] columns grow to fit width=\linewidth
+%                  negative ratios: shrink to fit content and may not grow to full ratio
+% Help: colspec: l/c/r columns do not grow
+\longtabse[1]  % scale factor
+{片仮名 mnemonic table. Some entries were taken from \href{https://en.wikipedia.org/wiki/Hepburn_romanization\#Extended_katakana}{Wikipedia (Hepburn Romanisation)} but only the orange and blue ones are taken, since the beige and purple ones are regarded as unofficial (by me).}  % caption
+{tbl:katakana-mnemonics}  % label
+{
+    colspec={ccccl},
+    rowhead=1,
+    % width=\linewidth,  % useful only with X columns
+}  % inner specification options
+{
     \toprule
-    \multicolumn2c{\multirow2*{\textbf{片仮名}}} & \textbf{Hepburn} & \textbf{Keyboard} & \multirow2*{\textbf{Mnemonic}} \\
-    \multicolumn2c{} & \textbf{romanisation} & \textbf{command} & \\* \midrule
+    \SetCell[c=2]{c,m} \textbf{片仮名} & & {\textbf{Hepburn}\\\textbf{romanisation}} & {\textbf{Keyboard}\\\textbf{command}} & \textbf{Mnemonic} \\
+    \midrule
     ア & \emph{ア} & a & \texttt{a} & ``A'' shape \\
     イ & \emph{イ} & i & \texttt{i} & \ul{e}agle perched \\
     \color{blue} イェ & \color{blue} \emph{イェ} & \color{blue} ye & \color{blue} \texttt{ye} & \\
@@ -299,18 +322,28 @@ Some general notes:
     ュ & \emph{ュ} & ? & \textlightgrey{\texttt{lyu}/}\textred{\texttt{xyu}} &  \\
     ョ & \emph{ョ} & ? & \textlightgrey{\texttt{lyo}/}\textred{\texttt{xyo}} &  \\
     ー & \emph{ー} & \texttt{<}$^{\texttt{+1}}$ & \textred{\texttt{$-$} key} &  \\
-    ッ & \emph{ッ} & $^{\texttt{+1}}$\texttt{>} & \textlightgrey{\texttt{ltu}/\texttt{ltsu}/\textred{\texttt{xtsu}}/}repeat \texttt{>} &  \\* \bottomrule
-    \caption{片仮名 mnemonic table. Some entries were taken from \href{https://en.wikipedia.org/wiki/Hepburn_romanization\#Extended_katakana}{Wikipedia (Hepburn Romanisation)} but only the orange and blue ones are taken, since the beige and purple ones are regarded as unofficial (by me).}
-    \label{tbl:katakana-mnemonics} \\
-\end{longtable}
+    ッ & \emph{ッ} & $^{\texttt{+1}}$\texttt{>} & \textlightgrey{\texttt{ltu}/\texttt{ltsu}/\textred{\texttt{xtsu}}/}repeat \texttt{>} &  \\ \bottomrule
+}
 
 
 \subsection{仮名 Summary}
-\begin{longtable}[c]{@{}cccccc@{}}
+
+% Help: \SetCell[r=2,c=2]{c,m} <content>, \cmidrule[l]{3-4}
+% Help: colspec: X[ratio, horizontal alignment] columns grow to fit width=\linewidth
+%                  negative ratios: shrink to fit content and may not grow to full ratio
+% Help: colspec: l/c/r columns do not grow
+\longtabse[1]  % scale factor
+{仮名 summary table. $^\dagger$Particle romanisation applies only for 平仮名.}  % caption
+{tbl:kana-summary}  % label
+{
+    colspec={cccccc},
+    rowhead=1,
+    % width=\linewidth,  % useful only with X columns
+}  % inner specification options
+{
     \toprule
-    \multicolumn2c{\multirow2*{\textbf{平仮名}}} & \multicolumn2c{\multirow2*{\textbf{片仮名}}} & \textbf{Hepburn} & \textbf{Keyboard} \\
-    \multicolumn2c{} & \multicolumn2c{} & \textbf{romanisation} & \textbf{command} \\* \midrule
-    \endhead
+    \SetCell[c=2]{c,m} \textbf{平仮名} & & \SetCell[c=2]{c,m} \textbf{片仮名} & &  {\textbf{Hepburn}\\\textbf{romanisation}} & {\textbf{Keyboard}\\\textbf{command}} & \textbf{Mnemonic} \\
+    \midrule
     あ & \emph{あ} & ア & \emph{ア} & a & \texttt{a} \\
     い & \emph{い} & イ & \emph{イ} & i & \texttt{i}\\
     & \emph{} & イェ & \emph{イェ} & ye & \texttt{ye} \\
@@ -463,10 +496,9 @@ Some general notes:
     ゅ & \emph{ゅ} & ュ & \emph{ュ} & ? & \textlightgrey{\texttt{lyu}/}\textred{\texttt{xyu}} \\
     ょ & \emph{ょ} & ョ & \emph{ョ} & ? & \textlightgrey{\texttt{lyo}/}\textred{\texttt{xyo}} \\
     & \emph{} & ー & \emph{ー} & \texttt{<}$^{\texttt{+1}}$ & \textred{\texttt{$-$} key} \\
-    っ & \emph{っ} & ッ & \emph{ッ} & $^{\texttt{+1}}$\texttt{>} & \textlightgrey{\texttt{ltu}/\texttt{ltsu}/\textred{\texttt{xtsu}}/}repeat \texttt{>} \\* \bottomrule
-    \caption{仮名 summary table. $^\dagger$Particle romanisation applies only for 平仮名.}
-    \label{tbl:kana-summary} \\
-\end{longtable}
+    っ & \emph{っ} & ッ & \emph{ッ} & $^{\texttt{+1}}$\texttt{>} & \textlightgrey{\texttt{ltu}/\texttt{ltsu}/\textred{\texttt{xtsu}}/}repeat \texttt{>} \\
+    \bottomrule
+}
 
 
 \subsection{[Interlude] Morphemes, phonemes, phones}
@@ -516,26 +548,31 @@ Intrepretations when 々 is used:
 \end{itemize}
 
 Repetition marks can be typed using commands in Table~\ref{tbl:miscellaneous-keyboard-commands}.
-\begin{table}[h]
-\centering
-% \resizebox{\linewidth}{!}{%
-% Help: \multicolumn2c{\multirow2*{}}, cmidrule(l){3-5}
-\begin{tabular}{@{}cccl@{}}
+
+% Help: \SetCell[r=2,c=2]{c,m} <content>, \cmidrule[l]{3-4}
+% Help: colspec: X[ratio, horizontal alignment] columns grow to fit width=\linewidth
+%                  negative ratios: shrink to fit content and may not grow to full ratio
+% Help: colspec: l/c/r columns do not grow
+\longtabse[1]  % scale factor
+{Miscellaneous keyboard commands. Today, ゝ, ゞ, ヽ and ヾ only appear in proper names. As examples, じゝ $=$ じし and じゞ $=$ じじ.}  % caption
+{tbl:miscellaneous-keyboard-commands}  % label
+{
+    colspec={cccl},
+    rowhead=1,
+    % width=\linewidth,  % useful only with X columns
+}  % inner specification options
+{
     \toprule
-    \multicolumn2c{\multirow2*{}} & Keyboard & \multirow2*{Purpose} \\
-    \multicolumn2c{}                  & command  & \\ \midrule
+    & {Keyboard\\command} & Purpose \\
+    \midrule
     ゝ & \emph{ゝ} & \texttt{onaji} $\to$ space$^\texttt{*}$ & 平仮名 previous character repeater (enforce without dakuten) \\
     ゞ & \emph{ゞ} & \texttt{onaji} $\to$ space$^\texttt{*}$ & 平仮名 previous character repeater (enforce with dakuten)\\
     ヽ & \emph{ヽ} & \texttt{onaji} $\to$ space$^\texttt{*}$ & 片仮名 previous character repeater (enforce without dakuten)\\
     ヾ & \emph{ヾ} & \texttt{onaji} $\to$ space$^\texttt{*}$ & 片仮名 previous character repeater (enforce with dakuten)\\
     々 & \emph{々} & \texttt{noma} $\to$ space$^\texttt{*}$ & 漢字 previous character repeater (ノ$+$マ) \\
-    % & \emph{} &  &  \\
+    % & \emph{} & &  \\
     \bottomrule
-\end{tabular}%
-% }
-\caption{Miscellaneous keyboard commands. Today, ゝ, ゞ, ヽ and ヾ only appear in proper names. As examples, じゝ $=$ じし and じゞ $=$ じじ.}
-\label{tbl:miscellaneous-keyboard-commands}
-\end{table}
+}
 
 
 \subsection{漢字}
@@ -604,24 +641,30 @@ Some special notes:
 \subsubsection{Vowel extension} \label{sec:vowel-extension}
 Vowel extensions follow the rules in Table~\ref{tbl:vowel-extension}. For notes on pronunciation, see Section~\ref{sec:pronunciation}.
 
-\begin{table}[h]
-\centering
-% \resizebox{\linewidth}{!}{%
-% Help: \multirow2*{} & \multirow2*{} & \multicolumn{3}{c}{} \\ \cmidrule(l){3-5}
-\begin{tabular}{@{}cccl@{}}
+% Help: \SetCell[r=2,c=2]{c,m} <content>, \cmidrule[l]{3-4}
+% Help: colspec: X[ratio, horizontal alignment] columns grow to fit width=\linewidth
+%                  negative ratios: shrink to fit content and may not grow to full ratio
+% Help: colspec: l/c/r columns do not grow
+\longtabse[1]  % scale factor
+{Vowel extension rules. Exceptions are bracketed in \textblue{blue}. /a/ is the phoneme representation.}  % caption
+{tbl:vowel-extension}  % label
+{
+    colspec={cccl},
+    rowhead=1,
+    % width=\linewidth,  % useful only with X columns
+}  % inner specification options
+{
     \toprule
-    \multirow{2.5}*{Vowel to extend} & \multicolumn2c{Extend by appending} & \multirow{2.5}*{Example} \\ \cmidrule(l){2-3}
-    & 平仮名 & 片仮名 & \\ \midrule
-    /a/ & あ & \multirow5*{ー} & お\underline{ばあ}さん、お\underline{かあ}さん\\
-    /i/ & い & & \\
-    /u/ & う & & \\
-    /e/ & \textred{い} \textblue{(え)} & & \ruby{先生}{せん|せい}、\ruby{学生}{がく|せい}、\textblue{(お\underline{ねえ}さん)}\\
-    /o/ & \textred{う} \textblue{(お)} & & き\underline{ょう}、おは\underline{よう}、\textblue{(\underline{おお}きい)}、\textblue{(\ruby{遠回}{\ul{とお}|まわ}り)}\\ \bottomrule
-\end{tabular}%
-% }
-\caption{Vowel extension rules. Exceptions are bracketed in \textblue{blue}. /a/ is the phoneme representation.}
-\label{tbl:vowel-extension}
-\end{table}
+    \SetCell[r=2]{c,m} \textbf{Vowel to extend} & \SetCell[c=2]{c,m} \textbf{Extend by appending} & & \SetCell[r=2]{c,m} \textbf{Example} \\* \cmidrule[lr]{2-3}
+    & \textbf{平仮名} & \textbf{片仮名} & \\
+    \midrule
+    /a/ & あ & \SetCell[r=5]{c,m} ー & お\underline{ばあ}さん、お\underline{かあ}さん \\*
+    /i/ & い & & \\*
+    /u/ & う & & \\*
+    /e/ & \textred{い} \textblue{(え)} & & \ruby{先生}{せん|せい}、\ruby{学生}{がく|せい}、\textblue{(お\underline{ねえ}さん)} \\*
+    /o/ & \textred{う} \textblue{(お)} & & き\underline{ょう}、おは\underline{よう}、\textblue{(\underline{おお}きい)}、\textblue{(\ruby{遠回}{\ul{とお}|まわ}り)} \\
+    \bottomrule
+}
 
 
 \subsection{Hepburn romanisation} \label{sec:hepburn-romanisation}

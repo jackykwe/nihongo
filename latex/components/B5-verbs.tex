@@ -7,17 +7,25 @@
 \subsection{\ruby{動詞}{どう|し} (verbs)} \label{appendix:verbs}
 
 \subsubsection{Physical}
-\begin{center}
-\centering
-\resizebox{\linewidth}{!}{%
-% Help: \multicolumn2c{\multirow2*{}}, cmidrule(l){3-5}
-\begin{NiceTabular}{@{}lclllcll@{}}
+% Help: \SetCell[r=2,c=2]{c,m} <content>, \cmidrule[l]{3-4}
+% Help: colspec: X[ratio, horizontal alignment] columns grow to fit width=\linewidth
+%                  negative ratios: shrink to fit content and may not grow to full ratio
+% Help: colspec: l/c/r columns do not grow
+\longtabse[0.4]  % scale factor
+{Verbs: physical.}  % caption
+{tbl:appendix-vocab-verbs-physical}  % label
+{
+    colspec={X[-4,l]X[-1,c]X[12,l]X[-3,l]X[-4,l]X[-1,c]X[12,l]X[-3,l]},
+    rowhead=2,
+    % width=\linewidth,  % useful only with X columns
+}  % inner specification options
+{
     \toprule
-    \multicolumn{4}{c}{\textbf{Transitive}} & \multicolumn{4}{c}{\textbf{Intransitive}} \\ \cmidrule(r){1-4} \cmidrule(l){5-8}
+    \SetCell[c=4]{c,m} \textbf{Transitive} & & & & \SetCell[c=4]{c,m} \textbf{Intransitive} & & & \\ \cmidrule[r]{1-4} \cmidrule[l]{5-8}
     \textbf{Action} & \textbf{Cat.} & \textbf{Meaning} & \textbf{Notes} & \textbf{Action} & \textbf{Cat.} & \textbf{Meaning} & \textbf{Notes} \\
-    \toprule
+    \midrule
     \viteq \ruby{触}{さわ}る & う & to touch/feel (intentional) & \href{https://dictionary.goo.ne.jp/thsrs/16231/meaning/m1u/}{[goo]} & \ruby{触}{さわ}る & う & to touch (intentional) & \href{https://dictionary.goo.ne.jp/thsrs/16231/meaning/m1u/}{[goo]} \\
-    \viteq <O>に<S>を\ruby{触}{ふ}れる & る & to touch (unintentional) & \href{https://dictionary.goo.ne.jp/thsrs/16231/meaning/m1u/}{[goo]} & \ruby{触}{ふ}れる & る & to touch/feel (unintentional); to touch/refer to a subject & \href{https://dictionary.goo.ne.jp/thsrs/16231/meaning/m1u/}{[goo]} \\
+    \viteq OにSを\ruby{触}{ふ}れる & る & to touch O using S (unintentional) \hl{???} & \href{https://dictionary.goo.ne.jp/thsrs/16231/meaning/m1u/}{[goo]} & \ruby{触}{ふ}れる & る & to touch/feel (unintentional); to touch/refer to a subject & \href{https://dictionary.goo.ne.jp/thsrs/16231/meaning/m1u/}{[goo]} \\
     ？ & & & & \ruby{接}{せっ}する & E & to be close to/in contact (abstract; information/geographical border) & \href{https://dictionary.goo.ne.jp/thsrs/16231/meaning/m1u/}{[goo]} \\
     % & & & & & & & \\
     \midrule
@@ -41,23 +49,27 @@
     <v stem>\ruby{漏}{も}らす & う & to forget to do <v stem> & \suffix & - & & & \\
     % & & & & & & & \\
     \bottomrule
-\end{NiceTabular}%
 }
-\captionof{table}{Verbs: physical.}
-\label{tbl:appendix-vocab-verbs-physical}
-\end{center}
 
 
 \subsubsection{Directions}
-\begin{center}
-\centering
-\resizebox{\linewidth}{!}{%
-% Help: \multicolumn2c{\multirow2*{}}, cmidrule(l){3-5}
-\begin{NiceTabular}{@{}lclllcll@{}}
+% Help: \SetCell[r=2,c=2]{c,m} <content>, \cmidrule[l]{3-4}
+% Help: colspec: X[ratio, horizontal alignment] columns grow to fit width=\linewidth
+%                  negative ratios: shrink to fit content and may not grow to full ratio
+% Help: colspec: l/c/r columns do not grow
+\longtabse[0.4]  % scale factor
+{Verbs: directions.}  % caption
+{tbl:appendix-vocab-verbs-directions}  % label
+{
+    colspec={X[-4,l]X[-1,c]X[12,l]X[-3,l]X[-4,l]X[-1,c]X[12,l]X[-3,l]},
+    rowhead=2,
+    % width=\linewidth,  % useful only with X columns
+}  % inner specification options
+{
     \toprule
-    \multicolumn{4}{c}{\textbf{Transitive}} & \multicolumn{4}{c}{\textbf{Intransitive}} \\ \cmidrule(r){1-4} \cmidrule(l){5-8}
+    \SetCell[c=4]{c,m} \textbf{Transitive} & & & & \SetCell[c=4]{c,m} \textbf{Intransitive} & & & \\ \cmidrule[r]{1-4} \cmidrule[l]{5-8}
     \textbf{Action} & \textbf{Cat.} & \textbf{Meaning} & \textbf{Notes} & \textbf{Action} & \textbf{Cat.} & \textbf{Meaning} & \textbf{Notes} \\
-    \toprule
+    \midrule
     - & & & & \ruby{行}{い}く & う & to go/move through/proceed/reach (information/phase) & \\
     - & & & & <て-form>[い]く & う & gradually/progressively/steadily & (\ruby{行}{い}く); \aux, [formal] \\
     \ruby{持}{も}っていく & う & to take/bring/carry something along & & - & & & \\
@@ -83,8 +95,7 @@
     ？ & & & & \ruby{上}{のぼ}る & う & to ascend/go up/go upwards (focus on process) & \href{https://dictionary.goo.ne.jp/word/\%E4\%B8\%8A\%E3\%82\%8B/}{[goo]}\\
     ？ & & & & \ruby{登}{のぼ}る & う & to go to a higher place & \href{https://dictionary.goo.ne.jp/word/\%E4\%B8\%8A\%E3\%82\%8B/}{[goo]} \\
     ？ & & & & \ruby{昇}{のぼ}る & う & to rise (sun); be promoted in rank & \href{https://dictionary.goo.ne.jp/word/\%E4\%B8\%8A\%E3\%82\%8B/}{[goo]} \\
-    \vit \multirow2*{\ruby{上}{あ}げる} & \multirow2*{る} & to raise; to do up (one's hair); to fly (kite)/launch (fireworks) & & \multirow2*{\ruby{上}{あ}がる} & \multirow2*{う} & to rise (focus on destination); to enter (from outside); to enrol/promote (school); & \multirow2*{\href{https://dictionary.goo.ne.jp/thsrs/15966/meaning/m1u/}{[goo]}, \href{https://hugkum.sho.jp/582833}{[HK]}} \\
-    \vit & & to land (a boat); to show someone in/away; to enrol (school) & & & & to come ashore; to lift (rain); to spoil/die (e.g.\ battery)  & \href{https://dictionary.goo.ne.jp/thsrs/15966/meaning/m1u/}{[goo]}, \href{https://hugkum.sho.jp/582833}{[HK]}\\
+    \vit \ruby{上}{あ}げる & る & to raise; to do up (one's hair); to fly (kite)/launch (fireworks); to land (a boat); to show someone in/away; to enrol (school) & & \ruby{上}{あ}がる & う & to rise (focus on destination); to enter (from outside); to enrol/promote (school); to come ashore; to lift (rain); to spoil/die (e.g.\ battery) & \href{https://dictionary.goo.ne.jp/thsrs/15966/meaning/m1u/}{[goo]}, \href{https://hugkum.sho.jp/582833}{[HK]} \\
     \vit \ruby{乗}{の}せる & る & to pick up passenger/load goods & & \ruby{乗}{の}る & う & to board/embark & \\
     \ruby{拾}{ひろ}う & う & to pick up (item); book a taxi & & - & & & \\
     - & & & & \ruby{受}{う}かる & う & to pass an exam & \\
@@ -135,11 +146,7 @@
     & & & & \ruby{昇進}{しょう|しん}する & E & to promote/rise in rank (workplace) & \\
     % & & & & & & & \\
     \bottomrule
-\end{NiceTabular}%
 }
-\captionof{table}{Verbs: directions.}
-\label{tbl:appendix-vocab-verbs-directions}
-\end{center}
 
 
 \subsubsection{Clothing}
@@ -147,67 +154,85 @@
 % \href{https://www.linguajunkie.com/japanese/to-wear-in-japanese}{???}
 % \href{https://www.youtube.com/watch?v=w_uJJyGkzZo}{???}
 % \href{https://www.facebook.com/watch/?v=1437814793073414}{???}
-\begin{center}
-\centering
-\resizebox{\linewidth}{!}{%
-% Help: \multicolumn2c{\multirow2*{}}, cmidrule(l){3-5}
-\begin{NiceTabular}{@{}lclllcll@{}}
+
+% Help: \SetCell[r=2,c=2]{c,m} <content>, \cmidrule[l]{3-4}
+% Help: colspec: X[ratio, horizontal alignment] columns grow to fit width=\linewidth
+%                  negative ratios: shrink to fit content and may not grow to full ratio
+% Help: colspec: l/c/r columns do not grow
+\longtabse[0.4]  % scale factor
+{Verbs: clothing.}  % caption
+{tbl:appendix-vocab-verbs-clothing}  % label
+{
+    colspec={X[-4,l]X[-1,c]X[12,l]X[-3,l]X[-4,l]X[-1,c]X[12,l]X[-3,l]},
+    rowhead=2,
+    % width=\linewidth,  % useful only with X columns
+}  % inner specification options
+{
     \toprule
-    \multicolumn{4}{c}{\textbf{Transitive}} & \multicolumn{4}{c}{\textbf{Intransitive}} \\ \cmidrule(r){1-4} \cmidrule(l){5-8}
+    \SetCell[c=4]{c,m} \textbf{Transitive} & & & & \SetCell[c=4]{c,m} \textbf{Intransitive} & & & \\ \cmidrule[r]{1-4} \cmidrule[l]{5-8}
     \textbf{Action} & \textbf{Cat.} & \textbf{Meaning} & \textbf{Notes} & \textbf{Action} & \textbf{Cat.} & \textbf{Meaning} & \textbf{Notes} \\
-    \toprule
+    \midrule
     % つける 付ける
     % & & & & & & & \\
     \bottomrule
-\end{NiceTabular}%
 }
-\captionof{table}{Verbs: clothing.}
-\label{tbl:appendix-vocab-verbs-clothing}
-\end{center}
 
 
 \subsubsection{Emotions}
-\begin{center}
-    \centering
-    \resizebox{\linewidth}{!}{%
-    % Help: \multicolumn2c{\multirow2*{}}, cmidrule(l){3-5}
-    \begin{NiceTabular}{@{}lclllcll@{}}
-        \toprule
-        \multicolumn{4}{c}{\textbf{Transitive}} & \multicolumn{4}{c}{\textbf{Intransitive}} \\ \cmidrule(r){1-4} \cmidrule(l){5-8}
-        \textbf{Action} & \textbf{Cat.} & \textbf{Meaning} & \textbf{Notes} & \textbf{Action} & \textbf{Cat.} & \textbf{Meaning} & \textbf{Notes} \\
-        \toprule
-        - & & & & \ruby{泣}{な}く & う & to cry & \\
-        \midrule
-        \midrule
-        - & & & & キレる & る & to snap/flip/get angry/lose one's temper & \\
-        \midrule
-        \midrule
-        - & & & & びっくりする & E & to be surprised/frightened/startled & \\
-        \midrule
-        \midrule
-        \ruby{大切}{たい|せつ}にする & E & to cherish/treasure & & - & & & \\
-        \midrule
-        \midrule
-        - & & & & ドキドキする & E & to beat fast (heart)/throb/pound/palpitate & also an adverb \\
-        % & & & & & & & \\
-        \bottomrule
-    \end{NiceTabular}%
-    }
-    \captionof{table}{Verbs: emotions.}
-    \label{tbl:appendix-vocab-verbs-emotions}
-\end{center}
+% Help: \SetCell[r=2,c=2]{c,m} <content>, \cmidrule[l]{3-4}
+% Help: colspec: X[ratio, horizontal alignment] columns grow to fit width=\linewidth
+%                  negative ratios: shrink to fit content and may not grow to full ratio
+% Help: colspec: l/c/r columns do not grow
+\longtabse[0.4]  % scale factor
+{Verbs: emotions.}  % caption
+{tbl:appendix-vocab-verbs-emotions}  % label
+{
+    colspec={X[-4,l]X[-1,c]X[12,l]X[-3,l]X[-4,l]X[-1,c]X[12,l]X[-3,l]},
+    rowhead=2,
+    % width=\linewidth,  % useful only with X columns
+}  % inner specification options
+{
+    \toprule
+    \SetCell[c=4]{c,m} \textbf{Transitive} & & & & \SetCell[c=4]{c,m} \textbf{Intransitive} & & & \\ \cmidrule[r]{1-4} \cmidrule[l]{5-8}
+    \textbf{Action} & \textbf{Cat.} & \textbf{Meaning} & \textbf{Notes} & \textbf{Action} & \textbf{Cat.} & \textbf{Meaning} & \textbf{Notes} \\
+    \midrule
+    - & & & & \ruby{泣}{な}く & う & to cry & \\
+    \midrule
+    \midrule
+    - & & & & キレる & る & to snap/flip/get angry/lose one's temper & \\
+    \midrule
+    \midrule
+    - & & & & びっくりする & E & to be surprised/frightened/startled & \\
+    \midrule
+    \midrule
+    \ruby{大切}{たい|せつ}にする & E & to cherish/treasure & & - & & & \\
+    \midrule
+    \midrule
+    - & & & & ドキドキする & E & to beat fast (heart)/throb/pound/palpitate & also an adverb \\
+    % & & & & & & & \\
+    \bottomrule
+}
 
 
 \subsubsection{Production}
-\begin{center}
-\centering
-\resizebox{\linewidth}{!}{%
-% Help: \multicolumn2c{\multirow2*{}}, cmidrule(l){3-5}
-\begin{NiceTabular}{@{}lclllcll@{}}
+To use \ruby{続}{つづ}ける as an auxiliary verb, suffix it to the stem of the main verb (e.g.\ 「\ruby{歌}{うた}い\ruby{続}{つづ}ける」 means to continue to sing, and \ruby{歌}{うた}い is the stem of \ruby{歌}{うた}う).
+% Help: \SetCell[r=2,c=2]{c,m} <content>, \cmidrule[l]{3-4}
+% Help: colspec: X[ratio, horizontal alignment] columns grow to fit width=\linewidth
+%                  negative ratios: shrink to fit content and may not grow to full ratio
+% Help: colspec: l/c/r columns do not grow
+\longtabse[0.4]  % scale factor
+{Verbs: production.}  % caption
+{tbl:appendix-vocab-verbs-production}  % label
+{
+    colspec={X[-4,l]X[-1,c]X[12,l]X[-3,l]X[-4,l]X[-1,c]X[12,l]X[-3,l]},
+    rowhead=2,
+    % width=\linewidth,  % useful only with X columns
+}  % inner specification options
+{
     \toprule
-    \multicolumn{4}{c}{\textbf{Transitive}} & \multicolumn{4}{c}{\textbf{Intransitive}} \\ \cmidrule(r){1-4} \cmidrule(l){5-8}
+    \SetCell[c=4]{c,m} \textbf{Transitive} & & & & \SetCell[c=4]{c,m} \textbf{Intransitive} & & & \\ \cmidrule[r]{1-4} \cmidrule[l]{5-8}
     \textbf{Action} & \textbf{Cat.} & \textbf{Meaning} & \textbf{Notes} & \textbf{Action} & \textbf{Cat.} & \textbf{Meaning} & \textbf{Notes} \\
-    \toprule
+    \midrule
     \ruby{作}{つく}る & う & to make/prepare (food)/grow (agriculture)/cultivate (people) & \href{https://dictionary.goo.ne.jp/word/\%E4\%BD\%9C\%E3\%82\%8B}{[goo]} & - & & & \\
     \ruby{造}{つく}る & う & to construct (large-scale buildings, manufacturing) & \href{https://dictionary.goo.ne.jp/word/\%E4\%BD\%9C\%E3\%82\%8B}{[goo]} & - & & & \\
     \ruby{創}{つく}る & う & to create/compose (artistic)/start a business & \href{https://dictionary.goo.ne.jp/word/\%E4\%BD\%9C\%E3\%82\%8B}{[goo]} & - & & & \\
@@ -274,8 +299,7 @@
     % & & & & & & & \\
     \midrule
     \midrule
-    \vit \multirow2*{\ruby{切}{き}る} & \multirow2*{\exception{う}} & to cut/open (sealed); turn off (lights/appliance); hang up & & \multirow2*{\ruby{切}{き}れる} & \multirow2*{る} & to break/snap; run out/stop working/expire; be disconnected; & \\
-    \vit & & (conversation); shuffle/discard (cards/tiles); punch (ticket) & & & & be shuffled (cards/tiles); run out (stock); break up & \\
+    \vit \ruby{切}{き}る & \exception{う} & to cut/open (sealed); turn off (lights/appliance); hang up; (conversation); shuffle/discard (cards/tiles); punch (ticket) & & \ruby{切}{き}れる & る & to break/snap; run out/stop working/expire; be disconnected; be shuffled (cards/tiles); run out (stock); break up & \\
     <v stem>\ruby{切}{き}る & \exception{う} & \hl{to be able to} do <v stem> completely & \aux & & & & \\
     % & & & & & & & \\
     \midrule
@@ -283,24 +307,27 @@
     - & & & & \ruby{満開}{まん|かい}する & E & to be in full bloom (esp.\ of cherry blossom) & \\
     % & & & & & & & \\
     \bottomrule
-\end{NiceTabular}%
 }
-\captionof{table}{Verbs: production.}
-\label{tbl:appendix-vocab-verbs-production}
-\end{center}
-To use \ruby{続}{つづ}ける as an auxiliary verb, suffix it to the stem of the main verb (e.g.\ 「\ruby{歌}{うた}い\ruby{続}{つづ}ける」 means to continue to sing, and \ruby{歌}{うた}い is the stem of \ruby{歌}{うた}う).
 
 
 \subsubsection{Consumption}
-\begin{center}
-\centering
-\resizebox{\linewidth}{!}{%
-% Help: \multicolumn2c{\multirow2*{}}, cmidrule(l){3-5}
-\begin{NiceTabular}{@{}lclllcll@{}}
+% Help: \SetCell[r=2,c=2]{c,m} <content>, \cmidrule[l]{3-4}
+% Help: colspec: X[ratio, horizontal alignment] columns grow to fit width=\linewidth
+%                  negative ratios: shrink to fit content and may not grow to full ratio
+% Help: colspec: l/c/r columns do not grow
+\longtabse[0.4]  % scale factor
+{Verbs: consumption.}  % caption
+{tbl:appendix-vocab-verbs-consumption}  % label
+{
+    colspec={X[-4,l]X[-1,c]X[12,l]X[-3,l]X[-4,l]X[-1,c]X[12,l]X[-3,l]},
+    rowhead=2,
+    % width=\linewidth,  % useful only with X columns
+}  % inner specification options
+{
     \toprule
-    \multicolumn{4}{c}{\textbf{Transitive}} & \multicolumn{4}{c}{\textbf{Intransitive}} \\ \cmidrule(r){1-4} \cmidrule(l){5-8}
+    \SetCell[c=4]{c,m} \textbf{Transitive} & & & & \SetCell[c=4]{c,m} \textbf{Intransitive} & & & \\ \cmidrule[r]{1-4} \cmidrule[l]{5-8}
     \textbf{Action} & \textbf{Cat.} & \textbf{Meaning} & \textbf{Notes} & \textbf{Action} & \textbf{Cat.} & \textbf{Meaning} & \textbf{Notes} \\
-    \toprule
+    \midrule
     \vit \ruby{見}{み}る & る & to see/observe & & \ruby{見}{み}える & る & to be seen/visible & \\
     \vit \ruby{見}{み}つける & る & to find/discover/detect & & \ruby{見}{み}つかる & う & to be found/discovered & \\
     \vit バラす & う & to expose/disclose/leak a secret & colloquial & バレる & る & to be exposed/found out/leak a secret & \\
@@ -347,23 +374,27 @@ To use \ruby{続}{つづ}ける as an auxiliary verb, suffix it to the stem of t
     ロックする & E & to lock & & - & & & \\
     % & & & & & & & \\
     \bottomrule
-\end{NiceTabular}%
 }
-\captionof{table}{Verbs: consumption.}
-\label{tbl:appendix-vocab-verbs-consumption}
-\end{center}
 
 
 \subsubsection{Interaction}
-\begin{center}
-\centering
-\resizebox{\linewidth}{!}{%
-% Help: \multicolumn2c{\multirow2*{}}, cmidrule(l){3-5}
-\begin{NiceTabular}{@{}lclllcll@{}}
+% Help: \SetCell[r=2,c=2]{c,m} <content>, \cmidrule[l]{3-4}
+% Help: colspec: X[ratio, horizontal alignment] columns grow to fit width=\linewidth
+%                  negative ratios: shrink to fit content and may not grow to full ratio
+% Help: colspec: l/c/r columns do not grow
+\longtabse[0.4]  % scale factor
+{Verbs: interaction.}  % caption
+{tbl:appendix-vocab-verbs-interaction}  % label
+{
+    colspec={X[-4,l]X[-1,c]X[12,l]X[-3,l]X[-4,l]X[-1,c]X[12,l]X[-3,l]},
+    rowhead=2,
+    % width=\linewidth,  % useful only with X columns
+}  % inner specification options
+{
     \toprule
-    \multicolumn{4}{c}{\textbf{Transitive}} & \multicolumn{4}{c}{\textbf{Intransitive}} \\ \cmidrule(r){1-4} \cmidrule(l){5-8}
+    \SetCell[c=4]{c,m} \textbf{Transitive} & & & & \SetCell[c=4]{c,m} \textbf{Intransitive} & & & \\ \cmidrule[r]{1-4} \cmidrule[l]{5-8}
     \textbf{Action} & \textbf{Cat.} & \textbf{Meaning} & \textbf{Notes} & \textbf{Action} & \textbf{Cat.} & \textbf{Meaning} & \textbf{Notes} \\
-    \toprule
+    \midrule
     - & & & & ある & う & to exist/have (inaminate) & (\ruby{有}{あ}る) \\
     - & & & & いる & る & to exist (animate) & (\ruby{居}{い}る) \\
     % & & & & & & & \\
@@ -428,23 +459,27 @@ To use \ruby{続}{つづ}ける as an auxiliary verb, suffix it to the stem of t
     ノートする & E & to note down & & - & & & \\
     % & & & & & & & \\
     \bottomrule
-\end{NiceTabular}%
 }
-\captionof{table}{Verbs: interaction.}
-\label{tbl:appendix-vocab-verbs-interaction}
-\end{center}
 
 
 \subsubsection{Health}
-\begin{center}
-\centering
-\resizebox{\linewidth}{!}{%
-% Help: \multicolumn2c{\multirow2*{}}, cmidrule(l){3-5}
-\begin{NiceTabular}{@{}lclllcll@{}}
+% Help: \SetCell[r=2,c=2]{c,m} <content>, \cmidrule[l]{3-4}
+% Help: colspec: X[ratio, horizontal alignment] columns grow to fit width=\linewidth
+%                  negative ratios: shrink to fit content and may not grow to full ratio
+% Help: colspec: l/c/r columns do not grow
+\longtabse[0.4]  % scale factor
+{Verbs: health.}  % caption
+{tbl:appendix-vocab-verbs-health}  % label
+{
+    colspec={X[-4,l]X[-1,c]X[12,l]X[-3,l]X[-4,l]X[-1,c]X[12,l]X[-3,l]},
+    rowhead=2,
+    % width=\linewidth,  % useful only with X columns
+}  % inner specification options
+{
     \toprule
-    \multicolumn{4}{c}{\textbf{Transitive}} & \multicolumn{4}{c}{\textbf{Intransitive}} \\ \cmidrule(r){1-4} \cmidrule(l){5-8}
+    \SetCell[c=4]{c,m} \textbf{Transitive} & & & & \SetCell[c=4]{c,m} \textbf{Intransitive} & & & \\ \cmidrule[r]{1-4} \cmidrule[l]{5-8}
     \textbf{Action} & \textbf{Cat.} & \textbf{Meaning} & \textbf{Notes} & \textbf{Action} & \textbf{Cat.} & \textbf{Meaning} & \textbf{Notes} \\
-    \toprule
+    \midrule
     & & & & \ruby{寝}{ね}る & る & to lie down/go to bed & \\
     - & & & & \ruby{睡}{ねむ}る & う & to sleep/rest in peace (euphemism) & \\
     % & & & & & & & \\
@@ -456,45 +491,53 @@ To use \ruby{続}{つづ}ける as an auxiliary verb, suffix it to the stem of t
     & & & & \ruby{死}{し}ぬ & う & to die/pass away & \\
     % & & & & & & & \\
     \bottomrule
-\end{NiceTabular}%
 }
-\captionof{table}{Verbs: health.}
-\label{tbl:appendix-vocab-verbs-health}
-\end{center}
 
 
 \subsubsection{Ability}
-\begin{center}
-\centering
-\resizebox{\linewidth}{!}{%
-% Help: \multicolumn2c{\multirow2*{}}, cmidrule(l){3-5}
-\begin{NiceTabular}{@{}lclllcll@{}}
+% Help: \SetCell[r=2,c=2]{c,m} <content>, \cmidrule[l]{3-4}
+% Help: colspec: X[ratio, horizontal alignment] columns grow to fit width=\linewidth
+%                  negative ratios: shrink to fit content and may not grow to full ratio
+% Help: colspec: l/c/r columns do not grow
+\longtabse[0.4]  % scale factor
+{Verbs: ability.}  % caption
+{tbl:appendix-vocab-verbs-ability}  % label
+{
+    colspec={X[-4,l]X[-1,c]X[12,l]X[-3,l]X[-4,l]X[-1,c]X[12,l]X[-3,l]},
+    rowhead=2,
+    % width=\linewidth,  % useful only with X columns
+}  % inner specification options
+{
     \toprule
-    \multicolumn{4}{c}{\textbf{Transitive}} & \multicolumn{4}{c}{\textbf{Intransitive}} \\ \cmidrule(r){1-4} \cmidrule(l){5-8}
+    \SetCell[c=4]{c,m} \textbf{Transitive} & & & & \SetCell[c=4]{c,m} \textbf{Intransitive} & & & \\ \cmidrule[r]{1-4} \cmidrule[l]{5-8}
     \textbf{Action} & \textbf{Cat.} & \textbf{Meaning} & \textbf{Notes} & \textbf{Action} & \textbf{Cat.} & \textbf{Meaning} & \textbf{Notes} \\
-    \toprule
+    \midrule
     - & & & & できる & る & to be able to do  & (\ruby{出来}{で|き}る) \\
     % & & & & & & & \\
     \bottomrule
-\end{NiceTabular}%
 }
-\captionof{table}{Verbs: ability.}
-\label{tbl:appendix-vocab-verbs-ability}
-\end{center}
 
 
 \subsubsection{Education and correctness}
 \hl{\href{https://japanese.stackexchange.com/questions/56962/standard-mathematical-operations-expressed-in-japanese}{MATH}}
 
-\begin{center}
-\centering
-\resizebox{\linewidth}{!}{%
-% Help: \multicolumn2c{\multirow2*{}}, cmidrule(l){3-5}
-\begin{NiceTabular}{@{}lclllcll@{}}
+% Help: \SetCell[r=2,c=2]{c,m} <content>, \cmidrule[l]{3-4}
+% Help: colspec: X[ratio, horizontal alignment] columns grow to fit width=\linewidth
+%                  negative ratios: shrink to fit content and may not grow to full ratio
+% Help: colspec: l/c/r columns do not grow
+\longtabse[0.4]  % scale factor
+{Verbs: education and correctness.}  % caption
+{tbl:appendix-vocab-verbs-education-and-correctness}  % label
+{
+    colspec={X[-4,l]X[-1,c]X[12,l]X[-3,l]X[-4,l]X[-1,c]X[12,l]X[-3,l]},
+    rowhead=2,
+    % width=\linewidth,  % useful only with X columns
+}  % inner specification options
+{
     \toprule
-    \multicolumn{4}{c}{\textbf{Transitive}} & \multicolumn{4}{c}{\textbf{Intransitive}} \\ \cmidrule(r){1-4} \cmidrule(l){5-8}
+    \SetCell[c=4]{c,m} \textbf{Transitive} & & & & \SetCell[c=4]{c,m} \textbf{Intransitive} & & & \\ \cmidrule[r]{1-4} \cmidrule[l]{5-8}
     \textbf{Action} & \textbf{Cat.} & \textbf{Meaning} & \textbf{Notes} & \textbf{Action} & \textbf{Cat.} & \textbf{Meaning} & \textbf{Notes} \\
-    \toprule
+    \midrule
     \ruby{訊}{き}く & う & to ask/enquire & & ？ & & & \\
     \vit \ruby{質問}{しつ|もん}する & E & to ask a question & & \ruby{質問}{しつ|もん}[を]する & E & to ask a question & \\
     % & & & & & & & \\
@@ -525,23 +568,27 @@ To use \ruby{続}{つづ}ける as an auxiliary verb, suffix it to the stem of t
     \vit \ruby{違}{ちが}える & る & to make a mistake & \href{https://ja.hinative.com/questions/10453376}{[HN]} & \ruby{違}{ちが}う & う & to differ/be different; to be wrong/mistaken & \\
     % & & & & & & & \\
     \bottomrule
-\end{NiceTabular}%
 }
-\captionof{table}{Verbs: education and correctness.}
-\label{tbl:appendix-vocab-verbs-education-and-correctness}
-\end{center}
 
 
 \subsubsection{Knowledge, truth and reality}
-\begin{center}
-\centering
-\resizebox{\linewidth}{!}{%
-% Help: \multicolumn2c{\multirow2*{}}, cmidrule(l){3-5}
-\begin{NiceTabular}{@{}lclllcll@{}}
+% Help: \SetCell[r=2,c=2]{c,m} <content>, \cmidrule[l]{3-4}
+% Help: colspec: X[ratio, horizontal alignment] columns grow to fit width=\linewidth
+%                  negative ratios: shrink to fit content and may not grow to full ratio
+% Help: colspec: l/c/r columns do not grow
+\longtabse[0.4]  % scale factor
+{Verbs: knowledge, truth and reality.}  % caption
+{tbl:appendix-vocab-verbs-knowledge-truth-and-reality}  % label
+{
+    colspec={X[-4,l]X[-1,c]X[12,l]X[-3,l]X[-4,l]X[-1,c]X[12,l]X[-3,l]},
+    rowhead=2,
+    % width=\linewidth,  % useful only with X columns
+}  % inner specification options
+{
     \toprule
-    \multicolumn{4}{c}{\textbf{Transitive}} & \multicolumn{4}{c}{\textbf{Intransitive}} \\ \cmidrule(r){1-4} \cmidrule(l){5-8}
+    \SetCell[c=4]{c,m} \textbf{Transitive} & & & & \SetCell[c=4]{c,m} \textbf{Intransitive} & & & \\ \cmidrule[r]{1-4} \cmidrule[l]{5-8}
     \textbf{Action} & \textbf{Cat.} & \textbf{Meaning} & \textbf{Notes} & \textbf{Action} & \textbf{Cat.} & \textbf{Meaning} & \textbf{Notes} \\
-    \toprule
+    \midrule
     \ruby{思}{おも}う & う & to think/believe/judge/imagine/recall & & - & & & \\
     \ruby{考}{かん}える & る & to consider/think over/reflect on & & - & & & \\
     % & & & & & & & \\
@@ -569,23 +616,27 @@ To use \ruby{続}{つづ}ける as an auxiliary verb, suffix it to the stem of t
     \ruby{証明}{しょう|めい}する & E & to prove/testify & & - & & & \\
     % & & & & & & & \\
     \bottomrule
-\end{NiceTabular}%
 }
-\captionof{table}{Verbs: knowledge, truth and reality.}
-\label{tbl:appendix-vocab-verbs-knowledge-truth-and-reality}
-\end{center}
 
 
 \subsubsection{Conflict and resolution}
-\begin{center}
-\centering
-\resizebox{\linewidth}{!}{%
-% Help: \multicolumn2c{\multirow2*{}}, cmidrule(l){3-5}
-\begin{NiceTabular}{@{}lclllcll@{}}
+% Help: \SetCell[r=2,c=2]{c,m} <content>, \cmidrule[l]{3-4}
+% Help: colspec: X[ratio, horizontal alignment] columns grow to fit width=\linewidth
+%                  negative ratios: shrink to fit content and may not grow to full ratio
+% Help: colspec: l/c/r columns do not grow
+\longtabse[0.4]  % scale factor
+{Verbs: conflict and resolution.}  % caption
+{tbl:appendix-vocab-verbs-conflict-and-resolution}  % label
+{
+    colspec={X[-4,l]X[-1,c]X[12,l]X[-3,l]X[-4,l]X[-1,c]X[12,l]X[-3,l]},
+    rowhead=2,
+    % width=\linewidth,  % useful only with X columns
+}  % inner specification options
+{
     \toprule
-    \multicolumn{4}{c}{\textbf{Transitive}} & \multicolumn{4}{c}{\textbf{Intransitive}} \\ \cmidrule(r){1-4} \cmidrule(l){5-8}
+    \SetCell[c=4]{c,m} \textbf{Transitive} & & & & \SetCell[c=4]{c,m} \textbf{Intransitive} & & & \\ \cmidrule[r]{1-4} \cmidrule[l]{5-8}
     \textbf{Action} & \textbf{Cat.} & \textbf{Meaning} & \textbf{Notes} & \textbf{Action} & \textbf{Cat.} & \textbf{Meaning} & \textbf{Notes} \\
-    \toprule
+    \midrule
     - & & & & \ruby{勝}{か}つ & う & to win (personal) & \\
     - & & & & \ruby{勝利}{しょう|り}する & E & to win (larger scale) & \\
     % & & & & & & & \\
@@ -606,23 +657,27 @@ To use \ruby{続}{つづ}ける as an auxiliary verb, suffix it to the stem of t
     \ruby{殺}{ころ}す & う & to kill; to suppress/destroy/stifle (talent/feelings/yawn/laugh) & & - & & & \\
     % & & & & & & & \\
     \bottomrule
-\end{NiceTabular}%
 }
-\captionof{table}{Verbs: conflict and resolution.}
-\label{tbl:appendix-vocab-verbs-conflict-and-resolution}
-\end{center}
 
 
 \subsubsection{Change}
-\begin{center}
-\centering
-\resizebox{\linewidth}{!}{%
-% Help: \multicolumn2c{\multirow2*{}}, cmidrule(l){3-5}
-\begin{NiceTabular}{@{}lclllcll@{}}
+% Help: \SetCell[r=2,c=2]{c,m} <content>, \cmidrule[l]{3-4}
+% Help: colspec: X[ratio, horizontal alignment] columns grow to fit width=\linewidth
+%                  negative ratios: shrink to fit content and may not grow to full ratio
+% Help: colspec: l/c/r columns do not grow
+\longtabsea[0.4]  % scale factor
+{Verbs: change.}  % caption
+{tbl:appendix-vocab-verbs-change}  % label
+{
+    colspec={X[-4,l]X[-1,c]X[12,l]X[-3,l]X[-4,l]X[-1,c]X[12,l]X[-3,l]},
+    rowhead=2,
+    % width=\linewidth,  % useful only with X columns
+}  % inner specification options
+{
     \toprule
-    \multicolumn{4}{c}{\textbf{Transitive}} & \multicolumn{4}{c}{\textbf{Intransitive}} \\ \cmidrule(r){1-4} \cmidrule(l){5-8}
+    \SetCell[c=4]{c,m} \textbf{Transitive} & & & & \SetCell[c=4]{c,m} \textbf{Intransitive} & & & \\ \cmidrule[r]{1-4} \cmidrule[l]{5-8}
     \textbf{Action} & \textbf{Cat.} & \textbf{Meaning} & \textbf{Notes} & \textbf{Action} & \textbf{Cat.} & \textbf{Meaning} & \textbf{Notes} \\
-    \toprule
+    \midrule
     \vit \ruby{変}{か}える & る & to alter/transform/convert/vary/change & & \ruby{変}{か}わる & う & to transform/change; to move to (new place) & \\
     \vit \ruby{換}{か}える & る & to exchange & & \ruby{換}{か}わる & る & to switch/be exchanged/change places & \\
     \vit \ruby{替}{か}える & る & to replace & & \ruby{替}{か}わる & る & to relieve/replace & \\
@@ -635,11 +690,7 @@ To use \ruby{続}{つづ}ける as an auxiliary verb, suffix it to the stem of t
     \midrule
     ？ & & & & \ruby{声変}{こえ|が}わりする & E & to break voice & \\
     \bottomrule
-\end{NiceTabular}%
 }
-\captionof{table}{Verbs: change.}
-\label{tbl:appendix-vocab-verbs-change}
-\end{center}
 
 \hl{SUFFIXES AND AUXES}
 
