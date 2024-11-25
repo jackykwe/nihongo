@@ -4,19 +4,25 @@
 \setcounter{section}{2}
 \setcounter{subsection}{2}
 
-\begin{multicols}{2}
-[
-    \subsection{\ruby{普通名詞}{ふ|つう|めい|し} (nouns)}
-]
+\subsection{\ruby{普通名詞}{ふ|つう|めい|し} (nouns)}
 
 \subsubsection{Meta: Japanese}
-\begin{center}
-\resizebox{\linewidth}{!}{%
-% Help: \multicolumn2c{\multirow2*{}}, cmidrule(l){3-5}
-\begin{tabular}{@{}lll@{}}
+% Help: \SetCell[r=2,c=2]{c,m} <content>, \cmidrule[l]{3-4}
+% Help: colspec: X[ratio, horizontal alignment] columns grow to fit width=\linewidth
+%                  negative ratios: shrink to fit content and may not grow to full ratio
+% Help: colspec: l/c/r columns do not grow
+\longtabse[0.75]  % scale factor
+{Nouns: meta: Japanese.}  % caption
+{tbl:appendix-vocab-nouns-meta-language}  % label
+{
+    colspec={X[-3,l]X[3,l]X[-3,l]},
+    rowhead=1,
+    % width=\linewidth,  % useful only with X columns
+}  % inner specification options
+{
     \toprule
     \textbf{Name} & \textbf{Meaning} & \textbf{Notes} \\
-    \toprule
+    \midrule
     \ruby{普通名詞}{ふ|つう|めい|し} & common noun & \\
     \ruby{同義語}{どう|ぎ|ご} & synonym & \\
     \ruby{同意語}{どう|い|ご} & synonym & \\
@@ -72,21 +78,26 @@
     \ruby{×}{ばつ}/バツ/\ruby{罰点}{ばっ|てん} & cross mark/``incorrect'' & \\
     % & & \\
     \bottomrule
-\end{tabular}%
 }
-\captionof{table}{Nouns: meta: Japanese.}
-\label{tbl:appendix-vocab-nouns-meta-language}
-\end{center}
 
 
 \subsubsection{Grammatical}
-\begin{center}
-\resizebox{\linewidth}{!}{%
-% Help: \multicolumn2c{\multirow2*{}}, cmidrule(l){3-5}
-\begin{tabular}{@{}lll@{}}
+% Help: \SetCell[r=2,c=2]{c,m} <content>, \cmidrule[l]{3-4}
+% Help: colspec: X[ratio, horizontal alignment] columns grow to fit width=\linewidth
+%                  negative ratios: shrink to fit content and may not grow to full ratio
+% Help: colspec: l/c/r columns do not grow
+\longtabse[0.75]  % scale factor
+{Nouns: grammatical.}  % caption
+{tblappendix-vocab-nouns-grammatical}  % label
+{
+    colspec={X[-3,l]X[3,l]X[-3,l]},
+    rowhead=1,
+    % width=\linewidth,  % useful only with X columns
+}  % inner specification options
+{
     \toprule
     \textbf{Name} & \textbf{Meaning} & \textbf{Notes} \\
-    \toprule
+    \midrule
     \ruby{物}{もの} & thing/object & \\
     こと & thing/matter & (\ruby{事}{こと}) \\
     <to nominalise>こと & nominalising suffix & \suffix \\
@@ -94,21 +105,26 @@
     <advice>ことだ & you should/it's important to <advice> & \suffix \\
     % & & \\
     \bottomrule
-\end{tabular}%
 }
-\captionof{table}{Nouns: grammatical.}
-\label{tbl:appendix-vocab-nouns-grammatical}
-\end{center}
 
 
 \subsubsection{Directions}
-\begin{center}
-\resizebox{\linewidth}{!}{%
-% Help: \multicolumn2c{\multirow2*{}}, cmidrule(l){3-5}
-\begin{tabular}{@{}lll@{}}
+% Help: \SetCell[r=2,c=2]{c,m} <content>, \cmidrule[l]{3-4}
+% Help: colspec: X[ratio, horizontal alignment] columns grow to fit width=\linewidth
+%                  negative ratios: shrink to fit content and may not grow to full ratio
+% Help: colspec: l/c/r columns do not grow
+\longtabse[0.75]  % scale factor
+{Nouns: directions.}  % caption
+{tbl:appendix-vocab-nouns-directions}  % label
+{
+    colspec={X[-3,l]X[3,l]X[-3,l]},
+    rowhead=1,
+    % width=\linewidth,  % useful only with X columns
+}  % inner specification options
+{
     \toprule
     \textbf{Name} & \textbf{Meaning} & \textbf{Notes} \\
-    \toprule
+    \midrule
     \ruby{上}{うえ} & up & \\
     \ruby{下}{した} & down & \\
     \ruby{左}{ひだり} & left & \\
@@ -135,21 +151,26 @@
     \ruby{格下}{かく|さ}げ & status downgrade/demotion & e.g.\ friendship status  \\
     % & & \\
     \bottomrule
-\end{tabular}%
 }
-\captionof{table}{Nouns: directions.}
-\label{tbl:appendix-vocab-nouns-directions}
-\end{center}
 
 
 \subsubsection{Navigation}
-\begin{center}
-\resizebox{\linewidth}{!}{%
-% Help: \multicolumn2c{\multirow2*{}}, cmidrule(l){3-5}
-\begin{tabular}{@{}lll@{}}
+% Help: \SetCell[r=2,c=2]{c,m} <content>, \cmidrule[l]{3-4}
+% Help: colspec: X[ratio, horizontal alignment] columns grow to fit width=\linewidth
+%                  negative ratios: shrink to fit content and may not grow to full ratio
+% Help: colspec: l/c/r columns do not grow
+\longtabse[0.75]  % scale factor
+{Nouns: navigation.}  % caption
+{tbl:appendix-vocab-nouns-navigation}  % label
+{
+    colspec={X[-3,l]X[3,l]X[-3,l]},
+    rowhead=1,
+    % width=\linewidth,  % useful only with X columns
+}  % inner specification options
+{
     \toprule
     \textbf{Name} & \textbf{Meaning} & \textbf{Notes} \\
-    \toprule
+    \midrule
     \ruby{立}{た}ち\ruby{入}{い}り & the act of entering & \\
     \ruby{禁止}{きん|し} & prohibition/ban & also: バン/BAN \\
     \ruby{立}{た}ち\ruby{入}{い}り\ruby{禁止}{きん|し} & no entry/no trespassing/keep out/off-limits & \\
@@ -185,21 +206,26 @@
     \ruby{特急}{とっ|きゅう} & limited express train (abbreviated) & \\
     % & & \\
     \bottomrule
-\end{tabular}%
 }
-\captionof{table}{Nouns: navigation.}
-\label{tbl:appendix-vocab-nouns-navigation}
-\end{center}
 
 
 \subsubsection{Places}
-\begin{center}
-\resizebox{\linewidth}{!}{%
-% Help: \multicolumn2c{\multirow2*{}}, cmidrule(l){3-5}
-\begin{tabular}{@{}lll@{}}
+% Help: \SetCell[r=2,c=2]{c,m} <content>, \cmidrule[l]{3-4}
+% Help: colspec: X[ratio, horizontal alignment] columns grow to fit width=\linewidth
+%                  negative ratios: shrink to fit content and may not grow to full ratio
+% Help: colspec: l/c/r columns do not grow
+\longtabse[0.75]  % scale factor
+{Nouns: places.}  % caption
+{tbl:appendix-vocab-nouns-places}  % label
+{
+    colspec={X[-3,l]X[3,l]X[-3,l]},
+    rowhead=1,
+    % width=\linewidth,  % useful only with X columns
+}  % inner specification options
+{
     \toprule
     \textbf{Name} & \textbf{Meaning} & \textbf{Notes} \\
-    \toprule
+    \midrule
     \ruby{町}{ちょう}/\ruby{町}{まち} & street/neighbourhood & \href{https://ja.hinative.com/questions/17979737}{[HN1]}, \href{https://hinative.com/questions/20251204}{[HN2]} \\
     \ruby{丁目}{ちょう|め} & district of a town/city block & \\
     \ruby{町内会}{ちょう|ない|かい} & neighbourhood association & \\
@@ -233,39 +259,49 @@
     \ruby{学園}{がく|えん} & campus & \\
     % & & \\
     \bottomrule
-\end{tabular}%
 }
-\captionof{table}{Nouns: places.}
-\label{tbl:appendix-vocab-nouns-places}
-\end{center}
 
 
 \subsubsection{Furniture}
-\begin{center}
-\resizebox{\linewidth}{!}{%
-% Help: \multicolumn2c{\multirow2*{}}, cmidrule(l){3-5}
-\begin{tabular}{@{}lll@{}}
+% Help: \SetCell[r=2,c=2]{c,m} <content>, \cmidrule[l]{3-4}
+% Help: colspec: X[ratio, horizontal alignment] columns grow to fit width=\linewidth
+%                  negative ratios: shrink to fit content and may not grow to full ratio
+% Help: colspec: l/c/r columns do not grow
+\longtabse[0.75]  % scale factor
+{Nouns: furniture.}  % caption
+{tbl:appendix-vocab-nouns-furniture}  % label
+{
+    colspec={X[-3,l]X[3,l]X[-3,l]},
+    rowhead=1,
+    % width=\linewidth,  % useful only with X columns
+}  % inner specification options
+{
     \toprule
     \textbf{Name} & \textbf{Meaning} & \textbf{Notes} \\
-    \toprule
+    \midrule
     \ruby{椅子}{い|す} & chair/stool & \\
     % & & \\
     \bottomrule
-\end{tabular}%
 }
-\captionof{table}{Nouns: furniture.}
-\label{tbl:appendix-vocab-nouns-furniture}
-\end{center}
 
 
 \subsubsection{Organisms}
-\begin{center}
-\resizebox{\linewidth}{!}{%
-% Help: \multicolumn2c{\multirow2*{}}, cmidrule(l){3-5}
-\begin{tabular}{@{}lll@{}}
+% Help: \SetCell[r=2,c=2]{c,m} <content>, \cmidrule[l]{3-4}
+% Help: colspec: X[ratio, horizontal alignment] columns grow to fit width=\linewidth
+%                  negative ratios: shrink to fit content and may not grow to full ratio
+% Help: colspec: l/c/r columns do not grow
+\longtabse[0.75]  % scale factor
+{Nouns: organisms.}  % caption
+{tbl:appendix-vocab-nouns-organisms}  % label
+{
+    colspec={X[-3,l]X[3,l]X[-3,l]},
+    rowhead=1,
+    % width=\linewidth,  % useful only with X columns
+}  % inner specification options
+{
     \toprule
     \textbf{Name} & \textbf{Meaning} & \textbf{Notes} \\
-    \toprule
+    \midrule
     \ruby{猫}{ねこ} & cat & \\
     \ruby{魚}{さかな} & fish & \\
     \ruby{人間}{にん|げん} & human being/humankind & \\
@@ -273,21 +309,26 @@
     & & \\
     % & & \\
     \bottomrule
-\end{tabular}%
 }
-\captionof{table}{Nouns: organisms.}
-\label{tbl:appendix-vocab-nouns-organisms}
-\end{center}
 
 
 \subsubsection{Food}
-\begin{center}
-\resizebox{\linewidth}{!}{%
-% Help: \multicolumn2c{\multirow2*{}}, cmidrule(l){3-5}
-\begin{tabular}{@{}lll@{}}
+% Help: \SetCell[r=2,c=2]{c,m} <content>, \cmidrule[l]{3-4}
+% Help: colspec: X[ratio, horizontal alignment] columns grow to fit width=\linewidth
+%                  negative ratios: shrink to fit content and may not grow to full ratio
+% Help: colspec: l/c/r columns do not grow
+\longtabse[0.75]  % scale factor
+{Nouns: food.}  % caption
+{tbl:appendix-vocab-nouns-food}  % label
+{
+    colspec={X[-3,l]X[3,l]X[-3,l]},
+    rowhead=1,
+    % width=\linewidth,  % useful only with X columns
+}  % inner specification options
+{
     \toprule
     \textbf{Name} & \textbf{Meaning} & \textbf{Notes} \\
-    \toprule
+    \midrule
     ご\ruby{飯}{はん} & cooked rice/meal & \\
     \ruby{朝}{あさ}ご\ruby{飯}{はん} & breakfast & \\
     \ruby{昼}{ひる}ご\ruby{飯}{はん} & lunch & \\
@@ -319,21 +360,26 @@
     \ruby{味噌汁}{み|そ|しる} & miso soup & \\
     % & & \\
     \bottomrule
-\end{tabular}%
 }
-\captionof{table}{Nouns: food.}
-\label{tbl:appendix-vocab-nouns-food}
-\end{center}
 
 
 \subsubsection{Small objects: stationery}
-\begin{center}
-\resizebox{\linewidth}{!}{%
-% Help: \multicolumn2c{\multirow2*{}}, cmidrule(l){3-5}
-\begin{tabular}{@{}lll@{}}
+% Help: \SetCell[r=2,c=2]{c,m} <content>, \cmidrule[l]{3-4}
+% Help: colspec: X[ratio, horizontal alignment] columns grow to fit width=\linewidth
+%                  negative ratios: shrink to fit content and may not grow to full ratio
+% Help: colspec: l/c/r columns do not grow
+\longtabse[0.75]  % scale factor
+{Nouns: small objects: stationery.}  % caption
+{tbl:appendix-vocab-nouns-small-objects-stationery}  % label
+{
+    colspec={X[-3,l]X[3,l]X[-3,l]},
+    rowhead=1,
+    % width=\linewidth,  % useful only with X columns
+}  % inner specification options
+{
     \toprule
     \textbf{Name} & \textbf{Meaning} & \textbf{Notes} \\
-    \toprule
+    \midrule
     \ruby{書}{しょ} & book/document & \\
     \ruby{本}{ほん} & book/volume/script & \\
     \ruby{帳}{ちょう} & book/register & \\
@@ -351,20 +397,26 @@
     \ruby{計算機}{けい|さん|き} & calculator & \\
     % & & \\
     \bottomrule
-\end{tabular}%
 }
-\captionof{table}{Nouns: small objects: stationery.}
-\label{tbl:appendix-vocab-nouns-small-objects-stationery}
-\end{center}
+
 
 \subsubsection{Date}
-\begin{center}
-\resizebox{\linewidth}{!}{%
-% Help: \multicolumn2c{\multirow2*{}}, cmidrule(l){3-5}
-\begin{tabular}{@{}lll@{}}
+% Help: \SetCell[r=2,c=2]{c,m} <content>, \cmidrule[l]{3-4}
+% Help: colspec: X[ratio, horizontal alignment] columns grow to fit width=\linewidth
+%                  negative ratios: shrink to fit content and may not grow to full ratio
+% Help: colspec: l/c/r columns do not grow
+\longtabse[0.75]  % scale factor
+{Nouns: date.}  % caption
+{tbl:appendix-vocab-nouns-date}  % label
+{
+    colspec={X[-3,l]X[3,l]X[-3,l]},
+    rowhead=1,
+    % width=\linewidth,  % useful only with X columns
+}  % inner specification options
+{
     \toprule
     \textbf{Name} & \textbf{Meaning} & \textbf{Notes} \\
-    \toprule
+    \midrule
     \ruby{日}{ひ}にち & (referring to) the date of an event & 「<event>の日にち」 \\
     \ruby{毎日}{まい|にち} & every day & also an adverb, \href{https://ja.hinative.com/questions/24476486}{[HN]} \\
     \ruby{日々}{ひ|び} & day after day & also an adverb, \href{https://ja.hinative.com/questions/24476486}{[HN]} \\
@@ -443,20 +495,26 @@
     \ruby{誕生日}{たん|じょう|び} & birthday & \\
     % & & \\
     \bottomrule
-\end{tabular}%
 }
-\captionof{table}{Nouns: date.}
-\label{tbl:appendix-vocab-nouns-date}
-\end{center}
+
 
 \subsubsection{Time}
-\begin{center}
-\resizebox{\linewidth}{!}{%
-% Help: \multicolumn2c{\multirow2*{}}, cmidrule(l){3-5}
-\begin{tabular}{@{}lll@{}}
+% Help: \SetCell[r=2,c=2]{c,m} <content>, \cmidrule[l]{3-4}
+% Help: colspec: X[ratio, horizontal alignment] columns grow to fit width=\linewidth
+%                  negative ratios: shrink to fit content and may not grow to full ratio
+% Help: colspec: l/c/r columns do not grow
+\longtabse[0.75]  % scale factor
+{Nouns: time.}  % caption
+{tbl:appendix-vocab-nouns-time}  % label
+{
+    colspec={X[-3,l]X[3,l]X[-3,l]},
+    rowhead=1,
+    % width=\linewidth,  % useful only with X columns
+}  % inner specification options
+{
     \toprule
     \textbf{Name} & \textbf{Meaning} & \textbf{Notes} \\
-    \toprule
+    \midrule
     \ruby{時間}{じ|かん} & time (concept)/class period & \\
     % & & \\
     \midrule
@@ -523,11 +581,7 @@
     \ruby{永遠}{えい|えん} & eternity & \\
     % & & \\
     \bottomrule
-\end{tabular}%
 }
-\captionof{table}{Nouns: time.}
-\label{tbl:appendix-vocab-nouns-time}
-\end{center}
 
 
 \subsubsection{Pronouns and question words}
@@ -542,13 +596,22 @@ Regarding the こそあど\ruby{言葉}{こと|ば}:
 
 \hl{to read all sub articles \href{https://www.tofugu.com/japanese-grammar/kosoado/}{here}}
 
-\begin{center}
-\resizebox{\linewidth}{!}{%
-% Help: \multicolumn2c{\multirow2*{}}, cmidrule(l){3-5}
-\begin{tabular}{@{}lll@{}}
+% Help: \SetCell[r=2,c=2]{c,m} <content>, \cmidrule[l]{3-4}
+% Help: colspec: X[ratio, horizontal alignment] columns grow to fit width=\linewidth
+%                  negative ratios: shrink to fit content and may not grow to full ratio
+% Help: colspec: l/c/r columns do not grow
+\longtabse[0.75]  % scale factor
+{Nouns: pronouns and question words.}  % caption
+{tbl:appendix-vocab-nouns-pronouns-and-question-words}  % label
+{
+    colspec={X[-3,l]X[3,l]X[-3,l]},
+    rowhead=1,
+    % width=\linewidth,  % useful only with X columns
+}  % inner specification options
+{
     \toprule
     \textbf{Name} & \textbf{Meaning} & \textbf{Notes} \\
-    \toprule
+    \midrule
     \ruby{誰}{だれ} & who & \\
     どなた & who; what is your name (どなた[\ruby{様}{さま}]\{ですか/でしょうか\}。; [extra politeness and distance]) & honorific, feminine; \href{https://www.tofugu.com/japanese-grammar/konata-sonata-anata-donata/}{[TFG]} \\
     どちら[\ruby{様}{さま}] & who & [honorific] \\
@@ -599,7 +662,7 @@ Regarding the こそあど\ruby{言葉}{こと|ば}:
     あなた & you & rude (if spoken)/distant; archaic: こなた、そなた \\
     \ruby{君}{きみ}たち/\ruby{君}{きみ}ら & you (plural) & (\ruby{君達}{きみ|たち})/(\ruby{君等}{きみ|ら}); familiar (equal or lower status) \\
     あなたたち & you (plural) & (あなた\ruby{達}{たち}); rude/distant \\
-    \multicolumn3c{\color{red} THOU SHALT NOT CROSS THIS LINE} \\
+    \SetCell[c=3]{c,m} \color{red} \textbf{THOU SHALT NOT CROSS THIS LINE} \\
     あんた & you & rude, expresses annoyance \\
     お\ruby{前}{まえ}/おめー & you & rude \\
     てめえ & you & (\ruby[g]{手前}{てめえ}); derogatory, inviting fight \\
@@ -689,24 +752,29 @@ Regarding the こそあど\ruby{言葉}{こと|ば}:
     どうでも & anyhow & \\
     % & & \\
     \bottomrule
-\end{tabular}%
 }
-\captionof{table}{Nouns: pronouns and question words.}
-\label{tbl:appendix-vocab-nouns-pronouns-and-question-words}
-\end{center}
 
 
 
 \subsubsection{Pre-noun adjectivals}
 \textbf{These are adjectives} that occur directly before nouns. There are $>100$ of them. From Section~\ref{sec:noun-related-particles}, these function as pre-noun noun modifiers. These function similarly to determiners in English.
 
-\begin{center}
-\resizebox{\linewidth}{!}{%
-% Help: \multicolumn2c{\multirow2*{}}, cmidrule(l){3-5}
-\begin{tabular}{@{}lll@{}}
+% Help: \SetCell[r=2,c=2]{c,m} <content>, \cmidrule[l]{3-4}
+% Help: colspec: X[ratio, horizontal alignment] columns grow to fit width=\linewidth
+%                  negative ratios: shrink to fit content and may not grow to full ratio
+% Help: colspec: l/c/r columns do not grow
+\longtabse[0.75]  % scale factor
+{Nouns: pre-noun adjectivals.}  % caption
+{tbl:appendix-vocab-nouns-pre-noun-adjectivals}  % label
+{
+    colspec={X[-3,l]X[3,l]X[-3,l]},
+    rowhead=1,
+    % width=\linewidth,  % useful only with X columns
+}  % inner specification options
+{
     \toprule
     \textbf{Name} & \textbf{Meaning} & \textbf{Notes} \\
-    \toprule
+    \midrule
     \ruby{我}{わ}が & my/our & \\
     % & & \\
     \midrule
@@ -762,21 +830,26 @@ Regarding the こそあど\ruby{言葉}{こと|ば}:
     \ruby{明}{あ}くる & next/following (〜\ruby{日}{ひ}/〜\ruby{朝}{あさ}/\ruby{年}{とし} etc.) & \\
     % & & \\
     \bottomrule
-\end{tabular}%
 }
-\captionof{table}{Nouns: pre-noun adjectivals.}
-\label{tbl:appendix-vocab-nouns-pre-noun-adjectivals}
-\end{center}
 
 
 \subsubsection{Roles and occupations}
-\begin{center}
-\resizebox{\linewidth}{!}{%
-% Help: \multicolumn2c{\multirow2*{}}, cmidrule(l){3-5}
-\begin{tabular}{@{}lll@{}}
+% Help: \SetCell[r=2,c=2]{c,m} <content>, \cmidrule[l]{3-4}
+% Help: colspec: X[ratio, horizontal alignment] columns grow to fit width=\linewidth
+%                  negative ratios: shrink to fit content and may not grow to full ratio
+% Help: colspec: l/c/r columns do not grow
+\longtabse[0.75]  % scale factor
+{Nouns: roles and occupations.}  % caption
+{tbl:appendix-vocab-nouns-roles-and-occupations}  % label
+{
+    colspec={X[-3,l]X[3,l]X[-3,l]},
+    rowhead=1,
+    % width=\linewidth,  % useful only with X columns
+}  % inner specification options
+{
     \toprule
     \textbf{Name} & \textbf{Meaning} & \textbf{Notes} \\
-    \toprule
+    \midrule
     \ruby{女}{おんあ} & female/woman & \\
     \ruby{女子}{じょ|し} & woman/girl & \\
     \ruby{男}{おとこ} & make/man & \\
@@ -828,23 +901,28 @@ Regarding the こそあど\ruby{言葉}{こと|ば}:
     クソガキ & stupid brat/son of a bitch & (\ruby{糞餓鬼}{くそ|が|き}); derogatory \\
     % & & \\
     \bottomrule
-\end{tabular}%
 }
-\captionof{table}{Nouns: roles and occupations.}
-\label{tbl:appendix-vocab-nouns-roles-and-occupations}
-\end{center}
 
 
 \subsubsection{Family}
 Table~\ref{tbl:appendix-vocab-nouns-family} lists the names in casual/formal manner. We only use casual when referencing our own family members to other people. In all other situations (talking about other people's family, or talking directly to our own family), we use the formal one.
 
-\begin{center}
-\resizebox{\linewidth}{!}{%
-% Help: \multicolumn2c{\multirow2*{}}, cmidrule(l){3-5}
-\begin{tabular}{@{}lll@{}}
+% Help: \SetCell[r=2,c=2]{c,m} <content>, \cmidrule[l]{3-4}
+% Help: colspec: X[ratio, horizontal alignment] columns grow to fit width=\linewidth
+%                  negative ratios: shrink to fit content and may not grow to full ratio
+% Help: colspec: l/c/r columns do not grow
+\longtabse[0.75]  % scale factor
+{Nouns: family.}  % caption
+{tbl:appendix-vocab-nouns-family}  % label
+{
+    colspec={X[-3,l]X[3,l]X[-3,l]},
+    rowhead=1,
+    % width=\linewidth,  % useful only with X columns
+}  % inner specification options
+{
     \toprule
     \textbf{Name} & \textbf{Meaning} & \textbf{Notes} \\
-    \toprule
+    \midrule
 
     [ご]\ruby{両親}{りょう|しん} & parents & [honorific] \\
     \ruby{母}{はは}/[お\ruby{母}{かあ}さん] & mother & humble/[honorific] \\
@@ -863,42 +941,52 @@ Table~\ref{tbl:appendix-vocab-nouns-family} lists the names in casual/formal man
     \ruby{親子}{おや|こ} & parent and child & \\
     % & & \\
     \bottomrule
-\end{tabular}%
 }
-\captionof{table}{Nouns: family.}
-\label{tbl:appendix-vocab-nouns-family}
-\end{center}
 
 
 \subsubsection{Body parts}
-\begin{center}
-\resizebox{\linewidth}{!}{%
-% Help: \multicolumn2c{\multirow2*{}}, cmidrule(l){3-5}
-\begin{tabular}{@{}lll@{}}
+% Help: \SetCell[r=2,c=2]{c,m} <content>, \cmidrule[l]{3-4}
+% Help: colspec: X[ratio, horizontal alignment] columns grow to fit width=\linewidth
+%                  negative ratios: shrink to fit content and may not grow to full ratio
+% Help: colspec: l/c/r columns do not grow
+\longtabse[0.75]  % scale factor
+{Nouns: body parts.}  % caption
+{tbl:appendix-vocab-nouns-body-parts}  % label
+{
+    colspec={X[-3,l]X[3,l]X[-3,l]},
+    rowhead=1,
+    % width=\linewidth,  % useful only with X columns
+}  % inner specification options
+{
     \toprule
     \textbf{Name} & \textbf{Meaning} & \textbf{Notes} \\
-    \toprule
+    \midrule
     \ruby{髪}{かみ} & hair (on the head) & also: ヘア \\
     % & & \\
     \midrule
     \ruby{鉄拳}{てっ|けん} & tightly clenched fist & \\
     % & & \\
     \bottomrule
-\end{tabular}%
 }
-\captionof{table}{Nouns: body parts.}
-\label{tbl:appendix-vocab-nouns-body-parts}
-\end{center}
 
 
 \subsubsection{Clothing}
-\begin{center}
-\resizebox{\linewidth}{!}{%
-% Help: \multicolumn2c{\multirow2*{}}, cmidrule(l){3-5}
-\begin{tabular}{@{}lll@{}}
+% Help: \SetCell[r=2,c=2]{c,m} <content>, \cmidrule[l]{3-4}
+% Help: colspec: X[ratio, horizontal alignment] columns grow to fit width=\linewidth
+%                  negative ratios: shrink to fit content and may not grow to full ratio
+% Help: colspec: l/c/r columns do not grow
+\longtabse[0.75]  % scale factor
+{Nouns: clothing.}  % caption
+{tbl:appendix-vocab-nouns-clothing}  % label
+{
+    colspec={X[-3,l]X[3,l]X[-3,l]},
+    rowhead=1,
+    % width=\linewidth,  % useful only with X columns
+}  % inner specification options
+{
     \toprule
     \textbf{Name} & \textbf{Meaning} & \textbf{Notes} \\
-    \toprule
+    \midrule
     \ruby{制服}{せい|ふく} & uniform & \\
     シャツ & singlet/inner shirt/buttoned shirt & \\
     Tシャツ & T-shirt (outer shirt) & \\
@@ -913,21 +1001,26 @@ Table~\ref{tbl:appendix-vocab-nouns-family} lists the names in casual/formal man
     \ruby{靴}{くつ} & shoe/shoes/boots/footwear & \\
     % & & \\
     \bottomrule
-\end{tabular}%
 }
-\captionof{table}{Nouns: clothing.}
-\label{tbl:appendix-vocab-nouns-clothing}
-\end{center}
 
 
 \subsubsection{Emotions}
-\begin{center}
-\resizebox{\linewidth}{!}{%
-% Help: \multicolumn2c{\multirow2*{}}, cmidrule(l){3-5}
-\begin{tabular}{@{}lll@{}}
+% Help: \SetCell[r=2,c=2]{c,m} <content>, \cmidrule[l]{3-4}
+% Help: colspec: X[ratio, horizontal alignment] columns grow to fit width=\linewidth
+%                  negative ratios: shrink to fit content and may not grow to full ratio
+% Help: colspec: l/c/r columns do not grow
+\longtabse[0.75]  % scale factor
+{Nouns: emotions.}  % caption
+{tbl:appendix-vocab-nouns-emotions}  % label
+{
+    colspec={X[-3,l]X[3,l]X[-3,l]},
+    rowhead=1,
+    % width=\linewidth,  % useful only with X columns
+}  % inner specification options
+{
     \toprule
     \textbf{Name} & \textbf{Meaning} & \textbf{Notes} \\
-    \toprule
+    \midrule
     \ruby{気持}{き|も}ち & feeling/sensation/mood/state of mind & \href{https://dictionary.goo.ne.jp/thsrs/3397/meaning/m0u/\%E6\%B0\%97\%E6\%8C\%81\%E3\%81\%A1/}{[goo]} \\
     \ruby{気分}{き|ぶん} & mood/feeling & \href{https://dictionary.goo.ne.jp/thsrs/3397/meaning/m0u/\%E6\%B0\%97\%E6\%8C\%81\%E3\%81\%A1/}{[goo]} \\
     \ruby{感}{かん}じ & feeling/sense/impression & \\
@@ -949,21 +1042,26 @@ Table~\ref{tbl:appendix-vocab-nouns-family} lists the names in casual/formal man
     \ruby{不安}{ふ|あん} & anxiety/uneasiness/insecurity & also an adjective\\
     % & & \\
     \bottomrule
-\end{tabular}%
 }
-\captionof{table}{Nouns: emotions.}
-\label{tbl:appendix-vocab-nouns-emotions}
-\end{center}
 
 
 \subsubsection{Production}
-\begin{center}
-\resizebox{\linewidth}{!}{%
-% Help: \multicolumn2c{\multirow2*{}}, cmidrule(l){3-5}
-\begin{tabular}{@{}lll@{}}
+% Help: \SetCell[r=2,c=2]{c,m} <content>, \cmidrule[l]{3-4}
+% Help: colspec: X[ratio, horizontal alignment] columns grow to fit width=\linewidth
+%                  negative ratios: shrink to fit content and may not grow to full ratio
+% Help: colspec: l/c/r columns do not grow
+\longtabse[0.75]  % scale factor
+{Nouns: production.}  % caption
+{tbl:appendix-vocab-nouns-production}  % label
+{
+    colspec={X[-3,l]X[3,l]X[-3,l]},
+    rowhead=1,
+    % width=\linewidth,  % useful only with X columns
+}  % inner specification options
+{
     \toprule
     \textbf{Name} & \textbf{Meaning} & \textbf{Notes} \\
-    \toprule
+    \midrule
     つもり & plan/intention; assumption/belief/thought; estimation & (\ruby{積}{つ}もり) \\
     \ruby{結果}{けっ|か} & result/outcome/consequence & \\
     \ruby{作}{つく}り & the making/production/components of & \\
@@ -1008,21 +1106,26 @@ Table~\ref{tbl:appendix-vocab-nouns-family} lists the names in casual/formal man
     \ruby{仕事}{し|ごと} & work/occupation/employment & \\
     % & & \\
     \bottomrule
-\end{tabular}%
 }
-\captionof{table}{Nouns: production.}
-\label{tbl:appendix-vocab-nouns-production]}
-\end{center}
 
 
 \subsubsection{Consumption}
-\begin{center}
-\resizebox{\linewidth}{!}{%
-% Help: \multicolumn2c{\multirow2*{}}, cmidrule(l){3-5}
-\begin{tabular}{@{}lll@{}}
+% Help: \SetCell[r=2,c=2]{c,m} <content>, \cmidrule[l]{3-4}
+% Help: colspec: X[ratio, horizontal alignment] columns grow to fit width=\linewidth
+%                  negative ratios: shrink to fit content and may not grow to full ratio
+% Help: colspec: l/c/r columns do not grow
+\longtabse[0.75]  % scale factor
+{Nouns: consumption.}  % caption
+{tbl:appendix-vocab-nouns-consumption}  % label
+{
+    colspec={X[-3,l]X[3,l]X[-3,l]},
+    rowhead=1,
+    % width=\linewidth,  % useful only with X columns
+}  % inner specification options
+{
     \toprule
     \textbf{Name} & \textbf{Meaning} & \textbf{Notes} \\
-    \toprule
+    \midrule
     \ruby{必要}{ひつ|よう} & necessity/need/requirement & \\
     % & & \\
     \midrule
@@ -1045,21 +1148,26 @@ Table~\ref{tbl:appendix-vocab-nouns-family} lists the names in casual/formal man
     ロック & lock & \\
     % & & \\
     \bottomrule
-\end{tabular}%
 }
-\captionof{table}{Nouns: consumption.}
-\label{tbl:appendix-vocab-nouns-consumption}
-\end{center}
 
 
 \subsubsection{Interaction}
-\begin{center}
-\resizebox{\linewidth}{!}{%
-% Help: \multicolumn2c{\multirow2*{}}, cmidrule(l){3-5}
-\begin{tabular}{@{}lll@{}}
+% Help: \SetCell[r=2,c=2]{c,m} <content>, \cmidrule[l]{3-4}
+% Help: colspec: X[ratio, horizontal alignment] columns grow to fit width=\linewidth
+%                  negative ratios: shrink to fit content and may not grow to full ratio
+% Help: colspec: l/c/r columns do not grow
+\longtabse[0.75]  % scale factor
+{Nouns: interaction.}  % caption
+{tbl:appendix-vocab-nouns-interaction}  % label
+{
+    colspec={X[-3,l]X[3,l]X[-3,l]},
+    rowhead=1,
+    % width=\linewidth,  % useful only with X columns
+}  % inner specification options
+{
     \toprule
     \textbf{Name} & \textbf{Meaning} & \textbf{Notes} \\
-    \toprule
+    \midrule
     いくら & how much (price) & (\ruby{幾}{いく}ら) \\
     % & & \\
     \midrule
@@ -1091,21 +1199,26 @@ Table~\ref{tbl:appendix-vocab-nouns-family} lists the names in casual/formal man
     \ruby{告白}{こく|はく} & confession (of a crime/wrongdoing/romantic feelings) & \\
     % & & \\
     \bottomrule
-\end{tabular}%
 }
-\captionof{table}{Nouns: interaction.}
-\label{tbl:appendix-vocab-nouns-interaction}
-\end{center}
 
 
 \subsubsection{Society and culture}
-\begin{center}
-\resizebox{\linewidth}{!}{%
-% Help: \multicolumn2c{\multirow2*{}}, cmidrule(l){3-5}
-\begin{tabular}{@{}lll@{}}
+% Help: \SetCell[r=2,c=2]{c,m} <content>, \cmidrule[l]{3-4}
+% Help: colspec: X[ratio, horizontal alignment] columns grow to fit width=\linewidth
+%                  negative ratios: shrink to fit content and may not grow to full ratio
+% Help: colspec: l/c/r columns do not grow
+\longtabse[0.75]  % scale factor
+{Nouns: society and culture.}  % caption
+{tbl:appendix-vocab-nouns-society-and-culture}  % label
+{
+    colspec={X[-3,l]X[3,l]X[-3,l]},
+    rowhead=1,
+    % width=\linewidth,  % useful only with X columns
+}  % inner specification options
+{
     \toprule
     \textbf{Name} & \textbf{Meaning} & \textbf{Notes} \\
-    \toprule
+    \midrule
     \ruby{経済}{けい|ざい} & economy & \\
     \ruby{地理}{ち|り} & geography & \\
     \ruby{歴史}{れき|し} & history & \\
@@ -1136,21 +1249,26 @@ Table~\ref{tbl:appendix-vocab-nouns-family} lists the names in casual/formal man
     アニメ & animation/anime & \\
     % & & \\
     \bottomrule
-\end{tabular}%
 }
-\captionof{table}{Nouns: society and culture.}
-\label{tbl:appendix-vocab-nouns-society-and-culture}
-\end{center}
 
 
 \subsubsection{Health}
-\begin{center}
-\resizebox{\linewidth}{!}{%
-% Help: \multicolumn2c{\multirow2*{}}, cmidrule(l){3-5}
-\begin{tabular}{@{}lll@{}}
+% Help: \SetCell[r=2,c=2]{c,m} <content>, \cmidrule[l]{3-4}
+% Help: colspec: X[ratio, horizontal alignment] columns grow to fit width=\linewidth
+%                  negative ratios: shrink to fit content and may not grow to full ratio
+% Help: colspec: l/c/r columns do not grow
+\longtabse[0.75]  % scale factor
+{Nouns: health.}  % caption
+{tbl:appendix-vocab-nouns-health}  % label
+{
+    colspec={X[-3,l]X[3,l]X[-3,l]},
+    rowhead=1,
+    % width=\linewidth,  % useful only with X columns
+}  % inner specification options
+{
     \toprule
     \textbf{Name} & \textbf{Meaning} & \textbf{Notes} \\
-    \toprule
+    \midrule
     \ruby{元気}{げん|き} & health/vigour & also an adjective \\
     \ruby{健康}{けん|こう} & health & also an adjective \\
     \ruby{病気}{びょう|き} & illness/disease/sickness & also an adjective \\
@@ -1179,11 +1297,7 @@ Table~\ref{tbl:appendix-vocab-nouns-family} lists the names in casual/formal man
     \ruby{寝袋}{ね|ぶくろ} & sleeping bag & \\
     % & & \\
     \bottomrule
-\end{tabular}%
 }
-\captionof{table}{Nouns: health.}
-\label{tbl:appendix-vocab-nouns-health}
-\end{center}
 
 
 \subsubsection{Colours}
@@ -1191,13 +1305,22 @@ Table~\ref{tbl:appendix-vocab-nouns-family} lists the names in casual/formal man
 
 Colours are often used as labels, together with the の particle.
 
-\begin{center}
-\resizebox{\linewidth}{!}{%
-% Help: \multicolumn2c{\multirow2*{}}, cmidrule(l){3-5}
-\begin{tabular}{@{}lll@{}}
+% Help: \SetCell[r=2,c=2]{c,m} <content>, \cmidrule[l]{3-4}
+% Help: colspec: X[ratio, horizontal alignment] columns grow to fit width=\linewidth
+%                  negative ratios: shrink to fit content and may not grow to full ratio
+% Help: colspec: l/c/r columns do not grow
+\longtabse[0.75]  % scale factor
+{Nouns: colours.}  % caption
+{tbl:appendix-vocab-nouns-colours}  % label
+{
+    colspec={X[-3,l]X[3,l]X[-3,l]},
+    rowhead=1,
+    % width=\linewidth,  % useful only with X columns
+}  % inner specification options
+{
     \toprule
     \textbf{Name} & \textbf{Meaning} & \textbf{Notes} \\
-    \toprule
+    \midrule
     \ruby{赤}{あか}[\ruby{色}{いろ}] & red (1, 0, 0) & also: レッド \\
     % \ruby{赤色}{せき|しょく} & red (1, 0, 0) & formal/literary [GMN] \\
     % \ruby{明赤色}{めい|せき|しょく} & light red & \\
@@ -1238,61 +1361,74 @@ Colours are often used as labels, together with the の particle.
     \ruby{虹色}{にじ|いろ} & rainbow-coloured & \\
     % & & \\
     \bottomrule
-\end{tabular}%
 }
-\captionof{table}{Nouns: colours.}
-\label{tbl:appendix-vocab-nouns-colours}
-\end{center}
 
 
 \subsubsection{Shapes}
-\begin{center}
-\resizebox{\linewidth}{!}{%
-% Help: \multicolumn2c{\multirow2*{}}, cmidrule(l){3-5}
-\begin{tabular}{@{}lll@{}}
+% Help: \SetCell[r=2,c=2]{c,m} <content>, \cmidrule[l]{3-4}
+% Help: colspec: X[ratio, horizontal alignment] columns grow to fit width=\linewidth
+%                  negative ratios: shrink to fit content and may not grow to full ratio
+% Help: colspec: l/c/r columns do not grow
+\longtabse[0.75]  % scale factor
+{Nouns: shapes.}  % caption
+{tbl:appendix-vocab-nouns-shapes}  % label
+{
+    colspec={X[-3,l]X[3,l]X[-3,l]},
+    rowhead=1,
+    % width=\linewidth,  % useful only with X columns
+}  % inner specification options
+{
     \toprule
     \textbf{Name} & \textbf{Meaning} & \textbf{Notes} \\
-    \toprule
+    \midrule
     \ruby{丸}{まる} & circle & \\
     \ruby{三角形}{さん|かく|けい} & triangle & \href{https://ja.hinative.com/questions/3974177}{[HN]} \\
     バツ & cross & \\
     % & & \\
     \bottomrule
-\end{tabular}%
 }
-\captionof{table}{Nouns: shapes.}
-\label{tbl:appendix-vocab-nouns-shapes}
-\end{center}
 
 
 \subsubsection{Agreeability}
-\begin{center}
-\centering
-\resizebox{\linewidth}{!}{%
-% Help: \multicolumn2c{\multirow2*{}}, cmidrule(l){3-5}
-\begin{tabular}{@{}lll@{}}
+% Help: \SetCell[r=2,c=2]{c,m} <content>, \cmidrule[l]{3-4}
+% Help: colspec: X[ratio, horizontal alignment] columns grow to fit width=\linewidth
+%                  negative ratios: shrink to fit content and may not grow to full ratio
+% Help: colspec: l/c/r columns do not grow
+\longtabse[0.75]  % scale factor
+{Nouns: agreeability.}  % caption
+{tbl:appendix-vocab-nouns-agreeability}  % label
+{
+    colspec={X[-3,l]X[3,l]X[-3,l]},
+    rowhead=1,
+    % width=\linewidth,  % useful only with X columns
+}  % inner specification options
+{
     \toprule
     \textbf{Name} & \textbf{Meaning} & \textbf{Notes} \\
-    \toprule
+    \midrule
     \ruby{一流}{いち|りゅう} & first class/top-ranking & \\
     % & & \\
     \bottomrule
-\end{tabular}%
 }
-\captionof{table}{Nouns: agreeability.}
-\label{tbl:appendix-vocab-nouns-agreeability}
-\end{center}
 
 
 \subsubsection{Appearance and style}
-\begin{center}
-\centering
-\resizebox{\linewidth}{!}{%
-% Help: \multicolumn2c{\multirow2*{}}, cmidrule(l){3-5}
-\begin{tabular}{@{}lll@{}}
+% Help: \SetCell[r=2,c=2]{c,m} <content>, \cmidrule[l]{3-4}
+% Help: colspec: X[ratio, horizontal alignment] columns grow to fit width=\linewidth
+%                  negative ratios: shrink to fit content and may not grow to full ratio
+% Help: colspec: l/c/r columns do not grow
+\longtabse[0.75]  % scale factor
+{Nouns: appearance and style.}  % caption
+{tblappendix-vocab-nouns-appearance-and-style}  % label
+{
+    colspec={X[-3,l]X[3,l]X[-3,l]},
+    rowhead=1,
+    % width=\linewidth,  % useful only with X columns
+}  % inner specification options
+{
     \toprule
     \textbf{Name} & \textbf{Meaning} & \textbf{Notes} \\
-    \toprule
+    \midrule
     イケメン & good-looking/handsome/cool guy & \\
     \ruby{美少女}{び|しょう|じょ} & beautiful girl & \\
     % & & \\
@@ -1301,22 +1437,26 @@ Colours are often used as labels, together with the の particle.
     \ruby{独特}{どく|とく} & peculiarity/uniqueness/characteristic & \href{https://dictionary.goo.ne.jp/thsrs/17037/meaning/m1u/}{[HN]} \\
     % & & \\
     \bottomrule
-\end{tabular}
 }
-\captionof{table}{Nouns: appearance and style.}
-\label{tbl:appendix-vocab-nouns-appearance-and-style}
-\end{center}
 
 
 \subsubsection{Ability}
-\begin{center}
-\centering
-\resizebox{\linewidth}{!}{%
-% Help: \multicolumn2c{\multirow2*{}}, cmidrule(l){3-5}
-\begin{tabular}{@{}lll@{}}
+% Help: \SetCell[r=2,c=2]{c,m} <content>, \cmidrule[l]{3-4}
+% Help: colspec: X[ratio, horizontal alignment] columns grow to fit width=\linewidth
+%                  negative ratios: shrink to fit content and may not grow to full ratio
+% Help: colspec: l/c/r columns do not grow
+\longtabse[0.75]  % scale factor
+{Nouns: ability.}  % caption
+{tbl:appendix-vocab-nouns-ability}  % label
+{
+    colspec={X[-3,l]X[3,l]X[-3,l]},
+    rowhead=1,
+    % width=\linewidth,  % useful only with X columns
+}  % inner specification options
+{
     \toprule
     \textbf{Name} & \textbf{Meaning} & \textbf{Notes} \\
-    \toprule
+    \midrule
     \ruby{能力}{のう|りょく} & ability & \\
     \ruby{力}{ちから} & force/strength/power & \\
     % & & \\
@@ -1325,44 +1465,52 @@ Colours are often used as labels, together with the の particle.
     \ruby{簡易}{かん|い} & simplicity/ease/convenience & \\
     % & & \\
     \bottomrule
-\end{tabular}
 }
-\captionof{table}{Nouns: ability.}
-\label{tbl:appendix-vocab-nouns-ability}
-\end{center}
 
 
 \subsubsection{Personalities}
-\begin{center}
-\centering
-\resizebox{\linewidth}{!}{%
-% Help: \multicolumn2c{\multirow2*{}}, cmidrule(l){3-5}
-\begin{tabular}{@{}lll@{}}
+% Help: \SetCell[r=2,c=2]{c,m} <content>, \cmidrule[l]{3-4}
+% Help: colspec: X[ratio, horizontal alignment] columns grow to fit width=\linewidth
+%                  negative ratios: shrink to fit content and may not grow to full ratio
+% Help: colspec: l/c/r columns do not grow
+\longtabse[0.75]  % scale factor
+{Nouns: personalities.}  % caption
+{tbl:appendix-vocab-nouns-personalities}  % label
+{
+    colspec={X[-3,l]X[3,l]X[-3,l]},
+    rowhead=1,
+    % width=\linewidth,  % useful only with X columns
+}  % inner specification options
+{
     \toprule
     \textbf{Name} & \textbf{Meaning} & \textbf{Notes} \\
-    \toprule
+    \midrule
     \ruby{人気}{にん|き} & popularity/public favour & \\
     % & & \\
     \midrule
     \ruby{無名}{む|めい} & anonymous/nameless; not famous & \\
     % & & \\
     \bottomrule
-\end{tabular}
 }
-\captionof{table}{Nouns: personalities.}
-\label{tbl:appendix-vocab-nouns-personalities}
-\end{center}
 
 
 \subsubsection{Education and correctness}
-\begin{center}
-\centering
-\resizebox{\linewidth}{!}{%
-% Help: \multicolumn2c{\multirow2*{}}, cmidrule(l){3-5}
-\begin{tabular}{@{}lll@{}}
+% Help: \SetCell[r=2,c=2]{c,m} <content>, \cmidrule[l]{3-4}
+% Help: colspec: X[ratio, horizontal alignment] columns grow to fit width=\linewidth
+%                  negative ratios: shrink to fit content and may not grow to full ratio
+% Help: colspec: l/c/r columns do not grow
+\longtabse[0.75]  % scale factor
+{Nouns: education and correctness.}  % caption
+{tbl:appendix-vocab-nouns-education-and-correctness}  % label
+{
+    colspec={X[-3,l]X[3,l]X[-3,l]},
+    rowhead=1,
+    % width=\linewidth,  % useful only with X columns
+}  % inner specification options
+{
     \toprule
     \textbf{Name} & \textbf{Meaning} & \textbf{Notes} \\
-    \toprule
+    \midrule
     \ruby{教育}{きょう|いく} & education/training/upbringing & \\
     \ruby{授業}{じゅ|ぎょう} & lesson/class/teaching/instruction & \\
     \midrule
@@ -1402,21 +1550,26 @@ Colours are often used as labels, together with the の particle.
     \ruby{部活}{ぶ|かつ} & club/extracurricular activities (abbreviation) & \\
     % & & \\
     \bottomrule
-\end{tabular}
 }
-\captionof{table}{Nouns: education and correctness.}
-\label{tbl:appendix-vocab-nouns-education-and-correctness}
-\end{center}
 
 
 \subsubsection{Academic fields}
-\begin{center}
-\resizebox{\linewidth}{!}{%
-% Help: \multicolumn2c{\multirow2*{}}, cmidrule(l){3-5}
-\begin{tabular}{@{}lll@{}}
+% Help: \SetCell[r=2,c=2]{c,m} <content>, \cmidrule[l]{3-4}
+% Help: colspec: X[ratio, horizontal alignment] columns grow to fit width=\linewidth
+%                  negative ratios: shrink to fit content and may not grow to full ratio
+% Help: colspec: l/c/r columns do not grow
+\longtabse[0.75]  % scale factor
+{Nouns: academic fields.}  % caption
+{tbl:appendix-vocab-nouns-academic-fields}  % label
+{
+    colspec={X[-3,l]X[3,l]X[-3,l]},
+    rowhead=1,
+    % width=\linewidth,  % useful only with X columns
+}  % inner specification options
+{
     \toprule
     \textbf{Name} & \textbf{Meaning} & \textbf{Notes} \\
-    \toprule
+    \midrule
     \ruby{数学}{すう|がく} & mathematics & \\
     \ruby{科学}{か|がく} & science & \\
     \ruby{地理学}{ち|り|がく} & geography & \\
@@ -1427,22 +1580,26 @@ Colours are often used as labels, together with the の particle.
     \ruby{情報工学}{じょう|ほう|こう|がく} & information engineering & \\
     % & & \\
     \bottomrule
-\end{tabular}%
 }
-\captionof{table}{Nouns: academic fields.}
-\label{tbl:appendix-vocab-nouns-academic-fields}
-\end{center}
 
 
 \subsubsection{Knowledge, truth and reality}
-\begin{center}
-\centering
-\resizebox{\linewidth}{!}{%
-% Help: \multicolumn2c{\multirow2*{}}, cmidrule(l){3-5}
-\begin{tabular}{@{}lll@{}}
+% Help: \SetCell[r=2,c=2]{c,m} <content>, \cmidrule[l]{3-4}
+% Help: colspec: X[ratio, horizontal alignment] columns grow to fit width=\linewidth
+%                  negative ratios: shrink to fit content and may not grow to full ratio
+% Help: colspec: l/c/r columns do not grow
+\longtabse[0.75]  % scale factor
+{Nouns: knowledge, truth and reality.}  % caption
+{tbl:appendix-vocab-nouns-knowledge-truth-and-reality}  % label
+{
+    colspec={X[-3,l]X[3,l]X[-3,l]},
+    rowhead=1,
+    % width=\linewidth,  % useful only with X columns
+}  % inner specification options
+{
     \toprule
     \textbf{Name} & \textbf{Meaning} & \textbf{Notes} \\
-    \toprule
+    \midrule
     \ruby{思}{おも}い & thought & \\
     % & & \\
     \midrule
@@ -1478,22 +1635,26 @@ Colours are often used as labels, together with the の particle.
     \ruby{信頼}{しん|らい} & trust/confidence/reliance/faith (future) & \href{https://japanese.stackexchange.com/q/24275}{[SE]} \\
     % & & \\
     \bottomrule
-\end{tabular}
 }
-\captionof{table}{Nouns: knowledge, truth and reality.}
-\label{tbl:appendix-vocab-nouns-knowledge-truth-and-reality}
-\end{center}
 
 
 \subsubsection{Courtesy}
-\begin{center}
-\centering
-\resizebox{\linewidth}{!}{%
-% Help: \multicolumn2c{\multirow2*{}}, cmidrule(l){3-5}
-\begin{tabular}{@{}lll@{}}
+% Help: \SetCell[r=2,c=2]{c,m} <content>, \cmidrule[l]{3-4}
+% Help: colspec: X[ratio, horizontal alignment] columns grow to fit width=\linewidth
+%                  negative ratios: shrink to fit content and may not grow to full ratio
+% Help: colspec: l/c/r columns do not grow
+\longtabse[0.75]  % scale factor
+{Nouns: courtesy.}  % caption
+{tbl:appendix-vocab-nouns-courtesy}  % label
+{
+    colspec={X[-3,l]X[3,l]X[-3,l]},
+    rowhead=1,
+    % width=\linewidth,  % useful only with X columns
+}  % inner specification options
+{
     \toprule
     \textbf{Name} & \textbf{Meaning} & \textbf{Notes} \\
-    \toprule
+    \midrule
     エチケット & etiquette/politeness/courtesy/good manners & \\
     teinei & & \\
     % & & \\
@@ -1506,22 +1667,26 @@ Colours are often used as labels, together with the の particle.
     \ruby{最速}{さい|そく} & fastest & \\
     % & & \\
     \bottomrule
-\end{tabular}
 }
-\captionof{table}{Nouns: courtesy.}
-\label{tbl:appendix-vocab-nouns-courtesy}
-\end{center}
 
 
 \subsubsection{Conflict and resolution}
-\begin{center}
-\centering
-\resizebox{\linewidth}{!}{%
-% Help: \multicolumn2c{\multirow2*{}}, cmidrule(l){3-5}
-\begin{tabular}{@{}lll@{}}
+% Help: \SetCell[r=2,c=2]{c,m} <content>, \cmidrule[l]{3-4}
+% Help: colspec: X[ratio, horizontal alignment] columns grow to fit width=\linewidth
+%                  negative ratios: shrink to fit content and may not grow to full ratio
+% Help: colspec: l/c/r columns do not grow
+\longtabse[0.75]  % scale factor
+{Nouns: conflict and resolution.}  % caption
+{tbl:appendix-vocab-nouns-conflict-and-resolution}  % label
+{
+    colspec={X[-3,l]X[3,l]X[-3,l]},
+    rowhead=1,
+    % width=\linewidth,  % useful only with X columns
+}  % inner specification options
+{
     \toprule
     \textbf{Name} & \textbf{Meaning} & \textbf{Notes} \\
-    \toprule
+    \midrule
     \ruby{勝}{か}ち & win/victory (personal) & \\
     \ruby{勝利}{しょう|り} & win/victory (larger scale) & \\
     % & & \\
@@ -1536,41 +1701,49 @@ Colours are often used as labels, together with the の particle.
     \ruby{罰}{ばつ} & punishment/penalty & \\
     % & & \\
     \bottomrule
-\end{tabular}
 }
-\captionof{table}{Nouns: conflict and resolution.}
-\label{tbl:appendix-vocab-nouns-conflict-and-resolution}
-\end{center}
 
 
 \subsubsection{Taste and texture}
-\begin{center}
-\centering
-\resizebox{\linewidth}{!}{%
-% Help: \multicolumn2c{\multirow2*{}}, cmidrule(l){3-5}
-\begin{tabular}{@{}lll@{}}
+% Help: \SetCell[r=2,c=2]{c,m} <content>, \cmidrule[l]{3-4}
+% Help: colspec: X[ratio, horizontal alignment] columns grow to fit width=\linewidth
+%                  negative ratios: shrink to fit content and may not grow to full ratio
+% Help: colspec: l/c/r columns do not grow
+\longtabse[0.75]  % scale factor
+{Nouns: taste and texture.}  % caption
+{tbl:appendix-vocab-nouns-taste-and-texture}  % label
+{
+    colspec={X[-3,l]X[3,l]X[-3,l]},
+    rowhead=1,
+    % width=\linewidth,  % useful only with X columns
+}  % inner specification options
+{
     \toprule
     \textbf{Name} & \textbf{Meaning} & \textbf{Notes} \\
-    \toprule
+    \midrule
     もちもち & springy texture/elastic & \\
     % & & \\
     \bottomrule
-\end{tabular}
 }
-\captionof{table}{Nouns: taste and texture.}
-\label{tbl:appendix-vocab-nouns-taste-and-texture}
-\end{center}
-
 
 
 \subsubsection{Amounts and sizes}
-\begin{center}
-\resizebox{\linewidth}{!}{%
-% Help: \multicolumn2c{\multirow2*{}}, cmidrule(l){3-5}
-\begin{tabular}{@{}lll@{}}
+% Help: \SetCell[r=2,c=2]{c,m} <content>, \cmidrule[l]{3-4}
+% Help: colspec: X[ratio, horizontal alignment] columns grow to fit width=\linewidth
+%                  negative ratios: shrink to fit content and may not grow to full ratio
+% Help: colspec: l/c/r columns do not grow
+\longtabse[0.75]  % scale factor
+{Nouns: amounts and sizes.}  % caption
+{tbl:appendix-vocab-nouns-amounts-and-sizes}  % label
+{
+    colspec={X[-3,l]X[3,l]X[-3,l]},
+    rowhead=1,
+    % width=\linewidth,  % useful only with X columns
+}  % inner specification options
+{
     \toprule
     \textbf{Name} & \textbf{Meaning} & \textbf{Notes} \\
-    \toprule
+    \midrule
     \ruby{最小}{さい|しょう} & smallest/minimum & \\
     \ruby{最大}{さい|だい} & biggest/maximum & \\
     % & & \\
@@ -1579,22 +1752,26 @@ Colours are often used as labels, together with the の particle.
     \ruby{個別}{こ|べつ} & case-by-case/separate/individual & \\
     % & & \\
     \bottomrule
-\end{tabular}%
 }
-\captionof{table}{Nouns: amountsandsizes.}
-\label{tbl:appendix-vocab-nouns-amounts-and-sizes}
-\end{center}
 
 
 \subsubsection{Creatures and divinity}
-\begin{center}
-\centering
-\resizebox{\linewidth}{!}{%
-% Help: \multicolumn2c{\multirow2*{}}, cmidrule(l){3-5}
-\begin{tabular}{@{}lll@{}}
+% Help: \SetCell[r=2,c=2]{c,m} <content>, \cmidrule[l]{3-4}
+% Help: colspec: X[ratio, horizontal alignment] columns grow to fit width=\linewidth
+%                  negative ratios: shrink to fit content and may not grow to full ratio
+% Help: colspec: l/c/r columns do not grow
+\longtabse[0.75]  % scale factor
+{Nouns: creatures and divinity.}  % caption
+{tbl:appendix-vocab-nouns-creatures-and-divinity}  % label
+{
+    colspec={X[-3,l]X[3,l]X[-3,l]},
+    rowhead=1,
+    % width=\linewidth,  % useful only with X columns
+}  % inner specification options
+{
     \toprule
     \textbf{Name} & \textbf{Meaning} & \textbf{Notes} \\
-    \toprule
+    \midrule
     \ruby{神}{かみ} & god/deity/divinity/spirit & \\
     \ruby{天使}{てん|し} & angel & \\
     \ruby{悪魔}{あく|ま} & devil/demon & \\
@@ -1607,21 +1784,26 @@ Colours are often used as labels, together with the の particle.
     \ruby{南無阿弥陀仏}{な|む|あ|み|だ|ぶつ} & hail Amitabha Buddha & \\
     % & & \\
     \bottomrule
-\end{tabular}%
 }
-\captionof{table}{Nouns: creatures and divinity.}
-\label{tbl:appendix-vocab-nouns-creatures-and-divinity}
-\end{center}
 
 
 \subsubsection{Nature}
-\begin{center}
-\resizebox{\linewidth}{!}{%
-% Help: \multicolumn2c{\multirow2*{}}, cmidrule(l){3-5}
-\begin{tabular}{@{}lll@{}}
+% Help: \SetCell[r=2,c=2]{c,m} <content>, \cmidrule[l]{3-4}
+% Help: colspec: X[ratio, horizontal alignment] columns grow to fit width=\linewidth
+%                  negative ratios: shrink to fit content and may not grow to full ratio
+% Help: colspec: l/c/r columns do not grow
+\longtabse[0.75]  % scale factor
+{Nouns: nature.}  % caption
+{tbl:appendix-vocab-nouns-nature}  % label
+{
+    colspec={X[-3,l]X[3,l]X[-3,l]},
+    rowhead=1,
+    % width=\linewidth,  % useful only with X columns
+}  % inner specification options
+{
     \toprule
     \textbf{Name} & \textbf{Meaning} & \textbf{Notes} \\
-    \toprule
+    \midrule
     \ruby{山}{やま} & mountain/hill & \\
     \ruby{山々}{やま|やま} & mountains/hills & \\
     % & & \\
@@ -1655,20 +1837,26 @@ Colours are often used as labels, together with the の particle.
     \ruby{二酸化炭素}{に|さん|か|たん|そ} & carbon dioxide & \\
     % & & \\
     \bottomrule
-\end{tabular}%
 }
-\captionof{table}{Nouns: nature.}
-\label{tbl:appendix-vocab-nouns-nature}
-\end{center}
+
 
 \subsubsection{Cosmic}
-\begin{center}
-\resizebox{\linewidth}{!}{%
-% Help: \multicolumn2c{\multirow2*{}}, cmidrule(l){3-5}
-\begin{tabular}{@{}lll@{}}
+% Help: \SetCell[r=2,c=2]{c,m} <content>, \cmidrule[l]{3-4}
+% Help: colspec: X[ratio, horizontal alignment] columns grow to fit width=\linewidth
+%                  negative ratios: shrink to fit content and may not grow to full ratio
+% Help: colspec: l/c/r columns do not grow
+\longtabse[0.75]  % scale factor
+{Nouns: cosmic.}  % caption
+{tbl:appendix-vocab-nouns-cosmic}  % label
+{
+    colspec={X[-3,l]X[3,l]X[-3,l]},
+    rowhead=1,
+    % width=\linewidth,  % useful only with X columns
+}  % inner specification options
+{
     \toprule
     \textbf{Name} & \textbf{Meaning} & \textbf{Notes} \\
-    \toprule
+    \midrule
     \ruby{流星}{りゅう|せい} & meteor/shooting star & \\
     \ruby{月見}{つき|み} & moon viewing (eighth lunar month) & \\
     \ruby{火星}{か|せい} & Mars & \\
@@ -1678,21 +1866,26 @@ Colours are often used as labels, together with the の particle.
     \ruby{土星}{ど|せい} & Saturn & \\
     % & & \\
     \bottomrule
-\end{tabular}%
 }
-\captionof{table}{Nouns: cosmic.}
-\label{tbl:appendix-vocab-nouns-cosmic}
-\end{center}
 
 
 \subsubsection{Physical units}
-\begin{center}
-\resizebox{\linewidth}{!}{%
-% Help: \multicolumn2c{\multirow2*{}}, cmidrule(l){3-5}
-\begin{tabular}{@{}lll@{}}
+% Help: \SetCell[r=2,c=2]{c,m} <content>, \cmidrule[l]{3-4}
+% Help: colspec: X[ratio, horizontal alignment] columns grow to fit width=\linewidth
+%                  negative ratios: shrink to fit content and may not grow to full ratio
+% Help: colspec: l/c/r columns do not grow
+\longtabse[0.75]  % scale factor
+{Nouns: physical units.}  % caption
+{tbl:appendix-vocab-nouns-physical-units}  % label
+{
+    colspec={X[-3,l]X[3,l]X[-3,l]},
+    rowhead=1,
+    % width=\linewidth,  % useful only with X columns
+}  % inner specification options
+{
     \toprule
     \textbf{Name} & \textbf{Meaning} & \textbf{Notes} \\
-    \toprule
+    \midrule
     ページ/㌻ & page & \\
     ポイント/㌽ & point & \\
     パーセント/㌫ & percent & \\
@@ -1776,31 +1969,30 @@ Colours are often used as labels, together with the の particle.
     ガンマ/㌏ & gamma & \\
     % & & \\
     \bottomrule
-\end{tabular}%
 }
-\captionof{table}{Nouns: physical units.}
-\label{tbl:appendix-vocab-nouns-physical-units}
-\end{center}
 
 
 \subsubsection{Hygiene}
-\begin{center}
-\resizebox{\linewidth}{!}{%
-% Help: \multicolumn2c{\multirow2*{}}, cmidrule(l){3-5}
-\begin{tabular}{@{}lll@{}}
+% Help: \SetCell[r=2,c=2]{c,m} <content>, \cmidrule[l]{3-4}
+% Help: colspec: X[ratio, horizontal alignment] columns grow to fit width=\linewidth
+%                  negative ratios: shrink to fit content and may not grow to full ratio
+% Help: colspec: l/c/r columns do not grow
+\longtabse[0.75]  % scale factor
+{Nouns: hygiene.}  % caption
+{tbl:appendix-vocab-nouns-hygiene}  % label
+{
+    colspec={X[-3,l]X[3,l]X[-3,l]},
+    rowhead=1,
+    % width=\linewidth,  % useful only with X columns
+}  % inner specification options
+{
     \toprule
     \textbf{Name} & \textbf{Meaning} & \textbf{Notes} \\
-    \toprule
+    \midrule
     うんこ/ウンコ & poop & \\
     ごみ/ゴミ & trash/rubbish/garbage/refuse & (\ruby{塵}{ごみ}) \\
     % & & \\
     \bottomrule
-\end{tabular}%
 }
-\captionof{table}{Nouns: hygiene.}
-\label{tbl:appendix-vocab-nouns-hygiene}
-\end{center}
-
-\end{multicols}
 
 \end{document}
