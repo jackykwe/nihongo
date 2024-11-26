@@ -5,7 +5,6 @@
 \usepackage[colorlinks]{hyperref}
 % \usepackage[allbordercolors={1 0 0}]{hyperref}
 % \usepackage[hidelinks]{hyperref}
-\usepackage{lastpage}  % ``n of m'' page numbering
 % \usepackage{pdflscape}  % to allow some pages to be landscaped, with \begin{landscape}
 \usepackage{parskip}
 \usepackage{caption}  % for manual captions within DEVELOP MODE
@@ -26,7 +25,7 @@
 %%%%%%%%
 % FONT %
 %%%%%%%%
-\usepackage[normalem]{ulem} % strikethrough
+% \usepackage[normalem]{ulem} % strikethrough
 \usepackage[soul]{lua-ul} % for highlighting via \hl and underline via \ul. LuaLaTeX version of soul courtesy of https://tex.stackexchange.com/a/586053
 \usepackage{luacolor}  % LuaLaTeX version of soul courtesy of https://tex.stackexchange.com/a/586053
 
@@ -34,7 +33,7 @@
 %%%%%%%%%%%
 % FIGURES %
 %%%%%%%%%%%
-\usepackage{float}
+% \usepackage{float}
 
 
 %%%%%%%%%%%
@@ -45,11 +44,6 @@
 \NineColors{saturation=high}
 \newcommand{\textorange}[1]{\textcolor{brown7}{#1}}
 \newcommand{\textred}[1]{\textcolor{red5}{#1}}
-% \newcommand{\exception}[1]{\textcolor{red5}{\textbf{\hl{#1}}}}
-% \newcommand{\exceptiong}[1]{\textcolor{red5}{\textbf{\phantom{あ}\hl{#1}\phantom{あ}}}}  % g for guard
-% \newcommand{\exception}[1]{\textcolor{red5}{\textbf{#1}}}
-% \newcommand{\exceptiong}[1]{\textcolor{red5}{\textbf{\phantom{あ}#1\phantom{あ}}}}  % g for guard
-% \usepackage{microtype}  % required for \textls, hacky solution for furigana
 \newcommand{\textwhite}[1]{\textcolor{white}{#1}}
 \newcommand{\textblue}[1]{\textcolor{blue5}{#1}}
 \newcommand{\textgreen}[1]{\textcolor{green5}{#1}}
@@ -315,6 +309,6 @@
     \chead{\textlightgrey{\DTMsetstyle{myformat} [DEVELOP MODE] \DTMnow}}
 \fi
 \setlength{\headheight}{28pt}  % Adjust according to compilation warnings
-\cfoot{Page \thepage\ of \pageref{LastPage}}
+\cfoot{\thepage}
 \renewcommand{\headrulewidth}{0.5pt}
 \renewcommand{\footrulewidth}{0.5pt}

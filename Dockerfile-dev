@@ -10,4 +10,4 @@ RUN lualatex -interaction=nonstopmode --halt-on-error --no-socket --no-shell-esc
 # see https://hub.docker.com/_/scratch
 FROM scratch
 # see https://docs.docker.com/build/building/multi-stage/#use-multi-stage-builds
-COPY --from=0 /workdir/nihongo-gakushuu-kyouzai.pdf /nihongo-gakushuu-kyouzai.pdf
+COPY --from=0 /workdir/nihongo-gakushuu-kyouzai.pdf /nihongo-gakushuu-kyouzai-dev.pdf

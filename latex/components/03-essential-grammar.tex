@@ -234,7 +234,7 @@ E.g.\ こんなのを本当に食べる？ (Something like this, are you really 
 
 E.g.\ そんなのは、ある\textbf{の}？ (Do you have something like that?)
 
-\subsubsection{か in embedded clauses: referring to embedded questions}
+\subsubsection{か in embedded clauses: referring to embedded questions} \label{sec:ka-question-embedded-clauses}
 This functions similar to direct quoting, and marks the questions in an embedded clause. The outer clause can then talk about the embedded question.
 
 E.g.\ \textbf{昨日何を食べたか}忘れた。 (What I ate yesterday, I forgot.)
@@ -270,7 +270,7 @@ E.g.\ 先生が学校に\textbf{行ったか\ul{どうか}}か知らない。(Wh
     \textbf{「」} & \textbf{Meaning} & \textbf{「」か} & \textbf{Meaning} & \textbf{「」も} & \textbf{Meaning} & \textbf{「」でも} & \textbf{Meaning} \\
     \toprule
     誰 & who & 誰か & someone & 誰も & nobody$^\dagger$ & 誰でも & anybody \\
-    \ruby{何}{なに} & what & \ruby{何}{なに}か & nothing & \ruby{何}{なに}も & everything$^\ddagger$ & \ruby{何}{なん}でも & anything \\
+    \ruby{何}{なに} & what & \ruby{何}{なに}か & something & \ruby{何}{なに}も & nothing$^\ddagger$ & \ruby{何}{なん}でも & anything \\
     いつ & when & いつか & sometime & いつも & always/never & いつでも & anytime \\
     どこ & where & どこか & somewhere & どこ[に]も & everywhere/nowhere & どこでも & anywhere \\
     なぜ & why & なぜか & some reason & & & & \\
@@ -322,45 +322,7 @@ Use one of the following (in descending order of politeness):
 
 \subsubsection{て form}
 
-The て-form of nouns, adjectives and verbs are used to form sequences of states (nouns/adjectives) or actions. The conjugation rules are in Table~\ref{tbl:te-form}.
-
-% Help: \SetCell[r=2,c=2]{c,m} <content>, \cmidrule[l]{3-4}
-% Help: colspec: X[ratio, horizontal alignment] columns grow to fit width=\linewidth
-%                  negative ratios: shrink to fit content and may not grow to full ratio
-% Help: colspec: l/c/r columns do not grow
-\longtabse[0.75]  % scale factor
-{て-form conjugation rules, for nouns, adjectives and verbs. [] means optional; 「」 is a dictionary-form placeholer; \textgreen{green means additive} (without modifying the dictionary-form); \textblue{blue means substitutive} (modifies the dictionary-form); \textred{red means exception}.}  % caption
-{tbl:te-form}  % label
-{
-    colspec={X[-1,c]X[-1,r]X[-1,r]X[-1,r]X[-1,l]},
-    rowhead=1,
-    % width=\linewidth,  % useful only with X columns
-}  % inner specification options
-{
-    \toprule
-    \textbf{Category}                 & \textbf{Dictionary form} & \textbf{Positive て-form}            & \textbf{Negative て-form}                & \textbf{Examples}                                                                                         \\ \midrule
-    Noun/な-adjective                 & 「」                     & 「」\textgreen{で}                   & 「」\textgreen{じゃなくて}               & 学生、友達、好き、\textred{嫌い}                                                                          \\ \midrule
-    \SetCell[r=3]{c,m} い-adjective   & 「」い                   & 「」\textblue{くて}                  & 「」\textblue{くなくて}                  & 嬉しい、気持ち悪い、難しい                                                                                \\*
-                                      & いい                     & \textred{よ}\textblue{くて}          & \textred{よ}くなくて                     &                                                                                                           \\*
-                                      & かっこいい               & かっこ\textred{よ}\textblue{くて}    & かっこ\textred{よ}くなくて               &                                                                                                           \\ \midrule
-    \SetCell[r=11]{c,m} う-verb       & 「」　す                 & 「」\textblue{して}                  & 「」\textblue{さなくて}                  & 話す、出す                                                                                                \\*
-                                      & 「」　く                 & 「」\textblue{いて}                  & 「」\textblue{かなくて}                  & 聞く、書く、描く                                                                                          \\*
-                                      & 行　く                   & 行\textblue{って}                    & 行\textblue{かなくて}                    &                                                                                                           \\*
-                                      & 「」　ぐ                 & 「」\textblue{いで}                  & 「」\textblue{がなくて}                  & 泳ぐ                                                                                                      \\*
-                                      & 「」　む                 & 「」\textblue{んで}                  & 「」\textblue{まなくて}                  & 飲む、読む、\ruby{盗}{ぬす}む                                                                             \\*
-                                      & 「」　ね                 & 「」\textblue{んで}                  & 「」\textblue{ななくて}                  & 死ね                                                                                                      \\*
-                                      & 「」　ぶ                 & 「」\textblue{んで}                  & 「」\textblue{ばなくて}                  & 遊ぶ                                                                                                      \\*
-                                      & 「」　る                 & 「」\textblue{って}                  & 「」\textblue{らなくて}                  & \textred{知る}、\textred{切る}、\textred{\ruby{帰}{かえ}る}、\textred{\ruby{走}{はし}る}、\ruby{降}{ふ}る \\*
-                                      & ある                     & あ\textblue{って}                    & \textred{なくて}                         &                                                                                                           \\*
-                                      & 「」　つ                 & 「」\textblue{って}                  & 「」\textblue{たなくて}                  & 待つ                                                                                                      \\*
-                                      & 「」　う                 & 「」\textblue{って}                  & 「」\textblue{わなくて}                  & 買う、\ruby{会}{あ}う                                                                                     \\ \midrule
-    る-verb                           & 「」　る                 &「」　\textblue{て}                   & 「」　\textblue{なくて}                  & いる、食べる、\ruby{出}{で}る、見る*                                                                      \\ \midrule
-    \SetCell[r=3]{c,m} Exception verb & 「」する                 & 「」\textblue{して}                  & 「」\textblue{しなくて}                  & 勉強する、楽しみにする、質問をする                                                                                                  \\*
-                                      & くる                     & \textred{き}\textblue{て}            & \textred{こ}\textblue{なくて}            &                                                                                                           \\*
-                                      & \ruby{来}{く}る          & \textred{\ruby{来}{き}}\textblue{て} & \textred{\ruby{来}{こ}}\textblue{なくて} &                                                                                                           \\
-    \bottomrule
-}
-
+The て-form of nouns, adjectives and verbs are used to form sequences of states (nouns/adjectives) or actions. The conjugation rules are in Appendix~\ref{appendix:conjugation-rules-summary}.
 
 て-form conjugations for です/ます/ません exist but they are part of 尊敬語 and are outside the scope of 丁寧語. In a chain of nouns/adjectives/verbs, only the last one takes the polite form です/ます/ません; everything before takes the plain form. Since て is used when connecting sentences, there is no need for です/ます/ません to have a て-form in 丁寧語.
 
@@ -378,7 +340,7 @@ E.g.\ 時間があって、映画を見ました。 (There was time, and I watch
 \subsubsection{Causation and reasoning particles から、ので} \label{sec:causation-reasoning-particles}
 To express the direct causation (because) and reasoning (therefore) relationships, use から and ので particles:
 \begin{itemize}
-    \item から: cause marker particle (also from-marker: \S\ref{sec:verb-particles}). The possible syntaxes are:
+    \item から: direct cause marker particle (also from-marker: \S\ref{sec:verb-particles}; see also Table~\ref{tbl:appendix-vocab-adverbs-grammatical}). The possible syntaxes are:
     \begin{itemize}
         \item <direct cause>[だ]から<result>
 
@@ -403,7 +365,7 @@ To express the direct causation (because) and reasoning (therefore) relationship
 
         E.g.\ パーチィーに行かなかったの？うん、時間がなかった\textbf{から}。(You didn't go to the party? Yeah, because I didn't have time.; casual)
     \end{itemize}
-    \item ので: explanation/reason marker, carries flavour of explanatory-の. Similar usage patterns as から (almost interchangeable), but less binding than から in that \ul{ので doesn't assert that the marked reason is the \emph{direct cause} of the result}. ので is thus softer and more polite, and preferred when explaining a reason for doing something considered discourteous.
+    \item ので: non-causal explanation/reason marker, carries flavour of explanatory-の. Similar usage patterns as から (almost interchangeable), but less binding than から in that \ul{ので doesn't assert that the marked reason is the \emph{direct cause} of the result}. ので is thus softer and more polite, and preferred when explaining a reason for doing something considered discourteous.
 
     Because で is involved, ので is a connector that must exist between two sentences (if dangling, the sentence is implied to be a dangling sentence).
     \begin{itemize}
@@ -441,7 +403,57 @@ To express the direct causation (because) and reasoning (therefore) relationship
     % E.g.\ 時間がなかった。それはパーチィーに行かなかった\textbf{\{の/ん\}です}か？ (I didn't have time. Is that why you didn't go to the party?; polite)
 \end{itemize}
 
-\subsubsection{Despite particle のに}
+\subsubsection{Despite marker particle のに} \label{sec:despite-marker-particle}
+To express the idea of ``despite'', the のに marker is used. The schema is <despite>のに、<sentence>.
+
+E.g.\ 毎日運動した\textbf{のに}、全然\ruby{痩}{や}せなかった。 (痩せる: to slim)
+
+\textred{Note that non-conjucated state-of-being nouns and na-adjectives must be tagged with the な particle, similar to rules for explanatory の.}
+
+E.g.\ 学生\textbf{\textred{な}のに}、彼女は勉強しない。
+
+\subsubsection{General and contradiction connector particles けど(、けれど、けれども)、が} \label{sec:general-and-contradiction-connector-particles}
+けど and が are used as general connectors of any two sentences, like how we construct running sentences in English using ``and''. Also, they can be used to express the idea of contradiction between the two sentences: in this usage, が is slightly more polite (stronger contradiction) than けど. Politer forms of けど are けれど and けれども (\S\hl{???}). The schema is <sentence 1>が/けど/けれど/けれども、<sentence 2>.
+
+E.g.\ マトリックスを見た\textbf{けど}、面白かった。 (general connector; I watched ``The Matrix'' and it was interesting.)
+
+E.g.\ デパートに行きました\textbf{が}、いい物がたくさんありました。 (general connector; I went to the department store and there was a lot of good stuff.)
+
+E.g.\ デパートに行きました\textbf{が}、何も欲しくなかったです。 (contradictory connector; I went to the department store but there was nothing I wanted.)
+
+\textred{Note that non-conjucated state-of-being nouns and na-adjectives must be tagged with the だ state-of-being assertion.}
+
+E.g.\ 今日は暇\textbf{\textred{だ}けど}、明日は忙しい。
+
+E.g.\ \textbf{\textred{だ}けど}、彼がまだ好き\textred{\textbf{な}}の。 (That may be so, but I still like him.)
+
+\subsection{Reason vague listing connector し} \label{sec:reason-vague-listing-connector}
+し is used to list reasons for a verb or state-of-being. It is vague in the same sense as the や particle (\S\ref{sec:noun-related-particles}): there is a nuance that there may be other reasons not listed. The schema is (<reason>し)*<reason>.
+
+E.g.\ どうして彼が好きなの？優しい\textbf{し}、かっこいい\textbf{し}、面白いから。(から means because here.)
+
+\textred{Note that non-conjucated state-of-being nouns and na-adjectives must be tagged with the だ state-of-being assertion.}
+
+E.g.\ どうして友達じゃないんですか？先生\textbf{\textred{だ}し}、\ruby{年上}{とし|うえ}\textbf{\textred{だ}し}\dots
+
+For a less vague, more closed listing, use the て-form instead.
+
+E.g. どうして彼が好きなの？優しくて、かっこよくて、面白いから。
+
+\subsection{Adjective and verb vague listing construct 〜りです} \label{sec:adj-verb-vague-listing-construct}
+This is the verb/adjective version of the や particle (\S\ref{sec:noun-related-particles}). For each verb/adjective in the sequence, conjugate to past tense and add 「り」. Additionally, for the final one, tag on a 「する」, which will control the tense (\{positive, negative\} \times \{present, past\}) of the entire sentence. The schema is (<past adj/v>り、)*<past adj/v>りする.
+
+E.g.\ 映画を見た\textbf{り}、本を読んだ\textbf{り}、昼寝した\textbf{りする}。(I do things like watch movies, read books, and take naps (among other things).)
+
+E.g.\ この大学の授業は簡単だった\textbf{り}、難しかった\textbf{りです}。(Classes in this university are sometimes easy, sometimes difficult (and sometimes other descriptors).)
+
+The tense of the entire sentence can be changed by conjugating the trailing する.
+
+E.g.\ 映画を見た\textbf{り}、本を読んだ\textbf{り}、昼寝した\textbf{りしない}。(I don't do things like watch movies, read books, and take naps (among other things).)
+
+E.g.\ 映画を見た\textbf{り}、本を読んだ\textbf{り}、昼寝した\textbf{りした}。(I did things like watch movies, read books, and take naps (among other things).)
+
+E.g.\ 映画を見た\textbf{り}、本を読んだ\textbf{り}、昼寝した\textbf{りしなかった}。(I didn't do things like watch movies, read books, and take naps (among other things).)
 
 
 \end{document}

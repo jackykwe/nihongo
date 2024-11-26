@@ -4,7 +4,7 @@
 \setcounter{section}{0}
 \section{Grammar mega summary}
 
-\subsection{Conjugation rules summary}
+\subsection{Conjugation rules summary} \label{appendix:conjugation-rules-summary}
 \subsubsection{Nouns}
 
 % Help: \SetCell[r=2,c=2]{c,m} <content>, \cmidrule[l]{3-4}
@@ -23,11 +23,12 @@
     \toprule
     \textbf{Purpose} & \textbf{Tense} & \textbf{Casual schema} & \textbf{Polite schema} \\
     \midrule
-    \SetCell[r=5]{c,m} State-of-being & Present-positive & <noun>[だ] & <noun>です。 \\*
+    \SetCell[r=6]{c,m} State-of-being & Present-positive & <noun>[だ] & <noun>です。 \\*
     & Present-negative & <noun>じゃない & {<noun>じゃないです。\\<noun>じゃありません。} \\*
     & Past-positive & <noun>だった & <noun>でした。 \\*
     & Past-negative & <noun>じゃなかった & {<noun>じゃなかったです。\\<noun>じゃありませんでした。} \\*
-    & て-form (chain) & <noun>で & - \\
+    & て-positive & <noun>で & - \\*
+    & て-negative & <noun>じゃなくて & - \\
     \bottomrule
 }
 
@@ -57,11 +58,12 @@ As alternative polite forms:
     \toprule
     \textbf{Purpose} & \textbf{Tense} & \textbf{Casual schema} & \textbf{Polite schema} \\
     \midrule
-    \SetCell[r=5]{c,m} {State-of-being\\(same as nouns)} & Present-positive & <na-adj>[だ] & <na-adj>です。 \\*
+    \SetCell[r=6]{c,m} {State-of-being\\(same as nouns)} & Present-positive & <na-adj>[だ] & <na-adj>です。 \\*
     & Present-negative & <na-adj>じゃない & {<na-adj>じゃないです。\\<na-adj>じゃありません。} \\*
     & Past-positive & <na-adj>だった & <na-adj>でした。 \\*
     & Past-negative    & <na-adj>じゃなかった & {<na-adj>じゃなかったです。\\<na-adj>じゃありませんでした。} \\*
-    & て-form (chain)  & <na-adj>で & - \\
+    & て-positive & <noun>で & - \\*
+    & て-negative & <noun>じゃなくて & - \\
     \midrule
     \SetCell[r=4]{c,m} Noun modifier & Present-positive & <na-adj>\textbf{な}<noun> & - \\*
     & Present-negative & <na-adj>じゃない<noun> & - \\*
@@ -92,17 +94,20 @@ All い-adjectives end with 〜い that is \ul{not} part of the 漢字's pronunc
     \toprule
     \textbf{Purpose} & \textbf{Tense} & \textbf{Casual schema} & \textbf{Polite schema} \\
     \midrule
-    \SetCell[r=5]{c,m} State-of-being & Present-positive & <i-adj root>い & <i-adj root>いです。 \\*
+    \SetCell[r=6]{c,m} State-of-being & Present-positive & <i-adj root>い & <i-adj root>いです。 \\*
     & Present-negative & <i-adj root>\textbf{く}ない & {<i-adj root>\textbf{く}ないです。\\<i-adj root>\textbf{く}ありません。} \\*
     & Past-positive & <i-adj root>\textbf{か}った & <i-adj root>\textbf{か}ったです。 \\*
     & Past-negative & <i-adj root>\textbf{く}なかった & {<i-adj root>\textbf{く}なかったです。\\<i-adj root>\textbf{く}ありませんでした。} \\*
-    & て-form (chain) & <i-adj root>\textbf{く}て & - \\
+    & て-positive & <i-adj root>\textbf{く}て & - \\
+    & て-positive & <i-adj root>\textbf{く}なくて & - \\
+    % & & & \\
     \midrule
     \SetCell[r=4]{c,m} Noun modifier & Present-positive & <i-adj root>い<noun> & - \\*
     & Present-negative & <i-adj root>\textbf{く}ない<noun> & - \\*
     & Past-positive & <i-adj root>\textbf{か}った<noun> & - \\*
     & Past-negative & <i-adj root>\textbf{く}なかった<noun> & - \\ \midrule
     Adverb & - & <i-adj root>\textbf{く} & - \\
+    % & & & \\
     \bottomrule
 }
 
@@ -134,34 +139,46 @@ See Table~\ref{tbl:verb-classification} for a summary of the three categories. I
     \toprule
     \textbf{Class} & \textbf{Tense} & \SetCell[c=2]{c,m} \textbf{Casual schema} & & \SetCell[c=2]{c,m} \textbf{Polite schema} & \\
     \midrule
-    \SetCell[r=13]{c,m} う verb & Present-positive & \SetCell[c=2]{l,m} <$*$-end root>○ & & \SetCell[c=2]{l,m} <$*$-end root>\ruby{○}{〜い}ます。 & \\* \cmidrule[l]{2-6}
-    & \SetCell[r=3]{c,m} Present-negative & \SetCell[c=2]{l,m} <$*$\setminus\{う\}-end root>\ruby{○}{〜あ}\textbf{な}い & & \SetCell[r=3,c=2]{l,m} <$*$-end root>\ruby{○}{〜い}ません。 & \\*
+    \SetCell[r=21]{c,m} う verb & Present-positive & \SetCell[c=2]{l,m} <$*$-end root>○ & & \SetCell[c=2]{l,m} <$*$-end root>\ruby{○}{〜い}ます。 & \\* \cmidrule[l]{2-6}
+    & \SetCell[r=3]{c,m} Present-negative & \SetCell[c=2]{l,m} <$*\setminus$\{う\}-end root>\ruby{○}{〜あ}\textbf{な}い & & \SetCell[r=3,c=2]{l,m} <$*$-end root>\ruby{○}{〜い}ません。 & \\*
     & & \SetCell[c=2]{l,m} <う-end root>わ\textbf{な}い & & & \\*
     & & \SetCell[c=2]{l,m} \ruby[<g>]{\textbf{な}い}{ある\to} & & & \\* \cmidrule[l]{2-6}
-    & \SetCell[r=4]{c,m} Past-positive & \SetCell[c=2]{l,m} <す-end root>した & & \SetCell[r=4,c=2]{l,m} <$*$-end root>\ruby{○}{〜い}ました。 & \\*
-    & & \SetCell[c=2]{l,m} <\{く,ぐ\}-end root>いた & & \SetCell[c=2]{l,m} & \\*
+    & \SetCell[r=5]{c,m} Past-positive & \SetCell[c=2]{l,m} <す-end root>した & & \SetCell[r=5,c=2]{l,m} <$*$-end root>\ruby{○}{〜い}ました。 & \\*
+    & & \SetCell[c=2]{l,m} <く-end root>いた & & \SetCell[c=2]{l,m} & \\*
+    & & \SetCell[c=2]{l,m} <ぐ-end root>いだ & & \SetCell[c=2]{l,m} & \\*
     & & \SetCell[c=2]{l,m} <\{む,ぬ,ぶ\}-end root>んだ & & \SetCell[c=2]{l,m} & \\*
     & & \SetCell[c=2]{l,m} <\{る,つ,う\}-end root>った & & \SetCell[c=2]{l,m} & \\* \cmidrule[l]{2-6}
-    & \SetCell[r=3]{c,m} Past-negative & \SetCell[c=2]{l,m} {<$*$\setminus\{う\}-end root>\ruby{○}{〜あ}\textbf{な}かった} & & \SetCell[r=3,c=2]{l,m} {\multirow3*{<$*$-end root>\ruby{○}{〜い}ませんでした。}} & \\*
+    & \SetCell[r=3]{c,m} Past-negative & \SetCell[c=2]{l,m} {<$*\setminus$\{う\}-end root>\ruby{○}{〜あ}\textbf{な}かった} & & \SetCell[r=3,c=2]{l,m} {\multirow3*{<$*$-end root>\ruby{○}{〜い}ませんでした。}} & \\*
     & & \SetCell[c=2]{l,m} <う-end root>わ\textbf{な}かった & & \SetCell[c=2]{l,m} & \\*
     & & \SetCell[c=2]{l,m} \ruby[<g>]{\textbf{な}かった}{ある\to} & & \SetCell[c=2]{l,m} & \\* \cmidrule[l]{2-6}
-    & (Stem) & \SetCell[c=2]{l,m} & & \SetCell[c=2]{l,m} <$*$-end root>\ruby{○}{〜い} & \\* \cmidrule[l]{2-6}
-    & て-form (chain) & \SetCell[c=2]{l,m} & & \SetCell[c=2]{l,m} {<$*$-end root>\ruby{○}{〜い}} \\
+    & (Stem) & \SetCell[c=2]{l,m} - & & \SetCell[c=2]{l,m} <$*$-end root>\ruby{○}{〜い} & \\* \cmidrule[l]{2-6}
+    & \SetCell[r=5]{c,m} て-positive & \SetCell[c=2]{l,m} <す-end root>して & & \SetCell[r=5,c=2]{l,m} - \\*
+    & & \SetCell[c=2]{l,m} <く-end root>いて & & \SetCell[c=2]{l,m} \\*
+    & & \SetCell[c=2]{l,m} <ぐ-end root>いで & & \SetCell[c=2]{l,m} \\*
+    & & \SetCell[c=2]{l,m} <\{む,ぬ,ぶ\}-end root>んで & & \SetCell[c=2]{l,m} \\*
+    & & \SetCell[c=2]{l,m} <\{る,つ,う\}-end root>って & & \SetCell[c=2]{l,m} \\* \cmidrule[l]{2-6}
+    & \SetCell[r=3]{c,m} て-negative & \SetCell[c=2]{l,m} <$*\setminus$\{う\}-end root>\ruby{○}{〜あ}\textbf{な}くて & & \SetCell[r=3,c=2]{l,m} - \\*
+    & & \SetCell[c=2]{l,m} <う-end root>わ\textbf{な}くて & & \SetCell[c=2]{l,m} \\*
+    & & \SetCell[c=2]{l,m} \ruby[<g>]{\textbf{な}くて}{ある\to} & & \SetCell[c=2]{l,m} \\
+    % & & & & & \\
     \midrule
-    \SetCell[r=6]{c,m} る verb & Present-positive & \SetCell[c=2]{l,m} {<る-end root>る} & & \SetCell[c=2]{l,m} {<る-end root>ます。} \\*
+    \SetCell[r=7]{c,m} る verb & Present-positive & \SetCell[c=2]{l,m} {<る-end root>る} & & \SetCell[c=2]{l,m} {<る-end root>ます。} \\*
     & Present-negative & \SetCell[c=2]{l,m} <る-end root>ない & & \SetCell[c=2]{l,m} <る-end root>ません。 \\*
     & Past-positive & \SetCell[c=2]{l,m} <る-end root>た & & \SetCell[c=2]{l,m} <る-end root>ました。 \\*
     & Past-negative & \SetCell[c=2]{l,m} <る-end root>なかった & & \SetCell[c=2]{l,m} <る-end root>ませんでした。 \\*
-    & (Stem) & \SetCell[c=2]{l,m} {} & & \SetCell[c=2]{l,m} <る-end root> & \\* \cmidrule[l]{2-6}
-    & て-form (chain) & \SetCell[c=2]{l,m} & & \SetCell[c=2]{l,m} <$*$-end root>\ruby{○}{〜い} & \\
+    & (Stem) & \SetCell[c=2]{l,m} - & & \SetCell[c=2]{l,m} <る-end root> & \\*
+    & て-positive & \SetCell[c=2]{l,m} <る-end root>て & & \SetCell[c=2]{l,m} - & \\*
+    & て-negative & \SetCell[c=2]{l,m} <る-end root>なくて & & \SetCell[c=2]{l,m} - & \\
+    % & & & & & \\
     \midrule
-    \SetCell[r=6]{c,m} exception verb & Present-positive & 〜する & 〜くる & 〜します。 & 〜きます。 \\*
+    \SetCell[r=7]{c,m} exception verb & Present-positive & 〜する & 〜くる & 〜します。 & 〜きます。 \\*
     & Present-negative & 〜しない & 〜こない & 〜しません。 & 〜きません。 \\*
     & Past-positive & 〜した & 〜きた & 〜しました。 & 〜きました。 \\*
     & Past-negative & 〜しなかった & 〜こなかった & 〜しませんでした。 & 〜きませんでした。 \\*
-    & (Stem) & \SetCell[c=2]{l,m} & & 〜し & 〜き \\*
-    & て-form (chain) & \SetCell[c=2]{l,m} & & \SetCell[c=2]{l,m} {<$*$-end root>\ruby{○}{〜い}} & \\
-    % \midrule
+    & (Stem) & \SetCell[c=2]{l,m} & - & 〜し & 〜き \\*
+    & て-positive & 〜して & 〜きて & \SetCell[c=2]{l,m} - & \\*
+    & て-negative & 〜しなくて & 〜こなくて & \SetCell[c=2]{l,m} - & \\
+    % & & & & & \\
     \bottomrule
 }
 
@@ -170,13 +187,16 @@ Basic rules better expressed via prose:
 \begin{itemize}
     \item All present-negative forms end with 「〜ない」.
     \item The past-negative is simply the present-negative but replacing 「〜ない」 for 「〜なかった」.
+
+    The て-negative is simply the present-negative but replacing 「〜ない」 for 「〜なくて」.
+    \item The て-positive is simply the past-positive but replacing 「〜た/だ」 for 「〜て/で」.
     \item The polite schema's \{present, past\} \times \{positive, negative\} forms use the stem.
 \end{itemize}
 
 \color{red}
 Exceptions:
 \begin{itemize}
-    \item \ruby{行}{い}く's past-positive form is 行った, not 行いた.
+    \item \ruby{行}{い}く's past-positive form is 行った, not 行いた. Only 行く uses 〜った; all other 〜く verbs still use 〜いた.
 \end{itemize}
 
 \color{black}
@@ -188,7 +208,7 @@ Exceptions:
 % Help: colspec: X[ratio, horizontal alignment] columns grow to fit width=\linewidth
 %                  negative ratios: shrink to fit content and may not grow to full ratio
 % Help: colspec: l/c/r columns do not grow
-\longtabse[0.75]  % scale factor
+\longtabsea[0.75]  % scale factor
 {All particles seen so far.}  % caption
 {tbl:particle-summary}  % label
 {
@@ -198,62 +218,84 @@ Exceptions:
 }  % inner specification options
 {
     \toprule
-    \textbf{Particle} & \textbf{Particle name/purpose} & \textbf{Schemae} & \textbf{First seen} \\
+    \textbf{Particle} & \textbf{Particle name/purpose} & \textbf{Schemae} & \textbf{Sections} \\
     \midrule
-    は & Introductory topic marker & <main/new topic>は & \S\ref{sec:topic-marker}, \S\ref{sec:particles} \\
-    も & Inclusive topic marker & <inclusive topic>も & \S\ref{sec:particles} \\
-    が & Subject marker & <subj>が & \S\ref{sec:particles} \\
-    を & Direct object marker & <obj>を<v transitive> & \S\ref{sec:verb-particles} \\
+    は & introductory topic marker & <main/new topic>は & \S\ref{sec:topic-marker}, \S\ref{sec:particles} \\
+    も & inclusive topic marker & <inclusive topic>も & \S\ref{sec:particles} \\
+    が & subject marker & <subj>が & \S\ref{sec:particles} \\
+    を & direct object marker & <obj>を<v transitive> & \S\ref{sec:verb-particles} \\
     & & <location>を<motion v (intransitive OK)> & \S\ref{sec:verb-particles} \\
-    に & Target marker & <target/location>に\textlightgrey{[は/も]}<v> & \S\ref{sec:verb-particles} \\
+    に & target marker & <target/location>に\textlightgrey{[は/も]}<v> & \S\ref{sec:verb-particles} \\
     & & <time>[に\textlightgrey{[は/も]}]<v> & \S\ref{sec:verb-particles} \\
     & & <v stem>にいく/にくる & \S\ref{sec:verb-stems} \\
-    から & From-marker & <from>から & \S\ref{sec:verb-particles} \\
-    まで & To-marker & <to>まで & \S\ref{sec:verb-particles} \\
-    へ & Direction marker & <direction>へ\textlightgrey{[は/も]}<v> & \S\ref{sec:verb-particles} \\
-    で & Context marker & <by-way-of (where/what/how) context>で\textlightgrey{[は/も]} & \S\ref{sec:verb-particles} \\
-    と & Exclusive listing connector & <nn>(と<nn>)* & \S\ref{sec:noun-related-particles} \\
-    & Together-with marker & <nn>と<v> & \S\ref{sec:noun-related-particles} \\
-    & Quote marker & <quote>と\{思う,言う\} & \S\ref{sec:building-clauses-and-sentences} \\
-    や & Vague listing connector & <nn>(や<nn>)* & \S\ref{sec:noun-related-particles} \\
-    どか & Vague listing connector (colloquial) & <nn>(とか<nn>)* & \S\ref{sec:noun-related-particles} \\
-    の & Label marker & <label nn>の[<labelled nn>] & \S\ref{sec:noun-related-particles} \\
+    から & from-marker & <from>から & \S\ref{sec:verb-particles} \\*
+    & direct cause marker & \textred{($*$)} <direct cause>から<result> & \S\ref{sec:causation-reasoning-particles} \\
+    & & だから<result> & \S\ref{sec:causation-reasoning-particles} \\
+    & & \textred{($*$)} <direct cause>から [です] & \S\ref{sec:causation-reasoning-particles} \\
+    まで & to-marker & <to>まで & \S\ref{sec:verb-particles} \\
+    へ & direction marker & <direction>へ\textlightgrey{[は/も]}<v> & \S\ref{sec:verb-particles} \\
+    で & context marker & <by-way-of (where/what/how) context>で\textlightgrey{[は/も]} & \S\ref{sec:verb-particles} \\
+    と & exclusive listing connector & (<nn>と)*<nn> & \S\ref{sec:noun-related-particles} \\
+    & together-with marker & <nn>と<v> & \S\ref{sec:noun-related-particles} \\
+    & quote marker & <quote>と\{思う,言う\} & \S\ref{sec:building-clauses-and-sentences} \\
+    どか/や & noun vague listing connector & (<nn>\{とか/や\})*<nn> & \S\ref{sec:noun-related-particles} \\
+    の & label marker & <label nn>の[<labelled nn>] & \S\ref{sec:noun-related-particles} \\
     & & <direction>への[<labelled nn>] & \S\ref{sec:no-the-label-marker} \\
     & & <from>からの[<labelled nn>] & \S\ref{sec:no-the-label-marker} \\
     & & <only>だけの[<labelled nn>] & \S\ref{sec:no-the-label-marker} \\
     & & <quote>との[<labelled nn>] & \S\ref{sec:no-the-label-marker} \\
     & & <regarding>についての[<labelled nn>] & \S\ref{sec:no-the-label-marker} \\
-    & Subjective label marker & <na-adj label>の[<labelled nn>] & \S\ref{sec:no-adjectives} \\
-    & Nominaliser/generic noun & <adj-phrase/v-phrase>\textlightgrey{\{}の\textlightgrey{,物,こと\}} & \S\ref{sec:noun-related-particles} \\
-    & Complaining listing marker & \{<nn/na-adj>だの, <v>の\}* & \S\ref{sec:no-the-nominaliser} \\
-    & Enthusiastic extraordinary & <positive adj>の、<negative adj>の & \S\ref{sec:no-the-nominaliser} \\
+    & subjective label marker & <na-adj label>の[<labelled nn>] & \S\ref{sec:no-adjectives} \\
+    & nominaliser/generic noun & \textred{($*$)} <adj-phrase/v-phrase>\textlightgrey{\{}の\textlightgrey{,物,こと\}} & \S\ref{sec:noun-related-particles} \\
+    & complaining listing marker & \{<nn/na-adj>だの, <v>の\}* & \S\ref{sec:no-the-nominaliser} \\
+    & enthusiastic extraordinary & <positive adj>の、<negative adj>の & \S\ref{sec:no-the-nominaliser} \\
     & & <adj>のなんのって & \S\ref{sec:no-the-nominaliser} \\
-    & Casual question ender & <sentence>の & \S\ref{sec:noun-related-particles} \\
-    の/ん & Explanatory ender & <sentence>\{の[だ/です],んだ,んです\} & \S\ref{sec:noun-related-particles} \\
-    ん & Just-remembered marker & <v dict>んだった & \S\ref{sec:noun-related-particles} \\
-    & Prohibition marker (slang) & <v dict>ん\{じゃない/じゃありません\} & \S\ref{sec:noun-related-particles} \\
-    & Feeling regret marker (slang) & <v dict>んじゃなかった & \S\ref{sec:noun-related-particles} \\
-    (な) & Objective label marker & <na-adj label>な<labelled> & \S\ref{sec:no-adjectives} \\
-    & Mood marker & <nn>な気分 & \S\ref{sec:no-adjectives} \\
-    ね & Seeking agreement ender & <sentence>ね & \S\ref{sec:sentence-ending-particles} \\
-    よ & Presenting new information ender & <sentence>よ & \S\ref{sec:sentence-ending-particles} \\
-    か & Polite question ender & <sentence>か & \S\ref{sec:ka-in-polite-questions} \\
-    & Casual binary/sarcastic question ender & <sentence>か & \S\ref{sec:ka-in-polite-questions} \\
-    & Whether-or-not question marker & {<positive v>か<negative v>か\\<positive v>かどうか} &  \\
+    & casual question ender & <sentence>の & \S\ref{sec:noun-related-particles} \\
+    の/ん & explanatory ender & \textred{($*$)} <sentence>\{の[だ/です],んだ,んです\} & \S\ref{sec:noun-related-particles} \\
+    ので/んで & non-causal explanation/reason marker &  \textred{($*$)} <reason>\{ので/んで\}<result> & \S\ref{sec:causation-reasoning-particles} \\
+    & & な\{ので/んで\}<result> & \S\ref{sec:causation-reasoning-particles} \\
+    & &  \textred{($*$)} <reason>\{の[だ/です],んだ,んです\} & \S\ref{sec:causation-reasoning-particles} \\
+    ん & just-remembered marker & <v dict>んだった & \S\ref{sec:noun-related-particles} \\
+    & prohibition marker (slang) & <v dict>ん\{じゃない/じゃありません\} & \S\ref{sec:noun-related-particles} \\
+    & feeling regret marker (slang) & <v dict>んじゃなかった & \S\ref{sec:noun-related-particles} \\
+    (な) & objective label marker & <na-adj label>な<labelled> & \S\ref{sec:no-adjectives} \\
+    & mood marker & <nn>な気分 & \S\ref{sec:no-adjectives} \\
+    ね & seeking agreement ender & <sentence>ね & \S\ref{sec:sentence-ending-particles} \\
+    よ & presenting new information ender & <sentence>よ & \S\ref{sec:sentence-ending-particles} \\
+    か & polite question ender & <sentence>か & \S\ref{sec:ka-in-polite-questions} \\
+    & casual binary/sarcastic question ender & <sentence>か & \S\ref{sec:ka-in-polite-questions} \\
+    & whether-or-not question marker & {<positive v>か<negative v>か\\<positive v>かどうか} & \S\ref{sec:ka-question-embedded-clauses} \\
+    のに & despite marker & \textred{($*$)} <despite>のに、<sentence> & \S\ref{sec:despite-marker-particle} \\
+    けど/が & general connector & \textred{($*$)} <s1>\{けど\textlightgrey{/けれど/けれども}/が\}<s2> & \S\ref{sec:general-and-contradiction-connector-particles} \\
+    & contradiction connector & \textred{($*$)} <s1>\{けど\textlightgrey{/けれど/けれども}/が\}<contradicting s2> & \S\ref{sec:general-and-contradiction-connector-particles} \\
+    し & reason vague listing connector & \textred{($*$)} (<reason>し)*<reason> & \S\ref{sec:reason-vague-listing-connector} \\
+    り[する] & adj/verb vague listing construct & (<past adj/v>り、)*<past adj/v>りする & \S\ref{sec:verb-vague-listing-construct} \\
+    % & & & \\
+    % & & & \\
     でも &  But &  &  \\
-    % &  &  &  \\
+    % & & & \\
     \bottomrule
 }
 
 \color{red}
-Important notes:
+($*$) Important notes:
 \begin{itemize}
-    \item For の::Generic noun (nominaliser), if a present-positive な-adjective is used as the <adj-phrase>, the な particle following the な-adjective must be used (e.g.\ 静か\textbf{な}の\dots).
-    \item For の::Abstract noun/explanatory:
+    \item For から::direct cause marker, if a non-conjugated na-adj/noun is used at the end of <direct cause>, だから must be used instead of から for disambiguating with the from-marker (e.g.\ 友達\textbf{だ}から).
+
+    For けど/が::general connector and けど/が::contradiction connector, if a non-conjugated na-adj/noun is used at the end of <s1>, だけど/だが must be used instead (e.g.\ 友達\textbf{だ}\{けど/が\}).
+
+    For し::reason vague listing connector, if a non-conjugated na-adj/noun is used at the end of <reason>, だし must be used instead (e.g.\ 友達\textbf{だ}し).
+    \item For の::nominaliser/generic noun, if a non-conjugated na-adj is used as the <adj-phrase>, the following な particle must be used for disambiguating with the label marker (e.g.\ 静か\textbf{な}の\dots).
+
+    For の::explanatory ender:
     \begin{itemize}
-        \item if a present-positive な-adjective/noun is used as the <adj-phrase>, the な particle following the な-adjective/noun must be used (e.g.\ 緊張\textbf{な}のです。).
+        \item if a non-conjugated na-adj/noun is used at the end of <sentence>, the following な particle must be used for disambiguating with the label marker (e.g.\ 緊張\textbf{な}のです。).
         \item polite form (〜ますの for verbs and 〜ですの for い-adjectives) cannot be used; used 〜のです/〜んです instead.
     \end{itemize}
+
+    For ので::non-causal explanation/reason marker, if a non-conjugated na-adj/noun is used at the end of <reason>, なので is used instead for disambiguating with the label marker (e.g.\ 静か\textbf{な}ので).
+
+    For のに::despite marker, if a non-conjugated na-adj/noun is used as the end of <despite>, the following な particle must be used (e.g.\ 静か\textbf{な}のに).
 \end{itemize}
 \color{black}
 
