@@ -39,7 +39,7 @@ The Japanese covered thus far in Section~\ref{sec:basic-grammar} is fine for fiv
 
 The only indicator of which language style is in use is sentence endings. It's not possible to tell whether someone is speaking in casual or polite speech until the sentence is finished.
 
-In 丁寧語, use \textbf{「〜ます」} and its conjugations to make verbs polite, and use \textbf{「〜です」} for nouns and adjectives (note that the polite です is incompatible with the assertive だ). Detailed rules are in Table~\ref{tbl:teineigo-forms}. Note that ます and です must come at the end of a complete sentence, and never inside any embedded/relative clauses.
+In 丁寧語, use \textbf{「〜ます」} and its conjugations to make verbs polite, and use \textbf{「〜です」} for nouns and adjectives (note that the polite です is incompatible with the assertive だ). Detailed rules are in Table~\ref{tbl:teineigo-forms}. Note that ます and です must come at the end of a complete sentence, and never inside any embedded/relative clauses. Refer to Appendix~\ref{appendix:conjugation-rules-summary} for a full table of 丁寧語 conjugations.
 
 Polite verb examples:
 \begin{itemize}
@@ -56,43 +56,6 @@ Polite adjective examples:
     \item (past-positive) 先週に見た映画は、とても\textbf{面白かったです}。(The movie I saw last week was very interesting.)
     \item (past-negative) 昨日、時間が\textbf{なかったんです}。 (Yesterday, there was no time.; ある $\to$ \ul{なかった} (past negative) $\to$ なかった\ul{んだ} (explanatory) $\to$ なかったん\ul{です} (polite))
 \end{itemize}
-
-% Help: \SetCell[r=2,c=2]{c,m} <content>, \cmidrule[l]{3-4}
-% Help: colspec: X[ratio, horizontal alignment] columns grow to fit width=\linewidth
-%                  negative ratios: shrink to fit content and may not grow to full ratio
-% Help: colspec: l/c/r columns do not grow
-\longtabse[0.6]  % scale factor
-{丁寧語 forms and their conjugations. \textgreen{green means additive} (without modifying the dictionary-form); \textblue{blue means substitutive} (modifies the dictionary-form); \textred{red means exception}. $^\dagger$: Past-positive nouns and な-adjectives do not use ``だったでした'' as that contains the assertive だ, which is incompatible with polite speech. Note however that this does not apply to い-adjectives ($^\ddagger$)! \textorange{Mnemonic: でした is a ``past tense'' marker, and appears in both past-positive nouns and adjectives, and past-negative verbs.}}  % caption
-{tbl:teineigo-forms}  % label
-{
-    colspec={X[-1,c]X[-1,r]X[-1,r]X[-1,r]X[-1,r]X[-1,r]X[-1,r]},
-    rowhead=2,
-    % width=\linewidth,  % useful only with X columns
-}  % inner specification options
-{
-    \toprule
-    \SetCell[r=2]{c,m} \textbf{Category} & \SetCell[r=2]{c,m} \textbf{Dictionary form}  & \SetCell[r=2]{c,m} \textbf{Verb stem} & \SetCell[c=2]{c,m} \textbf{Positive} &                                             & \SetCell[c=2]{c,m} \textbf{Negative} &                                        \\* \cmidrule[lr]{4-5} \cmidrule[l]{6-7}
-                                         &                                              &                                       & \textbf{Present}                     & \textbf{Past}                               & \textbf{Present}                     & \textbf{Past}                          \\ \midrule
-    Noun/な-adjective                    & 「」                                         &                                       & 「」\textgreen{です。}               & 「」\textgreen{でした$\!\!^\dagger$。}      & 「」じゃない\textgreen{です。}       & 「」じゃなかった\textgreen{です。}     \\*
-    (formal)                             &                                              &                                       &                                      &                                             & 「」じゃ\textblue{ありません。}      & 「」じゃ\textblue{ありませんでした。}  \\ \midrule
-    い-adjective                         & 「」い                                       &                                       & 「」い\textgreen{です。}             & 「」かった\textgreen{です$\!\!^\ddagger$。} & 「」くない\textgreen{です。}         & 「」くなかった\textgreen{です。}       \\*
-    (formal)                             &                                              &                                       &                                      &                                             & 「」く\textblue{ありません。}        & 「」く\textblue{ありませんでした。}    \\ \midrule
-    \SetCell[r=9]{c,m} う-verb           & 「」す                                       & 「」\textblue{し}                     & 「」\textblue{します。}              & 「」\textblue{しました。}                   & 「」\textblue{しません。}            & 「」\textblue{しませんでした。}        \\*
-                                         & 「」く                                       & 「」\textblue{き}                     & 「」\textblue{きます。}              & 「」\textblue{きました。}                   & 「」\textblue{きません。}            & 「」\textblue{きませんでした。}        \\*
-                                         & 「」ぐ                                       & 「」\textblue{ぎ}                     & 「」\textblue{ぎます。}              & 「」\textblue{ぎました。}                   & 「」\textblue{ぎません。}            & 「」\textblue{ぎませんでした。}        \\*
-                                         & 「」む                                       & 「」\textblue{み}                     & 「」\textblue{みます。}              & 「」\textblue{みました。}                   & 「」\textblue{みません。}            & 「」\textblue{みませんでした。}        \\*
-                                         & 「」ね                                       & 「」\textblue{に}                     & 「」\textblue{にます。}              & 「」\textblue{にました。}                   & 「」\textblue{にません。}            & 「」\textblue{にませんでした。}        \\*
-                                         & 「」ぶ                                       & 「」\textblue{び}                     & 「」\textblue{びます。}              & 「」\textblue{びました。}                   & 「」\textblue{びません。}            & 「」\textblue{びませんでした。}        \\*
-                                         & 「」る                                       & 「」\textblue{り}                     & 「」\textblue{ります。}              & 「」\textblue{りました。}                   & 「」\textblue{りません。}            & 「」\textblue{りませんでした。}        \\*
-                                         & 「」つ                                       & 「」\textblue{ち}                     & 「」\textblue{ちます。}              & 「」\textblue{ちました。}                   & 「」\textblue{ちません。}            & 「」\textblue{ちませんでした。}        \\*
-                                         & 「」う                                       & 「」\textblue{い}                     & 「」\textblue{います。}              & 「」\textblue{いました。}                   & 「」\textblue{いません。}            & 「」\textblue{いませんでした。}        \\ \midrule
-    る-verb                              & 「」る                                       & 「」　                                & 「」　\textblue{ます。}              & 「」　\textblue{ました。}                   & 「」　\textblue{ません。}            & 「」　\textblue{ませんでした}          \\ \midrule
-    \SetCell[r=3]{c,m} Exception verb    & 「」する                                     & 「」\textblue{し}                     & 「」\textblue{します。}              & 「」\textblue{しました。}                   & 「」\textblue{しません。}            & 「」\textblue{しませんでした}          \\*
-                                         & くる                                         & \textblue{き}                         & \textblue{きます。}                  & \textblue{きました。}                       & \textblue{きません。}                & \textblue{きませんでした。}            \\*
-                                         & \ruby{来}{く}る                              & \textblue{\ruby{来}{き}}              & \textblue{\ruby{来}{き}ます。}       & \textblue{\ruby{来}{き}ました。}            & \textblue{\ruby{来}{き}ません。}     & \textblue{\ruby{来}{き}ませんでした。} \\ \bottomrule
-
-}
-
 
 \subsubsection{です is NOT the polite form of だ, they are completely separate constructs}
 This is a common misconception! です and だ are two fundamentally different concepts:
@@ -320,7 +283,7 @@ Use one of the following (in descending order of politeness):
 
 \subsection{Compound sentences}
 
-\subsubsection{て form}
+\subsubsection{て form} \label{sec:te-form}
 
 The て-form of nouns, adjectives and verbs are used to form sequences of states (nouns/adjectives) or actions. The conjugation rules are in Appendix~\ref{appendix:conjugation-rules-summary}.
 
@@ -440,7 +403,7 @@ For a less vague, more closed listing, use the て-form instead.
 
 E.g. どうして彼が好きなの？優しくて、かっこよくて、面白いから。
 
-\subsection{Adjective and verb vague listing construct 〜りです} \label{sec:adj-verb-vague-listing-construct}
+\subsection{Adjective and verb vague listing construct 〜たり[です]} \label{sec:adj-verb-vague-listing-construct}
 This is the verb/adjective version of the や particle (\S\ref{sec:noun-related-particles}). For each verb/adjective in the sequence, conjugate to past tense and add 「り」. Additionally, for the final one, tag on a 「する」, which will control the tense (\{positive, negative\} \times \{present, past\}) of the entire sentence. The schema is (<past adj/v>り、)*<past adj/v>りする.
 
 E.g.\ 映画を見た\textbf{り}、本を読んだ\textbf{り}、昼寝した\textbf{りする}。(I do things like watch movies, read books, and take naps (among other things).)
@@ -455,5 +418,91 @@ E.g.\ 映画を見た\textbf{り}、本を読んだ\textbf{り}、昼寝した\t
 
 E.g.\ 映画を見た\textbf{り}、本を読んだ\textbf{り}、昼寝した\textbf{りしなかった}。(I didn't do things like watch movies, read books, and take naps (among other things).)
 
+
+\subsection{Progressive form 〜ている (enduring state of action, enduring state-of-being)} \label{sec:progressive-form}
+
+To express an enduring state of action (-ing in English), conjugate the verb to the て-form (\S\ref{sec:te-form}, then append 〜ている. This form can be used regardless of whether the verb subject is animate or inanimate. Further conjugations of the progressive form follow rules of the いる verb.
+
+E.g.\ 友達は何を\textbf{している}の？昼ご飯を\textbf{食べている}。 (What is friend doing? Eat\ul{ing} lunch.; している is the progressive form of する.)
+
+E.g.\ 何を\textbf{読んでいます}か。教科書を\textbf{読んでいます}。 (います is the polite form of いる.)
+
+E.g.\ 話を\textbf{聞いています}か。ううん、\textbf{聞いていません}。 (いません is the polite form of いない.)
+
+In casual speech (not applicable in writing!), 〜ている can be shortened to 〜てる. However, the い is not dropped in the polite progressive form 〜ています. \textred{Try not to let this casual speak become a habit too early on! Learn the correct form first.}
+
+E.g.\ 友達は何を\textbf{してる}の？昼ご飯を\textbf{食べてる}の。 (食べてる = eating (casual); 食べる = eat (dict))
+
+In fact, laziness can go further: 何をしているの can be shortened by dropping particles and unnecessary vowels to become 何してんの? A related lazy casual expression is 「何やってんの」, which is a contraction of 「何をやっているの」.
+
+The same form can also be used to convey \textbf{enduring state-of-being}, after a verb is performed. This is decided by context. E.g.\ 結婚している can either mean someone is currently getting married, or that someone is married and is currently in the married state. \textbf{This becomes less context-based and more of a rule for the verbs 知る、分かる, and motion verbs.}
+
+\begin{itemize}
+    \item \textbf{知っている} means to be/have been in the enduring \emph{state} of knowing. \textred{知る refers to the \emph{change} of state from not knowing to knowing, it's different and \ul{rarely used in its unconjugated form}!} (\href{https://ja.hinative.com/questions/258648}{[HN1]}, \href{https://ja.hinative.com/questions/10745394}{[HN2]})
+
+    E.g.\ \ruby{道}{みち}は\textbf{知っています}か？ はい、今日に知りました。 (Do you know the way? Yes, I found out about it today.)
+
+    E.g.\ この歌を\textbf{知っています}か。はい、１年前から\textbf{知っています}よ。 (Do you know this song? Yes, I've known it for a year now.)
+
+    \item \textbf{わかっている} means to be/have been in the enduring \emph{state} of understanding. わかる refers to the \emph{change} from not understanding to understanding, it's different! (\href{https://ja.hinative.com/questions/355185}{[HN]})
+
+    E.g.\ \ruby{前方}{ぜん|ぽう}は危ない、わかりますか。はい、はい、\textbf{わかりました}。 (The area in front is dangerous, do you understand? Yes, yes, I am aware of that.)
+
+    E.g.\ \ruby{前方}{ぜん|ぽう}は危ない、わかりますか。はい、はい、\textbf{わかっています}。 (The area in front is dangerous, do you understand? Yes, yes, I am already aware of that, you don't have to tell me.)
+
+    \textred{わかっている, in certain contexts, can make you sound proud or dismissive. Be careful!}
+    \item \textbf{<motion verb て-form>ている} means to <motion verb> and exist (<v> + いる), and refers to the state-of-being after performing the verb.
+
+    E.g.\ \ruby[g]{鈴木}{すずき}さんはどこですか。もう、\ruby{家}{いえ}に\textbf{帰っている}。 (Suzuki-san is already at home.)
+
+    E.g.\ \ruby[g]{美恵}{みえ}ちゃんはどこですか。もう\textbf{来ている}よ。(行って is the て-form of 行く; きて is the て-form of くる, not きって!)
+\end{itemize}
+
+
+\subsection{Resultant state 〜てある} \label{sec:resultant-state-tearu}
+To express that an action is completed, with the implicit nuance that the action was completed in preparation for something else, we use 〜てある.
+
+E.g.\ \ruby{準備}{じゅん|び}どうですか？準備は、もう\textbf{してある}よ。
+
+E.g.\ \ruby{旅行}{りょ|こう}の\ruby{計画}{けい|かく}は終わった？うん、切符を買ったし、ホテルの\ruby{予約}{よ|やく}も\textbf{してある}。
+
+\subsection{The auxiliary verb \ruby{置}{お}く in 〜ておく、〜とく} \label{sec:auxiliary-verb-teoku}
+To express that an action is completed (or will be completed), with the explicit nuance that the action was completed in preparation for something else, we use the auxiliary verb 〜ておく. \ruby{置}{お}く when used directly (meaning ``to put/place'') is written in 漢字, but when used as an auxiliary verb it is written in 仮名 alone. Further conjugations of the compound verb follow rules of the 置く verb.
+
+E.g.\ 晩ごはんを\textbf{作っておく}。
+
+E.g.\ 電池を\textbf{買っておきます}。
+
+「〜ておく」 can be contracted to 「〜とく」. Further conjugations follow rules of the とく auxiliary verb (which means to do something in readiness for).
+
+E.g.\ 晩ごはんを\textbf{作っとく}。
+
+E.g.\ 電池を\textbf{買っときます}。
+
+\subsection{Spatial and temporal directional auxiliary verbs 〜ていく、 〜てくる} \label{sec:auxiliary-verbs-teiku-tekiru}
+To express that an action is spatially oriented towards or from some place, we use the 〜ていく and 〜てくる auxiliary verbs respectively. Think of them as ``<v> + go'' and ``<v> + come'' respectively. Further conjugations of the compound verb follow the rules of the trailing いく or くる verb.
+
+E.g.\ \ruby{鉛筆}{えん|ぴつ}を学校へ\textbf{持っていく}？ (spatial; Are you taking pencil to school?)
+
+E.g.\ 鉛筆を\ruby{家}{うち}に\textbf{持ってくる}？ (spatial; Are you bringing pencil back home?)
+
+E.g.\ お父さんは、早く\textbf{帰ってきました}。 (spatial; きました is the polite past-tense of くる)
+
+E.g.\ \ruby{駅}{えき}の\ruby{方}{ほう}へ\textbf{走っていった}。 (spatial; いった is the past tense of いく; \ruby{駅}{えき} is train station; \ruby{方}{ほう} is direction)
+
+The same auxiliary verbs have a temporal usage. 〜ていく can be used to mean ``<v> continuously/progressively into the future''. 〜てくる can be used to mean ``<v> performed up to the present''.
+
+E.g.\ 冬に\ruby{入}{はい}って、コートを来ている一が\textbf{増えていきます}。 (temporal; Entering winter, people wearing coat will gradually increase.; The 入 in \ruby{入}{はい}る is only read as い when used in compound verbs where the meaning of ``entering'' is faded.)
+
+E.g.\ \ruby{一生懸命}{いっ|しょう|けん|めい}、\textbf{頑張っていく}！ (temporal; With all my might, I will try my hardest moving into the future!)
+
+E.g.\ 色々な人\textbf{\ruby{付}{つ}き\ruby{合}{あ}ってきた}けど、いい人はまだ見つからない。 (temporal; Went out with various types of people up till the present, but a good person hasn't been found yet.; 付き合ってきた is the past-tense of 付き合ってくる.)
+
+E.g.\ 日本語をずっと前から\textbf{勉強してきて}、\ruby{結局}{けっ|きょく}早めた。 (temporal; Studied Japanese from way back before, and eventually quit.; 勉強してきて is the て-form of 勉強してくる.)
+
+\subsection{Potential form}
+To express the ability to perform a verb, the verb is conjugated. できる is actually the potential form of する! For detailed conjugation rules, refer to Appendix~\ref{appendix:conjugation-rules-summary}.
+
+\textbf{明日はここで続く} (続ける is wrong: it's potential...?)  % Also add the auxiliary verb meanings to the vocabulary table. Add now as we go.
 
 \end{document}
