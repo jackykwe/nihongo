@@ -121,7 +121,7 @@ Exceptions:
 
 
 \subsubsection{Verbs}
-See Table~\ref{tbl:verb-classification} for a summary of the three categories. In a nutshell, る-verbs is the class of \emph{almost all} \ul{-iru/-eru} verbs; all other verbs are う-verbs. Exception verbs are する and くる. \textorange{Mnemonic: Group I is the most superior; 五段 is superior to 一段; う comes before る in the 平仮名 alphabet chart.}
+See Table~\ref{tbl:verb-classification} for a summary of the three categories. In a nutshell, る-verbs is the class of \emph{almost all} \ul{-iru/-eru} verbs; all other verbs are う-verbs. Exception verbs are する and 来る. \textorange{Mnemonic: Group I is the most superior; 五段 is superior to 一段; う comes before る in the 平仮名 alphabet chart.}
 
 % Help: \SetCell[r=2,c=2]{c,m} <content>, \cmidrule[l]{3-4}
 % Help: colspec: X[ratio, horizontal alignment] columns grow to fit width=\linewidth
@@ -139,7 +139,7 @@ See Table~\ref{tbl:verb-classification} for a summary of the three categories. I
     \toprule
     \textbf{Class} & \textbf{Tense} & \SetCell[c=2]{c,m} \textbf{Casual schema} & & \SetCell[c=2]{c,m} \textbf{Polite schema} & \\
     \midrule
-    \SetCell[r=21]{c,m} う verb & Present-positive & \SetCell[c=2]{l,m} <$*$-end root>○ & & \SetCell[c=2]{l,m} <$*$-end root>\ruby{○}{〜い}ます。 & \\* \cmidrule[l]{2-6}
+    \SetCell[r=23]{c,m} う verb & Present-positive & \SetCell[c=2]{l,m} <$*$-end root>○ & & \SetCell[c=2]{l,m} <$*$-end root>\ruby{○}{〜い}ます。 & \\* \cmidrule[l]{2-6}
     & \SetCell[r=3]{c,m} Present-negative & \SetCell[c=2]{l,m} <$*\setminus$\{う\}-end root>\ruby{○}{〜あ}\textbf{な}い & & \SetCell[r=3,c=2]{l,m} <$*$-end root>\ruby{○}{〜い}ません。 & \\*
     & & \SetCell[c=2]{l,m} <う-end root>わ\textbf{な}い & & & \\*
     & & \SetCell[c=2]{l,m} \ruby[<g>]{\textbf{な}い}{ある\to} & & & \\* \cmidrule[l]{2-6}
@@ -159,25 +159,31 @@ See Table~\ref{tbl:verb-classification} for a summary of the three categories. I
     & & \SetCell[c=2]{l,m} <\{る,つ,う\}-end root>って & & \SetCell[c=2]{l,m} \\* \cmidrule[l]{2-6}
     & \SetCell[r=3]{c,m} て-negative & \SetCell[c=2]{l,m} <$*\setminus$\{う\}-end root>\ruby{○}{〜あ}\textbf{な}くて & & \SetCell[r=3,c=2]{l,m} - \\*
     & & \SetCell[c=2]{l,m} <う-end root>わ\textbf{な}くて & & \SetCell[c=2]{l,m} \\*
-    & & \SetCell[c=2]{l,m} \ruby[<g>]{\textbf{な}くて}{ある\to} & & \SetCell[c=2]{l,m} \\
+    & & \SetCell[c=2]{l,m} \ruby[<g>]{\textbf{な}くて}{ある\to} & & \SetCell[c=2]{l,m} \\* \cmidrule[l]{2-6}
+    & {Progressive\\(conjugate 〜いる)} & \SetCell[c=2]{l,m} <て-form>いる & & \SetCell[c=2]{l,m} - \\* \cmidrule[l]{2-6}
+    & {Potential\\(conjugate 〜る)} & \SetCell[c=2]{l,m} {<$*$-end root>\ruby{○}{〜え}る\\$\cdots$} & & \SetCell[c=2]{l,m} {<$*$-end root>\ruby{○}{〜え}ます。\\$\cdots$} \\
     % & & & & & \\
     \midrule
-    \SetCell[r=7]{c,m} る verb & Present-positive & \SetCell[c=2]{l,m} {<る-end root>る} & & \SetCell[c=2]{l,m} {<る-end root>ます。} \\*
+    \SetCell[r=9]{c,m} る verb & Present-positive & \SetCell[c=2]{l,m} {<る-end root>る} & & \SetCell[c=2]{l,m} {<る-end root>ます。} \\*
     & Present-negative & \SetCell[c=2]{l,m} <る-end root>ない & & \SetCell[c=2]{l,m} <る-end root>ません。 \\*
     & Past-positive & \SetCell[c=2]{l,m} <る-end root>た & & \SetCell[c=2]{l,m} <る-end root>ました。 \\*
     & Past-negative & \SetCell[c=2]{l,m} <る-end root>なかった & & \SetCell[c=2]{l,m} <る-end root>ませんでした。 \\*
     & (Stem) & \SetCell[c=2]{l,m} - & & \SetCell[c=2]{l,m} <る-end root> & \\*
     & て-positive & \SetCell[c=2]{l,m} <る-end root>て & & \SetCell[c=2]{l,m} - & \\*
     & て-negative & \SetCell[c=2]{l,m} <る-end root>なくて & & \SetCell[c=2]{l,m} - & \\
+    & {Progressive\\(conjugate 〜いる)} & \SetCell[c=2]{l,m} {<て-form>いる\\$\cdots$} & & \SetCell[c=2]{l,m} {<て-form>います。\\$\cdots$} \\
+    & {Potential\\(conjugate 〜る)} & \SetCell[c=2]{l,m} {<る-end root>られる\\$\cdots$} & & \SetCell[c=2]{l,m} {<る-end root>られます。\\$\cdots$} \\
     % & & & & & \\
     \midrule
-    \SetCell[r=7]{c,m} exception verb & Present-positive & 〜する & 〜くる & 〜します。 & 〜きます。 \\*
-    & Present-negative & 〜しない & 〜こない & 〜しません。 & 〜きません。 \\*
-    & Past-positive & 〜した & 〜きた & 〜しました。 & 〜きました。 \\*
-    & Past-negative & 〜しなかった & 〜こなかった & 〜しませんでした。 & 〜きませんでした。 \\*
-    & (Stem) & \SetCell[c=2]{l,m} & - & 〜し & 〜き \\*
-    & て-positive & 〜して & 〜きて & \SetCell[c=2]{l,m} - & \\*
-    & て-negative & 〜しなくて & 〜こなくて & \SetCell[c=2]{l,m} - & \\
+    \SetCell[r=9]{c,m} exception verb & Present-positive & 〜する & \ruby{来}{く}る & 〜します。 & \ruby{来}{き}ます。 \\*
+    & Present-negative & 〜しない & \ruby{来}{こ}ない & 〜しません。 & \ruby{来}{き}ません。 \\*
+    & Past-positive & 〜した & \ruby{来}{き}た & 〜しました。 & \ruby{来}{き}ました。 \\*
+    & Past-negative & 〜しなかった & \ruby{来}{こ}なかった & 〜しませんでした。 & \ruby{来}{き}ませんでした。 \\*
+    & (Stem) & \SetCell[c=2]{l,m} & - & 〜し & \ruby{来}{き} \\*
+    & て-positive & 〜して & \ruby{来}{き}て & \SetCell[c=2]{l,m} - & \\*
+    & て-negative & 〜しなくて & \ruby{来}{こ}なくて & \SetCell[c=2]{l,m} - & \\
+    & {Progressive\\(conjugate 〜いる)} & {<て-form>いる\\$\cdots$} & {<て-form>いる\\$\cdots$} & {<て-form>います。\\$\cdots$} & {<て-form>います。\\$\cdots$} \\
+    & {Potential\\(conjugate 〜る)} & {〜できる\\$\cdots$} & {\ruby{来}{こ}られる\\$\cdots$} & {〜できます。\\$\cdots$} & {\ruby{来}{こ}られます。\\$\cdots$} \\
     % & & & & & \\
     \bottomrule
 }
@@ -230,8 +236,9 @@ Exceptions:
     & & <location>を<motion v (intransitive OK)> & \S\ref{sec:verb-particles} \\
     に & target marker & <target/location>に\textlightgrey{[は/も]}<v> & \S\ref{sec:verb-particles} \\
     & & <time>[に\textlightgrey{[は/も]}]<v> & \S\ref{sec:verb-particles} \\
-    & & <v stem>にいく/にくる & \S\ref{sec:verb-stems} \\
+    & & <v stem>に行く/に来る & \S\ref{sec:verb-stems} \\
     へ & direction marker & <direction>へ\textlightgrey{[は/も]}<v> & \S\ref{sec:verb-particles} \\
+    & & <v stem>へ行く/へ来る & \S\ref{sec:verb-stems} \\
     で & context marker & <by-way-of (where/what/how) context>で\textlightgrey{[は/も]} & \S\ref{sec:verb-particles} \\
     から & from-marker & <from>から & \S\ref{sec:verb-particles} \\
     まで & to-marker & <to>まで & \S\ref{sec:verb-particles} \\
