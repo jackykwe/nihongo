@@ -278,6 +278,18 @@
 \usepackage{siunitx}
 \usepackage{nicefrac}
 \usepackage{amssymb}  % for \lessapprox
+\def\clap#1{\hbox to 0pt{\hss#1\hss}}
+\def\mathllap{\mathpalette\mathllapinternal}
+\def\mathrlap{\mathpalette\mathrlapinternal}
+\def\mathclap{\mathpalette\mathclapinternal}
+\def\mathllapinternal#1#2{\llap{$\mathsurround=0pt#1{#2}$}}
+\def\mathrlapinternal#1#2{\rlap{$\mathsurround=0pt#1{#2}$}}
+\def\mathclapinternal#1#2{\clap{$\mathsurround=0pt#1{#2}$}}
+\newcommand{\longoverbrace}[2]{\overbrace{#1}^{\mathclap{#2}}}  % overflowing overbrace courtesy of https://stackoverflow.com/a/2218944/7254995
+\newcommand{\longunderbrace}[2]{\underbrace{#1}_{\mathclap{#2}}}  % overflowing underbrace inspired from https://stackoverflow.com/a/2218944/7254995
+% \usepackage{mathtools}  % for \overbracket and \underbracket
+% \newcommand{\longoverbracket}[2]{\overbracket{#1}^{\mathclap{#2}}}  % overflowing overbracket courtesy of https://stackoverflow.com/a/2218944/7254995
+% \newcommand{\longunderbracket}[2]{\underbracket{#1}_{\mathclap{#2}}}  % overflowing underbracket inspired from https://stackoverflow.com/a/2218944/7254995
 \usepackage{cancel}
 \usepackage{centernot}
 \ifcsname currentdatestring\endcsname  % if \currentdatestring is defined (in Docker mode; passed from CLI: see Dockerfile)
