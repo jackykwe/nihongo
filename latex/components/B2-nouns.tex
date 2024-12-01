@@ -1995,4 +1995,61 @@ Colours are often used as labels, together with the の particle.
     \bottomrule
 }
 
+
+\subsubsection{Common names}
+% Help: \SetCell[r=2,c=2]{c,m} <content>, \cmidrule[l]{3-4}
+% Help: colspec: X[ratio, horizontal alignment] columns grow to fit width=\linewidth
+%                  negative ratios: shrink to fit content and may not grow to full ratio
+% Help: colspec: l/c/r columns do not grow
+\longtabsea[0.75]  % scale factor
+{Nouns: common names.}  % caption
+{tbl:appendix-vocab-nouns-common-names}  % label
+{
+    colspec={X[-3,l]X[3,l]X[-3,l]},
+    rowhead=1,
+    % width=\linewidth,  % useful only with X columns
+}  % inner specification options
+{
+    \toprule
+    \textbf{Name} & \textbf{Meaning} & \textbf{Notes} \\
+    \midrule
+    \ruby{鈴木}{すず|き} & Suzuki (last name) & \\
+    \ruby{田中}{た|なか} & Tanaka (last name) & \\
+    \ruby{山田}{やま|だ} & Yamada (last name) & \\
+    % & & \\
+    \midrule
+    \midrule
+    \ruby{一郎}{いち|ろう} & Ichirou (first name) & \\
+    \ruby{直子}{なお|こ} & Naoko (first name) & \\
+    \ruby{美恵}{み|え} & Mie (first name) & \\
+    \ruby[g]{智子}{ともこ} & Tomoko (first name; female) & \\
+    \ruby[g]{洋介}{ようすけ} & Yousuke (first name; male) & \\
+    % & & \\
+    \bottomrule
+}
+
+
+\subsubsection{Character names}
+% Help: \SetCell[r=2,c=2]{c,m} <content>, \cmidrule[l]{3-4}
+% Help: colspec: X[ratio, horizontal alignment] columns grow to fit width=\linewidth
+%                  negative ratios: shrink to fit content and may not grow to full ratio
+% Help: colspec: l/c/r columns do not grow
+\longtabse[0.75]  % scale factor
+{Nouns: character names.}  % caption
+{tbl:appendix-vocab-nouns-character-names}  % label
+{
+    colspec={X[-3,l]X[3,l]X[-3,l]},
+    rowhead=1,
+    % width=\linewidth,  % useful only with X columns
+}  % inner specification options
+{
+    \toprule
+    \textbf{Name} & \textbf{Meaning} & \textbf{Notes} \\
+    \midrule
+    \ruby[g]{胡桃}{フータオ} & Hu Tao & (くるみ) \\
+    \ruby{神里綾華}{かみ|さと|あや|か} & Kamisato Ayaka & \\
+    \ruby{八重神子}{や|え|み|こ} & Yae Miko & \\
+    % & & \\
+    \bottomrule
+}
 \end{document}
