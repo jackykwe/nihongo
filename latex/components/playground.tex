@@ -18,6 +18,7 @@
 \longtabse[1]  % scale factor
 {}  % caption
 {tbl:}  % label
+{}  % outer specification options
 {
     colspec={X[1,c]X[-1,c]X[1,c]X[1,c]},
     rowhead=1,
@@ -39,12 +40,15 @@
 {(longtabse) Test A (longtabse)}
 {tbl:}
 {
+    note{\dagger}={Informal pronunciation.},
+}
+{
     colspec={X[1,c]X[2,c]X[3,c]X[4,c]X[5,c]},
     rowhead=1,
 }
 {
     \toprule
-    00 & 01 & 02 & 03 & 04 \\
+    00\TblrNote{\dagger} & 01 & 02 & 03 & 04 \\
     \toprule
     10 & 11何これ & 12 & 13 & 14 \\
     \midrule
@@ -62,6 +66,7 @@
 \longtabsea
 {(longtabse) Test A (longtabse)}
 {tbl:xxx}
+{}
 {
     colspec={X[1,c]X[2,c]X[3,c]X[4,c]X[5,c]},
     rowhead=1,
@@ -87,6 +92,7 @@
 \longtabse
 {(longtabse) Test A (longtabse)}
 {tbl:xxx}
+{}
 {
     colspec={X[1,c]X[2,c]X[3,c]X[4,c]X[5,c]},
     rowhead=1,

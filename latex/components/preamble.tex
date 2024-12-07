@@ -29,6 +29,11 @@
 \usepackage[soul]{lua-ul} % for highlighting via \hl and underline via \ul. LuaLaTeX version of soul courtesy of https://tex.stackexchange.com/a/586053
 \usepackage{luacolor}  % LuaLaTeX version of soul courtesy of https://tex.stackexchange.com/a/586053
 
+\usepackage{amssymb}  % for \lessapprox, must come before loading fonts...
+\ifcsname dockermode\endcsname  % if \dockermode is defined (in Docker mode; see Dockerfile)
+    \usepackage[regular]{newcomputermodern}  % required for scalefnt to work properly and scale character horizontal width; Latin Modern isn't good enough, need New Computer Modern.
+\fi
+
 
 %%%%%%%%%%%
 % FIGURES %
@@ -66,7 +71,7 @@
 
 % When developing, use \longtabsea to see the table (only maximum one will be rendered, any duplicate <\longtabsea>s will show a warning). When done, revert to \longtabse.
 % Definition of longtabse (e for enhanced)
-\ifcsname currentdatestring\endcsname
+\ifcsname dockermode\endcsname
     % DOCKER MODE (see Dockerfile)
 
     % [#1] is the scale factor
@@ -74,7 +79,7 @@
     % #3 is the label
     % #4 is the inner specificaiton
     % #5 is the table body
-    \newcommand{\longtabse}[5][1]{
+    \newcommand{\longtabse}[6][1]{
         \dtlmul{\newheavyrulewidth}{.08}{#1}  % default is .08em
         \dtlmul{\newlightrulewidth}{.05}{#1}  % default is .05em
         \dtlmul{\newcmidrulewidth}{.03}{#1}  % default is .03em
@@ -103,6 +108,7 @@
             caption={#2},
             label={#3},
             expand=\viteq\vit,
+            #4,
         ]{
             rows={valign=m},
             cells={font=\scalefont{\newinversescale}},
@@ -115,14 +121,14 @@
             leftsep=\newleftsep pt,
             rightsep=\newrightsep pt,
             colsep=\newcolsep pt,
-            #4,
+            #5,
         }
-            #5
+            #6
         \end{longtabs}
     }
 \else
     % LOCAL MODE
-    \newcommand{\longtabse}[5][1]{
+    \newcommand{\longtabse}[6][1]{
         \begin{center}
             \captionof{table}{#2}
             \label{#3}
@@ -133,9 +139,9 @@
     }
 \fi
 % Definition of longtabsea (e for enhanced; a for active) is identical to the above
-\ifcsname currentdatestring\endcsname
+\ifcsname dockermode\endcsname
     % DOCKER MODE (see Dockerfile)
-    \newcommand{\longtabsea}[5][1]{
+    \newcommand{\longtabsea}[6][1]{
         \dtlmul{\newheavyrulewidth}{.08}{#1}  % default is .08em
         \dtlmul{\newlightrulewidth}{.05}{#1}  % default is .05em
         \dtlmul{\newcmidrulewidth}{.03}{#1}  % default is .03em
@@ -151,8 +157,6 @@
         \dtlmul{\newrightsep}{6}{#1}  % default is 6pt
         \dtlmul{\newcolsep}{6}{#1}  % default is 6pt
         \dtlmul{\newinversescale}{1}{#1}  % helper value for \adjustbox's scale factor
-        \dtlmul{\newcelltoppadding}{1.55}{#1}  % helper value for \adjustbox's margin
-        \dtlmul{\newcellbottompadding}{1.4}{#1}  % helper value for \adjustbox's margin
 
         \heavyrulewidth=\newheavyrulewidth em
         \lightrulewidth=\newlightrulewidth em
@@ -164,6 +168,7 @@
             caption={#2},
             label={#3},
             expand=\viteq\vit,
+            #4,
         ]{
             rows={valign=m},
             cells={font=\scalefont{\newinversescale}},
@@ -176,14 +181,14 @@
             leftsep=\newleftsep pt,
             rightsep=\newrightsep pt,
             colsep=\newcolsep pt,
-            #4,
+            #5,
         }
-            #5
+            #6
         \end{longtabs}
     }
 \else
     % LOCAL MODE
-    \newcommand{\longtabsea}[5][1]{
+    \newcommand{\longtabsea}[6][1]{
         \dtlmul{\newheavyrulewidth}{.08}{#1}  % default is .08em
         \dtlmul{\newlightrulewidth}{.05}{#1}  % default is .05em
         \dtlmul{\newcmidrulewidth}{.03}{#1}  % default is .03em
@@ -199,8 +204,6 @@
         \dtlmul{\newrightsep}{6}{#1}  % default is 6pt
         \dtlmul{\newcolsep}{6}{#1}  % default is 6pt
         \dtlmul{\newinversescale}{1}{#1}  % helper value for \adjustbox's scale factor
-        \dtlmul{\newcelltoppadding}{1.55}{#1}  % helper value for \adjustbox's margin
-        \dtlmul{\newcellbottompadding}{1.4}{#1}  % helper value for \adjustbox's margin
 
         \heavyrulewidth=\newheavyrulewidth em
         \lightrulewidth=\newlightrulewidth em
@@ -212,6 +215,7 @@
             caption={#2},
             label={#3},
             expand=\viteq\vit,
+            #4,
         ]{
             rows={valign=m},
             cells={font=\scalefont{\newinversescale}},
@@ -224,11 +228,11 @@
             leftsep=\newleftsep pt,
             rightsep=\newrightsep pt,
             colsep=\newcolsep pt,
-            #4,
+            #5,
         }
-            #5
+            #6
         \end{longtabs}
-        \renewcommand{\longtabsea}[5][1]{
+        \renewcommand{\longtabsea}[6][1]{
             \begin{center}
                 \captionof{table}{##2}
                 \label{##3}
@@ -277,7 +281,6 @@
 \rubysetup{j}  % Jukugo ruby by default, use | to separate word boundaries if available
 \usepackage{siunitx}
 \usepackage{nicefrac}
-\usepackage{amssymb}  % for \lessapprox
 \def\clap#1{\hbox to 0pt{\hss#1\hss}}
 \def\mathllap{\mathpalette\mathllapinternal}
 \def\mathrlap{\mathpalette\mathrlapinternal}
@@ -292,9 +295,38 @@
 % \newcommand{\longunderbracket}[2]{\underbracket{#1}_{\mathclap{#2}}}  % overflowing underbracket inspired from https://stackoverflow.com/a/2218944/7254995
 \usepackage{cancel}
 \usepackage{centernot}
-\ifcsname currentdatestring\endcsname  % if \currentdatestring is defined (in Docker mode; passed from CLI: see Dockerfile)
-    \usepackage[regular]{newcomputermodern}  % required for scalefnt to work properly and scale character horizontal width; Latin Modern isn't good enough, need New Computer Modern.
-\fi
+\usepackage{luacode}
+
+
+%%%%%%%%%%%%%%%%%%%%%
+% TIME CALCULATIONS %
+%%%%%%%%%%%%%%%%%%%%%
+% luacode* treats its body as pure Lua code, no LaTeX macro expansion shenanigans.
+\begin{luacode*}
+    local current_regnal_genkou = "令和"
+    local current_regnal_gannen = 2019
+    local current_date = os.date("*t")
+
+    local current_date_ts = os.time(current_date)
+    tex.print(string.format("\\gdef\\currentyymmddhhmmss{%s}", os.date("%y%m%d %H%M%S", current_date_ts)))
+    tex.print(string.format("\\gdef\\currenttz{%s}", os.date("%z", current_date_ts)))
+
+    local current_regnal_year = current_date.year - current_regnal_gannen + 1
+    current_regnal_year = string.gsub(current_regnal_year, "0", "０", 1)
+    current_regnal_year = string.gsub(current_regnal_year, "1", "１", 1)
+    current_regnal_year = string.gsub(current_regnal_year, "2", "２", 1)
+    current_regnal_year = string.gsub(current_regnal_year, "3", "３", 1)
+    current_regnal_year = string.gsub(current_regnal_year, "4", "４", 1)
+    current_regnal_year = string.gsub(current_regnal_year, "5", "５", 1)
+    current_regnal_year = string.gsub(current_regnal_year, "6", "６", 1)
+    current_regnal_year = string.gsub(current_regnal_year, "7", "７", 1)
+    current_regnal_year = string.gsub(current_regnal_year, "8", "８", 1)
+    current_regnal_year = string.gsub(current_regnal_year, "9", "９", 1)
+    -- must use \gdef and not \newcommand https://tex.stackexchange.com/a/289665
+    local currentregnalyear = current_regnal_genkou .. current_regnal_year
+    tex.print(string.format("\\gdef\\currentregnalyear{%s}", currentregnalyear))
+    tex.print(string.format("\\gdef\\currentregnalyearexplanation{%d = %s}", current_date.year, currentregnalyear))
+\end{luacode*}
 
 
 %%%%%%%%%%%
@@ -306,19 +338,12 @@
 \lhead{\textbf{ジャッキー・カン}\\kung.jwe@gmail.com}
 \rhead{\textbf{日本語\ruby{学習}{がく|しゅう}\ruby{教材}{きょう|ざい}}}
 % \rhead{\textbf{日本語\ruby{学習}{ガク|シュウ}\ruby{教材}{キョウ|ザイ}}}
-% Date formatting courtesy of https://tex.stackexchange.com/a/638289
-\usepackage{datetime2}
-\DTMnewstyle{myformat}{
-    \renewcommand*\DTMdisplay[9]{
-        \DTMtwodigits{##1}\DTMtwodigits{##2}\DTMtwodigits{##3} \DTMtwodigits{##5}\DTMtwodigits{##6}\DTMtwodigits{##7}
-    }
-}{}{}{}
-\ifcsname currentdatestring\endcsname
+\ifcsname dockermode\endcsname
     % DOCKER MODE (see Dockerfile)
-    \chead{\textlightgrey{\currentdatestring}}
+    \chead{\textlightgrey{\currentyymmddhhmmss{} (UTC)}}  % Docker sets timezone to UTC by default, and synchronising it with the host without hardcoding the host's timezone is a pain
 \else
     % LOCAL MODE
-    \chead{\textlightgrey{\DTMsetstyle{myformat} [DEVELOP MODE] \DTMnow}}
+    \chead{\textlightgrey{[DEVELOP MODE] \currentyymmddhhmmss{} (\currenttz)}}
 \fi
 \setlength{\headheight}{28pt}  % Adjust according to compilation warnings
 \cfoot{\thepage}
