@@ -25,8 +25,7 @@
 %%%%%%%%
 % FONT %
 %%%%%%%%
-% \usepackage[normalem]{ulem} % strikethrough
-\usepackage[soul]{lua-ul} % for highlighting via \hl and underline via \ul. LuaLaTeX version of soul courtesy of https://tex.stackexchange.com/a/586053
+\usepackage[soul]{lua-ul} % for highlighting via \hl, underline via \ul, and strikethrough using \st. LuaLaTeX version of soul courtesy of https://tex.stackexchange.com/a/586053
 \usepackage{luacolor}  % LuaLaTeX version of soul courtesy of https://tex.stackexchange.com/a/586053
 
 \usepackage{amssymb}  % for \lessapprox, must come before loading fonts...
@@ -301,7 +300,7 @@
 %%%%%%%%%%%%%%%%%%%%%
 % TIME CALCULATIONS %
 %%%%%%%%%%%%%%%%%%%%%
-% luacode* treats its body as pure Lua code, no LaTeX macro expansion shenanigans.
+% luacode* treats its body as pure Lua code, no LaTeX macro expansion shenanigans (though note that Lua escape sequences still apply, so some backslash-escaping needs to be done.)
 \begin{luacode*}
     local current_regnal_genkou = "令和"
     local current_regnal_gannen = 2019

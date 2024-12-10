@@ -136,7 +136,7 @@ See Table~\ref{tbl:verb-classification} for a summary of the three categories. I
 % Help: colspec: X[ratio, horizontal alignment] columns grow to fit width=\linewidth
 %                  negative ratios: shrink to fit content and may not grow to full ratio
 % Help: colspec: l/c/r columns do not grow
-\longtabse[0.75]  % scale factor
+\longtabsea[0.75]  % scale factor
 {Verb conjugation rules.}  % caption
 {tbl:appendix-verb-conjugations}  % label
 {}  % outer specification options
@@ -149,7 +149,7 @@ See Table~\ref{tbl:verb-classification} for a summary of the three categories. I
     \toprule
     \textbf{Class} & \textbf{Tense} & \SetCell[c=2]{c,m} \textbf{Casual schema} & & \SetCell[c=2]{c,m} \textbf{Polite schema} & \\
     \midrule
-    \SetCell[r=31]{c,m} う verb & Present-positive & \SetCell[c=2]{l,m} <$*$-end root>○ & & \SetCell[c=2]{l,m} <$*$-end root>\ruby{○}{〜い}ます。 & \\* \cmidrule[l]{2-6}
+    \SetCell[r=34]{c,m} う verb & Present-positive & \SetCell[c=2]{l,m} <$*$-end root>○ & & \SetCell[c=2]{l,m} <$*$-end root>\ruby{○}{〜い}ます。 & \\* \cmidrule[l]{2-6}
     & \SetCell[r=3]{c,m} Negative & \SetCell[c=2]{l,m} <$*\setminus$\{う\}-end root>\ruby{○}{〜あ}\textbf{な}い & & \SetCell[r=3,c=2]{l,m} <$*$-end root>\ruby{○}{〜い}ません。 & \\*
     & & \SetCell[c=2]{l,m} <う-end root>わ\textbf{な}い & & & \\*
     & & \SetCell[c=2]{l,m} \ruby[<g>]{\textbf{な}い}{ある\to} & & & \\* \cmidrule[l]{2-6}
@@ -179,10 +179,13 @@ See Table~\ref{tbl:verb-classification} for a summary of the three categories. I
     & {Desiderative\\(conjugate i-adj)} & \SetCell[c=2]{l,m} {<$*$-end root>\ruby{○}{〜い}たい\\$\cdots$} & & \SetCell[c=2]{l,m} - & \\* \cmidrule[l]{2-6}
     & Volitional & \SetCell[c=2]{l,m} <$*$-end root>\ruby{○}{〜お}う & & \SetCell[c=2]{l,m} <$*$-end root>\ruby{○}{〜い}ましょう。 & \\* \cmidrule[l]{2-6}
     & Imperative & \SetCell[c=2]{l,m} <$*$-end root>\ruby{○}{〜え} & & \SetCell[c=2]{l,m} - & \\*
-    & Imperative-negative & \SetCell[c=2]{l,m} <$*$-end root>○な & & \SetCell[c=2]{l,m} - & \\
+    & Imperative-negative & \SetCell[c=2]{l,m} <$*$-end root>○な & & \SetCell[c=2]{l,m} - & \\* \cmidrule[l]{2-6}
+    & {Causative\\(conjugate 〜る\\\textlightgrey{/conjugate 〜す})} & \SetCell[c=2]{l,m} {<$*$-end root>\ruby{○}{〜あ}せる\\$\cdots$\\\textlightgrey{<$*$-end root>\ruby{○}{〜あ}す}\\\textlightgrey{$\cdots$}} & & \SetCell[c=2]{l,m} {<$*$-end root>\ruby{○}{〜あ}せます。\\$\cdots$\\\textlightgrey{<$*$-end root>\ruby{○}{〜あ}します。}\\\textlightgrey{$\cdots$}} & \\* \cmidrule[l]{2-6}
+    & {Passive\\(conjugate 〜る)} & \SetCell[c=2]{l,m} {<$*$-end root>\ruby{○}{〜あ}れる\\$\cdots$} & & \SetCell[c=2]{l,m} {<$*$-end root>\ruby{○}{〜あ}れます。\\$\cdots$} & \\* \cmidrule[l]{2-6}
+    & {Causative-passive\\(conjugate 〜る)} & \SetCell[c=2]{l,m} {<$*$-end root>\ruby{○}{〜あ}せられる\\$\cdots$\\\textlightgrey{<$*\setminus$\{す\}-end root>\ruby{○}{〜あ}される}\\\textlightgrey{$\cdots$}} & & \SetCell[c=2]{l,m} {<$*$-end root>\ruby{○}{〜あ}せられます。\\$\cdots$\\\textlightgrey{<$*\setminus$\{す\}-end root>\ruby{○}{〜あ}されます。}\\\textlightgrey{$\cdots$}} & \\
     % & & & & & \\
     \midrule
-    \SetCell[r=15]{c,m} る verb & Dictionary & \SetCell[c=2]{l,m} {<る-end root>る} & & \SetCell[c=2]{l,m} {<る-end root>ます。} \\*
+    \SetCell[r=18]{c,m} る verb & Dictionary & \SetCell[c=2]{l,m} {<る-end root>る} & & \SetCell[c=2]{l,m} {<る-end root>ます。} \\*
     & Negative & \SetCell[c=2]{l,m} <る-end root>ない & & \SetCell[c=2]{l,m} <る-end root>ません。 \\*
     & Past & \SetCell[c=2]{l,m} <る-end root>た & & \SetCell[c=2]{l,m} <る-end root>ました。 \\*
     & Past-negative & \SetCell[c=2]{l,m} <る-end root>なかった & & \SetCell[c=2]{l,m} <る-end root>ませんでした。 \\*
@@ -196,10 +199,13 @@ See Table~\ref{tbl:verb-classification} for a summary of the three categories. I
     & {Desiderative\\(conjugate i-adj)} & \SetCell[c=2]{l,m} {<る-end root>たい\\$\cdots$} & & \SetCell[c=2]{l,m} - & \\*
     & Volitional & \SetCell[c=2]{l,m} <る-end root>よう & & \SetCell[c=2]{l,m} <る-end root>ましょう。 & \\*
     & Imperative & \SetCell[c=2]{l,m} <る-end root>ろ & & \SetCell[c=2]{l,m} - & \\*
-    & Imperative-negative & \SetCell[c=2]{l,m} <る-end root>るな & & \SetCell[c=2]{l,m} - & \\
+    & Imperative-negative & \SetCell[c=2]{l,m} <る-end root>るな & & \SetCell[c=2]{l,m} - & \\*
+    & {Causative\\(conjugate 〜る\\\textlightgrey{/conjugate 〜す})} & \SetCell[c=2]{l,m} {<る-end root>させる\\$\cdots$\\\textlightgrey{<る-end root>さす}\\\textlightgrey{$\cdots$}} & & \SetCell[c=2]{l,m} {<る-end root>させます。\\$\cdots$\\\textlightgrey{<る-end root>さします。}\\\textlightgrey{$\cdots$}} & \\*
+    & {Passive\\(conjugate 〜る)} & \SetCell[c=2]{l,m} {<る-end root>られる\\$\cdots$} & & \SetCell[c=2]{l,m} {<る-end root>られます。\\$\cdots$} & \\*
+    & {Causative-passive\\(conjugate 〜る)} & \SetCell[c=2]{l,m} {<る-end root>させられる\\$\cdots$} & & \SetCell[c=2]{l,m} {<る-end root>させられます。\\$\cdots$} & \\
     % & & & & & \\
     \midrule
-    \SetCell[r=13]{c,m} exception verb & Dictionary & 〜する & \ruby{来}{く}る & 〜します。 & \ruby{来}{き}ます。 \\*
+    \SetCell[r=18]{c,m} exception verb & Dictionary & 〜する & \ruby{来}{く}る & 〜します。 & \ruby{来}{き}ます。 \\*
     & Negative & 〜しない & \ruby{来}{こ}ない & 〜しません。 & \ruby{来}{き}ません。 \\*
     & Past & 〜した & \ruby{来}{き}た & 〜しました。 & \ruby{来}{き}ました。 \\*
     & Past-negative & 〜しなかった & \ruby{来}{こ}なかった & 〜しませんでした。 & \ruby{来}{き}ませんでした。 \\*
@@ -213,7 +219,10 @@ See Table~\ref{tbl:verb-classification} for a summary of the three categories. I
     & {Desiderative\\(conjugate i-adj)} & {〜したい\\$\cdots$} & {\ruby{来}{き}たい\\$\cdots$} & - & - \\*
     & Volitional & 〜しよう & \ruby{来}{こ}よう & 〜しましょう。 & \ruby{来}{き}ましょう。 \\*
     & Imperative & 〜しろ & \ruby{来}{こ}い & - & - \\*
-    & Imperative-negative & 〜するな & \ruby{来}{く}るな & - & - \\
+    & Imperative-negative & 〜するな & \ruby{来}{く}るな & - & - \\*
+    & {Causative\\(conjugate 〜る\\\textlightgrey{/conjugate 〜す})} & {〜させる\\$\cdots$\\\textlightgrey{〜さす}\\\textlightgrey{$\cdots$}} & {\ruby{来}{こ}させる\\$\cdots$\\\textlightgrey{\ruby{来}{こ}さす}\\\textlightgrey{$\cdots$}} & {〜させます。\\$\cdots$\\\textlightgrey{〜さします。}\\\textlightgrey{$\cdots$}} & {\ruby{来}{こ}させます。\\$\cdots$\\\textlightgrey{\ruby{来}{こ}さします。}\\\textlightgrey{$\cdots$}} \\*
+    & {Passive\\(conjugate 〜る)} & {〜される\\$\cdots$} & {\ruby{来}{こ}られる\\$\cdots$} & {〜られます。\\$\cdots$} & {\ruby{来}{こ}られます。\\$\cdots$} \\*
+    & {Causative-passive\\(conjugate 〜る)} & {〜させられる\\$\cdots$} & {\ruby{来}{こ}させられる\\$\cdots$} & {〜させられます。\\$\cdots$} & {\ruby{来}{こ}させられます。\\$\cdots$} \\
     % & & & & & \\
     \bottomrule
 }
@@ -361,7 +370,7 @@ The following table is a condensed version, showing where the rules come from.
     と & noun exclusive listing connector & (<nn>と)*<nn> & \S\ref{sec:noun-related-particles} \\
     どか/や & noun vague listing connector & (<nn>\{とか/や\})*<nn> & \S\ref{sec:noun-related-particles} \\
     し & reason vague listing connector & \textred{($*$)} (<reason>し)*<reason> & \S\ref{sec:reason-vague-listing-connector} \\
-    たり[する] & adj/verb vague listing marker & (<past adj/v>り、)*<past adj/v>りする & \S\ref{sec:verb-vague-listing-construct} \\
+    たり[する] & adj/verb vague listing marker & (<past adj/v>り、)*<past adj/v>りする & \S\ref{sec:adj-verb-vague-listing-construct} \\
     の & complaining listing marker & \{<nn/na-adj>だの/<v>の\}* & \S\ref{sec:no-the-nominaliser} \\
     % & & & \\
     \midrule
