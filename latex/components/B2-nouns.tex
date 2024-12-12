@@ -126,6 +126,30 @@
 }
 
 
+\subsubsection{Physical}
+% Help: \SetCell[r=2,c=2]{c,m} <content>, \cmidrule[l]{3-4}
+% Help: colspec: X[ratio, horizontal alignment] columns grow to fit width=\linewidth
+%                  negative ratios: shrink to fit content and may not grow to full ratio
+% Help: colspec: l/c/r columns do not grow
+\longtabse[0.75]  % scale factor
+{Nouns: physical.}  % caption
+{tblappendix-vocab-nouns-physical}  % label
+{}  % outer specification options
+{
+    colspec={X[-3,l]X[3,l]X[-3,l]},
+    rowhead=1,
+    % width=\linewidth,  % useful only with X columns
+}  % inner specification options
+{
+    \toprule
+    \textbf{Name} & \textbf{Meaning} & \textbf{Notes} \\
+    \midrule
+    ため\ruby{息}{いき} & sigh & \\
+    % & & \\
+    \bottomrule
+}
+
+
 \subsubsection{Directions}
 % Help: \SetCell[r=2,c=2]{c,m} <content>, \cmidrule[l]{3-4}
 % Help: colspec: X[ratio, horizontal alignment] columns grow to fit width=\linewidth
@@ -148,6 +172,8 @@
     \ruby{下}{した} & down & \\
     \ruby{左}{ひだり} & left & \\
     \ruby{右}{みぎ} & right & \\
+    \ruby{左折}{さ|せつ} & left turn & \\
+    \ruby{右折}{う|せつ} & right turn & \\
     \ruby{後}{うし}ろ & back/behind/rear (physical) & \href{https://ja.hinative.com/questions/4072942}{[HN]} \\
     \ruby{後}{あと} & behind (esp.\ abstract)/after/later & \href{https://ja.hinative.com/questions/4072942}{[HN]} \\
     \ruby{中}{なか} & inside; middle/centre & \\
@@ -195,6 +221,7 @@
     \ruby{立}{た}ち\ruby{入}{い}り & the act of entering & \\
     \ruby{禁止}{きん|し} & prohibition/ban & also: バン/BAN \\
     \ruby{立}{た}ち\ruby{入}{い}り\ruby{禁止}{きん|し} & no entry/no trespassing/keep out/off-limits & \\
+    \ruby{止}{と}まれ & stop (road signage) & \\
     % & & \\
     \midrule
     \midrule
@@ -258,6 +285,7 @@
     \ruby{公園}{こう|えん} & public park & \\
     \ruby{高速道路}{こう|そく|どう|ろ} & highway/expressway & \\
     \ruby{警察署}{けい|さつ|しょ} & police station & \\
+    \ruby{食堂}{しょく|どう} & canteen/cafeteria/dining room/restaurant/eatery & \\
     % & & \\
     \midrule
     \midrule
@@ -280,6 +308,33 @@
     \ruby{大学}{だい|がく} & university/college & \\
     \midrule
     \ruby{学園}{がく|えん} & campus & \\
+    % & & \\
+    \bottomrule
+}
+
+
+\subsubsection{Vehicles}
+% Help: \SetCell[r=2,c=2]{c,m} <content>, \cmidrule[l]{3-4}
+% Help: colspec: X[ratio, horizontal alignment] columns grow to fit width=\linewidth
+%                  negative ratios: shrink to fit content and may not grow to full ratio
+% Help: colspec: l/c/r columns do not grow
+\longtabse[0.75]  % scale factor
+{Nouns: vehicles.}  % caption
+{tbl:appendix-vocab-nouns-vehicles}  % label
+{}  % outer specification options
+{
+    colspec={X[-3,l]X[3,l]X[-3,l]},
+    rowhead=1,
+    % width=\linewidth,  % useful only with X columns
+}  % inner specification options
+{
+    \toprule
+    \textbf{Name} & \textbf{Meaning} & \textbf{Notes} \\
+    \midrule
+    \ruby{車}{くるま} & car/vehicle & \\
+    \ruby{救急車}{きゅう|きゅう|しゃ} & ambulance & \\
+    \ruby{列車}{れっ|しゃ} & train/railway train & \\
+    \ruby{電車}{でん|しゃ} & electric train & \\
     % & & \\
     \bottomrule
 }
@@ -462,7 +517,8 @@
     \ruby{先日}{せん|じつ} & the other day/a few days ago & also an adverb \\
     \ruby[g]{一昨日}{おととい} & day before yesterday (from now) & also an adverb \\
     \ruby[g]{昨日}{きのう} & yesterday (from now) & also an adverb \\
-    \ruby[g]{今日}{きょう} & today (now) & also an adverb \\
+    \ruby[g]{今日}{きょう} & today (now) & also an adverb; \href{https://dictionary.goo.ne.jp/thsrs/12857/meaning/m0u/}{[goo]} \\
+    \ruby{本日}{ほん|じつ} & today (now) & also an adverb; formal, \href{https://dictionary.goo.ne.jp/thsrs/12857/meaning/m0u/}{[goo]} \\
     \ruby[g]{明日}{あした} & tomorrow (from now) & also an adverb \\
     \ruby[g]{明後日}{あさって} & day after tomorrow (from now) & also an adverb \\
     % & & \\
@@ -1091,6 +1147,7 @@ Table~\ref{tbl:appendix-vocab-nouns-family} lists the names in casual/formal man
     \midrule
     \midrule
     \ruby{涙}{なみだ} & tears & \\
+    \ruby{笑}{わら}/ｗ & LOL/haha & slang \\
     % & & \\
     \midrule
     \midrule
@@ -1365,11 +1422,11 @@ Table~\ref{tbl:appendix-vocab-nouns-family} lists the names in casual/formal man
     % & & \\
     \midrule
     hospital & & \\
-    \ruby{救急車}{きゅう|きゅう|しゃ} & ambulance & \\
     % & & \\
     \midrule
     \midrule
     \ruby{休}{やす}み & rest/vacation & \\
+    \ruby{昼寝}{ひる|ね} & afternoon nap & \\
     \ruby{暇}{ひま} & free time/time off/leisure & also an adjective \\
     % & & \\
     \midrule
@@ -1618,6 +1675,7 @@ Colours are often used as labels, together with the の particle.
     \ruby{質問}{しつ|もん} & question/enquiry & \\
     \ruby{問題}{もん|だい} & problem/question & \\
     \ruby{宿題}{しゅく|だい} & homework/assignment & \\
+    \ruby{質問者}{しつ|もん|しゃ} & questioner/interrogator & \\
     % & & \\
     \midrule
     \ruby{答}{こた}え & answer/reply/response & \\
@@ -1761,6 +1819,7 @@ Colours are often used as labels, together with the の particle.
     teinei & & \\
     % & & \\
     \midrule
+    \ruby{悪態}{あく|たい} & foul/abusive language & \\
     \ruby{失礼}{しつ|れい} & discourtesy/impoliteness & also a な-adjective \\
     \ruby{無礼}{ぶ|れい} & rudeness/discourtesy/insolence (stronger) & also a な-adjective \\
     % & & \\
