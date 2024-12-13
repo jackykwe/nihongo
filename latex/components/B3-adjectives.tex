@@ -61,6 +61,30 @@
 }
 
 
+\subsubsection{Production}
+% Help: \SetCell[r=2,c=2]{c,m} <content>, \cmidrule[l]{3-4}
+% Help: colspec: X[ratio, horizontal alignment] columns grow to fit width=\linewidth
+%                  negative ratios: shrink to fit content and may not grow to full ratio
+% Help: colspec: l/c/r columns do not grow
+\longtabse[0.75]  % scale factor
+{Adjectives: production.}  % caption
+{tbl:appendix-vocab-adjectives-production}  % label
+{}  % outer specification options
+{
+    colspec={X[-3,l]X[-1,c]X[3,l]X[-3,l]},
+    rowhead=1,
+    % width=\linewidth,  % useful only with X columns
+}  % inner specification options
+{
+    \toprule
+    \textbf{Descriptor} & \textbf{Cat.} & \textbf{Meaning} & \textbf{Notes} \\
+    \midrule
+    \ruby{自動的}{じ|どう|てき} & な & automatic & \\
+    % & & & \\
+    \bottomrule
+}
+
+
 \subsubsection{Consumption}
 % Help: \SetCell[r=2,c=2]{c,m} <content>, \cmidrule[l]{3-4}
 % Help: colspec: X[ratio, horizontal alignment] columns grow to fit width=\linewidth
@@ -119,6 +143,7 @@
     \ruby{健康}{けん|こう} & な & healthy/fit; wholesome & also a noun \\
     % & & & \\
     \midrule
+    \ruby{精神的}{せい|しん|てき} & な & mental/spiritual/emotional & \\
     \ruby{元気}{げん|き} & な & lively/well/in good health & \\
     \ruby{病気}{びょう|き} & な & illness/disease/sickness & \\
     % & & & \\
@@ -274,7 +299,8 @@ Only four colours were recognised as basic colours in ancient Japan: red, blue, 
     \toprule
     \textbf{Descriptor} & \textbf{Cat.} & \textbf{Meaning} & \textbf{Notes} \\
     \midrule
-    <adj/v stem>そう & な & having the appearance of/seeming that & \\
+    <adj/v stem>そう & な & having the appearance of/seeming that & \aux \\
+    <nn>っぽい/ぽい & い & <nn> -ish/-like & \suffix \\
     % & & & \\
     \midrule
     こんな\ruby{風}{ふう}/こういう\ruby{風}{ふう} & な & this kind (closer to speaker) & (こう\ruby{言}{い}う\ruby{風}{ふう}) \\
@@ -288,15 +314,54 @@ Only four colours were recognised as basic colours in ancient Japan: red, blue, 
     \midrule
     かわいい & い & cute/adorable/charming/lovely/pretty & \\
     かっこいい/かっこ\ruby{良}{よ}い & い & cool/attractive/stylish & (\ruby{格好}{かっ|こ}いい/\ruby{格好良}{かっ|こ|よ}い) \\
-    \ruby{綺麗}{き|れい} & な & pretty/beautiful/clean/tidy & \\
+    \ruby{綺麗}{き|れい} & な & pretty/beautiful & \\
     \ruby{美}{うつく}しい & い & beautiful/pretty/lovely/sweet/pure (heart/friendship) & \\
     \ruby{魅力的}{み|りょく|てき} & な & charming/fascinating/attractive & \\
     \ruby{素敵}{す|てき} & な & lovely/wonderful/fantastic/superb/nice/cool & \\
     \ruby{立派}{りっ|ぱ} & な & impressive/praiseworthy/splendid/handsome/well-rounded & \\
+    \ruby{清楚}{せい|そ} & な & neat and clean/tidy/trim & \\
     % & & & \\
     \midrule
     かっこ\ruby{悪}{わ}い & い & unattractive/ugly/unstylish/uncool & \\
     \ruby{醜}{みにく}い & い & ugly/unattractive/unsightly/disgraceful/dishonourable & \\
+    % & & & \\
+    \midrule
+    \midrule
+    きれい & な & clean/tidy & (\ruby{綺麗}{き|れい}) \\
+    %fragrant  & & & \\
+    % & & & \\
+    \midrule
+    \ruby{汚}{きたな}い & い & dirty/filthy/messy/untity/vulgar & \\
+    \ruby{臭}{くさ}い & い & smelly/stinking; suspicious & \\
+    <nn/adj/v>\ruby{臭}{くさ}い & い & smelling of/appearing like & \suffix \\
+    % & & & \\
+    \midrule
+    \midrule
+    \ruby{面白}{おも|しろ}い & い & interesting/fascinating/funny/entertaining & \\
+    おもろい & い & interesting/fascinating/funny/intriguing & slang \\
+    \ruby{珍}{めずら}しい & い & rare/uncommon/unusual/curious/new/fine/precious & \\
+    % & & & \\
+    \midrule
+    ダサい & い & lame/uncool & slang \\
+    \ruby{寒}{さむ}い & い & lame/corny (joke) & \\
+    % & & & \\
+    \midrule
+    \midrule
+    バカ & な & stupid/foolish/ridiculous & (\ruby{馬鹿}{ば|か}) \\
+    アホ & な & foolish/idiotic/simplistic & (\ruby{阿呆}{あ|ほ}) \\
+    % & & & \\
+    \midrule
+    \midrule
+    rich & & & \\
+    \midrule
+    \ruby{貧乏}{びん|ぼう} & な & poor/poverty-stricken & \\
+    % & & & \\
+    \midrule
+    \midrule
+    \ruby{偉}{えら}い & い & respected/great/famous/celebrated/distinguished & also in Table~\ref{tbl:appendix-vocab-adjectives-agreeability} \\
+    % & & & \\
+    \midrule
+    かわいそう & な & pitiful/pathetic & (\ruby{可哀想}{か|わい|そう}/\ruby{可愛}{か|わい}そう) \\
     % & & & \\
     \midrule
     \midrule
@@ -314,33 +379,6 @@ Only four colours were recognised as basic colours in ancient Japan: red, blue, 
     % & & & \\
     \midrule
     \ruby{特別}{とく|べつ} & な & special/particular/extraordinary/exceptional & \\
-    % & & & \\
-    \midrule
-    \midrule
-    \ruby{面白}{おも|しろ}い & い & interesting/fascinating/funny/entertaining & \\
-    \ruby{珍}{めずら}しい & い & rare/uncommon/unusual/curious/new/fine/precious & \\
-    % & & & \\
-    \midrule
-    ダサい & い & lame/uncool & slang \\
-    \ruby{寒}{さむ}い & い & lame/corny (joke) & \\
-    % & & & \\
-    \midrule
-    \midrule
-    バカ & な & stupid/foolish/ridiculous & (\ruby{馬鹿}{ば|か}) \\
-    アホ & な & foolish/idiotic/simplistic & (\ruby{阿呆}{あ|ほ}) \\
-    % & & & \\
-    \midrule
-    \midrule
-    % & & & \\
-    \midrule
-    \ruby{貧乏}{びん|ぼう} & な & poor/poverty-stricken & \\
-    % & & & \\
-    \midrule
-    \midrule
-    \ruby{偉}{えら}い & い & respected/great/famous/celebrated/distinguished & also in Table~\ref{tbl:appendix-vocab-adjectives-agreeability} \\
-    % & & & \\
-    \midrule
-    かわいそう & な & pitiful/pathetic & (\ruby{可哀想}{か|わい|そう}/\ruby{可愛}{か|わい}そう) \\
     % & & & \\
     \bottomrule
 }
@@ -367,16 +405,19 @@ Only four colours were recognised as basic colours in ancient Japan: red, blue, 
     うまい & い & skilful/good & (\ruby{上手}{う|ま}い) \\
     \ruby{上手}{じょう|ず} & な & skilful/proficient/adept & \\
     \ruby{有能}{ゆう|のう} & な & capable/competent/efficient & \\
+    \ruby{強}{つよ}い & い & strong/dependable; competent/skilled; rigid/solid & \\
     % & & & \\
     \midrule
     \ruby{下手}{へ|た} & な & unskilful/poor/awkward & \\
     \ruby{苦手}{にが|て} & な & not very good at & \\
     \ruby{無能}{む|のう} & の & incapable/incompetent/inefficient & \\
+    \ruby{弱}{よわ}い & い & weak/frail/tender; unskilled & \\
     % & & & \\
     \midrule
     \midrule
 
     [お]やすい & い & easy & (\ruby{易}{やす}い) \\
+    <v masu>やすい & い & easy to/likely to/have a tendency to <v masu> & \suffix \\
     \ruby{簡単}{かん|たん} & な & easy/simple & \\
     % & & & \\
     \midrule
@@ -421,6 +462,9 @@ Only four colours were recognised as basic colours in ancient Japan: red, blue, 
     \ruby{気安}{き|やす}い & い & relaxed/familiar/friendly & \\
     % & & & \\
     \midrule
+    うるさい & い & noisy/loud; annoying/persistent & (\ruby{煩}{うるさ}い) \\
+    % & & & \\
+    \midrule
     \midrule
     \ruby{真面目}{ま|じ|め} & な & serious/sober/earnest/grave & \\
     hardworking, lazy... & & & \\
@@ -460,6 +504,30 @@ Only four colours were recognised as basic colours in ancient Japan: red, blue, 
 }
 
 
+\subsubsection{Education and correctness}
+% Help: \SetCell[r=2,c=2]{c,m} <content>, \cmidrule[l]{3-4}
+% Help: colspec: X[ratio, horizontal alignment] columns grow to fit width=\linewidth
+%                  negative ratios: shrink to fit content and may not grow to full ratio
+% Help: colspec: l/c/r columns do not grow
+\longtabse[0.75]  % scale factor
+{Adjectives: education and correctness.}  % caption
+{tbl:appendix-vocab-adjectives-education-and-correctness}  % label
+{}  % outer specification options
+{
+    colspec={X[-3,l]X[-1,c]X[3,l]X[-3,l]},
+    rowhead=1,
+    % width=\linewidth,  % useful only with X columns
+}  % inner specification options
+{
+    \toprule
+    \textbf{Descriptor} & \textbf{Cat.} & \textbf{Meaning} & \textbf{Notes} \\
+    \midrule
+    \ruby{正}{ただ}しい & い & right/correct; proper/lawful & \\
+    % & & & \\
+    \bottomrule
+}
+
+
 \subsubsection{Knowledge, truth and reality}
 % Help: \SetCell[r=2,c=2]{c,m} <content>, \cmidrule[l]{3-4}
 % Help: colspec: X[ratio, horizontal alignment] columns grow to fit width=\linewidth
@@ -486,6 +554,7 @@ Only four colours were recognised as basic colours in ancient Japan: red, blue, 
     おかしい & い & laughable/ridiculous/strange/weird/suspicious & (\ruby[g]{可笑}{おか}しい); also in Table~\ref{tbl:appendix-vocab-adjectives-personalities} \\
     \ruby{怪}{あや}しい & い & suspicious/dubious/dodgy; ominous (weather) & \\
     \ruby{異常}{い|じょう} & な & abnormal/strange & \\
+    \ruby{非常}{ひ|じょう} & な extreme/great/extraordinary/unusual & also a noun \\
     \ruby{不思議}{ふ|し|ぎ} & な & strange/mysterious & \\
     \ruby{信}{しん}じられない & い & unbelievable/incredible & \\
     % & & & \\
@@ -535,7 +604,8 @@ Only four colours were recognised as basic colours in ancient Japan: red, blue, 
     \toprule
     \textbf{Descriptor} & \textbf{Cat.} & \textbf{Meaning} & \textbf{Notes} \\
     \midrule
-    teinei & & & \\
+
+    [ご]\ruby{丁寧}{てい|ねい} & な & polite/courteous/civil; conscientious/thorough/careful & [honorific] \\
     % & & & \\
     \midrule
     \ruby{失礼}{しつ|れい} & な & discourteous/impolite & also a noun \\
@@ -589,7 +659,7 @@ Only four colours were recognised as basic colours in ancient Japan: red, blue, 
     % & & & \\
     \midrule
     \midrule
-    ふわふわ & の & soft/fluffy/spongy & onomatopoeic; also an adverb \\
+    ふわふわ & の & soft/fluffy/spongy & \onomatopoeic; also an adverb \\
     % & & & \\
     \bottomrule
 }
@@ -613,6 +683,7 @@ Only four colours were recognised as basic colours in ancient Japan: red, blue, 
     \toprule
     \textbf{Descriptor} & \textbf{Cat.} & \textbf{Meaning} & \textbf{Notes} \\
     \midrule
+    でかい & い & huge/big/gargantuan & slang \\
     \ruby{大}{おお}きい & い & big/large/great & \\
     すごい & い & vast (in numbers)/to a great extent & (\ruby{凄}{すご}い) \\
     % & & & \\
