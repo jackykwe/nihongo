@@ -39,6 +39,10 @@ while getopts ':df:h' opt; do
   esac
 done
 
+if [ -z "$KIND" ]; then
+  help
+fi
+
 docker build \
   --build-arg COMPILATION_RUNS=$COMPILATION_RUNS \
   --build-arg ADDITIONAL_SUFFIX=$ADDITIONAL_SUFFIX \
