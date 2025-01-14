@@ -1,7 +1,7 @@
 #!/bin/sh
 
 help () {
-    echo "Usage: $(basename $0) [-d] -f {grammar|supplementary|vocabulary}"
+    echo "Usage: $(basename $0) [-d] -f {grammar|g|supplementary|s|vocabulary|v}"
     exit 1
 }
 
@@ -16,11 +16,17 @@ while getopts ':df:h' opt; do
       ;;
     f)
       case "$OPTARG" in
-        grammar|supplementary|vocabulary)
-          KIND=$OPTARG
+        grammar|g)
+          KIND='grammar'
+          ;;
+        supplementary|s)
+          KIND='supplementary'
+          ;;
+        vocabulary|v)
+          KIND='vocabulary'
           ;;
         *)
-          echo "-$OPTARG option can only be one of {grammar|supplementary|vocabulary}."
+          echo "-$OPTARG option can only be one of {grammar|supplementary|vocabulary} or their short forms {g|s|v}."
           help
           ;;
       esac
