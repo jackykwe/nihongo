@@ -1,6 +1,27 @@
 # nihongo
 日本語学習教材
 
+## Conversion from LaTeX to Typst
+
+Files to include: `*.typ`:
+|Find|Replace|
+|---|---|
+|`\\section\{(.*?)\}`|`= $1`|
+|`\\subsection\{(.*?)\}`|`== $1`|
+|`\\subsubsection\{(.*?)\}`|`=== $1`|
+|`\\ruby\{(.*?)\}\{(.*?)\}`|`#ruby[$1][$2]`|
+|`\\ruby\[g\]\{(.*?)\}\{(.*?)\}`|`#rruby[$1][$2]`|
+|`\\href\{(.*?)\}\{(.*?)\}`|`#link("$1")[$2]`|
+|`\\emph\{(.*?)\}`|`_$1_`|
+|`\\textbf\{(.*?)\}`|`*$1*`|
+
+
+<!--
+1. Trigger building of PDFs (depending on what has changed - this requires engineering too, MakeFile?)
+3. If changed PDFs succeed compilation, upload them onto self hosted file system.
+So all pushed (bundles of) commits are published
+-->
+
 ## DOCKER MODE
 To produce the PDFs (does not require you to have LuaLaTeX on your machine):
 1. Install Docker on your machine.

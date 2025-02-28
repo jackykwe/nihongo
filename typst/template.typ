@@ -4,13 +4,13 @@
 // ########### //
 #import "@preview/rubby:0.10.2": get-ruby
 // raw ruby
-#let rruby = get-ruby(
+#let _ruby = get-ruby(
   size: 0.5em, // Ruby font size
   dy: 0pt, // Vertical offset of the ruby
   pos: top, // Ruby position (top or bottom)
 )
 // Self-made ergonomics machinery to pinpoint exactly where rubby mismatches occur :) No more spending ages just finding these
-#let ruby(furigana, kanji) = {
+#let ruby(kanji, furigana) = {
   let kanji_2 = kanji.text.split("")
   let furigana_fragment_count = furigana.text.matches("|").len() + 1
   let kanji_fragment_count = kanji_2.len() - 2
@@ -26,9 +26,25 @@
       ).join(" "),
     )
   }
-  rruby(furigana, kanji_2.join("|").trim("|"))
+  _ruby(furigana, kanji_2.join("|").trim("|"))
 }
-
+#let rruby(kanji, furigana) = {
+  let furigana_fragment_count = furigana.text.matches("|").len() + 1
+  let kanji_fragment_count = kanji.text.split("").len() - 2
+  if furigana_fragment_count != kanji_fragment_count {
+    panic(
+      (
+        "Fragment count ==",
+        str(furigana_fragment_count),
+        "!=",
+        str(kanji_fragment_count),
+        "at",
+        kanji.text,
+      ).join(" "),
+    )
+  }
+  _ruby(furigana, kanji)
+}
 
 // ################# //
 // TIME CALCULATIONS //
@@ -69,7 +85,7 @@
             ]],
           align(right)[#box(width: 100%)[
               #set par(leading: 0.65em)
-              *#ruby[に|ほん|ご|がく|しゅう|きょう|ざい][日本語学習教材]*
+              *#ruby[日本語学習教材][に|ほん|ご|がく|しゅう|きょう|ざい]*
             ]],
         )
         #line(length: 100%)
@@ -95,6 +111,9 @@
     // Allow long tables within figures to be broken across pages
     #show figure: set block(breakable: true)
     #show figure.where(kind: table): set figure.caption(position: top)
+
+    // Links surrounded by red box
+    #show link: link_object => box(outset: 0.25em, stroke: 1pt + rgb("#ff413655"))[#link_object]
 
     #doc
   ]

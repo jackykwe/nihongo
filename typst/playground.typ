@@ -5,12 +5,14 @@
 
 = Japanese support
 
-#text(blue)[#ruby[とう|きょう|こう|ぎょう|だい|がく][東京工業大学]] *#ruby[とう|きょう|こう|ぎょう|だい|がく][東京工業大学]* #ruby[とう|きょう|こう|ぎょう|だい|がく][東京工業大学] #ruby[とう|きょう|こう|ぎょう|だい|がく][東京工業大学] #ruby[とう|きょう|こう|ぎょう|だい|がく][東京工業大学] #ruby[とう|きょう|こう|ぎょう|だい|がく][東京工業大学] #ruby[とう|きょう|こう|ぎょう|だい|がく][東京工業大学] #ruby[とう|きょう|こう|ぎょう|だい|がく][東京工業大学] #ruby[とう|きょう|こう|ぎょう|だい|がく][東京工業大学]
+#text(blue)[#ruby[東京工業大学][とう|きょう|こう|ぎょう|だい|がく]] *#ruby[東京工業大学][とう|きょう|こう|ぎょう|だい|がく]* #ruby[東京工業大学][とう|きょう|こう|ぎょう|だい|がく] #ruby[東京工業大学][とう|きょう|こう|ぎょう|だい|がく] #ruby[東京工業大学][とう|きょう|こう|ぎょう|だい|がく] #ruby[東京工業大学][とう|きょう|こう|ぎょう|だい|がく] #ruby[東京工業大学][とう|きょう|こう|ぎょう|だい|がく] #ruby[東京工業大学][とう|きょう|こう|ぎょう|だい|がく] #ruby[東京工業大学][とう|きょう|こう|ぎょう|だい|がく]
 
-#rruby[いちまん|こ][１００００|個].
+#_ruby[いちまん|こ][１００００|個].
 
 // Ruby goes first, base text - second.
-#ruby[ふ|り|が|な][振り仮名]. Treat each kanji as a separate word: #ruby[とう|きょう|こう|ぎょう|だい|がく][東京工業大学]. #ruby[ふ|り|が|な][振り仮名]. #ruby[ふ|り|が|な][振り仮名]. Treat each kanji as a separate word: #ruby[とう|きょう|こう|ぎょう|だい|がく][東京工業大学]. #ruby[ふ|り|が|な][振り仮名]. #ruby[ふ|り|が|な][振り仮名]. Treat each kanji as a separate word: #ruby[とう|きょう|こう|ぎょう|だい|がく][東京工業大学]. #ruby[ふ|り|が|な][振り仮名]. #ruby[ふ|り|が|な][振り仮名]. Treat each kanji as a separate word: #ruby[とう|きょう|こう|ぎょう|だい|がく][東京工業大学]. #ruby[ふ|り|が|な][振り仮名]. #ruby[ふ|り|が|な][振り仮名]. Treat each kanji as a separate word: #ruby[とう|きょう|こう|ぎょう|だい|がく][東京工業大学]. #ruby[ふ|り|が|な][振り仮名]. #ruby[ふ|り|が|な][振り仮名]. Treat each kanji as a separate word: #ruby[とう|きょう|こう|ぎょう|だい|がく][東京工業大学]. #ruby[ふ|り|が|な][振り仮名]. #ruby[ふ|り|が|な][振り仮名]. Treat each kanji as a separate word: #ruby[とう|きょう|こう|ぎょう|だい|がく][東京工業大学]. #ruby[ふ|り|が|な][振り仮名].
+#ruby[振り仮名][ふ|り|が|な]. Treat each kanji as a separate word: #ruby[東京工業大学][とう|きょう|こう|ぎょう|だい|がく]. #ruby[振り仮名][ふ|り|が|な]. #ruby[振り仮名][ふ|り|が|な]. Treat each kanji as a separate word: #ruby[東京工業大学][とう|きょう|こう|ぎょう|だい|がく]. #ruby[振り仮名][ふ|り|が|な]. #ruby[振り仮名][ふ|り|が|な]. Treat each kanji as a separate word: #ruby[東京工業大学][とう|きょう|こう|ぎょう|だい|がく]. #ruby[振り仮名][ふ|り|が|な]. #ruby[振り仮名][ふ|り|が|な]. Treat each kanji as a separate word: #ruby[東京工業大学][とう|きょう|こう|ぎょう|だい|がく]. #ruby[振り仮名][ふ|り|が|な]. #ruby[振り仮名][ふ|り|が|な]. Treat each kanji as a separate word: #ruby[東京工業大学][とう|きょう|こう|ぎょう|だい|がく]. #ruby[振り仮名][ふ|り|が|な]. #ruby[振り仮名][ふ|り|が|な]. Treat each kanji as a separate word: #ruby[東京工業大学][とう|きょう|こう|ぎょう|だい|がく]. #ruby[振り仮名][ふ|り|が|な]. #ruby[振り仮名][ふ|り|が|な]. Treat each kanji as a separate word: #ruby[東京工業大学][とう|きょう|こう|ぎょう|だい|がく]. #ruby[振り仮名][ふ|り|が|な].
+
+#link("https://google.com")[Google].
 
 #exception[WHAT]
 
@@ -18,15 +20,15 @@
 
 = Table factory
 
-See @table-a.
+See @tbl:asdf-asdf.
 
 // @typstyle off
 #verb_table(
   "Making progress :)",
-  "table-a",
-  [-], [], [], [], [#ruby[うご][動]く], [う], [to move; to stir/shift/shake/swing; to be influenced], [],
+  "tbl:asdf-asdf",
+  [-], [], [], [], [#ruby[動][うご]く], [う], [to move; to stir/shift/shake/swing; to be influenced], [],
   thickhline,
-  [#ruby[うご][動]かす/#ruby[うご][動]かす/#ruby[うご][動]かす/#ruby[うご][動]かす], [う], [to move/shift/stir/budge/change position; to inspire/mobilise/deploy], [], [#ruby[うご][動]く], [う], [to move; to stir/shift/shake/swing; to be influenced], [],
-  [#ruby[うご][動]かす], [う], [to move/shift/stir/budge/change position; to inspire/mobilise/deploy], [], [#ruby[うご][動]く], [う], [to move; to stir/shift/shake/swing; to be influenced], [],
-  [#ruby[うご][動]かす], [う], [to move/shift/stir/budge/change position; to inspire/mobilise/deploy], [], [#ruby[うご][動]かす], [う], [to move/shift/stir/budge/change position; to inspire/mobilise/deploy], [],
+  [#ruby[動][うご]かす/#ruby[動][うご]かす/#ruby[動][うご]かす/#ruby[動][うご]かす], [う], [to move/shift/stir/budge/change position; to inspire/mobilise/deploy], [], [#ruby[動][うご]く], [う], [to move; to stir/shift/shake/swing; to be influenced], [],
+  [#ruby[動][うご]かす], [う], [to move/shift/stir/budge/change position; to inspire/mobilise/deploy], [], [#ruby[動][うご]く], [う], [to move; to stir/shift/shake/swing; to be influenced], [],
+  [#ruby[動][うご]かす], [う], [to move/shift/stir/budge/change position; to inspire/mobilise/deploy], [], [#ruby[動][うご]かす], [う], [to move/shift/stir/budge/change position; to inspire/mobilise/deploy], [],
 )
