@@ -65,7 +65,7 @@
               kung.jwe\@gmail.com
             ]],
           align(center)[#box(width: 100%)[
-              #_get_now()
+              #text(fill: gray)[#_get_now()]
             ]],
           align(right)[#box(width: 100%)[
               #set par(leading: 0.65em)
