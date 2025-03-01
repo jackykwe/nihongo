@@ -7,7 +7,7 @@
 
 
 == Greetings
-% Help: \SetCell[r=2,c=2]{c,m} <content>, \cmidrule[l]{3-4}
+% Help: \SetCell[r=2,c=2]{c,m} \<content\>, \cmidrule[l]{3-4}
 % Help: colspec: X[ratio, horizontal alignment] columns grow to fit width=\linewidth
 % negative ratios: shrink to fit content and may not grow to full ratio
 % Help: colspec: l/c/r columns do not grow
@@ -36,7 +36,7 @@ rowhead=1,
 \midrule
 はじめまして & nice to meet you/glad to make your acquaintance/how do you do & (#ruby[始][はじ]めまして) \\
 お#ruby[変][か]わりありませんか & (after some time apart) how have you been?/nothing untoward has happened, has it? & polite \\
-{よろしくお#ruby[願][ねが]いします\\よろしくお#ruby[願][ねが]いいたします} & I look forward to working with you/please remember me/please treat me favourably/please help me & (#ruby[宜][よろ]しくお#ruby[願][ねが]い\{します/#ruby[致][いた]します\}); polite; also in Table~\ref{tbl:appendix-vocab-interjections-and-expressions-exclamations} \\
+{よろしくお#ruby[願][ねが]いします\\よろしくお#ruby[願][ねが]いいたします} & I look forward to working with you/please remember me/please treat me favourably/please help me & (#ruby[宜][よろ]しくお#ruby[願][ねが]い\{します/#ruby[致][いた]します\}); polite; also in @tbl:appendix-vocab-interjections-and-expressions-exclamations \\
 % & & \\
 \midrule
 \midrule
@@ -52,7 +52,7 @@ rowhead=1,
 こいつ & hey, you!/you bastard!/damn you! & derogatory \\
 % & & \\
 \midrule
-お#ruby[邪魔][じゃ|ま]します & please excuse my intrusion/I'm coming in (``I'm intruding'') & \\
+お#ruby[邪魔][じゃ|ま]します & please excuse my intrusion/I'm coming in ("I'm intruding") & \\
 #ruby[失礼][しつ|れい]します & excuse me/I'm sorry/I'm coming in (``I'm being rude') & polite \\
 % & & \\
 \midrule
@@ -66,14 +66,14 @@ rowhead=1,
 #ruby[行][い]ってくる & I'm off/see you later & \\
 #ruby[行][い]ってきます & I'm off/see you later & \\
 いってらっしゃい & have a good day/take care/see you (often in response to #ruby[行][い]ってきます) & (#ruby[行][い]ってらっしゃい) \\
-お#ruby[邪魔][じゃ|ま]しました & please excuse my intrusion/I'm leaving (``I intruded'') & \\
-#ruby[失礼][しつ|れい]しました & excuse me/I'm sorry/I'm leaving (``I was rude'') & polite \\
+お#ruby[邪魔][じゃ|ま]しました & please excuse my intrusion/I'm leaving ("I intruded") & \\
+#ruby[失礼][しつ|れい]しました & excuse me/I'm sorry/I'm leaving ("I was rude") & polite \\
 お#ruby[先][さき]に#ruby[失礼][しつ|れい]します & pardon me for leaving first (before everyone else still present) & \\
 % & & \\
 \midrule
 \midrule
 ようこそ & welcome & \\
-いらっしゃい & welcome & honorific; also in Table~\ref{tbl:appendix-vocab-interjections-and-expressions-exclamations} \\
+いらっしゃい & welcome & honorific; also in @tbl:appendix-vocab-interjections-and-expressions-exclamations \\
 いらっしゃいませ & welcome (in shops and restaurants) & \\
 お#ruby[待][ま]たせしました & thank you for waiting/sorry to have kept you waiting & polite \\
 いただきます & thank you for the meal (just served); I receive (this meal) & (#ruby[頂][いただ]きます) \\
@@ -86,7 +86,7 @@ rowhead=1,
 == Exclamations
 _Read the main article for apologies on #link("https://www.clozemaster.com/blog/sorry-in-japanese/")[CM]._
 
-% Help: \SetCell[r=2,c=2]{c,m} <content>, \cmidrule[l]{3-4}
+% Help: \SetCell[r=2,c=2]{c,m} \<content\>, \cmidrule[l]{3-4}
 % Help: colspec: X[ratio, horizontal alignment] columns grow to fit width=\linewidth
 % negative ratios: shrink to fit content and may not grow to full ratio
 % Help: colspec: l/c/r columns do not grow
@@ -107,7 +107,7 @@ rowhead=1,
 うん & yes/yeah/mhmm & \\
 ふむふむ & hmm/uh-huh; murmur indicating approval/comprehension & slang \\
 イエス & yes & \\
-そう/そうだ/[そうです/そうでございます] & that's right/indeed (reference to something that was said/done) & e.g.\ 「そうだよ」、「そうです」, [polite] \\
+そう/そうだ/[そうです/そうでございます] & that's right/indeed (reference to something that was said/done) & e.g. 「そうだよ」、「そうです」, [polite] \\
 そうそう[\dots] & that's right/indeed/that's it (reference to something that was said/done) & casual \\
 そうそう & oh, yes!/that's it/indeed/I remember & \\
 そういえば & now that you mention it/that reminds me/speaking of which & \\
@@ -126,10 +126,10 @@ rowhead=1,
 \midrule
 お#ruby[願][ねが]い[します] & please & [humble] \\
 #ruby[頼][たの]む & please/please do & slang, also a verb \\
-{よろしくお#ruby[願][ねが]いします\\よろしくお#ruby[願][ねが]いいたします} & please do/please take care of & (#ruby[宜][よろ]しくお#ruby[願][ねが]い\{します/#ruby[致][いた]します\}); polite; also in Table~\ref{tbl:appendix-vocab-interjections-and-expressions-greetings} \\
-(お/ご<nn>)/<v-te>ください & please do for me & honorific \\
+{よろしくお#ruby[願][ねが]いします\\よろしくお#ruby[願][ねが]いいたします} & please do/please take care of & (#ruby[宜][よろ]しくお#ruby[願][ねが]い\{します/#ruby[致][いた]します\}); polite; also in @tbl:appendix-vocab-interjections-and-expressions-greetings \\
+(お/ご\<nn\>)/\<v-te\>ください & please do for me & honorific \\
 ください & please give me (imperative of くださる) & (#ruby[下][くだ]さい); honorific \\
-いらっしゃい & please come/go/stay (polite imperative) & also in Table~\ref{tbl:appendix-vocab-interjections-and-expressions-greetings} \\
+いらっしゃい & please come/go/stay (polite imperative) & also in @tbl:appendix-vocab-interjections-and-expressions-greetings \\
 もしよかったら & if you don't mind/if you like/if you're interested & (もし#ruby[良][よ]かったら) \\
 % & & \\
 \midrule
@@ -159,7 +159,7 @@ rowhead=1,
 なんてこった & what the hell/oh great!/son of a X/holy mackerel/oh no!/holy cow!/damn! & \\
 なんでよ & why? why not? what's wrong? & \\
 どうしたの & what's the matter?/what's wrong? & \\
-<nn>\{を/は\}どうしたの & what happened to <nn>?/what have you done with <nn>? & \\
+\<nn\>\{を/は\}どうしたの & what happened to \<nn\>?/what have you done with \<nn\>? & \\
 % & & \\
 \midrule
 どうしよう & what to do & \\
@@ -191,19 +191,19 @@ rowhead=1,
 ごめんなさい & I'm sorry/excuse me/pardon me & (#ruby[御免][ご|めん]なさい); semi-formal \\
 #ruby[許][ゆり]してください & please forgive me & (#ruby[許][ゆり]して#ruby[下][くだ]さい); honorific, semi-formal \\
 お#ruby[許][ゆり]しください & please forgive me & (お#ruby[許][ゆり]し#ruby[下][くだ]さい); honorific, formal \\
-\{#ruby[反省][はん|せい]/#ruby[後悔][こう|かい]\}しています & I'm sorry (``I am regretful'') & (\{#ruby[反省][はん|せい],#ruby[後悔][こう|かい]\}して#ruby[居][い]ます); semi-formal \\
-\{#ruby[反省][はん|せい]/#ruby[後悔][こう|かい]\}しております & I'm sorry (``I am regretful'') & (\{#ruby[反省][はん|せい],#ruby[後悔][こう|かい]\}して#ruby[居][お]ります); humble, formal \\
-#ruby[謝罪][しゃ|ざい]いたします & I'm sorry (esp.\ in written apology) (``I perform apology'') & (#ruby[謝罪][しゃ|ざい]#ruby[致][いた]します); humble, formal \\
-お#ruby[詫][わ]びいたします & I'm sorry (``I perform apology'') & (お#ruby[詫][わ]び#ruby[致][いた]します); humble, formal \\
-お#ruby[詫][わ]び#ruby[申][もう]し#ruby[上][あ]げます & I'm sorry (``I offer my apology'') & humble, formal \\
-#ruby[申][もう]し#ruby[訳][わけ]ない & I'm sorry/it's inexcusable (``excuse does not exist'') & semi-polite \\
-#ruby[申][もう]し#ruby[訳][わけ]\{ございません/ありません\} & I'm sorry/it's inexcusable (``excuse does not exist'') & polite \\
+\{#ruby[反省][はん|せい]/#ruby[後悔][こう|かい]\}しています & I'm sorry ("I am regretful") & (\{#ruby[反省][はん|せい],#ruby[後悔][こう|かい]\}して#ruby[居][い]ます); semi-formal \\
+\{#ruby[反省][はん|せい]/#ruby[後悔][こう|かい]\}しております & I'm sorry ("I am regretful") & (\{#ruby[反省][はん|せい],#ruby[後悔][こう|かい]\}して#ruby[居][お]ります); humble, formal \\
+#ruby[謝罪][しゃ|ざい]いたします & I'm sorry (esp. in written apology) ("I perform apology") & (#ruby[謝罪][しゃ|ざい]#ruby[致][いた]します); humble, formal \\
+お#ruby[詫][わ]びいたします & I'm sorry ("I perform apology") & (お#ruby[詫][わ]び#ruby[致][いた]します); humble, formal \\
+お#ruby[詫][わ]び#ruby[申][もう]し#ruby[上][あ]げます & I'm sorry ("I offer my apology") & humble, formal \\
+#ruby[申][もう]し#ruby[訳][わけ]ない & I'm sorry/it's inexcusable ("excuse does not exist") & semi-polite \\
+#ruby[申][もう]し#ruby[訳][わけ]\{ございません/ありません\} & I'm sorry/it's inexcusable ("excuse does not exist") & polite \\
 % & & \\
 \midrule
 すまん/すいません/[すみません] & excuse me/pardon me/I'm sorry (general/for the inconvenience) & (#ruby[済][す]みません); [polite] \\
 #ruby[済][す]まない & excuse me/I'm sorry & also an adjective \\
 #ruby[失礼][しつ|れい]しました & I'm sorry/excuse me/my apologies (general/for the inconvenience) & polite \\
-ご#ruby[迷惑][めい|わく]をおかけして#ruby[申][もう]し#ruby[訳][わけ]ございません & We apologise for any inconvenience this may cause (common email/announcement-end greeting) (``I have no excuse for causing you this trouble.'') & polite, formal \\
+ご#ruby[迷惑][めい|わく]をおかけして#ruby[申][もう]し#ruby[訳][わけ]ございません & We apologise for any inconvenience this may cause (common email/announcement-end greeting) ("I have no excuse for causing you this trouble.") & polite, formal \\
 % & & \\
 \midrule
 \midrule
@@ -216,7 +216,7 @@ rowhead=1,
 \midrule
 どういたしまして & you're welcome/don't mention it/not at all/my pleasure & (どう#ruby[致][いた]しまして) \\
 とんでもない & it was no bother at all/not at all/don't mention it & \\
-こちらこそ & it is I who should say so & also in Table~\ref{tbl:appendix-vocab-nouns-pronouns-and-question-words} \\
+こちらこそ & it is I who should say so & also in @tbl:appendix-vocab-nouns-pronouns-and-question-words \\
 #ruby[気][き]にするな & don't worry about it/nevermind & \\
 #ruby[気][き]にしないで & don't worry about it/forget about it & \\
 お#ruby[安][や]い#ruby[御用][ご|よう] & no problem/easy task & \\
@@ -305,7 +305,7 @@ rowhead=1,
 \midrule
 \midrule
 #ruby[以上][い|じょう] & that's all & \\
-これ#ruby[以上][い|じょう] & any more/anymore/any further/any better/any longer (usu.\ with negative sentence) & \\
+これ#ruby[以上][い|じょう] & any more/anymore/any further/any better/any longer (usu. with negative sentence) & \\
 % & & \\
 \midrule
 \midrule
@@ -318,14 +318,14 @@ rowhead=1,
 % & & \\
 \midrule
 \midrule
-#ruby[屁][へ]をひって#ruby[尻][しり]#ruby[窄][つぼ]め & there is no use shutting the stable door after the horse has bolted (``squeezing your buttocks after you have farted'') & \\
+#ruby[屁][へ]をひって#ruby[尻][しり]#ruby[窄][つぼ]め & there is no use shutting the stable door after the horse has bolted ("squeezing your buttocks after you have farted") & \\
 % & & \\
 \bottomrule
 }
 
 
 == Sentence builders
-% Help: \SetCell[r=2,c=2]{c,m} <content>, \cmidrule[l]{3-4}
+% Help: \SetCell[r=2,c=2]{c,m} \<content\>, \cmidrule[l]{3-4}
 % Help: colspec: X[ratio, horizontal alignment] columns grow to fit width=\linewidth
 % negative ratios: shrink to fit content and may not grow to full ratio
 % Help: colspec: l/c/r columns do not grow
@@ -342,14 +342,14 @@ rowhead=1,
 \toprule
 *Interjection* & *Meaning* & *Notes* \\
 \midrule
-<basis>からすると & judging from/on the basis of/from the point of view of & \\
-<basis>からしたら & judging from/on the basis of/from the point of view of & \\
-<basis>からすれば & judging from/on the basis of/from the point of view of & \\
+\<basis\>からすると & judging from/on the basis of/from the point of view of & \\
+\<basis\>からしたら & judging from/on the basis of/from the point of view of & \\
+\<basis\>からすれば & judging from/on the basis of/from the point of view of & \\
 % & & \\
 \midrule
 \midrule
-<about>ついて & about/concerning/regarding/as for <about> & (#ruby[就][つ]いて) \\
-<about>について & concerning/regarding <about> & (に#ruby[就][つ]いて) \\
+\<about\>ついて & about/concerning/regarding/as for \<about\> & (#ruby[就][つ]いて) \\
+\<about\>について & concerning/regarding \<about\> & (に#ruby[就][つ]いて) \\
 #ruby[詳][くわ]しくは & for more details/further information\dots & \\
 % & & \\
 \midrule

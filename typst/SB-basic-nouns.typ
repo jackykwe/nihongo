@@ -3,10 +3,10 @@
 \appendix
 \setcounter{section}{1}
 
-= Basic nouns \label{sec:appendix-basic-nouns}
+= Basic nouns <sec:appendix-basic-nouns>
 
 == Numbers
-% Help: \SetCell[r=2,c=2]{c,m} <content>, \cmidrule[l]{3-4}
+% Help: \SetCell[r=2,c=2]{c,m} \<content\>, \cmidrule[l]{3-4}
 % Help: colspec: X[ratio, horizontal alignment] columns grow to fit width=\linewidth
 %                  negative ratios: shrink to fit content and may not grow to full ratio
 % Help: colspec: l/c/r columns do not grow
@@ -81,7 +81,7 @@
 
 
 == Counting (generic): つ
-% Help: \SetCell[r=2,c=2]{c,m} <content>, \cmidrule[l]{3-4}
+% Help: \SetCell[r=2,c=2]{c,m} \<content\>, \cmidrule[l]{3-4}
 % Help: colspec: X[ratio, horizontal alignment] columns grow to fit width=\linewidth
 %                  negative ratios: shrink to fit content and may not grow to full ratio
 % Help: colspec: l/c/r columns do not grow
@@ -124,7 +124,7 @@
 == Counting people: \ruby{人{にん}}
 #link("https://www.tofugu.com/japanese/japanese-counter-nin/")[\hl{Tofugu: TO READ]}
 
-% Help: \SetCell[r=2,c=2]{c,m} <content>, \cmidrule[l]{3-4}
+% Help: \SetCell[r=2,c=2]{c,m} \<content\>, \cmidrule[l]{3-4}
 % Help: colspec: X[ratio, horizontal alignment] columns grow to fit width=\linewidth
 %                  negative ratios: shrink to fit content and may not grow to full ratio
 % Help: colspec: l/c/r columns do not grow
@@ -166,7 +166,7 @@
 
 == Counting bus/train stations: \ruby{駅{えき}}
 
-% Help: \SetCell[r=2,c=2]{c,m} <content>, \cmidrule[l]{3-4}
+% Help: \SetCell[r=2,c=2]{c,m} \<content\>, \cmidrule[l]{3-4}
 % Help: colspec: X[ratio, horizontal alignment] columns grow to fit width=\linewidth
 %                  negative ratios: shrink to fit content and may not grow to full ratio
 % Help: colspec: l/c/r columns do not grow
@@ -205,7 +205,7 @@
 == Counting age: \ruby{歳{さい}}
 #ruby[才][さい] may be used as a simpler substitute for #ruby[歳][さい] only in handwriting, but note that #ruby[才][さい] is technically incorrect as it does not mean age (#link("https://ja.hinative.com/questions/19557790")[[HN]]).
 
-% Help: \SetCell[r=2,c=2]{c,m} <content>, \cmidrule[l]{3-4}
+% Help: \SetCell[r=2,c=2]{c,m} \<content\>, \cmidrule[l]{3-4}
 % Help: colspec: X[ratio, horizontal alignment] columns grow to fit width=\linewidth
 %                  negative ratios: shrink to fit content and may not grow to full ratio
 % Help: colspec: l/c/r columns do not grow
@@ -223,7 +223,7 @@
     & *Name* & *Meaning* & *Notes* \\
     \midrule
     & #ruby[何歳][なん|さい] & how old? & \\
-    \textlegacybullet & #ruby[１歳未満][いっ|さい|み|まん] & less than one year old & e.g.\ 「〜の#ruby[乳児][にゅう|じ]」; #link("https://www.nhk.or.jp/bunken/summary/kotoba/gimon/062.html")[[NHK]] \\
+    \textlegacybullet & #ruby[１歳未満][いっ|さい|み|まん] & less than one year old & e.g. 「〜の#ruby[乳児][にゅう|じ]」; #link("https://www.nhk.or.jp/bunken/summary/kotoba/gimon/062.html")[[NHK]] \\
     \textlegacybullet & #ruby[１歳][いっ|さい] & one year old  & \\
     & #ruby[２歳][に|さい] & two year old  & \\
     & #ruby[３歳][さん|さい] & three years old  & \\
@@ -246,7 +246,7 @@
 == Counting thin/flat things: \ruby{枚{まい}}
 #link("https://www.tofugu.com/japanese/japanese-counter-mai/")[\hl{Tofugu: TO READ]}
 
-% Help: \SetCell[r=2,c=2]{c,m} <content>, \cmidrule[l]{3-4}
+% Help: \SetCell[r=2,c=2]{c,m} \<content\>, \cmidrule[l]{3-4}
 % Help: colspec: X[ratio, horizontal alignment] columns grow to fit width=\linewidth
 %                  negative ratios: shrink to fit content and may not grow to full ratio
 % Help: colspec: l/c/r columns do not grow
@@ -287,7 +287,7 @@
 
 bottles/trains/buses/books/films/phone calls
 
-% Help: \SetCell[r=2,c=2]{c,m} <content>, \cmidrule[l]{3-4}
+% Help: \SetCell[r=2,c=2]{c,m} \<content\>, \cmidrule[l]{3-4}
 % Help: colspec: X[ratio, horizontal alignment] columns grow to fit width=\linewidth
 %                  negative ratios: shrink to fit content and may not grow to full ratio
 % Help: colspec: l/c/r columns do not grow
@@ -324,7 +324,7 @@ bottles/trains/buses/books/films/phone calls
 
 
 == Counting drinks (cups/glasses): \ruby{杯{はい}}
-% Help: \SetCell[r=2,c=2]{c,m} <content>, \cmidrule[l]{3-4}
+% Help: \SetCell[r=2,c=2]{c,m} \<content\>, \cmidrule[l]{3-4}
 % Help: colspec: X[ratio, horizontal alignment] columns grow to fit width=\linewidth
 %                  negative ratios: shrink to fit content and may not grow to full ratio
 % Help: colspec: l/c/r columns do not grow
@@ -363,7 +363,7 @@ bottles/trains/buses/books/films/phone calls
 == Counting machines/vehicles: \ruby{台{だい}}
 #link("https://www.tofugu.com/japanese/japanese-counter-dai/")[\hl{Tofugu: TO READ]}
 
-% Help: \SetCell[r=2,c=2]{c,m} <content>, \cmidrule[l]{3-4}
+% Help: \SetCell[r=2,c=2]{c,m} \<content\>, \cmidrule[l]{3-4}
 % Help: colspec: X[ratio, horizontal alignment] columns grow to fit width=\linewidth
 %                  negative ratios: shrink to fit content and may not grow to full ratio
 % Help: colspec: l/c/r columns do not grow
@@ -402,7 +402,7 @@ bottles/trains/buses/books/films/phone calls
 == Counting books: \ruby{冊{さつ}}
 #link("https://www.tofugu.com/japanese/japanese-counter-satsu/")[\hl{Tofugu: TO READ]}
 
-% Help: \SetCell[r=2,c=2]{c,m} <content>, \cmidrule[l]{3-4}
+% Help: \SetCell[r=2,c=2]{c,m} \<content\>, \cmidrule[l]{3-4}
 % Help: colspec: X[ratio, horizontal alignment] columns grow to fit width=\linewidth
 %                  negative ratios: shrink to fit content and may not grow to full ratio
 % Help: colspec: l/c/r columns do not grow
@@ -439,7 +439,7 @@ bottles/trains/buses/books/films/phone calls
 
 
 == Counting clothes: \ruby{着{ちゃく}}
-% Help: \SetCell[r=2,c=2]{c,m} <content>, \cmidrule[l]{3-4}
+% Help: \SetCell[r=2,c=2]{c,m} \<content\>, \cmidrule[l]{3-4}
 % Help: colspec: X[ratio, horizontal alignment] columns grow to fit width=\linewidth
 %                  negative ratios: shrink to fit content and may not grow to full ratio
 % Help: colspec: l/c/r columns do not grow
@@ -478,7 +478,7 @@ bottles/trains/buses/books/films/phone calls
 == Counting small things: \ruby{個{こ}}
 #link("https://www.tofugu.com/japanese/japanese-counter-ko/")[\hl{Tofugu: TO READ]}
 
-% Help: \SetCell[r=2,c=2]{c,m} <content>, \cmidrule[l]{3-4}
+% Help: \SetCell[r=2,c=2]{c,m} \<content\>, \cmidrule[l]{3-4}
 % Help: colspec: X[ratio, horizontal alignment] columns grow to fit width=\linewidth
 %                  negative ratios: shrink to fit content and may not grow to full ratio
 % Help: colspec: l/c/r columns do not grow
@@ -512,14 +512,14 @@ bottles/trains/buses/books/films/phone calls
     % & & & \\
     \midrule
     \midrule
-    #ruby[個々][こ|こ] & individual & e.g.\ 「そのクラスの個々のメンバー\dots」, like CN's 个个 \\
+    #ruby[個々][こ|こ] & individual & e.g. 「そのクラスの個々のメンバー\dots」, like CN's 个个 \\
     % & & & \\
     \bottomrule
 }
 
 
 == Counting shoes and socks: \ruby{足{そく}}
-% Help: \SetCell[r=2,c=2]{c,m} <content>, \cmidrule[l]{3-4}
+% Help: \SetCell[r=2,c=2]{c,m} \<content\>, \cmidrule[l]{3-4}
 % Help: colspec: X[ratio, horizontal alignment] columns grow to fit width=\linewidth
 %                  negative ratios: shrink to fit content and may not grow to full ratio
 % Help: colspec: l/c/r columns do not grow
@@ -558,7 +558,7 @@ bottles/trains/buses/books/films/phone calls
 == Counting houses: \ruby{軒{けん}}
 \hl{UNSURE TERRITORY, exceptions of exceptions popping out!}
 
-% Help: \SetCell[r=2,c=2]{c,m} <content>, \cmidrule[l]{3-4}
+% Help: \SetCell[r=2,c=2]{c,m} \<content\>, \cmidrule[l]{3-4}
 % Help: colspec: X[ratio, horizontal alignment] columns grow to fit width=\linewidth
 %                  negative ratios: shrink to fit content and may not grow to full ratio
 % Help: colspec: l/c/r columns do not grow
@@ -597,7 +597,7 @@ bottles/trains/buses/books/films/phone calls
 == Counting floors: \ruby{階{かい}}
 #link("https://www.tofugu.com/japanese/japanese-counter-kai-floors/")[\hl{Tofugu: TO READ]}
 
-% Help: \SetCell[r=2,c=2]{c,m} <content>, \cmidrule[l]{3-4}
+% Help: \SetCell[r=2,c=2]{c,m} \<content\>, \cmidrule[l]{3-4}
 % Help: colspec: X[ratio, horizontal alignment] columns grow to fit width=\linewidth
 %                  negative ratios: shrink to fit content and may not grow to full ratio
 % Help: colspec: l/c/r columns do not grow
@@ -637,7 +637,7 @@ bottles/trains/buses/books/films/phone calls
 == Counting locations: \ruby{箇所{か|しょ}}
 #ruby[箇所][か|しょ] is sometimes written as ヶ所.
 
-% Help: \SetCell[r=2,c=2]{c,m} <content>, \cmidrule[l]{3-4}
+% Help: \SetCell[r=2,c=2]{c,m} \<content\>, \cmidrule[l]{3-4}
 % Help: colspec: X[ratio, horizontal alignment] columns grow to fit width=\linewidth
 %                  negative ratios: shrink to fit content and may not grow to full ratio
 % Help: colspec: l/c/r columns do not grow
@@ -676,7 +676,7 @@ bottles/trains/buses/books/films/phone calls
 == Counting small animals: \ruby{匹{ひき}}
 #link("https://www.tofugu.com/japanese/japanese-counter-hiki/")[\hl{Tofugu: TO READ]}
 
-% Help: \SetCell[r=2,c=2]{c,m} <content>, \cmidrule[l]{3-4}
+% Help: \SetCell[r=2,c=2]{c,m} \<content\>, \cmidrule[l]{3-4}
 % Help: colspec: X[ratio, horizontal alignment] columns grow to fit width=\linewidth
 %                  negative ratios: shrink to fit content and may not grow to full ratio
 % Help: colspec: l/c/r columns do not grow
@@ -715,7 +715,7 @@ bottles/trains/buses/books/films/phone calls
 == Counting big animals: \ruby{頭{とう}}
 #link("https://www.tofugu.com/japanese/japanese-counter-tou/")[\hl{Tofugu: TO READ]}
 
-% Help: \SetCell[r=2,c=2]{c,m} <content>, \cmidrule[l]{3-4}
+% Help: \SetCell[r=2,c=2]{c,m} \<content\>, \cmidrule[l]{3-4}
 % Help: colspec: X[ratio, horizontal alignment] columns grow to fit width=\linewidth
 %                  negative ratios: shrink to fit content and may not grow to full ratio
 % Help: colspec: l/c/r columns do not grow
@@ -755,11 +755,11 @@ bottles/trains/buses/books/films/phone calls
 == Counting birds and bats: \ruby{羽{わ}}
 _Read the main article on #link("https://www.tofugu.com/japanese/japanese-counter-wa/")[Tofugu]._
 
-% Be careful: many winged animals don't use the 羽 counter: flying insects, winged monsters, and flying dinosaurs all use #ruby[匹][ひき] (Table~\ref{tbl:appendix-vocab-basic-nouns-counting-small-animals}) or #ruby[頭][とう] (Table~\ref{tbl:appendix-vocab-basic-nouns-counting-big-animals}).
+% Be careful: many winged animals don't use the 羽 counter: flying insects, winged monsters, and flying dinosaurs all use #ruby[匹][ひき] (@tbl:appendix-vocab-basic-nouns-counting-small-animals) or #ruby[頭][とう] (@tbl:appendix-vocab-basic-nouns-counting-big-animals).
 
-All birds are counted with #ruby[羽][わ] except _very_ big birds like ostriches and emus, those use #ruby[頭][とう] (Table~\ref{tbl:appendix-vocab-basic-nouns-counting-big-animals}).
+All birds are counted with #ruby[羽][わ] except _very_ big birds like ostriches and emus, those use #ruby[頭][とう] (@tbl:appendix-vocab-basic-nouns-counting-big-animals).
 
-% Help: \SetCell[r=2,c=2]{c,m} <content>, \cmidrule[l]{3-4}
+% Help: \SetCell[r=2,c=2]{c,m} \<content\>, \cmidrule[l]{3-4}
 % Help: colspec: X[ratio, horizontal alignment] columns grow to fit width=\linewidth
 %                  negative ratios: shrink to fit content and may not grow to full ratio
 % Help: colspec: l/c/r columns do not grow
@@ -798,7 +798,7 @@ All birds are counted with #ruby[羽][わ] except _very_ big birds like ostriche
 == Counting years: \ruby{年{ねん}}
 #link("https://www.tofugu.com/japanese/japanese-counters-nen/")[\hl{Tofugu: TO READ]}
 
-% Help: \SetCell[r=2,c=2]{c,m} <content>, \cmidrule[l]{3-4}
+% Help: \SetCell[r=2,c=2]{c,m} \<content\>, \cmidrule[l]{3-4}
 % Help: colspec: X[ratio, horizontal alignment] columns grow to fit width=\linewidth
 %                  negative ratios: shrink to fit content and may not grow to full ratio
 % Help: colspec: l/c/r columns do not grow
@@ -837,7 +837,7 @@ All birds are counted with #ruby[羽][わ] except _very_ big birds like ostriche
 == Calendar months and days of a week: #ruby[月{がつ} and \ruby{曜日][よう|び]}
 The days of the week are named after the East Asian Seven Luminaries: the sun, the moon, and the five planets visible to the naked eye (Mercury, Venus, Mars, Jupiter, Saturn).
 
-% Help: \SetCell[r=2,c=2]{c,m} <content>, \cmidrule[l]{3-4}
+% Help: \SetCell[r=2,c=2]{c,m} \<content\>, \cmidrule[l]{3-4}
 % Help: colspec: X[ratio, horizontal alignment] columns grow to fit width=\linewidth
 %                  negative ratios: shrink to fit content and may not grow to full ratio
 % Help: colspec: l/c/r columns do not grow
@@ -888,7 +888,7 @@ The days of the week are named after the East Asian Seven Luminaries: the sun, t
 
 #ruby[月][つき] is the 和語 reading, so counting uses the 和語 counting system.
 
-% Help: \SetCell[r=2,c=2]{c,m} <content>, \cmidrule[l]{3-4}
+% Help: \SetCell[r=2,c=2]{c,m} \<content\>, \cmidrule[l]{3-4}
 % Help: colspec: X[ratio, horizontal alignment] columns grow to fit width=\linewidth
 %                  negative ratios: shrink to fit content and may not grow to full ratio
 % Help: colspec: l/c/r columns do not grow
@@ -924,20 +924,20 @@ The days of the week are named after the East Asian Seven Luminaries: the sun, t
 }
 
 
-== Days of the month: #ruby[日{たち}/\ruby{日][か]/#ruby[日][にち]} \label{sec:appendix-vocab-basic-nouns-calendar-days}
+== Days of the month: #ruby[日{たち}/\ruby{日][か]/#ruby[日][にち]} <sec:appendix-vocab-basic-nouns-calendar-days>
 _Read the main article on #link("https://www.tofugu.com/japanese/japanese-counter-ka-nichi/")[Tofugu]._ Also see #link("https://www.instagram.com/reel/C_4iSZdyIPt/")[Instagram reel].
 
 \color{orange}
 For calendar days, the 和語 counting system (#ruby[日][か]) is used for \{2nd--10th, 14th, 20th, 24th\}. All other numbers use standard 漢語 counting system (#ruby[日][にち]). Furthermore, \{17th, 27th\} use #ruby[七][しち], and \{19th, 29th\} use #ruby[九][く].
 
-For ordinal days (\S\ref{sec:appendix-vocab-basic-nouns-ordinal-days}), there are two rules. The 〜\{#ruby[日][にち]/#ruby[日][か]\}#ruby[目][め] schema follows the rules of day intervals (\S\ref{sec:appendix-vocab-basic-nouns-counting-days}), so 和語 counting system (#ruby[日][か]) is used for \{2nd--10th, 20th\} only. Furthermore, \{1st--31st, 49th\} use the formal readings: \{17th, 27th\} use #ruby[七][しち] (#ruby[七][なな] OK for disambiguation) and \{19th, 29th, 49th\} use #ruby[九][く]. On the other hand, the #ruby[第][だい]〜#ruby[日][たち] schema follows these simplified rules: the standard 漢語 counting system is used for all numbers, and \{9th, 19th, 29th, 49th\} use #ruby[九][く].
+For ordinal days (\S@sec:appendix-vocab-basic-nouns-ordinal-days), there are two rules. The 〜\{#ruby[日][にち]/#ruby[日][か]\}#ruby[目][め] schema follows the rules of day intervals (\S@sec:appendix-vocab-basic-nouns-counting-days), so 和語 counting system (#ruby[日][か]) is used for \{2nd--10th, 20th\} only. Furthermore, \{1st--31st, 49th\} use the formal readings: \{17th, 27th\} use #ruby[七][しち] (#ruby[七][なな] OK for disambiguation) and \{19th, 29th, 49th\} use #ruby[九][く]. On the other hand, the #ruby[第][だい]〜#ruby[日][たち] schema follows these simplified rules: the standard 漢語 counting system is used for all numbers, and \{9th, 19th, 29th, 49th\} use #ruby[九][く].
 
-For day intervals (\S\ref{sec:appendix-vocab-basic-nouns-counting-days}), the 和語 counting system (#ruby[日][か]) is used for \{2nd--10th, 20th\} only. All other numbers use the standard 漢語 counting system (#ruby[日][にち]). Furthermore, days intervals $\in$\{1--31, 49\} days use the formal readings: \{17, 27\} days use #ruby[七][しち] (#ruby[七][なな] OK for disambiguation) and \{19, 29, 49\} days use #ruby[九][く].
+For day intervals (\S@sec:appendix-vocab-basic-nouns-counting-days), the 和語 counting system (#ruby[日][か]) is used for \{2nd--10th, 20th\} only. All other numbers use the standard 漢語 counting system (#ruby[日][にち]). Furthermore, days intervals $\in$\{1--31, 49\} days use the formal readings: \{17, 27\} days use #ruby[七][しち] (#ruby[七][なな] OK for disambiguation) and \{19, 29, 49\} days use #ruby[九][く].
 
-For o'clocks and hour intervals (\S\ref{sec:appendix-vocab-basic-nouns-counting-oclocks-and-hours}), if the ones place is 4, 7 or 9, then #ruby[四][よ]、#ruby[七][しち]、#ruby[九][く] are used, ad infinitum.
+For o'clocks and hour intervals (\S@sec:appendix-vocab-basic-nouns-counting-oclocks-and-hours), if the ones place is 4, 7 or 9, then #ruby[四][よ]、#ruby[七][しち]、#ruby[九][く] are used, ad infinitum.
 \color{black}
 
-% Help: \SetCell[r=2,c=2]{c,m} <content>, \cmidrule[l]{3-4}
+% Help: \SetCell[r=2,c=2]{c,m} \<content\>, \cmidrule[l]{3-4}
 % Help: colspec: X[ratio, horizontal alignment] columns grow to fit width=\linewidth
 %                  negative ratios: shrink to fit content and may not grow to full ratio
 % Help: colspec: l/c/r columns do not grow
@@ -995,12 +995,12 @@ For o'clocks and hour intervals (\S\ref{sec:appendix-vocab-basic-nouns-counting-
 }
 
 
-== Ordinal days: 〜\{#ruby[日{にち}/\ruby{日][か]\}#ruby[目][め]/#ruby[第][だい]〜#ruby[日][たち]} \label{sec:appendix-vocab-basic-nouns-ordinal-days}
+== Ordinal days: 〜\{#ruby[日{にち}/\ruby{日][か]\}#ruby[目][め]/#ruby[第][だい]〜#ruby[日][たち]} <sec:appendix-vocab-basic-nouns-ordinal-days>
 _Read the main article on #link("https://www.tofugu.com/japanese/japanese-counter-ka-nichi/")[Tofugu]._
 
-#ruby[目][め] is casual, #ruby[第][だい] is formal. #ruby[目][め] is 和語 and follows pronunciations from Section~\ref{sec:appendix-vocab-basic-nouns-counting-days}; #ruby[第][だい] is 漢語 and forces #ruby[日][にち] to take its 漢語 reading.
+#ruby[目][め] is casual, #ruby[第][だい] is formal. #ruby[目][め] is 和語 and follows pronunciations from @sec:appendix-vocab-basic-nouns-counting-days; #ruby[第][だい] is 漢語 and forces #ruby[日][にち] to take its 漢語 reading.
 
-% Help: \SetCell[r=2,c=2]{c,m} <content>, \cmidrule[l]{3-4}
+% Help: \SetCell[r=2,c=2]{c,m} \<content\>, \cmidrule[l]{3-4}
 % Help: colspec: X[ratio, horizontal alignment] columns grow to fit width=\linewidth
 %                  negative ratios: shrink to fit content and may not grow to full ratio
 % Help: colspec: l/c/r columns do not grow
@@ -1061,14 +1061,14 @@ _Read the main article on #link("https://www.tofugu.com/japanese/japanese-counte
 }
 
 
-== Counting days: \{#ruby[日{にち}/\ruby{日][か]\}#ruby[間][かん]} \label{sec:appendix-vocab-basic-nouns-counting-days}
+== Counting days: \{#ruby[日{にち}/\ruby{日][か]\}#ruby[間][かん]} <sec:appendix-vocab-basic-nouns-counting-days>
 _Read the main article on #link("https://www.tofugu.com/japanese/japanese-counter-ka-nichi/")[Tofugu]._
 
-The 「〜#ruby[間][かん]」 suffix here means ``interval''. While typically dropped in the absence of ambiguity, it is necessary here to distinguish day intervals from days of the month (\S\ref{sec:appendix-vocab-basic-nouns-calendar-days}; #link("https://en.wikibooks.org/wiki/Japanese/Lessons/Days\#Periods\_of\_days")[[WB]]).
+The 「〜#ruby[間][かん]」 suffix here means "interval". While typically dropped in the absence of ambiguity, it is necessary here to distinguish day intervals from days of the month (\S@sec:appendix-vocab-basic-nouns-calendar-days; #link("https://en.wikibooks.org/wiki/Japanese/Lessons/Days\#Periods\_of\_days")[[WB]]).
 
 % \textorange{For formal settings and specifically *days and hours* (with the exception of day of month #ruby[七日][なの|か]), #ruby[七][しち] is preferred over #ruby[七][なな], though the latter may be used for disambiguation with #ruby[一][いち].}
 
-% Help: \SetCell[r=2,c=2]{c,m} <content>, \cmidrule[l]{3-4}
+% Help: \SetCell[r=2,c=2]{c,m} \<content\>, \cmidrule[l]{3-4}
 % Help: colspec: X[ratio, horizontal alignment] columns grow to fit width=\linewidth
 %                  negative ratios: shrink to fit content and may not grow to full ratio
 % Help: colspec: l/c/r columns do not grow
@@ -1128,10 +1128,10 @@ The 「〜#ruby[間][かん]」 suffix here means ``interval''. While typically 
 }
 
 
-== Counting o'clocks and hours: #ruby[時{じ} and \ruby{時間][じ|かん]} \label{sec:appendix-vocab-basic-nouns-counting-oclocks-and-hours}
+== Counting o'clocks and hours: #ruby[時{じ} and \ruby{時間][じ|かん]} <sec:appendix-vocab-basic-nouns-counting-oclocks-and-hours>
 #link("https://www.tofugu.com/japanese/japanese-counter-ji-jikan/")[\hl{Tofugu: TO READ]}
 
-% Help: \SetCell[r=2,c=2]{c,m} <content>, \cmidrule[l]{3-4}
+% Help: \SetCell[r=2,c=2]{c,m} \<content\>, \cmidrule[l]{3-4}
 % Help: colspec: X[ratio, horizontal alignment] columns grow to fit width=\linewidth
 %                  negative ratios: shrink to fit content and may not grow to full ratio
 % Help: colspec: l/c/r columns do not grow
@@ -1213,7 +1213,7 @@ The 「〜#ruby[間][かん]」 suffix here means ``interval''. While typically 
 == Counting minutes: \ruby{分{ふん}}
 _Read the main article on #link("https://www.tofugu.com/japanese/japanese-counter-fun/")[Tofugu]._
 
-% Help: \SetCell[r=2,c=2]{c,m} <content>, \cmidrule[l]{3-4}
+% Help: \SetCell[r=2,c=2]{c,m} \<content\>, \cmidrule[l]{3-4}
 % Help: colspec: X[ratio, horizontal alignment] columns grow to fit width=\linewidth
 %                  negative ratios: shrink to fit content and may not grow to full ratio
 % Help: colspec: l/c/r columns do not grow
@@ -1254,7 +1254,7 @@ _Read the main article on #link("https://www.tofugu.com/japanese/japanese-counte
 
 == Counting seconds: \ruby{秒{びょう}}
 
-% Help: \SetCell[r=2,c=2]{c,m} <content>, \cmidrule[l]{3-4}
+% Help: \SetCell[r=2,c=2]{c,m} \<content\>, \cmidrule[l]{3-4}
 % Help: colspec: X[ratio, horizontal alignment] columns grow to fit width=\linewidth
 %                  negative ratios: shrink to fit content and may not grow to full ratio
 % Help: colspec: l/c/r columns do not grow
@@ -1291,7 +1291,7 @@ _Read the main article on #link("https://www.tofugu.com/japanese/japanese-counte
 
 
 == Counting positions: \ruby{番{ばん}}
-% Help: \SetCell[r=2,c=2]{c,m} <content>, \cmidrule[l]{3-4}
+% Help: \SetCell[r=2,c=2]{c,m} \<content\>, \cmidrule[l]{3-4}
 % Help: colspec: X[ratio, horizontal alignment] columns grow to fit width=\linewidth
 %                  negative ratios: shrink to fit content and may not grow to full ratio
 % Help: colspec: l/c/r columns do not grow
@@ -1330,7 +1330,7 @@ _Read the main article on #link("https://www.tofugu.com/japanese/japanese-counte
 == Counting occurrences: \ruby{回{かい}}
 #link("https://www.tofugu.com/japanese/japanese-counter-kai-times/")[\hl{Tofugu: TO READ]}
 
-% Help: \SetCell[r=2,c=2]{c,m} <content>, \cmidrule[l]{3-4}
+% Help: \SetCell[r=2,c=2]{c,m} \<content\>, \cmidrule[l]{3-4}
 % Help: colspec: X[ratio, horizontal alignment] columns grow to fit width=\linewidth
 %                  negative ratios: shrink to fit content and may not grow to full ratio
 % Help: colspec: l/c/r columns do not grow
@@ -1369,7 +1369,7 @@ _Read the main article on #link("https://www.tofugu.com/japanese/japanese-counte
 == Counting methods/ways/kinds: \ruby{通{とお}り}
 #link("https://www.tofugu.com/japanese/japanese-counter-kai-times/")[\hl{Tofugu: TO READ]}
 
-% Help: \SetCell[r=2,c=2]{c,m} <content>, \cmidrule[l]{3-4}
+% Help: \SetCell[r=2,c=2]{c,m} \<content\>, \cmidrule[l]{3-4}
 % Help: colspec: X[ratio, horizontal alignment] columns grow to fit width=\linewidth
 %                  negative ratios: shrink to fit content and may not grow to full ratio
 % Help: colspec: l/c/r columns do not grow
@@ -1408,7 +1408,7 @@ _Read the main article on #link("https://www.tofugu.com/japanese/japanese-counte
 == Counting shots/hits/punches: \ruby{発{はつ}}
 #link("https://www.tofugu.com/japanese/japanese-counter-hatsu/")[\hl{Tofugu: TO READ]}
 
-% Help: \SetCell[r=2,c=2]{c,m} <content>, \cmidrule[l]{3-4}
+% Help: \SetCell[r=2,c=2]{c,m} \<content\>, \cmidrule[l]{3-4}
 % Help: colspec: X[ratio, horizontal alignment] columns grow to fit width=\linewidth
 %                  negative ratios: shrink to fit content and may not grow to full ratio
 % Help: colspec: l/c/r columns do not grow

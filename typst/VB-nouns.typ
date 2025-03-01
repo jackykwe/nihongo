@@ -7,7 +7,7 @@
 
 
 == Meta: Japanese
-% Help: \SetCell[r=2,c=2]{c,m} <content>, \cmidrule[l]{3-4}
+% Help: \SetCell[r=2,c=2]{c,m} \<content\>, \cmidrule[l]{3-4}
 % Help: colspec: X[ratio, horizontal alignment] columns grow to fit width=\linewidth
 %                  negative ratios: shrink to fit content and may not grow to full ratio
 % Help: colspec: l/c/r columns do not grow
@@ -42,7 +42,7 @@
     % & & \\
     \midrule
     #ruby[熟語][じゅく|ご] & compound kanji/idiom & \\
-    #ruby[四字熟語][よ|じ|じゅく|ご] & four-character compound word (esp.\ idiomatic) & \\
+    #ruby[四字熟語][よ|じ|じゅく|ご] & four-character compound word (esp. idiomatic) & \\
     % & & \\
     \midrule
     #ruby[形容詞][けい|よう|し] & adjective/い-adjective & \\
@@ -73,7 +73,7 @@
     #ruby[副詞][ふく|し] & adverb & \\
     % & & \\
     \midrule
-    #ruby[変化][へん|か] & inflection/conjugation & also a verb, also in Table~\ref{tbl:appendix-vocab-nouns-production} \\
+    #ruby[変化][へん|か] & inflection/conjugation & also a verb, also in @tbl:appendix-vocab-nouns-production \\
     % & & \\
     \midrule
     \midrule
@@ -87,38 +87,38 @@
     % & & \\
     \midrule
     \midrule
-    #ruby[丁寧語][てい|ねい|ご] & polite language (e.g.\ ます、です) & \\
+    #ruby[丁寧語][てい|ねい|ご] & polite language (e.g. ます、です) & \\
     #ruby[尊敬語][そん|けい|ご] & honorific language & \\
-    #ruby[謙譲語][けん|じょう|ご] & humble language (e.g.\ itadaku) & \\
+    #ruby[謙譲語][けん|じょう|ご] & humble language (e.g. itadaku) & \\
     #ruby[言][い]い#ruby[方][かた] & phrasing/language/wording/way of saying something & \\
     ワードチョイス & word choice & \\
     #ruby[文章語][ぶん|しょう|ご] & literary language/words used mainly in writing & \\
     % & & \\
     \midrule
-    #ruby[文][ぶん] & sentence; statement (computing) & also in Table~\ref{tbl:appendix-vocab-nouns-production} \\
-    #ruby[文章][ぶん|しょう] & sentence & also in Table~\ref{tbl:appendix-vocab-nouns-production} \\
+    #ruby[文][ぶん] & sentence; statement (computing) & also in @tbl:appendix-vocab-nouns-production \\
+    #ruby[文章][ぶん|しょう] & sentence & also in @tbl:appendix-vocab-nouns-production \\
     #ruby[例文][れい|ぶん] & example sentence & \\
     % & & \\
     \midrule
     \midrule
     #ruby[和語][わ|ご] & Japanese language & \\
     #ruby[漢語][かん|ご] & Japanese word of Chinese origin/Sino-Japanese word & \\
-    #ruby[外来語][がい|らい|ご] & loanword in Japanese (esp.\ those of Western origin) & \\
+    #ruby[外来語][がい|らい|ご] & loanword in Japanese (esp. those of Western origin) & \\
     #ruby[語源][ご|げん] & etymology/origin/derivation of a word & \\
     % & & \\
     \midrule
     \midrule
-    #ruby[○][まる]/#ruby[丸][まる] & ``correct''/``good''/circle & \\
-    #ruby[二重丸][に|じゅう|まる] & ``very good''/double circle & \\
+    #ruby[○][まる]/#ruby[丸][まる] & "correct"/"good"/circle & \\
+    #ruby[二重丸][に|じゅう|まる] & "very good"/double circle & \\
     #ruby[△][さんかく]/#ruby[三角][さん|かく] & not entirely wrong but not entirely right/so-so/average/triangle & \\
-    #ruby[×][ばつ]/バツ/#ruby[罰点][ばっ|てん] & cross mark/``incorrect'' & \\
+    #ruby[×][ばつ]/バツ/#ruby[罰点][ばっ|てん] & cross mark/"incorrect" & \\
     % & & \\
     \bottomrule
 }
 
 
 == Grammatical
-% Help: \SetCell[r=2,c=2]{c,m} <content>, \cmidrule[l]{3-4}
+% Help: \SetCell[r=2,c=2]{c,m} \<content\>, \cmidrule[l]{3-4}
 % Help: colspec: X[ratio, horizontal alignment] columns grow to fit width=\linewidth
 %                  negative ratios: shrink to fit content and may not grow to full ratio
 % Help: colspec: l/c/r columns do not grow
@@ -137,16 +137,16 @@
     \midrule
     #ruby[物][もの] & thing/object & \\
     こと & thing/matter & (#ruby[事][こと]) \\
-    <to nominalise>こと & nominalising suffix & \suffix \\
-    <noun>こと<alias> & <noun>, also known as <alias>, ... & \suffix \\
-    <advice>ことだ & you should/it's important to <advice> & \suffix \\
+    \<to nominalise\>こと & nominalising suffix & \suffix \\
+    \<noun\>こと\<alias\> & \<noun\>, also known as \<alias\>, ... & \suffix \\
+    \<advice\>ことだ & you should/it's important to \<advice\> & \suffix \\
     % & & \\
     \bottomrule
 }
 
 
 == Physical
-% Help: \SetCell[r=2,c=2]{c,m} <content>, \cmidrule[l]{3-4}
+% Help: \SetCell[r=2,c=2]{c,m} \<content\>, \cmidrule[l]{3-4}
 % Help: colspec: X[ratio, horizontal alignment] columns grow to fit width=\linewidth
 %                  negative ratios: shrink to fit content and may not grow to full ratio
 % Help: colspec: l/c/r columns do not grow
@@ -191,11 +191,11 @@ For the four cardinal directions, the 訓読み readings are #ruby[東][ひが�
 When forming the four intercardinal directions and eight secondary intercardinal directions, there is ambiguity in the ordering of constituent cardinals. All permutations are possible, but there are some rules for when to use which:
 \begin{itemize}
     \item When describing something native to Japan, use Japanese ordering.
-    \item When forming international and Western concepts, such as compass directions, use Western ordering (this is standardised by the World Meteorological Organisation). Note that secondary intercardinal directions take the form <cardinal>-<secondary cardinal>.
+    \item When forming international and Western concepts, such as compass directions, use Western ordering (this is standardised by the World Meteorological Organisation). Note that secondary intercardinal directions take the form \<cardinal\>-\<secondary cardinal\>.
 \end{itemize}
 The readings of the intercardinal and secondary intercardinals are simply the concatenation of the unmodified constituent 音読み readings. The only exception is when cardinals describing direction spans come together, in whcih case _rendaku_ occurs, so we have #ruby[東西][とう|ざい] and #ruby[南北][なん|ぼく].
 
-% Help: \SetCell[r=2,c=2]{c,m} <content>, \cmidrule[l]{3-4}
+% Help: \SetCell[r=2,c=2]{c,m} \<content\>, \cmidrule[l]{3-4}
 % Help: colspec: X[ratio, horizontal alignment] columns grow to fit width=\linewidth
 %                  negative ratios: shrink to fit content and may not grow to full ratio
 % Help: colspec: l/c/r columns do not grow
@@ -218,9 +218,9 @@ The readings of the intercardinal and secondary intercardinals are simply the co
     #ruby[右][みぎ] & right & \\
     #ruby[左折][さ|せつ] & left turn & also a verb \\
     #ruby[右折][う|せつ] & right turn & also a verb \\
-    #ruby[先][さき] & the way ahead/beyond & also in Table~\ref{tbl:appendix-vocab-nouns-time} \\
+    #ruby[先][さき] & the way ahead/beyond & also in @tbl:appendix-vocab-nouns-time \\
     #ruby[後][うし]ろ & back/behind/rear (physical) & #link("https://ja.hinative.com/questions/4072942")[[HN]] \\
-    #ruby[後][あと] & behind (esp.\ abstract)/after/later & #link("https://ja.hinative.com/questions/4072942")[[HN]] \\
+    #ruby[後][あと] & behind (esp. abstract)/after/later & #link("https://ja.hinative.com/questions/4072942")[[HN]] \\
     #ruby[中][なか] & inside; middle/centre & \\
     〜#ruby[中][ちゅう] & during/in the middle of/while (something happening) & \suffix \\
     % & & \\
@@ -256,7 +256,7 @@ The readings of the intercardinal and secondary intercardinals are simply the co
     #ruby[下][くだ]り & downwards/downbound/descent & \\
     #ruby[戻][もど]り & return/backwards; return (computing) & \\
     #ruby[入][い]り & entrance/entry & \\
-    <containee>#ruby[入][い]り & containing <containee> & \suffix \\
+    \<containee\>#ruby[入][い]り & containing \<containee\> & \suffix \\
     % & & \\
     \midrule
     \midrule
@@ -296,7 +296,7 @@ The readings of the intercardinal and secondary intercardinals are simply the co
 
 
 == Navigation
-% Help: \SetCell[r=2,c=2]{c,m} <content>, \cmidrule[l]{3-4}
+% Help: \SetCell[r=2,c=2]{c,m} \<content\>, \cmidrule[l]{3-4}
 % Help: colspec: X[ratio, horizontal alignment] columns grow to fit width=\linewidth
 %                  negative ratios: shrink to fit content and may not grow to full ratio
 % Help: colspec: l/c/r columns do not grow
@@ -337,7 +337,7 @@ The readings of the intercardinal and secondary intercardinals are simply the co
     \midrule
     \midrule
     #ruby[急][いそ]ぎ & haste/hurry/expedition/speed/dispatch & \\
-    #ruby[大急][おお|いそ]ぎ & great hurry/great haste/rush & oft.\ #ruby[大急][おお|いそ]ぎで \\
+    #ruby[大急][おお|いそ]ぎ & great hurry/great haste/rush & oft. #ruby[大急][おお|いそ]ぎで \\
     #ruby[急行][きゅう|こう] & the act of hurrying/rushing to somewhere & also a verb \\
     #ruby[緩行][かん|こう] & the act of going slowly to somewhere & also a verb \\
     % & & \\
@@ -362,7 +362,7 @@ The readings of the intercardinal and secondary intercardinals are simply the co
 
 
 == Places
-% Help: \SetCell[r=2,c=2]{c,m} <content>, \cmidrule[l]{3-4}
+% Help: \SetCell[r=2,c=2]{c,m} \<content\>, \cmidrule[l]{3-4}
 % Help: colspec: X[ratio, horizontal alignment] columns grow to fit width=\linewidth
 %                  negative ratios: shrink to fit content and may not grow to full ratio
 % Help: colspec: l/c/r columns do not grow
@@ -381,9 +381,9 @@ The readings of the intercardinal and secondary intercardinals are simply the co
     \midrule
     #ruby[場所][ば|しょ] & place/location/spot & \\
     ところ & place/spot/scene/site; & (#ruby[所][ところ]) \\
-    <nn>どころ & place/spot/scene/site; address; district/area/locality; space/room & (#ruby[所][ところ]); \suffix \\
-    <v present>ところ & about to/on the verge of <v> & (#ruby[所][ところ]) \\
-    <v past>ところ & just finished doing/was just doing/have just done <v> & (#ruby[所][ところ]) \\
+    \<nn\>どころ & place/spot/scene/site; address; district/area/locality; space/room & (#ruby[所][ところ]); \suffix \\
+    \<v present\>ところ & about to/on the verge of \<v\> & (#ruby[所][ところ]) \\
+    \<v past\>ところ & just finished doing/was just doing/have just done \<v\> & (#ruby[所][ところ]) \\
     ポジション & position (pose/vacancy) & \\
     #ruby[現地][げん|ち] & local/actual place (e.g. local timezone) & \\
     % & & \\
@@ -394,7 +394,7 @@ The readings of the intercardinal and secondary intercardinals are simply the co
     #ruby[丁目][ちょう|め] & district of a town/city block & \\
     #ruby[町内会][ちょう|ない|かい] & neighbourhood association & \\
     ビル & (multi-floor) building & \\
-    レストラン & restaurant (esp.\ Western) & \\
+    レストラン & restaurant (esp. Western) & \\
     #ruby[図書館][と|しょ|かん] & library & \\
     #ruby[銀行][ぎん|こう] & bank & \\
     #ruby[公園][こう|えん] & public park & \\
@@ -442,7 +442,7 @@ The readings of the intercardinal and secondary intercardinals are simply the co
 
 
 == Vehicles
-% Help: \SetCell[r=2,c=2]{c,m} <content>, \cmidrule[l]{3-4}
+% Help: \SetCell[r=2,c=2]{c,m} \<content\>, \cmidrule[l]{3-4}
 % Help: colspec: X[ratio, horizontal alignment] columns grow to fit width=\linewidth
 %                  negative ratios: shrink to fit content and may not grow to full ratio
 % Help: colspec: l/c/r columns do not grow
@@ -463,14 +463,14 @@ The readings of the intercardinal and secondary intercardinals are simply the co
     #ruby[救急車][きゅう|きゅう|しゃ] & ambulance & \\
     #ruby[列車][れっ|しゃ] & train/railway train & \\
     #ruby[電車][でん|しゃ] & electric train & \\
-    #ruby[箱][はこ] & train cabin & also in Table~\ref{tbl:appendix-vocab-nouns-small-objects-stationery} \\
+    #ruby[箱][はこ] & train cabin & also in @tbl:appendix-vocab-nouns-small-objects-stationery \\
     % & & \\
     \bottomrule
 }
 
 
 == Furniture
-% Help: \SetCell[r=2,c=2]{c,m} <content>, \cmidrule[l]{3-4}
+% Help: \SetCell[r=2,c=2]{c,m} \<content\>, \cmidrule[l]{3-4}
 % Help: colspec: X[ratio, horizontal alignment] columns grow to fit width=\linewidth
 %                  negative ratios: shrink to fit content and may not grow to full ratio
 % Help: colspec: l/c/r columns do not grow
@@ -503,7 +503,7 @@ The readings of the intercardinal and secondary intercardinals are simply the co
 
 
 == Organisms
-% Help: \SetCell[r=2,c=2]{c,m} <content>, \cmidrule[l]{3-4}
+% Help: \SetCell[r=2,c=2]{c,m} \<content\>, \cmidrule[l]{3-4}
 % Help: colspec: X[ratio, horizontal alignment] columns grow to fit width=\linewidth
 %                  negative ratios: shrink to fit content and may not grow to full ratio
 % Help: colspec: l/c/r columns do not grow
@@ -527,10 +527,10 @@ The readings of the intercardinal and secondary intercardinals are simply the co
     #ruby[魚][さかな] & fish & \\
     #ruby[人間][にん|げん] & human being/humankind & \\
     ムカデ & centipede & (#rruby[百足][むかで]); also a counter for shoes/socks \\
-    #ruby[雑魚][ざ|こ] & small fish/small fry & also in Table~\ref{tbl:appendix-vocab-nouns-roles-and-occupations} \\
+    #ruby[雑魚][ざ|こ] & small fish/small fry & also in @tbl:appendix-vocab-nouns-roles-and-occupations \\
     フクロウ & owl & (#ruby[梟][ふくろう]) \\
-    #ruby[鳥][とり] & bird; bird meat/fowl/poultry (esp.\ chicken meat)& \\
-    たこ & octopus & (#ruby[蛸][たこ]); also in Table~\ref{tbl:appendix-vocab-nouns-roles-and-occupations} \\
+    #ruby[鳥][とり] & bird; bird meat/fowl/poultry (esp. chicken meat)& \\
+    たこ & octopus & (#ruby[蛸][たこ]); also in @tbl:appendix-vocab-nouns-roles-and-occupations \\
     うなぎ & eel (Japanese eel) & \\
     #ruby[鳩][はと] & pigeon/dove & \\
     はとぽっぽ & pigeon/dove & (#ruby[鳩][はと]ぽっぽ); children's language \\
@@ -540,7 +540,7 @@ The readings of the intercardinal and secondary intercardinals are simply the co
 
 
 == Food
-% Help: \SetCell[r=2,c=2]{c,m} <content>, \cmidrule[l]{3-4}
+% Help: \SetCell[r=2,c=2]{c,m} \<content\>, \cmidrule[l]{3-4}
 % Help: colspec: X[ratio, horizontal alignment] columns grow to fit width=\linewidth
 %                  negative ratios: shrink to fit content and may not grow to full ratio
 % Help: colspec: l/c/r columns do not grow
@@ -569,7 +569,7 @@ The readings of the intercardinal and secondary intercardinals are simply the co
     % & & \\
     \midrule
     テイクアウト & take-out/takeaway food & also a verb \\
-    #ruby[持][も]ち#ruby[帰][かえ]り & take-out/takeaway (food), esp.\ 「#ruby[持][も]ち#ruby[帰][かえ]りにしてください」 (please make it a takeaway) & also a verb \\
+    #ruby[持][も]ち#ruby[帰][かえ]り & take-out/takeaway (food), esp. 「#ruby[持][も]ち#ruby[帰][かえ]りにしてください」 (please make it a takeaway) & also a verb \\
     % & & \\
     \midrule
     \midrule
@@ -614,7 +614,7 @@ The readings of the intercardinal and secondary intercardinals are simply the co
     デザート & dessert & \\
     のり & edible seaweed & (#rruby[海苔][のり])  \\
     #ruby[鍋物][なべ|もの] & stew/food cooked in a pot & \\
-    シチュー & stew (esp.\ Japanese cream stew) & also: クリームシチュー \\
+    シチュー & stew (esp. Japanese cream stew) & also: クリームシチュー \\
     パン & bread/sweat pastry & \\
     #ruby[麻婆豆腐][まあ|ぼお|どう|ふ] & mabo tofu/mapo tofu (spicy Sichuan dish of tofu and minced meat) & \\
     % & & \\
@@ -623,7 +623,7 @@ The readings of the intercardinal and secondary intercardinals are simply the co
 
 
 == Small objects: stationery
-% Help: \SetCell[r=2,c=2]{c,m} <content>, \cmidrule[l]{3-4}
+% Help: \SetCell[r=2,c=2]{c,m} \<content\>, \cmidrule[l]{3-4}
 % Help: colspec: X[ratio, horizontal alignment] columns grow to fit width=\linewidth
 %                  negative ratios: shrink to fit content and may not grow to full ratio
 % Help: colspec: l/c/r columns do not grow
@@ -641,7 +641,7 @@ The readings of the intercardinal and secondary intercardinals are simply the co
     *Name* & *Meaning* & *Notes* \\
     \midrule
     #ruby[書][しょ] & book/document & \\
-    #ruby[秘書][ひ|しょ] & secret/treasured book & also in Table~\ref{tbl:appendix-vocab-nouns-roles-and-occupations} \\
+    #ruby[秘書][ひ|しょ] & secret/treasured book & also in @tbl:appendix-vocab-nouns-roles-and-occupations \\
     #ruby[本][ほん] & book/volume/script & \\
     #ruby[帳][ちょう] & book/register & \\
     #ruby[紙][かみ] & paper & \\
@@ -650,7 +650,7 @@ The readings of the intercardinal and secondary intercardinals are simply the co
     ボール#ruby[紙][がみ] & cardboard & \\
     #ruby[段][だん]ボール & (corrugated) cardboard & \\
     #ruby[段][だん]ボール#ruby[箱][ばこ] & cardboard box & \\
-    #ruby[箱][はこ] & box/case/chest/crate; package & also in Table~\ref{tbl:appendix-vocab-nouns-vehicles} \\
+    #ruby[箱][はこ] & box/case/chest/crate; package & also in @tbl:appendix-vocab-nouns-vehicles \\
     メモ & memo/note & also a verb \\
     ノート & note/notebook/exercise book/laptop computer & also a verb \\
     % & & \\
@@ -673,7 +673,7 @@ The readings of the intercardinal and secondary intercardinals are simply the co
 
 
 == General objects
-% Help: \SetCell[r=2,c=2]{c,m} <content>, \cmidrule[l]{3-4}
+% Help: \SetCell[r=2,c=2]{c,m} \<content\>, \cmidrule[l]{3-4}
 % Help: colspec: X[ratio, horizontal alignment] columns grow to fit width=\linewidth
 %                  negative ratios: shrink to fit content and may not grow to full ratio
 % Help: colspec: l/c/r columns do not grow
@@ -703,7 +703,7 @@ The readings of the intercardinal and secondary intercardinals are simply the co
 
 
 == Date
-% Help: \SetCell[r=2,c=2]{c,m} <content>, \cmidrule[l]{3-4}
+% Help: \SetCell[r=2,c=2]{c,m} \<content\>, \cmidrule[l]{3-4}
 % Help: colspec: X[ratio, horizontal alignment] columns grow to fit width=\linewidth
 %                  negative ratios: shrink to fit content and may not grow to full ratio
 % Help: colspec: l/c/r columns do not grow
@@ -720,7 +720,7 @@ The readings of the intercardinal and secondary intercardinals are simply the co
     \toprule
     *Name* & *Meaning* & *Notes* \\
     \midrule
-    #ruby[日][ひ]にち & (referring to) the date of an event & 「<event>の日にち」 \\
+    #ruby[日][ひ]にち & (referring to) the date of an event & 「\<event\>の日にち」 \\
     #ruby[毎日][まい|にち] & every day & also an adverb, #link("https://ja.hinative.com/questions/24476486")[[HN]] \\
     #ruby[日々][ひ|び] & day after day & also an adverb, #link("https://ja.hinative.com/questions/24476486")[[HN]] \\
     % & & \\
@@ -753,7 +753,7 @@ The readings of the intercardinal and secondary intercardinals are simply the co
     #ruby[今週末][こん|しゅう|まつ] & this weekend & \\
     #ruby[来週][らい|しゅう] & next week (from now) & also an adverb, #link("https://www.goodcross.com/words/22234-2020")[[GC]] \\
     #ruby[來々週][らい|らい|しゅう] & two weeks later (from now) & \\
-    #ruby[次週][じ|しゅう] & next week (recurring event, e.g.\ TV) & also an adverb, #link("https://www.goodcross.com/words/22234-2020")[[GC]] \\
+    #ruby[次週][じ|しゅう] & next week (recurring event, e.g. TV) & also an adverb, #link("https://www.goodcross.com/words/22234-2020")[[GC]] \\
     % & & \\
     \midrule
     #ruby[前週][ぜん|しゅう] & the week before (an event) & also an adverb, #link("https://ja.hinative.com/questions/15897169")[[HN]] \\
@@ -794,7 +794,7 @@ The readings of the intercardinal and secondary intercardinals are simply the co
     % & & \\
     \midrule
     \midrule
-    シーズン & season (sports/four seasons/TV show/for doing something e.g.\ ski/examination) & \\
+    シーズン & season (sports/four seasons/TV show/for doing something e.g. ski/examination) & \\
     #ruby[春][はる] & spring & \\
     #ruby[夏][なつ] & summer & \\
     #ruby[秋][あき] & autumn & \\
@@ -809,7 +809,7 @@ The readings of the intercardinal and secondary intercardinals are simply the co
 
 
 == Time
-% Help: \SetCell[r=2,c=2]{c,m} <content>, \cmidrule[l]{3-4}
+% Help: \SetCell[r=2,c=2]{c,m} \<content\>, \cmidrule[l]{3-4}
 % Help: colspec: X[ratio, horizontal alignment] columns grow to fit width=\linewidth
 %                  negative ratios: shrink to fit content and may not grow to full ratio
 % Help: colspec: l/c/r columns do not grow
@@ -834,7 +834,7 @@ The readings of the intercardinal and secondary intercardinals are simply the co
     #ruby[刹那][せつ|な] & moment/instant & \\
     #ruby[一瞬間][いっ|しゅん|かん] & an instant/moment (duration) & \\
     #ruby[時][じ] & hour/o'clock & also: アワー \\
-    #ruby[時][とき] & time/hour of day/moment (points to specific instant) & e.g.\ 「１６#ruby[歳][さい]の#ruby[時][とき]私は\dots」\\
+    #ruby[時][とき] & time/hour of day/moment (points to specific instant) & e.g. 「１６#ruby[歳][さい]の#ruby[時][とき]私は\dots」\\
     #ruby[刻][とき] & (referring to) time of day & \\
     #ruby[秋][とき] & important time & also: #ruby[秋][あき] \\
     % & & \\
@@ -881,7 +881,7 @@ The readings of the intercardinal and secondary intercardinals are simply the co
     これまで & up to now/so far & also an expression \\
     % & & \\
     \midrule
-    #ruby[先][さき] & first/before/ahead of; previous/prior/former/recent/last & #link("https://ja.hinative.com/questions/19806443")[[HN]]; also in Table~\ref{tbl:appendix-vocab-nouns-directions} \\
+    #ruby[先][さき] & first/before/ahead of; previous/prior/former/recent/last & #link("https://ja.hinative.com/questions/19806443")[[HN]]; also in @tbl:appendix-vocab-nouns-directions \\
     さっき & a moment ago/a short while ago/just now/some time ago & slang; #link("https://ja.hinative.com/questions/19806443")[[HN]] \\
     % & & \\
     \midrule
@@ -897,7 +897,7 @@ The readings of the intercardinal and secondary intercardinals are simply the co
     それまで & until then; to that extent; the end of it/all there is to it & (#ruby[其][そ]れまで) \\
     #ruby[未来][み|らい] & the future & #link("https://dictionary.goo.ne.jp/thsrs/15272/meaning/m1u/")[[goo]] \\
     #ruby[将来][しょう|らい] & future prospects (people/organisations/countries) & also an adverb, #link("https://dictionary.goo.ne.jp/thsrs/15272/meaning/m1u/")[[goo]] \\
-    #ruby[過][す]ぎ & past/after a point in time (e.g.\ waiting/now) & also in Table~\ref{nouns-tbl:appendix-vocab-nouns-amounts-and-sizes} \\
+    #ruby[過][す]ぎ & past/after a point in time (e.g. waiting/now) & also in @nouns-tbl:appendix-vocab-nouns-amounts-and-sizes \\
     % & & \\
     \midrule
     #ruby[最初][さい|しょ] & first/beginning & \\
@@ -925,7 +925,7 @@ Regarding the こそあど#ruby[言葉][こと|ば]:
 
 \hl{to read all sub articles #link("https://www.tofugu.com/japanese-grammar/kosoado/")[here]}
 
-% Help: \SetCell[r=2,c=2]{c,m} <content>, \cmidrule[l]{3-4}
+% Help: \SetCell[r=2,c=2]{c,m} \<content\>, \cmidrule[l]{3-4}
 % Help: colspec: X[ratio, horizontal alignment] columns grow to fit width=\linewidth
 %                  negative ratios: shrink to fit content and may not grow to full ratio
 % Help: colspec: l/c/r columns do not grow
@@ -1046,7 +1046,7 @@ Regarding the こそあど#ruby[言葉][こと|ば]:
     いつも & always/never & (#rruby[何時][いつ]も) \\
     いつでも & anytime & (#rruby[何時][いつ]でも) \\
     ここ & now (passionate/subjective) & \\
-    ここ<duration> & <duration> includes present moment (<duration> either past or future) & #link("https://www.tofugu.com/japanese-grammar/koko-soko-asoko-doko/")[[TFG]] \\
+    ここ\<duration\> & \<duration\> includes present moment (\<duration\> either past or future) & #link("https://www.tofugu.com/japanese-grammar/koko-soko-asoko-doko/")[[TFG]] \\
     そこ & then (dispassionate/objective) & \\
     あそこ & then (distant memory) & \\
     % & & \\
@@ -1097,9 +1097,9 @@ Regarding the こそあど#ruby[言葉][こと|ば]:
 
 
 == Pre-noun adjectivals
-*These are adjectives* that occur directly before nouns. There are $>100$ of them. From Section~\ref{sec:noun-related-particles}, these function as pre-noun noun modifiers. These function similarly to determiners in English.
+*These are adjectives* that occur directly before nouns. There are $>100$ of them. From @sec:noun-related-particles, these function as pre-noun noun modifiers. These function similarly to determiners in English.
 
-% Help: \SetCell[r=2,c=2]{c,m} <content>, \cmidrule[l]{3-4}
+% Help: \SetCell[r=2,c=2]{c,m} \<content\>, \cmidrule[l]{3-4}
 % Help: colspec: X[ratio, horizontal alignment] columns grow to fit width=\linewidth
 %                  negative ratios: shrink to fit content and may not grow to full ratio
 % Help: colspec: l/c/r columns do not grow
@@ -1122,7 +1122,7 @@ Regarding the こそあど#ruby[言葉][こと|ば]:
     \midrule
     どの & which/what (way) & \\
     この & this/these (closer to speaker) & \\
-    この<number> & part/number <number> & e.g.\ 「その#ruby[１][いち]」\\
+    この\<number\> & part/number \<number\> & e.g. 「その#ruby[１][いち]」\\
     その & that/those/the  (closer to listener) & \\
     あの & that/those/the (distant/mutual memory) & \\
     これらの & these (closer to speaker) & (これ#ruby[等][ら]の); formal and explanatory \\
@@ -1161,7 +1161,7 @@ Regarding the こそあど#ruby[言葉][こと|ば]:
     % & & \\
     \midrule
     #ruby[単][たん]なる & simple/nothing deeper (joke/coincidence) & #link("https://ja.hinative.com/questions/8297591")[[HN]] \\
-    ほんの & very little/insignificant/only (e.g.\ distance/time/occurrence); mere (e.g.\ child) & (#ruby[本][ほん]の); #link("https://ja.hinative.com/questions/8297591")[[HN]] \\
+    ほんの & very little/insignificant/only (e.g. distance/time/occurrence); mere (e.g. child) & (#ruby[本][ほん]の); #link("https://ja.hinative.com/questions/8297591")[[HN]] \\
     ただの & ordinary/average/nothing special & (#ruby[只][ただ]の); #link("https://ja.hinative.com/questions/8297591")[[HN]] \\
     #ruby[大][たい]した & considerable/great/important/significant/a big deal & \\
     % & & \\
@@ -1178,7 +1178,7 @@ Regarding the こそあど#ruby[言葉][こと|ば]:
 
 
 == Roles and occupations
-% Help: \SetCell[r=2,c=2]{c,m} <content>, \cmidrule[l]{3-4}
+% Help: \SetCell[r=2,c=2]{c,m} \<content\>, \cmidrule[l]{3-4}
 % Help: colspec: X[ratio, horizontal alignment] columns grow to fit width=\linewidth
 %                  negative ratios: shrink to fit content and may not grow to full ratio
 % Help: colspec: l/c/r columns do not grow
@@ -1199,7 +1199,7 @@ Regarding the こそあど#ruby[言葉][こと|ば]:
     #ruby[女子][じょ|し] & woman/girl & \\
     #ruby[男][おとこ] & make/man & \\
     #ruby[男子][だん|し] & man/boy & \\
-    #ruby[子][こ]ども & child & #ruby[子供][こ|ども] may be offensive; #link("https://www.reddit.com/r/LearnJapanese/comments/hkwop3/\%E5\%AD\%90\%E4\%BE\%9B\_vs\_\%E5\%AD\%90\%E3\%81\%A9\%E3\%82\%82_advice/")[[r]]; also in Table~\ref{tbl:appendix-vocab-nouns-family} \\
+    #ruby[子][こ]ども & child & #ruby[子供][こ|ども] may be offensive; #link("https://www.reddit.com/r/LearnJapanese/comments/hkwop3/\%E5\%AD\%90\%E4\%BE\%9B\_vs\_\%E5\%AD\%90\%E3\%81\%A9\%E3\%82\%82_advice/")[[r]]; also in @tbl:appendix-vocab-nouns-family \\
     #rruby[大人][おとな] & adult/grown-up & \\
     % & & \\
     \midrule
@@ -1236,7 +1236,7 @@ Regarding the こそあど#ruby[言葉][こと|ば]:
     #ruby[店長][*て]ん|ちょう* & shop manager & \\
     #ruby[署長][しょ|ちょう] & chief of police & \\
     #ruby[所長][しょ|ちょう] & head of office/laboratory & \\
-    #ruby[番長][ばん|ちょう] & leader of a group of juvenile delinquents/``boss'' & \\
+    #ruby[番長][ばん|ちょう] & leader of a group of juvenile delinquents/"boss" & \\
     % & & \\
     \midrule
     \midrule
@@ -1251,7 +1251,7 @@ Regarding the こそあど#ruby[言葉][こと|ば]:
     % & & \\
     \midrule
     \midrule
-    <noun>の#ruby[卵][たまご] & aspiring <noun>/expert in the making & \\
+    \<noun\>の#ruby[卵][たまご] & aspiring \<noun\>/expert in the making & \\
     #ruby[将軍][しょう|ぐん] & general (military, historical) & \\
     #ruby[有名人][ゆう|めい|じん] & famous person/celebrity/public figure & \\
     #ruby[医者][い|しゃ] & doctor/physician & \\
@@ -1270,16 +1270,16 @@ Regarding the こそあど#ruby[言葉][こと|ば]:
     #ruby[美少女][び|しょう|じょ] & beautiful girl & \\
     ネイティブ & native speaker & also an adjective \\
     #ruby[推][お]し & being a fan/supporter of; one's favourite (member of idol group/anime/team) & slang \\
-    #ruby[秘書][ひ|しょ] & (private) secretary & also in Table~\ref{tbl:appendix-vocab-nouns-small-objects-stationery} \\
+    #ruby[秘書][ひ|しょ] & (private) secretary & also in @tbl:appendix-vocab-nouns-small-objects-stationery \\
     #ruby[配信者][はい|しん|しゃ] & distributor (news/information/media); online streamer  & \\
     #ruby[紳士][しん|し] & gentleman & \\
     #ruby[婦人][ふ|じん] & adult/married woman & sensitive if misused on juvenile/unmarried \\
-    #ruby[方][かた] & person/lady/gentleman & honorific; #link("https://ja.hinative.com/questions/78293")[[HN]]; also in Table~\ref{tbl:appendix-vocab-nouns-production} \\
+    #ruby[方][かた] & person/lady/gentleman & honorific; #link("https://ja.hinative.com/questions/78293")[[HN]]; also in @tbl:appendix-vocab-nouns-production \\
     #ruby[会計士][かい|けい|し] & accountant &  \\
     #ruby[音楽家][おん|がく|か] & musician & \\
     #ruby[情報提供者][じょう|ほう|てい|きょう|しゃ] & informant/informer/contact; information provider (computing) & \\
     #ruby[内国人][ない|こく|じん] & national/citizen/native & \\
-    #ruby[外人][がい|じん] & foreigner (esp.\ European) & \\
+    #ruby[外人][がい|じん] & foreigner (esp. European) & \\
     #ruby[外国人][がい|こく|じん] & foreigner/foreign citizen/foreign national/non-Japanese & \\
     #ruby[乳児][にゅう|じ] & infant/baby (below one year old) & \\
     #ruby[飛行士][ひ|こう|し] & pilot & \\
@@ -1303,11 +1303,11 @@ Regarding the こそあど#ruby[言葉][こと|ば]:
     \midrule
     #ruby[弱者][じゃく|しゃ] & weak person; the weak/vulnerable/disadvantaged & \\
     #ruby[強者][きょう|しゃ] & strong person; the strong/powerful & \\
-    #ruby[見本][み|ほん] & role model/example & also in Table~\ref{tbl:appendix-vocab-nouns-production} \\
+    #ruby[見本][み|ほん] & role model/example & also in @tbl:appendix-vocab-nouns-production \\
     % & & \\
     \midrule
     \midrule
-    #ruby[変態][へん|たい] & abnormality; pervert & also in Table~\ref{tbl:appendix-vocab-nouns-production} \\
+    #ruby[変態][へん|たい] & abnormality; pervert & also in @tbl:appendix-vocab-nouns-production \\
     #ruby[犯人][はん|にん] & offender/criminal/culprit & \\
     #ruby[犯罪者][はん|ざい|しゃ] & criminal/culprit & \\
     % & & \\
@@ -1320,26 +1320,26 @@ Regarding the こそあど#ruby[言葉][こと|ば]:
     バカ & idiot/moron/fool & (#ruby[馬鹿][ば|か]); also an adjective \\
     アホ & fool/idiot/simpleton & (#ruby[阿呆][あ|ほ]); also an adjective \\
     ボケ & fool/idiot & (#ruby[惚][ぼ]け) \\
-    タコ & fool/idiot & (#ruby[蛸][たこ]); also in Table~\ref{tbl:appendix-vocab-nouns-organisms} \\
+    タコ & fool/idiot & (#ruby[蛸][たこ]); also in @tbl:appendix-vocab-nouns-organisms \\
     #ruby[野郎][や|ろう] & bastard/asshole/son of a bitch & slang, derogatory \\
     ガキ & brat/kid/little devil & (#ruby[餓鬼][が|き]); slang \\
     ばかやろう & goddamn idiot/moron/nitwit & (#ruby[馬鹿野郎][ば|か|やろ|う]); slang, derogatory \\
     クソ#ruby[野郎][や|ろう] & piece of shit/son of a bitch & (#ruby[糞野郎][くそ|や|ろう]); derogatory \\
     クソガキ & stupid brat/son of a bitch & (#ruby[糞餓鬼][くそ|が|き]); derogatory \\
     #ruby[畜生][ちく|しょう] & brute/bastard & \\
-    #ruby[雑魚][ざ|こ] & unimportant person/a nobody & also in Table~\ref{tbl:appendix-vocab-nouns-organisms} \\
+    #ruby[雑魚][ざ|こ] & unimportant person/a nobody & also in @tbl:appendix-vocab-nouns-organisms \\
     ライアー & liar & \\
     太〜 & fat/fatty & \prefix \\
-    おやじ & middle-aged man/geezer & (#rruby[親父][おやじ]); familiar; also in Table~\ref{tbl:appendix-vocab-nouns-family} \\
+    おやじ & middle-aged man/geezer & (#rruby[親父][おやじ]); familiar; also in @tbl:appendix-vocab-nouns-family \\
     % & & \\
     \bottomrule
 }
 
 
 == Family
-Table~\ref{tbl:appendix-vocab-nouns-family} lists the names in casual/formal manner. We only use casual when referencing our own family members to other people. In all other situations (talking about other people's family, or talking directly to our own family), we use the formal one.
+@tbl:appendix-vocab-nouns-family lists the names in casual/formal manner. We only use casual when referencing our own family members to other people. In all other situations (talking about other people's family, or talking directly to our own family), we use the formal one.
 
-% Help: \SetCell[r=2,c=2]{c,m} <content>, \cmidrule[l]{3-4}
+% Help: \SetCell[r=2,c=2]{c,m} \<content\>, \cmidrule[l]{3-4}
 % Help: colspec: X[ratio, horizontal alignment] columns grow to fit width=\linewidth
 %                  negative ratios: shrink to fit content and may not grow to full ratio
 % Help: colspec: l/c/r columns do not grow
@@ -1365,11 +1365,11 @@ Table~\ref{tbl:appendix-vocab-nouns-family} lists the names in casual/formal man
     [ご]#ruby[両親][りょう|しん] & parents & [honorific] \\
     #ruby[母][はは]/[お#ruby[母][かあ]さん] & mother & humble/[honorific] \\
     #ruby[父][ちち]/[お#ruby[父][とう]さん] & father & humble/[honorific] \\
-    おやじ & one's father/pops & (#rruby[親父][おやじ]); familiar; also in Table~\ref{tbl:appendix-vocab-nouns-roles-and-occupations} \\
+    おやじ & one's father/pops & (#rruby[親父][おやじ]); familiar; also in @tbl:appendix-vocab-nouns-roles-and-occupations \\
     #ruby[親子][おや|こ] & parent and child & \\
     % & & \\
     \midrule
-    #ruby[子][こ]ども & children & also in Table~\ref{tbl:appendix-vocab-nouns-roles-and-occupations} \\
+    #ruby[子][こ]ども & children & also in @tbl:appendix-vocab-nouns-roles-and-occupations \\
     #ruby[双子][ふた|ご] & twins & \\
     #ruby[娘][むすめ][さん] & daughter & [honorific] \\
     #rruby[息子][むすこ][さん] & son & [honorific] \\
@@ -1379,7 +1379,7 @@ Table~\ref{tbl:appendix-vocab-nouns-family} lists the names in casual/formal man
     #ruby[男兄弟][おとこ|きょう|だい] & brothers/male siblings & \\
     #ruby[兄][あに]/[お#ruby[兄][にい]さん] & older brother; young man/buddy/fella/lad & [honorific] \\
     #ruby[兄貴][あに|き] & older brother; one's senior; man older than oneself & honorific \\
-    ニキ & bro (e.g.\ #ruby[海外][かい|がい]ニキ) & \suffix; slang \\
+    ニキ & bro (e.g. #ruby[海外][かい|がい]ニキ) & \suffix; slang \\
     #ruby[弟][おとうと][さん] & younger brother & [honorific] \\
     % & & \\
     \midrule
@@ -1396,7 +1396,7 @@ Table~\ref{tbl:appendix-vocab-nouns-family} lists the names in casual/formal man
 
 
 == Body parts
-% Help: \SetCell[r=2,c=2]{c,m} <content>, \cmidrule[l]{3-4}
+% Help: \SetCell[r=2,c=2]{c,m} \<content\>, \cmidrule[l]{3-4}
 % Help: colspec: X[ratio, horizontal alignment] columns grow to fit width=\linewidth
 %                  negative ratios: shrink to fit content and may not grow to full ratio
 % Help: colspec: l/c/r columns do not grow
@@ -1473,7 +1473,7 @@ Table~\ref{tbl:appendix-vocab-nouns-family} lists the names in casual/formal man
 
 
 == Clothing
-% Help: \SetCell[r=2,c=2]{c,m} <content>, \cmidrule[l]{3-4}
+% Help: \SetCell[r=2,c=2]{c,m} \<content\>, \cmidrule[l]{3-4}
 % Help: colspec: X[ratio, horizontal alignment] columns grow to fit width=\linewidth
 %                  negative ratios: shrink to fit content and may not grow to full ratio
 % Help: colspec: l/c/r columns do not grow
@@ -1490,7 +1490,7 @@ Table~\ref{tbl:appendix-vocab-nouns-family} lists the names in casual/formal man
     \toprule
     *Name* & *Meaning* & *Notes* \\
     \midrule
-    #ruby[服][ふく] & clothes (esp.\ Western)/clothing/dress/costume/suit/outfit & \\
+    #ruby[服][ふく] & clothes (esp. Western)/clothing/dress/costume/suit/outfit & \\
     #ruby[制服][せい|ふく] & uniform & \\
     シャツ & singlet/inner shirt/buttoned shirt & \\
     Tシャツ & T-shirt (outer shirt) & \\
@@ -1518,7 +1518,7 @@ Table~\ref{tbl:appendix-vocab-nouns-family} lists the names in casual/formal man
 
 
 == Emotions
-% Help: \SetCell[r=2,c=2]{c,m} <content>, \cmidrule[l]{3-4}
+% Help: \SetCell[r=2,c=2]{c,m} \<content\>, \cmidrule[l]{3-4}
 % Help: colspec: X[ratio, horizontal alignment] columns grow to fit width=\linewidth
 %                  negative ratios: shrink to fit content and may not grow to full ratio
 % Help: colspec: l/c/r columns do not grow
@@ -1539,7 +1539,7 @@ Table~\ref{tbl:appendix-vocab-nouns-family} lists the names in casual/formal man
     #ruby[気色][き|しょく] & mood/humour & \\
     #ruby[気分][き|ぶん] & mood/feeling & #link("https://dictionary.goo.ne.jp/thsrs/3397/meaning/m0u/")[[goo]] \\
     #ruby[感][かん]じ & feeling/sense/impression & \\
-    #ruby[空気][くう|き] & situation/mood/room (esp.\ #ruby[空気][くう|き]を#ruby[読][よ]む) & also in Table~\ref{tbl:appendix-vocab-nouns-nature} \\
+    #ruby[空気][くう|き] & situation/mood/room (esp. #ruby[空気][くう|き]を#ruby[読][よ]む) & also in @tbl:appendix-vocab-nouns-nature \\
     #ruby[感情][かん|じょう] & emotion/feeling/feelings/sentiment & \\
     % & & \\
     \midrule
@@ -1565,7 +1565,7 @@ Table~\ref{tbl:appendix-vocab-nouns-family} lists the names in casual/formal man
     #ruby[感動][かん|どう] & being emotionally deeply moved/excited/inspired & also a verb \\
     #ruby[涙][なみだ] & tears & \\
     #ruby[笑][わら]/ｗ & LOL/haha & slang \\
-    #ruby[草][くさ] & LOL/haha & slang; also in Table~\ref{tbl:appendix-vocab-nouns-nature} \\
+    #ruby[草][くさ] & LOL/haha & slang; also in @tbl:appendix-vocab-nouns-nature \\
     % & & \\
     \midrule
     #ruby[楽][たの]しみ & enjoyment/pleasure/amusement/delight/joy/fun & \\
@@ -1581,7 +1581,7 @@ Table~\ref{tbl:appendix-vocab-nouns-family} lists the names in casual/formal man
     % & & \\
     \midrule
     #ruby[幸][しあわ]せ & happiness & also an adjective \\
-    #ruby[不幸][ふ|こう] & な & unhappy/sorrowful/misfortunate/disastrous; bereavement/death (usu.\ of relative) & #link("https://dictionary.goo.ne.jp/thsrs/5311/meaning/m0u/")[[HN]] \\
+    #ruby[不幸][ふ|こう] & な & unhappy/sorrowful/misfortunate/disastrous; bereavement/death (usu. of relative) & #link("https://dictionary.goo.ne.jp/thsrs/5311/meaning/m0u/")[[HN]] \\
     #ruby[不幸][ふ|しあわ]せ & unhappiness/misfortune/ill luck & also an adjective; #link("https://dictionary.goo.ne.jp/thsrs/5311/meaning/m0u/")[[HN]] \\
     % & & \\
     \midrule
@@ -1593,7 +1593,7 @@ Table~\ref{tbl:appendix-vocab-nouns-family} lists the names in casual/formal man
 
 
 == Production
-% Help: \SetCell[r=2,c=2]{c,m} <content>, \cmidrule[l]{3-4}
+% Help: \SetCell[r=2,c=2]{c,m} \<content\>, \cmidrule[l]{3-4}
 % Help: colspec: X[ratio, horizontal alignment] columns grow to fit width=\linewidth
 %                  negative ratios: shrink to fit content and may not grow to full ratio
 % Help: colspec: l/c/r columns do not grow
@@ -1611,7 +1611,7 @@ Table~\ref{tbl:appendix-vocab-nouns-family} lists the names in casual/formal man
     *Name* & *Meaning* & *Notes* \\
     \midrule
     #ruby[方][ほう] & direction/way/side/area (in particular direction); type/category; one side of comparison; square length & #link("https://ja.hinative.com/questions/78293")[[HN]] \\
-    #ruby[方][かた] & method & \suffix; #link("https://ja.hinative.com/questions/78293")[[HN]]; also in Table~\ref{tbl:appendix-vocab-nouns-roles-and-occupations} \\
+    #ruby[方][かた] & method & \suffix; #link("https://ja.hinative.com/questions/78293")[[HN]]; also in @tbl:appendix-vocab-nouns-roles-and-occupations \\
     #ruby[仕方][し|かた] & way/method/means towards a goal & #link("https://dictionary.goo.ne.jp/thsrs/14732/meaning/m0u/\%E4\%BB\%95\%E6\%96\%B9/")[[goo]] \\
     #ruby[方法][ほう|ほう] & (a well-reasoned) way/method/process/procedure & #link("https://dictionary.goo.ne.jp/thsrs/14732/meaning/m0u/\%E4\%BB\%95\%E6\%96\%B9/")[[goo]] \\
     #ruby[手段][しゅ|だん] & tool needed for going towards a goal & #link("https://dictionary.goo.ne.jp/thsrs/14732/meaning/m0u/\%E4\%BB\%95\%E6\%96\%B9/")[[goo]] \\
@@ -1647,8 +1647,8 @@ Table~\ref{tbl:appendix-vocab-nouns-family} lists the names in casual/formal man
     #ruby[修正][しゅう|せい] & amendment/correction/revision/modification/alteration/retouching/update/fix & also a verb \\
     % & & \\
     \midrule
-    #ruby[変化][へん|か] & change/variation/alteration/mutation/transfiguration & also a verb, in Table~\ref{tbl:appendix-vocab-nouns-meta-language} \\
-    #ruby[変態][へん|たい] & state of transformation & also in Table~\ref{tbl:appendix-vocab-nouns-roles-and-occupations} \\
+    #ruby[変化][へん|か] & change/variation/alteration/mutation/transfiguration & also a verb, in @tbl:appendix-vocab-nouns-meta-language \\
+    #ruby[変態][へん|たい] & state of transformation & also in @tbl:appendix-vocab-nouns-roles-and-occupations \\
     #ruby[進化][しん|か] & evolution/progress/development/improvement & also a verb \\
     #ruby[展開][てん|かい] & development/evolution/progression/unfolding/plot twist; expansion (physical/mathematics) & also a verb \\
     #ruby[切][き]り#ruby[替][か]え & (the act of) replacement & \\
@@ -1671,11 +1671,11 @@ Table~\ref{tbl:appendix-vocab-nouns-family} lists the names in casual/formal man
     \midrule
     \midrule
     #ruby[原作][げん|さく] & original work & \\
-    #ruby[見本][み|ほん] & sample/specimen & also in Table~\ref{tbl:appendix-vocab-nouns-roles-and-occupations} \\
+    #ruby[見本][み|ほん] & sample/specimen & also in @tbl:appendix-vocab-nouns-roles-and-occupations \\
     % & & \\
     \midrule
-    #ruby[文][ぶん] & text/composition/writing & also in Table~\ref{tbl:appendix-vocab-nouns-meta-language} \\
-    #ruby[文章][ぶん|しょう] & writing/composotion/essay/article/passage/prose & also in Table~\ref{tbl:appendix-vocab-nouns-meta-language} \\
+    #ruby[文][ぶん] & text/composition/writing & also in @tbl:appendix-vocab-nouns-meta-language \\
+    #ruby[文章][ぶん|しょう] & writing/composotion/essay/article/passage/prose & also in @tbl:appendix-vocab-nouns-meta-language \\
     まとめ & summary/aggregation & \\
     % & & \\
     \midrule
@@ -1689,7 +1689,7 @@ Table~\ref{tbl:appendix-vocab-nouns-family} lists the names in casual/formal man
     #ruby[冗談][じょう|だん] & joke/jest/funny story & \\
     ダジャレ & corny joke/bad pun/poor joke & (#ruby[駄洒落][だ|じゃ|れ]) \\
     ギャグ & gag/joke & \\
-    オヤジギャグ & corny joke/dad joke (``dad gag'') & (#rruby[親父][おやじ]ギャグ); slang \\
+    オヤジギャグ & corny joke/dad joke ("dad gag") & (#rruby[親父][おやじ]ギャグ); slang \\
     % & & \\
     \midrule
     #ruby[音][おと] & sound & \\
@@ -1697,7 +1697,7 @@ Table~\ref{tbl:appendix-vocab-nouns-family} lists the names in casual/formal man
     #ruby[声][こえ] & voice (literal and abstract); singing/chirping (of bird/insect) & \\
     #ruby[歌][うた] & song/singing & \\
     #ruby[演奏][えん|そう] & musical performance & also a verb \\
-    #ruby[初見][しょ|けん] & sight-reading (music) & also in Table~\ref{tbl:appendix-vocab-nouns-interaction} \\
+    #ruby[初見][しょ|けん] & sight-reading (music) & also in @tbl:appendix-vocab-nouns-interaction \\
     #ruby[曲][きょく] & piece/composition/song/track & \\
     オリ#ruby[曲][きょく] & original piece/composition/song/track & slang, abbreviation \\
     #ruby[散歩][さん|ぽ] & stroll & \\
@@ -1728,13 +1728,13 @@ Table~\ref{tbl:appendix-vocab-nouns-family} lists the names in casual/formal man
     メンバ[ー]シップ & membership & \\
     #ruby[登録][とう|ろく] & presence in register/records; registration/subscription (YouTube) & also a verb; #link("https://dictionary.goo.ne.jp/word/\%e7\%99\%bb\%e9\%8c\%b2/")[[goo]] \\
     #ruby[入会][にゅう|かい] & enrolment/admission into a club/society/mailing list & also a verb; #link("https://ja.hinative.com/questions/22502664")[[HN]] \\
-    #ruby[加入][か|にゅう] & becoming a member of (e.g.\ a group/project) & also a verb; #link("https://ja.hinative.com/questions/22502664")[[HN]] \\
+    #ruby[加入][か|にゅう] & becoming a member of (e.g. a group/project) & also a verb; #link("https://ja.hinative.com/questions/22502664")[[HN]] \\
     #ruby[退会][たい|かい] & withdrawal/resignation from a club/society/mailing list & also a verb \\
     % & & \\
     \midrule
     \midrule
     #ruby[盗品][とう|ひん] & stolen goods & \\
-    #rruby[真似][まね] & imitating/copying/mimicry (usu. as <adj>#rruby[真似][まね]をする) & \\
+    #rruby[真似][まね] & imitating/copying/mimicry (usu. as \<adj\>#rruby[真似][まね]をする) & \\
     % & & \\
     \midrule
     \midrule
@@ -1764,7 +1764,7 @@ Table~\ref{tbl:appendix-vocab-nouns-family} lists the names in casual/formal man
 
 
 == Sports
-% Help: \SetCell[r=2,c=2]{c,m} <content>, \cmidrule[l]{3-4}
+% Help: \SetCell[r=2,c=2]{c,m} \<content\>, \cmidrule[l]{3-4}
 % Help: colspec: X[ratio, horizontal alignment] columns grow to fit width=\linewidth
 %                  negative ratios: shrink to fit content and may not grow to full ratio
 % Help: colspec: l/c/r columns do not grow
@@ -1790,7 +1790,7 @@ Table~\ref{tbl:appendix-vocab-nouns-family} lists the names in casual/formal man
 
 
 == Consumption
-% Help: \SetCell[r=2,c=2]{c,m} <content>, \cmidrule[l]{3-4}
+% Help: \SetCell[r=2,c=2]{c,m} \<content\>, \cmidrule[l]{3-4}
 % Help: colspec: X[ratio, horizontal alignment] columns grow to fit width=\linewidth
 %                  negative ratios: shrink to fit content and may not grow to full ratio
 % Help: colspec: l/c/r columns do not grow
@@ -1816,7 +1816,7 @@ Table~\ref{tbl:appendix-vocab-nouns-family} lists the names in casual/formal man
     [お]#ruby[金][かね] & money & [polite] \\
     #ruby[円][えん] & yen (Japanese monetary unit) & \\
     #ruby[買][か]い#ruby[物][もの] & the act of shopping/purchased goods & \\
-    #ruby[会計][かい|けい] & bill (at a restaurant) & also in Table~\ref{tbl:appendix-vocab-nouns-academic-fields} \\
+    #ruby[会計][かい|けい] & bill (at a restaurant) & also in @tbl:appendix-vocab-nouns-academic-fields \\
     ビル & bill/invoice & \\
     % & & \\
     \midrule
@@ -1847,10 +1847,10 @@ Table~\ref{tbl:appendix-vocab-nouns-family} lists the names in casual/formal man
     トランプ & (Western) playing cards & \\
     じゃんけん & rock-paper-scissors & (じゃん#ruby[拳][けん]) \\
     じゃんけんぽん & rock-paper-scissors (called out before revealing one's hand) & (じゃん#ruby[拳][けん])ぽん \\
-    クラブ & clubs suit & also in Table~\ref{tbl:appendix-vocab-nouns-education-and-correctness} \\
+    クラブ & clubs suit & also in @tbl:appendix-vocab-nouns-education-and-correctness \\
     ハート & hearts suit & \\
     スペード & spades suit & \\
-    ダイヤモンド & diamonds suit & also in Table~\ref{tbl:appendix-vocab-nouns-nature} \\
+    ダイヤモンド & diamonds suit & also in @tbl:appendix-vocab-nouns-nature \\
     % & & \\
     \midrule
     \midrule
@@ -1861,7 +1861,7 @@ Table~\ref{tbl:appendix-vocab-nouns-family} lists the names in casual/formal man
 
 
 == Interaction
-% Help: \SetCell[r=2,c=2]{c,m} <content>, \cmidrule[l]{3-4}
+% Help: \SetCell[r=2,c=2]{c,m} \<content\>, \cmidrule[l]{3-4}
 % Help: colspec: X[ratio, horizontal alignment] columns grow to fit width=\linewidth
 %                  negative ratios: shrink to fit content and may not grow to full ratio
 % Help: colspec: l/c/r columns do not grow
@@ -1920,13 +1920,13 @@ Table~\ref{tbl:appendix-vocab-nouns-family} lists the names in casual/formal man
     #ruby[関連][かん|れん] & connection/relation/relevance & also a verb \\
     % & & \\
     \midrule
-    #ruby[初見][しょ|けん] & first sight/meeting & also in Table~\ref{tbl:appendix-vocab-nouns-production} \\
+    #ruby[初見][しょ|けん] & first sight/meeting & also in @tbl:appendix-vocab-nouns-production \\
     #ruby[連絡][れん|らく] & making contact/communication/call/message & also a verb \\
-    #ruby[連絡先][れん|らく|さき] & contact information (e.g.\ address/phone number) & \\
+    #ruby[連絡先][れん|らく|さき] & contact information (e.g. address/phone number) & \\
     #ruby[電話][でん|わ] & phone/phone call & also a verb \\
     メールアドレス & email address & \\
     パソコン & personal computer (PC) & \\
-    ノートパソコン & laptop computer (``notebook personal computer'') & \\
+    ノートパソコン & laptop computer ("notebook personal computer") & \\
     % & & \\
     \midrule
     #ruby[返事][へん|じ] & reply/answer/response & also a verb \\
@@ -1949,7 +1949,7 @@ Table~\ref{tbl:appendix-vocab-nouns-family} lists the names in casual/formal man
 
 
 == Society and culture
-% Help: \SetCell[r=2,c=2]{c,m} <content>, \cmidrule[l]{3-4}
+% Help: \SetCell[r=2,c=2]{c,m} \<content\>, \cmidrule[l]{3-4}
 % Help: colspec: X[ratio, horizontal alignment] columns grow to fit width=\linewidth
 %                  negative ratios: shrink to fit content and may not grow to full ratio
 % Help: colspec: l/c/r columns do not grow
@@ -2020,7 +2020,7 @@ Table~\ref{tbl:appendix-vocab-nouns-family} lists the names in casual/formal man
 
 
 == Health
-% Help: \SetCell[r=2,c=2]{c,m} <content>, \cmidrule[l]{3-4}
+% Help: \SetCell[r=2,c=2]{c,m} \<content\>, \cmidrule[l]{3-4}
 % Help: colspec: X[ratio, horizontal alignment] columns grow to fit width=\linewidth
 %                  negative ratios: shrink to fit content and may not grow to full ratio
 % Help: colspec: l/c/r columns do not grow
@@ -2115,7 +2115,7 @@ Table~\ref{tbl:appendix-vocab-nouns-family} lists the names in casual/formal man
 
 
 == Disasters
-% Help: \SetCell[r=2,c=2]{c,m} <content>, \cmidrule[l]{3-4}
+% Help: \SetCell[r=2,c=2]{c,m} \<content\>, \cmidrule[l]{3-4}
 % Help: colspec: X[ratio, horizontal alignment] columns grow to fit width=\linewidth
 %                  negative ratios: shrink to fit content and may not grow to full ratio
 % Help: colspec: l/c/r columns do not grow
@@ -2144,7 +2144,7 @@ _Read the main article on #link("https://cotoacademy.com/colors-japanese-use-jap
 
 Colours are often used as labels, together with the の particle.
 
-% Help: \SetCell[r=2,c=2]{c,m} <content>, \cmidrule[l]{3-4}
+% Help: \SetCell[r=2,c=2]{c,m} \<content\>, \cmidrule[l]{3-4}
 % Help: colspec: X[ratio, horizontal alignment] columns grow to fit width=\linewidth
 %                  negative ratios: shrink to fit content and may not grow to full ratio
 % Help: colspec: l/c/r columns do not grow
@@ -2215,15 +2215,15 @@ Colours are often used as labels, together with the の particle.
     % & & \\
     \midrule
     \midrule
-    #ruby[紅葉][こう|よう] & leaves turning red in autumn; autumn colours; autumn leaves (``red leaf'') & also a verb \\
-    #ruby[黄葉][こう|よう] & leaves turning yellow in autumn; autumn colours; autumn leaves (``yellow leaf'') & also a verb \\
+    #ruby[紅葉][こう|よう] & leaves turning red in autumn; autumn colours; autumn leaves ("red leaf") & also a verb \\
+    #ruby[黄葉][こう|よう] & leaves turning yellow in autumn; autumn colours; autumn leaves ("yellow leaf") & also a verb \\
     % & & \\
     \bottomrule
 }
 
 
 == Shapes
-% Help: \SetCell[r=2,c=2]{c,m} <content>, \cmidrule[l]{3-4}
+% Help: \SetCell[r=2,c=2]{c,m} \<content\>, \cmidrule[l]{3-4}
 % Help: colspec: X[ratio, horizontal alignment] columns grow to fit width=\linewidth
 %                  negative ratios: shrink to fit content and may not grow to full ratio
 % Help: colspec: l/c/r columns do not grow
@@ -2248,14 +2248,14 @@ Colours are often used as labels, together with the の particle.
     ハート#ruby[型][がた] & heart shape (mold) & \\
     % & & \\
     \midrule
-    #rruby[八重][やえ] & overlapping/multilayered/doubled (e.g.\ of flower petals) & #link("https://dictionary.goo.ne.jp/word/\%E5\%85\%AB\%E9\%87\%8D/")[[goo]], #link("https://ja.wikipedia.org/wiki/\%E5\%85\%AB\%E9\%87\%8D")[[Wiki]] \\
+    #rruby[八重][やえ] & overlapping/multilayered/doubled (e.g. of flower petals) & #link("https://dictionary.goo.ne.jp/word/\%E5\%85\%AB\%E9\%87\%8D/")[[goo]], #link("https://ja.wikipedia.org/wiki/\%E5\%85\%AB\%E9\%87\%8D")[[Wiki]] \\
     % & & \\
     \bottomrule
 }
 
 
 == Agreeability
-% Help: \SetCell[r=2,c=2]{c,m} <content>, \cmidrule[l]{3-4}
+% Help: \SetCell[r=2,c=2]{c,m} \<content\>, \cmidrule[l]{3-4}
 % Help: colspec: X[ratio, horizontal alignment] columns grow to fit width=\linewidth
 %                  negative ratios: shrink to fit content and may not grow to full ratio
 % Help: colspec: l/c/r columns do not grow
@@ -2272,7 +2272,7 @@ Colours are often used as labels, together with the の particle.
     \toprule
     *Name* & *Meaning* & *Notes* \\
     \midrule
-    #ruby[好][す]き#ruby[嫌][き]い & likes and dislikes/preferences; pickiness/choosiness/fussiness (esp.\ food) & \\
+    #ruby[好][す]き#ruby[嫌][き]い & likes and dislikes/preferences; pickiness/choosiness/fussiness (esp. food) & \\
     % & & \\
     \midrule
     \midrule
@@ -2295,7 +2295,7 @@ Colours are often used as labels, together with the の particle.
 
 
 == Appearance and style
-% Help: \SetCell[r=2,c=2]{c,m} <content>, \cmidrule[l]{3-4}
+% Help: \SetCell[r=2,c=2]{c,m} \<content\>, \cmidrule[l]{3-4}
 % Help: colspec: X[ratio, horizontal alignment] columns grow to fit width=\linewidth
 %                  negative ratios: shrink to fit content and may not grow to full ratio
 % Help: colspec: l/c/r columns do not grow
@@ -2318,7 +2318,7 @@ Colours are often used as labels, together with the の particle.
     \midrule
     \midrule
     #ruby[魅力][み|りょく] & charm/attraction/appeal & \\
-    #ruby[味][あじ] & charm/appeal/uniqueness/attractiveness & also in Table~\ref{tbl:appendix-vocab-nouns-taste-and-texture} \\
+    #ruby[味][あじ] & charm/appeal/uniqueness/attractiveness & also in @tbl:appendix-vocab-nouns-taste-and-texture \\
     #ruby[愛嬌][あい|きょう] & charm/attractiveness; courtesy  & \\
     % & & \\
     \midrule
@@ -2340,7 +2340,7 @@ Colours are often used as labels, together with the の particle.
 
 
 == Ability
-% Help: \SetCell[r=2,c=2]{c,m} <content>, \cmidrule[l]{3-4}
+% Help: \SetCell[r=2,c=2]{c,m} \<content\>, \cmidrule[l]{3-4}
 % Help: colspec: X[ratio, horizontal alignment] columns grow to fit width=\linewidth
 %                  negative ratios: shrink to fit content and may not grow to full ratio
 % Help: colspec: l/c/r columns do not grow
@@ -2383,7 +2383,7 @@ Colours are often used as labels, together with the の particle.
 
 
 == Personalities
-% Help: \SetCell[r=2,c=2]{c,m} <content>, \cmidrule[l]{3-4}
+% Help: \SetCell[r=2,c=2]{c,m} \<content\>, \cmidrule[l]{3-4}
 % Help: colspec: X[ratio, horizontal alignment] columns grow to fit width=\linewidth
 %                  negative ratios: shrink to fit content and may not grow to full ratio
 % Help: colspec: l/c/r columns do not grow
@@ -2425,7 +2425,7 @@ Colours are often used as labels, together with the の particle.
 
 
 == Education and correctness
-% Help: \SetCell[r=2,c=2]{c,m} <content>, \cmidrule[l]{3-4}
+% Help: \SetCell[r=2,c=2]{c,m} \<content\>, \cmidrule[l]{3-4}
 % Help: colspec: X[ratio, horizontal alignment] columns grow to fit width=\linewidth
 %                  negative ratios: shrink to fit content and may not grow to full ratio
 % Help: colspec: l/c/r columns do not grow
@@ -2492,7 +2492,7 @@ Colours are often used as labels, together with the の particle.
     #ruby[部活動][ぶ|かつ|どう] & club/extracurricular activities & \\
     #ruby[部活][ぶ|かつ] & club/extracurricular activities (abbreviation) & \\
     クラブ#ruby[活動][かつ|どう] & club/extracurricular activities & \\
-    クラブ & club; nightclub; sports club; golf club & (#rruby[倶楽部][くらぶ]); also in Table~\ref{tbl:appendix-vocab-nouns-consumption} \\
+    クラブ & club; nightclub; sports club; golf club & (#rruby[倶楽部][くらぶ]); also in @tbl:appendix-vocab-nouns-consumption \\
     #ruby[遠足][えん|そく] & school trip/field trip/excursion/outing & \\
     % & & \\
     \bottomrule
@@ -2500,7 +2500,7 @@ Colours are often used as labels, together with the の particle.
 
 
 == Academic fields
-% Help: \SetCell[r=2,c=2]{c,m} <content>, \cmidrule[l]{3-4}
+% Help: \SetCell[r=2,c=2]{c,m} \<content\>, \cmidrule[l]{3-4}
 % Help: colspec: X[ratio, horizontal alignment] columns grow to fit width=\linewidth
 %                  negative ratios: shrink to fit content and may not grow to full ratio
 % Help: colspec: l/c/r columns do not grow
@@ -2522,7 +2522,7 @@ Colours are often used as labels, together with the の particle.
     #ruby[地理学][ち|り|がく] & geography & \\
     #ruby[歴史学][れき|し|がく] & history & \\
     #ruby[経済学][けい|ざい|がく] & economics & \\
-    #ruby[会計][かい|けい] & accounting/finance & also in Table~\ref{tbl:appendix-vocab-nouns-consumption} \\
+    #ruby[会計][かい|けい] & accounting/finance & also in @tbl:appendix-vocab-nouns-consumption \\
     #ruby[工学][こう|がく] & engineering & \\
     #ruby[計算機科学][けい|さん|き|か|がく] & computer science & also: コンピューターサイエンス \\
     #ruby[情報工学][じょう|ほう|こう|がく] & information engineering & \\
@@ -2532,7 +2532,7 @@ Colours are often used as labels, together with the の particle.
 
 
 == Knowledge, truth and reality
-% Help: \SetCell[r=2,c=2]{c,m} <content>, \cmidrule[l]{3-4}
+% Help: \SetCell[r=2,c=2]{c,m} \<content\>, \cmidrule[l]{3-4}
 % Help: colspec: X[ratio, horizontal alignment] columns grow to fit width=\linewidth
 %                  negative ratios: shrink to fit content and may not grow to full ratio
 % Help: colspec: l/c/r columns do not grow
@@ -2574,7 +2574,7 @@ Colours are often used as labels, together with the の particle.
     #ruby[真実][しん|じつ] & truth & #link("https://ja.hinative.com/questions/21280744")[[HN1]], #link("https://ja.hinative.com/questions/23845869")[[HN2]] \\
     #ruby[事実][じ|じつ] & fact & #link("https://ja.hinative.com/questions/23845869")[[HN]] \\
     #ruby[現実][げん|じつ] & reality & #link("https://ja.hinative.com/questions/23845869")[[HN]] \\
-    #ruby[実際][じっ|さい] & actuality/in practice (compared to expectation/theory) (usu.\ as #ruby[実際][じっ|さい]の or #ruby[実際][じっ|さい]は) & #link("https://ja.hinative.com/questions/23210866")[[HN]] \\
+    #ruby[実際][じっ|さい] & actuality/in practice (compared to expectation/theory) (usu. as #ruby[実際][じっ|さい]の or #ruby[実際][じっ|さい]は) & #link("https://ja.hinative.com/questions/23210866")[[HN]] \\
     #ruby[理想][り|そう] & ideal/ideals & \\
     #ruby[公式][こう|しき] & official & \\
     % & & \\
@@ -2603,7 +2603,7 @@ Colours are often used as labels, together with the の particle.
     % & & \\
     \midrule
     #ruby[確定][かく|てい] & decision (clear) & also a verb; #link("https://dictionary.goo.ne.jp/thsrs/13669/meaning/m0u/")[[goo]] \\
-    #ruby[内定][ないう|てい] & \{informal/internal/unofficial\} \{decision/offer (e.g.\ job)\} & also a verb; #link("https://dictionary.goo.ne.jp/thsrs/13669/meaning/m0u/")[[goo]] \\
+    #ruby[内定][ないう|てい] & \{informal/internal/unofficial\} \{decision/offer (e.g. job)\} & also a verb; #link("https://dictionary.goo.ne.jp/thsrs/13669/meaning/m0u/")[[goo]] \\
     #ruby[本決][ほん|ぎ]まり & formal/official final decision & #link("https://dictionary.goo.ne.jp/thsrs/13669/meaning/m0u/")[[goo]] \\
     #ruby[未定][み|てい] & not decided/not yet fixed/undecided/pending/TBC & also an adjective; #link("https://dictionary.goo.ne.jp/thsrs/13669/meaning/m0u/")[[goo]]\\
     #ruby[所定][しょ|てい] & predetermined/prescribed/designated/fixed in advance & #link("https://dictionary.goo.ne.jp/thsrs/13669/meaning/m0u/")[[goo]] \\
@@ -2638,7 +2638,7 @@ Colours are often used as labels, together with the の particle.
 
 
 == Courtesy
-% Help: \SetCell[r=2,c=2]{c,m} <content>, \cmidrule[l]{3-4}
+% Help: \SetCell[r=2,c=2]{c,m} \<content\>, \cmidrule[l]{3-4}
 % Help: colspec: X[ratio, horizontal alignment] columns grow to fit width=\linewidth
 %                  negative ratios: shrink to fit content and may not grow to full ratio
 % Help: colspec: l/c/r columns do not grow
@@ -2682,7 +2682,7 @@ Colours are often used as labels, together with the の particle.
 
 
 == Conflict and resolution
-% Help: \SetCell[r=2,c=2]{c,m} <content>, \cmidrule[l]{3-4}
+% Help: \SetCell[r=2,c=2]{c,m} \<content\>, \cmidrule[l]{3-4}
 % Help: colspec: X[ratio, horizontal alignment] columns grow to fit width=\linewidth
 %                  negative ratios: shrink to fit content and may not grow to full ratio
 % Help: colspec: l/c/r columns do not grow
@@ -2728,7 +2728,7 @@ Colours are often used as labels, together with the の particle.
     % & & \\
     \midrule
     #ruby[喧嘩][けん|か] & quarrel/brawl/fight/squabble/scuffle/argument & also a verb \\
-    #ruby[我慢][が|まん] & patience/endurance/bearing with something (usu.\ #ruby[我慢][が|まん]できない ``cannot stand'') & \\
+    #ruby[我慢][が|まん] & patience/endurance/bearing with something (usu. #ruby[我慢][が|まん]できない "cannot stand") & \\
     % & & \\
     \midrule
     #ruby[申][もう]し#ruby[訳][わけ] & apology/excuse & \\
@@ -2744,7 +2744,7 @@ Colours are often used as labels, together with the の particle.
     #ruby[責][せき] & responsibility/duty/obligation & \\
     #ruby[責任][せき|にん] & duty/responsibility & \\
     #ruby[任務][にん|む] & mission/task/role/duty/function/office & \\
-    <label>のせい & <label>'s fault; consequence of <label> & (#rruby[所為][せい]) \\
+    \<label\>のせい & \<label\>'s fault; consequence of \<label\> & (#rruby[所為][せい]) \\
     #ruby[約束][やく|そく] & promise/agreement/arrangement/contract/pact; appointment/date & also a verb \\
     % & & \\
     \midrule
@@ -2755,7 +2755,7 @@ Colours are often used as labels, together with the の particle.
 }
 
 == Weapons
-% Help: \SetCell[r=2,c=2]{c,m} <content>, \cmidrule[l]{3-4}
+% Help: \SetCell[r=2,c=2]{c,m} \<content\>, \cmidrule[l]{3-4}
 % Help: colspec: X[ratio, horizontal alignment] columns grow to fit width=\linewidth
 %                  negative ratios: shrink to fit content and may not grow to full ratio
 % Help: colspec: l/c/r columns do not grow
@@ -2774,15 +2774,15 @@ Colours are often used as labels, together with the の particle.
     \midrule
     #ruby[武器][ぶ|き] & weapon/arms/ordnance & \\
     #ruby[刃][やいば] & blade/sword & \\
-    #ruby[刀][かたな] & sword (esp.\ Japanese single-edged) & \\
-    #ruby[剣][けん] & sword (esp.\ double-edged); blade; bayonet & \\
+    #ruby[刀][かたな] & sword (esp. Japanese single-edged) & \\
+    #ruby[剣][けん] & sword (esp. double-edged); blade; bayonet & \\
     % & & \\
     \bottomrule
 }
 
 
 == Taste and texture
-% Help: \SetCell[r=2,c=2]{c,m} <content>, \cmidrule[l]{3-4}
+% Help: \SetCell[r=2,c=2]{c,m} \<content\>, \cmidrule[l]{3-4}
 % Help: colspec: X[ratio, horizontal alignment] columns grow to fit width=\linewidth
 %                  negative ratios: shrink to fit content and may not grow to full ratio
 % Help: colspec: l/c/r columns do not grow
@@ -2803,7 +2803,7 @@ Colours are often used as labels, together with the の particle.
     % & & \\
     \midrule
     \midrule
-    #ruby[味][あじ] & flavour/taste (literal/abstract (e.g.\ victory)) & also in Table~\ref{tbl:appendix-vocab-nouns-appearance-and-style} \\
+    #ruby[味][あじ] & flavour/taste (literal/abstract (e.g. victory)) & also in @tbl:appendix-vocab-nouns-appearance-and-style \\
     もちもち & springy texture/elastic & \\
     プルンプルン & shaking like a jelly/jellylike & \\
     % & & \\
@@ -2812,7 +2812,7 @@ Colours are often used as labels, together with the の particle.
 
 
 == Amounts and sizes
-% Help: \SetCell[r=2,c=2]{c,m} <content>, \cmidrule[l]{3-4}
+% Help: \SetCell[r=2,c=2]{c,m} \<content\>, \cmidrule[l]{3-4}
 % Help: colspec: X[ratio, horizontal alignment] columns grow to fit width=\linewidth
 %                  negative ratios: shrink to fit content and may not grow to full ratio
 % Help: colspec: l/c/r columns do not grow
@@ -2830,7 +2830,7 @@ Colours are often used as labels, together with the の particle.
     *Name* & *Meaning* & *Notes* \\
     \midrule
     #ruby[第][だい]〜 & prefix for forming ordinal numbers & \prefix \\
-    〜#ruby[過][す]ぎ & too much/over- (e.g.\ eating) & \suffix, also in Table~\ref{nouns-tbl:appendix-vocab-nouns-time} \\
+    〜#ruby[過][す]ぎ & too much/over- (e.g. eating) & \suffix, also in @nouns-tbl:appendix-vocab-nouns-time \\
     超〜 & super-/ultra-/hyper-/extreme & \prefix \\
     % & & \\
     \midrule
@@ -2861,7 +2861,7 @@ Colours are often used as labels, together with the の particle.
 
 
 == Creatures and divinity
-% Help: \SetCell[r=2,c=2]{c,m} <content>, \cmidrule[l]{3-4}
+% Help: \SetCell[r=2,c=2]{c,m} \<content\>, \cmidrule[l]{3-4}
 % Help: colspec: X[ratio, horizontal alignment] columns grow to fit width=\linewidth
 %                  negative ratios: shrink to fit content and may not grow to full ratio
 % Help: colspec: l/c/r columns do not grow
@@ -2887,7 +2887,7 @@ Colours are often used as labels, together with the の particle.
     #ruby[怪物][かい|ぶつ] & monster & \\
     #ruby[鬼][おに] & demon/ogre/oni & \\
     おばけ & ghost/apparation; goblin/monster/demon & (お#ruby[化][ば]け) \\
-    ばけ & taking on another form/disguising oneself (esp.\ by spirits/foxes/racoon dogs in folklore) & (#ruby[化][ば]け) \\
+    ばけ & taking on another form/disguising oneself (esp. by spirits/foxes/racoon dogs in folklore) & (#ruby[化][ば]け) \\
     % & & \\
     \midrule
     #ruby[天国][てん|ごく] & heaven & \\
@@ -2907,7 +2907,7 @@ Colours are often used as labels, together with the の particle.
 
 
 == Nature
-% Help: \SetCell[r=2,c=2]{c,m} <content>, \cmidrule[l]{3-4}
+% Help: \SetCell[r=2,c=2]{c,m} \<content\>, \cmidrule[l]{3-4}
 % Help: colspec: X[ratio, horizontal alignment] columns grow to fit width=\linewidth
 %                  negative ratios: shrink to fit content and may not grow to full ratio
 % Help: colspec: l/c/r columns do not grow
@@ -2924,11 +2924,11 @@ Colours are often used as labels, together with the の particle.
     \toprule
     *Name* & *Meaning* & *Notes* \\
     \midrule
-    #ruby[草][くさ] & grass/weed/herb & also in Table~\ref{tbl:appendix-vocab-nouns-emotions} \\
+    #ruby[草][くさ] & grass/weed/herb & also in @tbl:appendix-vocab-nouns-emotions \\
     #ruby[花][はな] & flower/blossom/bloom/petal & \\
     #ruby[桜][さくら] & cherry tree/cherry blossom & \\
     #ruby[山桜][やま|ざくら] & mountain cherry & \\
-    #ruby[満開][まん|かい] & full bloom (esp.\ of cherry blossom) & also a verb \\
+    #ruby[満開][まん|かい] & full bloom (esp. of cherry blossom) & also a verb \\
     #ruby[竹][たけ] & bamboo & \\
     #ruby[竹林][ちく|りん] & bamboo forest & \\
     % & & \\
@@ -2948,10 +2948,10 @@ Colours are often used as labels, together with the の particle.
     #ruby[岩][いわ] & rock/boulder (large) & \\
     #ruby[原石][げん|せき] & raw/unpolished ore/gemstone & \\
     #ruby[宝石][ほう|せき] & gem/jewel/precious stone & \\
-    ダイヤ[モンド] & diamond & also in Table~\ref{tbl:appendix-vocab-nouns-consumption} \\
+    ダイヤ[モンド] & diamond & also in @tbl:appendix-vocab-nouns-consumption \\
     % & & \\
     \midrule
-    #ruby[空気][くう|き] & air/atmosphere & also in Table~\ref{tbl:appendix-vocab-nouns-emotions} \\
+    #ruby[空気][くう|き] & air/atmosphere & also in @tbl:appendix-vocab-nouns-emotions \\
     #ruby[空][そら] & the sky & \\
     #ruby[青空][あお|そら] & blue sky & \\
     #ruby[風][かぜ] & wind/breeze/draught & \\
@@ -2959,7 +2959,7 @@ Colours are often used as labels, together with the の particle.
     #ruby[黒雲][くろ|くも] & dark clouds & \\
     #ruby[暗雲][あん|うん] & dark clouds; threatening signs/ominous indications & \\
     #ruby[雷雲][らい|うん] & thundercloud & \\
-    かすみ & mist; haze (esp.\ in Spring) & (#ruby[霞][かすみ]) \\
+    かすみ & mist; haze (esp. in Spring) & (#ruby[霞][かすみ]) \\
     #ruby[海][うみ] & sea/ocean & \\
     % & & \\
     \midrule
@@ -2983,7 +2983,7 @@ Colours are often used as labels, together with the の particle.
     % & & \\
     \midrule
     \midrule
-    #ruby[元素][げん|そ] & element (chemical/classical (e.g.\ earth/water/air/fire)) & \\
+    #ruby[元素][げん|そ] & element (chemical/classical (e.g. earth/water/air/fire)) & \\
     #ruby[水素][すい|そ] & hydrogen & \\
     #ruby[炭素][たん|そ] & carbon & \\
     #ruby[酸素][さん|そ] & oxygen & \\
@@ -3001,7 +3001,7 @@ Colours are often used as labels, together with the の particle.
 == Cosmic
 _Read the main article on #link("https://www.sakuramani.com/the-solar-system-in-japanese/")[SM]. Read the differences between cosmic rocks at #link("https://www.amsmeteors.org/wp-content/uploads/2013/09/AMS-TERMINOLOGY-2015-EN-ENGLISH1.pdf")[AMS]._
 
-% Help: \SetCell[r=2,c=2]{c,m} <content>, \cmidrule[l]{3-4}
+% Help: \SetCell[r=2,c=2]{c,m} \<content\>, \cmidrule[l]{3-4}
 % Help: colspec: X[ratio, horizontal alignment] columns grow to fit width=\linewidth
 %                  negative ratios: shrink to fit content and may not grow to full ratio
 % Help: colspec: l/c/r columns do not grow
@@ -3056,7 +3056,7 @@ _Read the main article on #link("https://www.sakuramani.com/the-solar-system-in-
     \midrule
     #ruby[宇宙][う|ちゅう] & universe/cosmos/space & \\
     #ruby[世界][せ|かい] & the world/the universe/society & \\
-    #ruby[異世界][い|せ|かい] & another world (esp.\ fiction)/parallel universe & \\
+    #ruby[異世界][い|せ|かい] & another world (esp. fiction)/parallel universe & \\
     #ruby[銀河][ぎん|が] & galaxy & \\
     #ruby[銀河系][ぎん|が|けい] & galactic system & \\
     #ruby[天][あま]の#ruby[川][がわ][#ruby[銀河][ぎん|が]] & the Milky Way (galaxy name) & \\
@@ -3070,7 +3070,7 @@ _Read the main article on #link("https://www.sakuramani.com/the-solar-system-in-
 
 
 == Physical units
-% Help: \SetCell[r=2,c=2]{c,m} <content>, \cmidrule[l]{3-4}
+% Help: \SetCell[r=2,c=2]{c,m} \<content\>, \cmidrule[l]{3-4}
 % Help: colspec: X[ratio, horizontal alignment] columns grow to fit width=\linewidth
 %                  negative ratios: shrink to fit content and may not grow to full ratio
 % Help: colspec: l/c/r columns do not grow
@@ -3174,7 +3174,7 @@ _Read the main article on #link("https://www.sakuramani.com/the-solar-system-in-
 
 
 == Hygiene
-% Help: \SetCell[r=2,c=2]{c,m} <content>, \cmidrule[l]{3-4}
+% Help: \SetCell[r=2,c=2]{c,m} \<content\>, \cmidrule[l]{3-4}
 % Help: colspec: X[ratio, horizontal alignment] columns grow to fit width=\linewidth
 %                  negative ratios: shrink to fit content and may not grow to full ratio
 % Help: colspec: l/c/r columns do not grow
@@ -3200,7 +3200,7 @@ _Read the main article on #link("https://www.sakuramani.com/the-solar-system-in-
 
 
 == Common names
-% Help: \SetCell[r=2,c=2]{c,m} <content>, \cmidrule[l]{3-4}
+% Help: \SetCell[r=2,c=2]{c,m} \<content\>, \cmidrule[l]{3-4}
 % Help: colspec: X[ratio, horizontal alignment] columns grow to fit width=\linewidth
 %                  negative ratios: shrink to fit content and may not grow to full ratio
 % Help: colspec: l/c/r columns do not grow
@@ -3235,7 +3235,7 @@ _Read the main article on #link("https://www.sakuramani.com/the-solar-system-in-
 
 
 == Character names
-% Help: \SetCell[r=2,c=2]{c,m} <content>, \cmidrule[l]{3-4}
+% Help: \SetCell[r=2,c=2]{c,m} \<content\>, \cmidrule[l]{3-4}
 % Help: colspec: X[ratio, horizontal alignment] columns grow to fit width=\linewidth
 %                  negative ratios: shrink to fit content and may not grow to full ratio
 % Help: colspec: l/c/r columns do not grow

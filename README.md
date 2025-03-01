@@ -4,7 +4,7 @@
 ## Conversion from LaTeX to Typst
 
 Files to include: `*.typ`:
-|Find|Replace|
+|Find (regex)|Replace (literal)|
 |---|---|
 |`\\section\{(.*?)\}`|`= $1`|
 |`\\subsection\{(.*?)\}`|`== $1`|
@@ -14,6 +14,18 @@ Files to include: `*.typ`:
 |`\\href\{(.*?)\}\{(.*?)\}`|`#link("$1")[$2]`|
 |`\\emph\{(.*?)\}`|`_$1_`|
 |`\\textbf\{(.*?)\}`|`*$1*`|
+|`\\ul\{(.*?)\}`|`#underline[$1]`|
+|`\\ul\{(.*?)\}`|`#underline[$1]`|
+|` ``(.*?)''`|`"$1"`|
+|`\.\\ ` (with trailing space)|`. ` (with trailing space)|
+|`\\clearpage`|`#pagebreak()`|
+|`<(.*?)>`|`\<$1\>`|
+|`\\label\{(.*?)\}`|`<$1>`|
+|`\\ref\{(.*?)\}`|`@$1`|
+|`Table~`|(blank)|
+|`Section~`|(blank)|
+|`Appendix~`|(blank)|
+|`\\texttt\{(.*?)\}`|`` `$1` ``|
 
 
 <!--

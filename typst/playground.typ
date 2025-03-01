@@ -14,7 +14,18 @@
 
 #link("https://google.com")[Google].
 
+*Bold*.
+
+_Italics._
+
+#underline[Underline.]
+
+#strike[Strikethrough.]
+
+#highlight[Yellow highlight.]
+
 #exception[WHAT]
+
 
 #pagebreak()
 
@@ -24,7 +35,7 @@ See @tbl:asdf-asdf.
 
 // @typstyle off
 #verb_table(
-  "Making progress :)",
+  [Making progress :)],
   "tbl:asdf-asdf",
   [-], [], [], [], [#ruby[動][うご]く], [う], [to move; to stir/shift/shake/swing; to be influenced], [],
   thickhline,

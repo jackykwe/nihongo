@@ -4,17 +4,17 @@
 \begin{document}
 
 \tableofcontents
-% \clearpage
+% #pagebreak()
 
-\clearpage
+#pagebreak()
 \subfile{components/VA-interjections-and-expressions}
-\clearpage
+#pagebreak()
 \subfile{components/VB-nouns}
-\clearpage
+#pagebreak()
 \subfile{components/VC-adjectives}
-\clearpage
+#pagebreak()
 \subfile{components/VD-verbs}
-\clearpage
+#pagebreak()
 \subfile{components/VE-adverbs}
 
 \end{document}

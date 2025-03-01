@@ -4,11 +4,11 @@
 \begin{document}
 
 \tableofcontents
-% \clearpage
+% #pagebreak()
 
-\clearpage
+#pagebreak()
 \subfile{components/SA-kana}
-\clearpage
+#pagebreak()
 \subfile{components/SB-basic-nouns}
 
 \end{document}
