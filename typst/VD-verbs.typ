@@ -37,7 +37,7 @@ rowhead=2,
 \midrule
 \midrule
 \viteq #ruby[触][さわ]る & う & to touch/feel (intentional) & #link("https://dictionary.goo.ne.jp/thsrs/16231/meaning/m1u/")[[goo]] & #ruby[触][さわ]る & う & to touch (intentional) & #link("https://dictionary.goo.ne.jp/thsrs/16231/meaning/m1u/")[[goo]] \\
-\viteq OにSを#ruby[触][ふ]れる & る & to touch O using S (unintentional) \hl{???} & #link("https://dictionary.goo.ne.jp/thsrs/16231/meaning/m1u/")[[goo]] & #ruby[触][ふ]れる & る & to touch/feel (unintentional); to touch/refer to a subject & #link("https://dictionary.goo.ne.jp/thsrs/16231/meaning/m1u/")[[goo]] \\
+\viteq OにSを#ruby[触][ふ]れる & る & to touch O using S (unintentional) #highlight[???] & #link("https://dictionary.goo.ne.jp/thsrs/16231/meaning/m1u/")[[goo]] & #ruby[触][ふ]れる & る & to touch/feel (unintentional); to touch/refer to a subject & #link("https://dictionary.goo.ne.jp/thsrs/16231/meaning/m1u/")[[goo]] \\
 ？ & & & & #ruby[接][せっ]する & E & to be close to/in contact (abstract; information/geographical border) & #link("https://dictionary.goo.ne.jp/thsrs/16231/meaning/m1u/")[[goo]] \\
 % & & & & & & & \\
 \midrule
@@ -583,7 +583,7 @@ rowhead=2,
 % & & & & & & & \\
 \midrule
 \vit #ruby[切][き]る & \exception{う} & to cut/open (sealed); turn off (lights/appliance); hang up; (conversation); shuffle/discard (cards/tiles); punch (ticket) & & #ruby[切][き]れる & る & to break/snap; run out/stop working/expire; be disconnected; be shuffled (cards/tiles); run out (stock); break up & \\
-\<v stem\>#ruby[切][き]る & \exception{う} & \hl{to be able to} do \<v stem\> completely & \aux & & & & \\
+\<v stem\>#ruby[切][き]る & \exception{う} & #highlight[to be able to] do \<v stem\> completely & \aux & & & & \\
 \vit #ruby[破][やぶ]る & う & to tear/rip (paper/cloth); to break through (defences); to surpass (record) & #link("https://ja.hinative.com/questions/17387132")[[HN]]; also in @tbl:appendix-vocab-verbs-conflict-and-resolution & #ruby[破][やぶ]れる & る & to break/collapse/be torn/worn out/ruined & \\
 \vit #ruby[壊][こわ]す & う & to break/destroy/demolish; to wreck/ruin/spoil/damage/destroy (e.g. dreams) & #link("https://ja.hinative.com/questions/17387132")[[HN]] & #ruby[壊][こわ]れる & る & to break/fall apart/collapse/be broken/destroyed/damaged; to stop working & \\
 - & & & & もげる & る & to be torn off/come off & \\
@@ -865,7 +865,7 @@ rowhead=2,
 \midrule
 ？ & & & & (ご)#ruby[注意][ちゅう|い]する & E & to pay attention/remind/caution & \\
 
-& & & & \hl{All WOSURU family} & & & \\
+& & & & #highlight[All WOSURU family] & & & \\
 % & & & & & & & \\
 \midrule
 \midrule
@@ -986,7 +986,7 @@ rowhead=2,
 
 
 == Education and correctness
-\hl{#link("https://japanese.stackexchange.com/questions/56962/standard-mathematical-operations-expressed-in-japanese")[MATH]}
+#highlight[#link("https://japanese.stackexchange.com/questions/56962/standard-mathematical-operations-expressed-in-japanese")[MATH]]
 
 % Help: \SetCell[r=2,c=2]{c,m} \<content\>, \cmidrule[l]{3-4}
 % Help: colspec: X[ratio, horizontal alignment] columns grow to fit width=\linewidth
@@ -1231,7 +1231,7 @@ rowhead=2,
 - & & & & #ruby[反対][はん|たい]する & E & to object/oppose/disagree with/resist (に-marked) & \\
 % & & & & & & & \\
 \midrule
-#ruby[禁][きん]じる/#ruby[禁][きん]ず[る] & る & to forbid/ban/prohibit & \hl{some zuru verb black magic} & - & & & \\
+#ruby[禁][きん]じる/#ruby[禁][きん]ず[る] & る & to forbid/ban/prohibit & #highlight[some zuru verb black magic] & - & & & \\
 % & & & & & & & \\
 \midrule
 #ruby[約束][やく|そく]する & E & to promise/make an agreement & & - & & & \\
@@ -1305,6 +1305,6 @@ rowhead=2,
 \bottomrule
 }
 
-\hl{SUFFIXES AND AUXES}
+#highlight[SUFFIXES AND AUXES]
 
 \end{document}

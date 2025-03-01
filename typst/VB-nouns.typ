@@ -923,7 +923,7 @@ Regarding the こそあど#ruby[言葉][こと|ば]:
     \item \{こ, ど, あ, ど\} \times \{う\} are adverbs
 \end{itemize}
 
-\hl{to read all sub articles #link("https://www.tofugu.com/japanese-grammar/kosoado/")[here]}
+#highlight[to read all sub articles #link("https://www.tofugu.com/japanese-grammar/kosoado/")[here]]
 
 % Help: \SetCell[r=2,c=2]{c,m} \<content\>, \cmidrule[l]{3-4}
 % Help: colspec: X[ratio, horizontal alignment] columns grow to fit width=\linewidth
@@ -1721,7 +1721,7 @@ Regarding the こそあど#ruby[言葉][こと|ば]:
     \midrule
     \midrule
     #ruby[仕事][し|ごと] & work/occupation/employment & \\
-    #ruby[使][つか]い & \hl{errand} & \\
+    #ruby[使][つか]い & #highlight[errand] & \\
     #ruby[引退][いん|たい] & retirement (from the workforce) & also a verb \\
     % & & \\
     \midrule

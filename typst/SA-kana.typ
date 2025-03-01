@@ -72,10 +72,10 @@ Some general notes:
     ちゃ & _ちゃ_ & cha & `cha` &  \\
     ちゅ & _ちゅ_ & chu & `chu` &  \\
     ちょ & _ちょ_ & cho & `cho` &  \\
-    ぢ & _ぢ_ & ji & \textred{`di`} &  \\
-    ぢゃ & _ぢゃ_ & ja & \textred{`dya`} &  \\
-    ぢゅ & _ぢゅ_ & ju & \textred{`dyu`} &  \\
-    ぢょ & _ぢょ_ & jo & \textred{`dyo`} &  \\
+    ぢ & _ぢ_ & ji & #textred[`di`] &  \\
+    ぢゃ & _ぢゃ_ & ja & #textred[`dya`] &  \\
+    ぢゅ & _ぢゅ_ & ju & #textred[`dyu`] &  \\
+    ぢょ & _ぢょ_ & jo & #textred[`dyo`] &  \\
     つ & _つ_ & tsu & \textlightgrey{`tu`/}`tsu` & #underline[tsu]nami \\
     づ & _づ_ & zu & \color{red} `du` &  \\
     て & _て_ & te & `te` & #underline[te]lescope \\
@@ -90,7 +90,7 @@ Some general notes:
     ぬ & _ぬ_ & nu & `nu` & #underline[noo]dles *with tail* \\
     ね & _ね_ & ne & `ne` & ねこ (#underline[ne]ko) *with tail* \\
     の & _の_ & no & `no` & pig #underline[no]se \\
-    は & _は_ & ha/wa$^\dagger$ & \textred{`ha`} & "Ha" shape \\
+    は & _は_ & ha/wa$^\dagger$ & #textred[`ha`] & "Ha" shape \\
     ば & _ば_ & ba & `ba` &  \\
     ぱ & _ぱ_ & pa & `pa` &  \\
     ひ & _ひ_ & hi & `hi` & #underline[hee]l / #underline[he] has a big nose \\
@@ -108,7 +108,7 @@ Some general notes:
     ふ & _ふ_ & fu & \textlightgrey{`hu`/}`fu` & Mount #underline[Fu]ji \\
     ぶ & _ぶ_ & bu & `bu` &  \\
     ぷ & _ぷ_ & pu & `pu` &  \\
-    へ & _へ_ & he/e$^\dagger$ & \textred{`he`} & #underline[he]adband / Mount St. #underline[He]lens \\
+    へ & _へ_ & he/e$^\dagger$ & #textred[`he`] & #underline[he]adband / Mount St. #underline[He]lens \\
     べ & _べ_ & be & `be` &  \\
     ぺ & _ぺ_ & pe & `pe` &  \\
     ほ & _ほ_ & ho & `ho` & mutated santa says #underline[ho] ho ho\\
@@ -135,16 +135,16 @@ Some general notes:
     ろ & _ろ_ & ro & `ro` & normal #underline[ro]ad *without tail* \\
     わ & _わ_ & wa & `wa` & #underline[wa]llaby / #underline[wa]sp \\
     を & _を_ & wo/o$^\dagger$ & `wo` & #underline[wo]ah the water is cold \\
-    ん & _ん_ & nn & \textred{`nn`} & "n" shape \\
-    ぁ & _ぁ_ & ? & \textlightgrey{`la`/}\textred{`xa`} &  \\
-    ぃ & _ぃ_ & ? & \textlightgrey{`li`/}\textred{`xi`} &  \\
-    ぅ & _ぅ_ & ? & \textlightgrey{`lu`/}\textred{`xu`} &  \\
-    ぇ & _ぇ_ & ? & \textlightgrey{`le`/}\textred{`xe`} &  \\
-    ぉ & _ぉ_ & ? & \textlightgrey{`lo`/}\textred{`xo`} &  \\
-    ゃ & _ゃ_ & ? & \textlightgrey{`lya`/}\textred{`xya`} &  \\
-    ゅ & _ゅ_ & ? & \textlightgrey{`lyu`/}\textred{`xyu`} &  \\
-    ょ & _ょ_ & ? & \textlightgrey{`lyo`/}\textred{`xyo`} &  \\
-    っ & _っ_ & $^{`+1`}$`>` & \textlightgrey{`ltu`/`ltsu`/\textred{`xtsu`}/}repeat `>` & \\
+    ん & _ん_ & nn & #textred[`nn`] & "n" shape \\
+    ぁ & _ぁ_ & ? & \textlightgrey{`la`/}#textred[`xa`] &  \\
+    ぃ & _ぃ_ & ? & \textlightgrey{`li`/}#textred[`xi`] &  \\
+    ぅ & _ぅ_ & ? & \textlightgrey{`lu`/}#textred[`xu`] &  \\
+    ぇ & _ぇ_ & ? & \textlightgrey{`le`/}#textred[`xe`] &  \\
+    ぉ & _ぉ_ & ? & \textlightgrey{`lo`/}#textred[`xo`] &  \\
+    ゃ & _ゃ_ & ? & \textlightgrey{`lya`/}#textred[`xya`] &  \\
+    ゅ & _ゅ_ & ? & \textlightgrey{`lyu`/}#textred[`xyu`] &  \\
+    ょ & _ょ_ & ? & \textlightgrey{`lyo`/}#textred[`xyo`] &  \\
+    っ & _っ_ & $^{`+1`}$`>` & \textlightgrey{`ltu`/`ltsu`/#textred[`xtsu`]/}repeat `>` & \\
     \bottomrule
 }
 
@@ -237,10 +237,10 @@ Some general notes:
     チュ & _チュ_ & chu & `chu` &  \\
     \color{blue} チェ & \color{blue} _チェ_ & \color{blue} che & \color{blue} `che` &  \\
     チョ & _チョ_ & cho & `cho` &  \\
-    ヂ & _ヂ_ & ji & \textred{`di`} &  \\
-    ヂャ & _ヂャ_ & ja & \textred{`dya`} &  \\
-    ヂュ & _ヂュ_ & ju & \textred{`dyu`} &  \\
-    ヂョ & _ヂョ_ & jo & \textred{`dyo`} &  \\
+    ヂ & _ヂ_ & ji & #textred[`di`] &  \\
+    ヂャ & _ヂャ_ & ja & #textred[`dya`] &  \\
+    ヂュ & _ヂュ_ & ju & #textred[`dyu`] &  \\
+    ヂョ & _ヂョ_ & jo & #textred[`dyo`] &  \\
     ツ & _ツ_ & tsu & \textlightgrey{`tu`/}`tsu` & same direction as つ \\
     \color{blue} ツァ & \color{blue} _ツァ_ & \color{blue} tsa & \color{blue} `tsa` & _Italian "z"_\\
     \color{blue} ツィ & \color{blue} _ツィ_ & \color{blue} tsi & \color{blue} `tsi` & _Italian "z"_\\
@@ -265,7 +265,7 @@ Some general notes:
     ヌ & _ヌ_ & nu & `nu` & #underline[noo]dles with chopsticks \\
     ネ & _ネ_ & ne & `ne` & #underline[ne]ckerchief \\
     ノ & _ノ_ & no & `no` & long #underline[no]se \\
-    ハ & _ハ_ & ha & \textred{`ha`} & #ruby[八][ハチ] / 八 (CN) \\
+    ハ & _ハ_ & ha & #textred[`ha`] & #ruby[八][ハチ] / 八 (CN) \\
     バ & _バ_ & ba & `ba` &  \\
     パ & _パ_ & pa & `pa` &  \\
     ヒ & _ヒ_ & hi & `hi` & smile #underline[he]he \\
@@ -288,7 +288,7 @@ Some general notes:
     \color{blue} フォ & \color{blue} _フォ_ & \color{blue} fo & \color{blue} `fo` & \\
     ブ & _ブ_ & bu & `bu` &  \\
     プ & _プ_ & pu & `pu` &  \\
-    ヘ & _ヘ_ & he & \textred{`he`} & same shape as へ \\
+    ヘ & _ヘ_ & he & #textred[`he`] & same shape as へ \\
     ベ & _ベ_ & be & `be` &  \\
     ペ & _ペ_ & pe & `pe` &  \\
     ホ & _ホ_ & ho & `ho` & #underline[ho]ly cross \\
@@ -316,17 +316,17 @@ Some general notes:
     ロ & _ロ_ & ro & `ro` & cyclic #underline[ro]ad \\
     ワ & _ワ_ & wa & `wa` & #underline[wa]termelon slice \\
     ヲ & _ヲ_ & wo & `wo` & #underline[o]atmeal bowl \\
-    ン & _ン_ & nn & \textred{`nn`} & N/A \\
-    ァ & _ァ_ & ? & \textlightgrey{`la`/}\textred{`xa`} &  \\
-    ィ & _ィ_ & ? & \textlightgrey{`li`/}\textred{`xi`} &  \\
-    ゥ & _ゥ_ & ? & \textlightgrey{`lu`/}\textred{`xu`} &  \\
-    ェ & _ェ_ & ? & \textlightgrey{`le`/}\textred{`xe`} &  \\
-    ォ & _ォ_ & ? & \textlightgrey{`lo`/}\textred{`xo`} &  \\
-    ャ & _ャ_ & ? & \textlightgrey{`lya`/}\textred{`xya`} &  \\
-    ュ & _ュ_ & ? & \textlightgrey{`lyu`/}\textred{`xyu`} &  \\
-    ョ & _ョ_ & ? & \textlightgrey{`lyo`/}\textred{`xyo`} &  \\
-    ー & _ー_ & `<`$^{`+1`}$ & \textred{`$-$` key} &  \\
-    ッ & _ッ_ & $^{`+1`}$`>` & \textlightgrey{`ltu`/`ltsu`/\textred{`xtsu`}/}repeat `>` &  \\ \bottomrule
+    ン & _ン_ & nn & #textred[`nn`] & N/A \\
+    ァ & _ァ_ & ? & \textlightgrey{`la`/}#textred[`xa`] &  \\
+    ィ & _ィ_ & ? & \textlightgrey{`li`/}#textred[`xi`] &  \\
+    ゥ & _ゥ_ & ? & \textlightgrey{`lu`/}#textred[`xu`] &  \\
+    ェ & _ェ_ & ? & \textlightgrey{`le`/}#textred[`xe`] &  \\
+    ォ & _ォ_ & ? & \textlightgrey{`lo`/}#textred[`xo`] &  \\
+    ャ & _ャ_ & ? & \textlightgrey{`lya`/}#textred[`xya`] &  \\
+    ュ & _ュ_ & ? & \textlightgrey{`lyu`/}#textred[`xyu`] &  \\
+    ョ & _ョ_ & ? & \textlightgrey{`lyo`/}#textred[`xyo`] &  \\
+    ー & _ー_ & `<`$^{`+1`}$ & #textred[`$-$` key] &  \\
+    ッ & _ッ_ & $^{`+1`}$`>` & \textlightgrey{`ltu`/`ltsu`/#textred[`xtsu`]/}repeat `>` &  \\ \bottomrule
 }
 
 
@@ -412,10 +412,10 @@ Some general notes:
     ちゅ & _ちゅ_ & チュ & _チュ_ & chu & `chu` \\
     & & チェ & _チェ_ & che & `che` \\
     ちょ & _ちょ_ & チョ & _チョ_ & cho & `cho` \\
-    ぢ & _ぢ_ & ヂ & _ヂ_ & ji & \textred{`di`} \\
-    ぢゃ & _ぢゃ_ & ヂャ & _ヂャ_ & ja & \textred{`dya`} \\
-    ぢゅ & _ぢゅ_ & ヂュ & _ヂュ_ & ju & \textred{`dyu`} \\
-    ぢょ & _ぢょ_ & ヂョ & _ヂョ_ & jo & \textred{`dyo`} \\
+    ぢ & _ぢ_ & ヂ & _ヂ_ & ji & #textred[`di`] \\
+    ぢゃ & _ぢゃ_ & ヂャ & _ヂャ_ & ja & #textred[`dya`] \\
+    ぢゅ & _ぢゅ_ & ヂュ & _ヂュ_ & ju & #textred[`dyu`] \\
+    ぢょ & _ぢょ_ & ヂョ & _ヂョ_ & jo & #textred[`dyo`] \\
     つ & _つ_ & ツ & _ツ_ & tsu & \textlightgrey{`tu`/}`tsu` \\
     & & ツァ & _ツァ_ & tsa & `tsa` \\
     & & ツィ & _ツィ_ & tsi & `tsi` \\
@@ -440,7 +440,7 @@ Some general notes:
     ぬ & _ぬ_ & ヌ & _ヌ_ & nu & `nu` \\
     ね & _ね_ & ネ & _ネ_ & ne & `ne` \\
     の & _の_ & ノ & _ノ_ & no & `no` \\
-    は & _は_ & ハ & _ハ_ & ha & \textred{`ha`} \\
+    は & _は_ & ハ & _ハ_ & ha & #textred[`ha`] \\
     ば & _ば_ & バ & _バ_ & ba & `ba` \\
     ぱ & _ぱ_ & パ & _パ_ & pa & `pa` \\
     ひ & _ひ_ & ヒ & _ヒ_ & hi & `hi` \\
@@ -463,7 +463,7 @@ Some general notes:
     & & フォ & _フォ_ & fo & `fo` \\
     ぶ & _ぶ_ & ブ & _ブ_ & bu & `bu` \\
     ぷ & _ぷ_ & プ & _プ_ & pu & `pu` \\
-    へ & _へ_ & ヘ & _ヘ_ & he & \textred{`he`} \\
+    へ & _へ_ & ヘ & _ヘ_ & he & #textred[`he`] \\
     べ & _べ_ & ベ & _ベ_ & be & `be` \\
     ぺ & _ぺ_ & ペ & _ペ_ & pe & `pe` \\
     ほ & _ほ_ & ホ & _ホ_ & ho & `ho` \\
@@ -491,17 +491,17 @@ Some general notes:
     ろ & _ろ_ & ロ & _ロ_ & ro & `ro` \\
     わ & _わ_ & ワ & _ワ_ & wa & `wa` \\
     を & _を_ & ヲ & _ヲ_ & wo & `wo` \\
-    ん & _ん_ & ン & _ン_ & nn & \textred{`nn`} \\
-    ぁ & _ぁ_ & ァ & _ァ_ & ? & \textlightgrey{`la`/}\textred{`xa`} \\
-    ぃ & _ぃ_ & ィ & _ィ_ & ? & \textlightgrey{`li`/}\textred{`xi`} \\
-    ぅ & _ぅ_ & ゥ & _ゥ_ & ? & \textlightgrey{`lu`/}\textred{`xu`} \\
-    ぇ & _ぇ_ & ェ & _ェ_ & ? & \textlightgrey{`le`/}\textred{`xe`} \\
-    ぉ & _ぉ_ & ォ & _ォ_ & ? & \textlightgrey{`lo`/}\textred{`xo`} \\
-    ゃ & _ゃ_ & ャ & _ャ_ & ? & \textlightgrey{`lya`/}\textred{`xya`} \\
-    ゅ & _ゅ_ & ュ & _ュ_ & ? & \textlightgrey{`lyu`/}\textred{`xyu`} \\
-    ょ & _ょ_ & ョ & _ョ_ & ? & \textlightgrey{`lyo`/}\textred{`xyo`} \\
-    & & ー & _ー_ & `<`$^{`+1`}$ & \textred{`$-$` key} \\
-    っ & _っ_ & ッ & _ッ_ & $^{`+1`}$`>` & \textlightgrey{`ltu`/`ltsu`/\textred{`xtsu`}/}repeat `>` \\
+    ん & _ん_ & ン & _ン_ & nn & #textred[`nn`] \\
+    ぁ & _ぁ_ & ァ & _ァ_ & ? & \textlightgrey{`la`/}#textred[`xa`] \\
+    ぃ & _ぃ_ & ィ & _ィ_ & ? & \textlightgrey{`li`/}#textred[`xi`] \\
+    ぅ & _ぅ_ & ゥ & _ゥ_ & ? & \textlightgrey{`lu`/}#textred[`xu`] \\
+    ぇ & _ぇ_ & ェ & _ェ_ & ? & \textlightgrey{`le`/}#textred[`xe`] \\
+    ぉ & _ぉ_ & ォ & _ォ_ & ? & \textlightgrey{`lo`/}#textred[`xo`] \\
+    ゃ & _ゃ_ & ャ & _ャ_ & ? & \textlightgrey{`lya`/}#textred[`xya`] \\
+    ゅ & _ゅ_ & ュ & _ュ_ & ? & \textlightgrey{`lyu`/}#textred[`xyu`] \\
+    ょ & _ょ_ & ョ & _ョ_ & ? & \textlightgrey{`lyo`/}#textred[`xyo`] \\
+    & & ー & _ー_ & `<`$^{`+1`}$ & #textred[`$-$` key] \\
+    っ & _っ_ & ッ & _ッ_ & $^{`+1`}$`>` & \textlightgrey{`ltu`/`ltsu`/#textred[`xtsu`]/}repeat `>` \\
     \bottomrule
 }
 

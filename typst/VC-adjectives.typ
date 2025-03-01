@@ -445,7 +445,7 @@ rowhead=1,
 #ruby[若][わか]い & い & young/youthful; immature & #link("https://ja.hinative.com/questions/14498")[[HN]] \\
 % & & & \\
 \midrule
-#ruby[古][ふる]い & い & old/antiquated/old-fashioned (of things, \textred{not people}) & \\
+#ruby[古][ふる]い & い & old/antiquated/old-fashioned (of things, #textred[not people]) & \\
 % & & & \\
 \midrule
 \midrule
@@ -776,7 +776,7 @@ rowhead=1,
 == Taste and texture
 _Read the main article for the five basic flavours on #link("https://cotoacademy.com/useful-words-describe-food-japanese-illustrated-guide/")[CTA]._
 
-\hl{More #link("https://cotoacademy.com/useful-words-describe-food-japanese-illustrated-guide/")[here]}
+#highlight[More #link("https://cotoacademy.com/useful-words-describe-food-japanese-illustrated-guide/")[here]]
 
 % Help: \SetCell[r=2,c=2]{c,m} \<content\>, \cmidrule[l]{3-4}
 % Help: colspec: X[ratio, horizontal alignment] columns grow to fit width=\linewidth

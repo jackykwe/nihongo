@@ -9,9 +9,9 @@ Now that we have an understanding of the basics, fundamentals, and foundations o
 
 == Verb stems <sec:verb-stems>
 
-\textpurple{_It seems that "stem" and "root" are used interchangeably; there is no consensus on their definitions, and different sources use either term to refer to the same concept\dots_}
+#textpurple[_It seems that "stem" and "root" are used interchangeably; there is no consensus on their definitions, and different sources use either term to refer to the same concept\dots_]
 
-\textpurple{Since there is no consensus on the definitions of root/stem, I'll use "root" to refer to /kik/, and "stem" to refer to the stem form 聞き.}
+#textpurple[Since there is no consensus on the definitions of root/stem, I'll use "root" to refer to /kik/, and "stem" to refer to the stem form 聞き.]
 
 Also known as the ます-stem in other texts (we refrain from that term as the stem is used in many more conjugations, not just in ます), stems can be obtained from verbs via the rules in @tbl:teineigo-forms.
 
@@ -55,7 +55,7 @@ Polite adjective examples:
     \item (present-positive) 子犬はとても*好きです*。(I like puppies very much/puppies like something very much.)
     \item (present-negative) その部屋はあまり*静かじゃないです*。 (The room is not very/really quiet.)
     \item (past-positive) 先週に見た映画は、とても*面白かったです*。(The movie I saw last week was very interesting.)
-    \item (past-negative) 昨日、時間が*なかったんです*。 (Yesterday, there was no time.; ある $\to$ #underline[なかった] (past negative) $\to$ なかった#underline[んだ] (explanatory) $\to$ なかったん#underline[です] (polite))
+    \item (past-negative) 昨日、時間が*なかったんです*。 (Yesterday, there was no time.; ある #sym.arrow #underline[なかった] (past negative) #sym.arrow なかった#underline[んだ] (explanatory) #sym.arrow なかったん#underline[です] (polite))
 \end{itemize}
 
 === です is NOT the polite form of だ, they are completely separate constructs
@@ -66,7 +66,7 @@ This is a common misconception! です and だ are two fundamentally different c
     E.g. そうだ is the declarative form of そう. そうです is the polite form of そう (see @tbl:teineigo-forms), but not the polite form of そうだ!
     \item だ can be used both at the end of both complete sentences and relative clauses, whereas です can only be used at the end of complete sentences.
 
-    E.g. そうだど思います。 \textred{(In an indirect quote, it is wrong to quote です: it must be changed to だ.)}
+    E.g. そうだど思います。 #textred[(In an indirect quote, it is wrong to quote です: it must be changed to だ.)]
 
     E.g. 「はい、そうです」と答える。 (The only place where です can be in an embedded clause is in direct quotes.)
 \end{itemize}
@@ -106,8 +106,8 @@ Instead, we use one of the following (in descending order of politeness):
     \item \<nothing\>: common. In normal Japanese conversations, the topic/subject is commonly implied to be the listener. It's completely normal not to use anything at all, since you're directly addressing the listener!
     \item *そちら*: you, polite
     \item 君: casual, assuming/very close, used by males to address females, potentially rude
-    \item あなた: \textred{rude if spoken}, use only in contexts where you must refer to the audience (e.g. on a physical questionnaire)
-    \item \textred{THOU SHALT NOT CROSS THIS LINE}
+    \item あなた: #textred[rude if spoken], use only in contexts where you must refer to the audience (e.g. on a physical questionnaire)
+    \item #textred[THOU SHALT NOT CROSS THIS LINE]
     \item あんた: rude, assuming/familiar, expresses annoyance
     \item お前/おめえ: rude, rough and coarse, used by males
     \item てめえ: very rude, sounds like you want to beat someone up (used exclusively in movies and comics)
@@ -175,7 +175,7 @@ There is no need to use a question mark when か is used; the full-stop is used 
 
 E.g. お母さんはどこです*か。* #ruby[母][はは]は買い物に行きました。(Where is your mother? My mother went shopping.; 買い物 can refer to both purchased goods and the act of shopping)
 
-E.g. イタリア#ruby[料理][りょう|り]を食べに行きません*か。* すみません。ちょっと、お#ruby[腹][なか]がいっぱいです。(Shall we eat Italian food? Sorry, my stomach is a little full.; いっぱい: full; Note that the question is phrased in the negative, see \S@sec:positive-negative-questions)
+E.g. イタリア#ruby[料理][りょう|り]を食べに行きません*か。* すみません。ちょっと、お#ruby[腹][なか]がいっぱいです。(Shall we eat Italian food? Sorry, my stomach is a little full.; いっぱい: full; Note that the question is phrased in the negative, see @sec:positive-negative-questions)
 
 
 === Positive and negative polite questions <sec:positive-negative-questions>
@@ -319,11 +319,11 @@ E.g. 時間があって、映画を見ました。 (There was time, and I watche
 === Causation and reasoning particles から、ので <sec:causation-reasoning-particles>
 To express the direct causation (because) and reasoning (therefore) relationships, use から and ので particles:
 \begin{itemize}
-    \item から: direct cause marker particle (also from-marker: \S@sec:verb-particles; see also @tbl:appendix-vocab-adverbs-grammatical). The possible syntaxes are:
+    \item から: direct cause marker particle (also from-marker: @sec:verb-particles; see also @tbl:appendix-vocab-adverbs-grammatical). The possible syntaxes are:
     \begin{itemize}
         \item \<direct cause\>[だ]から\<result\>
 
-        \textred{If the cause is a non-conjugated noun or な-adjective, you must add だ to differentiate it from the from-marker usage of から.}
+        #textred[If the cause is a non-conjugated noun or な-adjective, you must add だ to differentiate it from the from-marker usage of から.]
 
         E.g. 時間がなかった*から*パーチィーに行きませんでした。 (There was no time, so didn't go to party.)
 
@@ -333,7 +333,7 @@ To express the direct causation (because) and reasoning (therefore) relationship
 
         \item{} だから\<result\>
 
-        The cause can be omitted if clear from context. \textred{Here, だ is compulsory.}
+        The cause can be omitted if clear from context. #textred[Here, だ is compulsory.]
 
         E.g. 時間がなかった。*だから*パーチィーに行かなかったの？ (I didn't have time. Is that why you didn't go to the party?)
         \item \<direct cause\>[だ]から[です]
@@ -350,25 +350,25 @@ To express the direct causation (because) and reasoning (therefore) relationship
     \begin{itemize}
         \item \<reason\>[な]ので\<result\>.
 
-        \textred{If the cause is a non-conjugated noun or な-adjective, you must add な to differentiate it from the possession marker usage of の.}
+        #textred[If the cause is a non-conjugated noun or な-adjective, you must add な to differentiate it from the possession marker usage of の.]
 
         E.g. 時間がなかった*ので*パーチィーに行きませんでした。 (There was no time, therefore didn't go to party.)
 
         E.g. ちょっと忙し*ので*、そろそろ#ruby[失礼][しつ|れい]します。 (I'm a little busy, therefore I'll be making my leave soon.; 失礼します literally means "I'm doing a discourtesy" and is used to politely mean you're make your leave or disturbing someone's time.)
 
-        E.g. 私は学生*\textred{な*\{の/ん\}で}、お金がないんです。 (I am a student, therefore I have no money.)
+        E.g. 私は学生*#textred[な*\{の/ん\]で}、お金がないんです。 (I am a student, therefore I have no money.)
 
-        E.g. ここは静か*\textred{な*\{の/ん\}で}、とても#ruby[穏][おだ]やかです。 (It is quiet here, therefore it is very calm here.)
+        E.g. ここは静か*#textred[な*\{の/ん\]で}、とても#ruby[穏][おだ]やかです。 (It is quiet here, therefore it is very calm here.)
     \end{itemize}
 
-    If omitting the reason or result (which is clear from context), use the explanatory-の particle instead (*の[だ]/のです/んだ/んです* see \S@sec:noun-related-particles).
+    If omitting the reason or result (which is clear from context), use the explanatory-の particle instead (*の[だ]/のです/んだ/んです* see @sec:noun-related-particles).
 
     \begin{itemize}
         \item な\{の/ん\}で\<result\>
 
-        \textred{Here, な is compuslory.}
+        #textred[Here, な is compuslory.]
 
-        E.g. *\textred{な*\{の/ん\}}で、友達に会う時間がない。(Therefore, there is no time to meet friend.)
+        E.g. *#textred[な*\{の/ん\]}で、友達に会う時間がない。(Therefore, there is no time to meet friend.)
 
         \item \<reason\>\{の/のだ/のです/んだ/んです\}
 
@@ -388,13 +388,13 @@ To express the idea of "despite", the のに marker is used. The schema is \<des
 
 E.g. 毎日運動した*のに*、全然#ruby[痩][や]せなかった。 (Despite exercising every day, I didn't get thinner.; 痩せる: to slim)
 
-\textred{Note that non-conjucated state-of-being nouns and na-adjectives must be tagged with the な particle, similar to rules for explanatory の.}
+#textred[Note that non-conjucated state-of-being nouns and na-adjectives must be tagged with the な particle, similar to rules for explanatory の.]
 
-E.g. 学生*\textred{な*のに}、彼女は勉強しない。 (Despite being a student, she does not study.)
+E.g. 学生*#textred[な*のに]、彼女は勉強しない。 (Despite being a student, she does not study.)
 
 
 === General and contradiction connector particles けど(、けれど、けれども)、が <sec:general-and-contradiction-connector-particles>
-けど and が are used as general connectors of any two sentences, like how we construct running sentences in English using "and". Also, they can be used to express the idea of contradiction between the two sentences: in this usage, が is slightly more polite (stronger contradiction) than けど. Politer forms of けど are けれど and けれども (\S\hl{???}). The schema is \<sentence 1\>が/けど/けれど/けれども、\<sentence 2\>.
+けど and が are used as general connectors of any two sentences, like how we construct running sentences in English using "and". Also, they can be used to express the idea of contradiction between the two sentences: in this usage, が is slightly more polite (stronger contradiction) than けど. Politer forms of けど are けれど and けれども (\S#highlight[???]). The schema is \<sentence 1\>が/けど/けれど/けれども、\<sentence 2\>.
 
 E.g. マトリックスを見た*けど*、面白かった。 (general connector; I watched "The Matrix" and it was interesting.)
 
@@ -402,21 +402,21 @@ E.g. デパートに行きました*が*、いい物がたくさんありまし�
 
 E.g. デパートに行きました*が*、何も欲しくなかったです。 (contradictory connector; I went to the department store but there was nothing I wanted.)
 
-\textred{Note that non-conjucated state-of-being nouns and na-adjectives must be tagged with the だ state-of-being assertion.}
+#textred[Note that non-conjucated state-of-being nouns and na-adjectives must be tagged with the だ state-of-being assertion.]
 
-E.g. 今日は暇*\textred{だ*けど}、明日は忙しい。 (I'm free today but I will be busy tomorrow.)
+E.g. 今日は暇*#textred[だ*けど]、明日は忙しい。 (I'm free today but I will be busy tomorrow.)
 
-E.g. *\textred{だ*けど}、彼がまだ好き\textred{*な*}の。 (That may be so, but I still like him.)
+E.g. *#textred[だ*けど]、彼がまだ好き#textred[*な*]の。 (That may be so, but I still like him.)
 
 
 == Reason vague listing connector し <sec:reason-vague-listing-connector>
-し is used to list reasons for a verb or state-of-being. It is vague in the same sense as the や particle (\S@sec:noun-related-particles): there is a nuance that there may be other reasons not listed. The schema is (\<reason\>し)*\<reason\>.
+し is used to list reasons for a verb or state-of-being. It is vague in the same sense as the や particle (@sec:noun-related-particles): there is a nuance that there may be other reasons not listed. The schema is (\<reason\>し)*\<reason\>.
 
 E.g. どうして彼が好きなの？優しい*し*、かっこいい*し*、面白いから。(Why do you like him? Because he's kind, attractive, and interesting (among other things).; から means because here.)
 
-\textred{Note that non-conjucated state-of-being nouns and na-adjectives must be tagged with the だ state-of-being assertion.}
+#textred[Note that non-conjucated state-of-being nouns and na-adjectives must be tagged with the だ state-of-being assertion.]
 
-E.g. どうして友達じゃないんですか？先生*\textred{だ*し}、#ruby[年上][とし|うえ]*\textred{だ*し}\dots (Why aren't they your friend (seeking explanation)? Well, they are the teacher, and older\dots)
+E.g. どうして友達じゃないんですか？先生*#textred[だ*し]、#ruby[年上][とし|うえ]*#textred[だ*し]\dots (Why aren't they your friend (seeking explanation)? Well, they are the teacher, and older\dots)
 
 For a less vague, more closed listing, use the て-form instead.
 
@@ -424,7 +424,7 @@ E.g. どうして彼が好きなの？優しくて、かっこよくて、面白
 
 
 == Adjective and verb vague listing construct 〜たり[です] <sec:adj-verb-vague-listing-construct>
-This is the verb/adjective version of the や particle (\S@sec:noun-related-particles). For each verb/adjective in the sequence, conjugate to past tense and add 「り」. Additionally, for the final one, tag on a 「する」, which will control the tense (\{positive, negative\} \times \{present, past\}) of the entire sentence. The schema is (\<past adj/v\>り、)*\<past adj/v\>りする.
+This is the verb/adjective version of the や particle (@sec:noun-related-particles). For each verb/adjective in the sequence, conjugate to past tense and add 「り」. Additionally, for the final one, tag on a 「する」, which will control the tense (\{positive, negative\} \times \{present, past\}) of the entire sentence. The schema is (\<past adj/v\>り、)*\<past adj/v\>りする.
 
 E.g. 映画を見た*り*、本を読んだ*り*、昼寝した*りする*。(I do things like watch movies, read books, and take naps (among other things).)
 
@@ -441,7 +441,7 @@ E.g. 映画を見た*り*、本を読んだ*り*、昼寝した*りしなかっ�
 
 == Progressive form 〜ている (enduring state of action, enduring state-of-being) <sec:progressive-form>
 
-To express an enduring state of action (-ing in English), conjugate the verb to the て-form (\S@sec:te-form, then append 〜ている. This form can be used regardless of whether the verb subject is animate or inanimate. Further conjugations of the progressive form follow rules of the いる verb.
+To express an enduring state of action (-ing in English), conjugate the verb to the て-form (@sec:te-form, then append 〜ている. This form can be used regardless of whether the verb subject is animate or inanimate. Further conjugations of the progressive form follow rules of the いる verb.
 
 _Interestingly, ある does not have a progressive form. See discussion in @sec:potential-form_.
 
@@ -451,7 +451,7 @@ E.g. 何を*読んでいます*か。教科書を*読んでいます*。 (What a
 
 E.g. 話を*聞いています*か。ううん、*聞いていません*。 (Are you listening to me? No, I'm not listening.; いません is the polite form of いない.)
 
-In casual speech (not applicable in writing!), 〜ている can be shortened to 〜てる. However, the い is not dropped in the polite progressive form 〜ています. \textred{Try not to let this casual speak become a habit too early on! Learn the correct form first.}
+In casual speech (not applicable in writing!), 〜ている can be shortened to 〜てる. However, the い is not dropped in the polite progressive form 〜ています. #textred[Try not to let this casual speak become a habit too early on! Learn the correct form first.]
 
 E.g. 友達は何を*してる*の？昼ご飯を*食べてる*の。 (What is friend doing? Eating lunch.; 食べてる = eating (casual); 食べる = eat (dict))
 
@@ -460,7 +460,7 @@ In fact, laziness can go further: 何をしているの can be shortened by drop
 The same form can also be used to convey *enduring state-of-being*, after a verb is performed. *This is decided by context.* E.g. 結婚している can either mean someone is currently getting married, or that someone is married and is currently in the married state. *This becomes less context-based and more of a rule for the verbs 知る、分かる, and motion verbs.*
 
 \begin{itemize}
-    \item *知っている* means to be/have been in the enduring _state_ of knowing. \textred{知る refers to the _change_ of state from not knowing to knowing, it's different and #underline[rarely used in its unconjugated form]!} (#link("https://ja.hinative.com/questions/258648")[[HN1]], #link("https://ja.hinative.com/questions/10745394")[[HN2]])
+    \item *知っている* means to be/have been in the enduring _state_ of knowing. #textred[知る refers to the _change_ of state from not knowing to knowing, it's different and #underline[rarely used in its unconjugated form]!] (#link("https://ja.hinative.com/questions/258648")[[HN1]], #link("https://ja.hinative.com/questions/10745394")[[HN2]])
 
     E.g. #ruby[道][みち]は*知っています*か？ はい、今日に知りました。 (Do you know the way? Yes, I found out about it today.)
 
@@ -472,7 +472,7 @@ The same form can also be used to convey *enduring state-of-being*, after a verb
 
     E.g. #ruby[前方][ぜん|ぽう]は危ない、わかりますか。はい、はい、*わかっています*。 (The area in front is dangerous, do you understand? Yes, yes, I am already aware of that, you don't have to tell me.)
 
-    \textred{わかっている, in certain contexts, can make you sound proud or dismissive. Be careful!}
+    #textred[わかっている, in certain contexts, can make you sound proud or dismissive. Be careful!]
     \item *\<motion verb て-form\>ている* means to \<motion verb\> and exist (\<v\> + いる), and refers to the state-of-being after performing the verb.
 
     E.g. #rruby[鈴木][すずき]さんはどこですか。もう、#ruby[家][いえ]に*帰っている*。 (Where is Suzuki-san? He is already at home.)
@@ -530,7 +530,7 @@ To express the ability to perform a verb, the verb is conjugated. できる is a
 
 _Interestingly, ある does not have a potential form. See more in @sec:potential-to-exist-arieru_.
 
-In casual/slang speech, 〜られる (for originally る-verbs and 来る) can be shortened to 〜れる, so 食べられる can be shortened to 食べれる. \textred{Try not to let this casual speak become a habit too early on! Learn the correct form first.}
+In casual/slang speech, 〜られる (for originally る-verbs and 来る) can be shortened to 〜れる, so 食べられる can be shortened to 食べれる. #textred[Try not to let this casual speak become a habit too early on! Learn the correct form first.]
 
 E.g. 漢字は*書けます*か？ (Can you write Kanji?; 書けます is the polite potential form of 書く.)
 
@@ -538,9 +538,9 @@ E.g. 残念だが、今週末は*行けない*。 (行けない is the negative 
 
 E.g. もう*信じられない*。 (信じられない is the negative potential form of 信じる.)
 
-\textred{Importantly, #underline[potential forms do not have direct objects, since no actual action is taken, so を cannot be used].} Whenever を is to be used, use が or the topic particles は、も、etc. instead.
+#textred[Importantly, #underline[potential forms do not have direct objects, since no actual action is taken, so を cannot be used].] Whenever を is to be used, use が or the topic particles は、も、etc. instead.
 
-E.g. 富士山が*#ruby[登][のぼ]れた*。 (I could climb Mt.~Fuji.; \textred{富士山*を*登れた is wrong!})
+E.g. 富士山が*#ruby[登][のぼ]れた*。 (I could climb Mt.~Fuji.; #textred[富士山*を*登れた is wrong!])
 
 E.g. 重い#ruby[荷物][に|もつ]は*持てます*。 (I am able to hold heavy luggage.; 持てます is the polite potential form of 持つ: the potential form is 持てる.)
 
@@ -567,7 +567,7 @@ E.g. 久しぶりに彼の声が*聞く\{こと/の\*ができた}。 (For the f
 === Potential to exist: あり\ruby{得{え/う}る} <sec:potential-to-exist-arieru>
 Interestingly, ある doesn't have a potential form. The round-about way of saying "possible to exist" is 「あることができる」, but this is almost never used. Instead, we use あり#ruby[得][え/う]る, which is actually a compound verb made from ある and the auxiliary verb #ruby[得][え]る (meaning to be able to), and not considered to be a potential form of ある by natives (see discussion on #link("https://www.reddit.com/r/LearnJapanese/comments/2wostw/potential\_\%E3\%81\%82\%E3\%82\%8B\_and\_\%E3\%81\%84\%E3\%82\%8B/")[Reddit]).
 
-For 得, the unconjugated form can be read as う (slightly more formal and traditional), but all conjugated forms use え. \textorange{I'd stick to え always, the modern pronunciation (see discussion on #link("https://ja.hinative.com/question_summaries/109797")[[HN]]).}
+For 得, the unconjugated form can be read as う (slightly more formal and traditional), but all conjugated forms use え. #textorange[I'd stick to え always, the modern pronunciation (see discussion on #link("https://ja.hinative.com/question_summaries/109797")[[HN]]).]
 
 E.g. そんなことは*あり得る*。 (That kind of situation/event is possible.)
 
@@ -583,7 +583,7 @@ All forms in this section allow further conjugations based on the rules of 〜�
 
 For adjectives, both \<adj\>にする and \<adj\>になる have the standard interpretation of causing something to become the adjective, or to become the adjective itself respectively:
 \begin{itemize}
-    \item (revision and extension of \S@sec:adverb) *\<na-adj\>にする/\<i-adj root\>くする* means to make something become \<adj\>.
+    \item (revision and extension of @sec:adverb) *\<na-adj\>にする/\<i-adj root\>くする* means to make something become \<adj\>.
 
     E.g. 静かにする (be/make quiet)、きれいにする (make clean).
 
@@ -611,7 +611,7 @@ For nouns, \<nn\>にする has a special meaning,, though \<nn\>になる preser
 
 For verbs, while we recognise that adverbs can modify verbs, we do not have a way to convert verbs into a modifying adverb, unlike what we can do with adjectives. Instead, we refer to the verb using こと (event/thing) or #ruby[様][よう] (manner), then tag on 〜にする or 〜になる. In fact, 〜ことにする、〜ことになる、〜ようにする、〜ようになる have special meanings (the last two are usually written in 仮名 alone).
 
-\textorange{\<v\>ことに\{する/なる\} have an nuance of _deciding_ to \<v\>. \<v\>ようにする specifically means to _try_ to do \<v\>. \<v\>ようになる specifically indicates a change towards \<v\> which has/will take place.}
+#textorange[\<v\>ことに\{する/なる\] have an nuance of _deciding_ to \<v\>. \<v\>ようにする specifically means to _try_ to do \<v\>. \<v\>ようになる specifically indicates a change towards \<v\> which has/will take place.}
 
 \begin{itemize}
     \item *\<v\>ことにする* means to decide to \<v\>. A related form, *\<v\>ことにしている*, means to decide to make it a rule/practice to \<v\> ("to continuously decide to \<v\>").
@@ -627,7 +627,7 @@ For verbs, while we recognise that adverbs can modify verbs, we do not have a wa
 
     E.g. 肉を毎日食べない*ようにする*。 (I will try not to eat meat everyday.)
 
-    \textpurple{To express something like "I'm trying to study", use 「勉強するように#underline[している]」. My previous attempt "勉強#underline[している]ようにする" is unnatural, because ようにする refers to you trying to do something _in the future_, and 勉強している is already happening. Furthermore, this incorrect form may be misconstrued as "I'm acting like I'm studying". [GMN]}
+    #textpurple[To express something like "I'm trying to study", use 「勉強するように#underline[している]」. My previous attempt "勉強#underline[している]ようにする" is unnatural, because ようにする refers to you trying to do something _in the future_, and 勉強している is already happening. Furthermore, this incorrect form may be misconstrued as "I'm acting like I'm studying". [GMN]]
     \item *\<v\>ようになる* means to come to be that/start to \<v\>. The implicit nuance is on a change of state from not \<v\> to \<v\>.
 
     E.g. 肉を毎日食べない*ようになった*。 (I started to not eat meat everyday.)
@@ -639,14 +639,14 @@ E.g. 日本に来て、スシが*食べられるようになった*。 (After co
 
 E.g. １年間練習したから、ピアノが*#ruby[弾][ひ]けるようになった*。 (Because I practised for a year, I became able to play the piano.; #ruby[弾][ひ]く: to play a stringed/keyboard instrument)
 
-% \textorange{All present-negative verbs end with 〜ない and can conjugate as an い-adjective!}
-E.g. #ruby[地下][ち|か]に入って、富士山が*見えなくなった*。 (After going underground, Mt.~Fuji became not visible.；見える $\to$ 見えない $\to$ 見えなくなる $\to$ 見えなくなった)
+% #textorange[All present-negative verbs end with 〜ない and can conjugate as an い-adjective!]
+E.g. #ruby[地下][ち|か]に入って、富士山が*見えなくなった*。 (After going underground, Mt.~Fuji became not visible.；見える #sym.arrow 見えない #sym.arrow 見えなくなる #sym.arrow 見えなくなった)
 
 
 === 〜なくなる versus 〜ないようになる
-In the final example in the previous section, *見えないようになった* is also acceptable. \textpurple{Both mean the same, though 見え#underline[ないようになった focuses on the _change_]. 見え#underline[なくなった focuses on the _result_], and is more commonly used. (#link("https://hinative.com/questions/16062152")[[HN]], #link("https://oshiete.goo.ne.jp/qa/4973106.html")[[goo]]), [GMN]}
+In the final example in the previous section, *見えないようになった* is also acceptable. #textpurple[Both mean the same, though 見え#underline[ないようになった focuses on the _change_]. 見え#underline[なくなった focuses on the _result_], and is more commonly used. (#link("https://hinative.com/questions/16062152")[[HN]], #link("https://oshiete.goo.ne.jp/qa/4973106.html")[[goo]]), [GMN]]
 
-E.g. #ruby[地下][ち|か]に入って、富士山が*見えなくなった*。 (After going underground, Mt.~Fuji became #underline[not visible].；見える $\to$ 見えない $\to$ 見えなくなる $\to$ 見えなくなった)
+E.g. #ruby[地下][ち|か]に入って、富士山が*見えなくなった*。 (After going underground, Mt.~Fuji became #underline[not visible].；見える #sym.arrow 見えない #sym.arrow 見えなくなる #sym.arrow 見えなくなった)
 
 E.g. #ruby[地下][ち|か]に入って、富士山が*見えないようになった*。 (After going underground, Mt.~Fuji #underline[became] not visible.)
 
@@ -676,7 +676,7 @@ _The Takoboto dictionary refers to this as the "provisional form", for some reas
 
 This is the simplest, most general conditional, and is a conjugation of nouns, adjectives and verbs. Refer to @appendix:conjugation-rules-summary for detailed conjugation rules. It means ``if \<future \dots\>ば, then \<\dots\>". #underline[The focus is on the conditional predicate], i.e. the part before the ば, not on the statement that follows.
 
-The conjugation rule for nouns and な-adjectives is suffixing 「〜であれば」, which is actually using the conditional form あれば of the verb ある. 「である」 is a formal expression we will see much later (\S\hl{???}).
+The conjugation rule for nouns and な-adjectives is suffixing 「〜であれば」, which is actually using the conditional form あれば of the verb ある. 「である」 is a formal expression we will see much later (\S#highlight[???]).
 
 In the examples that follow, the #underline[focus] is underlined.
 
@@ -692,7 +692,7 @@ E.g. #underline[*食べなければ*]病気になるよ。 (#underline[If you do
 
 
 === Past conditional form 〜たら[ば] <sec:past-conditional-form>
-The past conditional form conveys the same idea as the basic conditional form (\S@sec:conditional-form), but with a difference in focus: #underline[the focus is on the statement that follows the conditional predicate], i.e. the part after the たら[ば], not on the predicate itself. The optional [ば] is used for formality; in causal speech it is omitted.
+The past conditional form conveys the same idea as the basic conditional form (@sec:conditional-form), but with a difference in focus: #underline[the focus is on the statement that follows the conditional predicate], i.e. the part after the たら[ば], not on the predicate itself. The optional [ば] is used for formality; in causal speech it is omitted.
 
 The predicate always takes on the past tense, though this doesn't necessarily mean the predicate must have happened in the past. It can be a future, not-yet-happened event too, just like English's "if \dots _were_ to happen/if I _were_ \dots, then \dots".
 
@@ -712,13 +712,13 @@ E.g. #ruby[家][うち]に*帰ったら\textlightgrey{[ば]*}、誰もいなか�
 
 E.g. アメリカに*行ったら\textlightgrey{[ば]*}、たくさん#ruby[太][ふと]りました。 (As a result of going to America, I (unexpectedly) got really fat.; #ruby[太][ふと]りました is the past polite form of #ruby[太][ふと]る)
 
-\textorange{The way to disambiguate between the two usages is to first recognise that in either case, when we see/hear たら[ば], we focus on what comes next. Then, if what comes next is in present tense, there's no surprise nuance; if what comes next is in past tense, then there is a surprise nuance.}
+#textorange[The way to disambiguate between the two usages is to first recognise that in either case, when we see/hear たら[ば], we focus on what comes next. Then, if what comes next is in present tense, there's no surprise nuance; if what comes next is in past tense, then there is a surprise nuance.]
 
 
 === Expected consequence conditionals with と <sec:expected-consequence-conditionals>
 _This is similar in nuance to the CだたらE construct (see @tbl:appendix-vocab-adverbs-grammatical_), with the added element of _expectedness_.
 
-AとB means that if A happens, then as a natural consequence B is _expected_ to happen. The schema is C[だ]とE. \textred{Note that the state-of-being だ must be made explicit for nouns and な-adjectives, for disambiguation with other usages of と!}
+AとB means that if A happens, then as a natural consequence B is _expected_ to happen. The schema is C[だ]とE. #textred[Note that the state-of-being だ must be made explicit for nouns and な-adjectives, for disambiguation with other usages of と!]
 
 E.g. 先生*だと*、きっと#ruby[年上][とし|うえ]なんじゃないですか。 (If he's a teacher, surely he is senior, right?; きっと: surely; なん is the contraction of なの (noun explanatory ender), じゃないですか is a polite form of asking)
 
@@ -758,7 +758,7 @@ There are three adjectives that convey prohibition: だめ、いけない、な�
 
 いけない comes from #ruby[行][い]けない which means bad/wrong/naughty, but when used in the prohibitory manner is written in 仮名 alone.
 
-All conjugations of the three adjectives are shown in  @tbl:prohibition-conjugations. \textblue{The polite forms taken by いけない and ならない can be explained by interpreting them as present-negative forms of the verbs いける (meaning to go well) and なる (to become) respectively.}
+All conjugations of the three adjectives are shown in  @tbl:prohibition-conjugations. #textblue[The polite forms taken by いけない and ならない can be explained by interpreting them as present-negative forms of the verbs いける (meaning to go well) and なる (to become) respectively.]
 
 % Help: \SetCell[r=2,c=2]{c,m} \<content\>, \cmidrule[l]{3-4}
 % Help: colspec: X[ratio, horizontal alignment] columns grow to fit width=\linewidth
@@ -797,7 +797,7 @@ E.g. *死んでは*ダメだよ！ (You can't die!)
 
 E.g. *泳いでは*なりません。 (Do not swim.)
 
-The contractions for expressing prohibition involve the following replacements. \textred{Note that the \{だめ/いけない/ならない\} must not be omitted for contracted prohibition.}
+The contractions for expressing prohibition involve the following replacements. #textred[Note that the \{だめ/いけない/ならない\] must not be omitted for contracted prohibition.}
 \begin{align*}
     \longoverbrace{\cdots て}{\text{v te}}は\{だめ/いけない/ならない\} &\mapsto \longoverbrace{\cdots}{\text{v te fragment}} ちゃ\{だめ/いけない/ならない\}\\
     \longoverbrace{\cdots で}{\text{v te}}は\{だめ/いけない/ならない\} &\mapsto \longoverbrace{\cdots}{\text{v te fragment}} じゃ\{だめ/いけない/ならない\}
@@ -835,22 +835,22 @@ The three long-form grammatical schemae for requirement:
     E.g. 毎日学校に*行かなくては*なりません。 (I must go to school everyday.)
 
     E.g. 宿題を*しなくては*いけなかった。 (I had to do homework.)
-    \item \<v negative\>と\{だめ/いけない/ならない\}. This uses the expected conseuqence conditional (\S@sec:expected-consequence-conditionals). The literal meaning is: if you don't do something, the expected conseuqence is no good. #underline[This is the easiest form, and is used even outside of the expected consequence characterisation.]
+    \item \<v negative\>と\{だめ/いけない/ならない\}. This uses the expected conseuqence conditional (@sec:expected-consequence-conditionals). The literal meaning is: if you don't do something, the expected conseuqence is no good. #underline[This is the easiest form, and is used even outside of the expected consequence characterisation.]
 
     E.g. 毎日学校に*行かないと*なりません。 (I must go to school everyday.)
 
     E.g. 宿題を*しないと*いけなかった。 (I had to do homework.)
 
-    \item \<v conditional-negative\>\{だめ/いけない/ならない\}. This uses the conditional form (\S@sec:conditional-form). For requirement, because the verb is negated, the conditional-negative always contains 〜なければ.
+    \item \<v conditional-negative\>\{だめ/いけない/ならない\}. This uses the conditional form (@sec:conditional-form). For requirement, because the verb is negated, the conditional-negative always contains 〜なければ.
 
     E.g. 毎日学校に*行かなければ*なりません。 (I must go to school everyday.)
 
     E.g. 宿題を*しなければ*いけなかった。 (I had to do homework.)
 \end{enumerate}
 
-In casual speech, however, people default to either the \<v negative\>と\{だめ/いけない/ならない\} or the contractions that follow. When used to express requirement, the expected conseuqence conditional と (\S@sec:expected-consequence-conditionals) loses the expected consequence nuance (it's used in more situations that what it was originally defined for).
+In casual speech, however, people default to either the \<v negative\>と\{だめ/いけない/ならない\} or the contractions that follow. When used to express requirement, the expected conseuqence conditional と (@sec:expected-consequence-conditionals) loses the expected consequence nuance (it's used in more situations that what it was originally defined for).
 
-The contractions for expressing requirement involve the following replacements. \textred{Note that the \{だめ/いけない/ならない\} is omitted for contracted requirement.}
+The contractions for expressing requirement involve the following replacements. #textred[Note that the \{だめ/いけない/ならない\] is omitted for contracted requirement.}
 \begin{alignat*}{2}
     [\text{first schema}] & \qquad & \longoverbrace{\cdots なくて}{\text{v te-negative}}は\{だめ/いけない/ならない\} &\mapsto \longoverbrace{\cdots な}{\text{v negative fragment}}くちゃ \\
     [\text{second schema}] & \qquad & \longoverbrace{\cdots ない}{\text{v negative}}と\{だめ/いけない/ならない\} &\mapsto \longoverbrace{\cdots ない}{\text{v negative}}と \\
@@ -858,9 +858,9 @@ The contractions for expressing requirement involve the following replacements. 
 \end{alignat*}
 $$\text{Equivalently,}\qquad なくて \mapsto なくちゃ, \qquad なければ \mapsto なきゃ\text{.}$$
 
-For the first schema contraction, なくちゃ is the colloquial form of なくては, which is an abbreviation of なくてはいけない. For the third schema contraction, なきゃ is the colloquial form of なければ, which is the conditional-negative form of the verb ある. \textorange{In a sense, every verb has two colloquial "requirement" forms: $\cdots$なくちゃ and $\cdots$なきゃ, based on their negative forms.}
+For the first schema contraction, なくちゃ is the colloquial form of なくては, which is an abbreviation of なくてはいけない. For the third schema contraction, なきゃ is the colloquial form of なければ, which is the conditional-negative form of the verb ある. #textorange[In a sense, every verb has two colloquial "requirement" forms: $\cdots$なくちゃ and $\cdots$なきゃ, based on their negative forms.]
 
-\textred{Note that these contractions cannot be conjugated into the past tense, i.e. "〜なくちゃった", "〜なきゃった", "〜なくちゃない", "〜なきゃない" do not exist! (#link("https://www.tanoshiijapanese.com/dictionary/conjugation_details.cfm?entry_id=28301&element_id=189756&conjugation_type_id=78")[TNSJ])} If you want to mean requirement _in the past_, use any of the three long form schemae above. If you want to mean prohibition, use the one contracted schema in @sec:prohibition. If you want to mean not a requirement (i.e. okay to not do), use the one schema in @sec:permission.
+#textred[Note that these contractions cannot be conjugated into the past tense, i.e. "〜なくちゃった", "〜なきゃった", "〜なくちゃない", "〜なきゃない" do not exist! (#link("https://www.tanoshiijapanese.com/dictionary/conjugation_details.cfm?entry_id=28301&element_id=189756&conjugation_type_id=78")[TNSJ])] If you want to mean requirement _in the past_, use any of the three long form schemae above. If you want to mean prohibition, use the one contracted schema in @sec:prohibition. If you want to mean not a requirement (i.e. okay to not do), use the one schema in @sec:permission.
 
 Here are the three contracted grammatical schemae for requirement.
 \begin{enumerate}[label=\arabic*.]
@@ -909,11 +909,11 @@ This section concerns the expression of direct desires and discreet suggestions.
 === Desiderative form 〜たい <desiderative-form>
 _Takoboto and most sources simply call this the たい form, but desiderative, meaning expressing a desire to, is more descriptive._
 
-The conjugation rule is simple: \<stem\>たい. This transforms the verb into an い-adjective (in terms of form), but still retaining the behaviour of verbs to use verb particles を、に、へ (\S@sec:verb-particles). Its form conjugate like い-adjectives: *〜たい* (present-positive desiderative), *〜たくない* (present-negative desiderative), *〜たかった* (past-positive desiderative), *〜たくなかった* (past-negative desiderative).
+The conjugation rule is simple: \<stem\>たい. This transforms the verb into an い-adjective (in terms of form), but still retaining the behaviour of verbs to use verb particles を、に、へ (@sec:verb-particles). Its form conjugate like い-adjectives: *〜たい* (present-positive desiderative), *〜たくない* (present-negative desiderative), *〜たかった* (past-positive desiderative), *〜たくなかった* (past-negative desiderative).
 
-\textred{Note that ある does not have a desiderative form: inanimate objects cannot desire anything. いる's desiderative form is いたい.}
+#textred[Note that ある does not have a desiderative form: inanimate objects cannot desire anything. いる's desiderative form is いたい.]
 
-The desiderative form can only be used from the first person, because you cannot read other people's mind and express what they want to do. To refer to other people's desires, use direct or indirect quotations (\S\hl{???}). Questions about other people's desires are permitted because we are not making presumptions.
+The desiderative form can only be used from the first person, because you cannot read other people's mind and express what they want to do. To refer to other people's desires, use direct or indirect quotations (\S#highlight[???]). Questions about other people's desires are permitted because we are not making presumptions.
 
 E.g. ずっと一緒に*いたい*。 (I want to be together forever.)
 
@@ -933,11 +933,11 @@ E.g. *食べたくなくなった*。 (I became not wanting to eat.; to parse th
 === Auxiliary adjective ほしい <sec:auxiliary-adjective-hoshii>
 The 「\<nn\>が欲しい」 construct means to want \<nn\>. To express that we want a verb \<v\> done, or that we want the listener to do \<v\>, we use the auxiliary adjective ほしい. This auxiliary usage is written in 仮名 alone.
 
-The auxiliary adjective ほしい is actually rarely used in practice, since there are other more appropriate ways to make requests (\S\hl{???}).
+The auxiliary adjective ほしい is actually rarely used in practice, since there are other more appropriate ways to make requests (\S#highlight[???]).
 
 E.g. 大好きぬいぐるみが欲しい！ (I want a big stuffed doll!; ぬいぐるみ: stuffed toy)
 
-E.g. 全部*食べてほしい*んだけど\dots。 (I want it all eaten but...; \textred{This does not say "I want to eat it all": that would be 全部食べたいんだ。})
+E.g. 全部*食べてほしい*んだけど\dots。 (I want it all eaten but...; #textred[This does not say "I want to eat it all": that would be 全部食べたいんだ。])
 
 E.g. 部屋を*きれいにしてほしい*のよ。 (I want the room cleaned up, you know.)
 
@@ -947,7 +947,7 @@ E.g. 部屋を*きれいにしてほしい*のよ。 (I want the room cleaned up
 
 Both casual and polite volitional forms exist, and the polite form must come at the end of the sentence.
 
-\textred{Note that the volitional form only has one tense: starting from the present, looking into the future. It cannot be used with a past tense verb like "食べたよう".}
+#textred[Note that the volitional form only has one tense: starting from the present, looking into the future. It cannot be used with a past tense verb like "食べたよう".]
 
 E.g. 今日は何を*しよう*か。 (What shall we do today?)
 
@@ -963,7 +963,7 @@ E.g. 明日は何を*食べましょう*か。カレーを*食べましょう*�
 
 
 === Suggestions \{ば/たら\どう} <sec:suggestions>
-Suggestions are expressed by suffixing 「どう」 to the conditional form (ば; \S@sec:conditional-form) or the past conditional たら (\S@sec:past-conditional-form). In English, the literal translation is "If you do \<v\>, how is it?" and the natural translation is "How about doing \<v\>?"
+Suggestions are expressed by suffixing 「どう」 to the conditional form (ば; @sec:conditional-form) or the past conditional たら (@sec:past-conditional-form). In English, the literal translation is "If you do \<v\>, how is it?" and the natural translation is "How about doing \<v\>?"
 
 
 E.g. たまにご両親と*話せばどう*？ (How about talking with your parents once in a while?; たまに: occasionally; 話せば is the conditional form of 話す)
@@ -990,19 +990,19 @@ E.g. *「*今日は授業がない*」と*先生から*聞いた*んだけど。
 
 
 === Indirect quotation と、って <sec:indirect-quotation>
-Also known as interpreted quotation, indirect quotation quotes _along the lines_ of what the speaker actually said. #underline[Thoughts] and #underline[considerations] are often expressed as indirect quotes, with the verbs 思う and 考える respectively. The と particle is used here too, \textred{except that unconjugated nouns and な-adjective state-of-being must be explicitly declared with な}.
+Also known as interpreted quotation, indirect quotation quotes _along the lines_ of what the speaker actually said. #underline[Thoughts] and #underline[considerations] are often expressed as indirect quotes, with the verbs 思う and 考える respectively. The と particle is used here too, #textred[except that unconjugated nouns and な-adjective state-of-being must be explicitly declared with な].
 
 In the following examples, the #underline[indirect quotation] is underlined.
 
-\textpurple{When 何 is used to mean "what", it is read as なに; when it is used to mean "how many", it is read as なん. (#link("https://www.nhk.or.jp/bunken/summary/kotoba/term/079.html")[[NHK]])}
+#textpurple[When 何 is used to mean "what", it is read as なに; when it is used to mean "how many", it is read as なん. (#link("https://www.nhk.or.jp/bunken/summary/kotoba/term/079.html")[[NHK]])]
 
 E.g. 先生から#underline[今日は授業がない*と*]*聞いた*んだけど。 (I heard from the teacher that there is no class today.; Note the absence of direct quotation marks.)
 
-E.g. #underline[カレーを食べよう*と*]*思った*けど、食べる時間がなかった。 (I thought about setting out to eating curry but didn't have time to eat.; \textred{DO NOT confuse なかった and なった: the former is the past-negative of ある, and the latter is the past tense of なる.})
+E.g. #underline[カレーを食べよう*と*]*思った*けど、食べる時間がなかった。 (I thought about setting out to eating curry but didn't have time to eat.; #textred[DO NOT confuse なかった and なった: the former is the past-negative of ある, and the latter is the past tense of なる.])
 
-E.g. 今、#underline[どこに行こうか*と*]*考えている*。 (Now, I'm considering where to set out to go.; this is an example of the question marker in indirect quotations, \S@sec:ka-question-embedded-clauses)
+E.g. 今、#underline[どこに行こうか*と*]*考えている*。 (Now, I'm considering where to set out to go.; this is an example of the question marker in indirect quotations, @sec:ka-question-embedded-clauses)
 
-E.g. 彼は、これは#underline[何\textred{だ]*と*}*言いました*か。 (What did he say this is?; \textred{Here, the explicit state-of-being assertion だ is compulsory!})
+E.g. 彼は、これは#underline[何#textred[だ]*と*]*言いました*か。 (What did he say this is?; #textred[Here, the explicit state-of-being assertion だ is compulsory!])
 
 E.g. 彼は、#underline[何*と*]*言いました*か。 (What did he say?)
 
@@ -1010,13 +1010,13 @@ E.g. 彼は、#underline[これは何か*と*]*言いました*。 (He asked wha
 
 E.g. 彼は#underline[高校生だ*と*]*聞いた*けど、信じられない。 (I heard that he is a high school student, but I can't believe it.)
 
-The casual version of the と particle is *って*. Specifically, \<quote\>と\<v\> can be shortened to \<quote\>って. The verb is dropped and the speaker will hope that the listener can *understand everything from context*! \textorange{Usually, the omitted verb after って is 言った ("to say"), so if it's any other verb, don't drop it.}
+The casual version of the と particle is *って*. Specifically, \<quote\>と\<v\> can be shortened to \<quote\>って. The verb is dropped and the speaker will hope that the listener can *understand everything from context*! #textorange[Usually, the omitted verb after って is 言った ("to say"), so if it's any other verb, don't drop it.]
 
 E.g. 今、時間がないと聞いたんだけど、本当？ (I heard you don't have time now, is that true?)
 
 E.g. 今、時間がない*って*聞いたんだけど、本当？ (I heard you don't have time now, is that true?)
 
-The following are examples of contextual guessing in action. \textorange{The omitted verb is assumed to be 言った by default.}
+The following are examples of contextual guessing in action. #textorange[The omitted verb is assumed to be 言った by default.]
 
 E.g. 今、時間がない*って*けど、本当？ (You *said* you don't have time now, is that true?)
 
@@ -1031,7 +1031,7 @@ E.g. え？#ruby[何][なん]だ*って*？ (Huh? What did you *say*?)
 
 って can be used to talk about practically anything, not just as the informal form of the quotation marker と. It is used everywhere in casual speech, usually to bring up a topic.
 
-E.g. 明日*って*、雨が降るんだって。 (About tomorrow, I hear that it's going to rain.; first って is a replacement for は, second って contains the hidden verb "to hear". \textblue{A bit weird. I wouldn't use the trailing って like this; I'll just omit it.})
+E.g. 明日*って*、雨が降るんだって。 (About tomorrow, I hear that it's going to rain.; first って is a replacement for は, second って contains the hidden verb "to hear". #textblue[A bit weird. I wouldn't use the trailing って like this; I'll just omit it.])
 
 E.g. アリス*って*、すごくいい人でしょう？ (Alice is a very good person, right?; でしょ[う] is the [formal] conjectural form of です.)
 
@@ -1050,7 +1050,7 @@ E.g. 私は、アリス*といいます*。 (I am called Alice.; 言う here mea
 
 In the following examples, the \<called\>*という*\<thing\> schema is used.
 
-E.g. これは、何*という*魚ですか。 この魚は、#ruby[鯛][たい]といいます。(What is this fish referred to as? It's known as Tai.)\footnote{This example can also be written as 「この魚は何といいますか。」 (#link("https://ja.hinative.com/questions/16255453")[[HN]]), but could technically be misconstrued as "About this fish, what does it say?". Prefer the #underline[\<called\>*と*]*いう*\<thing\> schema.}
+E.g. これは、何*という*魚ですか。 この魚は、#ruby[鯛][たい]といいます。(What is this fish referred to as? It's known as Tai.)#footnote[This example can also be written as 「この魚は何といいますか。」 (#link("https://ja.hinative.com/questions/16255453")[[HN]]), but could technically be misconstrued as "About this fish, what does it say?". Prefer the #underline[\<called\>*と*]*いう*\<thing\> schema.]
 
 E.g. ルミネ*という*デパートはどこにあるか、知っていますか。 (Do you know where the department store called "Lumine" is?)
 
@@ -1068,7 +1068,7 @@ E.g. #ruby[独身][どく|しん]だ*という\{の/こと\*}は、嘘だった�
 
 E.g. リブート*という\{の/こと\*}は、パソコンを#ruby[再起動][さい|き|どう]する*という\{の/こと\*}です。 (Reboot means to restart your computer.)
 
-E.g. みきさんが洋介別れた*ということだ*。*ということ*は、みきさんは、今彼#ruby[氏][し]がいない*ということ*？そう。そういうこと。 (I heard that Miki-chan broke up with Yousuke. Does that mean Miki-chan doesn't have a boyfriend now? That's right. That's what it means.; \textorange{*ということだ specifically indicates hearsay or conjecture about others' feelings*})
+E.g. みきさんが洋介別れた*ということだ*。*ということ*は、みきさんは、今彼#ruby[氏][し]がいない*ということ*？そう。そういうこと。 (I heard that Miki-chan broke up with Yousuke. Does that mean Miki-chan doesn't have a boyfriend now? That's right. That's what it means.; #textorange[*ということだ specifically indicates hearsay or conjecture about others' feelings*])
 
 If the relative clause can be inferred from context, it can be replaced with a generic way of doing somthing, using the pre-noun adjectivals こういう、そういう、ああいう、どういう (and the こんあ、そんあ、あんあ、どんあ forms too).
 
@@ -1086,21 +1086,21 @@ E.g. 来年留学する*という\{の/こと\*}は、#rruby[智子][ともこ]�
 
 E.g. 来年留学する*って*#rruby[智子][ともこ]のこと？ (The studying abroad next year thing, is that Tomoko?)
 
-There's a further abbreviation of って to て (and replacement of と with て, which is slightly easier to say), \textred{but this only works for the generic verb. For actually said things, this contraction is invalid!} \textred{This is stepping into the territory of native lazy speak, I'd say don't worry about this too much.}
+There's a further abbreviation of って to て (and replacement of と with て, which is slightly easier to say), #textred[but this only works for the generic verb. For actually said things, this contraction is invalid!] #textred[This is stepping into the territory of native lazy speak, I'd say don't worry about this too much.]
 
 E.g. *て*ことは、みきさんは、いま彼#ruby[氏][し]がいない*て*こと？ (both て replaced という; the second one could've also replaced the trailing こと)
 
-E.g. *て*いうか、もう帰らないとだめですけど。(ていうか instead of というか for rephrasing and refining definitions, \S@sec:rephrasing-and-refining-definitions-with-toiuka-connector)
+E.g. *て*いうか、もう帰らないとだめですけど。(ていうか instead of というか for rephrasing and refining definitions, @sec:rephrasing-and-refining-definitions-with-toiuka-connector)
 
-E.g. みきさんが、明日来ないって。 (Miki-chan says she isn't coming tomorrow.; \textred{"みきさんが、明日来ないて。" is wrong!})
+E.g. みきさんが、明日来ないって。 (Miki-chan says she isn't coming tomorrow.; #textred["みきさんが、明日来ないて。" is wrong!])
 
 
 === Rephrasing and refining definitions with というか、 connector <sec:rephrasing-and-refining-definitions-with-toiuka-connector>
-The definition expression という (\S@sec:definition-toiu) can be suffixed with the question marker か to add a questioning element, useful for rephrasing or redefining something. This is common in casual speech. As a connector, it tags to the thing that's being rephrased, as in \<to rephrase\>というか、\<rephrase\>.
+The definition expression という (@sec:definition-toiu) can be suffixed with the question marker か to add a questioning element, useful for rephrasing or redefining something. This is common in casual speech. As a connector, it tags to the thing that's being rephrased, as in \<to rephrase\>というか、\<rephrase\>.
 
 E.g. みきちゃんは、あんたの彼女でしょう？う〜ん、彼女*というか*、友達*というか*、なん*というか*\dots{} (Miki-chan is your girlfriend, right? Um, you might say girlfriend, or friend, or something\dots)
 
-E.g. お酒は好き*というか*、ないと生きていけない。 (I like alcohol, or rather, I can't live on without it.; 生きていけない is the negative potential form of 生きていく (meaning to live on). \textred{This is tricky to parse. The presence of けない correctly hints to us that some negative potential form is in use, but it is not the negative potential form of 生きている (that would be 生きてい#underline[られ]ない). The presence of いけない might also wrongly lead us to think 生きる is prohibited (that would be 生きて#underline[は]いけない).} \textorange{The correct way to parse is to recognise that け must be the え form of some く verb, which leads to 生きていく. To disassociate from the prohibition いけない, recognise that the は particle is missing, which is required by the prohibition schema てはいけない.})
+E.g. お酒は好き*というか*、ないと生きていけない。 (I like alcohol, or rather, I can't live on without it.; 生きていけない is the negative potential form of 生きていく (meaning to live on). #textred[This is tricky to parse. The presence of けない correctly hints to us that some negative potential form is in use, but it is not the negative potential form of 生きている (that would be 生きてい#underline[られ]ない). The presence of いけない might also wrongly lead us to think 生きる is prohibited (that would be 生きて#underline[は]いけない).] #textorange[The correct way to parse is to recognise that け must be the え form of some く verb, which leads to 生きていく. To disassociate from the prohibition いけない, recognise that the は particle is missing, which is required by the prohibition schema てはいけない.])
 
 E.g. 多分行かないと思う。*というか*、お金がないから、行けない。 (Don't think I'll go. Or rather, I can't go because I have no money.)
 
@@ -1108,11 +1108,11 @@ E.g. *というか*、もう帰らないとだめですけど。 (Rather than th
 
 
 === Referring to relative clause with annoyance つう (slang) <sec:referring-to-relative-clause-annoyance-slang>
-The generic verb という can be shortened to *つう*. It is harder to say (violates core slang principle of making things easier to say, \S@sec:casual-and-slang-speech), but it has a hard, hissing sound, so it is used to convey anger. It is masculine. It can sometimes be further shortened to just つ. \textorange{つって is the て-from of つう.}
+The generic verb という can be shortened to *つう*. It is harder to say (violates core slang principle of making things easier to say, @sec:casual-and-slang-speech), but it has a hard, hissing sound, so it is used to convey anger. It is masculine. It can sometimes be further shortened to just つ. #textorange[つって is the て-from of つう.]
 
 E.g. *つうか*\textsuperscript{というか}、なんでお前がここにいん\textsuperscript{いるん}のよ！ (Or rather, why are you here?!)
 
-E.g. 宿題で時間がない*つって*\textsuperscript{と言って}んのに、みきちゃんとデートしに行ったらしい。 (Although he's saying he doesn't have time because of homework, I hear he went on a date with Miki-chan.; デートする $\to$ ダートし (stem); らしい: appearance, based on evidence/trustworthy hearsay)
+E.g. 宿題で時間がない*つって*\textsuperscript{と言って}んのに、みきちゃんとデートしに行ったらしい。 (Although he's saying he doesn't have time because of homework, I hear he went on a date with Miki-chan.; デートする #sym.arrow ダートし (stem); らしい: appearance, based on evidence/trustworthy hearsay)
 
 E.g. 明日は試験だぞ。*つって*も、勉強はしてないだろうな。 (Yo, tomorrow's the test. Even if I say that, you probably didn't study anyway, huh?; してない is a contraction of していない (from している))
 
@@ -1124,7 +1124,7 @@ E.g. だから、違うんだ*っつう*の！ (Like I said, you're wrong!)
 
 
 === Referring to relative clause with exasperation ってば/ったら (slang) <sec:referring-to-relative-clause-exasperation-slang>
-To take annoyance to the next level, the generic verb 「という」's conditional form 「といえば」 (\S@sec:conditional-form) and past conditional form 「といったら」 (\S@sec:past-conditional-form) can be abbreviated to ってば or ったら respectively. The (abbreviated) conditionals of という are used to express the exasperation of repeating yourself multiple times, or with someone not listening to you.
+To take annoyance to the next level, the generic verb 「という」's conditional form 「といえば」 (@sec:conditional-form) and past conditional form 「といったら」 (@sec:past-conditional-form) can be abbreviated to ってば or ったら respectively. The (abbreviated) conditionals of という are used to express the exasperation of repeating yourself multiple times, or with someone not listening to you.
 
 E.g. もう行く*ってば*！ (I told you I'm going already!)
 
@@ -1158,7 +1158,7 @@ E.g. #ruby[広島][ひろ|しま]のお#ruby[好][き]み#ruby[焼][や]きを*�
 
 
 === Attempting something with \<v volitional\>と\{する/\<v\>\} <sec:attempting-something-volitional-to>
-This is expressed with #underline[\<v volitional\>]とする. Attempting to do something requires exercising the will to set out to do something, hence the involvement of the volitional form. \textorange{The volitional (and と) together convey the information that we're discussing _attempting_.} Further conjugations follow the rules of the verb する.
+This is expressed with #underline[\<v volitional\>]とする. Attempting to do something requires exercising the will to set out to do something, hence the involvement of the volitional form. #textorange[The volitional (and と) together convey the information that we're discussing _attempting_.] Further conjugations follow the rules of the verb する.
 
 E.g. 毎日、勉強を*#ruby[避][さ]けようとする*。 (Everyday, she attempts to avoid study.; 避けよう is the volitional form of 避ける.)
 
@@ -1202,7 +1202,7 @@ There are three verbs for the act of giving, each with their own use.
     E.g. 犬に#ruby[餌][えさ]を*やった*？ (Did you give the dog food?; #ruby[餌][えさ]: food for animals)
     \item くれる: to give (second person, or third person from recipient's POV). The speaker must use くれる when someone else is giving something to the speaker, or the auxiliary verb \<v te\>くれる when someone else is doing the speaker a favour.
 
-    \textorange{As the recipient, the speaker uses くれる to emphasise the action of giving, and もらう to emphasise the action of receiving.}
+    #textorange[As the recipient, the speaker uses くれる to emphasise the action of giving, and もらう to emphasise the action of receiving.]
 
     E.g. 友達が私にプレゼントを*くれた*。 (second person; Friend gave present to me.)
 
@@ -1225,17 +1225,17 @@ E.g. 先生が*教えてくれる*んですか。 (Teacher, will you be giving t
 
 When speaking as the recipient of an action or favour, as a recipient the verb くれる #underline[must] be used.
 
-E.g. 私が全部食べてあげました。 (I gave the favour of eating it all.; \textred{it's incorrect to use 食べてくれる here as "I" am not receiving the favour})
+E.g. 私が全部食べてあげました。 (I gave the favour of eating it all.; #textred[it's incorrect to use 食べてくれる here as "I" am not receiving the favour])
 
-E.g. 友達がプレゼントを私に*くれた*。 (Friend gave present to me.; \textred{it's incorrect to use あげた here because "I" am not the giver})
+E.g. 友達がプレゼントを私に*くれた*。 (Friend gave present to me.; #textred[it's incorrect to use あげた here because "I" am not the giver])
 
 
 === Receiving [as a favour] [て]もらう <sec:receiving>
 There is only one verb for receiving, もらう. To indicate who the speaker is receiving something from, use the from-marker particler から. The past form もらった is much more commonly used, to indicate that the speaker receive_d_ something. The auxiliary verb \<v te\>もらう is used when the speaker is receiving the favour of someone doing \<v te\> for their sake.
 
-\textorange{As the recipient, the speaker uses くれる to emphasise the action of giving, and もらう to emphasise the action of receiving.}
+#textorange[As the recipient, the speaker uses くれる to emphasise the action of giving, and もらう to emphasise the action of receiving.]
 
-\textred{Important: for もらう, に marks the #underline[giver]! \<receiver\>が, \<giver\>\{に/から\}. The subject is performing the receiving, and the target of receiving is the giver.}
+#textred[Important: for もらう, に marks the #underline[giver]! \<receiver\>が, \<giver\>\{に/から\]. The subject is performing the receiving, and the target of receiving is the giver.}
 
 E.g. 私が友達にプレゼントを*もらった*。 (I received present from friend.)
 
@@ -1243,7 +1243,7 @@ E.g. 友達からプレゼントを*もらった*。 (I received present from fr
 
 E.g. これは友達に*買ってもらった*。 (About this, I received the favour from friend of buying this.)
 
-E.g. 宿題を*チェックしてもらいたかった*けど、時間がなくて無理だった。 (I wanted to receive the favour of homework checking, but there was no time and it was impossible.; もらう $\to$ もらいたい $\to$ もらいたかった)
+E.g. 宿題を*チェックしてもらいたかった*けど、時間がなくて無理だった。 (I wanted to receive the favour of homework checking, but there was no time and it was impossible.; もらう #sym.arrow もらいたい #sym.arrow もらいたかった)
 
 As a non-typical use case, もらう can be used by the giver speaker if they want to emphasise that they are the one from whom the receiver received something.
 
@@ -1251,11 +1251,11 @@ E.g. その#ruby[時計][と|けい]は私から*もらった*のよ。 (He rece
 
 
 === Soliciting favours (\neq{ request) with auxiliary verbs てくれる、てもらえる} <sec:soliciting-favours-kureru-moraeru>
-_Not to be confused with making requests (\S@sec:making-requests_)! Asking for favours is softer and less direct: "would you do X for me", while making a request is more direct: "please do X".
+_Not to be confused with making requests (@sec:making-requests_)! Asking for favours is softer and less direct: "would you do X for me", while making a request is more direct: "please do X".
 
 The previous sections dealt with expressing the _actual event_ of giving a gift or favour. The _solicitation_ of a positive favour can be expressed as a question with \<v te\>てくれる？ or \<v te\>てもらえる？ (note the potential form of もらえる). Because the speaker is the recipient of the favour, あげる is not applicable.
 
-\textorange{〜てくれる is used to ask for favours, but when its imperative form is used, it becomes a command 〜てくれ (\S@sec:imperative-form).}
+#textorange[〜てくれる is used to ask for favours, but when its imperative form is used, it becomes a command 〜てくれ (@sec:imperative-form).]
 
 E.g. あなたが、私に千円を*#ruby[貸][か]してくれる*？ (Will you give me the favour of lending 1000 yen?; #ruby[貸][か]す: to lend)
 
@@ -1281,13 +1281,13 @@ E.g. 高いものを*買わないでくれる*？ (Can you not buy expensive thi
 
 
 == Making requests (\neq{ favours)} <sec:making-requests>
-_Not to be confused with asking for favours (\S@sec:soliciting-favours-kureru-moraeru_)! Asking for favours is softer and less direct: "would you do X for me", while making a request is more direct: "please do X".
+_Not to be confused with asking for favours (@sec:soliciting-favours-kureru-moraeru_)! Asking for favours is softer and less direct: "would you do X for me", while making a request is more direct: "please do X".
 
 The following sections discuss four ways to issue requests, in decreasing order of politeness: ください > ちょうだい > なさい > imperative form.
 
 
 === Honorific requests with 〜てください。、〜て <sec:honorific-requests>
-ください。 is the most common way of making requests. It is a special conjugation of くださる, the honorific form of くれる (\S@sec:giving, \S@sec:soliciting-favours-kureru-moraeru). \textred{〜ください must come at the end of the sentence or relative clause, just like です、ます.}
+ください。 is the most common way of making requests. It is a special conjugation of くださる, the honorific form of くれる (@sec:giving, @sec:soliciting-favours-kureru-moraeru). #textred[〜ください must come at the end of the sentence or relative clause, just like です、ます.]
 
 On its own, くれる/ください can mean "please give me/hand me an object" as a transitive verb, using the schema \<object\>をください.
 
@@ -1297,7 +1297,7 @@ E.g. それ*をくれる*？ (Can you give me that?)
 
 E.g. 「それ*をください*」とお父さんが言った。 (Father said, "Please give me that".)
 
-ください can also mean  "please do for me" as an auxiliary verb, with the schema \<v te\>ください. Negative requests are made the same way as with solicitation of favours (\S@sec:soliciting-favours-kureru-moraeru), using \<v te-negative\>でください.
+ください can also mean  "please do for me" as an auxiliary verb, with the schema \<v te\>ください. Negative requests are made the same way as with solicitation of favours (@sec:soliciting-favours-kureru-moraeru), using \<v te-negative\>でください.
 
 E.g. 漢字で*書いてください*。 (Please write it in kanji.)
 
@@ -1307,7 +1307,7 @@ E.g. #ruby[落書][らく|が]ききを*書かないでください*。 (Please 
 
 E.g. ここに*来ないでください*。 (Please don't come here.)
 
-In casual speech, the ください is commonly dropped, so the naked te-form (or naked te-negative form) is used for making requests. \textred{Potential confusion with って, which is a short form for the indirect quotation \<quote\>と\<v\> (\S@sec:indirect-quotationo) or the generic verb \<quote\>という\<particles\> (\S@sec:referring-to-relative-clause).}
+In casual speech, the ください is commonly dropped, so the naked te-form (or naked te-negative form) is used for making requests. #textred[Potential confusion with って, which is a short form for the indirect quotation \<quote\>と\<v\> (@sec:indirect-quotationo) or the generic verb \<quote\>という\<particles\> (@sec:referring-to-relative-clause).]
 
 E.g. 日本語で*話して*。 (Please speak in Japanese.)
 
@@ -1319,7 +1319,7 @@ E.g. 遠いところに*行かないで*。 (Please don't go to a far place.)
 === Casual requests with 〜ちょうだい。 <sec:casual-requests>
 #ruby[頂戴][ちょう|だい] is #ruby[謙譲語][けん|じょう|ご] (humble language) for the transitive verb "to receive" and the auxiliary verb "please give me/do for me" (as 〜をちょうだい/〜てちょうだい). It is usually written using 仮名 alone. When written in 漢字, it is used as part of very formal expressions like #ruby[頂戴致][ちょう|だい|いた]します (#ruby[致][いた]す: to do (humble)).
 
-The grammatical rules for ちょうだい are exactly the same as ください, so \textred{it must come at the end of the sentence or relative clause.} The same schemae apply: \<object\>をちょうだい and \<v te\>ちょうだい.
+The grammatical rules for ちょうだい are exactly the same as ください, so #textred[it must come at the end of the sentence or relative clause.] The same schemae apply: \<object\>をちょうだい and \<v te\>ちょうだい.
 
 E.g. スプーン*をちょうだい*。 (Please give me the spoon.)
 
@@ -1335,7 +1335,7 @@ E.g. ここで*#ruby[座][すわ]りなさい*。 (Sit here.; #ruby[座][すわ]
 
 E.g. *やめなさい*！ (Stop!)
 
-In casual speech, さい can be dropped, leaving \<v stem\>な. \textred{Do not confuse this (e.g. #ruby[返信][へん|しん]しな) with the imperative-negative form (e.g. #ruby[返信][へん|しん]するな, \S@sec:imperative-form), which is \<v dict\>な!}
+In casual speech, さい can be dropped, leaving \<v stem\>な. #textred[Do not confuse this (e.g. #ruby[返信][へん|しん]しな) with the imperative-negative form (e.g. #ruby[返信][へん|しん]するな, @sec:imperative-form), which is \<v dict\>な!]
 
 E.g. まだいっぱい合うから、たくさん*食べな*。 (There's still a lot, so eat a lot.; 食べな is the contraction of 食べなさい)
 
@@ -1345,7 +1345,7 @@ E.g. それでいいと思うなら、そう*しな*よ。 (If you think that's 
 === Imperative form <sec:imperative-form>
 The imperative form is the most direct and is thus rarely used in everyday conversation. It is a coarse type of speech that's only really used in fictional works, or in places where a stern command must be given (e.g. traffic stop signs).  Refer to @appendix:conjugation-rules-summary for a full table of conjugations. Here, する、来る #underline[and くれる] are exceptions (しろ、こい、くれ).
 
-\textorange{〜てくれる is used to ask for favours (\S@sec:soliciting-favours-kureru-moraeru), but when its imperative form is used, it becomes a command 〜てくれ.}
+#textorange[〜てくれる is used to ask for favours (@sec:soliciting-favours-kureru-moraeru), but when its imperative form is used, it becomes a command 〜てくれ.]
 
 E.g. 好きに*しろ*。 (Do as you please.)
 
@@ -1353,7 +1353,7 @@ E.g. あっち*行け*！ (Go away!)
 
 E.g. 頑張れ！ (Keep at it!; imperative form of 頑張る)
 
-E.g. 早く酒を*持ってきてくれ*。 (Hurry up and bring some alcohol.; 持つ $\to$ 持ってくる $\to$ 持ってきてくれ)
+E.g. 早く酒を*持ってきてくれ*。 (Hurry up and bring some alcohol.; 持つ #sym.arrow 持ってくる #sym.arrow 持ってきてくれ)
 
 E.g. 日本語で*話してくれ*。 (Speak in Japanese.)
 
@@ -1367,7 +1367,7 @@ E.g. *やめろ*！ (Stop!)
 
 E.g. *死ね*！ (Die!)
 
-\textred{Do not confuse this (e.g. #ruby[返信][へん|しん]するな) with the polite firm request contraction 〜な (e.g. #ruby[返信][へん|しん]しな,  \S@sec:polite-firm-requests), whose schema is \<v stem\>な!}
+#textred[Do not confuse this (e.g. #ruby[返信][へん|しん]するな) with the polite firm request contraction 〜な (e.g. #ruby[返信][へん|しん]しな,  @sec:polite-firm-requests), whose schema is \<v stem\>な!]
 
 E.g. それを*食べるな*！ (Don't eat that!)
 
@@ -1385,7 +1385,7 @@ The 和語 counting method (ひ、ふ、み、よ、い、む、な、や、こ�
 
 The 外来語 counting method follows English pronunciations (ワン、ツー、スリー、フォー、ファイブ、シックス、セブン、エイト、ナイン、テン) and is most notably used for the セット counter (for sets). It is rarely used for pure counting.
 
-\textorange{It is customary to write large numbers only in numbers as even 漢字 can become difficult to decipher.} Even though Japanese uses a new word for every $10^4$ (like Chinese, and instead of the $10^3$ divide used by English and other languages), when written in numerals, the same $10^3$ divide is used. E.g. #ruby[一萬][いち|まん] is written 10,000 or １００００.
+#textorange[It is customary to write large numbers only in numbers as even 漢字 can become difficult to decipher.] Even though Japanese uses a new word for every $10^4$ (like Chinese, and instead of the $10^3$ divide used by English and other languages), when written in numerals, the same $10^3$ divide is used. E.g. #ruby[一萬][いち|まん] is written 10,000 or １００００.
 
 
 === Numbers smaller than 1 <sec:numbers-smaller-than-one>
@@ -1427,8 +1427,8 @@ The eras are summarised in @tbl:modern-eras-in-the-japanese-regnal-calendar.
     *#ruby[元号][げん|ごう]* & *Emperor* & *#ruby[元年][がん|ねん]* & *Abbreviation range* & *Notable years* \\
     \midrule
     #ruby[明治][めい|じ] Meiji & #rruby[睦仁][むつひと] Mutsuhito & 1868・明治１ & M1--M45 & \\
-    #ruby[大正][たい|しょう] Taish\=o & #rruby[嘉仁][よしひと] Yoshihito & 1912・明治４５・大正１ & T1--T15 & \\
-    #ruby[昭和][しょう|わ] Sh\=owa & #rruby[裕仁][ひろひと] Hirohito & 1926・大正１５・昭和１ & S1--S64 & {1945 = 昭和２０} \\
+    #ruby[大正][たい|しょう] Taishō & #rruby[嘉仁][よしひと] Yoshihito & 1912・明治４５・大正１ & T1--T15 & \\
+    #ruby[昭和][しょう|わ] Shōwa & #rruby[裕仁][ひろひと] Hirohito & 1926・大正１５・昭和１ & S1--S64 & {1945 = 昭和２０} \\
     #ruby[平成][へい|せい] Heisei & #rruby[明仁][あきひと] Akihito & 1989・昭和６４・平成１ & H1--H31 & \\
     #ruby[令和][れい|わ] Reiwa & #rruby[徳仁][なるひと] Naruhito & 2019・平成３１・令和１ & R1--present (\currentregnalyear) & {2020 = 令和２\\\currentregnalyearexplanation} \\
     \bottomrule
@@ -1494,7 +1494,7 @@ The known counters #ruby[枚][まい]、#ruby[台][だい]、#ruby[秒][びょ�
 === Ordinals counters 〜#ruby[目{め}/\ruby{第][だい]〜}
 _Read the discussion on #link("https://www.reddit.com/r/Japaneselanguage/comments/11kjw6m/comment/jbadgox/")[Reddit]._
 
-The #ruby[目][め] suffix or #ruby[第][だい] prefix can be attached to any of the counting numerals to indicate ordinal position. Note that #ruby[第][だい] forces 漢語 readings of certain counters (notably #ruby[日][か] $\to$ #ruby[日][にち]), as shown by example in @sec:appendix-vocab-basic-nouns-ordinal-days.
+The #ruby[目][め] suffix or #ruby[第][だい] prefix can be attached to any of the counting numerals to indicate ordinal position. Note that #ruby[第][だい] forces 漢語 readings of certain counters (notably #ruby[日][か] #sym.arrow #ruby[日][にち]), as shown by example in @sec:appendix-vocab-basic-nouns-ordinal-days.
 
 Use of the #ruby[目][め] suffix is preferred when:
 \begin{itemize}
@@ -1576,7 +1576,7 @@ E.g. *なんか*ね。お風呂って超気持ちいいよね！ (Like, baths fe
 
 E.g. お母さんが、#underline[*なんか*明日]まで戻らないんだってよ。 (Mom said she's not coming back until #underline[like tomorrow].)
 
-E.g. *なんか*さ。ボブは、私のこと#underline[*なんか*本当]に好きかな？ (Hey like, does Bob #underline[like really] like somebody like me?; さ particle (\S@sec:na-sa-sentence-ending-particles), かな question particle (\S@sec:gender-specific-question-particles)).
+E.g. *なんか*さ。ボブは、私のこと#underline[*なんか*本当]に好きかな？ (Hey like, does Bob #underline[like really] like somebody like me?; さ particle (@sec:na-sa-sentence-ending-particles), かな question particle (@sec:gender-specific-question-particles)).
 
 
 == More sentence ending particles な、さ and gender-specific ones わ、ぞ、ぜ <sec:na-sa-wa-zo-ze-sentence-ending-particles>
@@ -1640,8 +1640,8 @@ Here are two example conversations to apply what we've learnt in this entire "es
     アリス：「Hello」を日本語で*何と言えば*いいですか。（How do you say "Hello" in Japanese?; quotation + conditional form of 言う)\\
     加賀先生：そうね。だいたい、「こんにちは」*と言うと思います*よ。ただし、書く時は「こんにちわ」*じゃなくて*、「こんいちは」と書かなくてはなりません。 (Well, mostly, I think people say "konnichiwa". However, when you write it, it is not "konnichiwa"; you must write "konnichiha".; nested quotation + quotation; negative sequence of states)
 
-    アリス：そうですか。#ruby[他][ほか]に何かいい#ruby[表現][ひょう|げん]はありますか。(Is that so? Are there any other good expressions?; #ruby[他][ほか]: other \textred{(Do not confuse with #ruby[彼][かれ]!)}; "Other something good expression, exist?")\\
-    加賀先生：これも*覚えといて*ね。朝は、「おはよう」と言うの。でも、上の人には「おはようございます」と言ってください。 (Do remember this too (in preparation for the future). In the morning, everybody says "ohayou". But, to a higher person, please say "ohayou-gozzaimasu".; 覚える $\to$ 覚えておく $\to$ 覚えとく $\to$ 覚えといて\cancel{ください} (te-form request of casual form of 覚えておく))
+    アリス：そうですか。#ruby[他][ほか]に何かいい#ruby[表現][ひょう|げん]はありますか。(Is that so? Are there any other good expressions?; #ruby[他][ほか]: other #textred[(Do not confuse with #ruby[彼][かれ]!)]; "Other something good expression, exist?")\\
+    加賀先生：これも*覚えといて*ね。朝は、「おはよう」と言うの。でも、上の人には「おはようございます」と言ってください。 (Do remember this too (in preparation for the future). In the morning, everybody says "ohayou". But, to a higher person, please say "ohayou-gozzaimasu".; 覚える #sym.arrow 覚えておく #sym.arrow 覚えとく #sym.arrow 覚えといて\cancel{ください} (te-form request of casual form of 覚えておく))
 
     アリス：はい、わかりました。#ruby[間違][ま|ちが]えないようにします。いい勉強になりました！ (Ok, I got it. I'll try not to make that mistake. That was very informative ("it became good study")!)
     \item #rruby[洋介][ようすけ]：お！アリスだ。あのね、質問を聞いてもいい？ (Oh! It's Alice. Hey, can I ask you a question?)

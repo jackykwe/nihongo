@@ -12,7 +12,7 @@
 % negative ratios: shrink to fit content and may not grow to full ratio
 % Help: colspec: l/c/r columns do not grow
 \longtabse[0.5] % scale factor
-{Interections and expressions: greetings. \hl{TO ORGANISE}} % caption
+{Interections and expressions: greetings. #highlight[TO ORGANISE]} % caption
 {tbl:appendix-vocab-interjections-and-expressions-greetings} % label
 {} % outer specification options
 {
@@ -91,7 +91,7 @@ _Read the main article for apologies on #link("https://www.clozemaster.com/blog/
 % negative ratios: shrink to fit content and may not grow to full ratio
 % Help: colspec: l/c/r columns do not grow
 \longtabse[0.5] % scale factor
-{Interections and expressions: exclamations. \hl{TO ORGANISE}} % caption
+{Interections and expressions: exclamations. #highlight[TO ORGANISE]} % caption
 {tbl:appendix-vocab-interjections-and-expressions-exclamations} % label
 {} % outer specification options
 {

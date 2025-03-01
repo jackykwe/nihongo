@@ -35,7 +35,7 @@
     \bottomrule
 }
 
-\textorange{In \textgreen{丁寧語}, 「〜した」indicates the past-tense.}
+#textorange[In #textgreen[丁寧語], 「〜した」indicates the past-tense.]
 
 As alternative polite forms:
 \begin{itemize}
@@ -130,7 +130,7 @@ Exceptions:
 
 
 === Verbs
-See @tbl:verb-classification for a summary of the three categories. In a nutshell, る-verbs is the class of _almost all_ #underline[-iru/-eru] verbs; all other verbs are う-verbs. Exception verbs are する and 来る. \textorange{Mnemonic: Group I is the most superior; 五段 is superior to 一段; う comes before る in the 平仮名 alphabet chart.}
+See @tbl:verb-classification for a summary of the three categories. In a nutshell, る-verbs is the class of _almost all_ #underline[-iru/-eru] verbs; all other verbs are う-verbs. Exception verbs are する and 来る. #textorange[Mnemonic: Group I is the most superior; 五段 is superior to 一段; う comes before る in the 平仮名 alphabet chart.]
 
 % Help: \SetCell[r=2,c=2]{c,m} \<content\>, \cmidrule[l]{3-4}
 % Help: colspec: X[ratio, horizontal alignment] columns grow to fit width=\linewidth
@@ -347,78 +347,78 @@ The following table is a condensed version, showing where the rules come from.
     \toprule
     *Particle* & *Particle name/purpose* & *Schemae* & *Sections* \\
     \midrule
-    は & introductory topic marker & \<main/new topic\>は & \S@sec:topic-marker, \S@sec:particles \\
-    も & inclusive topic marker & \<inclusive topic\>も & \S@sec:particles \\
+    は & introductory topic marker & \<main/new topic\>は & @sec:topic-marker, @sec:particles \\
+    も & inclusive topic marker & \<inclusive topic\>も & @sec:particles \\
     % & & & \\
     \midrule
-    が & subject marker & \<subj\>が & \S@sec:particles \\
-    を & direct object marker & \<obj\>を\<v transitive\> & \S@sec:verb-particles \\
-    & location-traversed marker & \<location\>を\<motion v (intransitive OK)\> & \S@sec:verb-particles \\
-    に & target marker & \<target\>に\textlightgrey{[は/も]}\<v\> & \S@sec:verb-particles \\
-    & location-target marker & \<location\>に\textlightgrey{[は/も]}\<v\> & \S@sec:verb-particles \\
-    & time-target marker & \<time\>[に\textlightgrey{[は/も]}]\<v\> & \S@sec:verb-particles \\
-    へ & direction marker & \<direction\>へ\textlightgrey{[は/も]}\<v\> & \S@sec:verb-particles \\
-    で & context marker & \<by-way-of (where/what/how) context\>で\textlightgrey{[は/も]} & \S@sec:verb-particles \\
-    から & from-marker & \<from\>から & \S@sec:verb-particles \\
-    まで & to-marker & \<to\>まで & \S@sec:verb-particles \\
+    が & subject marker & \<subj\>が & @sec:particles \\
+    を & direct object marker & \<obj\>を\<v transitive\> & @sec:verb-particles \\
+    & location-traversed marker & \<location\>を\<motion v (intransitive OK)\> & @sec:verb-particles \\
+    に & target marker & \<target\>に\textlightgrey{[は/も]}\<v\> & @sec:verb-particles \\
+    & location-target marker & \<location\>に\textlightgrey{[は/も]}\<v\> & @sec:verb-particles \\
+    & time-target marker & \<time\>[に\textlightgrey{[は/も]}]\<v\> & @sec:verb-particles \\
+    へ & direction marker & \<direction\>へ\textlightgrey{[は/も]}\<v\> & @sec:verb-particles \\
+    で & context marker & \<by-way-of (where/what/how) context\>で\textlightgrey{[は/も]} & @sec:verb-particles \\
+    から & from-marker & \<from\>から & @sec:verb-particles \\
+    まで & to-marker & \<to\>まで & @sec:verb-particles \\
     % & & & \\
     \midrule
-    と & together-with marker & \<nn\>と\<v\> & \S@sec:noun-related-particles \\
-    % & & & \\
-    \midrule
-    \midrule
-    と & noun exclusive listing connector & (\<nn\>と)*\<nn\> & \S@sec:noun-related-particles \\
-    どか/や & noun vague listing connector & (\<nn\>\{とか/や\})*\<nn\> & \S@sec:noun-related-particles \\
-    し & reason vague listing connector & \textred{($*$)} (\<reason\>し)*\<reason\> & \S@sec:reason-vague-listing-connector \\
-    たり[する] & adj/verb vague listing marker & (\<past adj/v\>り、)*\<past adj/v\>りする & \S@sec:adj-verb-vague-listing-construct \\
-    の & complaining listing marker & \{\<nn/na-adj\>だの/\<v\>の\}* & \S@sec:no-the-nominaliser \\
-    % & & & \\
-    \midrule
-    と & quote marker & {「\<quote\>」と\<v\>\\\<quote\>と\<v\>} & \S@sec:building-clauses-and-sentences, \S@sec:direct-quotation, \S@sec:indirect-quotation \\
-    って & quote marker (abbreviation) & \<quote\>って & \S@sec:building-clauses-and-sentences, \S@sec:direct-quotation, \S@sec:indirect-quotation \\
-    って & generic verb (abbreviation) & \<quote\>って & \S@sec:referring-to-relative-clause \\
-    て & generic verb (abbreviation) & て\<v\>、\<sentence\> & \S@sec:referring-to-relative-clause \\
+    と & together-with marker & \<nn\>と\<v\> & @sec:noun-related-particles \\
     % & & & \\
     \midrule
     \midrule
-    の & label marker & \<label nn\>の[\<labelled nn\>] & \S@sec:noun-related-particles \\
-    & direction-label marker & \<direction\>への[\<labelled nn\>] & \S@sec:no-the-label-marker \\
-    & from-label marker & \<from\>からの[\<labelled nn\>] & \S@sec:no-the-label-marker \\
-    & only-label marker & \<only\>だけの[\<labelled nn\>] & \S@sec:no-the-label-marker \\
-    & quote-label marker & \<quote\>との[\<labelled nn\>] & \S@sec:no-the-label-marker \\
-    & regarding-label marker & \<regarding\>についての[\<labelled nn\>] & \S@sec:no-the-label-marker \\
+    と & noun exclusive listing connector & (\<nn\>と)*\<nn\> & @sec:noun-related-particles \\
+    どか/や & noun vague listing connector & (\<nn\>\{とか/や\})*\<nn\> & @sec:noun-related-particles \\
+    し & reason vague listing connector & #textred[($*$)] (\<reason\>し)*\<reason\> & @sec:reason-vague-listing-connector \\
+    たり[する] & adj/verb vague listing marker & (\<past adj/v\>り、)*\<past adj/v\>りする & @sec:adj-verb-vague-listing-construct \\
+    の & complaining listing marker & \{\<nn/na-adj\>だの/\<v\>の\}* & @sec:no-the-nominaliser \\
     % & & & \\
     \midrule
-    の & subjective label marker & \<na-adj label\>の[\<labelled nn\>] & \S@sec:no-adjectives \\
-    (な) & objective label marker & \<na-adj label\>な\<labelled\> & \S@sec:no-adjectives \\
-    & mood marker & \<nn\>な気分 & \S@sec:no-adjectives \\
+    と & quote marker & {「\<quote\>」と\<v\>\\\<quote\>と\<v\>} & @sec:building-clauses-and-sentences, @sec:direct-quotation, @sec:indirect-quotation \\
+    って & quote marker (abbreviation) & \<quote\>って & @sec:building-clauses-and-sentences, @sec:direct-quotation, @sec:indirect-quotation \\
+    って & generic verb (abbreviation) & \<quote\>って & @sec:referring-to-relative-clause \\
+    て & generic verb (abbreviation) & て\<v\>、\<sentence\> & @sec:referring-to-relative-clause \\
     % & & & \\
     \midrule
     \midrule
-    の& nominaliser/generic noun & \textred{($*$)} \<adj-phrase/v-phrase\>\textlightgrey{\{}の\textlightgrey{,物,こと\}} & \S@sec:noun-related-particles \\
-    & enthusiastic extraordinary & {\<positive adj\>の、\<negative adj\>の\\\<adj\>のなんのって} & \S@sec:no-the-nominaliser \\
-    の/ん & explanatory ender & \textred{($*$)} \<sentence\>\{の[だ/です],んだ,んです\} & \S@sec:noun-related-particles \\
-    ので/んで & non-causal explanation/reason marker & {\textred{($*$)} \<reason\>\{ので/んで\}\<result\>\\な\{ので/んで\}\<result\>\\\textred{($*$)} \<reason\>\{の[だ/です]/んだ/んです\}} & \S@sec:causation-reasoning-particles \\
-    から & direct cause marker & {\textred{($*$)} \<direct cause\>から\<result\>\\だから\<result\>\\\textred{($*$)} \<direct cause\>から [です]} & \S@sec:causation-reasoning-particles \\
-    んだった & just-remembered marker & \<v dict\>んだった & \S@sec:noun-related-particles \\
-    んじゃない & prohibition marker (slang) & \<v dict\>ん\{じゃない/じゃありません\} & \S@sec:noun-related-particles \\
-    んじゃなかった & feeling regret marker (slang) & \<v dict\>んじゃなかった & \S@sec:noun-related-particles \\
-    と & expected consequence marker & \textred{($*$)} \<predicate\>と\<statement\> & \S@sec:expected-consequence-conditionals \\
+    の & label marker & \<label nn\>の[\<labelled nn\>] & @sec:noun-related-particles \\
+    & direction-label marker & \<direction\>への[\<labelled nn\>] & @sec:no-the-label-marker \\
+    & from-label marker & \<from\>からの[\<labelled nn\>] & @sec:no-the-label-marker \\
+    & only-label marker & \<only\>だけの[\<labelled nn\>] & @sec:no-the-label-marker \\
+    & quote-label marker & \<quote\>との[\<labelled nn\>] & @sec:no-the-label-marker \\
+    & regarding-label marker & \<regarding\>についての[\<labelled nn\>] & @sec:no-the-label-marker \\
+    % & & & \\
+    \midrule
+    の & subjective label marker & \<na-adj label\>の[\<labelled nn\>] & @sec:no-adjectives \\
+    (な) & objective label marker & \<na-adj label\>な\<labelled\> & @sec:no-adjectives \\
+    & mood marker & \<nn\>な気分 & @sec:no-adjectives \\
+    % & & & \\
+    \midrule
+    \midrule
+    の& nominaliser/generic noun & #textred[($*$)] \<adj-phrase/v-phrase\>\textlightgrey{\{}の\textlightgrey{,物,こと\}} & @sec:noun-related-particles \\
+    & enthusiastic extraordinary & {\<positive adj\>の、\<negative adj\>の\\\<adj\>のなんのって} & @sec:no-the-nominaliser \\
+    の/ん & explanatory ender & #textred[($*$)] \<sentence\>\{の[だ/です],んだ,んです\} & @sec:noun-related-particles \\
+    ので/んで & non-causal explanation/reason marker & {#textred[($*$)] \<reason\>\{ので/んで\}\<result\>\\な\{ので/んで\}\<result\>\\#textred[($*$)] \<reason\>\{の[だ/です]/んだ/んです\}} & @sec:causation-reasoning-particles \\
+    から & direct cause marker & {#textred[($*$)] \<direct cause\>から\<result\>\\だから\<result\>\\#textred[($*$)] \<direct cause\>から [です]} & @sec:causation-reasoning-particles \\
+    んだった & just-remembered marker & \<v dict\>んだった & @sec:noun-related-particles \\
+    んじゃない & prohibition marker (slang) & \<v dict\>ん\{じゃない/じゃありません\} & @sec:noun-related-particles \\
+    んじゃなかった & feeling regret marker (slang) & \<v dict\>んじゃなかった & @sec:noun-related-particles \\
+    と & expected consequence marker & #textred[($*$)] \<predicate\>と\<statement\> & @sec:expected-consequence-conditionals \\
     % & & & \\
     \midrule
     % & & & \\
     \midrule
-    ね & seeking agreement ender & \<sentence\>ね & \S@sec:sentence-ending-particles \\
-    よ & presenting new information ender & \<sentence\>よ & \S@sec:sentence-ending-particles \\
-    のに & despite marker & \textred{($*$)} \<despite\>のに、\<sentence\> & \S@sec:despite-marker-particle \\
-    \SetCell[r=2]{l,m} {けど/が\\\textlightgrey{けれど}\\\textlightgrey{けれども}} & general connector & \textred{($*$)} \<s1\>\{けど/が\}\<s2\> & \S@sec:general-and-contradiction-connector-particles \\
-    & contradiction connector & \textred{($*$)} \<s1\>\{けど/が\}\<contradicting s2\> & \S@sec:general-and-contradiction-connector-particles \\
+    ね & seeking agreement ender & \<sentence\>ね & @sec:sentence-ending-particles \\
+    よ & presenting new information ender & \<sentence\>よ & @sec:sentence-ending-particles \\
+    のに & despite marker & #textred[($*$)] \<despite\>のに、\<sentence\> & @sec:despite-marker-particle \\
+    \SetCell[r=2]{l,m} {けど/が\\\textlightgrey{けれど}\\\textlightgrey{けれども}} & general connector & #textred[($*$)] \<s1\>\{けど/が\}\<s2\> & @sec:general-and-contradiction-connector-particles \\
+    & contradiction connector & #textred[($*$)] \<s1\>\{けど/が\}\<contradicting s2\> & @sec:general-and-contradiction-connector-particles \\
     % & & & \\
     \midrule
-    の & casual question ender & \<sentence\>の & \S@sec:noun-related-particles \\
-    か & polite question ender & \<sentence\>か & \S@sec:ka-in-polite-questions \\
-    & casual binary/sarcastic question ender & \<sentence\>か & \S@sec:ka-in-polite-questions \\
-    & whether-or-not question marker & {\<positive v\>か\<negative v\>か\\\<positive v\>かどうか} & \S@sec:ka-question-embedded-clauses \\
+    の & casual question ender & \<sentence\>の & @sec:noun-related-particles \\
+    か & polite question ender & \<sentence\>か & @sec:ka-in-polite-questions \\
+    & casual binary/sarcastic question ender & \<sentence\>か & @sec:ka-in-polite-questions \\
+    & whether-or-not question marker & {\<positive v\>か\<negative v\>か\\\<positive v\>かどうか} & @sec:ka-question-embedded-clauses \\
     % & & & \\
     \midrule
     でも & But &  &  \\
@@ -452,7 +452,7 @@ The following table is a condensed version, showing where the rules come from.
 \end{itemize}
 \color{black}
 
-\hl{Also (see takoboto): かも、じゃん}
+#highlight[Also (see takoboto): かも、じゃん]
 
 
 \longtabse[0.6]  % scale factor
@@ -469,39 +469,39 @@ The following table is a condensed version, showing where the rules come from.
     \toprule
     *Schema (short)* & *Schema name/purpose* & *Schemae* & *Sections* \\
     \midrule
-    に行く/に来る & to go/come and then do & \<v stem\>に行く/に来る & \S@sec:verb-stems \\
-    へ行く/へ来る & to go/come for the purpose of doing & \<v stem\>へ行く/へ来る & \S@sec:verb-stems \\
-    てある & resultant state (implicit preparation) & \<v te\>ある & \S@sec:resultant-state-tearu \\
-    ておく/とく & completed action (explicit preparation) & \<v te\>おく/\<v te fragment\>とく & \S@sec:auxiliary-verb-teoku \\
-    ていく & spatial/temporal do and go & \<v te\>いく & \S@sec:auxiliary-verbs-teiku-tekiru \\
-    てくる & spatial/temporal do and come & \<v te\>くる & \S@sec:auxiliary-verbs-teiku-tekiru \\
-    ことができる & given opportunity to do & \<v\>\{こと/の\}ができる & \S@sec:special-cases-mirareru-kikeru\\
-    あり#ruby[得][え]る & potential to exist & \<nn\>\{は/も/etc.\}ありえる & \S@sec:potential-to-exist-arieru\\
-    にする & to make become & {\<na-adj\>にする\\\<i-adj root\>くする} & \S@sec:auxiliary-verbs-nisuru-ninaru \\
-    & to decide on & \<nn\>にする & \S@sec:auxiliary-verbs-nisuru-ninaru \\
-    ことにする & to decide to do & \<v\>ことにする & \S@sec:auxiliary-verbs-nisuru-ninaru \\
-    ようにする & to try to do & \<v\>ようにする & \S@sec:auxiliary-verbs-nisuru-ninaru \\
-    になる & to become & {\<na-adj\>になる\\\<i-adj root\>くなる\\\<nn\>になる} & \S@sec:auxiliary-verbs-nisuru-ninaru \\
-    ことになる & to have been arranged/decided to do & \<v\>ことになる & \S@sec:auxiliary-verbs-nisuru-ninaru \\
-    ようになる & to change state of doing & \<v\>ようになる & \S@sec:auxiliary-verbs-nisuru-ninaru \\
-    & to change state of feasibility & \<v potential\>ようになる & \S@sec:auxiliary-verbs-nisuru-ninaru \\
-    なら[ば] & contextual conditional & \<context\>なら[ば]、\<statement\> & \S@sec:contextual-conditionals; \aux \\
-    - & prohibition & {\<v te\>は\{だめ/いけない/ならない\}\\\<v te fragment\>\{ちゃ/じゃ\}\{だめ/いけない/ならない\}} & \S@sec:prohibition \\
-    - & requirement & {\<v te-negative\>は\{だめ/いけない/ならない\}\\\<v negative fragment\>くちゃ\\\<v negative\>と\{だめ/いけない/ならない\}\\\<v negative\>と\\\<v conditional-negative\>\{だめ/いけない/ならない\}\\\<v negative fragment\>きゃ} & \S@sec:requirement \\
-    - & permission & {\<v te\>も\{いい/大丈夫/構わない\}\\\<v te\>いい} & \S@sec:permission \\
-    - & suggestion & \<v conditional\>/\<v past conditional\>どう & \S@sec:suggestions \\
-    という & definition connector & \<definition\>という\<thing\> & \S@sec:definition-toiu \\
-    というか & re-definition connector & \<to be redefined\>というか、\<redefinition\> & \S@sec:rephrasing-and-refining-definitions-with-toiuka-connector \\
-    という\{の/こと\} & generic verb & \<quote\>という\{の/こと\} & \S@sec:referring-to-relative-clause \\
-    てみる & trialling something & \<v te\>みる & \S@sec:trialling-something-out-temiru \\
-    とする & attempting something & \<v volitional\>と\{する/\<v\>\} & \S@sec:attempting-something-volitional-to \\
-    てあげる & giving a favour (first person) & \<v te\>あげる & \S@sec:giving \\
-    てくれる & giving a favour (second person) & \<v te\>くれる & \S@sec:giving \\
-    てもらう & receiving a favour & \<v te\>もらう & \S@sec:receiving \\
-    てくれる/てもらえう & soliciting a favour & \<v te\>\{くれる/もらえる\} & \S@sec:soliciting-favours-kureru-moraeru \\
-    てください。/て & honorific request & {\<v te\>ください。\\\<v te\>} & \S@sec:honorific-requests \\
-    てちょうだい。 & casual request & \<v te\>ちょうだい。 & \S@sec:casual-requests \\
-    なさい/な & polite firm request & {\<v stem\>なさい\\\<v stem\>な} & \S@sec:polite-firm-requests \\
+    に行く/に来る & to go/come and then do & \<v stem\>に行く/に来る & @sec:verb-stems \\
+    へ行く/へ来る & to go/come for the purpose of doing & \<v stem\>へ行く/へ来る & @sec:verb-stems \\
+    てある & resultant state (implicit preparation) & \<v te\>ある & @sec:resultant-state-tearu \\
+    ておく/とく & completed action (explicit preparation) & \<v te\>おく/\<v te fragment\>とく & @sec:auxiliary-verb-teoku \\
+    ていく & spatial/temporal do and go & \<v te\>いく & @sec:auxiliary-verbs-teiku-tekiru \\
+    てくる & spatial/temporal do and come & \<v te\>くる & @sec:auxiliary-verbs-teiku-tekiru \\
+    ことができる & given opportunity to do & \<v\>\{こと/の\}ができる & @sec:special-cases-mirareru-kikeru\\
+    あり#ruby[得][え]る & potential to exist & \<nn\>\{は/も/etc.\}ありえる & @sec:potential-to-exist-arieru\\
+    にする & to make become & {\<na-adj\>にする\\\<i-adj root\>くする} & @sec:auxiliary-verbs-nisuru-ninaru \\
+    & to decide on & \<nn\>にする & @sec:auxiliary-verbs-nisuru-ninaru \\
+    ことにする & to decide to do & \<v\>ことにする & @sec:auxiliary-verbs-nisuru-ninaru \\
+    ようにする & to try to do & \<v\>ようにする & @sec:auxiliary-verbs-nisuru-ninaru \\
+    になる & to become & {\<na-adj\>になる\\\<i-adj root\>くなる\\\<nn\>になる} & @sec:auxiliary-verbs-nisuru-ninaru \\
+    ことになる & to have been arranged/decided to do & \<v\>ことになる & @sec:auxiliary-verbs-nisuru-ninaru \\
+    ようになる & to change state of doing & \<v\>ようになる & @sec:auxiliary-verbs-nisuru-ninaru \\
+    & to change state of feasibility & \<v potential\>ようになる & @sec:auxiliary-verbs-nisuru-ninaru \\
+    なら[ば] & contextual conditional & \<context\>なら[ば]、\<statement\> & @sec:contextual-conditionals; \aux \\
+    - & prohibition & {\<v te\>は\{だめ/いけない/ならない\}\\\<v te fragment\>\{ちゃ/じゃ\}\{だめ/いけない/ならない\}} & @sec:prohibition \\
+    - & requirement & {\<v te-negative\>は\{だめ/いけない/ならない\}\\\<v negative fragment\>くちゃ\\\<v negative\>と\{だめ/いけない/ならない\}\\\<v negative\>と\\\<v conditional-negative\>\{だめ/いけない/ならない\}\\\<v negative fragment\>きゃ} & @sec:requirement \\
+    - & permission & {\<v te\>も\{いい/大丈夫/構わない\}\\\<v te\>いい} & @sec:permission \\
+    - & suggestion & \<v conditional\>/\<v past conditional\>どう & @sec:suggestions \\
+    という & definition connector & \<definition\>という\<thing\> & @sec:definition-toiu \\
+    というか & re-definition connector & \<to be redefined\>というか、\<redefinition\> & @sec:rephrasing-and-refining-definitions-with-toiuka-connector \\
+    という\{の/こと\} & generic verb & \<quote\>という\{の/こと\} & @sec:referring-to-relative-clause \\
+    てみる & trialling something & \<v te\>みる & @sec:trialling-something-out-temiru \\
+    とする & attempting something & \<v volitional\>と\{する/\<v\>\} & @sec:attempting-something-volitional-to \\
+    てあげる & giving a favour (first person) & \<v te\>あげる & @sec:giving \\
+    てくれる & giving a favour (second person) & \<v te\>くれる & @sec:giving \\
+    てもらう & receiving a favour & \<v te\>もらう & @sec:receiving \\
+    てくれる/てもらえう & soliciting a favour & \<v te\>\{くれる/もらえる\} & @sec:soliciting-favours-kureru-moraeru \\
+    てください。/て & honorific request & {\<v te\>ください。\\\<v te\>} & @sec:honorific-requests \\
+    てちょうだい。 & casual request & \<v te\>ちょうだい。 & @sec:casual-requests \\
+    なさい/な & polite firm request & {\<v stem\>なさい\\\<v stem\>な} & @sec:polite-firm-requests \\
     \bottomrule
 }
 

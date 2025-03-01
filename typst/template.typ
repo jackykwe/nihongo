@@ -50,7 +50,7 @@
 #let default_font_size = 10pt
 #let template(doc) = {
   [
-    #let line_spacing = 1em
+    #let line_spacing = 0.8em
     #let paragraph_spacing = line_spacing * 1.75
 
     // Adapted from https://typst.app/docs/guides/guide-for-latex-users/#latex-look
@@ -114,6 +114,29 @@
   ]
 }
 
+
+// ##################### //
+// CONVENIENCE FUNCTIONS //
+// ##################### //
+#let aux = smallcaps[aux]
+#let prefix = smallcaps[prefix]
+#let suffix = smallcaps[suffix]
+#let conjunction = smallcaps[conjunction]
+#let onomatopoeic = smallcaps[onomatopoeic]
+#let yojijukugo = smallcaps[四字熟語]
+#let exception(str) = text(fill: red)[#highlight[*#str*]]
+#let rc(rows, cols, content) = table.cell(rowspan: rows, colspan: cols)[#content]
+
+
+// #################### //
+// FORMATTING FUNCTIONS //
+// #################### //
+#let sansj(str) = text(font: "Noto Sans CJK JP")[#str]
+#let textblue(str) = text(fill: blue)[#str]
+#let textred(str) = text(fill: red)[#str]
+#let textgreen(str) = text(fill: olive)[#str]
+#let textpurple(str) = text(fill: purple)[#str]
+#let textorange(str) = text(fill: orange)[#str]
 
 
 // ############### //
@@ -234,16 +257,3 @@
     #label(label_str)
   ]
 }
-
-
-// ##################### //
-// CONVENIENCE FUNCTIONS //
-// ##################### //
-#let aux = smallcaps[aux]
-#let prefix = smallcaps[prefix]
-#let suffix = smallcaps[suffix]
-#let conjunction = smallcaps[conjunction]
-#let onomatopoeic = smallcaps[onomatopoeic]
-#let yojijukugo = smallcaps[四字熟語]
-#let exception(str) = text(fill: red)[#highlight[*#str*]]
-#let sansj(str) = text(font: "Noto Sans CJK JP")[#str]

@@ -15,7 +15,6 @@ Files to include: `*.typ`:
 |`\\emph\{(.*?)\}`|`_$1_`|
 |`\\textbf\{(.*?)\}`|`*$1*`|
 |`\\ul\{(.*?)\}`|`#underline[$1]`|
-|`\\ul\{(.*?)\}`|`#underline[$1]`|
 |` ``(.*?)''`|`"$1"`|
 |`\.\\ ` (with trailing space)|`. ` (with trailing space)|
 |`\\clearpage`|`#pagebreak()`|
@@ -26,6 +25,21 @@ Files to include: `*.typ`:
 |`Section~`|(blank)|
 |`Appendix~`|(blank)|
 |`\\texttt\{(.*?)\}`|`` `$1` ``|
+|`\\S@`|`@`|
+|`\\footnote\{(.*?)\}`|`#footnote[$1]`|
+|`\\underline\{(.*?)\}`|`#underline[$1]`|
+|`\\textblue\{(.*?)\}`|`#textblue[$1]`|
+|`\\textred\{(.*?)\}`|`#textred[$1]`|
+|`\\textorange\{(.*?)\}`|`#textorange[$1]`|
+|`\\textgreen\{(.*?)\}`|`#textgreen[$1]`|
+|`\\textpurple\{(.*?)\}`|`#textpurple[$1]`|
+|`\\hl\{(.*?)\}`|`#highlight[$1]`|
+|`\\=a`|`ā`|
+|`\\=i`|`ī`|
+|`\\=u`|`ū`|
+|`\\=e`|`ē`|
+|`\\=o`|`ō`|
+|`\$\\to\$`|`#sym.arrow`|
 
 
 <!--

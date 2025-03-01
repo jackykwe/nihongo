@@ -10,13 +10,13 @@ This section is named "special expressions" because except the first few subsect
 We finally learn the last three major verb conjugations.
 
 === Causative form 〜\ruby{◯{〜あ}\{せる/す\}} <sec:causative-form>
-The causative form of verbs indicate that someone _was made to_ perform the verb. It has two senses: making somebody do something, and letting someone to do something. \textred{Disambiguation between the two senses is based on context!}
+The causative form of verbs indicate that someone _was made to_ perform the verb. It has two senses: making somebody do something, and letting someone to do something. #textred[Disambiguation between the two senses is based on context!]
 
 When the causative form is used with あげる/くれる, it almost always means to "let someone do". Otherwise, it usually means "make someone do".
 
 For detailed conjugation rules, refer to @appendix:conjugation-rules-summary. All causative form verbs are る-verbs. Further conjugations follow る-verb rules.
 
-\textorange{When listening, 〜#ruby[◯][〜あ]せ is the signal for passive voice, though for る-verbs there is potential conflict with the potential form.}
+#textorange[When listening, 〜#ruby[◯][〜あ]せ is the signal for passive voice, though for る-verbs there is potential conflict with the potential form.]
 
 E.g. 全部*食べさせた*。 (Made/let someone eat it all.)
 
@@ -24,13 +24,13 @@ E.g. 全部*食べさせてくれた*。 (Let someone eat it all.)
 
 E.g. 先生が学生に宿題をたくさん*させた*。 (Teacher made students do lots of homework.)
 
-E.g. 先生が質問をたくさん*聞かせてくれた*。 (Teacher let someone ask lots of questions.; 聞く $\to$ 聞かせる (causative) $\to$ 聞かせてくれる (to give the favour))
+E.g. 先生が質問をたくさん*聞かせてくれた*。 (Teacher let someone ask lots of questions.; 聞く #sym.arrow 聞かせる (causative) #sym.arrow 聞かせてくれる (to give the favour))
 
-E.g. 今日は仕事を*休ませてください*。 (Please let me rest from work today.; 休む $\to$ 休ませる (causative) $\to$ 休ませてください (desiderative of causative, "let-do" sense))
+E.g. 今日は仕事を*休ませてください*。 (Please let me rest from work today.; 休む #sym.arrow 休ませる (causative) #sym.arrow 休ませてください (desiderative of causative, "let-do" sense))
 
-E.g. その部長は、よく#ruby[長][ちょう]時間*#ruby[働][はたら]かせる*。 (That manager often makes people work long hours.; #ruby[働][かたら]く (to work) $\to$ 働かせる (causative))
+E.g. その部長は、よく#ruby[長][ちょう]時間*#ruby[働][はたら]かせる*。 (That manager often makes people work long hours.; #ruby[働][かたら]く (to work) #sym.arrow 働かせる (causative))
 
-When _asking_ for permission to let someone do something (including letting yourself do something), it's more common to use the 「〜てもいい」 grammar (\S@sec:permission).
+When _asking_ for permission to let someone do something (including letting yourself do something), it's more common to use the 「〜てもいい」 grammar (@sec:permission).
 
 E.g. お手洗いに*行かせてくれません*か。 (Can you let me go to the toilet? (sounds like a prisoner, even in English))
 
@@ -40,7 +40,7 @@ In very rough/casual slang, the causative form may be expressed with the う-ver
 
 E.g. 同じことを何回も*言わす*\textsuperscript{言わせる}な！ (Don't make me say the same thing again and again!)
 
-E.g. お腹空いているんだから、なんか*食べさしてくれ*\textsuperscript{食べさせてくれ}よ。 (I'm hungry, so let me eat something.; 食べる $\to$ 食べさす $\to$ 食べさしてくれる $\to$ 食べさしてくれ (imperative))
+E.g. お腹空いているんだから、なんか*食べさしてくれ*\textsuperscript{食べさせてくれ}よ。 (I'm hungry, so let me eat something.; 食べる #sym.arrow 食べさす #sym.arrow 食べさしてくれる #sym.arrow 食べさしてくれ (imperative))
 
 === Interlude I: passivisation, direct and indirect/adversative passives <sec:direct-and-indirect-adversative-passive>
 _Read the supplementary materials on #link("https://www.tofugu.com/japanese-grammar/verb-passive-form-rareru\#direct-vs-indirect-passive")[[TFG1]] and #link("https://www.tofugu.com/japanese-grammar/particle-ni/\#in-passive-sentences")[[TFG2]]._
@@ -55,15 +55,15 @@ In Japanese, passivisation is a bit more flexible: intransitive verbs can be pas
 
 We now distinguish between the direct and indirect/adversative passives _in Japanese_.
 \begin{itemize}
-    \item *Direct passive \textred{#underline[(transitive only)*]}: used to express that the #underline[transitive] verb was done to someone/something (subject experiencer; marked by が), by someone (origin oblique/optional performer; marked by に). The effect that the action has on the experiencer is very obvious, since the verb is done directly to them (promoted to subject grammatical role). The subject (demoted to an oblique) is often omitted as it's not important. The Japanese direct passive is equivalent to the English passive.
+    \item *Direct passive #textred[#underline[(transitive only)*]]: used to express that the #underline[transitive] verb was done to someone/something (subject experiencer; marked by が), by someone (origin oblique/optional performer; marked by に). The effect that the action has on the experiencer is very obvious, since the verb is done directly to them (promoted to subject grammatical role). The subject (demoted to an oblique) is often omitted as it's not important. The Japanese direct passive is equivalent to the English passive.
 
-    The semantic performer is the syntactic origin after passivisation and marked byにに. This usage of に as _origin_ rather than desstination is very similar to もらう's usage (\S@sec:receiving, #link("https://www.tofugu.com/japanese-grammar/particle-ni/\#in-social-interactions-and-transactions")[[TFG]]), since \textorange{the passive subject is the receiver (experiencer) in the transaction (action)}.
+    The semantic performer is the syntactic origin after passivisation and marked byにに. This usage of に as _origin_ rather than desstination is very similar to もらう's usage (@sec:receiving, #link("https://www.tofugu.com/japanese-grammar/particle-ni/\#in-social-interactions-and-transactions")[[TFG]]), since #textorange[the passive subject is the receiver (experiencer) in the transaction (action)].
 
     E.g. ピカソに*キスされた*。 (I was kissed by Picasso.)
 
     E.g. タバコが*吸われた*。 (A cigarette was smoked.)
 
-    \item *Indirect passive (both transitive and intransitive)*: used to express that someone (origin performer; marked by に) did a #underline[transitive/intransitive verb], involving an optional direct object (only for transitive verbs; marked by を), and it had an effect on someone (experiencer; marked by は/が; #link("https://www.guidetojapanese.org/blog/2005/09/09/no-suffering-passive/\#comment-9210")[[TK]]). There is no equivalent in English. \textred{The adverastive nuance is not guaranteed, though very likely present in indirect passive sentences.}
+    \item *Indirect passive (both transitive and intransitive)*: used to express that someone (origin performer; marked by に) did a #underline[transitive/intransitive verb], involving an optional direct object (only for transitive verbs; marked by を), and it had an effect on someone (experiencer; marked by は/が; #link("https://www.guidetojapanese.org/blog/2005/09/09/no-suffering-passive/\#comment-9210")[[TK]]). There is no equivalent in English. #textred[The adverastive nuance is not guaranteed, though very likely present in indirect passive sentences.]
 
     E.g. （私は）（あのおじさんに）タバコを吸われた。 (I got smoked on (by that man).; #link("https://www.tofugu.com/japanese-grammar/verb-passive-form-rareru\#direct-vs-indirect-passive")[[TFG1]])
 
@@ -75,25 +75,25 @@ We now distinguish between the direct and indirect/adversative passives _in Japa
 
     Except for a few cases, the indirect passive is always formed with verbs that were intentionally performed by some_one_. The performer of the verb (marked by に) is therefore usually a person. Only (some) weather-related verbs are acceptable exceptions to this rule, where the performer is a weather-related object. More details in @sec:tmjk-3-4-grammar-rules-of-the-direct-indirect-possessive-intransitive-passives.
 
-    E.g. \st{私は\textred{本に}頭に落ちられた。 (My head was fallen on by a book.; #link("https://www.tofugu.com/japanese-grammar/verb-passive-form-rareru\#direct-vs-indirect-passive")[[TFG1]]) \textred{Unnatural sentence: the performer should not be an object.}}
+    E.g. \st{私は#textred[本に]頭に落ちられた。 (My head was fallen on by a book.; #link("https://www.tofugu.com/japanese-grammar/verb-passive-form-rareru\#direct-vs-indirect-passive")[[TFG1]]) #textred[Unnatural sentence: the performer should not be an object.]}
 
     E.g. #ruby[突然][とつ|ぜん]雨に*降られた*。 (All of a sudden, I was rained on.; 降る is intransitive; #link("https://www.tofugu.com/japanese-grammar/verb-passive-form-rareru\#direct-vs-indirect-passive")[[TFG1]])
 
     E.g. #ruby[花子][かな|こ]が#ruby[隣][となり]の学生にピアノを朝まで#ruby[弾][ひ]かれた。(Hanako had the student next to her play the piano on her until morning.; a more natural translation is "Hanako was adversely affected by the student next to her playing the piano until morning."; #link("https://en.wikipedia.org/wiki/Passive\_voice\#Adversative\_passive")[[Wiki]])
 \end{itemize}
 
-For a deeper treatment of the passive voice, refer to the postlude (\S@sec:passivisation).
+For a deeper treatment of the passive voice, refer to the postlude (@sec:passivisation).
 
 
 === Passive form  〜\ruby{◯{〜あ}れる} <sec:causative-form>
 
 The passive voice in Japanese is often used in written essays and articles. Read more about passivisation in @sec:direct-and-indirect-adversative-passive.
 
-For detailed conjugation rules, refer to @appendix:conjugation-rules-summary. All passive form verbs are る-verbs. Further conjugations follow る-verb rules. \textred{Note that for る-verbs and 来る, the passive form is identical to the potential form (〜られる); disambiguation requires context and is otherwise impossible.}
+For detailed conjugation rules, refer to @appendix:conjugation-rules-summary. All passive form verbs are る-verbs. Further conjugations follow る-verb rules. #textred[Note that for る-verbs and 来る, the passive form is identical to the potential form (〜られる); disambiguation requires context and is otherwise impossible.]
 
-\textorange{When listening, 〜#ruby[◯][〜あ]れ is the signal for passive voice, though for る-verbs there is potential conflict with the potential form.}
+#textorange[When listening, 〜#ruby[◯][〜あ]れ is the signal for passive voice, though for る-verbs there is potential conflict with the potential form.]
 
-In Japanese, the standard SOV sentence schema is \<subject\>が\<object\>を\<transitive v\>, or \<performer\>が\<experiencer\>を\<transitive v\> in semantic terms. After passivisation into the *direct passive*, it becomes \<performer\>に\<experiencer\>が\<transitive v passive form\>. Notice that the semantic performer is now the syntactic origin (marked by に), and the semantic experiencer is now the syntactic subject (marked by が/は). This is very similar to もらう's usage of に as a origin particle (\S@sec:receiving, #link("https://www.tofugu.com/japanese-grammar/particle-ni/\#in-social-interactions-and-transactions")[[TFG]]), since \textorange{the passive subject is the receiver (experiencer) in the transaction (action)}.
+In Japanese, the standard SOV sentence schema is \<subject\>が\<object\>を\<transitive v\>, or \<performer\>が\<experiencer\>を\<transitive v\> in semantic terms. After passivisation into the *direct passive*, it becomes \<performer\>に\<experiencer\>が\<transitive v passive form\>. Notice that the semantic performer is now the syntactic origin (marked by に), and the semantic experiencer is now the syntactic subject (marked by が/は). This is very similar to もらう's usage of に as a origin particle (@sec:receiving, #link("https://www.tofugu.com/japanese-grammar/particle-ni/\#in-social-interactions-and-transactions")[[TFG]]), since #textorange[the passive subject is the receiver (experiencer) in the transaction (action)].
 
 E.g. ポリッジが誰かに*食べられた*！ (The porridge was eaten by somebody!)
 
@@ -108,13 +108,13 @@ E.g. #ruby[外国人][がい|こく|じん]に質問を*聞かれた*が、答�
 E.g. このパッケージには、あらゆる物が*#ruby[含][ふく]まれている*。 (Everything is included in this package.; あらゆる: all, #ruby[含][ふく]む: to contain)
 
 % Because an indirect sentence is more polite in Japanese, the passive voice is used to show a level of politeness above the normal ます form.
-In a similar sense to how it's more polite to address someone indirectly, and how it's more polite to ask negative questions than positive ones (\S@sec:positive-negative-questions), the passive form makes the sentence less direct because the subject (now the experiencer) does not directly perform the action. In increasing levels of politeness of expressing "what will you do?":
+In a similar sense to how it's more polite to address someone indirectly, and how it's more polite to ask negative questions than positive ones (@sec:positive-negative-questions), the passive form makes the sentence less direct because the subject (now the experiencer) does not directly perform the action. In increasing levels of politeness of expressing "what will you do?":
 \begin{enumerate}[label=\arabic*.]
     \item (active voice) どうする？
     \item (active voice, polite) どうしますか。
     \item (passive voice, polite) どうされますか。
-    \item (\hl{???} voice, honorific, \S\hl{???}) どうなさいますか。
-    \item (\hl{???} voice, honorific, less certainty, \S\hl{???}) どうなさいますでしょうか。
+    \item (#highlight[???] voice, honorific, \S#highlight[???]) どうなさいますか。
+    \item (#highlight[???] voice, honorific, less certainty, \S#highlight[???]) どうなさいますでしょうか。
 \end{enumerate}
 With increasing indirection and politeness, the sentence grows longer and longer.
 
@@ -131,7 +131,7 @@ For detailed conjugation rules, refer to @appendix:conjugation-rules-summary. Al
 
 The causative-passive form is a variant of the passive voice, so the に particle marks the _origin_, i.e. the performer of the action.
 
-\textorange{When listening, 〜#ruby[◯][〜あ]せられ is the signal for causative-passive voice.}
+#textorange[When listening, 〜#ruby[◯][〜あ]せられ is the signal for causative-passive voice.]
 
 E.g. 朝ごはんは食べたくなかったのに、*食べさせられた*。 (Despite not wanting to eat breakfast, I was made to eat it.)
 
@@ -141,9 +141,9 @@ E.g. あいつに二時間も*待たせられた*。 (I was made to wait 2 hours
 
 E.g. #ruby[親][おや]に毎日宿題を*させられる*。 (I was made to do homework everyday by my parents.; #ruby[親][おや]: parents)
 
-\textred{This shortened causative-passive form only exists for う-verbs with $*\setminus$\{す\}-ending.}
+#textred[This shortened causative-passive form only exists for う-verbs with $*\setminus$\{す\]-ending.}
 
-In very rough/casual slang, the shortened causative-passive form (derived from the shortened causaive form, \S@sec:causative-form) may be used. This form only exists for う-verbs with the exception of those with a す-ending in dictionary form, because wherever the shortened causative form ends with 〜さす, the shortened causative-passive form would have 「$\cdots$\textred{ささ}れる」 in it, which is not allowed.
+In very rough/casual slang, the shortened causative-passive form (derived from the shortened causaive form, @sec:causative-form) may be used. This form only exists for う-verbs with the exception of those with a す-ending in dictionary form, because wherever the shortened causative form ends with 〜さす, the shortened causative-passive form would have 「$\cdots$#textred[ささ]れる」 in it, which is not allowed.
 
 E.g. 学生が#ruby[廊下][ろう|か]に*#ruby[立][た]たされた*\textsuperscript{立たせられた}。 (The stuednt was made to stand in the hall.; #ruby[立][た]つ: to stand)
 
@@ -216,17 +216,17 @@ From the #ruby[大地][だい|ち] textbook, there are four:
 
     \item #ruby[源氏物語][げん|じ|もの|がたり]は#ruby[紫式部][むらさき|しき|ぶ]によって*書かれました*。 (The Tale of Genji (Heian-period classic) was written by Murasaki Shikibu.; 書く: to write (transitive))
 \end{enumerate}
-Here, example~\eqref{enumerate:daichi-2} are examples of the intransitive passive. The 「〜と言われています」 construct (言う $\to$ 言われる (passive) $\to$ 言われている (progressive passive) $\to$ 言われています (polite progresive passive)) is very often used in the passive voice ("it is said that\dots").
+Here, example~\eqref{enumerate:daichi-2} are examples of the intransitive passive. The 「〜と言われています」 construct (言う #sym.arrow 言われる (passive) #sym.arrow 言われている (progressive passive) #sym.arrow 言われています (polite progresive passive)) is very often used in the passive voice ("it is said that\dots").
 
 The burden on learners can be significantly reduced by dividing the teaching up into parts. For the six forms in みんなの日本語, we can group them into two groups: $\{1,2\}$ and $\{3,4,5,6\}$. The first two kinds involve emotion, while the last four don't.
 
-Furthermore, a distinct feature of the Japanese passive voice is the adversative passive interpretation (#ruby[迷惑][めい|わく]の#ruby[受身][うけ|み]). However, whether an action is adversative depends less on the sentence structure, and much more on the meaning of the verb used. \textblue{There is therefore nothing inherently in the grammatical rules and syntax that suggest adversativity.} The passive voice can be used for _both_ positive and negative emotions, even if the passive voice always conveys the idea that the experiencer has no control over the action and its performer.
+Furthermore, a distinct feature of the Japanese passive voice is the adversative passive interpretation (#ruby[迷惑][めい|わく]の#ruby[受身][うけ|み]). However, whether an action is adversative depends less on the sentence structure, and much more on the meaning of the verb used. #textblue[There is therefore nothing inherently in the grammatical rules and syntax that suggest adversativity.] The passive voice can be used for _both_ positive and negative emotions, even if the passive voice always conveys the idea that the experiencer has no control over the action and its performer.
 
 E.g. 私は先生に*#ruby[褒][ほ]められました*。 (non-adversative; I was praised by my teacher.; #ruby[褒][ほ]める: to praise (transitive))
 
 E.g. 私は先生に*しかられました*。 (adversative; I was scolded by my teacher.; しかる: to scold (transitive))
 
-To start off, fix the experiencer to always be "me", and fix the sentence structure to be 「私は\<performer\>に\<verb passive\>」. The experiencer will change later as we progress further (\S@sec:tmjk-5-further-indirect-passives).
+To start off, fix the experiencer to always be "me", and fix the sentence structure to be 「私は\<performer\>に\<verb passive\>」. The experiencer will change later as we progress further (@sec:tmjk-5-further-indirect-passives).
 
 
 === The grammar rules of passives <sec:tmjk-3-4-grammar-rules-of-the-direct-indirect-possessive-intransitive-passives>
@@ -240,7 +240,7 @@ For the sake of ease of understanding, we categorise the passive voice into two 
     \begin{itemize}
         \item 直接受身 (direct passive), a.k.a. 直接#ruby[対象][たい|しょう]の受身 (direct target passive)、#ruby[相手][あい|て]の受身 (other party passive)
 
-        \textorange{\<experiencer\>\{が/は\}\<performer\>に\<v transitive passive\>, where \<experiencer\> IS the promoted object of the corresponding active voice sentence.}
+        #textorange[\<experiencer\>\{が/は\]\<performer\>に\<v transitive passive\>, where \<experiencer\> IS the promoted object of the corresponding active voice sentence.}
 
         \item #ruby[中立][ちゅう|りつ]の受身 (neutral passive)
     \end{itemize}
@@ -251,26 +251,26 @@ For the sake of ease of understanding, we categorise the passive voice into two 
     \begin{itemize}
         \item 間接受身 (indirect passive)
 
-        \textorange{\<experiencer\>\{が/は\}\<performer\>に\<v transitive passive\>, where \<experiencer\> is NOT the promoted object of any active voice sentence.}
+        #textorange[\<experiencer\>\{が/は\]\<performer\>に\<v transitive passive\>, where \<experiencer\> is NOT the promoted object of any active voice sentence.}
 
         \item 迷惑の受身 (adversative passive)
         \item 持ち#ruby[主][ぬし]の受身 (possessive passive)
 
-        \textorange{\<experiencer-owner\>\{が/は\}\<performer\>に\<ownee\>を\<v transitive passive\>, where \<experiencer\> is NOT the promoted object of any active voice sentence.}
+        #textorange[\<experiencer-owner\>\{が/は\]\<performer\>に\<ownee\>を\<v transitive passive\>, where \<experiencer\> is NOT the promoted object of any active voice sentence.}
 
         \item 自動詞の受身 (intransitive passive)
 
-        \textorange{\<experiencer\>\{が/は\}\<performer\>に\<v intransitive passive\>.}
+        #textorange[\<experiencer\>\{が/は\]\<performer\>に\<v intransitive passive\>.}
     \end{itemize}
 \end{itemize}
 
-\textpurple{At the end of the day, from this landscape, the syntax is mostly the same.}
+#textpurple[At the end of the day, from this landscape, the syntax is mostly the same.]
 
 We now look at the direct, indirect, possessive and indirect passives more closely. Here are their definitions (#ruby[定義][てい|ぎ]).
 \begin{enumerate}[label=\arabic*.]
     \item *#ruby[直接受身][ちょく|せつ|うけ|み]* (direct passive).
 
-    \textorange{\<experiencer\>\{が/は\}\<performer\>に\<v transitive passive\>, where \<experiencer\> IS the promoted object of the corresponding active voice sentence.}
+    #textorange[\<experiencer\>\{が/は\]\<performer\>に\<v transitive passive\>, where \<experiencer\> IS the promoted object of the corresponding active voice sentence.}
 
     \begin{itemize}
         \item _There is a corresponding active voice sentence._
@@ -291,9 +291,9 @@ We now look at the direct, indirect, possessive and indirect passives more close
     \end{itemize}
     \item *#ruby[間接受身][かん|せつ|うけ|み]* (indirect passive).
 
-    \textpurple{When translating indirect passives into English, purposely place the origin at the end of the sentence as "by \<origin\>", then the rest of the sentence is usually expressed as "\<experiencer\> got \<v passive\> on by \<origin\>".}
+    #textpurple[When translating indirect passives into English, purposely place the origin at the end of the sentence as "by \<origin\>", then the rest of the sentence is usually expressed as "\<experiencer\> got \<v passive\> on by \<origin\>".]
 
-    \textorange{\<experiencer\>\{が/は\}\<performer\>に\<v transitive passive\>, where \<experiencer\> is NOT the promoted object of any active voice sentence.}
+    #textorange[\<experiencer\>\{が/は\]\<performer\>に\<v transitive passive\>, where \<experiencer\> is NOT the promoted object of any active voice sentence.}
 
     \begin{itemize}
         \item _There is no corresponding active voice sentence._
@@ -316,7 +316,7 @@ We now look at the direct, indirect, possessive and indirect passives more close
     \end{itemize}
     \item *#ruby[持][も]ち#ruby[主受身][ぬし|うけ|み]* (possessive passive). The possessive passive is sometimes grouped together with 間接受身のグループ, and sometimes consideredto be in a category of its own.
 
-    \textorange{\<experiencer-owner\>\{が/は\}\<performer\>に\<ownee\>を\<v transitive passive\>, where \<experiencer\> is NOT the promoted object of any active voice sentence.}
+    #textorange[\<experiencer-owner\>\{が/は\]\<performer\>に\<ownee\>を\<v transitive passive\>, where \<experiencer\> is NOT the promoted object of any active voice sentence.}
 
     E.g. *（私は）*スリに*#ruby[財布][さい|ふ]を*#ruby[取][と]られた。 (My wallet was stolen by a pickpocket.; スリ: pickpocket, #ruby[取][と]る: to steal (transitive))
 
@@ -345,7 +345,7 @@ We now look at the direct, indirect, possessive and indirect passives more close
 
         [自動詞の受身、自然]（私は）#ruby[隣][となり]の人に#ruby[満員][まん|いん]電車で#ruby[足][あし]を#ruby[踏][ふ]まれた。(I got my foot stepped on on me by someone next to me on a fully-booked train.; more natural translation is "My foot was stepped on by someone next to me on a fully-booked train." #ruby[踏][ふ]む: to step on (transitive))
 
-        \textred{[直接受身、不自然] \st{私の足が踏まれた。}}
+        #textred[[直接受身、不自然] \st{私の足が踏まれた。]}
 
         \item When the passive sentence involves possessions of the owner, the direct passive is also possible.
 
@@ -363,7 +363,7 @@ We now look at the direct, indirect, possessive and indirect passives more close
 
     \item *#ruby[自動詞][じ|どう|し]の#ruby[受身][うけ|み]* (intransitive passive).
 
-    \textorange{\<experiencer\>\{が/は\}\<performer\>に\<v intransitive passive\>.}
+    #textorange[\<experiencer\>\{が/は\]\<performer\>に\<v intransitive passive\>.}
 
     \begin{itemize}
         \item _There is no corresponding active voice sentence._
@@ -395,17 +395,17 @@ We now look at the direct, indirect, possessive and indirect passives more close
 
         [非意志、自然] 雨に降られた。 (I had the rain fall on me.; 降る: (of precipitation/ash) to fall (intransitive)))
 
-        \textred{[非意志、不自然] \st{雨に#ruby[止][や]まれた。 (#ruby[止][や]む: to cease/stop/be over (intransitive))}}
+        #textred[[非意志、不自然] \st{雨に#ruby[止][や]まれた。 (#ruby[止][や]む: to cease/stop/be over (intransitive))]}
 
-        \textred{[非意志、不自然] ドアに急に開かれました。}
+        #textred[[非意志、不自然] ドアに急に開かれました。]
 
-        \textred{[非意志、不自然] #ruby[石][いし]に#ruby[突然][とつ|ぜん]、落ちられました。}
+        #textred[[非意志、不自然] #ruby[石][いし]に#ruby[突然][とつ|ぜん]、落ちられました。]
 
-        \textred{[非意志、不自然] 電気に消えられて、#ruby[困][こま]りました。}
+        #textred[[非意志、不自然] 電気に消えられて、#ruby[困][こま]りました。]
 
-        \textred{[非意志、不自然] 涙に#ruby[不意][ふ|い]に出られて、恥ずかしかった。}
+        #textred[[非意志、不自然] 涙に#ruby[不意][ふ|い]に出られて、恥ずかしかった。]
 
-        Even though all these attempted intransitive passive verbs have the adversative nuance, they are nonetheless considered unnatural. \hl{(Perhaps for a reason only accessible to higher level learners\dots)}
+        Even though all these attempted intransitive passive verbs have the adversative nuance, they are nonetheless considered unnatural. #highlight[(Perhaps for a reason only accessible to higher level learners\dots)]
     \end{itemize}
 \end{enumerate}
 
@@ -441,14 +441,14 @@ In @sec:tmjk-2-classifications-of-passive-voice, we fixed the subject/experience
 
     [D2、受動文] *#ruby[川口][かわ|ぐち]さんは*友達に手紙を読まれて、*恥ずかしい思いをしました。* (Kawaguchi-san got his letter read on him by his friend, and he felt embarrassed unintentionally.; 読む: to read (transitive), しまう: to do/happen unintentionally (\aux))
 
-    \textblue{When the feelings of the aggrieved party is made explicit, the indirect passive flows more naturally.}
+    #textblue[When the feelings of the aggrieved party is made explicit, the indirect passive flows more naturally.]
 \end{itemize}
 
 
 === The three passive voice particles に、から、によって <sec:tmjk-5-6-7-passive-voice-particles>
 _Read the main articles on #link("https://www.tomojuku.com/blog/passive/passive-11/")[[TMJK5]], #link("https://www.tomojuku.com/blog/passive/passive-10/")[[TMJK6]], #link("https://www.tomojuku.com/blog/passive/passive-12/")[[TMJK7]]._
 
-The に particle marks the origin/performer of the passive voice. \textred{The origin/performer in the indirect passive group can only be suffixed by に.}
+The に particle marks the origin/performer of the passive voice. #textred[The origin/performer in the indirect passive group can only be suffixed by に.]
 
 [間接受身] 私は友達*に*夜遅く遊びに来られました。 (I got visited for playing late at night on by my friend.; 来る: to come (intransitive))
 
@@ -512,6 +512,6 @@ Some rules of thumb:
     SHORT SECTION THEN YOU'RE DONE
 \end{itemize}
 
-\hl{Further exploration of the passive voice will be left to a future date.}
+#highlight[Further exploration of the passive voice will be left to a future date.]
 
 \end{document}

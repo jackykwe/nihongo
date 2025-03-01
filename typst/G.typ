@@ -22,6 +22,7 @@
 
 
 #include "G1-kana.typ"
+#include "G2-basic-grammar.typ"
 // \subfile{components/G2-basic-grammar}
 // \subfile{components/G3-essential-grammar}
 // \subfile{components/G4-special-expressions}

@@ -26,6 +26,13 @@ _Italics._
 
 #exception[WHAT]
 
+#text(fill: blue)[Blue].
+#text(fill: red)[Red].
+#text(fill: olive)[Green].
+#text(fill: purple)[Purple].
+#text(fill: orange)[Orange].
+
+
 
 #pagebreak()
 
