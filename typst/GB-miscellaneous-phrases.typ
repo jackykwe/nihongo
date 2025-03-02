@@ -1,6 +1,6 @@
 #import "template.typ": * // import everything from template file
 #show: template // show everything rule (i.e. the entire document)
-#show: appendix(2)
+#show: appendix("G", 2)
 
 = Phrases
 

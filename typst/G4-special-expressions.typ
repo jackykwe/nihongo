@@ -1,5 +1,6 @@
 #import "template.typ": * // import everything from template file
 #show: template // show everything rule (i.e. the entire document)
+#show: prefix("G")
 
 = Special expressions <sec:special-expressions>
 
@@ -29,9 +30,9 @@
 
 // In very rough/casual slang, the causative form may be expressed with the う-verb ending 〜す. For detailed conjugation rules, refer to @appendix:conjugation-rules-summary. All causative form verbs are う-verbs. Further conjugations follow う-verb rules (with す ending).
 
-// E.g. 同じことを何回も*言わす*\textsuperscript{言わせる}な！ (Don't make me say the same thing again and again!)
+// E.g. 同じことを何回も*言わす*#super[言わせる]な！ (Don't make me say the same thing again and again!)
 
-// E.g. お腹空いているんだから、なんか*食べさしてくれ*\textsuperscript{食べさせてくれ}よ。 (I'm hungry, so let me eat something.; 食べる #sym.arrow 食べさす #sym.arrow 食べさしてくれる #sym.arrow 食べさしてくれ (imperative))
+// E.g. お腹空いているんだから、なんか*食べさしてくれ*#super[食べさせてくれ]よ。 (I'm hungry, so let me eat something.; 食べる #sym.arrow 食べさす #sym.arrow 食べさしてくれる #sym.arrow 食べさしてくれ (imperative))
 
 === Interlude I: passivisation, direct and indirect/adversative passives <sec:direct-and-indirect-adversative-passive>
 // _Read the supplementary materials on #link("https://www.tofugu.com/japanese-grammar/verb-passive-form-rareru\#direct-vs-indirect-passive")[[TFG1]] and #link("https://www.tofugu.com/japanese-grammar/particle-ni/\#in-passive-sentences")[[TFG2]]._
@@ -134,19 +135,19 @@
 
 // #textred[This shortened causative-passive form only exists for う-verbs with $*\setminus$\{す\]-ending.}
 
-// In very rough/casual slang, the shortened causative-passive form (derived from the shortened causaive form, @sec:causative-form) may be used. This form only exists for う-verbs with the exception of those with a す-ending in dictionary form, because wherever the shortened causative form ends with 〜さす, the shortened causative-passive form would have 「$\cdots$#textred[ささ]れる」 in it, which is not allowed.
+// In very rough/casual slang, the shortened causative-passive form (derived from the shortened causaive form, @sec:causative-form) may be used. This form only exists for う-verbs with the exception of those with a す-ending in dictionary form, because wherever the shortened causative form ends with 〜さす, the shortened causative-passive form would have 「$cdots$#textred[ささ]れる」 in it, which is not allowed.
 
-// E.g. 学生が#ruby[廊下][ろう|か]に*#ruby[立][た]たされた*\textsuperscript{立たせられた}。 (The stuednt was made to stand in the hall.; #ruby[立][た]つ: to stand)
+// E.g. 学生が#ruby[廊下][ろう|か]に*#ruby[立][た]たされた*#super[立たせられた]。 (The stuednt was made to stand in the hall.; #ruby[立][た]つ: to stand)
 
-// E.g. 日本では、お酒を*飲まされる*\textsuperscript{飲ませられる}ことが多い。 (In Japan, the event of being made to drink is numerous.)
+// E.g. 日本では、お酒を*飲まされる*#super[飲ませられる]ことが多い。 (In Japan, the event of being made to drink is numerous.)
 
-// E.g. あいつに二時間も*待たされた*\textsuperscript{待たせられた}。 (I was made to wait 2 hours by that guy.)
+// E.g. あいつに二時間も*待たされた*#super[待たせられた]。 (I was made to wait 2 hours by that guy.)
 
 
 == Postlude: a deep dive into passivisation in Japanese <sec:passivisation>
 // _Read the article chain starting from #link("https://www.tomojuku.com/blog/passive/")[[TMJK1]]._
 
-// _This website is a teachers' reference, and I obtained it from a #link("https://www.quora.com/Can-we-use-\%E8\%87\%AA\%E5\%8B\%95\%E8\%A9\%9E-verbs-in-passive-\%E5\%8F\%97\%E8\%BA\%AB\%E5\%BD\%A2-I-am-learning-Japanese-N4-level-and-it-is-too-difficult-for-me-to-understand-because-in-English-there-is-no-passive-form-for/answer/Badolo")[Quora answer]. For the interest of time and for the sake of not losing focus on the main task at hand (learning how passivisation works in Japanese), I'll be taking notes after translating the website. I hope that one day I'll be able to read such websites directly without the help of translation. What's holding me back at the moment is lacking a fair bit of grammar knowledge and a lot of vocabulary knowledge\dots_
+// _This website is a teachers' reference, and I obtained it from a #link("https://www.quora.com/Can-we-use-\%E8\%87\%AA\%E5\%8B\%95\%E8\%A9\%9E-verbs-in-passive-\%E5\%8F\%97\%E8\%BA\%AB\%E5\%BD\%A2-I-am-learning-Japanese-N4-level-and-it-is-too-difficult-for-me-to-understand-because-in-English-there-is-no-passive-form-for/answer/Badolo")[Quora answer]. For the interest of time and for the sake of not losing focus on the main task at hand (learning how passivisation works in Japanese), I'll be taking notes after translating the website. I hope that one day I'll be able to read such websites directly without the help of translation. What's holding me back at the moment is lacking a fair bit of grammar knowledge and a lot of vocabulary knowledge..._
 
 
 === Introduction into the passive voice \ruby{受動態{じゅ|どう|たい}} <sec:tmjk-1-introduction-to-passive-voice>
@@ -207,7 +208,7 @@
 
 //     \item #ruby[源氏物語][げん|じ|もの|がたり]は#ruby[紫式部][むらさき|しき|ぶ]によって*書かれました*。 (The Tale of Genji (Heian-period classic) was written by Murasaki Shikibu.; 書く: to write (transitive))
 // \end{enumerate}
-// Here, example~\eqref{enumerate:daichi-2} are examples of the intransitive passive. The 「〜と言われています」 construct (言う #sym.arrow 言われる (passive) #sym.arrow 言われている (progressive passive) #sym.arrow 言われています (polite progresive passive)) is very often used in the passive voice ("it is said that\dots").
+// Here, example~\eqref{enumerate:daichi-2} are examples of the intransitive passive. The 「〜と言われています」 construct (言う #sym.arrow 言われる (passive) #sym.arrow 言われている (progressive passive) #sym.arrow 言われています (polite progresive passive)) is very often used in the passive voice ("it is said that...").
 
 // The burden on learners can be significantly reduced by dividing the teaching up into parts. For the six forms in みんなの日本語, we can group them into two groups: ${1,2\}$ and $\{3,4,5,6}$. The first two kinds involve emotion, while the last four don't.
 
@@ -396,7 +397,7 @@
 
 //         #textred[[非意志、不自然] 涙に#ruby[不意][ふ|い]に出られて、恥ずかしかった。]
 
-//         Even though all these attempted intransitive passive verbs have the adversative nuance, they are nonetheless considered unnatural. #highlight[(Perhaps for a reason only accessible to higher level learners\dots)]
+//         Even though all these attempted intransitive passive verbs have the adversative nuance, they are nonetheless considered unnatural. #highlight[(Perhaps for a reason only accessible to higher level learners...)]
 //     \end{itemize}
 // \end{enumerate}
 

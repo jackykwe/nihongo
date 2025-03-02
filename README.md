@@ -44,6 +44,10 @@ Files to include: `*.typ`:
 |`\\=o`|`ō`|
 |`\$\\to\$`|`#sym.arrow`|
 |`\\\{(.*)\\\}`|`{$1}`|
+|`\\dots`|`...`|
+|`\\cdots`|`cdots`|
+|`\\textsuperscript\{(.*?)\}`|`#super[$1]`|
+|`\\cancel\{(.*?)\}`|`$cancel("$1")$`|
 
 
 <!--

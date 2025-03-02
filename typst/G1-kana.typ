@@ -1,5 +1,6 @@
 #import "template.typ": * // import everything from template file
 #show: template // show everything rule (i.e. the entire document)
+#show: prefix("G")
 
 = The writing system
 The writing system comprises three scripts: 平仮名（ひらがな）、片仮名（カタカナ）、漢字（かんじ）. For details of the former two scripts, refer to the supplementary PDF.

@@ -35,13 +35,32 @@
 // TIME CALCULATIONS //
 // ################# //
 // Adapted from https://github.com/typst/typst/issues/1988#issuecomment-2466619917
-#let _get_now() = {
+#let datetime_today = datetime.today()
+#let _get_now = {
   if "now" in sys.inputs {
     sys.inputs.now
   } else {
-    datetime.today().display("[year repr:last_two][month][day] (DRAFT)")
+    datetime_today.display("[year repr:last_two][month][day] (DRAFT)")
   }
 }
+#let current_regnal_year = {
+  let current_regnal_genkou = "令和"
+  let current_regnal_gannen = 2019
+
+  let current_regnal_year = str(datetime_today.year() - current_regnal_gannen + 1)
+  current_regnal_year = current_regnal_year.replace("0", "０")
+  current_regnal_year = current_regnal_year.replace("1", "１")
+  current_regnal_year = current_regnal_year.replace("2", "２")
+  current_regnal_year = current_regnal_year.replace("3", "３")
+  current_regnal_year = current_regnal_year.replace("4", "４")
+  current_regnal_year = current_regnal_year.replace("5", "５")
+  current_regnal_year = current_regnal_year.replace("6", "６")
+  current_regnal_year = current_regnal_year.replace("7", "７")
+  current_regnal_year = current_regnal_year.replace("8", "８")
+  current_regnal_year = current_regnal_year.replace("9", "９")
+  current_regnal_genkou + current_regnal_year
+}
+#let current_regnal_year_explanation = str(datetime_today.year()) + " = " + current_regnal_year
 
 
 // ######## //
@@ -68,7 +87,7 @@
               kung.jwe\@gmail.com
             ]],
           align(center)[#box(width: 100%)[
-              #text(fill: gray)[#_get_now()]
+              #text(fill: gray)[#_get_now]
             ]],
           align(right)[#box(width: 100%)[
               *#ruby[日本語学習教材][に|ほん|ご|がく|しゅう|きょう|ざい]*
@@ -90,8 +109,12 @@
       font: ("New Computer Modern", "Noto Serif CJK JP"),
       size: default_font_size,
     )
+    #show math.equation: set text(
+      font: ("New Computer Modern Math", "Noto Serif CJK JP"),
+      size: default_font_size,
+    )
     #show raw: set text(font: "New Computer Modern")
-    #show heading: set block(above: 1.4em, below: 1em)
+    #show heading: set block(above: 2em, below: 1em)
 
     #set heading(numbering: "1.1 ")
 
@@ -113,6 +136,24 @@
     #set table(stroke: none)
     #set table.cell(align: horizon)
 
+    // Make section references follow style used in Table of Contents
+    #show ref: it => {
+      let el = it.element
+      if el != none and el.func() == heading {
+        // el.fields()
+        link(
+          el.location(),
+          (
+            el.supplement,
+            " ",
+            numbering(el.numbering, ..counter(heading).at(el.location())).trim(" "),
+          ).join(""),
+        )
+      } else {
+        it
+      }
+    }
+
     #doc
   ]
 }
@@ -129,6 +170,9 @@
 #let yojijukugo = smallcaps[四字熟語]
 #let exception(str) = text(fill: red)[#highlight[*#str*]]
 #let rc(rows, cols, content) = table.cell(rowspan: rows, colspan: cols)[#content]
+#let cdots = sym.dots.h.c
+#let mapsto = sym.arrow.r.bar
+#let neq = $cancel(=, angle: #45deg)$
 
 
 // #################### //
@@ -148,8 +192,12 @@
 // ################## //
 // APPENDIX FUNCTIONS //
 // ################## //
-#let appendix(level) = body => {
-  set heading(numbering: "A.1 ", supplement: [Appendix])
+#let prefix(prefix_str) = body => {
+  set heading(numbering: prefix_str + "1.1 ")
+  body
+}
+#let appendix(prefix, level) = body => {
+  set heading(numbering: prefix + "A.1 ", supplement: [Appendix])
   counter(heading).update(level - 1)
   body
 }

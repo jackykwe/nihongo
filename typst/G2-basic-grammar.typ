@@ -1,5 +1,6 @@
 #import "template.typ": * // import everything from template file
 #show: template // show everything rule (i.e. the entire document)
+#show: prefix("G")
 
 = Basic grammar <sec:basic-grammar>
 This section will grant you an overview of basic grammatical structures. The vocabulary associated with this section is fragmented by nature and only present to illustrate the grammatical concepts; vocabulary required for day-to-day conversation is left to @sec:essential-grammar.
@@ -70,7 +71,7 @@ Here are its various purposes:
 
   If the effect of contrast isn't required, then が is usually used instead:
   - E.g. 東京が#ruby[物価][ぶっ|か]が#ruby[高][たか]い。 (The cost of living of Tokyo is high.)
-  - E.g. お肉は食べない。 (I don't eat meat, (but\dots))
+  - E.g. お肉は食べない。 (I don't eat meat, (but...))
 
 / は in middle of negative い-adjectives to add implicit/explicit nuance/spotlight: The added nuance is like that of "while"/"although"/"that's not the whole story", and the clause containing はXい is typically followed by a clause adding continuation (though not compulsory, if the nuance's content is implied).
 
@@ -108,7 +109,7 @@ Here are its various purposes:
 
 / は to convey hesitation: Usually prefixed to ね to form the compound particle はね in such scenarios.
 
-  E.g. お寿司は[ね]\dots (Hmm, sushi\dots)
+  E.g. お寿司は[ね]... (Hmm, sushi...)
 / は for changing scenes: The speaker can intentionally break the conversation's storyline or momentum to emphasise something. This is done by repeating and re-shining the spotlight on the topic, even though it's already obvious to the listener.
 
   E.g. #ruby[昨日][き|のう]は*お兄ちゃんが*勉強を教えてくれた。まず、英語の勉強を教えてくれて、それから#ruby[国語][こく|ご]の勉強だった。でも、#ruby[算数][さん|すう]の#ruby[宿題][しゅく|だい]をしている#ruby[途中][と|ちゅう]に、*お兄ちゃんは*ゲームを始めた。(Yesterday, my big brother helped me study. To start with, he helped me with English, and then with Japanese. But he started playing a game while we were in the middle of doing my math homework; focus/topic shifted from brother teaching to brother playing game.)
@@ -297,7 +298,7 @@ Verbs are categorised into three groups, as shown in @tbl:verb-classification. B
 
 // @typstyle off
 #general_table(
-  [Verb classifications.], // caption
+  [Verb classifications. \*There isn't a Japanese term for exception verbs; する and 来る are the only members of the  不規則動詞 subclass.], // caption
   "tbl:verb-classification",  // label
   4,  // column_sizes
   (center, left, left, left),  // column_aligns
@@ -312,7 +313,6 @@ Verbs are categorised into three groups, as shown in @tbl:verb-classification. B
   [う-verb], [る-verb], [Exception verb],
   [Consonant-root/stem verb], [Vowel-root/stem verb], [-],
   hline,
-  table.footer[#rc(1, 4)[#align(left)[\*There isn't a Japanese term for exception verbs; する and 来る are the only members of the  不規則動詞 subclass.]]]
 )
 
 In a nutshell, *る-verbs is the class of _almost all_ #underline[-iru/-eru] verbs*. Exceptions include 帰る、切る、知るwhich are う-verbs.
@@ -338,14 +338,14 @@ Some verbs have two forms: transitive and intransitive. These two forms sometime
 
 #textpurple[There are no easy tricks to tell whether a verb is transitive or not. There are no simple rules that say a particular 送り仮名 implies a certain transitivity. Japanese verbs are a mess!]
 
-#textred[*#underline[DO NOT]* confuse transitivity with passiveness.] English dictionaries like to define verbs using the "to \dots" construct, and this is carried over to English-Japanese dictionaries. Intransitive verbs are _often_ defined using passive voice, but
+#textred[*#underline[DO NOT]* confuse transitivity with passiveness.] English dictionaries like to define verbs using the "to ..." construct, and this is carried over to English-Japanese dictionaries. Intransitive verbs are _often_ defined using passive voice, but
 $
   "passive voice" &#sym.arrow.r.double.not "verb is intransitive"\
   "verb is intransitive" &#sym.arrow.r.double.not "passive voice"
 $
 A counterexample to the first implication is "The apple was eaten.". Here, "eat" is transitive (the direct object is the apple, and the subject, now oblique/non-obligatory, is omitted)! A counterexample to the second implication is "I slept". Here, "sleep" is intransitive, and active voice is used.
 
-Thus we can't use the passive voice as a marker for intransitivity. In fact, in Japanese, the passive voice has a conjugation of its own, which applies for both transitive and intransitive verbs (yes, intransitive verbs in Japanese can take passive voice too, @sec:direct-and-indirect-adversative-passive). #textred[Take special care NOT to interpret the passive voice "to be \dots" (endemic to English definitions) in @appendix:verbs as equivalent to intransitivity. *Transitivity and passiveness are intertwined (SL) but remain independent concepts.*]
+Thus we can't use the passive voice as a marker for intransitivity. In fact, in Japanese, the passive voice has a conjugation of its own, which applies for both transitive and intransitive verbs (yes, intransitive verbs in Japanese can take passive voice too, @sec:direct-and-indirect-adversative-passive). #textred[Take special care NOT to interpret the passive voice "to be ..." (endemic to English definitions) in @appendix:conjugation-rules-summary-verbs as equivalent to intransitivity. *Transitivity and passiveness are intertwined (SL) but remain independent concepts.*]
 
 #textpurple[
   In fact, #textred[in English only and not in Japanese,] the converse of the two implications above are true, because intransitive verbs do not have a passive form, due to the lack of objects (and thus no object to promote to subject role, which is part of passivisation).
@@ -441,11 +441,11 @@ Thus we can't use the passive voice as a marker for intransitivity. In fact, in 
 
   E.g. #ruby[高速道路][こう|そく|どう|ろ]*を*#ruby[走][はし]る。(Run through expressway.; 走る: run (intransitive))
 
-  *Invisible を in \<noun\>\cancel{を*する}: する (do) can be suffixed to nouns, and the を while technically needed, is optional.
+  *Invisible を in \<noun\>$cancel("を")$する*: する (do) can be suffixed to nouns, and the を while technically needed, is optional.
 
-  E.g. 毎日、日本語を勉強\cancel{[を]}する。(Study Japanese everyday.; 勉強\cancel{[を]}する)
+  E.g. 毎日、日本語を勉強$cancel("[を]")$する。(Study Japanese everyday.; 勉強$cancel("[を]")$する)
 
-  E.g. メールアドレスを#ruby[登録][とう|ろく]\cancel{[を]}した。(Registered email address.; 登録\cancel{[を]}する)
+  E.g. メールアドレスを#ruby[登録][とう|ろく]$cancel("[を]")$した。(Registered email address.; 登録$cancel("[を]")$する)
 
 - に: target marker, suffixed to the #underline[target] (physical or abstract) of any verb (transitive or non-transitive). The target is #underline[emphasised as the final destination]. The notion of a "target" is not restricted to motion verbs; the #underline[location of objects] is the target of the verbs for existence (ある and いる); #underline[time] (e.g. today, last week) is also a common target.
 
@@ -591,7 +591,7 @@ Noun-related particles are used to connect nouns together.
 
     The ownee (noun that is modified) may be omitted if clear from context.
 
-    E.g. そ*の*シャツは誰*の*\cancel{[シャツ]}？ボブ*の*\cancel{[シャツ]}だ。 (Whose shirt is that shirt? It is the shirt of Bob.)
+    E.g. そ*の*シャツは誰*の*$cancel("[シャツ]")$？ボブ*の*$cancel("[シャツ]")$だ。 (Whose shirt is that shirt? It is the shirt of Bob.)
 
     Note that *この*、*その*、*あの* are abbreviations of これの、それの、あれの respectively.
 
