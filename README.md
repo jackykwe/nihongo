@@ -3,6 +3,8 @@
 
 ## Conversion from LaTeX to Typst
 
+These replacement operations were done roughly in this order. (In hindsight, this isn't the optimal replacement strategy because it doesn't handle nested commands well.)
+
 Files to include: `*.typ`:
 |Find (regex)|Replace (literal)|
 |---|---|
@@ -48,6 +50,7 @@ Files to include: `*.typ`:
 |`\\cdots`|`cdots`|
 |`\\textsuperscript\{(.*?)\}`|`#super[$1]`|
 |`\\cancel\{(.*?)\}`|`$cancel("$1")$`|
+|`\\st\{(.*?)\}`|`#strike[$1]`|
 
 
 <!--
