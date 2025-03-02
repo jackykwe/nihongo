@@ -60,10 +60,10 @@
       paper: "a4",
       margin: (x: 3cm, top: 3cm, bottom: 2cm),
       header: [
+        #set par(leading: 0.65em, spacing: 0.65em)
         #grid(
           columns: 3, // equivalent to (1fr, 1fr, 1fr) which are fractional units
           align(left)[#box(width: 100%)[
-              #set par(leading: 0.65em)
               *ジャッキー・カン*\
               kung.jwe\@gmail.com
             ]],
@@ -71,13 +71,13 @@
               #text(fill: gray)[#_get_now()]
             ]],
           align(right)[#box(width: 100%)[
-              #set par(leading: 0.65em)
               *#ruby[日本語学習教材][に|ほん|ご|がく|しゅう|きょう|ざい]*
             ]],
         )
         #line(length: 100%)
       ],
       footer: context [
+        #set par(leading: 0.65em, spacing: 0.65em)
         #line(length: 100%)
         #set align(center)
         #counter(page).display(
@@ -98,6 +98,9 @@
     // Allow long tables within figures to be broken across pages
     #show figure: set block(breakable: true)
     #show figure.where(kind: table): set figure.caption(position: top)
+
+    // Justify figure captions, courtesy of https://forum.typst.app/t/how-to-change-figure-caption-justification/1761
+    #show figure.caption: set par(justify: true)
 
     // Links surrounded by red box
     #show link: link_object => box(outset: 0.25em, stroke: 1pt + rgb("#ff413655"))[#link_object]
@@ -137,6 +140,19 @@
 #let textgreen(str) = text(fill: olive)[#str]
 #let textpurple(str) = text(fill: purple)[#str]
 #let textorange(str) = text(fill: orange)[#str]
+#let textgrey(str) = text(fill: gray)[#str]
+#let textlightgrey(str) = text(fill: silver)[#str]
+#let textwhite(str) = text(fill: white)[#str]
+
+
+// ################## //
+// APPENDIX FUNCTIONS //
+// ################## //
+#let appendix(level) = body => {
+  set heading(numbering: "A.1 ", supplement: [Appendix])
+  counter(heading).update(level - 1)
+  body
+}
 
 
 // ############### //
@@ -144,8 +160,24 @@
 // ############### //
 
 #let default_rule_width = 1pt
-#let hline = table.hline(stroke: default_rule_width + black)
+#let hline = table.hline(
+  start: 0,
+  end: none,
+  y: auto,
+  position: top,
+  stroke: default_rule_width + black,
+)
+// hline-args
+#let hlinea(..args) = table.hline(
+  start: 0,
+  end: none,
+  y: auto,
+  position: top,
+  stroke: default_rule_width + black,
+  ..args,
+)
 #let thickhline = table.hline(stroke: 3 * default_rule_width + black)
+#let thickhlinea(..args) = table.hline(stroke: 3 * default_rule_width + black, ..args)
 #let _cell_represents_hline(cell_content) = "stroke" in cell_content.fields()
 
 #let general_table(
@@ -161,7 +193,13 @@
   cells = cells
     .pos()
     .map(cell => if _cell_represents_hline(cell) {
-      table.hline(stroke: hline.stroke.thickness * scale_factor + hline.stroke.paint)
+      table.hline(
+        start: cell.start,
+        end: cell.end,
+        y: cell.y,
+        position: cell.position,
+        stroke: cell.stroke.thickness * scale_factor + cell.stroke.paint,
+      )
     } else { cell })
   [
     #show table.cell: set text(font_size)

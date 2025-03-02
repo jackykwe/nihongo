@@ -125,8 +125,7 @@ Vowel extensions follow the rules in @tbl:vowel-extension. For notes on pronunci
   (center, center, center, left),  // column_aligns
   scale_factor: 1,
   hline,
-  [#rc(2, 1)[*Vowel to extend*]], [#rc(1, 2)[*Extend by appending*]], [#rc(2, 1)[*Example*]],
-  [*平仮名*], [*片仮名*],
+  table.header[#rc(2, 1)[*Vowel to extend*]][#rc(1, 2)[*Extend by appending*]][#rc(2, 1)[*Example*]][*平仮名*][*片仮名*],
   table.hline(start: 1, end: 3, y: 1),
   hline,
   [/a/], [あ], [#rc(5, 1)[ー]], [お#underline[ばあ]さん、お#underline[かあ]さん],

@@ -9,6 +9,8 @@
 
 #_ruby[いちまん|こ][１００００|個].
 
+E.g. 学校に行った？行かなかった。#ruby[図書館][と|しょ|かん]*には*？図書館*にも*行かなかった。 (Did you go to school? Didn't go. What about library? Also didn't go to library.)
+
 // Ruby goes first, base text - second.
 #ruby[振り仮名][ふ|り|が|な]. Treat each kanji as a separate word: #ruby[東京工業大学][とう|きょう|こう|ぎょう|だい|がく]. #ruby[振り仮名][ふ|り|が|な]. #ruby[振り仮名][ふ|り|が|な]. Treat each kanji as a separate word: #ruby[東京工業大学][とう|きょう|こう|ぎょう|だい|がく]. #ruby[振り仮名][ふ|り|が|な]. #ruby[振り仮名][ふ|り|が|な]. Treat each kanji as a separate word: #ruby[東京工業大学][とう|きょう|こう|ぎょう|だい|がく]. #ruby[振り仮名][ふ|り|が|な]. #ruby[振り仮名][ふ|り|が|な]. Treat each kanji as a separate word: #ruby[東京工業大学][とう|きょう|こう|ぎょう|だい|がく]. #ruby[振り仮名][ふ|り|が|な]. #ruby[振り仮名][ふ|り|が|な]. Treat each kanji as a separate word: #ruby[東京工業大学][とう|きょう|こう|ぎょう|だい|がく]. #ruby[振り仮名][ふ|り|が|な]. #ruby[振り仮名][ふ|り|が|な]. Treat each kanji as a separate word: #ruby[東京工業大学][とう|きょう|こう|ぎょう|だい|がく]. #ruby[振り仮名][ふ|り|が|な]. #ruby[振り仮名][ふ|り|が|な]. Treat each kanji as a separate word: #ruby[東京工業大学][とう|きょう|こう|ぎょう|だい|がく]. #ruby[振り仮名][ふ|り|が|な].
 
@@ -31,6 +33,8 @@ _Italics._
 #text(fill: olive)[Green].
 #text(fill: purple)[Purple].
 #text(fill: orange)[Orange].
+#text(fill: gray)[Gray].
+#text(fill: silver)[Light grey].
 
 
 

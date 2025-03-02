@@ -763,7 +763,7 @@ rowhead=2,
 % & & & & & & & \\
 \midrule
 ? & & & & する & E & to do & \\
-? & & & & \{お/ご\}\<nn\>#ruby[申][もう]し#ruby[上][あ]げる & る & to do & \aux; humble, also in @tbl:appendix-vocab-verbs-production \\
+? & & & & {お/ご}\<nn\>#ruby[申][もう]し#ruby[上][あ]げる & る & to do & \aux; humble, also in @tbl:appendix-vocab-verbs-production \\
 ? & & & & \<nn\>にする & E & to decide on (e.g. ordering from menu) & \\
 ? & & & & \<adj\>にする & E & to make become & \\
 ? & & & & \<v\>ことにする & E & to decide to \<v\> & \\

@@ -583,7 +583,7 @@ bottles/trains/buses/books/films/phone calls
     & #ruby[５軒][ご|けん] & five houses & \\
     \textlegacybullet & #ruby[６軒][ろっ|けん] & six houses & \\
     & #ruby[７軒][なな|けん] & seven houses & \\
-    \color{lightgray}\textlegacybullet & #ruby[８軒][はち|けん]\color{lightgray}/#ruby[８軒][はっ|けん] & eight houses & \textlightgrey{#ruby[８軒][はっ|けん]} may be casual; #link("https://ja.hinative.com/questions/236852")[[HN]] \\
+    \color{lightgray}\textlegacybullet & #ruby[８軒][はち|けん]\color{lightgray}/#ruby[８軒][はっ|けん] & eight houses & #textlightgrey[#ruby[８軒][はっ|けん]] may be casual; #link("https://ja.hinative.com/questions/236852")[[HN]] \\
     & #ruby[９軒][きゅう|けん] & nine houses & \\
     \textlegacybullet & #rruby[１０軒][じゅっけん] & ten houses & \\
     \textlegacybullet & #rruby[１００軒][ひゃっけん] & hundred houses & \\
@@ -622,7 +622,7 @@ bottles/trains/buses/books/films/phone calls
     & #ruby[５階][ご|かい] & fifth floor & \\
     \textlegacybullet & #ruby[６階][ろっ|かい] & sixth floor & \\
     & #ruby[７階][なな|かい] & seventh floor & \\
-    \color{lightgray}\textlegacybullet & #ruby[８階][はち|かい]\color{lightgray}/#ruby[８階][はっ|かい] & eighth floor & \textlightgrey{#ruby[８階][はっ|かい]} is informal; #link("https://ja.hinative.com/questions/236852")[[HN]] \\
+    \color{lightgray}\textlegacybullet & #ruby[８階][はち|かい]\color{lightgray}/#ruby[８階][はっ|かい] & eighth floor & #textlightgrey[#ruby[８階][はっ|かい]] is informal; #link("https://ja.hinative.com/questions/236852")[[HN]] \\
     & #ruby[９階][きゅう|かい] & nine floor & \\
     \textlegacybullet & #rruby[１０階][じゅっかい] & tenth floor & #link("https://ja.hinative.com/questions/236852")[[HN]] \\
     \textlegacybullet & #rruby[１００階][ひゃっかい] & hundredth floor & \\
@@ -883,7 +883,7 @@ The days of the week are named after the East Asian Seven Luminaries: the sun, t
 }
 
 
-== Counting months: #ruby[ヶ月{か|げつ}\textlightgrey{/\ruby{月][つき]}}
+== Counting months: #ruby[ヶ月{か|げつ}#textlightgrey[/\ruby{月][つき]]}
 #link("https://www.tofugu.com/japanese/japanese-counter-tsuki-gatsu-getsu/")[#highlight[Tofugu: TO READ]]
 
 #ruby[月][つき] is the 和語 reading, so counting uses the 和語 counting system.
@@ -906,14 +906,14 @@ The days of the week are named after the East Asian Seven Luminaries: the sun, t
     & *Name* & *Meaning* & *Notes* \\
     \midrule
     & #ruby[何ヶ月][なん|か|げつ]/\color{lightgray}#ruby[何月][なん|つき] & how many months? & \\
-    \textlegacybullet & #ruby[１ヶ月][いっ|か|げつ]\color{gray}/#ruby[１月][ひと|つき] & one month & \textgrey{#ruby[１月][ひと|つき]} is semi-archaic; #link("https://ja.hinative.com/questions/7822280")[[HN]] \\
-    & #ruby[２ヶ月][に|か|げつ]\color{gray}/#ruby[２月][ふた|つき] & two months & \textgrey{#ruby[２月][ふた|つき]} is semi-archaic; #link("https://ja.hinative.com/questions/7822280")[[HN]] \\
+    \textlegacybullet & #ruby[１ヶ月][いっ|か|げつ]\color{gray}/#ruby[１月][ひと|つき] & one month & #textgrey[#ruby[１月][ひと|つき]] is semi-archaic; #link("https://ja.hinative.com/questions/7822280")[[HN]] \\
+    & #ruby[２ヶ月][に|か|げつ]\color{gray}/#ruby[２月][ふた|つき] & two months & #textgrey[#ruby[２月][ふた|つき]] is semi-archaic; #link("https://ja.hinative.com/questions/7822280")[[HN]] \\
     \color{lightgray}\textlegacybullet & #ruby[３ヶ月][さん|か|げつ]\color{lightgray}/#ruby[３月][み|つき] & three months & \\
     \textlegacybullet & #ruby[４ヶ月][よん|か|げつ]\color{lightgray}/#ruby[４月][よ|つき] & four months & \\
     & #ruby[５ヶ月][ご|か|げつ]\color{lightgray}/#ruby[５月][いつ|つき] & five months & \\
     \textlegacybullet & #ruby[６ヶ月][ろっ|か|げつ]\color{lightgray}/#ruby[６月][む|つき] & six months & \\
     & #ruby[７ヶ月][なな|か|げつ]\color{lightgray}/#ruby[７月][なな|つき] & seven months & \\
-    \color{lightgray}\textlegacybullet & #ruby[８ヶ月][はち|か|げつ]\color{lightgray}/#ruby[８ヶ月][はっ|か|げつ]\color{lightgray}/#ruby[八月][や|つき]/#ruby[８月][や|つき] & eight months & \textlightgrey{#ruby[８ヶ月][はっ|か|げつ]} may be informal; #link("https://ja.hinative.com/questions/2749483")[[HN]] \\
+    \color{lightgray}\textlegacybullet & #ruby[８ヶ月][はち|か|げつ]\color{lightgray}/#ruby[８ヶ月][はっ|か|げつ]\color{lightgray}/#ruby[八月][や|つき]/#ruby[８月][や|つき] & eight months & #textlightgrey[#ruby[８ヶ月][はっ|か|げつ]] may be informal; #link("https://ja.hinative.com/questions/2749483")[[HN]] \\
     & #ruby[９ヶ月][きゅう|か|げつ]\color{lightgray}/#ruby[９月][ここの|つき] & nine months & \\
     \textlegacybullet & #rruby[１０ヶ月][じゅっかげつ]\color{lightgray}/#rruby[１０月][とつき] & ten months & \\
     \textlegacybullet & #rruby[１００ヶ月][ひゃっかげつ] & hundred months & \\
@@ -928,11 +928,11 @@ The days of the week are named after the East Asian Seven Luminaries: the sun, t
 _Read the main article on #link("https://www.tofugu.com/japanese/japanese-counter-ka-nichi/")[Tofugu]._ Also see #link("https://www.instagram.com/reel/C_4iSZdyIPt/")[Instagram reel].
 
 \color{orange}
-For calendar days, the 和語 counting system (#ruby[日][か]) is used for \{2nd--10th, 14th, 20th, 24th\}. All other numbers use standard 漢語 counting system (#ruby[日][にち]). Furthermore, \{17th, 27th\} use #ruby[七][しち], and \{19th, 29th\} use #ruby[九][く].
+For calendar days, the 和語 counting system (#ruby[日][か]) is used for {2nd--10th, 14th, 20th, 24th\}. All other numbers use standard 漢語 counting system (#ruby[日][にち]). Furthermore, \{17th, 27th\} use #ruby[七][しち], and \{19th, 29th} use #ruby[九][く].
 
-For ordinal days (@sec:appendix-vocab-basic-nouns-ordinal-days), there are two rules. The 〜\{#ruby[日][にち]/#ruby[日][か]\}#ruby[目][め] schema follows the rules of day intervals (@sec:appendix-vocab-basic-nouns-counting-days), so 和語 counting system (#ruby[日][か]) is used for \{2nd--10th, 20th\} only. Furthermore, \{1st--31st, 49th\} use the formal readings: \{17th, 27th\} use #ruby[七][しち] (#ruby[七][なな] OK for disambiguation) and \{19th, 29th, 49th\} use #ruby[九][く]. On the other hand, the #ruby[第][だい]〜#ruby[日][たち] schema follows these simplified rules: the standard 漢語 counting system is used for all numbers, and \{9th, 19th, 29th, 49th\} use #ruby[九][く].
+For ordinal days (@sec:appendix-vocab-basic-nouns-ordinal-days), there are two rules. The 〜{#ruby[日][にち]/#ruby[日][か]\}#ruby[目][め] schema follows the rules of day intervals (@sec:appendix-vocab-basic-nouns-counting-days), so 和語 counting system (#ruby[日][か]) is used for \{2nd--10th, 20th\} only. Furthermore, \{1st--31st, 49th\} use the formal readings: \{17th, 27th\} use #ruby[七][しち] (#ruby[七][なな] OK for disambiguation) and \{19th, 29th, 49th\} use #ruby[九][く]. On the other hand, the #ruby[第][だい]〜#ruby[日][たち] schema follows these simplified rules: the standard 漢語 counting system is used for all numbers, and \{9th, 19th, 29th, 49th} use #ruby[九][く].
 
-For day intervals (@sec:appendix-vocab-basic-nouns-counting-days), the 和語 counting system (#ruby[日][か]) is used for \{2nd--10th, 20th\} only. All other numbers use the standard 漢語 counting system (#ruby[日][にち]). Furthermore, days intervals $\in$\{1--31, 49\} days use the formal readings: \{17, 27\} days use #ruby[七][しち] (#ruby[七][なな] OK for disambiguation) and \{19, 29, 49\} days use #ruby[九][く].
+For day intervals (@sec:appendix-vocab-basic-nouns-counting-days), the 和語 counting system (#ruby[日][か]) is used for {2nd--10th, 20th\} only. All other numbers use the standard 漢語 counting system (#ruby[日][にち]). Furthermore, days intervals $\in$\{1--31, 49\} days use the formal readings: \{17, 27\} days use #ruby[七][しち] (#ruby[七][なな] OK for disambiguation) and \{19, 29, 49} days use #ruby[九][く].
 
 For o'clocks and hour intervals (@sec:appendix-vocab-basic-nouns-counting-oclocks-and-hours), if the ones place is 4, 7 or 9, then #ruby[四][よ]、#ruby[七][しち]、#ruby[九][く] are used, ad infinitum.
 \color{black}
@@ -995,7 +995,7 @@ For o'clocks and hour intervals (@sec:appendix-vocab-basic-nouns-counting-oclock
 }
 
 
-== Ordinal days: 〜\{#ruby[日{にち}/\ruby{日][か]\}#ruby[目][め]/#ruby[第][だい]〜#ruby[日][たち]} <sec:appendix-vocab-basic-nouns-ordinal-days>
+== Ordinal days: 〜{#ruby[日{にち}/\ruby{日][か]}#ruby[目][め]/#ruby[第][だい]〜#ruby[日][たち]} <sec:appendix-vocab-basic-nouns-ordinal-days>
 _Read the main article on #link("https://www.tofugu.com/japanese/japanese-counter-ka-nichi/")[Tofugu]._
 
 #ruby[目][め] is casual, #ruby[第][だい] is formal. #ruby[目][め] is 和語 and follows pronunciations from @sec:appendix-vocab-basic-nouns-counting-days; #ruby[第][だい] is 漢語 and forces #ruby[日][にち] to take its 漢語 reading.
@@ -1061,7 +1061,7 @@ _Read the main article on #link("https://www.tofugu.com/japanese/japanese-counte
 }
 
 
-== Counting days: \{#ruby[日{にち}/\ruby{日][か]\}#ruby[間][かん]} <sec:appendix-vocab-basic-nouns-counting-days>
+== Counting days: {#ruby[日{にち}/\ruby{日][か]}#ruby[間][かん]} <sec:appendix-vocab-basic-nouns-counting-days>
 _Read the main article on #link("https://www.tofugu.com/japanese/japanese-counter-ka-nichi/")[Tofugu]._
 
 The 「〜#ruby[間][かん]」 suffix here means "interval". While typically dropped in the absence of ambiguity, it is necessary here to distinguish day intervals from days of the month (@sec:appendix-vocab-basic-nouns-calendar-days; #link("https://en.wikibooks.org/wiki/Japanese/Lessons/Days\#Periods\_of\_days")[[WB]]).
@@ -1355,7 +1355,7 @@ _Read the main article on #link("https://www.tofugu.com/japanese/japanese-counte
     & #ruby[５回][ご|かい] & five times & \\
     \textlegacybullet & #ruby[６回][ろっ|かい] & six times & \\
     & #ruby[７回][なな|かい] & seven times & \\
-    \color{lightgray}\textlegacybullet & #ruby[８回][はち|かい]\color{lightgray}/#ruby[８回][はっ|かい] & eight times & \textlightgrey{#ruby[８回][はっ|かい]} is probably informal \\
+    \color{lightgray}\textlegacybullet & #ruby[８回][はち|かい]\color{lightgray}/#ruby[８回][はっ|かい] & eight times & #textlightgrey[#ruby[８回][はっ|かい]] is probably informal \\
     & #ruby[９回][きゅう|かい] & nine times & \\
     \textlegacybullet & #rruby[１０回][じゅっかい] & ten times & \\
     \textlegacybullet & #rruby[１００回][ひゃっかい] & hundred times & \\
@@ -1394,7 +1394,7 @@ _Read the main article on #link("https://www.tofugu.com/japanese/japanese-counte
     & #ruby[５通][ご|とお]り & five methods/ways/kinds & \\
     & #ruby[６通][ろく|とお]り & six methods/ways/kinds & \\
     & #ruby[７通][なな|とお]り & seven methods/ways/kinds & \\
-    \color{lightgray}\textlegacybullet & #ruby[８通][はち|とお]り\color{lightgray}/#ruby[８通][はっ|とお]り & eight methods/ways/kinds & \textlightgrey{#ruby[８通][はっ|とお]り} is probably informal \\
+    \color{lightgray}\textlegacybullet & #ruby[８通][はち|とお]り\color{lightgray}/#ruby[８通][はっ|とお]り & eight methods/ways/kinds & #textlightgrey[#ruby[８通][はっ|とお]り] is probably informal \\
     & #ruby[９通][きゅう|とお]り & nine methods/ways/kinds & \\
     \textlegacybullet & #rruby[１０通][じゅっとお]り & ten methods/ways/kinds & \\
     & #rruby[１００通][ひゃくとお]り & hundred methods/ways/kinds & \\

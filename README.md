@@ -33,6 +33,9 @@ Files to include: `*.typ`:
 |`\\textorange\{(.*?)\}`|`#textorange[$1]`|
 |`\\textgreen\{(.*?)\}`|`#textgreen[$1]`|
 |`\\textpurple\{(.*?)\}`|`#textpurple[$1]`|
+|`\\textgrey\{(.*?)\}`|`#textgrey[$1]`|
+|`\\textlightgrey\{(.*?)\}`|`#textlightgrey[$1]`|
+|`\\textwhite\{(.*?)\}`|`#textwhite[$1]`|
 |`\\hl\{(.*?)\}`|`#highlight[$1]`|
 |`\\=a`|`ā`|
 |`\\=i`|`ī`|
@@ -40,6 +43,7 @@ Files to include: `*.typ`:
 |`\\=e`|`ē`|
 |`\\=o`|`ō`|
 |`\$\\to\$`|`#sym.arrow`|
+|`\\\{(.*)\\\}`|`{$1}`|
 
 
 <!--

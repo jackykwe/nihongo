@@ -36,7 +36,7 @@ rowhead=1,
 \midrule
 はじめまして & nice to meet you/glad to make your acquaintance/how do you do & (#ruby[始][はじ]めまして) \\
 お#ruby[変][か]わりありませんか & (after some time apart) how have you been?/nothing untoward has happened, has it? & polite \\
-{よろしくお#ruby[願][ねが]いします\\よろしくお#ruby[願][ねが]いいたします} & I look forward to working with you/please remember me/please treat me favourably/please help me & (#ruby[宜][よろ]しくお#ruby[願][ねが]い\{します/#ruby[致][いた]します\}); polite; also in @tbl:appendix-vocab-interjections-and-expressions-exclamations \\
+{よろしくお#ruby[願][ねが]いします\\よろしくお#ruby[願][ねが]いいたします} & I look forward to working with you/please remember me/please treat me favourably/please help me & (#ruby[宜][よろ]しくお#ruby[願][ねが]い{します/#ruby[致][いた]します}); polite; also in @tbl:appendix-vocab-interjections-and-expressions-exclamations \\
 % & & \\
 \midrule
 \midrule
@@ -126,7 +126,7 @@ rowhead=1,
 \midrule
 お#ruby[願][ねが]い[します] & please & [humble] \\
 #ruby[頼][たの]む & please/please do & slang, also a verb \\
-{よろしくお#ruby[願][ねが]いします\\よろしくお#ruby[願][ねが]いいたします} & please do/please take care of & (#ruby[宜][よろ]しくお#ruby[願][ねが]い\{します/#ruby[致][いた]します\}); polite; also in @tbl:appendix-vocab-interjections-and-expressions-greetings \\
+{よろしくお#ruby[願][ねが]いします\\よろしくお#ruby[願][ねが]いいたします} & please do/please take care of & (#ruby[宜][よろ]しくお#ruby[願][ねが]い{します/#ruby[致][いた]します}); polite; also in @tbl:appendix-vocab-interjections-and-expressions-greetings \\
 (お/ご\<nn\>)/\<v-te\>ください & please do for me & honorific \\
 ください & please give me (imperative of くださる) & (#ruby[下][くだ]さい); honorific \\
 いらっしゃい & please come/go/stay (polite imperative) & also in @tbl:appendix-vocab-interjections-and-expressions-greetings \\
@@ -159,7 +159,7 @@ rowhead=1,
 なんてこった & what the hell/oh great!/son of a X/holy mackerel/oh no!/holy cow!/damn! & \\
 なんでよ & why? why not? what's wrong? & \\
 どうしたの & what's the matter?/what's wrong? & \\
-\<nn\>\{を/は\}どうしたの & what happened to \<nn\>?/what have you done with \<nn\>? & \\
+\<nn\>{を/は}どうしたの & what happened to \<nn\>?/what have you done with \<nn\>? & \\
 % & & \\
 \midrule
 どうしよう & what to do & \\
@@ -191,13 +191,13 @@ rowhead=1,
 ごめんなさい & I'm sorry/excuse me/pardon me & (#ruby[御免][ご|めん]なさい); semi-formal \\
 #ruby[許][ゆり]してください & please forgive me & (#ruby[許][ゆり]して#ruby[下][くだ]さい); honorific, semi-formal \\
 お#ruby[許][ゆり]しください & please forgive me & (お#ruby[許][ゆり]し#ruby[下][くだ]さい); honorific, formal \\
-\{#ruby[反省][はん|せい]/#ruby[後悔][こう|かい]\}しています & I'm sorry ("I am regretful") & (\{#ruby[反省][はん|せい],#ruby[後悔][こう|かい]\}して#ruby[居][い]ます); semi-formal \\
-\{#ruby[反省][はん|せい]/#ruby[後悔][こう|かい]\}しております & I'm sorry ("I am regretful") & (\{#ruby[反省][はん|せい],#ruby[後悔][こう|かい]\}して#ruby[居][お]ります); humble, formal \\
+{#ruby[反省][はん|せい]/#ruby[後悔][こう|かい]\}しています & I'm sorry ("I am regretful") & (\{#ruby[反省][はん|せい],#ruby[後悔][こう|かい]}して#ruby[居][い]ます); semi-formal \\
+{#ruby[反省][はん|せい]/#ruby[後悔][こう|かい]\}しております & I'm sorry ("I am regretful") & (\{#ruby[反省][はん|せい],#ruby[後悔][こう|かい]}して#ruby[居][お]ります); humble, formal \\
 #ruby[謝罪][しゃ|ざい]いたします & I'm sorry (esp. in written apology) ("I perform apology") & (#ruby[謝罪][しゃ|ざい]#ruby[致][いた]します); humble, formal \\
 お#ruby[詫][わ]びいたします & I'm sorry ("I perform apology") & (お#ruby[詫][わ]び#ruby[致][いた]します); humble, formal \\
 お#ruby[詫][わ]び#ruby[申][もう]し#ruby[上][あ]げます & I'm sorry ("I offer my apology") & humble, formal \\
 #ruby[申][もう]し#ruby[訳][わけ]ない & I'm sorry/it's inexcusable ("excuse does not exist") & semi-polite \\
-#ruby[申][もう]し#ruby[訳][わけ]\{ございません/ありません\} & I'm sorry/it's inexcusable ("excuse does not exist") & polite \\
+#ruby[申][もう]し#ruby[訳][わけ]{ございません/ありません} & I'm sorry/it's inexcusable ("excuse does not exist") & polite \\
 % & & \\
 \midrule
 すまん/すいません/[すみません] & excuse me/pardon me/I'm sorry (general/for the inconvenience) & (#ruby[済][す]みません); [polite] \\
@@ -294,7 +294,7 @@ rowhead=1,
 \midrule
 \midrule
 うぜえ & annoying/noisy & colloquial \\
-うるさい/うるせ\{え/ー\}/うっせ\{え/ー\} & shut up!/be quiet! & (#ruby[煩][うるさ]い)\\
+うるさい/うるせ{え/ー\}/うっせ\{え/ー} & shut up!/be quiet! & (#ruby[煩][うるさ]い)\\
 #ruby[静][しず]かに & be quiet! & also an adverb \\
 % & & \\
 \midrule

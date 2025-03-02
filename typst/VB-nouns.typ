@@ -918,9 +918,9 @@ Gramatically, pronouns are used in place of nouns and noun phrases. There are qu
 
 Regarding the こそあど#ruby[言葉][こと|ば]:
 \begin{itemize}
-    \item \{こ, ど, あ, ど\} \times \{れ, いつ, なた, こ, ちら, っち\} are pronouns
-    \item \{こ, ど, あ, ど\} \times \{の, んな\} are pre-noun adjectivals
-    \item \{こ, ど, あ, ど\} \times \{う\} are adverbs
+    \item {こ, ど, あ, ど\} \times \{れ, いつ, なた, こ, ちら, っち} are pronouns
+    \item {こ, ど, あ, ど\} \times \{の, んな} are pre-noun adjectivals
+    \item {こ, ど, あ, ど\} \times \{う} are adverbs
 \end{itemize}
 
 #highlight[to read all sub articles #link("https://www.tofugu.com/japanese-grammar/kosoado/")[here]]
@@ -943,7 +943,7 @@ Regarding the こそあど#ruby[言葉][こと|ば]:
     *Name* & *Meaning* & *Notes* \\
     \midrule
     #ruby[誰][だれ] & who & \\
-    どなた & who; what is your name (どなた[#ruby[様][さま]]\{ですか/でしょうか\}。; [extra politeness and distance]) & honorific, feminine; #link("https://www.tofugu.com/japanese-grammar/konata-sonata-anata-donata/")[[TFG]] \\
+    どなた & who; what is your name (どなた[#ruby[様][さま]]{ですか/でしょうか}。; [extra politeness and distance]) & honorific, feminine; #link("https://www.tofugu.com/japanese-grammar/konata-sonata-anata-donata/")[[TFG]] \\
     どちら[#ruby[様][さま]] & who & [honorific] \\
     どいつ & who & rude \\
     #ruby[誰][だれ]か & somebody & \\
@@ -1064,9 +1064,9 @@ Regarding the こそあど#ruby[言葉][こと|ば]:
     あそこ & there (distant, no comparison nuance) & \\
     % & & \\
     \midrule
-    これ/\{こっち/[こちら]\} & this way/direction (here, closer to speaker) \{comparison nuance\} & [formal] \\
-    それ/\{そっち/[そちら]\} & that way/direction (there, closer to listener) \{comparison nuance\} & [formal] \\
-    あれ/\{あっち/[あちら]\} & that way/direction (there, distant) \{comparison nuance\} & [formal] \\
+    これ/{こっち/[こちら]\} & this way/direction (here, closer to speaker) \{comparison nuance} & [formal] \\
+    それ/{そっち/[そちら]\} & that way/direction (there, closer to listener) \{comparison nuance} & [formal] \\
+    あれ/{あっち/[あちら]\} & that way/direction (there, distant) \{comparison nuance} & [formal] \\
     \midrule
     ここら#ruby[辺][へん] & around here/this approximate area & casual \\
     そこら#ruby[辺][へん] & around there/that approximate area & casual \\
@@ -1570,7 +1570,7 @@ Regarding the こそあど#ruby[言葉][こと|ば]:
     \midrule
     #ruby[楽][たの]しみ & enjoyment/pleasure/amusement/delight/joy/fun & \\
     #ruby[興味][きょう|み] & interest (in something) & \\
-    ガチ#ruby[恋][こい] & \{someone/being\} in love with an idol/actor & \\
+    ガチ#ruby[恋][こい] & {someone/being} in love with an idol/actor & \\
     % & & \\
     \midrule
     ブチ#ruby[切][き]れ & blowing one's top/losing it/flipping out & slang \\
@@ -2603,7 +2603,7 @@ Colours are often used as labels, together with the の particle.
     % & & \\
     \midrule
     #ruby[確定][かく|てい] & decision (clear) & also a verb; #link("https://dictionary.goo.ne.jp/thsrs/13669/meaning/m0u/")[[goo]] \\
-    #ruby[内定][ないう|てい] & \{informal/internal/unofficial\} \{decision/offer (e.g. job)\} & also a verb; #link("https://dictionary.goo.ne.jp/thsrs/13669/meaning/m0u/")[[goo]] \\
+    #ruby[内定][ないう|てい] & {informal/internal/unofficial\} \{decision/offer (e.g. job)} & also a verb; #link("https://dictionary.goo.ne.jp/thsrs/13669/meaning/m0u/")[[goo]] \\
     #ruby[本決][ほん|ぎ]まり & formal/official final decision & #link("https://dictionary.goo.ne.jp/thsrs/13669/meaning/m0u/")[[goo]] \\
     #ruby[未定][み|てい] & not decided/not yet fixed/undecided/pending/TBC & also an adjective; #link("https://dictionary.goo.ne.jp/thsrs/13669/meaning/m0u/")[[goo]]\\
     #ruby[所定][しょ|てい] & predetermined/prescribed/designated/fixed in advance & #link("https://dictionary.goo.ne.jp/thsrs/13669/meaning/m0u/")[[goo]] \\
