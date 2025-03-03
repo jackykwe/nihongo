@@ -742,7 +742,7 @@ Applicable schemae:
   - だけの: "only" label. E.g. 寝る*だけの*人生。 (A life of only sleeping.)
   - との: "quote" label. E.g. 「#ruby[早][はや]く帰ってきてね！」*との*メッセージ。(A message saying "Come back soon!".)
 
-Here are its various purposes. Note that possession isn't the only one!\
+Here are its various purposes. Note that possession isn't the only one!
 
 / の as possession marker: \<owner\>の\<ownee\>.
 

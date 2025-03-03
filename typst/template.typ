@@ -113,28 +113,23 @@
       font: ("New Computer Modern Math", "Noto Serif CJK JP"),
       size: default_font_size,
     )
-    #show raw: set text(font: "New Computer Modern")
-    #show heading: set block(above: 2em, below: 1em)
-
+    #show raw: set text(font: "JetBrainsMono NF") // set font for monospace
     #set heading(numbering: "1.1 ")
+    #show heading: set block(above: 2em, below: 1em)
 
     // Allow long tables within figures to be broken across pages
     #show figure: set block(breakable: true)
     #show figure.where(kind: table): set figure.caption(position: top)
-
     // Justify figure captions, courtesy of https://forum.typst.app/t/how-to-change-figure-caption-justification/1761
     #show figure.caption: set par(justify: true)
 
-    // Links surrounded by red box
-    #show link: link_object => box(outset: 0.25em, stroke: 1pt + rgb("#ff413655"))[#link_object]
+    #set table(stroke: none)
+    #set table.cell(align: horizon)
 
     #set list(indent: 1em) // mimic LaTeX, more comfortable too
     #set enum(indent: 1em) // mimic LaTeX, more comfortable too
-
-    #show raw: set text(font: "JetBrainsMono NF") // set font for monospace
-
-    #set table(stroke: none)
-    #set table.cell(align: horizon)
+    // Links surrounded by red box
+    #show link: link_object => box(outset: 0.25em, stroke: 1pt + rgb("#ff413655"))[#link_object]
 
     // Make section references follow style used in Table of Contents
     #show ref: it => {
@@ -173,6 +168,7 @@
 #let cdots = sym.dots.h.c
 #let mapsto = sym.arrow.r.bar
 #let neq = $cancel(=, angle: #45deg)$
+#let lb() = linebreak()
 
 
 // #################### //
@@ -250,7 +246,9 @@
       )
     } else { cell })
   [
-    #show table.cell: set text(font_size)
+    // #show table.cell: set text(font_size)
+    #set text(size: font_size)
+    #show math.equation: set text(size: font_size)
     #set par(justify: false)
 
     #figure(
@@ -309,8 +307,11 @@
     cells = cells.slice(8, none)
   }
   [
-    #show table.cell: set text(font_size)
+    // #show table.cell: set text(font_size)
+    #set text(size: font_size)
+    #show math.equation: set text(size: font_size)
     #set par(justify: false)
+
     #show table.cell.where(y: 0): set text(weight: "bold") // Bold table first row
     #show table.cell.where(y: 1): set text(weight: "bold") // Bold table second row
 

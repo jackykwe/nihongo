@@ -53,8 +53,7 @@ Repetition marks can be typed using commands in @tbl:miscellaneous-keyboard-comm
   (center, center, center, left),  // column_aligns
   scale_factor: 1,
   hline,
-  table.header[][][*Keyboard\
-    command*][*Purpose*],
+  table.header[][][*Keyboard#lb()command*][*Purpose*],
   hline,
   [ゝ], [#sansj[ゝ]], [`onaji` #sym.arrow space#super[`*`]], [平仮名 previous character repeater (enforce without dakuten)],
   [ゞ], [#sansj[ゞ]], [`onaji` #sym.arrow space#super[`*`]], [平仮名 previous character repeater (enforce with dakuten)],

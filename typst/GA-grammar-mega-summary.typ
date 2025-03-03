@@ -5,128 +5,106 @@
 = Grammar mega summary
 
 == Conjugation rules summary <appendix:conjugation-rules-summary>
+
 === Nouns
 
-// % Help: \SetCell[r=2,c=2]{c,m} \<content\>, \cmidrule[l]{3-4}
-// % Help: colspec: X[ratio, horizontal alignment] columns grow to fit width=\linewidth
-// %                  negative ratios: shrink to fit content and may not grow to full ratio
-// % Help: colspec: l/c/r columns do not grow
-// \longtabse[0.75]  % scale factor
-// {Noun conjugation rules.}  % caption
-// {tbl:appendix-noun-conjugations}  % label
-// {}  % outer specification options
-// {
-//     colspec={X[-1,c]X[-1,c]X[-2,l]X[-2,l]},
-//     rowhead=1,
-//     % width=\linewidth,  % useful only with X columns
-// }  % inner specification options
-// {
-//     \toprule
-//     *Purpose* & *Tense* & *Casual schema* & *Polite schema* \\
-//     \midrule
-//     \SetCell[r=8]{c,m} State-of-being & Present-positive & \<noun\>[だ] & \<noun\>です。 \\*
-//     & Present-negative & \<noun\>じゃない & {\<noun\>じゃないです。\\\<noun\>じゃありません。} \\*
-//     & Past-positive & \<noun\>だった & \<noun\>でした。 \\*
-//     & Past-negative & \<noun\>じゃなかった & {\<noun\>じゃなかったです。\\\<noun\>じゃありませんでした。} \\*
-//     & て-positive & \<noun\>で & - \\*
-//     & て-negative & \<noun\>じゃなくて & - \\*
-//     & Conditional-positive & \<noun\>であれば & - \\*
-//     & Conditional-negative & \<noun\>じゃなければ & - \\
-//     \bottomrule
-// }
+// @typstyle off
+#general_table(
+  [Noun conjugation rules.], // caption
+  "tbl:appendix-noun-conjugations",  // label
+  (1fr, 1fr, 2fr, 2fr),  // column_sizes
+  (center, center, left, left),  // column_aligns
+  scale_factor: 0.75,
+  hline,
+  table.header[*Purpose*][*Tense*][*Casual schema*][*Polite schema*],
+  hline,
+  [#rc(8, 1)[State-of-being]], [Present-positive], [\<noun\>[だ]], [\<noun\>です。],
+  [Present-negative], [\<noun\>じゃない], [\<noun\>じゃないです。#lb()\<noun\>じゃありません。],
+  [Past-positive], [\<noun\>だった], [\<noun\>でした。],
+  [Past-negative], [\<noun\>じゃなかった], [\<noun\>じゃなかったです。#lb()\<noun\>じゃありませんでした。],
+  [て-positive], [\<noun\>で], [-],
+  [て-negative], [\<noun\>じゃなくて], [-],
+  [Conditional-positive], [\<noun\>であれば], [-],
+  [Conditional-negative], [\<noun\>じゃなければ], [-],
+  hline,
+)
 
-// #textorange[In #textgreen[丁寧語], 「〜した」indicates the past-tense.]
+#textorange[In #textgreen[丁寧語], 「〜した」indicates the past-tense.]
 
-// As alternative polite forms:
-// \begin{itemize}
-//     \item 「〜ないです。」can be replaced with「〜ありまえん。」,
-//     \item 「〜なかったです。」 can be replaced with 「〜ありませんでした。」 .
-// \end{itemize}
+As alternative polite forms:
+- 「〜ないです。」can be replaced with「〜ありまえん。」,
+- 「〜なかったです。」 can be replaced with 「〜ありませんでした。」 .
+
 
 === な-adjectives
 
-// % Help: \SetCell[r=2,c=2]{c,m} \<content\>, \cmidrule[l]{3-4}
-// % Help: colspec: X[ratio, horizontal alignment] columns grow to fit width=\linewidth
-// %                  negative ratios: shrink to fit content and may not grow to full ratio
-// % Help: colspec: l/c/r columns do not grow
-// \longtabse[0.75]  % scale factor
-// {な-adjective conjugation rules.}  % caption
-// {tbl:appendix-な-adjective-conjugations}  % label
-// {}  % outer specification options
-// {
-//     colspec={X[-1,c]X[-1,c]X[-2,l]X[-2,l]},
-//     rowhead=1,
-//     % width=\linewidth,  % useful only with X columns
-// }  % inner specification options
-// {
-//     \toprule
-//     *Purpose* & *Tense* & *Casual schema* & *Polite schema* \\
-//     \midrule
-//     \SetCell[r=8]{c,m} {State-of-being\\(same as nouns)} & Present-positive & \<na-adj\>[だ] & \<na-adj\>です。 \\*
-//     & Present-negative & \<na-adj\>じゃない & {\<na-adj\>じゃないです。\\\<na-adj\>じゃありません。} \\*
-//     & Past-positive & \<na-adj\>だった & \<na-adj\>でした。 \\*
-//     & Past-negative    & \<na-adj\>じゃなかった & {\<na-adj\>じゃなかったです。\\\<na-adj\>じゃありませんでした。} \\*
-//     & て-positive & \<noun\>で & - \\*
-//     & て-negative & \<noun\>じゃなくて & - \\*
-//     & Conditional-positive & \<na-adj\>であれば & - \\
-//     & Conditional-negative & \<na-adj\>じゃなければ & - \\
-//     \midrule
-//     \SetCell[r=4]{c,m} Noun modifier & Present-positive & \<na-adj\>*な*\<noun\> & - \\*
-//     & Present-negative & \<na-adj\>じゃない\<noun\> & - \\*
-//     & Past-positive & \<na-adj\>だった\<noun\> & - \\*
-//     & Past-negative & \<na-adj\>じゃなかった\<noun\> & - \\
-//     \midrule
-//     Adverb & - & \<na-adj\>に & - \\
-//     \bottomrule
-// }
+// @typstyle off
+#general_table(
+  [な-adjective conjugation rules.], // caption
+  "tbl:appendix-な-adjective-conjugations",  // label
+  (1fr, 1fr, 2fr, 2fr),  // column_sizes
+  (center, center, left, left),  // column_aligns
+  scale_factor: 0.75,
+  hline,
+  table.header[*Purpose*][*Tense*][*Casual schema*][*Polite schema*],
+  hline,
+  [#rc(8, 1)[State-of-being#lb()\(same as nouns\)]], [Present-positive], [\<na-adj\>[だ]], [\<na-adj\>です。],
+  [Present-negative], [\<na-adj\>じゃない], [\<na-adj\>じゃないです。#lb()\<na-adj\>じゃありません。],
+  [Past-positive], [\<na-adj\>だった], [\<na-adj\>でした。],
+  [Past-negative], [\<na-adj\>じゃなかった], [\<na-adj\>じゃなかったです。#lb()\<na-adj\>じゃありませんでした。],
+  [て-positive], [\<noun\>で], [-],
+  [て-negative], [\<noun\>じゃなくて], [-],
+  [Conditional-positive], [\<na-adj\>であれば], [-],
+  [Conditional-negative], [\<na-adj\>じゃなければ], [-],
+  hline,
+  [#rc(4, 1)[Noun modifier]], [Present-positive], [\<na-adj\>*な*\<noun\>], [-],
+  [Present-negative], [\<na-adj\>じゃない\<noun\>], [-],
+  [Past-positive], [\<na-adj\>だった\<noun\>], [-],
+  [Past-negative], [\<na-adj\>じゃなかった\<noun\>], [-],
+  hline,
+  [Adverb], [-], [\<na-adj\>に], [-],
+  hline,
+)
 
 
 === い-adjectives
-// All い-adjectives end with 〜い that is #underline[not] part of the 漢字's pronunciation.
 
-// % Help: \SetCell[r=2,c=2]{c,m} \<content\>, \cmidrule[l]{3-4}
-// % Help: colspec: X[ratio, horizontal alignment] columns grow to fit width=\linewidth
-// %                  negative ratios: shrink to fit content and may not grow to full ratio
-// % Help: colspec: l/c/r columns do not grow
-// \longtabse[0.75]  % scale factor
-// {い-adjective conjugation rules.}  % caption
-// {tbl:appendix-い-adjective-conjugations}  % label
-// {}  % outer specification options
-// {
-//     colspec={X[-1,c]X[-1,c]X[-2,l]X[-2,l]},
-//     rowhead=1,
-//     % width=\linewidth,  % useful only with X columns
-// }  % inner specification options
-// {
-//     \toprule
-//     *Purpose* & *Tense* & *Casual schema* & *Polite schema* \\
-//     \midrule
-//     \SetCell[r=8]{c,m} State-of-being & Present-positive & \<i-adj root\>い & \<i-adj root\>いです。 \\*
-//     & Present-negative & \<i-adj root\>*く*ない & {\<i-adj root\>*く*ないです。\\\<i-adj root\>*く*ありません。} \\*
-//     & Past-positive & \<i-adj root\>*か*った & \<i-adj root\>*か*ったです。 \\*
-//     & Past-negative & \<i-adj root\>*く*なかった & {\<i-adj root\>*く*なかったです。\\\<i-adj root\>*く*ありませんでした。} \\*
-//     & て-positive & \<i-adj root\>*く*て & - \\*
-//     & て-negative & \<i-adj root\>*く*なくて & - \\*
-//     & Conditional-positive & \<i-adj root\>ければ & - \\
-//     & Conditional-negative & \<i-adj root\>*く*なければ & - \\
-//     % & & & \\
-//     \midrule
-//     \SetCell[r=4]{c,m} Noun modifier & Present-positive & \<i-adj root\>い\<noun\> & - \\*
-//     & Present-negative & \<i-adj root\>*く*ない\<noun\> & - \\*
-//     & Past-positive & \<i-adj root\>*か*った\<noun\> & - \\*
-//     & Past-negative & \<i-adj root\>*く*なかった\<noun\> & - \\ \midrule
-//     Adverb & - & \<i-adj root\>*く* & - \\
-//     % & & & \\
-//     \bottomrule
-// }
+All い-adjectives end with 〜い that is #underline[not] part of the 漢字's pronunciation.
 
+// @typstyle off
+#general_table(
+  [い-adjective conjugation rules.], // caption
+  "tbl:appendix-い-adjective-conjugations",  // label
+  (1fr, 1fr, 2fr, 2fr),  // column_sizes
+  (center, center, left, left),  // column_aligns
+  scale_factor: 0.75,
+  hline,
+  table.header[*Purpose*][*Tense*][*Casual schema*][*Polite schema*],
+  hline,
+  [#rc(8, 1)[State-of-being]], [Present-positive], [\<i-adj root\>い], [\<i-adj root\>いです。],
+  [Present-negative], [\<i-adj root\>*く*ない], [\<i-adj root\>*く*ないです。#lb()\<i-adj root\>*く*ありません。],
+  [Past-positive], [\<i-adj root\>*か*った], [\<i-adj root\>*か*ったです。],
+  [Past-negative], [\<i-adj root\>*く*なかった], [\<i-adj root\>*く*なかったです。#lb()\<i-adj root\>*く*ありませんでした。],
+  [て-positive], [\<i-adj root\>*く*て], [-],
+  [て-negative], [\<i-adj root\>*く*なくて], [-],
+  [Conditional-positive], [\<i-adj root\>ければ], [-],
+  [Conditional-negative], [\<i-adj root\>*く*なければ], [-],
+  // [], [], [], [],
+  hline,
+  [#rc(4, 1)[Noun modifier]], [Present-positive], [\<i-adj root\>い\<noun\>], [-],
+  [Present-negative], [\<i-adj root\>*く*ない\<noun\>], [-],
+  [Past-positive], [\<i-adj root\>*か*った\<noun\>], [-],
+  [Past-negative], [\<i-adj root\>*く*なかった\<noun\>], [-],
+  hline,
+  [Adverb], [-], [\<i-adj root\>*く*], [-],
+  // [], [], [], [],
+  hline,
+)
 
-// \color{red}
-// Exceptions:
-// \begin{description}
-//     \item[い-adjectives ending with 「〜いい」] When in any form other than present-positive, the root changes from 「〜い」 to 「〜よ」.
-// \end{description}
-// \color{black}
+#textred[
+  Exceptions:
+  / い-adjectives ending with 「〜いい」: When in any form other than present-positive, the root changes from 「〜い」 to 「〜よ」.
+]
 
 
 === Verbs <appendix:conjugation-rules-summary-verbs>
@@ -134,28 +112,109 @@
 
 // @typstyle off
 #general_table(
-  [caption], // caption
+  [Verb conjugation rules.], // caption
   "tbl:appendix-verb-conjugations",  // label
-  (1fr),  // column_sizes
-  (center),  // column_aligns
-  scale_factor: 1,
-  []
+  (1fr, 2fr, 2fr, 2fr, 2fr, 2fr),  // column_sizes
+  (center, center, left, left, left, left),  // column_aligns
+  scale_factor: 0.75,
+  hline,
+  table.header[*Class*][*Tense*][#rc(1, 2)[*Casual schema*]][#rc(1, 2)[*Polite schema*]],
+  hline,
+  [#rc(34, 1)[う verb]], [Present-positive], [#rc(1, 2)[\<$*$-end root\>○]], [#rc(1, 2)[\<$*$-end root\>#ruby[○][〜い]ます。]],
+  hline,
+  [#rc(3, 1)[Negative]], [#rc(1, 2)[\<$* without {う}$-end root\>#ruby[○][〜あ]*な*い]], [#rc(3, 2)[\<$*$-end root\>#ruby[○][〜い]ません。]],
+  [#rc(1, 2)[\<う-end root\>わ*な*い]],
+  [#rc(1, 2)[*な*い#super[ある]]],
+  hline,
+  [#rc(5, 1)[Past]], [#rc(1, 2)[\<す-end root\>した]], [#rc(5, 2)[\<$*$-end root\>#ruby[○][〜い]ました。]],
+  [#rc(1, 2)[\<く-end root\>いた]],
+  [#rc(1, 2)[\<ぐ-end root\>いだ]],
+  [#rc(1, 2)[\<{む,ぬ,ぶ}-end root\>んだ]],
+  [#rc(1, 2)[\<{る,つ,う}-end root\>った]],
+  hline,
+  [#rc(3, 1)[Past-negative]], [#rc(1, 2)[\<$* without {う}$-end root\>#ruby[○][〜あ]*な*かった]], [#rc(3, 2)[\<$*$-end root\>#ruby[○][〜い]ませんでした。]],
+  [#rc(1, 2)[\<う-end root\>わ*な*かった]],
+  [#rc(1, 2)[*な*かった#super[ある]]],
+  hline,
+  [(Stem)], [#rc(1, 2)[-]], [#rc(1, 2)[\<$*$-end root\>#ruby[○][〜い]]],
+  hline,
+  [#rc(5, 1)[Te]], [#rc(1, 2)[\<す-end root\>して]], [#rc(5, 2)[-]],
+  [#rc(1, 2)[\<く-end root\>いて]],
+  [#rc(1, 2)[\<ぐ-end root\>いで]],
+  [#rc(1, 2)[\<{む,ぬ,ぶ}-end root\>んで]],
+  [#rc(1, 2)[\<{る,つ,う}-end root\>って]],
+  hline,
+  [#rc(3, 1)[Te-negative]], [#rc(1, 2)[\<$* without {う}$-end root\>#ruby[○][〜あ]*な*くて]], [#rc(3, 2)[-]],
+  [#rc(1, 2)[\<う-end root\>わ*な*くて]],
+  [#rc(1, 2)[*な*くて#super[ある]]],
+  hline,
+  [Progressive#lb()\(conjugate 〜いる\)], [#rc(1, 2)[\<v te\>いる]], [#rc(1, 2)[-]],
+  hline,
+  [Potential#lb()\(conjugate 〜る\)], [#rc(1, 2)[<$*$-end root\>#ruby[○][〜え]る#lb()$cdots$]], [#rc(1, 2)[\<$*$-end root\>#ruby[○][〜え]ます。#lb()$cdots$]],
+  hline,
+  [Conditional], [#rc(1, 2)[\<$*$-end root\>#ruby[○][〜え]ば]], [#rc(1, 2)[-]],
+  hline,
+  [#rc(3, 1)[Conditional-negative]], [#rc(1, 2)[\<$* without {う}$-end root\>#ruby[○][〜あ]*な*ければ]], [#rc(1, 2)[-]],
+  [#rc(1, 2)[\<{う}-end root\>わ*な*ければ]], [#rc(1, 2)[-]],
+  [#rc(1, 2)[*な*ければ#super[ない]]], [#rc(1, 2)[-]],
+  hline,
+  [Desiderative#lb()\(conjugate i-adj\)], [#rc(1, 2)[\<$*$-end root\>#ruby[○][〜い]たい#lb()$cdots$]], [#rc(1, 2)[-]],
+  hline,
+  [Volitional], [#rc(1, 2)[\<$*$-end root\>#ruby[○][〜お]う]], [#rc(1, 2)[\<$*$-end root\>#ruby[○][〜い]ましょう。]],
+  hline,
+  [Imperative], [#rc(1, 2)[\<$*$-end root\>#ruby[○][〜え]]], [#rc(1, 2)[-]],
+  [Imperative-negative], [#rc(1, 2)[\<$*$-end root\>○な]], [#rc(1, 2)[-]],
+  hline,
+  [Causative#lb()\(conjugate 〜る#lb()#textgrey[/conjugate 〜す]\)], [#rc(1, 2)[\<$*$-end root\>#ruby[○][〜あ]せる#lb()$cdots$#lb()#textgrey[\<$*$-end root\>#ruby[○][〜あ]す]#lb()#textgrey[$cdots$]]], [#rc(1, 2)[\<$*$-end root\>#ruby[○][〜あ]せます。#lb()$cdots$#lb()#textgrey[\<$*$-end root\>#ruby[○][〜あ]します。]#lb()#textgrey[$cdots$]]],
+  hline,
+  [Passive#lb()\(conjugate 〜る\)], [#rc(1, 2)[\<$*$-end root\>#ruby[○][〜あ]れる#lb()$cdots$]], [#rc(1, 2)[\<$*$-end root\>#ruby[○][〜あ]れます。#lb()$cdots$]],
+  hline,
+  [Causative-passive#lb()\(conjugate 〜る\)], [#rc(1, 2)[\<$*$-end root\>#ruby[○][〜あ]せられる#lb()$cdots$#lb()#textgrey[\<$* without {す}$-end root\>#ruby[○][〜あ]される#lb()#textgrey[$cdots$]]]], [#rc(1, 2)[\<$*$-end root\>#ruby[○][〜あ]せられます。#lb()$cdots$#lb()#textgrey[\<$* without {す}$-end root\>#ruby[○][〜あ]されます。}#lb()#textgrey[$cdots$]]]],
+  // [], [], [], [], [], [],
+  hline,
+  [#rc(18, 1)[る verb]], [Dictionary], [#rc(1, 2)[\<る-end root\>る]], [#rc(1, 2)[\<る-end root\>ます。]],
+  [Negative], [#rc(1, 2)[\<る-end root\>ない]], [#rc(1, 2)[\<る-end root\>ません。]],
+  [Past], [#rc(1, 2)[\<る-end root\>た]], [#rc(1, 2)[\<る-end root\>ました。]],
+  [Past-negative], [#rc(1, 2)[\<る-end root\>なかった]], [#rc(1, 2)[\<る-end root\>ませんでした。]],
+  [(Stem)], [#rc(1, 2)[-]], [#rc(1, 2)[\<る-end root\>]],
+  [Te], [#rc(1, 2)[\<る-end root\>て]], [#rc(1, 2)[-]],
+  [Te-negative], [#rc(1, 2)[\<る-end root\>なくて]], [#rc(1, 2)[-]],
+  [Progressive#lb()\(conjugate 〜いる\)], [#rc(1, 2)[\<v te\>いる#lb()$cdots$]], [#rc(1, 2)[\<v te\>います。#lb()$cdots$]],
+  [Potential#lb()\(conjugate 〜る\)], [#rc(1, 2)[\<る-end root\>られる#lb()$cdots$]], [#rc(1, 2)[\<る-end root\>られます。#lb()$cdots$]],
+  [Conditional], [#rc(1, 2)[\<る-end root\>れば]], [#rc(1, 2)[-]],
+  [Conditional-negative], [#rc(1, 2)[\<る-end root\>なければ]], [#rc(1, 2)[-]],
+  [Desiderative#lb()\(conjugate i-adj\)], [#rc(1, 2)[\<る-end root\>たい#lb()$cdots$]], [#rc(1, 2)[-]],
+  [Volitional], [#rc(1, 2)[\<る-end root\>よう]], [#rc(1, 2)[\<る-end root\>ましょう。]],
+  [Imperative], [#rc(1, 2)[\<る-end root\>ろ]], [#rc(1, 2)[-]],
+  [Imperative-negative], [#rc(1, 2)[\<る-end root\>るな]], [#rc(1, 2)[-]],
+  [Causative#lb()\(conjugate 〜る#lb()#textgrey[/conjugate 〜す]\)], [#rc(1, 2)[\<る-end root\>させる#lb()$cdots$#lb()#textgrey[\<る-end root\>さす]#lb()#textgrey[$cdots$]]], [#rc(1, 2)[{\<る-end root\>させます。#lb()$cdots$#lb()#textgrey[\<る-end root\>さします。]#lb()#textgrey[$cdots$]]],
+  [Passive#lb()\(conjugate 〜る\)], [#rc(1, 2)[\<る-end root\>られる#lb()$cdots$]], [#rc(1, 2)[\<る-end root\>られます。#lb()$cdots$]],
+  [Causative-passive#lb()\(conjugate 〜る\)], [#rc(1, 2)[\<る-end root\>させられる#lb()$cdots$]], [#rc(1, 2)[\<る-end root\>させられます。#lb()$cdots$]],
+  // [], [], [], [], [], [],
+  hline,
+  [#rc(18, 1)[exception verb]], [Dictionary], [〜する], [#ruby[来][く]る], [〜します。], [#ruby[来][き]ます。],
+  [Negative], [〜しない], [#ruby[来][こ]ない], [〜しません。], [#ruby[来][き]ません。],
+  [Past], [〜した], [#ruby[来][き]た], [〜しました。], [#ruby[来][き]ました。],
+  [Past-negative], [〜しなかった], [#ruby[来][こ]なかった], [〜しませんでした。], [#ruby[来][き]ませんでした。],
+  [(Stem)], [-], [-], [〜し], [#ruby[来][き]],
+  [Te], [〜して], [#ruby[来][き]て], [-], [-],
+  [Te-negative], [〜しなくて], [#ruby[来][こ]なくて], [-], [-],
+  [Progressive#lb()\(conjugate 〜いる\)], [\<v te\>いる#lb()$cdots$], [\<v te\>いる#lb()$cdots$], [\<v te\>います。#lb()$cdots$], [\<v te\>います。#lb()$cdots$],
+  [Potential#lb()\(conjugate 〜る\)], [〜できる#lb()$cdots$], [#ruby[来][こ]られる#lb()$cdots$], [〜できます。#lb()$cdots$], [#ruby[来][こ]られます。#lb()$cdots$],
+  [Conditional], [〜すれば], [#ruby[来][く]れば], [-], [-],
+  [Conditional-negative], [〜しなければ], [#ruby[来][こ]なければ], [-], [-],
+  [Desiderative#lb()\(conjugate i-adj\)], [〜したい#lb()$cdots$], [#ruby[来][き]たい#lb()$cdots$], [-], [-],
+  [Volitional], [〜しよう], [#ruby[来][こ]よう], [〜しましょう。], [#ruby[来][き]ましょう。],
+  [Imperative], [〜しろ], [#ruby[来][こ]い], [-], [-],
+  [Imperative-negative], [〜するな], [#ruby[来][く]るな], [-], [-],
+  [Causative#lb()\(conjugate 〜る#lb()#textgrey[/conjugate 〜す]\)], [〜させる#lb()$cdots$#lb()#textgrey[〜さす]#lb()#textgrey[$cdots$]], [#ruby[来][こ]させる#lb()$cdots$#lb()#textgrey[#ruby[来][こ]さす]#lb()#textgrey[$cdots$]], [〜させます。#lb()$cdots$#lb()#textgrey[〜さします。]#lb()#textgrey[$cdots$]], [#ruby[来][こ]させます。#lb()$cdots$#lb()#textgrey[#ruby[来][こ]さします。]#lb()#textgrey[$cdots$]],
+  [Passive#lb()\(conjugate 〜る\)], [〜される#lb()$cdots$], [#ruby[来][こ]られる#lb()$cdots$], [〜られます。#lb()$cdots$], [#ruby[来][こ]られます。#lb()$cdots$],
+  [Causative-passive#lb()\(conjugate 〜る\)], [〜させられる#lb()$cdots$], [#ruby[来][こ]させられる#lb()$cdots$], [〜させられます。#lb()$cdots$], [#ruby[来][こ]させられます。#lb()$cdots$],
+  // [], [], [], [], [], [],
+  hline,
 )
 
-// % Help: \SetCell[r=2,c=2]{c,m} \<content\>, \cmidrule[l]{3-4}
-// % Help: colspec: X[ratio, horizontal alignment] columns grow to fit width=\linewidth
-// %                  negative ratios: shrink to fit content and may not grow to full ratio
-// % Help: colspec: l/c/r columns do not grow
-// \longtabse[0.75]  % scale factor
-// {Verb conjugation rules.}  % caption
-// {tbl:appendix-verb-conjugations}  % label
-// {}  % outer specification options
-// {
-//     colspec={X[1,c]X[2,c]X[2,l]X[2,l]X[2,l]X[2,l]},
-//     rowhead=1,
-//     % width=\linewidth,  % useful only with X columns
-// }  % inner specification options
-// {
+
 //     \toprule
 //     *Class* & *Tense* & \SetCell[c=2]{c,m} *Casual schema* & & \SetCell[c=2]{c,m} *Polite schema* & \\
 //     \midrule
@@ -237,27 +296,23 @@
 //     \bottomrule
 // }
 
-// \color{orange}
-// Basic rules/observations better expressed via prose:
-// \begin{itemize}
-//     \item All present-negative forms end with 「〜ない」.
-//     \item The conditional form for all verbs is the same: change the last sound to #ruby[◯][〜え] and attach ば.
-//     \item The conditional-negative forms all end in 「〜なければ」, which is obtained from replacing い in 「〜ない」 with ければ. This replacement rule also applies for い-adjectives, replacing the trailing 「〜い」 for 「〜ければ」.
-//     \item The volitional form for exception verbs kind of follow the rules of る verbs: drop る and replace with よう, but additionally there's also a "hint of past tense" in there, explaining the こ sound in #ruby[来][こ]よう.
-//     \item The imperative-negative form for all verbs is the same, just attach な to the dictionary form.
-// \end{itemize}
+#textorange[
+  Basic rules/observations better expressed via prose:
+  - All present-negative forms end with 「〜ない」.
+  - The conditional form for all verbs is the same: change the last sound to #ruby[◯][〜え] and attach ば.
+  - The conditional-negative forms all end in 「〜なければ」, which is obtained from replacing い in 「〜ない」 with ければ. This replacement rule also applies for い-adjectives, replacing the trailing 「〜い」 for 「〜ければ」.
+  - The volitional form for exception verbs kind of follow the rules of る verbs: drop る and replace with よう, but additionally there's also a "hint of past tense" in there, explaining the こ sound in #ruby[来][こ]よう.
+  - The imperative-negative form for all verbs is the same, just attach な to the dictionary form.
+]
 
-// \color{red}
-// Exceptions:
-// \begin{itemize}
-//     \item #ruby[行][い]く's past-positive form is 行った, not "行いた". Only 行く uses 〜った; all other 〜く verbs still use 〜いた.
-//     \item ある's present-negative form is ない, not "あらない".
-//     \item くれる's imperative form is くれ, not "くれろ".
-// \end{itemize}
+#textred[
+  Exceptions:
+  - #ruby[行][い]く's past-positive form is 行った, not "行いた". Only 行く uses 〜った; all other 〜く verbs still use 〜いた.
+  - ある's present-negative form is ない, not "あらない".
+  - くれる's imperative form is くれ, not "くれろ".
+]
 
-// \color{black}
-
-// The following table is a condensed version, showing where the rules come from.
+The following table is a condensed version, showing where the rules come from.
 
 
 // % Help: \SetCell[r=2,c=2]{c,m} \<content\>, \cmidrule[l]{3-4}

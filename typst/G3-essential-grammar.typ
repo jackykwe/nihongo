@@ -805,10 +805,8 @@ E.g. *泳いでは*なりません。 (Do not swim.)
 The contractions for expressing prohibition involve the following replacements. #textred[Note that the {だめ/いけない/ならない} must not be omitted for contracted prohibition.]
 
 $
-  overbrace(cdots て, "v te")"は{だめ/いけない/ならない}" &mapsto overbrace(cdots, "v te
-fragment")"ちゃ{だめ/いけない/ならない}" \
-  overbrace(cdots で, "v te")"は{だめ/いけない/ならない}" &mapsto overbrace(cdots, "v te
-fragment")"じゃ{だめ/いけない/ならない}"
+  overbrace(cdots て, "v te")"は{だめ/いけない/ならない}" &mapsto overbrace(cdots, "v te fragment")"ちゃ{だめ/いけない/ならない}" \
+  overbrace(cdots で, "v te")"は{だめ/いけない/ならない}" &mapsto overbrace(cdots, "v te fragment")"じゃ{だめ/いけない/ならない}"
 $
 
 $ "Equivalently," wide "ては" mapsto "ちゃ," wide "では" mapsto "じゃ." $
@@ -863,12 +861,9 @@ In casual speech, however, people default to either the \<v negative\>と{だめ
 The contractions for expressing requirement involve the following replacements. #textred[Note that the {だめ/いけない/ならない} is omitted for contracted requirement.]
 
 $
-  "[first schema]" & wide & overbrace(cdots "なくて", "v te-negative")"は{だめ/いけない/ならない}" &mapsto overbrace(cdots "な", "v negative
-fragment")"くちゃ" \
+  "[first schema]" & wide & overbrace(cdots "なくて", "v te-negative")"は{だめ/いけない/ならない}" &mapsto overbrace(cdots "な", "v negative fragment")"くちゃ" \
   "[second schema]" & wide & overbrace(cdots "ない", "v negative")"と{だめ/いけない/ならない}" &mapsto overbrace(cdots "ない", "v negative")"と" \
-  "[third schema]" & wide & overbrace(cdots "なければ", "v conditional-
-negative")"{だめ/いけない/ならない}" &mapsto overbrace(cdots "な", "v negative
-fragment")"きゃ"
+  "[third schema]" & wide & overbrace(cdots "なければ", "v conditional-negative")"{だめ/いけない/ならない}" &mapsto overbrace(cdots "な", "v negative fragment")"きゃ"
 $
 
 $ "Equivalently," wide "なくて" mapsto "なくちゃ," wide "なければ" mapsto "なきゃ." $
@@ -1469,8 +1464,7 @@ The eras are summarised in @tbl:modern-eras-in-the-japanese-regnal-calendar.
   [#ruby[大正][たい|しょう] Taishō], [#rruby[嘉仁][よしひと] Yoshihito], [1912・明治４５・大正１], [T1--T15], [],
   [#ruby[昭和][しょう|わ] Shōwa], [#rruby[裕仁][ひろひと] Hirohito], [1926・大正１５・昭和１], [S1--S64], [1945 = 昭和２０],
   [#ruby[平成][へい|せい] Heisei], [#rruby[明仁][あきひと] Akihito], [1989・昭和６４・平成１], [H1--H31], [],
-  [#ruby[令和][れい|わ] Reiwa], [#rruby[徳仁][なるひと] Naruhito], [2019・平成３１・令和１], [R1--present (#current_regnal_year)], [2020 = 令和２\
-  #current_regnal_year_explanation],
+  [#ruby[令和][れい|わ] Reiwa], [#rruby[徳仁][なるひと] Naruhito], [2019・平成３１・令和１], [R1--present (#current_regnal_year)], [2020 = 令和２#lb()current_regnal_year_explanation],
   hline,
 )
 
@@ -1491,18 +1485,15 @@ The known counters #ruby[枚][まい]、#ruby[台][だい]、#ruby[秒][びょ�
   hline,
   table.header[*Numeral*][*\/k\/*][*\/s\/*][*\/t\/*][*\/h\/*][*\/f\/*][*\/p\/*][*\/w\/*][*\/n\/*][*(rest)*][#ruby[既知][き|ち]][#ruby[個][こ]、#ruby[軒][けん]、#ruby[階][かい]、#ruby[ヶ月][か|げつ]、#ruby[回][かい]][#ruby[歳][さい]、#ruby[冊][さつ]、#ruby[足][そく]][#ruby[着][ちゃく]、#ruby[頭][とう]、#ruby[通][とお]り][#ruby[本][ほん]、#ruby[杯][はい]、#ruby[匹][ひき]、#ruby[発][はつ]][#ruby[分][ふん]][?][#ruby[羽][わ]][#ruby[人][にん]、#ruby[年][ねん]][#ruby[月][がつ]、#ruby[時][じ]、#ruby[時間][じ|かん]],
   hline,
-  [#ruby[何][なん]], [(なん/g/)#super[軒]], [(なん/z/)#super[足]], [], [なん/b/\
-    (なん/p/)#super[発]], [なん/p/], [], [], [], [],
+  [#ruby[何][なん]], [(なん/g/)#super[軒]], [(なん/z/)#super[足]], [], [なん/b/#lb()\(なん/p/\)#super[発]], [なん/p/], [], [], [], [],
   hline,
   [いち], [いっ/k/], [いっ/s/], [いっ/t/], [いっ/p/], [いっ/p/], [いっ/p/], [], [], [],
   hline,
   [に], [], [], [], [], [], [], [], [], [],
   hline,
-  [さん], [(さん/g/)#super[軒]], [], [], [さん/b/\
-    (さん/p/)#super[発]], [さん/p/], [], [さんば], [], [],
+  [さん], [(さん/g/)#super[軒]], [], [], [さん/b/#lb()\(さん/p/\)#super[発]], [さん/p/], [], [さんば], [], [],
   hline,
-  [よん], [], [], [], [], [よん/p/], [], [], [よ/n/], [(し〜)#super[月]\
-    よ〜],
+  [よん], [], [], [], [], [よん/p/], [], [], [よ/n/], [(し〜)#super[月]#lb()よ〜],
   hline,
   [ご], [], [], [], [], [], [], [], [], [],
   hline,
@@ -1518,11 +1509,9 @@ The known counters #ruby[枚][まい]、#ruby[台][だい]、#ruby[秒][びょ�
   hline,
   [ひゃく], [ひゃっ/k/], [], [], [ひゃっ/p/], [ひゃっ/p/], [ひゃっ/p/], [ひゃくっぱ], [], [],
   hline,
-  [せん], [(せん/g/)#super[軒]], [], [], [せん/b/\
-    (せん/p/)#super[発]], [せん/p/], [], [せんば], [], [],
+  [せん], [(せん/g/)#super[軒]], [], [], [せん/b/#lb()\(せん/p/\)#super[発]], [せん/p/], [], [せんば], [], [],
   hline,
-  [まん], [], [], [], [{まん/b/\
-    (まん/p/)#super[発]], [まん/p/], [], [まんば], [], [],
+  [まん], [], [], [], [{まん/b/#lb()\(まん/p/\)#super[発]], [まん/p/], [], [まんば], [], [],
   hline,
 )
 

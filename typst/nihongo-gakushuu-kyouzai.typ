@@ -28,6 +28,7 @@
 #include "GA-grammar-mega-summary.typ"
 #include "GB-miscellaneous-phrases.typ"
 
+#include "SA-kana.typ"
 #include "SB-basic-nouns.typ"
 
 #include "VA-interjections-and-expressions.typ"
