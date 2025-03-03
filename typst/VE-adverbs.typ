@@ -40,16 +40,16 @@
 // \midrule
 // まず & firstly & (#ruby[先][ま]ず) \\
 // #ruby[取][と]りあえず & first of all/right away & also in Tables~@tbl:appendix-vocab-adverbs-time, @tbl:appendix-vocab-adverbs-knowledge-truth-and-reality \\
-// #ruby[次][つ]いで & secondly/next/subsequently & also a \conjunction \\
-// {CだからE\\{}[CですからE]} & therefore (to speaker, E is a natural consequence of C; strong expression of speaker's attitude) & {\conjunction; also an expression; #link("https://www.youtube.com/watch?v=DSYc2BQrJEY")[[MCJ]]\\{}[polite]} \\
-// CそれでE & (objective そ) therefore (general cause-and-effect; E must have certainly happened (either past or now)) & \conjunction; #link("https://dictionary.goo.ne.jp/thsrs/16809/meaning/m0u/")[[goo]], #link("https://www.youtube.com/watch?v=DSYc2BQrJEY")[[MCJ]] \\
-// CそこでE & (objective そ) therefore (C is problem/situation, E is action taken to solve/improve/advance) & \conjunction; #link("https://dictionary.goo.ne.jp/thsrs/16809/meaning/m0u/")[[goo]], #link("https://www.youtube.com/watch?v=DSYc2BQrJEY")[[MCJ]] \\
-// CするとE & thereupon (E happens _immediately_ after C) & \conjunction; #link("https://www.youtube.com/watch?v=DSYc2BQrJEY")[[MCJ]] \\
+// #ruby[次][つ]いで & secondly/next/subsequently & also a #conjunction \\
+// {CだからE\\{}[CですからE]} & therefore (to speaker, E is a natural consequence of C; strong expression of speaker's attitude) & {#conjunction; also an expression; #link("https://www.youtube.com/watch?v=DSYc2BQrJEY")[[MCJ]]\\{}[polite]} \\
+// CそれでE & (objective そ) therefore (general cause-and-effect; E must have certainly happened (either past or now)) & #conjunction; #link("https://dictionary.goo.ne.jp/thsrs/16809/meaning/m0u/")[[goo]], #link("https://www.youtube.com/watch?v=DSYc2BQrJEY")[[MCJ]] \\
+// CそこでE & (objective そ) therefore (C is problem/situation, E is action taken to solve/improve/advance) & #conjunction; #link("https://dictionary.goo.ne.jp/thsrs/16809/meaning/m0u/")[[goo]], #link("https://www.youtube.com/watch?v=DSYc2BQrJEY")[[MCJ]] \\
+// CするとE & thereupon (E happens _immediately_ after C) & #conjunction; #link("https://www.youtube.com/watch?v=DSYc2BQrJEY")[[MCJ]] \\
 // だからこそ & for this very reason/this is exactly why & technically an expression \\
-// しかし & however/but & \conjunction \\
+// しかし & however/but & #conjunction \\
 // #ruby[但][ただ] & only/merely/just/simply; but/however/nonetheless & also an noun \\
 // ただし & but/however/provided that & (#ruby[但][ただ]し) \\
-// ために & for the sake of; because of/as a result of & (#ruby[為][ため]に); \conjunction \\
+// ために & for the sake of; because of/as a result of & (#ruby[為][ため]に); #conjunction \\
 // ちなみに & by the way/incidentally/in passing & (#ruby[因][ちな]みに) \\
 // っていう & meaning/called/said & (って#ruby[言][い]う) slang of という \\
 // \<that\>わけではない & it does not mean that/I don't mean that & (#ruby[訳][わけ]ではない); technically an expression \\
@@ -119,9 +119,9 @@
 // かなり & quite/considerably/pretty & \\
 // なかなか & very/considerably/fairly/quite/rather & (#ruby[中々][なか|なか]) \\
 // #ruby[相当][そう|とう] & considerably/rather/quite/fairly/pretty & also an adjective, verb \\
-// そこそこ & reasonably/fairly/all right/moderate & \onomatopoeic, also in @tbl:appendix-vocab-adverbs-amounts-and-sizes \\
+// そこそこ & reasonably/fairly/all right/moderate & #onomatopoeic, also in @tbl:appendix-vocab-adverbs-amounts-and-sizes \\
 // いい#ruby[加減][か|げん] & considerably/quite/rather/pretty enough (wanting something to end) & also an adjective \\
-// #ruby[大][だい]〜 & large/big/great/severe & \prefix. \htc; technically な-adj/noun \\
+// #ruby[大][だい]〜 & large/big/great/severe & #prefix. \htc; technically な-adj/noun \\
 // すごく & very/immensely/awfully & (#ruby[凄][すご]く) \\
 // #ruby[全][まった]く & really/truly/entirely/completely/perfectly; indeed & also a noun \\
 // #ruby[随分][ずい|ぶん] & surprisingly/very/extremely/fairly/quite/considerably/awfully/terribly & \\
@@ -141,7 +141,7 @@
 // \midrule
 // たくさん & a lot/lots/plenty/much/a great deal; enough/too much & (#ruby[沢山][たく|さん]); also an adjective \\
 // いっぱい & fully/as much as possible; a lot/many; all of & (#ruby[一杯][いっ|ぱい]); also a noun and adjective \\
-// たっぷり & plentifully/with excess/amply/abundantly/copiously/generously/fully/a lot & \onomatopoeic \\
+// たっぷり & plentifully/with excess/amply/abundantly/copiously/generously/fully/a lot & #onomatopoeic \\
 // % & & \\
 // \midrule
 // \midrule
@@ -209,7 +209,7 @@
 // % & & \\
 // \midrule
 // #ruby[遅][おそ]く & late/slowly & \\
-// ゆっくり & slowly/unhurriedly/without haste/leisurely & \onomatopoeic \\
+// ゆっくり & slowly/unhurriedly/without haste/leisurely & #onomatopoeic \\
 // % & & \\
 // \midrule
 // \midrule
@@ -222,7 +222,7 @@
 // #ruby[今更][いま|さら] & now/at this stage (when it is already much too late) & \\
 // % & & \\
 // \midrule
-// ちらっと & at a glance/by accident & \onomatopoeic \\
+// ちらっと & at a glance/by accident & #onomatopoeic \\
 // % & & \\
 // \midrule
 // もともと & originally/from the start/from the onset & (#ruby[元々][もと|もと]) \\
@@ -266,12 +266,12 @@
 // \toprule
 // *Modifier* & *Meaning* & *Notes* \\
 // \midrule
-// ぶらぶら & (walking) leisurely/aimlessly & \onomatopoeic, also a verb \\
+// ぶらぶら & (walking) leisurely/aimlessly & #onomatopoeic, also a verb \\
 // #ruby[遠慮][えん|りょ]なく & without reservation/freely & \\
 // #ruby[静][しず]かに & calmly/quietly/gently/peacefully & also an expression \\
 // % & & \\
 // \midrule
-// ちゃんと & diligently/seriously/earnestly; properly/perfectly/exactly/regularly; quickly & \onomatopoeic \\
+// ちゃんと & diligently/seriously/earnestly; properly/perfectly/exactly/regularly; quickly & #onomatopoeic \\
 // しっかり & properly/well/sufficiently/hard/fully (working) & also in @tbl:appendix-vocab-adverbs-amounts-and-sizes \\
 // はっきり & clearly/plainly (clarity in sight/knowledge) (usu. はっきりした) & also a verb \\
 // #ruby[大切][たい|せつ]に & carefully/with great care & also an adjective, verb \\
@@ -306,8 +306,8 @@
 // % & & \\
 // \midrule
 // \midrule
-// ツンツン & aloof/cold/unfriendly/standoffish & \onomatopoeic; also a verb; also in @tbl:appendix-vocab-adverbs-taste-and-texture \\
-// デレデレ & flirting/philandering/being lovestruck/fawning & \onomatopoeic \\
+// ツンツン & aloof/cold/unfriendly/standoffish & #onomatopoeic; also a verb; also in @tbl:appendix-vocab-adverbs-taste-and-texture \\
+// デレデレ & flirting/philandering/being lovestruck/fawning & #onomatopoeic \\
 // % & & \\
 // \bottomrule
 // }
@@ -332,10 +332,10 @@
 // *Modifier* & *Meaning* & *Notes* \\
 // \midrule
 // #ruby[喜][よろこ]んで & with pleasure/gladly/willingly/certainly & \\
-// ドキドキ & thump-thump/bang-bang/pit-a-pat/pitter-patter & \onomatopoeic; also a verb \\
-// キュン & with a pitter-patter/heart-wringing/tightening of one's chest caused by powerful feelings (e.g. parting); 「#ruby[胸][むね]がキュンとなる」 & \onomatopoeic \\
+// ドキドキ & thump-thump/bang-bang/pit-a-pat/pitter-patter & #onomatopoeic; also a verb \\
+// キュン & with a pitter-patter/heart-wringing/tightening of one's chest caused by powerful feelings (e.g. parting); 「#ruby[胸][むね]がキュンとなる」 & #onomatopoeic \\
 // ムカムカ & feeling sick/queasy/nauseated/disgusted & also a verb \\
-// ソワソワ & restlessly/nervously/uneasily/in a fidget & \onomatopoeic; also a verb \\
+// ソワソワ & restlessly/nervously/uneasily/in a fidget & #onomatopoeic; also a verb \\
 // % & & \\
 // \bottomrule
 // }
@@ -368,11 +368,11 @@
 // % & & \\
 // \midrule
 // \midrule
-// キラキラ & glittering/sparkling/glistening/twinkling & \onomatopoeic \\
-// ぴょんぴょん & hopping/skipping/lightly and repeatedly jumping & \onomatopoeic \\
-// チュッ & with a smooch/light smacking sound & \onomatopoeic \\
-// プチュッ & kissing loudly/smooching; squirting/gushing & \onomatopoeic \\
-// ちょこちょこ & with small quick steps/toddling & \onomatopoeic \\
+// キラキラ & glittering/sparkling/glistening/twinkling & #onomatopoeic \\
+// ぴょんぴょん & hopping/skipping/lightly and repeatedly jumping & #onomatopoeic \\
+// チュッ & with a smooch/light smacking sound & #onomatopoeic \\
+// プチュッ & kissing loudly/smooching; squirting/gushing & #onomatopoeic \\
+// ちょこちょこ & with small quick steps/toddling & #onomatopoeic \\
 // % & & \\
 // \bottomrule
 // }
@@ -499,16 +499,16 @@
 // % & & \\
 // \midrule
 // \midrule
-// ふわふわ & lightly/buoyantly & \onomatopoeic, also an adjective \\
-// とろり & thickly/viscously/stickily/creamily & \onomatopoeic \\
-// どろり & thick/muddy/gooey (of liquid) & \onomatopoeic \\
+// ふわふわ & lightly/buoyantly & #onomatopoeic, also an adjective \\
+// とろり & thickly/viscously/stickily/creamily & #onomatopoeic \\
+// どろり & thick/muddy/gooey (of liquid) & #onomatopoeic \\
 // % & & \\
 // \midrule
 // \midrule
-// ぷにぷに & squishy/springy/bouncy (chubby when used on person) & \onomatopoeic \\
-// ガリガリ & hard/crunchy (of muscles, when used on person) & \onomatopoeic \\
+// ぷにぷに & squishy/springy/bouncy (chubby when used on person) & #onomatopoeic \\
+// ガリガリ & hard/crunchy (of muscles, when used on person) & #onomatopoeic \\
 // ムキムキ & muscular/brawny & slang \\
-// ツンツン & spiky (hairstyle); sticking up straight (e.g. plant stems) & \onomatopoeic; also in @tbl:appendix-vocab-adverbs-attitude \\
+// ツンツン & spiky (hairstyle); sticking up straight (e.g. plant stems) & #onomatopoeic; also in @tbl:appendix-vocab-adverbs-attitude \\
 // % & & \\
 // \bottomrule
 // }
@@ -543,7 +543,7 @@
 // もっと & some more/even more/longer/further & \\
 // % & & \\
 // \midrule
-// #ruby[未満][み|まん] & less than/under/below (esp. ◯#ruby[歳未満][さい|み|まん]) & \suffix \\
+// #ruby[未満][み|まん] & less than/under/below (esp. ◯#ruby[歳未満][さい|み|まん]) & #suffix \\
 // % & & \\
 // \midrule
 // ほとんど\<negative\> & hardly/barely/scarcely/little & (#ruby[殆][ほとん]ど), also in @tbl:appendix-vocab-adverbs-attitude \\
@@ -596,8 +596,8 @@
 // \toprule
 // *Modifier* & *Meaning* & *Notes* \\
 // \midrule
-// ピンポン & ding-dong (doorbell/intercom) & \onomatopoeic \\
-// ピンポン & ding ding ding!/correct!/right answer! & \onomatopoeic, slang \\
+// ピンポン & ding-dong (doorbell/intercom) & #onomatopoeic \\
+// ピンポン & ding ding ding!/correct!/right answer! & #onomatopoeic, slang \\
 // % & & \\
 // \bottomrule
 // }

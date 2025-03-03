@@ -51,6 +51,12 @@ Files to include: `*.typ`:
 |`\\textsuperscript\{(.*?)\}`|`#super[$1]`|
 |`\\cancel\{(.*?)\}`|`$cancel("$1")$`|
 |`\\st\{(.*?)\}`|`#strike[$1]`|
+|`\\aux`|`#aux`|
+|`\\prefix`|`#prefix`|
+|`\\suffix`|`#suffix`|
+|`\\conjunction`|`#conjunction`|
+|`\\onomatopoeic`|`#onomatopoeic`|
+|`\\yojijukugo`|`#yojijukugo`|
 
 
 <!--

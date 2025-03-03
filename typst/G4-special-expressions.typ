@@ -416,7 +416,7 @@ Indirect passives can be purposefully used to convey negative feelings evoked fr
 
   [A2、受動文] （私は）あんさんに海外へ#ruby[引][ひ]っ#ruby[越][こ]されて、寂しくてたまらない。（I got Ann-San moved abroad on me, and I feel unbearably lonely.; たまらない: intolerable/unbearable)
 
-  [B2、受動文] (アンさんに#ruby[花束][はな|たば]を#ruby[贈][おく]ろうと思っていたのに、）（私は）田中さんに先に#ruby[贈][おく]られてしまった。(Despite me thinking of gifting a bouquet to Ann-sann, I got Tanaka-san gifting before me on me.; しまう: to do/happen unintentionally (\aux))
+  [B2、受動文] (アンさんに#ruby[花束][はな|たば]を#ruby[贈][おく]ろうと思っていたのに、）（私は）田中さんに先に#ruby[贈][おく]られてしまった。(Despite me thinking of gifting a bouquet to Ann-sann, I got Tanaka-san gifting before me on me.; しまう: to do/happen unintentionally (#aux))
 
 The subject/experiencer in passive sentences is a person, and is most commonly 「私」. If so, it is often omitted (#ruby[省略][しょう|りゃく]されます). If the subject/experiencer is not a human, then it would be something similar to a person, such as an organisation a person belongs to.
 
@@ -432,7 +432,7 @@ In @sec:tmjk-2-classifications-of-passive-voice, we fixed the subject/experience
 
 - [C2、受動文] *田中さんは*アルバイトに休まれて、*とても#ruby[困][こま]りました。* (Tanaka-san had a day off taken on him by the part-timer, and was very troubled.; 休む: to take a day off (intransitive))
 
-  [D2、受動文] *#ruby[川口][かわ|ぐち]さんは*友達に手紙を読まれて、*恥ずかしい思いをしました。* (Kawaguchi-san got his letter read on him by his friend, and he felt embarrassed unintentionally.; 読む: to read (transitive), しまう: to do/happen unintentionally (\aux))
+  [D2、受動文] *#ruby[川口][かわ|ぐち]さんは*友達に手紙を読まれて、*恥ずかしい思いをしました。* (Kawaguchi-san got his letter read on him by his friend, and he felt embarrassed unintentionally.; 読む: to read (transitive), しまう: to do/happen unintentionally (#aux))
 
   #textblue[When the feelings of the aggrieved party is made explicit, the indirect passive flows more naturally.]
 

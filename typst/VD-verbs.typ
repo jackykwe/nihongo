@@ -85,7 +85,7 @@
 // \midrule
 // \vit #ruby[漏][も]らす & う & to let leak out (water/light/secret/information) & & #ruby[漏][も]れる & る & to leak out/escape/shine through & #link("https://ja.hinative.com/questions/14216491")[[HN]] \\
 // バラす & う & to expose/disclose/reveal/give away (secret) & slang & バレる & る & to leaked out/be exposed/be found out (of a secret/lie/improper behaviour) & slightly casual, #link("https://ja.hinative.com/questions/14216491")[[HN]] \\
-// \<v stem\>#ruby[漏][も]らす & う & to forget to do \<v stem\> & \suffix & - & & & \\
+// \<v stem\>#ruby[漏][も]らす & う & to forget to do \<v stem\> & #suffix & - & & & \\
 // % & & & & & & & \\
 // \midrule
 // \midrule
@@ -131,7 +131,7 @@
 // *Action* & *Cat.* & *Meaning* & *Notes* & *Action* & *Cat.* & *Meaning* & *Notes* \\
 // \midrule
 // - & & & & #ruby[行][い]く & う & to go/move through/proceed/reach (information/phase) & \\
-// - & & & & \<v te\>て[い]く & う & {to \<v te\> and go (spatial\\to \<v te\> gradually/progressively into the future (temporal)} & (#ruby[行][い]く); \aux, [formal] \\
+// - & & & & \<v te\>て[い]く & う & {to \<v te\> and go (spatial\\to \<v te\> gradually/progressively into the future (temporal)} & (#ruby[行][い]く); #aux, [formal] \\
 // #ruby[持][も]っていく & う & to take/bring/carry something along & & - & & & \\
 // \vit #ruby[進][すす]める & る & to advance/move forward & also in @tbl:appendix-vocab-verbs-courtesy & #ruby[進][すす]む & う & to advance/go forward & also in @tbl:appendix-vocab-verbs-courtesy \\
 // % & & & & & & & \\
@@ -149,7 +149,7 @@
 // - & & & & #ruby[去][さ]る & う & to leave/go away; to pass/elapse (e.g. seasons) & also an adjective \\
 // - & & & & #ruby[来][く]る & E & to come/approach/arrive & \\
 // - & & & & #ruby[見][み]える & る & to come & honorific; also in @verbs-tbl:appendix-vocab-verbs-consumption \\
-// - & & & & \<v te\>てくる & E & {to \<v te\> and come back (spatial);\\to \<v te\> up to the present (temporal)} & (#ruby[来][く]る); \aux, #link("https://japanese.stackexchange.com/a/43678")[[SE1]], #link("https://japanese.stackexchange.com/q/48132")[[SE2]] \\
+// - & & & & \<v te\>てくる & E & {to \<v te\> and come back (spatial);\\to \<v te\> up to the present (temporal)} & (#ruby[来][く]る); #aux, #link("https://japanese.stackexchange.com/a/43678")[[SE1]], #link("https://japanese.stackexchange.com/q/48132")[[SE2]] \\
 // #ruby[持][も]ってくる & う & to take/bring/carry something over & & - & & & \\
 // % & & & & & & & \\
 // \midrule
@@ -212,13 +212,13 @@
 // \vit #ruby[入][い]れる & る & to put in/bring in/let in/insert/install (software) & & #ruby[入][はい]る & \exception{う} & to enter/arrive/join/get into/fit into & #link("https://ja.hinative.com/questions/15301215")[[HN]] \\
 // - & & & & #ruby[立][た]ち#ruby[入][い]る & \exception{う} & to trespass/intrude/interfere/pry/delve deeper & \\
 // \<stem\>#ruby[込][こ]む & う & to go/put into; to completely become; to do thoroughly/sufficiently; to remain (seated/silent) & & - & & & \\
-// #ruby[差][さ]し#ruby[込][こ]む & う & to insert/put/thrust/plug in; to shine/stream in (light) & \suffix & - & & & \\
+// #ruby[差][さ]し#ruby[込][こ]む & う & to insert/put/thrust/plug in; to shine/stream in (light) & #suffix & - & & & \\
 // % & & & & & & & \\
 // \midrule
 // \vit #ruby[出][だ]す & う & to take out/get out/publish/send (letter)/produce & CN 出～ & #ruby[出][で]る & る & to exit/leave/come out/flow/appear/answer (phone/door) & incl. CN 出～ usages \\
 // % This line is occupied, do not delete %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% ^many (but there are uses of 出す that don't have CN equivalents), e.g. 出去、出来、出游、出现、出售、出火、出炉
 // #ruby[取][と]り#ruby[出][だ]す & う & to take out/pick out; to retrieve/recover & & - & & & \\
-// \<v stem\>#ruby[出][だ]す & う & to begin to \<v stem\>; to \<v stem\> out (e.g. jump out, carry out) & \suffix & - & & & \\
+// \<v stem\>#ruby[出][だ]す & う & to begin to \<v stem\>; to \<v stem\> out (e.g. jump out, carry out) & #suffix & - & & & \\
 // #ruby[追][お]い#ruby[出][だ]す & う & to expel/drive/chase out & & - & & & \\
 // \vit #ruby[抜][ぬ]く & う & to pull out/extract/unplug; omit/skip/pass & & #ruby[抜][ぬ]ける & る & to come out/fall out/be extracted; be omitted/missing & \\
 // \vit #ruby[抜][ぬ]け#ruby[出][だ]す & う & to slip out/sneak away/break free & & #ruby[抜][ぬ]け#ruby[出][で]る & る & to slip out/steal out & \\
@@ -341,8 +341,8 @@
 // - & & & & #ruby[緊張][きん|ちょう]する & E & to be nervous/stressed/tense & \\
 // #ruby[心配][しん|ぱい]する & E & to worry/fear about & & - & & & \\
 // & & & & ビビる & \exception{う} & to feel nervous/afraid/self-conscious; [to be startled/surprised/shocked/frightened/spooked] & [slang] \\
-// - & & & & ソワソワする & E & to be restless/nervous/uneasy/in a fidget & \onomatopoeic \\
-// - & & & & イライラする & E & to be irritated/annoyed; to fret/worry/be on the edge; to be impatient/lose patience & (#ruby[苛々][いら|いら]する); \onomatopoeic \\
+// - & & & & ソワソワする & E & to be restless/nervous/uneasy/in a fidget & #onomatopoeic \\
+// - & & & & イライラする & E & to be irritated/annoyed; to fret/worry/be on the edge; to be impatient/lose patience & (#ruby[苛々][いら|いら]する); #onomatopoeic \\
 // \viteq #ruby[後悔][こう|かい]する & E & to regret/repent & & #ruby[後悔][こう|かい]する & E & to be regretful/remorseful & \\
 // #ruby[反省][はん|せい]する & E & to reflect/introspect; to regret/repent & & - & & & \\
 // - & & & & ツンツンする & E & to be prickly/standoffish/cold/aloof & also an adverb \\
@@ -460,7 +460,7 @@
 // \midrule
 // \vit #ruby[残][のこ]す & う & to leave undone; to be left over/remain & also in @tbl:appendix-vocab-verbs-physical & #ruby[残][のこ]る & う & to be left undone; to be left over/remaining & also in @tbl:appendix-vocab-verbs-physical \\
 // \vit #ruby[続][つづ]ける & る & to continue & & #ruby[続][つづ]く & う & to continue & \\
-// \<v stem\>#ruby[続][つづ]ける & る & to continue \<v stem\> & \aux & & & & \\
+// \<v stem\>#ruby[続][つづ]ける & る & to continue \<v stem\> & #aux & & & & \\
 // - & & & & #ruby[引][ひ]き#ruby[続][つづ]く& う & to continue (for a long time); to come next (TV) & \\
 // % & & & & & & & \\
 // \midrule
@@ -471,10 +471,10 @@
 // - & & & & いい#ruby[加減][か|げん]にする & E & to put an end to/get over with/quit something someone's been stuck doing & \\
 // % & & & & & & & \\
 // \midrule
-// \<stem\>#ruby[止][さ]す & う & to stop in the midst of & \suffix & - & & & \\
+// \<stem\>#ruby[止][さ]す & う & to stop in the midst of & #suffix & - & & & \\
 // \vit #ruby[終][お]える & る & to finish & #link("https://ja.hinative.com/questions/2620397")[[HN]] & #ruby[終][お]わる & う & to end/finish & #link("https://ja.hinative.com/questions/2620397")[[HN]] \\
 // \viteq #ruby[終了][しゅう|りょう]する & E & to end/close/terminate & slightly formal, #link("https://ja.hinative.com/questions/2620397")[[HN]] & #ruby[終了][しゅう|りょう]する & E & to end/close/terminate & slightly formal, #link("https://ja.hinative.com/questions/2620397")[[HN]] \\
-// \<v stem\>#ruby[終][お]える & る & to finish \<v stem\> & \aux & & & & \\
+// \<v stem\>#ruby[終][お]える & る & to finish \<v stem\> & #aux & & & & \\
 // #ruby[完成][かん|せい]する & E & to complete/finish & & - & & & \\
 // - & & & & #ruby[突破][とっ|ぱ]する & E & to break through/overcome; to exceed & \\
 // % & & & & & & & \\
@@ -526,7 +526,7 @@
 // \midrule
 // \midrule
 // - & & & & #ruby[歩][ある]く & う & to walk & \\
-// - & & & & ぶらぶらする & E & to walk leisurely/aimlessly & \onomatopoeic, also an adverb \\
+// - & & & & ぶらぶらする & E & to walk leisurely/aimlessly & #onomatopoeic, also an adverb \\
 // - & & & & #ruby[散歩][さん|ぽ]する & E & to take a stroll & \\
 // - & & & & #ruby[走][はし]る & \exception{う} & to run; drive (vehicle); flash (lightning); wind (road) & \\
 // - & & & & #ruby[走][はし]り#ruby[出][だ]す & う & to start running/break into a run & \\
@@ -548,7 +548,7 @@
 // \midrule
 // #ruby[逃][に]がす & う & to miss/fail to catch (more physical); to set free/let go/release (physical) & #link("https://dictionary.goo.ne.jp/thsrs/1605/meaning/m0u/\%E9\%80\%83\%E3\%81\%8C\%E3\%81\%99/")[[goo]] & #ruby[逃][にげ]げる & る & to flee/escape/get away/avoid (danger/responsibility) & \\
 // #ruby[逃][のが]す & う & to miss/fail to catch (more abstract); to put out of reach (abstract) & #link("https://dictionary.goo.ne.jp/thsrs/1605/meaning/m0u/\%E9\%80\%83\%E3\%81\%8C\%E3\%81\%99/")[[goo]] & #ruby[逃][のが]れる & る & to escape & \\
-// \<v stem\>#ruby[逃][のが]す & う & to fail to \<v stem\> & \aux & & & & \\
+// \<v stem\>#ruby[逃][のが]す & う & to fail to \<v stem\> & #aux & & & & \\
 // #ruby[取][と]り#ruby[逃][に]がす & う & to try and catch but fail & #link("https://dictionary.goo.ne.jp/thsrs/1605/meaning/m0u/\%E9\%80\%83\%E3\%81\%8C\%E3\%81\%99/")[[goo]] & - & & & \\
 // #ruby[逸][いっ]する & E & to miss/deviate from (abstract only; chance/right track) & #link("https://dictionary.goo.ne.jp/thsrs/1605/meaning/m0u/\%E9\%80\%83\%E3\%81\%8C\%E3\%81\%99/")[[goo]] & - & & & \\
 // % & & & & & & & \\
@@ -582,7 +582,7 @@
 // % & & & & & & & \\
 // \midrule
 // \vit #ruby[切][き]る & \exception{う} & to cut/open (sealed); turn off (lights/appliance); hang up; (conversation); shuffle/discard (cards/tiles); punch (ticket) & & #ruby[切][き]れる & る & to break/snap; run out/stop working/expire; be disconnected; be shuffled (cards/tiles); run out (stock); break up & \\
-// \<v stem\>#ruby[切][き]る & \exception{う} & #highlight[to be able to] do \<v stem\> completely & \aux & & & & \\
+// \<v stem\>#ruby[切][き]る & \exception{う} & #highlight[to be able to] do \<v stem\> completely & #aux & & & & \\
 // \vit #ruby[破][やぶ]る & う & to tear/rip (paper/cloth); to break through (defences); to surpass (record) & #link("https://ja.hinative.com/questions/17387132")[[HN]]; also in @tbl:appendix-vocab-verbs-conflict-and-resolution & #ruby[破][やぶ]れる & る & to break/collapse/be torn/worn out/ruined & \\
 // \vit #ruby[壊][こわ]す & う & to break/destroy/demolish; to wreck/ruin/spoil/damage/destroy (e.g. dreams) & #link("https://ja.hinative.com/questions/17387132")[[HN]] & #ruby[壊][こわ]れる & る & to break/fall apart/collapse/be broken/destroyed/damaged; to stop working & \\
 // - & & & & もげる & る & to be torn off/come off & \\
@@ -664,7 +664,7 @@
 // \midrule
 // \vit #ruby[見][み]る & る & to see/observe & & #ruby[見][み]える & る & to be seen/visible & also in @tbl:appendix-vocab-verbs-directions \\
 // ちらっと#ruby[見][み]る & る & to glimpse/glance at & & - & & & \\
-// \<v te\>みる & る & to try \<v te\> and see (what happens) & \aux & - & & & \\
+// \<v te\>みる & る & to try \<v te\> and see (what happens) & #aux & - & & & \\
 // #ruby[試][こころ]みる & う & to attempt/try and see if it's possible & #link("https://dictionary.goo.ne.jp/thsrs/9516/meaning/m0u")[[goo]] & - & & & \\
 // #ruby[試][ため]す & う & to attempt/put to the test and confirm truth/goodness & #link("https://dictionary.goo.ne.jp/thsrs/9516/meaning/m0u")[[goo]] & - & & & \\
 // \vit #ruby[見][み]つける & る & to find/discover/detect & & #ruby[見][み]つかる & う & to be found/discovered & \\
@@ -687,8 +687,8 @@
 // #ruby[吸][す]う & う & to smoke (cigarettes); to breathe in/inhale; to soak up/absorb (sponge); to kiss & & & & & \\
 // #ruby[吸][す]い#ruby[込][こ]む & う & to inhale/breathe in; to soak up/absorb (sponge); to suck in (allure) & & - & & & \\
 // - & & & & キスする & E & to kiss (に-marked) & \\
-// - & & & & チュッする & E & to lightly kiss/smooch & slang, \onomatopoeic \\
-// - & & & & チューする & E & to kiss & slang, \onomatopoeic \\
+// - & & & & チュッする & E & to lightly kiss/smooch & slang, #onomatopoeic \\
+// - & & & & チューする & E & to kiss & slang, #onomatopoeic \\
 // % & & & & & & & \\
 // \midrule
 // \midrule
@@ -757,12 +757,12 @@
 // \midrule
 // - & & & & ある & う & to exist/have (inaminate) & (#ruby[有][あ]る) \\
 // - & & & & いる & る & to exist (animate) & (#ruby[居][い]る) \\
-// - & & & & \<v te\>ている & る & progressive state of action/being & (#ruby[居][い]る); \aux \\
-// - & & & & \<adj/v stem\>すぎる & る & to be excessive/too much & (#ruby[過][す]ぎる); \suffix \\
+// - & & & & \<v te\>ている & る & progressive state of action/being & (#ruby[居][い]る); #aux \\
+// - & & & & \<adj/v stem\>すぎる & る & to be excessive/too much & (#ruby[過][す]ぎる); #suffix \\
 // % & & & & & & & \\
 // \midrule
 // ? & & & & する & E & to do & \\
-// ? & & & & {お/ご}\<nn\>#ruby[申][もう]し#ruby[上][あ]げる & る & to do & \aux; humble, also in @tbl:appendix-vocab-verbs-production \\
+// ? & & & & {お/ご}\<nn\>#ruby[申][もう]し#ruby[上][あ]げる & る & to do & #aux; humble, also in @tbl:appendix-vocab-verbs-production \\
 // ? & & & & \<nn\>にする & E & to decide on (e.g. ordering from menu) & \\
 // ? & & & & \<adj\>にする & E & to make become & \\
 // ? & & & & \<v\>ことにする & E & to decide to \<v\> & \\
@@ -773,15 +773,15 @@
 // ? & & & & ゴリ#ruby[押][お]しする & E & to do/push through by force & \\
 // #ruby[捧][ささ]げる & る & to dedicate/offer/devote/sacrifice & & - & & & \\ % technically there is a 捧ぐ but I think nobody really uses that so...
 // しまう & う & to finish/stop/close/shut down/put away & (#ruby[仕舞][し|ま]う) & - & & & \\
-// \<v te\>しまう & う & to do completely & (#ruby[仕舞][し|ま]う); \aux & - & & & \\
-// \<v te\>しまう & う & to do accidentally & (#ruby[仕舞][し|ま]う); \aux & - & & & \\
-// {\<vtf\>ちゃう\\\<vtf\>じゃう} & う & to do completely & \aux & - & & & \\
-// {\<vtf\>ちゃう\\\<vtf\>じゃう} & う & to do accidentally & \aux & - & & & \\
+// \<v te\>しまう & う & to do completely & (#ruby[仕舞][し|ま]う); #aux & - & & & \\
+// \<v te\>しまう & う & to do accidentally & (#ruby[仕舞][し|ま]う); #aux & - & & & \\
+// {\<vtf\>ちゃう\\\<vtf\>じゃう} & う & to do completely & #aux & - & & & \\
+// {\<vtf\>ちゃう\\\<vtf\>じゃう} & う & to do accidentally & #aux & - & & & \\
 // % & & & & & & & \\
 // \midrule
 // - & & & & なる & う & to become/get/attain/reach/turn into/be completed & usu. 「〜になる」 \\
-// ? & & & & ご\<noun\>になる & う & to do \<noun\> & \aux, honorific \\
-// ? & & & & お\<v stem\>になる & う & to do \<v stem\> & \aux, honorific \\
+// ? & & & & ご\<noun\>になる & う & to do \<noun\> & #aux, honorific \\
+// ? & & & & お\<v stem\>になる & う & to do \<v stem\> & #aux, honorific \\
 // ? & & & & \<v\>ことになる & う & to arrange/decide so that \<v\> & \\
 // ? & & & & \<v\>ようになる & う & to come to be that/start to \<v\> (focus on change state) & \\
 // ? & & & & よくなる & う & to become better/improve & (#ruby[良][よ]くなる) \\

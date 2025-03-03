@@ -29,7 +29,7 @@
 // #ruby[嬉][うれ]しい & い & happy/glad/delighted & \\
 // #ruby[楽][たの]しい & い & fun/enjoyable/happy & \\
 // #ruby[欲][ほ]しい & い & desired/wanted & \\
-// \<v te\>ほしい & い & I want you to do \<v\>/I want \<v\> done & \aux \\
+// \<v te\>ほしい & い & I want you to do \<v\>/I want \<v\> done & #aux \\
 // イケイケ & な & eager/enthusiastic/excited/spirited/energetic & (#ruby[行][い]け#ruby[行][い]け) \\
 // めでたい & い & happy/auspicious/joyous & (#ruby[目出度][め|で|た]い); also in @tbl:appendix-vocab-adjectives-personalities \\
 // おめでたい & い & for congratulations/worthy of celebration/auspicious (occasion/ending/etc.) & (お#ruby[目出度][め|で|た]い); polite; also in @tbl:appendix-vocab-adjectives-personalities \\
@@ -355,9 +355,9 @@
 // \toprule
 // *Descriptor* & *Cat.* & *Meaning* & *Notes* \\
 // \midrule
-// \<adj/v stem\>そう & な & having the appearance of/seeming that & \aux \\
-// \<nn\>っぽい/ぽい & い & \<nn\> -ish/-like & \suffix \\
-// \<nn/v\>みたい & な & -like/sort of/similar to/resembling & \suffix \\
+// \<adj/v stem\>そう & な & having the appearance of/seeming that & #aux \\
+// \<nn\>っぽい/ぽい & い & \<nn\> -ish/-like & #suffix \\
+// \<nn/v\>みたい & な & -like/sort of/similar to/resembling & #suffix \\
 // % & & & \\
 // \midrule
 // こんな#ruby[風][ふう]/こういう#ruby[風][ふう] & な & this kind (closer to speaker) & (こう#ruby[言][い]う#ruby[風][ふう]) \\
@@ -405,7 +405,7 @@
 // \midrule
 // #ruby[汚][きたな]い & い & dirty/filthy/messy/untity/vulgar & \\
 // #ruby[臭][くさ]い & い & smelly/stinking & also in @tbl:appendix-vocab-adjectives-agreeability \\
-// \<nn/adj/v\>#ruby[臭][くさ]い & い & smelling of/appearing like & \suffix \\
+// \<nn/adj/v\>#ruby[臭][くさ]い & い & smelling of/appearing like & #suffix \\
 // ボコボコ & な & holey/full of holes/dents & \\
 // % & & & \\
 // \midrule
@@ -514,7 +514,7 @@
 // \midrule
 
 // [お]やすい & い & easy & (#ruby[易][やす]い) \\
-// \<v masu\>やすい & い & easy to/likely to/have a tendency to \<v masu\> & (#ruby[易][やす]い); \suffix \\
+// \<v masu\>やすい & い & easy to/likely to/have a tendency to \<v masu\> & (#ruby[易][やす]い); #suffix \\
 // #ruby[簡単][かん|たん] & な & easy/simple & \\
 // % & & & \\
 // \midrule
@@ -808,7 +808,7 @@
 // % & & & \\
 // \midrule
 // \midrule
-// ふわふわ & の & soft/fluffy/spongy & \onomatopoeic; also an adverb \\
+// ふわふわ & の & soft/fluffy/spongy & #onomatopoeic; also an adverb \\
 // % & & & \\
 // \midrule
 // \midrule
@@ -840,7 +840,7 @@
 // #ruby[大][おお]きい & い & big/large/great & \\
 // すごい & い & vast (in numbers)/to a great extent & (#ruby[凄][すご]い) \\
 // いい#ruby[加減][か|げん] & な & already enough (experssing wish for something to end), see いい#ruby[加減][か|げん]にする & also an adverb, also in @tbl:appendix-vocab-adjectives-personalities \\
-// #ruby[大][だい]〜 & な & large/great/huge/major/important/serious/severe & \prefix \\
+// #ruby[大][だい]〜 & な & large/great/huge/major/important/serious/severe & #prefix \\
 // #ruby[相当][そう|とう] & な & considerable/substantial & \\
 // % & & & \\
 // \midrule

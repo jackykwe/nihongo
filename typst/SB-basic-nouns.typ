@@ -117,8 +117,8 @@
 //     \midrule
 //     \midrule
 //     & #ruby[全部][ぜん|ぶ] & all/entire/whole/altogether & also an adverb \\
-//     & #ruby[以上][い|じょう] & and above & \suffix, also an expression \\
-//     & #ruby[以下][い|か] & and below/subpar & \suffix \\
+//     & #ruby[以上][い|じょう] & and above & #suffix, also an expression \\
+//     & #ruby[以下][い|か] & and below/subpar & #suffix \\
 //     & #ruby[次][つぎ] & next & \\
 //     % & & & \\
 //     \bottomrule

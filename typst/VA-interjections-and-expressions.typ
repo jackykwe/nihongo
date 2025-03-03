@@ -283,7 +283,7 @@
 // いい#ruby[加減][か|げん]にしなさい & shape up!/act properly! & \\
 // しっかりしろ & pull yourself together/get a grip/get a hold of yourself/come on & \\
 // さあ/さー & come on/come now/come along (to urge/encourage others); here goes (indicates resolve); well (indicates uncertainty/hesitation); about that/actually (interrupting someone) & \\
-// さあて & well/now/then & \conjunction \\
+// さあて & well/now/then & #conjunction \\
 // % & & \\
 // \midrule
 // クソ & damn/damn it/shit/crap & (#ruby[糞][くそ]) \\
@@ -312,7 +312,7 @@
 // % & & \\
 // \midrule
 // \midrule
-// ピコーン/ピューン/ピーン & ding/ping & \onomatopoeic; manga slang \\
+// ピコーン/ピューン/ピーン & ding/ping & #onomatopoeic; manga slang \\
 // バチコーン & thwap/smack (used when winking) & #link("https://dic.pixiv.net/a/\%E3\%83\%90\%E3\%83\%81\%E3\%82\%B3\%E3\%83\%BC\%E3\%83\%B3")[[PX]] \\
 // % & & \\
 // \midrule

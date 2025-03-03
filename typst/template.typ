@@ -139,8 +139,9 @@
         link(
           el.location(),
           (
-            el.supplement,
-            " ",
+            // el.supplement,
+            // " ",
+            sym.section,
             numbering(el.numbering, ..counter(heading).at(el.location())).trim(" "),
           ).join(""),
         )
@@ -164,7 +165,7 @@
 #let onomatopoeic = smallcaps[onomatopoeic]
 #let yojijukugo = smallcaps[四字熟語]
 #let exception(str) = text(fill: red)[#highlight[*#str*]]
-#let rc(rows, cols, content) = table.cell(rowspan: rows, colspan: cols)[#content]
+#let rc(r, c, content) = table.cell(rowspan: r, colspan: c)[#content]
 #let cdots = sym.dots.h.c
 #let mapsto = sym.arrow.r.bar
 #let neq = $cancel(=, angle: #45deg)$
@@ -204,24 +205,18 @@
 // ############### //
 
 #let default_rule_width = 1pt
-#let hline = table.hline(
+#let _hline(..args) = table.hline(
   start: 0,
   end: none,
   y: auto,
   position: top,
-  stroke: default_rule_width + black,
-)
-// hline-args
-#let hlinea(..args) = table.hline(
-  start: 0,
-  end: none,
-  y: auto,
-  position: top,
-  stroke: default_rule_width + black,
+  stroke: 1pt + black,
   ..args,
 )
-#let thickhline = table.hline(stroke: 3 * default_rule_width + black)
-#let thickhlinea(..args) = table.hline(stroke: 3 * default_rule_width + black, ..args)
+#let hline = _hline(stroke: default_rule_width + black)
+#let hlinea(..args) = _hline(stroke: default_rule_width + black, ..args) // hline-args
+#let thickhline = _hline(stroke: 3 * default_rule_width + black)
+#let thickhlinea(..args) = _hline(stroke: 3 * default_rule_width + black, ..args)
 #let _cell_represents_hline(cell_content) = "stroke" in cell_content.fields()
 
 #let general_table(

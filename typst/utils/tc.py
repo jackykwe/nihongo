@@ -24,7 +24,7 @@ def main():
                     fragments = [re.sub(r"^\\SetCell\[c=(\d+)]\{.?,.?\} *(.*) *$", r"#rc(1, \1)[\2]", f) for f in fragments]
                     fragments = [re.sub(r"^\\SetCell\[r=(\d+),c=(\d+)]\{.?,.?\} *(.*) *$", r"#rc(\1, \2)[\3]", f) for f in fragments]
                     fragments = [f"[{f}]" for f in fragments]
-                    fragments = [re.sub(r"\\\\", r"#rb()", f) for f in fragments]
+                    fragments = [re.sub(r"\\\\", r"#lb()", f) for f in fragments]
                     # print(fragments)
                     # raise
                     newlines.append(", ".join(fragments) + ",\n")

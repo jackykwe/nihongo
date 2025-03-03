@@ -136,9 +136,9 @@
 //     \midrule
 //     #ruby[物][もの] & thing/object & \\
 //     こと & thing/matter & (#ruby[事][こと]) \\
-//     \<to nominalise\>こと & nominalising suffix & \suffix \\
-//     \<noun\>こと\<alias\> & \<noun\>, also known as \<alias\>, ... & \suffix \\
-//     \<advice\>ことだ & you should/it's important to \<advice\> & \suffix \\
+//     \<to nominalise\>こと & nominalising suffix & #suffix \\
+//     \<noun\>こと\<alias\> & \<noun\>, also known as \<alias\>, ... & #suffix \\
+//     \<advice\>ことだ & you should/it's important to \<advice\> & #suffix \\
 //     % & & \\
 //     \bottomrule
 // }
@@ -221,11 +221,11 @@
 //     #ruby[後][うし]ろ & back/behind/rear (physical) & #link("https://ja.hinative.com/questions/4072942")[[HN]] \\
 //     #ruby[後][あと] & behind (esp. abstract)/after/later & #link("https://ja.hinative.com/questions/4072942")[[HN]] \\
 //     #ruby[中][なか] & inside; middle/centre & \\
-//     〜#ruby[中][ちゅう] & during/in the middle of/while (something happening) & \suffix \\
+//     〜#ruby[中][ちゅう] & during/in the middle of/while (something happening) & #suffix \\
 //     % & & \\
 //     \midrule
 //     \midrule
-//     #ruby[東西南北][とう|ざい|なん|ぼく] & east, west, south and north (Japanese order) & \yojijukugo; #link("https://www.japanesewithanime.com/2017/03/north-south-east-west-in-japanese.html")[[JWA]] \\
+//     #ruby[東西南北][とう|ざい|なん|ぼく] & east, west, south and north (Japanese order) & #yojijukugo; #link("https://www.japanesewithanime.com/2017/03/north-south-east-west-in-japanese.html")[[JWA]] \\
 //     #ruby[東][ひがし] & east (cardinal direction) & #link("https://www.japanesewithanime.com/2017/03/north-south-east-west-in-japanese.html")[[JWA]] \\
 //     #ruby[西][にし] & west (cardinal direction) & #link("https://www.japanesewithanime.com/2017/03/north-south-east-west-in-japanese.html")[[JWA]] \\
 //     #ruby[南][みなみ] & south (cardinal direction) & #link("https://www.japanesewithanime.com/2017/03/north-south-east-west-in-japanese.html")[[JWA]] \\
@@ -255,7 +255,7 @@
 //     #ruby[下][くだ]り & downwards/downbound/descent & \\
 //     #ruby[戻][もど]り & return/backwards; return (computing) & \\
 //     #ruby[入][い]り & entrance/entry & \\
-//     \<containee\>#ruby[入][い]り & containing \<containee\> & \suffix \\
+//     \<containee\>#ruby[入][い]り & containing \<containee\> & #suffix \\
 //     % & & \\
 //     \midrule
 //     \midrule
@@ -272,7 +272,7 @@
 //     \midrule
 //     #ruby[以上][い|じょう] & the aforementioned & also an expression \\
 //     #ruby[以下][い|か] & the following & \\
-//     #ruby[以外][い|がい] & excluding/except for/apart from/other than/besides/in addition to & \suffix \\
+//     #ruby[以外][い|がい] & excluding/except for/apart from/other than/besides/in addition to & #suffix \\
 //     % & & \\
 //     \midrule
 //     \midrule
@@ -380,7 +380,7 @@
 //     \midrule
 //     #ruby[場所][ば|しょ] & place/location/spot & \\
 //     ところ & place/spot/scene/site; & (#ruby[所][ところ]) \\
-//     \<nn\>どころ & place/spot/scene/site; address; district/area/locality; space/room & (#ruby[所][ところ]); \suffix \\
+//     \<nn\>どころ & place/spot/scene/site; address; district/area/locality; space/room & (#ruby[所][ところ]); #suffix \\
 //     \<v present\>ところ & about to/on the verge of \<v\> & (#ruby[所][ところ]) \\
 //     \<v past\>ところ & just finished doing/was just doing/have just done \<v\> & (#ruby[所][ところ]) \\
 //     ポジション & position (pose/vacancy) & \\
@@ -490,7 +490,7 @@
 //     #ruby[壁][かべ] & wall/partition & \\
 //     #ruby[壁紙][かべ|がみ] & wallpaper/background image & \\
 //     #ruby[抱][だ]き#ruby[枕][まくら] & body/waifu/husbando pillow & \\
-//     #ruby[枕][まくら] & pillow & \suffix \\
+//     #ruby[枕][まくら] & pillow & #suffix \\
 //     #ruby[柱][はしら] & pillar/post; support/prop/mainstay & \\
 //     % & & \\
 //     \midrule
@@ -609,7 +609,7 @@
 //     #ruby[飴][あめ] & (hard) candy & \\
 //     #ruby[焼][や]き#ruby[肉][にく]/#ruby[焼肉][やき|にく] & Japanese dish of roasted/grilled meat (similar to KBBQ) & \\
 //     たこ#ruby[焼][や]き & octopus dumplings/takoyaki & \\
-//     しゃぶしゃぶ & hot pot dish where thinly sliced meaet is boiled quickly then dipped in sauce & \onomatopoeic \\
+//     しゃぶしゃぶ & hot pot dish where thinly sliced meaet is boiled quickly then dipped in sauce & #onomatopoeic \\
 //     デザート & dessert & \\
 //     のり & edible seaweed & (#rruby[海苔][のり])  \\
 //     #ruby[鍋物][なべ|もの] & stew/food cooked in a pot & \\
@@ -962,11 +962,11 @@
 //     \midrule
 //     #ruby[彼][かれ] & he/him & also a noun \\
 //     #ruby[彼女][かの|じょ] & she/her & also a noun \\
-//     さん & Mr./Mrs./Ms. & \suffix, honorific, familiar \\
-//     #ruby[殿][どの] & Mr./Mrs./Ms. (in letters to inferiors) & \suffix, polite \\
-//     ちゃん & familiar person & \suffix, familiar \\
-//     #ruby[君][くん] & Mr./male of equal or lower status & \suffix \\
-//     #ruby[君][くん] & Ms./female of equal or lower status & \suffix, formal, masculine \\
+//     さん & Mr./Mrs./Ms. & #suffix, honorific, familiar \\
+//     #ruby[殿][どの] & Mr./Mrs./Ms. (in letters to inferiors) & #suffix, polite \\
+//     ちゃん & familiar person & #suffix, familiar \\
+//     #ruby[君][くん] & Mr./male of equal or lower status & #suffix \\
+//     #ruby[君][くん] & Ms./female of equal or lower status & #suffix, formal, masculine \\
 //     % & & \\
 //     \midrule
 //     こっち/[こちら] & this person (closer to speaker) & equal or higher status; [formal] \\
@@ -1294,7 +1294,7 @@
 //     #ruby[宇宙飛行士][う|ちゅう|ひ|こう|し] & astronaut & \\
 //     #ruby[宇宙人][う|ちゅう|じん] & alien & \\
 //     〜#ruby[好][ず]き & love/affection for; enthusiast of; -phile & \\
-//     〜#ruby[嫌][ぎら]い & dislike/hatred/fear & \suffix \\
+//     〜#ruby[嫌][ぎら]い & dislike/hatred/fear & #suffix \\
 //     #ruby[話好][はなし|ず]き & talkative person; talkativeness & \\
 //     #ruby[酒好][さけ|ず]き & person who likes to drink; love/fondness for alcohol & \\
 //     #ruby[猫好][ねこ|ず]き & cat lover/ailurophile; love for cats & \\
@@ -1337,7 +1337,7 @@
 //     #ruby[畜生][ちく|しょう] & brute/bastard & \\
 //     #ruby[雑魚][ざ|こ] & unimportant person/a nobody & also in @tbl:appendix-vocab-nouns-organisms \\
 //     ライアー & liar & \\
-//     太〜 & fat/fatty & \prefix \\
+//     太〜 & fat/fatty & #prefix \\
 //     おやじ & middle-aged man/geezer & (#rruby[親父][おやじ]); familiar; also in @tbl:appendix-vocab-nouns-family \\
 //     % & & \\
 //     \bottomrule
@@ -1387,7 +1387,7 @@
 //     #ruby[男兄弟][おとこ|きょう|だい] & brothers/male siblings & \\
 //     #ruby[兄][あに]/[お#ruby[兄][にい]さん] & older brother; young man/buddy/fella/lad & [honorific] \\
 //     #ruby[兄貴][あに|き] & older brother; one's senior; man older than oneself & honorific \\
-//     ニキ & bro (e.g. #ruby[海外][かい|がい]ニキ) & \suffix; slang \\
+//     ニキ & bro (e.g. #ruby[海外][かい|がい]ニキ) & #suffix; slang \\
 //     #ruby[弟][おとうと][さん] & younger brother & [honorific] \\
 //     % & & \\
 //     \midrule
@@ -1438,9 +1438,9 @@
 //     #ruby[嘲笑][ちょう|しょう] & scornful laughter/ridicule/derision/sneer & also a verb \\
 //     あくび & yawn/yawning & (#rruby[欠伸][あくび]) \\
 //     キス & kiss & also a verb \\
-//     チュッ & light smooch/smacking sound & \onomatopoeic; also a verb, adverb \\
-//     チュー & kiss & \onomatopoeic; also a verb, adverb \\
-//     プチュッ & loud kiss/smooch; squirting/gushing & \onomatopoeic; also an adverb \\
+//     チュッ & light smooch/smacking sound & #onomatopoeic; also a verb, adverb \\
+//     チュー & kiss & #onomatopoeic; also a verb, adverb \\
+//     プチュッ & loud kiss/smooch; squirting/gushing & #onomatopoeic; also an adverb \\
 //     % & & \\
 //     \midrule
 //     #ruby[胸][むね] & chest/breast; mind/feelings & \\
@@ -1619,7 +1619,7 @@
 //     *Name* & *Meaning* & *Notes* \\
 //     \midrule
 //     #ruby[方][ほう] & direction/way/side/area (in particular direction); type/category; one side of comparison; square length & #link("https://ja.hinative.com/questions/78293")[[HN]] \\
-//     #ruby[方][かた] & method & \suffix; #link("https://ja.hinative.com/questions/78293")[[HN]]; also in @tbl:appendix-vocab-nouns-roles-and-occupations \\
+//     #ruby[方][かた] & method & #suffix; #link("https://ja.hinative.com/questions/78293")[[HN]]; also in @tbl:appendix-vocab-nouns-roles-and-occupations \\
 //     #ruby[仕方][し|かた] & way/method/means towards a goal & #link("https://dictionary.goo.ne.jp/thsrs/14732/meaning/m0u/\%E4\%BB\%95\%E6\%96\%B9/")[[goo]] \\
 //     #ruby[方法][ほう|ほう] & (a well-reasoned) way/method/process/procedure & #link("https://dictionary.goo.ne.jp/thsrs/14732/meaning/m0u/\%E4\%BB\%95\%E6\%96\%B9/")[[goo]] \\
 //     #ruby[手段][しゅ|だん] & tool needed for going towards a goal & #link("https://dictionary.goo.ne.jp/thsrs/14732/meaning/m0u/\%E4\%BB\%95\%E6\%96\%B9/")[[goo]] \\
@@ -1898,7 +1898,7 @@
 //     \midrule
 
 //     [お]#ruby[願][ねが]い & wish/desire/hope; request/favour & [polite]; also an interjection \\
-//     〜#ruby[願][ねがい] & written application & \suffix \\
+//     〜#ruby[願][ねがい] & written application & #suffix \\
 //     #ruby[感謝][かん|しゃ] & thanks/gratitude/appreciation & also a verb \\
 //     #ruby[希望][き|ぼう] & hope; expectation/wishes & \\
 //     #ruby[切望][せつ|ぼう] & earnest desire/eager hope/yearning & also a verb \\
@@ -2629,7 +2629,7 @@
 //     % & & \\
 //     \midrule
 //     \midrule
-//     #ruby[隠][かく]れ〜 & hidden/concealed/unknown/crypto- & \prefix \\
+//     #ruby[隠][かく]れ〜 & hidden/concealed/unknown/crypto- & #prefix \\
 //     #ruby[隠蔽][いん|ぺい] & covering up/concealment/hiding/suppression & also a verb \\
 //     #ruby[内緒][ない|しょ] & secret (in/out-group, personal level) & #link("https://ja.hinative.com/questions/6644230")[[HN]] \\
 //     #ruby[秘密][ひ|みつ] & secret (official/corporate/country) & childish; #link("https://ja.hinative.com/questions/6644230")[[HN]] \\
@@ -2837,9 +2837,9 @@
 //     \toprule
 //     *Name* & *Meaning* & *Notes* \\
 //     \midrule
-//     #ruby[第][だい]〜 & prefix for forming ordinal numbers & \prefix \\
-//     〜#ruby[過][す]ぎ & too much/over- (e.g. eating) & \suffix, also in @nouns-tbl:appendix-vocab-nouns-time \\
-//     超〜 & super-/ultra-/hyper-/extreme & \prefix \\
+//     #ruby[第][だい]〜 & prefix for forming ordinal numbers & #prefix \\
+//     〜#ruby[過][す]ぎ & too much/over- (e.g. eating) & #suffix, also in @nouns-tbl:appendix-vocab-nouns-time \\
+//     超〜 & super-/ultra-/hyper-/extreme & #prefix \\
 //     % & & \\
 //     \midrule
 //     \midrule
