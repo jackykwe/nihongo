@@ -1,5 +1,6 @@
-# nihongo
-日本語学習教材
+# 日本語学習教材
+
+`typst compile --input "now=$(date '+%y%m%d %H%M%S')" nihongo-gakushuu-kyouzai.typ` でPDFをとコンパイルする。
 
 ## Conversion from LaTeX to Typst
 
