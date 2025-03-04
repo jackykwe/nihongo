@@ -49,7 +49,23 @@ See @tbl:asdf-asdf.
   [Making progress :)],
   "tbl:asdf-asdf",
   [-], [], [], [], [#ruby[動][うご]く], [う], [to move; to stir/shift/shake/swing; to be influenced], [],
-  thickhline,
+  [#ruby[動][うご]かす], [う], [to move/shift/stir/budge/change position; to inspire/mobilise/deploy], [], [#ruby[動][うご]かす], [う], [to move/shift/stir/budge/change position; to inspire/mobilise/deploy], [],
+  thickhlinea(start: 1),
+  [#ruby[動][うご]かす/#ruby[動][うご]かす/#ruby[動][うご]かす/#ruby[動][うご]かす], [う], [to move/shift/stir/budge/change position; to inspire/mobilise/deploy], [], [#ruby[動][うご]く], [う], [to move; to stir/shift/shake/swing; to be influenced], [],
+  [#ruby[動][うご]かす], [う], [to move/shift/stir/budge/change position; to inspire/mobilise/deploy], [], [#ruby[動][うご]く], [う], [to move; to stir/shift/shake/swing; to be influenced], [],
+  [#ruby[動][うご]かす], [う], [to move/shift/stir/budge/change position; to inspire/mobilise/deploy], [], [#ruby[動][うご]かす], [う], [to move/shift/stir/budge/change position; to inspire/mobilise/deploy], [],
+)
+
+// @typstyle off
+#general_table(
+  [Making progress :)],
+  "tbl:asdf-asdf2",
+  (1fr,) * 8,
+  center,
+  scale_factor: 0.6,
+  [-], [], [], [], [#ruby[動][うご]く], [う], [to move; to stir/shift/shake/swing; to be influenced], [],
+  [#ruby[動][うご]かす], [う], [to move/shift/stir/budge/change position; to inspire/mobilise/deploy], [], [#ruby[動][うご]かす], [う], [to move/shift/stir/budge/change position; to inspire/mobilise/deploy], [],
+  thickhlinea(start: 1),
   [#ruby[動][うご]かす/#ruby[動][うご]かす/#ruby[動][うご]かす/#ruby[動][うご]かす], [う], [to move/shift/stir/budge/change position; to inspire/mobilise/deploy], [], [#ruby[動][うご]く], [う], [to move; to stir/shift/shake/swing; to be influenced], [],
   [#ruby[動][うご]かす], [う], [to move/shift/stir/budge/change position; to inspire/mobilise/deploy], [], [#ruby[動][うご]く], [う], [to move; to stir/shift/shake/swing; to be influenced], [],
   [#ruby[動][うご]かす], [う], [to move/shift/stir/budge/change position; to inspire/mobilise/deploy], [], [#ruby[動][うご]かす], [う], [to move/shift/stir/budge/change position; to inspire/mobilise/deploy], [],

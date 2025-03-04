@@ -1451,7 +1451,7 @@ For the modern eras (starting from 1868), each emperor corresponds to one era. E
 The eras are summarised in @tbl:modern-eras-in-the-japanese-regnal-calendar.
 
 // @typstyle off
-#general_table(
+#general_table_wider(
   [Modern eras in the Japanese regnal calendar.], // caption
   "tbl:modern-eras-in-the-japanese-regnal-calendar",  // label
   (0.6fr, 0.7fr, 1fr, 1fr, 1fr),  // column_sizes
@@ -1464,7 +1464,7 @@ The eras are summarised in @tbl:modern-eras-in-the-japanese-regnal-calendar.
   [#ruby[大正][たい|しょう] Taishō], [#rruby[嘉仁][よしひと] Yoshihito], [1912・明治４５・大正１], [T1--T15], [],
   [#ruby[昭和][しょう|わ] Shōwa], [#rruby[裕仁][ひろひと] Hirohito], [1926・大正１５・昭和１], [S1--S64], [1945 = 昭和２０],
   [#ruby[平成][へい|せい] Heisei], [#rruby[明仁][あきひと] Akihito], [1989・昭和６４・平成１], [H1--H31], [],
-  [#ruby[令和][れい|わ] Reiwa], [#rruby[徳仁][なるひと] Naruhito], [2019・平成３１・令和１], [R1--present (#current_regnal_year)], [2020 = 令和２#lb()current_regnal_year_explanation],
+  [#ruby[令和][れい|わ] Reiwa], [#rruby[徳仁][なるひと] Naruhito], [2019・平成３１・令和１], [R1--present (#current_regnal_year)], [2020 = 令和２#lb()#current_regnal_year_explanation],
   hline,
 )
 

@@ -19,7 +19,7 @@ Some general notes:
   (center, center, center, center, left),  // column_aligns
   scale_factor: 1,
   hline,
-  table.header[#rc(1, 2)[*平仮名*]][{*Hepburn*#lb()*romanisation*}][{*Keyboard*#lb()*command*}][*Mnemonic*],
+  table.header[#rc(1, 2)[*平仮名*]][*Hepburn*#lb()*romanisation*][*Keyboard*#lb()*command*][*Mnemonic*],
   hline,
   [あ], [#sansj[あ]], [a], [`a`], ["A" shape],
   [い], [#sansj[い]], [i], [`i`], [#underline[ee]l],

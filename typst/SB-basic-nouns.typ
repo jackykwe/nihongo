@@ -2,11 +2,6 @@
 #show: template // show everything rule (i.e. the entire document)
 #show: appendix("S", 2)
 
-// \documentclass[../nihongo-gakushuu-kyouzai-supplementary.tex]{subfiles}
-// \begin{document}
-// \appendix
-// \setcounter{section}{1}
-
 = Basic nouns <sec:appendix-basic-nouns>
 
 == Numbers

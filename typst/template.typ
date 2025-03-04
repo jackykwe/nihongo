@@ -205,6 +205,9 @@
 // ############### //
 
 #let default_rule_width = 1pt
+// Purpose of _hline is to enforce all possible fields of talbe.hline present.
+// In particular, start, end should be present for tricky calculation of colspans of hline
+// so as to provide spacing...
 #let _hline(..args) = table.hline(
   start: 0,
   end: none,
@@ -219,7 +222,8 @@
 #let thickhlinea(..args) = _hline(stroke: 3 * default_rule_width + black, ..args)
 #let _cell_represents_hline(cell_content) = "stroke" in cell_content.fields()
 
-#let general_table(
+#let _general_table(
+  y_inset,
   caption,
   label_str,
   column_sizes,
@@ -250,7 +254,7 @@
       caption: caption,
       table(
         columns: column_sizes,
-        inset: (x, y) => (x: 0.5em, y: 0.8em), // em will scale with font size, so no need scale factor here.
+        inset: (x, y) => (x: 0.5em, y: y_inset), // em will scale with font size, so no need scale factor here.
         align: column_aligns,
         ..cells,
       ),
@@ -258,6 +262,8 @@
     #label(label_str)
   ]
 }
+#let general_table(..args) = _general_table(0.6em, ..args)
+#let general_table_wider(..args) = _general_table(0.8em, ..args)
 
 #let verb_table(
   caption,
@@ -281,8 +287,25 @@
   while cells.len() >= 8 {
     let cell0 = cells.at(0)
     if _cell_represents_hline(cell0) {
-      let hline = cells.remove(0) // gotcha: pop removes from tail, not head of array
-      cells_final.push(table.hline(stroke: hline.stroke.thickness * scale_factor + hline.stroke.paint))
+      let hline = cells.remove(0) // gotcha: pop() removes from tail, not head of array
+      cells_final.push(
+        table.cell(
+          colspan: 8,
+          inset: hline.stroke.thickness * scale_factor / 4,
+        )[],
+      )
+      cells_final.push(
+        table.hline(
+          ..hline.fields(),
+          stroke: hline.stroke.thickness * scale_factor + hline.stroke.paint,
+        ),
+      )
+      cells_final.push(
+        table.cell(
+          colspan: 8,
+          inset: hline.stroke.thickness * scale_factor / 4,
+        )[],
+      )
       continue
     }
     let cell4 = cells.at(4)
@@ -314,7 +337,7 @@
       caption: caption,
       table(
         columns: (2fr, 1fr, 12fr, 5fr, 4fr, 1fr, 12fr, 3fr),
-        inset: (x, y) => (x: 0.5em, y: 0.8em), // em will scale with font size, so no need scale factor here.
+        inset: (x, y) => (x: 0.5em, y: 0.6em), // em will scale with font size, so no need scale factor here.
         align: (left, center, left, left, left, center, left, left),
         table.hline(stroke: rule_width + black),
         table.header(

@@ -357,7 +357,7 @@ Thus we can't use the passive voice as a marker for intransitivity. In fact, in 
 ]
 
 // @typstyle off
-#general_table(
+#general_table_wider(
   [Example transitive verbs and their intransitive counterparts.], // caption
   "tbl:transitive-intransitive-verbs",  // label
   4,  // column_sizes
