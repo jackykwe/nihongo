@@ -265,6 +265,94 @@
 #let general_table(..args) = _general_table(0.6em, ..args)
 #let general_table_wider(..args) = _general_table(0.8em, ..args)
 
+
+// Multirows break hline gutter hot-fix solution https://github.com/typst/typst/issues/4743
+#let _multirow_banned_table(
+  columns,
+  align,
+  scale_factor,
+  header_content,
+) = (
+  caption,
+  label_str,
+  ..cells,
+) => {
+  let rule_width = default_rule_width * scale_factor
+  let font_size = default_font_size * scale_factor
+  let num_columns = columns.len()
+
+  cells = cells.pos()
+  cells.insert(
+    0,
+    table.hline(stroke: default_rule_width + black),
+  ) // lines wrapping table content added here so that padding may be added to them
+  cells.push(
+    table.hline(stroke: default_rule_width + black),
+  ) // lines wrapping table content added here so that padding may be added to them
+  let cells_final = ()
+  while cells.len() > 0 {
+    if _cell_represents_hline(cells.at(0)) {
+      let hline = cells.remove(0) // gotcha: pop() removes from tail, not head of array
+      cells_final.push(
+        table.cell(
+          colspan: num_columns,
+          inset: hline.stroke.thickness * scale_factor / 4,
+        )[],
+      )
+      cells_final.push(
+        table.hline(
+          ..hline.fields(),
+          stroke: hline.stroke.thickness * scale_factor + hline.stroke.paint,
+        ),
+      )
+      cells_final.push(
+        table.cell(
+          colspan: num_columns,
+          inset: hline.stroke.thickness * scale_factor / 4,
+        )[],
+      )
+      continue
+    } else {
+      cells_final.push(cells.remove(0))
+    }
+  }
+  [
+    // #show table.cell: set text(font_size)
+    #set text(size: font_size)
+    #show math.equation: set text(size: font_size)
+    #set par(justify: false)
+
+    #show table.cell.where(y: 0): set text(weight: "bold") // Bold table first row
+    #show table.cell.where(y: 1): set text(weight: "bold") // Bold table second row
+
+    #figure(
+      caption: caption,
+      table(
+        columns: columns,
+        inset: (x, y) => (x: 0.5em, y: 0.6em), // em will scale with font size, so no need scale factor here.
+        align: align,
+        table.hline(stroke: rule_width + black),
+        table.header(..header_content),
+        // table.hline(stroke: rule_width + black),// lines wrapping table content added above instead so that padding may be added to them
+        ..cells_final,
+        // table.hline(stroke: rule_width + black),// lines wrapping table content added above instead so that padding may be added to them
+      ),
+    )
+    #label(label_str)
+  ]
+}
+#let basic_noun_table(
+  caption,
+  label_str,
+  ..cells,
+) = _multirow_banned_table(
+  (1fr, 5fr, 10fr, 10fr),
+  (center, left, left, left),
+  0.75,
+  ([], [*Name*], [*Meaning*], [*Notes*]),
+)(caption, label_str, ..cells)
+
+
 #let verb_table(
   caption,
   label_str,
@@ -283,6 +371,13 @@
   )
 
   cells = cells.pos()
+  cells.insert(
+    0,
+    table.hline(stroke: default_rule_width + black),
+  ) // lines wrapping table content added here so that padding may be added to them
+  cells.push(
+    table.hline(stroke: default_rule_width + black),
+  ) // lines wrapping table content added here so that padding may be added to them
   let cells_final = ()
   while cells.len() >= 8 {
     let cell0 = cells.at(0)
@@ -354,9 +449,9 @@
         ),
         table.hline(start: 0, end: 4, y: 1, stroke: rule_width + black),
         table.hline(start: 4, end: 8, y: 1, stroke: rule_width + black),
-        table.hline(stroke: rule_width + black),
+        // table.hline(stroke: rule_width + black), // lines wrapping table content added above instead so that padding may be added to them
         ..cells_final,
-        table.hline(stroke: rule_width + black),
+        // table.hline(stroke: rule_width + black), // lines wrapping table content added above instead so that padding may be added to them
       ),
     )
     #label(label_str)

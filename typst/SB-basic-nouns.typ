@@ -80,44 +80,30 @@
 
 
 == Counting (generic): つ
-// % Help: \SetCell[r=2,c=2]{c,m} \<content\>, \cmidrule[l]{3-4}
-// % Help: colspec: X[ratio, horizontal alignment] columns grow to fit width=\linewidth
-// %                  negative ratios: shrink to fit content and may not grow to full ratio
-// % Help: colspec: l/c/r columns do not grow
-// \longtabse[0.75]  % scale factor
-// {Nouns: counting (generic).}  % caption
-// {tbl:appendix-vocab-basic-nouns-counting-generic}  % label
-// {}  % outer specification options
-// {
-//     colspec={X[-1,c]X[-3,l]X[3,l]X[-3,l]},
-//     rowhead=1,
-//     % width=\linewidth,  % useful only with X columns
-// }  % inner specification options
-// {
-//     \toprule
-//     & *Name* & *Meaning* & *Notes* \\
-//     \midrule
-//     & いくつ & how many? & (#ruby[幾][いく]つ) \\
-//     & #ruby[一][ひと]つ/#ruby[１][ひと]つ & one item & \\
-//     & #ruby[二][ふた]つ/#ruby[２][ふた]つ & two items & \\
-//     & #ruby[三][みっ]つ/#ruby[３][みっ]つ & three items & \\
-//     & #ruby[四][よっ]つ/#ruby[４][よっ]つ & four items & \\
-//     & #ruby[五][いつ]つ/#ruby[５][いつ]つ & five items & \\
-//     & #ruby[六][むっ]つ/#ruby[６][むっ]つ & six items & \\
-//     & #ruby[七][なな]つ/#ruby[７][なな]つ & seven items & \\
-//     & #ruby[八][やっ]つ/#ruby[８][やっ]つ & eight items & \\
-//     & #ruby[九][ここの]つ/#ruby[９][ここの]つ & nine items & \\
-//     & #ruby[十][とお] & ten items & \\
-//     % & & & \\
-//     \midrule
-//     \midrule
-//     & #ruby[全部][ぜん|ぶ] & all/entire/whole/altogether & also an adverb \\
-//     & #ruby[以上][い|じょう] & and above & #suffix, also an expression \\
-//     & #ruby[以下][い|か] & and below/subpar & #suffix \\
-//     & #ruby[次][つぎ] & next & \\
-//     % & & & \\
-//     \bottomrule
-// }
+
+// @typstyle off
+#basic_noun_table(
+  [Nouns: counting (generic).],
+  "tbl:appendix-vocab-basic-nouns-counting-generic",
+  [], [いくつ], [how many?], [(#ruby[幾][いく]つ)],
+  [], [#ruby[一][ひと]つ/#ruby[１][ひと]つ], [one item], [],
+  [], [#ruby[二][ふた]つ/#ruby[２][ふた]つ], [two items], [],
+  [], [#ruby[三][みっ]つ/#ruby[３][みっ]つ], [three items], [],
+  [], [#ruby[四][よっ]つ/#ruby[４][よっ]つ], [four items], [],
+  [], [#ruby[五][いつ]つ/#ruby[５][いつ]つ], [five items], [],
+  [], [#ruby[六][むっ]つ/#ruby[６][むっ]つ], [six items], [],
+  [], [#ruby[七][なな]つ/#ruby[７][なな]つ], [seven items], [],
+  [], [#ruby[八][やっ]つ/#ruby[８][やっ]つ], [eight items], [],
+  [], [#ruby[九][ここの]つ/#ruby[９][ここの]つ], [nine items], [],
+  [], [#ruby[十][とお]], [ten items], [],
+  // [], [], [], [],
+  thickhline,
+  [], [#ruby[全部][ぜん|ぶ]], [all/entire/whole/altogether], [also an adverb],
+  [], [#ruby[以上][い|じょう]], [and above], [#suffix, also an expression],
+  [], [#ruby[以下][い|か]], [and below/subpar], [#suffix],
+  [], [#ruby[次][つぎ]], [next], [],
+  // [], [], [], [],
+)
 
 
 == Counting people: \ruby{人{にん}}
