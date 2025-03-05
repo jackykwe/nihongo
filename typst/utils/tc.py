@@ -28,6 +28,7 @@ def main():
                     # print(fragments)
                     # raise
                     newlines.append(", ".join(fragments) + ",\n")
+    newlines = [f"  {line}" for line in newlines]
     with open("tc.txt", "w") as f:
         f.writelines(newlines)
 

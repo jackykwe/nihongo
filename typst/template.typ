@@ -282,14 +282,18 @@
   let num_columns = columns.len()
 
   cells = cells.pos()
-  cells.insert(
-    0,
-    table.hline(stroke: default_rule_width + black),
-  ) // lines wrapping table content added here so that padding may be added to them
-  cells.push(
-    table.hline(stroke: default_rule_width + black),
-  ) // lines wrapping table content added here so that padding may be added to them
-  let cells_final = ()
+
+  let cells_final = (
+    //  Manual handling on top line above table content
+    table.hline(
+      ..hline.fields(),
+      stroke: default_rule_width * scale_factor + black,
+    ),
+    table.cell(
+      colspan: num_columns,
+      inset: default_rule_width * scale_factor / 4,
+    )[],
+  )
   while cells.len() > 0 {
     if _cell_represents_hline(cells.at(0)) {
       let hline = cells.remove(0) // gotcha: pop() removes from tail, not head of array
@@ -316,6 +320,18 @@
       cells_final.push(cells.remove(0))
     }
   }
+  cells_final.push(
+    table.cell(
+      colspan: num_columns,
+      inset: default_rule_width * scale_factor / 4,
+    )[],
+  )
+  cells_final.push(
+    table.hline(
+      ..hline.fields(),
+      stroke: default_rule_width * scale_factor + black,
+    ),
+  )
   [
     // #show table.cell: set text(font_size)
     #set text(size: font_size)
