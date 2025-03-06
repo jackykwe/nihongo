@@ -1,6 +1,6 @@
 #import "template.typ": * // import everything from template file
 #show: template // show everything rule (i.e. the entire document)
-#show: prefix("G")
+#show: section_prefix("G")
 
 = Special expressions <sec:special-expressions>
 

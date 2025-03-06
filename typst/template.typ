@@ -170,6 +170,7 @@
 #let mapsto = sym.arrow.r.bar
 #let neq = $cancel(=, angle: #45deg)$
 #let lb() = linebreak()
+#import "@preview/unify:0.7.1": num, qty
 
 
 // #################### //
@@ -189,7 +190,7 @@
 // ################## //
 // APPENDIX FUNCTIONS //
 // ################## //
-#let prefix(prefix_str) = body => {
+#let section_prefix(prefix_str) = body => {
   set heading(numbering: prefix_str + "1.1 ")
   body
 }
@@ -366,6 +367,26 @@
   (center, left, left, left),
   0.75,
   ([], [*Name*], [*Meaning*], [*Notes*]),
+)(caption, label_str, ..cells)
+#let interjection_and_expression_table(
+  caption,
+  label_str,
+  ..cells,
+) = _multirow_banned_table(
+  (5fr, 10fr, 5fr),
+  (left, left, left),
+  0.5,
+  ([*Expression*], [*Meaning*], [*Notes*]),
+)(caption, label_str, ..cells)
+#let noun_table(
+  caption,
+  label_str,
+  ..cells,
+) = _multirow_banned_table(
+  (5fr, 10fr, 5fr),
+  (left, left, left),
+  0.75,
+  ([*Noun*], [*Meaning*], [*Notes*]),
 )(caption, label_str, ..cells)
 
 

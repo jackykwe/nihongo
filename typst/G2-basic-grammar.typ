@@ -1,6 +1,6 @@
 #import "template.typ": * // import everything from template file
 #show: template // show everything rule (i.e. the entire document)
-#show: prefix("G")
+#show: section_prefix("G")
 
 = Basic grammar <sec:basic-grammar>
 This section will grant you an overview of basic grammatical structures. The vocabulary associated with this section is fragmented by nature and only present to illustrate the grammatical concepts; vocabulary required for day-to-day conversation is left to @sec:essential-grammar.

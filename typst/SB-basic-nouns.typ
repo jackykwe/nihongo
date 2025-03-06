@@ -8,7 +8,7 @@
 
 // @typstyle off
 #basic_noun_table(
-  [Nouns: numbers.], // caption
+  [Basic nouns: numbers.], // caption
   "tbl:appendix-vocab-basic-nouns-numbers", // label
   [], [#ruby[零][れい]/#ruby[０][れい]/#ruby[〇][れい]], [zero], [#link("https://www.nhk.or.jp/bunken/summary/kotoba/gimon/062.html")[[NHK]]; also: ゼロ/ (with 漢字 numerals)],
   [], [#ruby[一][いち]/#ruby[１][いち]/#ruby[壱][いち]], [one], [],
@@ -70,7 +70,7 @@
 
 // @typstyle off
 #basic_noun_table(
-  [Nouns: counting (generic).],
+  [Basic nouns: counting (generic).],
   "tbl:appendix-vocab-basic-nouns-counting-generic",
   [], [いくつ], [how many?], [(#ruby[幾][いく]つ)],
   [], [#ruby[一][ひと]つ/#ruby[１][ひと]つ], [one item], [],
@@ -99,7 +99,7 @@
 
 // @typstyle off
 #basic_noun_table(
-  [Nouns: counting people.], // caption
+  [Basic nouns: counting people.], // caption
   "tbl:appendix-vocab-basic-nouns-counting-people", // label
   [], [#ruby[何人][なん|にん]], [how many people?], [],
   [$bullet$], [#ruby[１人][ひと|り]], [one person; being alone/single], [],
@@ -127,7 +127,7 @@
 
 // @typstyle off
 #basic_noun_table(
-  [Nouns: counting bus/train stations.], // caption
+  [Basic nouns: counting bus/train stations.], // caption
   "tbl:appendix-vocab-basic-nouns-counting-bus-train-stations", // label
   [], [#ruby[何駅][なん|えき]], [how many stations?], [],
   [$bullet$], [#ruby[１駅][ひと|えき]], [one station], [],
@@ -153,7 +153,7 @@
 
 // @typstyle off
 #basic_noun_table(
-  [Nouns: counting age.], // caption
+  [Basic nouns: counting age.], // caption
   "tbl:appendix-vocab-basic-nouns-counting-age", // label
   [], [#ruby[何歳][なん|さい]], [how old?], [],
   [$bullet$], [#ruby[１歳未満][いっ|さい|み|まん]], [less than one year old], [e.g. 「〜の#ruby[乳児][にゅう|じ]」; #link("https://www.nhk.or.jp/bunken/summary/kotoba/gimon/062.html")[[NHK]]],
@@ -181,7 +181,7 @@
 
 // @typstyle off
 #basic_noun_table(
-  [Nouns: counting thin/flat things.], // caption
+  [Basic nouns: counting thin/flat things.], // caption
   "tbl:appendix-vocab-basic-nouns-counting-thin-flat-things", // label
   [], [#ruby[何枚][なん|まい]], [how many sheets/thin or flat things?], [],
   [], [#ruby[１枚][いち|まい]], [one sheet/thin or flat thing], [],
@@ -209,7 +209,7 @@
 
 // @typstyle off
 #basic_noun_table(
-  [Nouns: counting thin long things (bottles).], // caption
+  [Basic nouns: counting thin long things (bottles).], // caption
   "tbl:appendix-vocab-basic-nouns-counting-thin-long-things-bottles", // label
   [$bullet$], [#ruby[何本][なん|ぼん]], [how many thin long things?], [],
   [$bullet$], [#ruby[１本][いっ|ぽん]], [one thin long thing], [],
@@ -233,7 +233,7 @@
 
 // @typstyle off
 #basic_noun_table(
-  [Nouns: counting drinks (cups/glasses).], // caption
+  [Basic nouns: counting drinks (cups/glasses).], // caption
   "tbl:appendix-vocab-basic-nouns-counting-drinks-cups-glasses", // label
   [$bullet$], [#ruby[何杯][なん|ばい]], [how many drinks/cups/glasses?], [],
   [$bullet$], [#ruby[１杯][いっ|ぱい]], [one drink/cup/glass], [],
@@ -259,7 +259,7 @@
 
 // @typstyle off
 #basic_noun_table(
-  [Nouns: counting machines/vehicles.], // caption
+  [Basic nouns: counting machines/vehicles.], // caption
   "tbl:appendix-vocab-basic-nouns-counting-machines-vehicles", // label
   [], [#ruby[何台][なん|だい]], [how many machines?], [],
   [], [#ruby[１台][いち|だい]], [one machine], [],
@@ -285,7 +285,7 @@
 
 // @typstyle off
 #basic_noun_table(
-  [Nouns: counting books.], // caption
+  [Basic nouns: counting books.], // caption
   "tbl:appendix-vocab-basic-nouns-counting-books", // label
   [], [#ruby[何冊][なん|さつ]], [how many books?], [],
   [$bullet$], [#ruby[１冊][いっ|さつ]], [one book], [],
@@ -309,7 +309,7 @@
 
 // @typstyle off
 #basic_noun_table(
-  [Nouns: counting clothes.], // caption
+  [Basic nouns: counting clothes.], // caption
   "tbl:appendix-vocab-basic-nouns-counting-clothes", // label
   [], [#ruby[何着][なん|ちゃく]], [how many dresses?], [],
   [$bullet$], [#ruby[１着][いっ|ちゃく]], [one dress], [],
@@ -335,7 +335,7 @@
 
 // @typstyle off
 #basic_noun_table(
-  [Nouns: counting small things.], // caption
+  [Basic nouns: counting small things.], // caption
   "tbl:appendix-vocab-basic-nouns-counting-small-things", // label
   [], [#ruby[何個][なん|こ]], [how many small things?], [],
   [$bullet$], [#ruby[１個][いっ|こ]], [one small thing], [],
@@ -362,7 +362,7 @@
 
 // @typstyle off
 #basic_noun_table(
-  [Nouns: Nouns: counting shoes and socks.], // caption
+  [Basic nouns: Nouns: counting shoes and socks.], // caption
   "tbl:appendix-vocab-basic-nouns-counting-shoes-and-socks", // label
   [$bullet$], [#ruby[何足][なん|ぞく]], [how many pairs of shoes/socks?], [],
   [$bullet$], [#ruby[１足][いっ|そく]], [one pair of shoes/socks], [],
@@ -388,7 +388,7 @@
 
 // @typstyle off
 #basic_noun_table(
-  [Nouns: .], // caption
+  [Basic nouns: .], // caption
   "tbl:appendix-vocab-basic-nouns-", // label
   [$bullet$], [#ruby[何軒][なん|げん]], [how many houses?], [exception#super[2]; #link("https://miyagirh.exblog.jp/21478345/")[[myg]]],
   [$bullet$], [#ruby[１軒][いっ|けん]], [one house], [],
@@ -414,7 +414,7 @@
 
 // @typstyle off
 #basic_noun_table(
-  [Nouns: counting floors.], // caption
+  [Basic nouns: counting floors.], // caption
   "tbl:appendix-vocab-basic-nouns-counting-floors", // label
   [$bullet$], [#ruby[何階][なん|かい]/#ruby[何階][なん|がい]], [which floor?], [#ruby[階][かい] is special and can choose to rendaku, prefer first for uniformity; #link("https://miyagirh.exblog.jp/21478345/")[[myg]], #link("https://www.tofugu.com/japanese/japanese-counter-kai-floors/")[[TFG]]],
   [$bullet$], [#ruby[１階][いっ|かい]], [first floor (ground floor)], [],
@@ -440,7 +440,7 @@
 
 // @typstyle off
 #basic_noun_table(
-  [Nouns: counting locations.], // caption
+  [Basic nouns: counting locations.], // caption
   "tbl:appendix-vocab-basic-nouns-counting-locations", // label
   [], [#ruby[何箇所][なん|か|しょ]], [how many locations?], [],
   [$bullet$], [#ruby[１箇所][いっ|か|しょ]], [one location], [],
@@ -466,7 +466,7 @@
 
 // @typstyle off
 #basic_noun_table(
-  [Nouns: counting small animals.], // caption
+  [Basic nouns: counting small animals.], // caption
   "tbl:appendix-vocab-basic-nouns-counting-small-animals", // label
   [], [#ruby[何匹][なん|びき]], [how many small animals?], [],
   [$bullet$], [#ruby[１匹][いっ|ぴき]], [one small animal], [],
@@ -492,7 +492,7 @@
 
 // @typstyle off
 #basic_noun_table(
-  [Nouns: counting big animals.], // caption
+  [Basic nouns: counting big animals.], // caption
   "tbl:appendix-vocab-basic-nouns-counting-big-animals", // label
   [], [#ruby[何頭][なん|とう]], [how many big animals?], [],
   [$bullet$], [#ruby[１頭][いっ|とう]], [one big animal], [],
@@ -522,7 +522,7 @@ All birds are counted with #ruby[羽][わ] except _very_ big birds like ostriche
 
 // @typstyle off
 #basic_noun_table(
-  [Nouns: counting birds and bats.], // caption
+  [Basic nouns: counting birds and bats.], // caption
   "tbl:appendix-vocab-basic-nouns-counting-birds-bats", // label
   [], [#ruby[何羽][なん|わ]], [how many birds/bats?], [],
   [], [#ruby[１羽][いち|わ]], [one bird/bats], [],
@@ -548,7 +548,7 @@ All birds are counted with #ruby[羽][わ] except _very_ big birds like ostriche
 
 // @typstyle off
 #basic_noun_table(
-  [Nouns: counting years.], // caption
+  [Basic nouns: counting years.], // caption
   "tbl:appendix-vocab-basic-nouns-counting-years", // label
   [], [#ruby[何年][なん|ねん]], [how many years?/which year?], [],
   [], [#ruby[１年][いち|ねん]], [one year/first year], [],
@@ -574,7 +574,7 @@ The days of the week are named after the East Asian Seven Luminaries: the sun, t
 
 // @typstyle off
 #basic_noun_table(
-  [Nouns: Calendar months and days of a week.], // caption
+  [Basic nouns: Calendar months and days of a week.], // caption
   "tbl:appendix-vocab-basic-nouns-calendar-months-and-days-of-a-week", // label
   [], [#ruby[何月][なん|がつ]], [which month?], [],
   [], [#ruby[一月][いち|がつ]/#ruby[１月][いち|がつ]], [January], [],
@@ -612,7 +612,7 @@ The days of the week are named after the East Asian Seven Luminaries: the sun, t
 
 // @typstyle off
 #basic_noun_table(
-  [Nouns: counting months.], // caption
+  [Basic nouns: counting months.], // caption
   "tbl:appendix-vocab-basic-nouns-counting-months", // label
   [], [#ruby[何ヶ月][なん|か|げつ]/#textlightgrey[#ruby[何月][なん|つき]]], [how many months?], [],
   [$bullet$], [#ruby[１ヶ月][いっ|か|げつ]#textgrey[/#ruby[１月][ひと|つき]]], [one month], [#textgrey[#ruby[１月][ひと|つき]] is semi-archaic; #link("https://ja.hinative.com/questions/7822280")[[HN]]],
@@ -648,7 +648,7 @@ _Read the main article on #link("https://www.tofugu.com/japanese/japanese-counte
 
 // @typstyle off
 #basic_noun_table(
-  [Nouns: calendar days.], // caption
+  [Basic nouns: calendar days.], // caption
   "tbl:appendix-vocab-basic-nouns-calendar-days", // label
   [], [#ruby[何日][なん|にち]], [which day of month/which day?/how many days?], [],
   [$bullet$], [#rruby[１日][ついたち]/#ruby[１日][いっ|ぴ]], [first day of month], [#ruby[１日][いっ|ぴ] is sometimes used in business settings; #link("https://www.tofugu.com/japanese/japanese-counter-ka-nichi/")[[TFG]]],
@@ -697,7 +697,7 @@ _Read the main article on #link("https://www.tofugu.com/japanese/japanese-counte
 
 // @typstyle off
 #basic_noun_table(
-  [Nouns: ordinal days.], // caption
+  [Basic nouns: ordinal days.], // caption
   "tbl:appendix-vocab-basic-nouns-ordinal-days", // label
   [], [#ruby[何日][なん|にち]], [which day of month/which day?/how many days?], [],
   [], [#ruby[第何日][だい|なん|にち]], [which day?], [],
@@ -752,7 +752,7 @@ The 「〜#ruby[間][かん]」 suffix here means "interval". While typically dr
 
 // @typstyle off
 #basic_noun_table(
-  [Nouns: counting days.], // caption
+  [Basic nouns: counting days.], // caption
   "tbl:appendix-vocab-basic-nouns-counting-days", // label
   [], [#ruby[何日間][なん|にち|かん]], [which day of month/which day?/how many days?], [],
   [], [#ruby[１日間][いち|にち|かん]], [one day], [],
@@ -802,7 +802,7 @@ The 「〜#ruby[間][かん]」 suffix here means "interval". While typically dr
 
 // @typstyle off
 #basic_noun_table(
-  [Nouns: counting o'clocks and hours.], // caption
+  [Basic nouns: counting o'clocks and hours.], // caption
   "tbl:appendix-vocab-basic-nouns-counting-oclocks-and-hours", // label
   [], [#ruby[何時][なん|じ]], [which hour (of day)?], [],
   [], [#ruby[０時][れい|じ]], [zero o'clock (midnight/noon)], [],
@@ -870,7 +870,7 @@ _Read the main article on #link("https://www.tofugu.com/japanese/japanese-counte
 
 // @typstyle off
 #basic_noun_table(
-  [Nouns: counting minutes.], // caption
+  [Basic nouns: counting minutes.], // caption
   "tbl:appendix-vocab-basic-nouns-counting-minutes", // label
   [$bullet$], [#ruby[何分][なん|ぷん]], [how many minutes?], [],
   [$bullet$], [#ruby[１分][いっ|ぷん]], [one minute], [],
@@ -897,7 +897,7 @@ _Read the main article on #link("https://www.tofugu.com/japanese/japanese-counte
 
 // @typstyle off
 #basic_noun_table(
-  [Nouns: counting seconds.], // caption
+  [Basic nouns: counting seconds.], // caption
   "tbl:appendix-vocab-basic-nouns-counting-seconds", // label
   [], [#ruby[何秒][なん|びょう]], [how many seconds?], [],
   [], [#ruby[１秒][いち|びょう]], [one second], [],
@@ -921,7 +921,7 @@ _Read the main article on #link("https://www.tofugu.com/japanese/japanese-counte
 
 // @typstyle off
 #basic_noun_table(
-  [Nouns: counting positions.], // caption
+  [Basic nouns: counting positions.], // caption
   "tbl:appendix-vocab-basic-nouns-counting-positions", // label
   [], [#ruby[何番][なん|ばん]], [which position?], [],
   [], [#ruby[１番][いち|ばん]], [first position], [],
@@ -947,7 +947,7 @@ _Read the main article on #link("https://www.tofugu.com/japanese/japanese-counte
 
 // @typstyle off
 #basic_noun_table(
-  [Nouns: counting occurrences.], // caption
+  [Basic nouns: counting occurrences.], // caption
   "tbl:appendix-vocab-basic-nouns-counting-occurrences", // label
   [], [#ruby[何回][なん|かい]], [how many times?], [],
   [$bullet$], [#ruby[１回][いっ|かい]], [one time], [],
@@ -973,7 +973,7 @@ _Read the main article on #link("https://www.tofugu.com/japanese/japanese-counte
 
 // @typstyle off
 #basic_noun_table(
-  [Nouns: counting methods/ways/kinds.], // caption
+  [Basic nouns: counting methods/ways/kinds.], // caption
   "tbl:appendix-vocab-basic-nouns-counting-methods-ways-kinds", // label
   [], [#ruby[何通][なん|とお]り], [how many methods/ways/kinds?], [],
   [$bullet$], [#ruby[１通][いっ|とお]り], [one method/way/kind], [],
@@ -999,7 +999,7 @@ _Read the main article on #link("https://www.tofugu.com/japanese/japanese-counte
 
 // @typstyle off
 #basic_noun_table(
-  [Nouns: counting shots/hits/punches.], // caption
+  [Basic nouns: counting shots/hits/punches.], // caption
   "tbl:appendix-vocab-basic-nouns-counting-shots-hits-punches", // label
   [$bullet$], [#ruby[何発][なん|ぱつ]], [how many shots/hits/punches?], [],
   [$bullet$], [#ruby[１発][いっ|ぱつ]], [one shot/hit/punch], [],
