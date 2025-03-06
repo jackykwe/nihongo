@@ -271,7 +271,7 @@ _Read the main article for apologies on #link("https://www.clozemaster.com/blog/
   // [], [], [],
   thickhline,
   [ピコーン/ピューン/ピーン], [ding/ping], [#onomatopoeic; manga slang],
-  [バチコーン], [thwap/smack (used when winking)], [#link("https://dic.pixiv.net/a/\%E3\%83\%90\%E3\%83\%81\%E3\%82\%B3\%E3\%83\%BC\%E3\%83\%B3")[[PX]]],
+  [バチコーン], [thwap/smack (used when winking)], [#link("https://dic.pixiv.net/a/%E3%83%90%E3%83%81%E3%82%B3%E3%83%BC%E3%83%B3")[[PX]]],
   // [], [], [],
   thickhline,
   [#ruby[屁][へ]をひって#ruby[尻][しり]#ruby[窄][つぼ]め], [there is no use shutting the stable door after the horse has bolted ("squeezing your buttocks after you have farted")], [],

@@ -566,7 +566,7 @@ E.g. 久しぶりに彼の声が*聞く{こと/の}ができた*。 (For the fir
 
 === Potential to exist: あり\ruby{得{え/う}る} <sec:potential-to-exist-arieru>
 
-Interestingly, ある doesn't have a potential form. The round-about way of saying "possible to exist" is 「あることができる」, but this is almost never used. Instead, we use あり#ruby[得][え/う]る, which is actually a compound verb made from ある and the auxiliary verb #ruby[得][え]る (meaning to be able to), and not considered to be a potential form of ある by natives (see discussion on #link("https://www.reddit.com/r/LearnJapanese/comments/2wostw/potential\_\%E3\%81\%82\%E3\%82\%8B\_and\_\%E3\%81\%84\%E3\%82\%8B/")[Reddit]).
+Interestingly, ある doesn't have a potential form. The round-about way of saying "possible to exist" is 「あることができる」, but this is almost never used. Instead, we use あり#ruby[得][え/う]る, which is actually a compound verb made from ある and the auxiliary verb #ruby[得][え]る (meaning to be able to), and not considered to be a potential form of ある by natives (see discussion on #link("https://www.reddit.com/r/LearnJapanese/comments/2wostw/potential\_%E3%81%82%E3%82%8B\_and\_%E3%81%84%E3%82%8B/")[Reddit]).
 
 For 得, the unconjugated form can be read as う (slightly more formal and traditional), but all conjugated forms use え. #textorange[I'd stick to え always, the modern pronunciation (see discussion on #link("https://ja.hinative.com/question_summaries/109797")[[HN]]).]
 

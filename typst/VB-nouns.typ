@@ -199,7 +199,7 @@ The readings of the intercardinal and secondary intercardinals are simply the co
   [\<containee\>#ruby[入][い]り], [containing \<containee\>], [#suffix],
   // [], [], [],
   thickhline,
-  [[お]そば], [near/close/beside/vicinity/proximity/besides/while], [(#ruby[側][そば]/#ruby[傍][そば]); [honorific]; #link("https://dictionary.goo.ne.jp/word/\%E5\%81\%B4\_\%28\%E3\%81\%9D\%E3\%81\%B0\%29/")[[goo]]],
+  [[お]そば], [near/close/beside/vicinity/proximity/besides/while], [(#ruby[側][そば]/#ruby[傍][そば]); [honorific]; #link("https://dictionary.goo.ne.jp/word/%E5%81%B4\_%28%E3%81%9D%E3%81%B0%29/")[[goo]]],
   // [], [], [],
   hline,
   [#ruby[遠回][とお|まわ]り], [detour/roundabout way], [],
@@ -249,11 +249,11 @@ The readings of the intercardinal and secondary intercardinals are simply the co
   thickhline,
   [#ruby[始発][し|はつ]], [first departure/train/bus (of the day)], [],
   [#ruby[始電][し|でん]], [first train], [(abbreviation of #ruby[始発電車][し|はつ|でん|しゃ])],
-  [#ruby[終発][しゅう|はつ]], [last departure/train/bus (of the day)], [#link("https://ja.wikipedia.org/wiki/\%E7\%B5\%82\%E9\%9B\%BB")[[Wiki]]],
-  [#ruby[最後列車][さい|ご|れっ|しゃ]], [last train (of the day)], [#link("https://ja.wikipedia.org/wiki/\%E7\%B5\%82\%E9\%9B\%BB")[[Wiki]]],
-  [#ruby[最終電車][さい|しゅう|でん|しゃ]], [last train (of the day)], [#link("https://ja.wikipedia.org/wiki/\%E7\%B5\%82\%E9\%9B\%BB")[[Wiki]]],
-  [#ruby[終車][しゅう|しゃ]], [last train/bus (of the day)], [(abbreviation of #ruby[終発電車][しゅう|はつ|でん|しゃ]); #link("https://ja.wikipedia.org/wiki/\%E7\%B5\%82\%E9\%9B\%BB")[[Wiki]]],
-  [#ruby[終電][しゅう|でん]], [last train (of the day)], [#link("https://ja.wikipedia.org/wiki/\%E7\%B5\%82\%E9\%9B\%BB")[[Wiki]]],
+  [#ruby[終発][しゅう|はつ]], [last departure/train/bus (of the day)], [#link("https://ja.wikipedia.org/wiki/%E7%B5%82%E9%9B%BB")[[Wiki]]],
+  [#ruby[最後列車][さい|ご|れっ|しゃ]], [last train (of the day)], [#link("https://ja.wikipedia.org/wiki/%E7%B5%82%E9%9B%BB")[[Wiki]]],
+  [#ruby[最終電車][さい|しゅう|でん|しゃ]], [last train (of the day)], [#link("https://ja.wikipedia.org/wiki/%E7%B5%82%E9%9B%BB")[[Wiki]]],
+  [#ruby[終車][しゅう|しゃ]], [last train/bus (of the day)], [(abbreviation of #ruby[終発電車][しゅう|はつ|でん|しゃ]); #link("https://ja.wikipedia.org/wiki/%E7%B5%82%E9%9B%BB")[[Wiki]]],
+  [#ruby[終電][しゅう|でん]], [last train (of the day)], [#link("https://ja.wikipedia.org/wiki/%E7%B5%82%E9%9B%BB")[[Wiki]]],
   // [], [], [],
   thickhline,
   [#ruby[急][いそ]ぎ], [haste/hurry/expedition/speed/dispatch], [],
@@ -321,8 +321,8 @@ The readings of the intercardinal and secondary intercardinals are simply the co
   [#ruby[橋][はし]], [bridge], [],
   // [], [], [],
   thickhline,
-  [#ruby[家][いえ]], [house (physical entity)], [neutral, #link("https://japanese.stackexchange.com/questions/3726/what-is-the-difference-between-\%E3\%81\%84\%E3\%81\%88-and-\%E3\%81\%86\%E3\%81\%A1")[[SE]]],
-  [[お]うち], [one's home/house/family/household (of speaker, by default)], [#link("https://japanese.stackexchange.com/questions/3726/what-is-the-difference-between-\%E3\%81\%84\%E3\%81\%88-and-\%E3\%81\%86\%E3\%81\%A1")[[SE]], also a pronoun, [honorific]],
+  [#ruby[家][いえ]], [house (physical entity)], [neutral, #link("https://japanese.stackexchange.com/questions/3726/what-is-the-difference-between-%E3%81%84%E3%81%88-and-%E3%81%86%E3%81%A1")[[SE]]],
+  [[お]うち], [one's home/house/family/household (of speaker, by default)], [#link("https://japanese.stackexchange.com/questions/3726/what-is-the-difference-between-%E3%81%84%E3%81%88-and-%E3%81%86%E3%81%A1")[[SE]], also a pronoun, [honorific]],
   [#ruby[部屋][へ|や]], [room], [],
   [#ruby[台所][だい|どころ]], [kitchen], [also: キッチン],
   [#ruby[階段][かい|だん]], [stairs/stairway/staircase], [],
@@ -802,7 +802,7 @@ Regarding the こそあど#ruby[言葉][こと|ば]:
   [アレ], [hesitant reference/leave it up to listener to interpret], [used in gossip],
   // [], [], [],
   thickhline,
-  [いつ], [when], [(#rruby[何時][いつ]; $\neq$ #ruby[何時][なん|じ])],
+  [いつ], [when], [(#rruby[何時][いつ]; $neq$ #ruby[何時][なん|じ])],
   [いつか], [sometime], [(#rruby[何時][いつ]か)],
   [いつも], [always/never], [(#rruby[何時][いつ]も)],
   [いつでも], [anytime], [(#rruby[何時][いつ]でも)],
@@ -926,7 +926,7 @@ Regarding the こそあど#ruby[言葉][こと|ば]:
   [#ruby[女子][じょ|し]], [woman/girl], [],
   [#ruby[男][おとこ]], [make/man], [],
   [#ruby[男子][だん|し]], [man/boy], [],
-  [#ruby[子][こ]ども], [child], [#ruby[子供][こ|ども] may be offensive; #link("https://www.reddit.com/r/LearnJapanese/comments/hkwop3/\%E5\%AD\%90\%E4\%BE\%9B\_vs\_\%E5\%AD\%90\%E3\%81\%A9\%E3\%82\%82_advice/")[[r]]; also in @tbl:appendix-vocab-nouns-family],
+  [#ruby[子][こ]ども], [child], [#ruby[子供][こ|ども] may be offensive; #link("https://www.reddit.com/r/LearnJapanese/comments/hkwop3/%E5%AD%90%E4%BE%9B\_vs\_%E5%AD%90%E3%81%A9%E3%82%82_advice/")[[r]]; also in @tbl:appendix-vocab-nouns-family],
   [#rruby[大人][おとな]], [adult/grown-up], [],
   // [], [], [],
   thickhline,
@@ -1255,9 +1255,9 @@ Regarding the こそあど#ruby[言葉][こと|ば]:
   "tbl:appendix-vocab-nouns-production", // label
   [#ruby[方][ほう]], [direction/way/side/area (in particular direction); type/category; one side of comparison; square length], [#link("https://ja.hinative.com/questions/78293")[[HN]]],
   [#ruby[方][かた]], [method], [#suffix; #link("https://ja.hinative.com/questions/78293")[[HN]]; also in @tbl:appendix-vocab-nouns-roles-and-occupations],
-  [#ruby[仕方][し|かた]], [way/method/means towards a goal], [#link("https://dictionary.goo.ne.jp/thsrs/14732/meaning/m0u/\%E4\%BB\%95\%E6\%96\%B9/")[[goo]]],
-  [#ruby[方法][ほう|ほう]], [(a well-reasoned) way/method/process/procedure], [#link("https://dictionary.goo.ne.jp/thsrs/14732/meaning/m0u/\%E4\%BB\%95\%E6\%96\%B9/")[[goo]]],
-  [#ruby[手段][しゅ|だん]], [tool needed for going towards a goal], [#link("https://dictionary.goo.ne.jp/thsrs/14732/meaning/m0u/\%E4\%BB\%95\%E6\%96\%B9/")[[goo]]],
+  [#ruby[仕方][し|かた]], [way/method/means towards a goal], [#link("https://dictionary.goo.ne.jp/thsrs/14732/meaning/m0u/%E4%BB%95%E6%96%B9/")[[goo]]],
+  [#ruby[方法][ほう|ほう]], [(a well-reasoned) way/method/process/procedure], [#link("https://dictionary.goo.ne.jp/thsrs/14732/meaning/m0u/%E4%BB%95%E6%96%B9/")[[goo]]],
+  [#ruby[手段][しゅ|だん]], [tool needed for going towards a goal], [#link("https://dictionary.goo.ne.jp/thsrs/14732/meaning/m0u/%E4%BB%95%E6%96%B9/")[[goo]]],
   // [], [], [],
   hline,
   [#ruby[使][つか]い#ruby[方][かた]], [way of using something/how to use something], [],
@@ -1361,7 +1361,7 @@ Regarding the こそあど#ruby[言葉][こと|ば]:
   // [], [], [],
   hline,
   [メンバ[ー]シップ], [membership], [],
-  [#ruby[登録][とう|ろく]], [presence in register/records; registration/subscription (YouTube)], [also a verb; #link("https://dictionary.goo.ne.jp/word/\%e7\%99\%bb\%e9\%8c\%b2/")[[goo]]],
+  [#ruby[登録][とう|ろく]], [presence in register/records; registration/subscription (YouTube)], [also a verb; #link("https://dictionary.goo.ne.jp/word/%e7%99%bb%e9%8c%b2/")[[goo]]],
   [#ruby[入会][にゅう|かい]], [enrolment/admission into a club/society/mailing list], [also a verb; #link("https://ja.hinative.com/questions/22502664")[[HN]]],
   [#ruby[加入][か|にゅう]], [becoming a member of (e.g. a group/project)], [also a verb; #link("https://ja.hinative.com/questions/22502664")[[HN]]],
   [#ruby[退会][たい|かい]], [withdrawal/resignation from a club/society/mailing list], [also a verb],
@@ -1670,6 +1670,8 @@ Regarding the こそあど#ruby[言葉][こと|ば]:
 
 _Read the main article on #link("https://cotoacademy.com/colors-japanese-use-japanese-color-words/")[CTA]._
 
+Only four colours were recognised as basic colours in ancient Japan: red, blue, white, black. Blue and green used to be both referred to as #ruby[青][あお].
+
 Colours are often used as labels, together with the の particle.
 
 // @typstyle off
@@ -1746,7 +1748,7 @@ Colours are often used as labels, together with the の particle.
   [ハート#ruby[型][がた]], [heart shape (mold)], [],
   // [], [], [],
   hline,
-  [#rruby[八重][やえ]], [overlapping/multilayered/doubled (e.g. of flower petals)], [#link("https://dictionary.goo.ne.jp/word/\%E5\%85\%AB\%E9\%87\%8D/")[[goo]], #link("https://ja.wikipedia.org/wiki/\%E5\%85\%AB\%E9\%87\%8D")[[Wiki]]],
+  [#rruby[八重][やえ]], [overlapping/multilayered/doubled (e.g. of flower petals)], [#link("https://dictionary.goo.ne.jp/word/%E5%85%AB%E9%87%8D/")[[goo]], #link("https://ja.wikipedia.org/wiki/%E5%85%AB%E9%87%8D")[[Wiki]]],
   // [], [], [],
 )
 

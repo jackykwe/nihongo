@@ -388,6 +388,16 @@
   0.75,
   ([*Noun*], [*Meaning*], [*Notes*]),
 )(caption, label_str, ..cells)
+#let adjective_table(
+  caption,
+  label_str,
+  ..cells,
+) = _multirow_banned_table(
+  (3fr, 1fr, 10fr, 6fr),
+  (left, left, left, left),
+  0.75,
+  ([*Adjective*], [*#ruby[類][るい]*], [*Meaning*], [*Notes*]),
+)(caption, label_str, ..cells)
 
 
 #let verb_table(

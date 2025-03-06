@@ -93,10 +93,10 @@
 // % & & & & & & & \\
 // \midrule
 // \midrule
-// #ruby[吐][は]く & う & to expel from mouth (breathe/spit/vomit) & #link("https://dictionary.goo.ne.jp/thsrs/380/meaning/m0u/\%E5\%90\%90\%E3\%81\%8F/")[[goo]] & - & & & \\
+// #ruby[吐][は]く & う & to expel from mouth (breathe/spit/vomit) & #link("https://dictionary.goo.ne.jp/thsrs/380/meaning/m0u/%E5%90%90%E3%81%8F/")[[goo]] & - & & & \\
 // つく & う & to sigh; to tell a lie; to use foul language (all other cases, use #ruby[吐][は]く) & (#ruby[吐][つ]く); #link("https://ja.hinative.com/questions/12041260")[[HN]] & - & & & \\
 // #ruby[嘘][うそ]をつく & う & to tell a lie & & - & & & \\
-// #ruby[吹][ふ]く & う & to blow air through pursed lips & #link("https://dictionary.goo.ne.jp/thsrs/380/meaning/m0u/\%E5\%90\%90\%E3\%81\%8F/")[[goo]] & - & & & \\
+// #ruby[吹][ふ]く & う & to blow air through pursed lips & #link("https://dictionary.goo.ne.jp/thsrs/380/meaning/m0u/%E5%90%90%E3%81%8F/")[[goo]] & - & & & \\
 // % & & & & & & & \\
 // \midrule
 // \midrule
@@ -168,14 +168,14 @@
 // % & & & & & & & \\
 // \midrule
 // \midrule
-// ？ & & & & #ruby[上][のぼ]る & う & to ascend/go up/go upwards (focus on process) & #link("https://dictionary.goo.ne.jp/word/\%E4\%B8\%8A\%E3\%82\%8B/")[[goo]]\\
-// ？ & & & & #ruby[登][のぼ]る & う & to go to a higher place & #link("https://dictionary.goo.ne.jp/word/\%E4\%B8\%8A\%E3\%82\%8B/")[[goo]] \\
-// ？ & & & & #ruby[昇][のぼ]る & う & to rise (sun); be promoted in rank & #link("https://dictionary.goo.ne.jp/word/\%E4\%B8\%8A\%E3\%82\%8B/")[[goo]] \\
+// ？ & & & & #ruby[上][のぼ]る & う & to ascend/go up/go upwards (focus on process) & #link("https://dictionary.goo.ne.jp/word/%E4%B8%8A%E3%82%8B/")[[goo]]\\
+// ？ & & & & #ruby[登][のぼ]る & う & to go to a higher place & #link("https://dictionary.goo.ne.jp/word/%E4%B8%8A%E3%82%8B/")[[goo]] \\
+// ？ & & & & #ruby[昇][のぼ]る & う & to rise (sun); be promoted in rank & #link("https://dictionary.goo.ne.jp/word/%E4%B8%8A%E3%82%8B/")[[goo]] \\
 // \vit #ruby[上][あ]げる & る & to raise; to do up (one's hair); to fly (kite)/launch (fireworks); to land (a boat); to show someone in/away; to enrol (school) & & #ruby[上][あ]がる & う & to rise (focus on destination); to enter (from outside); to enrol/promote (school); to come ashore; to lift (rain); to spoil/die (e.g. battery) & #link("https://dictionary.goo.ne.jp/thsrs/15966/meaning/m1u/")[[goo]], #link("https://hugkum.sho.jp/582833")[[HK]] \\
 // #ruby[持][も]ち#ruby[上][あ]げる & る & to elevate/raise/lift up & & - & & & \\
 // \vit #ruby[乗][の]せる & る & to pick up passenger/load goods & & #ruby[乗][の]る & う & to board/embark & \\
 // #ruby[拾][ひろ]う & う & to pick up (item); book a taxi & & - & & & \\
-// \vit #ruby[起][お]こす & う & to make upright/wake up & #link("https://dictionary.goo.ne.jp/word/\%E8\%B5\%B7\%E3\%81\%99/")[[goo]] & #ruby[起][お]きる & る & to rise/wake up; to occur (esp. unfavourable incidents) & \\
+// \vit #ruby[起][お]こす & う & to make upright/wake up & #link("https://dictionary.goo.ne.jp/word/%E8%B5%B7%E3%81%99/")[[goo]] & #ruby[起][お]きる & る & to rise/wake up; to occur (esp. unfavourable incidents) & \\
 // % & & & & & & & \\
 // \midrule
 // \vit かける & る & to hang up/let hang/suspend from/hoist/raise (e.g. coat/painting) & (#ruby[掛][か]ける) & かかる & う & to hang & (#ruby[掛][か]かる) \\
@@ -421,9 +421,9 @@
 // \SetCell[c=4]{c,m} *Transitive* & & & & \SetCell[c=4]{c,m} *Intransitive* & & & \\ \cmidrule[r]{1-4} \cmidrule[l]{5-8}
 // *Action* & *Cat.* & *Meaning* & *Notes* & *Action* & *Cat.* & *Meaning* & *Notes* \\
 // \midrule
-// #ruby[作][つく]る & う & to make/prepare (food)/grow (agriculture)/cultivate (people) & #link("https://dictionary.goo.ne.jp/word/\%E4\%BD\%9C\%E3\%82\%8B")[[goo]] & - & & & \\
-// #ruby[造][つく]る & う & to construct (large-scale buildings, manufacturing) & #link("https://dictionary.goo.ne.jp/word/\%E4\%BD\%9C\%E3\%82\%8B")[[goo]] & - & & & \\
-// #ruby[創][つく]る & う & to create/compose (artistic)/start a business & #link("https://dictionary.goo.ne.jp/word/\%E4\%BD\%9C\%E3\%82\%8B")[[goo]] & - & & & \\
+// #ruby[作][つく]る & う & to make/prepare (food)/grow (agriculture)/cultivate (people) & #link("https://dictionary.goo.ne.jp/word/%E4%BD%9C%E3%82%8B")[[goo]] & - & & & \\
+// #ruby[造][つく]る & う & to construct (large-scale buildings, manufacturing) & #link("https://dictionary.goo.ne.jp/word/%E4%BD%9C%E3%82%8B")[[goo]] & - & & & \\
+// #ruby[創][つく]る & う & to create/compose (artistic)/start a business & #link("https://dictionary.goo.ne.jp/word/%E4%BD%9C%E3%82%8B")[[goo]] & - & & & \\
 // % & & & & & & & \\
 // \midrule
 // % cooking etc & & & & & & & \\
@@ -486,7 +486,7 @@
 // - & & & & #ruby[引退][いん|たい]する & E & to retire (from the workforce) & \\
 // % & & & & & & & \\
 // \midrule
-// #ruby[登録][とう|ろく]する & E & to be entered into a register/to register/subscribe (YouTube) & #link("https://dictionary.goo.ne.jp/word/\%e7\%99\%bb\%e9\%8c\%b2/")[[goo]] & & & & \\
+// #ruby[登録][とう|ろく]する & E & to be entered into a register/to register/subscribe (YouTube) & #link("https://dictionary.goo.ne.jp/word/%e7%99%bb%e9%8c%b2/")[[goo]] & & & & \\
 // - & & & & #ruby[入会][にゅう|かい]する & E & to enrol/admit into a club/society/mailing list & #link("https://ja.hinative.com/questions/22502664")[[HN]] \\
 // - & & & & #ruby[加入][か|にゅう]する & E & to join a group/project & #link("https://ja.hinative.com/questions/22502664")[[HN]] \\
 // - & & & & #ruby[退会][たい|かい]する & E & to withdraw/resign from a club/society/mailing list & \\
@@ -546,11 +546,11 @@
 // % & & & & & & & \\
 // \midrule
 // \midrule
-// #ruby[逃][に]がす & う & to miss/fail to catch (more physical); to set free/let go/release (physical) & #link("https://dictionary.goo.ne.jp/thsrs/1605/meaning/m0u/\%E9\%80\%83\%E3\%81\%8C\%E3\%81\%99/")[[goo]] & #ruby[逃][にげ]げる & る & to flee/escape/get away/avoid (danger/responsibility) & \\
-// #ruby[逃][のが]す & う & to miss/fail to catch (more abstract); to put out of reach (abstract) & #link("https://dictionary.goo.ne.jp/thsrs/1605/meaning/m0u/\%E9\%80\%83\%E3\%81\%8C\%E3\%81\%99/")[[goo]] & #ruby[逃][のが]れる & る & to escape & \\
+// #ruby[逃][に]がす & う & to miss/fail to catch (more physical); to set free/let go/release (physical) & #link("https://dictionary.goo.ne.jp/thsrs/1605/meaning/m0u/%E9%80%83%E3%81%8C%E3%81%99/")[[goo]] & #ruby[逃][にげ]げる & る & to flee/escape/get away/avoid (danger/responsibility) & \\
+// #ruby[逃][のが]す & う & to miss/fail to catch (more abstract); to put out of reach (abstract) & #link("https://dictionary.goo.ne.jp/thsrs/1605/meaning/m0u/%E9%80%83%E3%81%8C%E3%81%99/")[[goo]] & #ruby[逃][のが]れる & る & to escape & \\
 // \<v stem\>#ruby[逃][のが]す & う & to fail to \<v stem\> & #aux & & & & \\
-// #ruby[取][と]り#ruby[逃][に]がす & う & to try and catch but fail & #link("https://dictionary.goo.ne.jp/thsrs/1605/meaning/m0u/\%E9\%80\%83\%E3\%81\%8C\%E3\%81\%99/")[[goo]] & - & & & \\
-// #ruby[逸][いっ]する & E & to miss/deviate from (abstract only; chance/right track) & #link("https://dictionary.goo.ne.jp/thsrs/1605/meaning/m0u/\%E9\%80\%83\%E3\%81\%8C\%E3\%81\%99/")[[goo]] & - & & & \\
+// #ruby[取][と]り#ruby[逃][に]がす & う & to try and catch but fail & #link("https://dictionary.goo.ne.jp/thsrs/1605/meaning/m0u/%E9%80%83%E3%81%8C%E3%81%99/")[[goo]] & - & & & \\
+// #ruby[逸][いっ]する & E & to miss/deviate from (abstract only; chance/right track) & #link("https://dictionary.goo.ne.jp/thsrs/1605/meaning/m0u/%E9%80%83%E3%81%8C%E3%81%99/")[[goo]] & - & & & \\
 // % & & & & & & & \\
 // \midrule
 // #ruby[避][さ]ける & る & to avoid (physical/situation/question/responsibility) & & - & & & \\
@@ -914,9 +914,9 @@
 // \midrule
 // \midrule
 // #ruby[汗][あせ]をかく & う & to perspire/sweat & (#ruby[汗][あせ]を#ruby[掻][か]く) & - & & & \\
-// - & & & & #ruby[疲][つか]れる & る & to become tired/fatigued/exhausted (physical/mental); to become worn out (object overuse) & #link("https://dictionary.goo.ne.jp/thsrs/1411/meaning/m0u/\%E7\%96\%B2\%E3\%82\%8C\%E3\%82\%8B/")[[goo]] \\
+// - & & & & #ruby[疲][つか]れる & る & to become tired/fatigued/exhausted (physical/mental); to become worn out (object overuse) & #link("https://dictionary.goo.ne.jp/thsrs/1411/meaning/m0u/%E7%96%B2%E3%82%8C%E3%82%8B/")[[goo]] \\
 // - & & & & #ruby[疲労][ひ|ろう]する & E & to be fatigued/exhausted/tired & \\
-// - & & & & くたびれる & る & to become tired/exhausted/weary (physical); to become worn out (object overuse) & (#rruby[草臥][くたび]れる); #link("https://dictionary.goo.ne.jp/thsrs/1411/meaning/m0u/\%E7\%96\%B2\%E3\%82\%8C\%E3\%82\%8B/")[[goo]] \\
+// - & & & & くたびれる & る & to become tired/exhausted/weary (physical); to become worn out (object overuse) & (#rruby[草臥][くたび]れる); #link("https://dictionary.goo.ne.jp/thsrs/1411/meaning/m0u/%E7%96%B2%E3%82%8C%E3%82%8B/")[[goo]] \\
 // - & & & & バテる & る & to be exhausted & slang \\
 // かく & う & to scratch; to perspire & (#ruby[掻][か]く) & - & & & \\
 // % & & & & & & & \\

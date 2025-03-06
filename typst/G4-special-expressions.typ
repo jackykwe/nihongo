@@ -159,7 +159,7 @@ E.g. あいつに二時間も*待たされた*#super[待たせられた]。 (I w
 
 _Read the article chain starting from #link("https://www.tomojuku.com/blog/passive/")[[TMJK1]]._
 
-_This website is a teachers' reference, and I obtained it from a #link("https://www.quora.com/Can-we-use-\%E8\%87\%AA\%E5\%8B\%95\%E8\%A9\%9E-verbs-in-passive-\%E5\%8F\%97\%E8\%BA\%AB\%E5\%BD\%A2-I-am-learning-Japanese-N4-level-and-it-is-too-difficult-for-me-to-understand-because-in-English-there-is-no-passive-form-for/answer/Badolo")[Quora answer]. For the interest of time and for the sake of not losing focus on the main task at hand (learning how passivisation works in Japanese), I'll be taking notes after translating the website. I hope that one day I'll be able to read such websites directly without the help of translation. What's holding me back at the moment is lacking a fair bit of grammar knowledge and a lot of vocabulary knowledge..._
+_This website is a teachers' reference, and I obtained it from a #link("https://www.quora.com/Can-we-use-%E8%87%AA%E5%8B%95%E8%A9%9E-verbs-in-passive-%E5%8F%97%E8%BA%AB%E5%BD%A2-I-am-learning-Japanese-N4-level-and-it-is-too-difficult-for-me-to-understand-because-in-English-there-is-no-passive-form-for/answer/Badolo")[Quora answer]. For the interest of time and for the sake of not losing focus on the main task at hand (learning how passivisation works in Japanese), I'll be taking notes after translating the website. I hope that one day I'll be able to read such websites directly without the help of translation. What's holding me back at the moment is lacking a fair bit of grammar knowledge and a lot of vocabulary knowledge..._
 
 
 === Introduction into the passive voice \ruby{受動態{じゅ|どう|たい}} <sec:tmjk-1-introduction-to-passive-voice>
