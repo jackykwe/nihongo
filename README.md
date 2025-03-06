@@ -58,6 +58,7 @@ Files to include: `*.typ`:
 |`\\conjunction`|`#conjunction`|
 |`\\onomatopoeic`|`#onomatopoeic`|
 |`\\yojijukugo`|`#yojijukugo`|
+|`\\exception\{(.*?)\}`|`#exception[$1]`|
 
 
 <!--

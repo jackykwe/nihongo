@@ -286,10 +286,7 @@
 
   let cells_final = (
     //  Manual handling on top line above table content
-    table.hline(
-      ..hline.fields(),
-      stroke: default_rule_width * scale_factor + black,
-    ),
+    table.hline(stroke: default_rule_width * scale_factor + black),
     table.cell(
       colspan: num_columns,
       inset: default_rule_width * scale_factor / 4,
@@ -327,12 +324,7 @@
       inset: default_rule_width * scale_factor / 4,
     )[],
   )
-  cells_final.push(
-    table.hline(
-      ..hline.fields(),
-      stroke: default_rule_width * scale_factor + black,
-    ),
-  )
+  cells_final.push(table.hline(stroke: default_rule_width * scale_factor + black))
   [
     // #show table.cell: set text(font_size)
     #set text(size: font_size)
@@ -418,14 +410,17 @@
   )
 
   cells = cells.pos()
-  cells.insert(
-    0,
-    table.hline(stroke: default_rule_width + black),
-  ) // lines wrapping table content added here so that padding may be added to them
-  cells.push(
-    table.hline(stroke: default_rule_width + black),
-  ) // lines wrapping table content added here so that padding may be added to them
-  let cells_final = ()
+  let cells_final = (
+    //  Manual handling on top line above table content
+    table.hline(
+      ..hline.fields(),
+      stroke: default_rule_width * scale_factor + black,
+    ),
+    table.cell(
+      colspan: 8,
+      inset: default_rule_width * scale_factor / 4,
+    )[],
+  )
   while cells.len() >= 8 {
     let cell0 = cells.at(0)
     if _cell_represents_hline(cell0) {
@@ -436,12 +431,7 @@
           inset: hline.stroke.thickness * scale_factor / 4,
         )[],
       )
-      cells_final.push(
-        table.hline(
-          ..hline.fields(),
-          stroke: hline.stroke.thickness * scale_factor + hline.stroke.paint,
-        ),
-      )
+      cells_final.push(table.hline(stroke: hline.stroke.thickness * scale_factor + hline.stroke.paint))
       cells_final.push(
         table.cell(
           colspan: 8,
@@ -466,6 +456,13 @@
     }
     cells = cells.slice(8, none)
   }
+  cells_final.push(
+    table.cell(
+      colspan: 8,
+      inset: default_rule_width * scale_factor / 4,
+    )[],
+  )
+  cells_final.push(table.hline(stroke: default_rule_width * scale_factor + black))
   [
     // #show table.cell: set text(font_size)
     #set text(size: font_size)
@@ -478,7 +475,7 @@
     #figure(
       caption: caption,
       table(
-        columns: (2fr, 1fr, 12fr, 5fr, 4fr, 1fr, 12fr, 3fr),
+        columns: (4fr, 1fr, 12fr, 5fr, 4fr, 1fr, 12fr, 3fr),
         inset: (x, y) => (x: 0.5em, y: 0.6em), // em will scale with font size, so no need scale factor here.
         align: (left, center, left, left, left, center, left, left),
         table.hline(stroke: rule_width + black),
