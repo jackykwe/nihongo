@@ -362,7 +362,7 @@
   label_str,
   ..cells,
 ) = _multirow_banned_table(
-  (1fr, 5fr, 10fr, 10fr),
+  (1fr, 5fr, 10fr, 5fr),
   (center, left, left, left),
   0.75,
   ([], [*Name*], [*Meaning*], [*Notes*]),
