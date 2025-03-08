@@ -73,7 +73,7 @@ _Read the main article for apologies on #link("https://www.clozemaster.com/blog/
 #interjection_and_expression_table(
   [Interections and expressions: exclamations. #highlight[TO ORGANISE].], // caption
   "tbl:appendix-vocab-interjections-and-expressions-exclamations", // label
-    [はい], [yes/that is correct/I'm here/pardon?], [],
+  [はい], [yes/that is correct/I'm here/pardon?], [],
   [うん], [yes/yeah/mhmm], [],
   [ふむふむ], [hmm/uh-huh; murmur indicating approval/comprehension], [slang],
   [イエス], [yes], [],
@@ -224,7 +224,8 @@ _Read the main article for apologies on #link("https://www.clozemaster.com/blog/
   [な], [hey/listen/look/say], [],
   [ほら], [look! see! hey!], [],
   [もう], [jeez/come on], [],
-  [まったくもう], [good grief], [(#ruby[全][まった]くもう)],
+  [まったく[もう]], [good grief], [(#ruby[全][まった]く[もう])],
+  [ったく], [good grief], [slang],
   [#ruby[何][なに]か], [what (are you trying to say/do you mean)?], [],
   [え], [eh? what? oh?], [],
   [あれ[っ/え/ー]], [huh? eh? what? look! listen!], [],
@@ -274,7 +275,8 @@ _Read the main article for apologies on #link("https://www.clozemaster.com/blog/
   [バチコーン], [thwap/smack (used when winking)], [#link("https://dic.pixiv.net/a/%E3%83%90%E3%83%81%E3%82%B3%E3%83%BC%E3%83%B3")[[PX]]],
   // [], [], [],
   thickhline,
-  [#ruby[屁][へ]をひって#ruby[尻][しり]#ruby[窄][つぼ]め], [there is no use shutting the stable door after the horse has bolted ("squeezing your buttocks after you have farted")], [],
+  [#ruby[屁][へ]をひって#ruby[尻][しり]#ruby[窄][つぼ]め], [there is no use shutting the stable door after the horse has bolted ("squeezing your buttocks after you have farted")], [#proverb],
+  [#ruby[金言耳][きん|げん|みみ]に#ruby[逆][さか]らう/#ruby[忠言耳][ちゅう|げん|みみ]に#ruby[逆][さか]らう], [good advice is harsh to the ear], [],
   // [], [], [],
 )
 
@@ -285,6 +287,10 @@ _Read the main article for apologies on #link("https://www.clozemaster.com/blog/
 #interjection_and_expression_table(
   [Interections and expressions: sentence builders.], // caption
   "tbl:appendix-vocab-interjections-and-expressions-sentence-builders", // label
+  [という], [called/named], [(と#ruby[言][い]う)],
+  [ということは], [that is to say/so that means], [(と#ruby[言][い]う#ruby[事][こと]は)],
+  // [], [], [],
+  thickhline,
   [\<basis\>からすると], [judging from/on the basis of/from the point of view of], [],
   [\<basis\>からしたら], [judging from/on the basis of/from the point of view of], [],
   [\<basis\>からすれば], [judging from/on the basis of/from the point of view of], [],

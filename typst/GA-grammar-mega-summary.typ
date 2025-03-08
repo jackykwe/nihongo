@@ -414,6 +414,8 @@ The following table is a condensed version, showing where the rules come from.
   [くらい], [approximately/about/around], [], [],
   [より], [than], [], [],
   [しか], [nothing but/no more than], [], [],
+  [ながら], [while], [], [],
+  [ながらも], [despite], [], [],
   // TODO: ADD: sec:auxiliary-adjective-hoshii
   // [], [], [], [],
   hline,

@@ -164,6 +164,7 @@
 #let conjunction = smallcaps[conjunction]
 #let onomatopoeic = smallcaps[onomatopoeic]
 #let yojijukugo = smallcaps[四字熟語]
+#let proverb = smallcaps[proverb]
 #let exception(str) = text(fill: red)[#highlight[*#str*]]
 #let rc(r, c, content) = table.cell(rowspan: r, colspan: c)[#content]
 #let cdots = sym.dots.h.c
