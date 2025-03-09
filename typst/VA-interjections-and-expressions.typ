@@ -301,5 +301,7 @@ _Read the main article for apologies on #link("https://www.clozemaster.com/blog/
   [#ruby[詳][くわ]しくは], [for more details/further information...], [],
   // [], [], [],
   thickhline,
+  [するべき], [should do/ought to do], [],
+  [すべき], [should do/ought to do], [],
   // [], [], [],
 )

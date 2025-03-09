@@ -2,7 +2,7 @@
 #show: template // show everything rule (i.e. the entire document)
 #show: appendix("V", 5)
 
-= #ruby[副詞][ふく|し]と#ruby[接続詞][せつ|ぞく|し] (adverbs and conjunctions)}
+= #ruby[副詞][ふく|し]と#ruby[接続詞][せつ|ぞく|し] (adverbs and conjunctions)
 // Adverbs modify both verbs and adjectives. They may also modify entire noun phrases or sentences.
 
 
@@ -33,6 +33,7 @@
   [\<that\>わけではない], [it does not mean that/I don't mean that], [(#ruby[訳][わけ]ではない); technically an expression],
   [\<that\>わけじゃない], [it does not mean that/I don't mean that], [(#ruby[訳][わけ]じゃない); technically an expression],
   [もし], [if/in case/supposing], [(#ruby[若][も]し)],
+  [そして], [and/and then/thus/and now/and finally], [#conjunction],
   // [], [], [],
 )
 
@@ -159,6 +160,7 @@
   [ちらっと], [at a glance/by accident], [#onomatopoeic],
   // [], [], [],
   hline,
+  [#ruby[本来][ほん|らい]], [originally/primarily], [],
   [もともと], [originally/from the start/from the onset], [(#ruby[元々][もと|もと])],
   [#ruby[先][さき]に], [previously/before/earlier/formerly/recently; beforehand/in advance], [],
   // [], [], [],
@@ -213,7 +215,6 @@
   [#ruby[大体][だい|たい]], [generally/on the whole/mostly/almost/nearly/approximately/roughly/about], [],
   [ほとんど], [almost/nearly/mostly/practically/virtually/basically/just about], [(#ruby[殆][ほとん]ど), also in @tbl:appendix-vocab-adjectives-amounts-and-sizes],
   // [], [], [],
-  // [], [], [],
   thickhline,
   [#ruby[本当][ほん|とう]に/#ruby[本当][ほん|と]に], [really/truly], [],
   [#ruby[正直][しょう|じき]], [honestly/frankly], [also an adjective],
@@ -240,6 +241,10 @@
   [キュン], [with a pitter-patter/heart-wringing/tightening of one's chest caused by powerful feelings (e.g. parting); 「#ruby[胸][むね]がキュンとなる」], [#onomatopoeic],
   [ムカムカ], [feeling sick/queasy/nauseated/disgusted], [also a verb],
   [ソワソワ], [restlessly/nervously/uneasily/in a fidget], [#onomatopoeic; also a verb],
+  [ニヤニヤ], [grinningly/smirkingly], [#onomatopoeic; also a verb],
+  // [], [], [],
+  thickhline,
+  [#ruby[残念][ざん|ねん]ながら], [unfortunately/regrettably], [technically an expression],
   // [], [], [],
 )
 
@@ -263,6 +268,7 @@
   [チュッ], [with a smooch/light smacking sound], [#onomatopoeic],
   [プチュッ], [kissing loudly/smooching; squirting/gushing], [#onomatopoeic],
   [ちょこちょこ], [with small quick steps/toddling], [#onomatopoeic],
+  [むにゃむにゃ], [mumbling incomprehensibly/mutteringly/murmuringly], [#onomatopoeic],
   // [], [], [],
 )
 
@@ -388,6 +394,7 @@
   [#ruby[初][はじ]めて], [for the first time], [],
   [また], [again/once again/another time/some other time; also; on the other hand], [(#ruby[又][また])],
   [もう#ruby[一回][いっ|かい]], [one more time/once again], [],
+  [もっかい], [one more time/once again], [slang, abbreviation],
   // [], [], [],
   hline,
   [\<v te\>#ruby[初][はじ]めて\<...\>], [only after \<v te\> is it/do you \<...\>], [],
