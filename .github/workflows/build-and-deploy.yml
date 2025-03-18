@@ -1,0 +1,55 @@
+# Courtesy of and adapted from claude.ai's response
+# Syntax documentation at https://docs.github.com/en/actions/writing-workflows/workflow-syntax-for-github-actions
+name: Build and Deploy Typst Document
+
+on:
+  push:
+    branches:
+      - main
+
+permissions:
+#   # required by actions/checkout@v4; https://github.com/actions/checkout
+#   contents: read
+  # required by JamesIves/github-pages-deploy-action@v4; https://github.com/marketplace/actions/deploy-to-github-pages#getting-started-airplane
+  contents: write
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+            sparse-checkout: |
+                typst
+      - name: Setup Typst
+        # see repository at https://github.com/typst-community/setup-typst/
+        uses: typst-community/setup-typst@v4
+      - name: Setup fonts
+        run: |
+          # Install Noto Sans CJK JP
+          sudo apt-get update -qq
+          sudo apt-get install -qq -y fonts-noto-cjk
+
+          # Install JetBrainsMono NF (Nerd Font)
+          mkdir -p ~/.local/share/fonts
+          wget -q https://github.com/ryanoasis/nerd-fonts/releases/download/v3.3.0/JetBrainsMono.zip
+          unzip -q JetBrainsMono.zip -d ~/.local/share/fonts/JetBrainsMono
+          fc-cache -f
+
+          # Verify fonts are installed
+          fc-list | grep -i "Noto Sans CJK JP"
+          fc-list | grep -i "JetBrainsMono NF"
+      - name: Build PDF from Typst
+        run: |
+          # Set GMT timezone; -f needed to override any existing /etc/localtime
+          sudo ln -sf /usr/share/zoneinfo/GMT /etc/localtime
+          rm -rf build
+          mkdir build
+          typst compile --input "now=$(date '+%y%m%d %H%M%S (GMT)')" typst/nihongo-gakushuu-kyouzai.typ build/nihongo-gakushuu-kyouzai.pdf
+      - name: Deploy to GitHub Pages
+        uses: JamesIves/github-pages-deploy-action@v4
+        with:
+          folder: build
+          # this branch is managed by JamesIves/github-pages-deploy-action@v4; no need to create ourselves
+          branch: gh-pages
