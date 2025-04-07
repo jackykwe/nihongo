@@ -6,7 +6,7 @@
 // raw ruby
 #let _ruby = get-ruby(
   size: 0.5em, // Ruby font size
-  dy: 0pt, // Vertical offset of the ruby
+  dy: 0em, // Vertical offset of the ruby
   pos: top, // Ruby position (top or bottom)
 )
 // Self-made ergonomics machinery to pinpoint exactly where rubby mismatches occur :) No more spending ages just finding these
