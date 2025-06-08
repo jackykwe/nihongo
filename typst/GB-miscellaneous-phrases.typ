@@ -4,12 +4,14 @@
 
 = Phrases
 
+- #ruby[写真][しゃ|しん]を#ruby[取][と]りたいですけど、#ruby[手伝][てつ|だ]ってくれませんか？ (I want to take a photo, can you help me?)
+  - Shorter form: #ruby[写真][しゃ|しん]を#ruby[撮][と]ってもらえませんか？
 - 待ち時間はどのくらいですか。 (How long is the wait?) // https://www.youtube.com/watch?v=ZlwcPM4zRlQ
 - はぁ！？
 - バカにしてる？ (Are you making fun of me?) してないしてない。
 - フンッ！ (Hmph/blow)
 - #ruby[朝][あさ]#ruby[早][はや]いです。(Early in the morning.)
-- #ruby[爽快][そう|かい]な#ruby[朝][あさ]！総会の#ruby[目覚][め|ざ]め！ (Starting a new day full of energy!)
+- #ruby[爽快][そう|かい]な#ruby[朝][あさ]！#ruby[爽快][そう|かい]な#ruby[目覚][め|ざ]め！ (Starting a new day full of energy!)
 - まだ#ruby[寝][ね]たいの！ (I don't want to get up already!) ういちゃん#ruby[朝][あさ]だよ！(Wakey, wakey, Ui-chan!) やだ！ (No!)
 - まだ#ruby[６時][ろく|じ]だよ？(It's only 6 AM.) もう６時だよ！ (It's already 6 AM!)
 - 私たち(からしたら)#ruby[寝][ね]る#ruby[時間][じ|かん]だろ？ (This is when we normally get into bed.)
@@ -18,47 +20,47 @@
 
 - Conversation: // %https://www.youtube.com/shorts/PS3okUw-JgU
 
-  男子: もしもし？
+  #ruby[男子][だん|し]: もしもし？
 
-  みゆきさん: もしもし。
+  #ruby[女子][じょ|し]: もしもし。
 
   男子: お#ruby[疲][つか]れ。(Glad you could make it.)
 
-  みゆきさん: お疲れ。
+  女子: お疲れ。
 
   男子: ちょっとさ、あの、#ruby[１つ][ひ|とつ]、あのちょと、聞きたいことあって。(So um, there is one thing I'd like to ask you.)
 
-  みゆきさん: うん。 (Yeah?)
+  女子: うん。 (Yeah?)
 
   男子: ちょっとあの、#ruby[今度][こん|ど]さ、二人でさ、#ruby[飯][めし]でもいかね？ (Would you like to go out for a meal together sometime?; 今度: soon; 飯: meal)
 
-  みゆきさん: ご飯？
+  女子: ご飯？
 
   男子: そうそうそう。
 
   男子: #ruby[気][き]になって、みゆきさんのこと。(I've been interested about you, Miyuki.)
 
-  みゆきさん: そうなの？ (Is that so?)
+  女子: そうなの？ (Is that so?)
 
   男子: そう。
 
-  みゆきさん: うん、ごはん、いいよ。行こ。(Yeah, dinner's good, let's go!)
+  女子: うん、ごはん、いいよ。行こ。(Yeah, dinner's good, let's go!)
 
   男子: マジ？ (Really?)
 
-  みゆきさん: うん、#ruby[本当][ほん|とう]にいいよいいよ。
+  女子: うん、#ruby[本当][ほん|とう]にいいよいいよ。
 
   男子: えじゃちょっとさ、#ruby[詳][くわ]しい#ruby[予定][よ|てい]さまた#ruby[後][あと]で、あの#ruby[話][はな]そう。
 
-  みゆきさん: わかった。
+  女子: わかった。
 
   男子: ありがと。
 
-  みゆきさん: いやこちらこそありがと。(No thank YOU.)
+  女子: いやこちらこそありがと。(No thank YOU.)
 
   男子: じゃね、おつかれ。
 
-  みゆきさん: うん、おつかれ。
+  女子: うん、おつかれ。
 
 
 == I don't know Japanese
@@ -68,6 +70,21 @@ _See the main reel on #link("https://www.instagram.com/reel/DCWrFTISpc6/")[[IG]]
 - #ruby[日本話][に|ほん|ご]#ruby[話][は]せません。 (I cannot speak Japanese.)
 - #ruby[日本話][に|ほん|ご]わかりません。 (I don't understand Japanese.)
 - #ruby[申][もう]し#ruby[訳][わけ]ございません。#ruby[努力][ど|りょく]はしているのですが、#ruby[日本語][に|ほん|ご]の#ruby[文法][ぶん|ぽう]が#ruby[非常][ひ|じょう]に#ruby[難][むずか]しく、#ruby[何][なに]をおっしゃっているが#ruby[理解][り|かい]することができません。#ruby[誠][まこと]に#ruby[恐縮][きょう|しゅく]ではございますが、#ruby[英語][えい|ご]で#ruby[話][はな]して#ruby[頂][いただ]くことは#ruby[可能][か|のう]でしょうか。 よろしくお願い#ruby[致][いた]します。 (I'm deeply sorry. I'm doing my best but, Japanese grammar is extremely difficult so, I can't understand what you're saying. I'm afraid but, would you possibly speak in English? Thank you in advance.)
+
+
+== #ruby[電車][でん|しゃ]#ruby[内][ない]で#ruby[耳][みみ]にするのアナウンス Announcements you hear on board trains
+Before boarding a train:
+- まもなく、#ruby[電車][でん|しゃ]が#ruby[参][まい]ります。 (The train is coming soon.)
+- まもなく、〇〇#ruby[番線][ばん|せん]に、{#ruby[普通][ふ|つう]/#ruby[快速][かい|そく]}、〇〇#ruby[行][ゆ]きが、#ruby[参][まい]ります。{#ruby[黄色][き|いろ]い#ruby[線][せん]/#ruby[白線][はく|せん]}の#ruby[内側][うち|がわ]に#ruby[下][さ]がってお#ruby[待][ま]ちください。 (Rapid train bound for 〇〇 will be arriving at platform 〇〇 shortly. Please stand back behind the yellow/white line and wait.)
+- {ドア/#ruby[扉][とびら]}が#ruby[閉][し]まります、ご#ruby[注意][ちゅう|い]ください。#ruby[手荷物][て|に|もつ]をお#ruby[引][ひ]きください。#ruby[無理][む|り]なご#ruby[乗車][じょう|しゃ]はおやめください。 (Please stand clear of the closing doors. Please hold on to your hand baggage. Please do not dash for the train.) #link("https://detail.chiebukuro.yahoo.co.jp/qa/question_detail/q14250820599")[(YJ)]
+- #ruby[駆][か]け#ruby[込][こ]む#ruby[乗車][じょう|しゃ]は、#ruby[電車][でん|しゃ]のドアに#ruby[手][て]などを#ruby[挟][はさ]まれ#ruby[大変][たい|へん]#ruby[危険][き|けん]ですのでおやめください。 (Please stop making a dash for the train as it may result in your hand, among other things, being stuck between train doors and it is dangerous for that reason.)
+
+On board a train:
+- ご#ruby[乗車][じょう|しゃ]ありがとうございます。 (Thank you for riding this train.)
+- この#ruby[電車][でん|しゃ]は、〇〇#ruby[名][めい]、〇〇#ruby[行][ゆ]きです。 (This is a \<line name> Line train bound for \<destination>.)
+- この電車は、〇〇[、〇〇]\*#ruby[行][ゆ]きです。 (This train is going to \<station A>, \<station B>, ....)
+- #ruby[急停車][きゅう|てい|しゃ]します。ご#ruby[注意][ちゅう|い]ください。#ruby[急停車][きゅう|てい|しゃ]します。ご#ruby[注意][ちゅう|い]ください。 (The train will stop suddenly. Please be careful.)
+
 
 == #ruby[原神][げん|しん]#ruby[切][き]り#ruby[抜][ぬ]き Genshin Extracts
 
@@ -164,7 +181,7 @@ Hu Tao has had the wisdom to see this, though some of her elders have yet to do 
 
 #ruby[果樹園][か|じゅ|えん]を#ruby[手伝][て|つだ]うヴァレサからは、おっとりとした、#ruby[些][いささ]か#ruby[内気][うち|き]な#ruby[印象][いん|しょう]を#ruby[受][う]ける。(Tending her orchard by day, Varesa is just a mild-mannered fruit farmer, maybe even a little shy.)
 
-#ruby[頭突][ず|つ]き～！ (Headbutt!)
+「#ruby[頭突][ず|つ]き～！」 ("Headbutt!")
 
 だが、#ruby[仮面][か|めん]をつけると、#ruby[雰囲気][ふん|い|き]が#ruby[一変][いっ|ぺん]するようだ。 (But when she dons her mask, she completely transforms.)
 

@@ -90,7 +90,8 @@
               #text(fill: gray)[#_get_now]
             ]],
           align(right)[#box(width: 100%)[
-              *#ruby[日本語学習教材][に|ほん|ご|がく|しゅう|きょう|ざい]*
+              *#ruby[日本語学習教材][に|ほん|ご|がく|しゅう|きょう|ざい]*\
+              @appendix:conjugation-rules-summary
             ]],
         )
         #line(length: 100%)
