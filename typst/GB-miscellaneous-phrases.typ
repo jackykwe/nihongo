@@ -73,17 +73,54 @@ _See the main reel on #link("https://www.instagram.com/reel/DCWrFTISpc6/")[[IG]]
 
 
 == #ruby[電車][でん|しゃ]#ruby[内][ない]で#ruby[耳][みみ]にするのアナウンス Announcements you hear on board trains
+
+Read the main article on #link("https://cotoacademy.com/japanese-train-announcements-meaning-%E3%81%A7%E3%82%93%E3%81%97%E3%82%83-%E3%82%A2%E3%83%8A%E3%82%A6%E3%83%B3%E3%82%B9/")[CA]. See a compilation of pre-departure announcements on #link("https://www.youtube.com/watch?v=oSI27VY3j2c")[YT].
+
 Before boarding a train:
 - まもなく、#ruby[電車][でん|しゃ]が#ruby[参][まい]ります。 (The train is coming soon.)
 - まもなく、〇〇#ruby[番線][ばん|せん]に、{#ruby[普通][ふ|つう]/#ruby[快速][かい|そく]}、〇〇#ruby[行][ゆ]きが、#ruby[参][まい]ります。{#ruby[黄色][き|いろ]い#ruby[線][せん]/#ruby[白線][はく|せん]}の#ruby[内側][うち|がわ]に#ruby[下][さ]がってお#ruby[待][ま]ちください。 (Rapid train bound for 〇〇 will be arriving at platform 〇〇 shortly. Please stand back behind the yellow/white line and wait.)
 - {ドア/#ruby[扉][とびら]}が#ruby[閉][し]まります、ご#ruby[注意][ちゅう|い]ください。#ruby[手荷物][て|に|もつ]をお#ruby[引][ひ]きください。#ruby[無理][む|り]なご#ruby[乗車][じょう|しゃ]はおやめください。 (Please stand clear of the closing doors. Please hold on to your hand baggage. Please do not dash for the train.) #link("https://detail.chiebukuro.yahoo.co.jp/qa/question_detail/q14250820599")[(YJ)]
+
+  Possible prefixes:
+  - 〇〇#ruby[番線][ばん|せん]から、{#ruby[上][のぼ]り/#ruby[下][くだ]り}、{#ruby[各駅停車][かく|えき|てい|しゃ]/#ruby[普通][ふ|つう]/#ruby[快速][かい|そく]}[#ruby[列車][れっ|しゃ]]、〇〇#ruby[行][ゆ]き{が/の}#ruby[発車][はっ|しゃ]{します/いたしす}。(The local/normal/rapid train bound for \<destination> is departing from platform \<n>.)
+  - 〇〇#ruby[線][せん]、 (The \<line name> Line)
+  - 〇〇#ruby[番線][ばん|せん]、 (Platform \<n>)
+  - 〇〇#ruby[番線][ばん|せん]、 〇〇#ruby[方面][ほう|めん]、(Platform \<n>, towards \<direction>)
+  - 〇〇#ruby[番線][ばん|せん]の〇〇#ruby[線][せん]、 (The \<line name> Line at platform \<n>)
+
+  Possible suffixes:
+  - #ruby[閉][し]まるドアにご#ruby[注意][ちゅう|い]ください。 (Please mind the closing doors.)
+  - お#ruby[見送][み|おく]りのお#ruby[客様][きゃく|さま]は、#ruby[黄色][き|いろ]い#ruby[線][せん]までお#ruby[下][さ]がりください。 (Passengers seeing someone off, please step behind the yellow line.)
+- まもなく、〇〇#ruby[番線][ばん|せん]から、〇〇#ruby[方面][ほう|めん]#ruby[行][ゆ]き、〇〇#ruby[新幹線][しん|かん|せん]が#ruby[発車][はっ|しゃ]します。#ruby[黄色][き|いろ]い#ruby[線][せん]までお#ruby[下][さ]がりください。 (The \<line> Shinkansen heading towards \<direction> will soon depart from platform \<n>. Please step behind the yellow line.)
 - #ruby[駆][か]け#ruby[込][こ]む#ruby[乗車][じょう|しゃ]は、#ruby[電車][でん|しゃ]のドアに#ruby[手][て]などを#ruby[挟][はさ]まれ#ruby[大変][たい|へん]#ruby[危険][き|けん]ですのでおやめください。 (Please stop making a dash for the train as it may result in your hand, among other things, being stuck between train doors and it is dangerous for that reason.)
 
 On board a train:
 - ご#ruby[乗車][じょう|しゃ]ありがとうございます。 (Thank you for riding this train.)
 - この#ruby[電車][でん|しゃ]は、〇〇#ruby[名][めい]、〇〇#ruby[行][ゆ]きです。 (This is a \<line name> Line train bound for \<destination>.)
-- この電車は、〇〇[、〇〇]\*#ruby[行][ゆ]きです。 (This train is going to \<station A>, \<station B>, ....)
-- #ruby[急停車][きゅう|てい|しゃ]します。ご#ruby[注意][ちゅう|い]ください。#ruby[急停車][きゅう|てい|しゃ]します。ご#ruby[注意][ちゅう|い]ください。 (The train will stop suddenly. Please be careful.)
+- この#ruby[電車][でん|しゃ]は、〇〇[、〇〇]\*#ruby[行][ゆ]きです。 (This train is going to \<station A>, \<station B>, ....)
+- この#ruby[列車][れっ|しゃ]は、〇〇、〇〇、…、に#ruby[止][と]まります。〇〇を#ruby[出][で]た#ruby[後][のち]は、#ruby[終点][しゅう|てん]〇〇に#ruby[到着][とう|ちゃく]するまですべての#ruby[駅][えき]に#ruby[停車][てい|しゃ]します。 (This train will stwop at \<station A>, \<station B>, .... After leaving \<station Z>, it will stop at every station before arriving at terminal station \<station>.)
+- #ruby[次][つぎ]は、〇〇に#ruby[停車][てい|しゃ]します。 (This train will next stop at \<station>.)
+
+Polite reminders:
+- この#ruby[電車][でん|しゃ]は、#ruby[優先席][ゆう|せん|せき]があります。お#ruby[年寄][とし|よ]りや、#ruby[体][からだ]の#ruby[不自由][ふ|じ|ゆう]なお#ruby[客様][きゃく|さま]、#ruby[妊娠中][にん|しん|ちゅう]や、#ruby[乳幼児][にゅう|よう|じ]をお#ruby[連][つ]れのお#ruby[客様][きゃく|さま]いらっしゃいましたら、#ruby[席][せき]をお#ruby[譲][ゆず]りください。 (There are priority seats in this train. Please give up your seats to the elderly, handicapped passengers, expecting mothers, and passengers accompanying small children.)
+- お#ruby[客様][きゃく|さま]のご#ruby[協力][きょう|りょく]をお#ruby[願][ねが]いします。 (We thank you for your cooperation.)
+- お#ruby[客様][きゃく|さま]にお#ruby[願][ねが]いいたします。#ruby[優先席][ゆう|せん|せき]#ruby[付近][ふ|きん]では、#ruby[携帯電話][けい|たい|でん|わ]の#ruby[電源][でん|げん]をお#ruby[切][き]りください。 (Please switch off your mobile phones when near the priority seats.)
+- それ#ruby[以外][い|がい]の#ruby[場所][ば|しょ]では、マナーモードに#ruby[設定][せっ|てい]の#ruby[上][うえ]、#ruby[通話][つう|わ]はお#ruby[控][ひか]えください。ご#ruby[協力][きょう|りょく]をお#ruby[願][ねが]いいたします。 (Please set it to silent mode (manner mode) and refrain from talking on the phone in other areas. Thank you for your cooperation.)
+
+Arriving at a station and service transfers:
+- まもなく、〇〇#ruby[到着][とう|ちゃく]します。 (We are arriving soon at \<station>.)
+- まもなく、〇〇、〇〇。お#ruby[出口][で|ぐち]は、{#ruby[左側][ひだり|がわ]/#ruby[右側][みぎ|がわ]}です。 (We are arriving soon at \<station>, \<station> (repeat). The doors on the {left/right} side will open.)
+- まもなく、〇〇で#ruby[短][みじか]い#ruby[停車][てい|しゃ]を#ruby[行][おこな]います。 (We will soon make a brief stop at \<station>.)
+- 〇〇ライン、〇〇#ruby[線][せん]、〇〇#ruby[線][せん]への#ruby[直通運転][ちょく|つう|うん|てん]の#ruby[列車][れっ|しゃ]は#ruby[乗][の]り#ruby[換][か]えす。 (Please change here for the \<line> Line, ..., and through service to the \<line>.)
+- こちらで、〇〇#ruby[線][せん]と#ruby[地下鉄][ち|か|てつ]〇〇#ruby[線][せん]に#ruby[乗][の]り#ruby[換][か]えてください。 (Please change to the \<line> Line and the \<metro line> Metro Line here.”
+- 〇〇#ruby[線][せん]へ#ruby[乗][の]り#ruby[換][か]える#ruby[乗客][じょう|きゃく]は、その#ruby[駅][えき]で#ruby[乗][の]り#ruby[換][か]えてください。 (Passengers changing to the \<line> Line, please transfer at this station.)
+- 〇〇#ruby[線][せん]へ#ruby[行][い]く#ruby[乗客][じょう|きゃく]は、こちら〇〇で#ruby[電車][でん|しゃ]を#ruby[乗][の]り#ruby[換][か]えてください。 (Passengers going to the \<line> Line, please change trains here at \<location>.)
+
+Emergency announcements:
+- #ruby[私達][わたし|たち]は#ruby[別][べつ]の#ruby[線路][せん|ろ]へ#ruby[移][うつ]ります。もしあなたが#ruby[立][た]っていたら、つり#ruby[革][かわ]か#ruby[手][て]すりに#ruby[掴][つか]まってください。 (We will be changing to another track. If you are standing, please hold on to the hand strap or rail.)
+- #ruby[事故][じ|こ]を#ruby[防][ふせ]ぐために#ruby[列車][れっ|しゃ]が#ruby[急][きゅう]に#ruby[止][と]まる#ruby[必要][ひつ|よう]があるかもうしれません。ですので、#ruby[気][き]をつけてください。 (It may be necessary for the train to stop suddenly to prevent an accident, so please be careful.)
+- ご#ruby[注意][ちゅう|い]ください。#ruby[緊急][きん|きゅう]ブレーキが#ruby[用][もち]いられました。 (Attention please, the emergency brake has been applied.)
+- #ruby[急停車][きゅう|てい|しゃ]します。ご#ruby[注意][ちゅう|い]ください。#ruby[急停車][きゅう|てい|しゃ]します。ご#ruby[注意][ちゅう|い]ください。 (The train will make a sudden stop. Please be careful. The train will make a sudden stop. Please be careful.)
 
 
 == #ruby[原神][げん|しん]#ruby[切][き]り#ruby[抜][ぬ]き Genshin Extracts
@@ -235,3 +272,32 @@ Hu Tao has had the wisdom to see this, though some of her elders have yet to do 
 #ruby[戦闘中][せん|とう|ちゅう]、エスコフィエは#ruby[元素][げん|そ]スキルで#ruby[調理][ちょう|り]マシナリーを#ruby[出][だ]し、#ruby[敵][てき]を#ruby[倒][たお]すのを#ruby[手伝][てつ|だ]ってくれる。#ruby[元素][げん|そ]エネルギーが#ruby[溜][た]まったら、#ruby[元素][げん|そ]#ruby[爆発][ばく|はつ]でチームのHPを#ruby[回復][かい|ふく]し、#ruby[優雅][ゆう|が]に#ruby[戦闘][せん|とう]を#ruby[終][お]わらせるのだ。 (In combat, Escoffier summons her Cooking Mek with her Elemental Skill, providing off-field support for her team. When Energy is full, Escoffier unleashes her Elemental Burst, restoring HP for the entire party and bringing the fight to a graceful close.)
 
 #ruby[俺][おれ]も#ruby[刀剣][とう|けん]はよく#ruby[扱][あつか]うが、エスコフィエの#ruby[繊細][せん|さい]な#ruby[技術][ぎ|じゅつ]には#ruby[敵][かな]わない。だが#ruby[俺][おれ]の#ruby[経験][けい|けん]から#ruby[言][い]えば、#ruby[高][たか]い#ruby[技術][ぎ|じゅつ]が#ruby[幸福][こう|ふく]をもたらすとは#ruby[限][かぎ]らない——。#ruby[技術][ぎ|じゅつ]には#ruby[危険][き|けん]が#ruby[伴][ともな]うのだ。しかし、いくら#ruby[警告][けい|こく]したところで、#ruby[真理][しん|り]の#ruby[探求][たん|きゅう]を#ruby[止][と]めることはできないし、#ruby[純粋][じゅん|すい]な#ruby[情熱][じょう|ねつ]を#ruby[否定][ひ|てい]はできない。#ruby[幸][さいわ]い、#ruby[彼女][かの|じょ]は#ruby[料理][りょう|り]に#ruby[関心][かん|しん]があるだけだ、それだけならば… #ruby[杞憂][き|ゆう]というものだろう。 (Though I too possess skill with a blade, I cannot hope to match Escoffier's technical finesse. In my experience, however, cutting-edge technology doesn't always spell happiness — The more intricate it is, the more perilous it tends to be. Of course, warnings like these can do little to curb humanity's quest for excellence, and I cannot deny the sincerity of such enthusiasm. Thankfully, Escoffier's passion lies exclusively in culinary techniques. It's just cooking, after all — what could possibly go wrong?)
+
+
+=== チュートリアル#ruby[動画][どう|が]　スカーク「#ruby[冷][れい]#ruby[界][かい]の#ruby[静][しず]けさ」 Collected Miscellany - "Skirk: The Silence of a Frostbound Realm" (Source #link("https://www.youtube.com/watch?v=Wi2WQw2CcTU")[JP]/#link("https://www.youtube.com/watch?v=8AV1utyVW_Q")[EN])
+
+「これまでの#ruby[旅][たび]でお#ruby[前][まえ]は#ruby[己][おのれ]の#ruby[力][りょく]を#ruby[示][しめ]し、#ruby[強者][きょう|しゃ]であることを#ruby[証明][しょう|めい]した。#ruby[私][わたし]と#ruby[対等][たい|とう]に#ruby[言葉][こと|ば]を#ruby[交][か]わす#ruby[資格][し|かく]がある。」 ("You've proven your strength to me along your journey, and earned the right to speak to me as an equal.")
+
+「#ruby[教][おし]えるのは#ruby[一度][いち|ど]だけだ。」 ("I'll only demonstrate this once.")
+
+スカークは#ruby[特殊][とく|しゅ]なエネルギー「#ruby[蛇][じゃ]の#ruby[狡智][こう|ち]」を#ruby[使用][し|よう]する#ruby[氷][こおり]アタッカーだ。#ruby[通常][つう|じょう]#ruby[攻撃][こう|げき]や#ruby[元素][げん|そ]#ruby[爆発][ばく|はつ]で#ruby[戦闘][せん|とう]を#ruby[行][おこな]うが、この#ruby[元素][げん|そ]#ruby[爆発][ばく|はつ]は#ruby[元素][げん|そ]エネルギーではなく、「#ruby[蛇][じゃ]の#ruby[狡智][こう|ち]」を#ruby[使][つか]って#ruby[発動][はつ|どう]する。 (Skirk is a Cryo DMG dealer who inflicts DMG through her Normal Attacks and Elemental Bursts. Her Elemental Bursts do not rely on Elemental Energy, but a special kind of energy known as "Serpent's Subtlety".)
+
+#ruby[元素][げん|そ]スキル#ruby[一回][いっ|かい]#ruby[押][お]しでは「#ruby[蛇][じゃ]の#ruby[狡智][こう|ち]」を#ruby[一定量][いっ|てい|りょう]#ruby[獲得][かく|とく]して、「#ruby[七][しち]#ruby[相][そう]#ruby[一閃][いっ|せん]」#ruby[状態][じょう|たい]に#ruby[入][はい]る。このとき、#ruby[通常][つう|じょう]#ruby[攻撃][こう|げき]、#ruby[重撃][じゅう|げき]、#ruby[落下][らっ|か]#ruby[攻撃][こう|げき]は、#ruby[元素][げん|そ]#ruby[付与][ふ|よ]によって#ruby[他][ほか]の#ruby[元素][げん|そ]に#ruby[変化][へん|か]しない#ruby[氷][こおり]ダメージとなる。#ruby[中断][ちゅう|だん]#ruby[耐性][たい|せい]が#ruby[上][あ]がり、#ruby[通常][つう|じょう]#ruby[攻撃][こう|げき]と#ruby[重撃][じゅう|げき]の#ruby[範囲][はん|い]が#ruby[広][ひろ]くなる。#ruby[長押][なが|お]しでは、「#ruby[蛇][じゃ]の#ruby[狡智][こう|ち]」を#ruby[獲得][かく|とく]し、#ruby[中断][ちゅう|だん]#ruby[耐性][たい|せい]がアップした#ruby[状態][じょう|たい]で、#ruby[高速][こう|そく]#ruby[移動][い|どう]をし#ruby[続][つづ]ける。 (By tapping her Elemental Skill, Skirk will gain a certain amount of Serpent's Subtlety and enter the "Seven-Phase Flash" state. While in this state, Skirk's Normal, Charged, and Plunging Attacks will deal Cryo DMG that cannot be overridden by other Elemental infusions. This state also increases her resistance to interruption and the AoE of her Normal and Charged Attacks. By holding her Elemental Skill, Skirk will gain a certain amount of Serpent's Subtlety, increased resistance to interruption, and will continuously move at high speed.)
+
+チームの#ruby[仲間][なか|ま]が#ruby[氷][こおり]#ruby[関連][かん|れん]#ruby[反応][はん|おう]を#ruby[起][お]こすと、#ruby[近][ちか]くに#ruby[虚境][きょ|きょう]の#ruby[裂][さ]け#ruby[目][め]が#ruby[生成][せい|せい]される。「#ruby[七][しち]#ruby[相][そう]#ruby[一閃][いっ|せん]」#ruby[状態][じょう|たい]のスカークが#ruby[重撃][じゅう|げき]、または#ruby[元素][げん|そ]スキルの#ruby[長押][なが|お]しで#ruby[高速][こう|そく]#ruby[移動][い|どう]すると、#ruby[虚境][きょ|きょう]の#ruby[裂][さ]け#ruby[目][め]を#ruby[吸収][きゅう|しゅう]し、「#ruby[蛇][じゃ]の#ruby[狡智][こう|ち]」を#ruby[獲得][かく|とく]する。 (When a party member triggers a Cryo-related reaction, a Void Rift will be created near your opponent. When Skirk uses a Charged Attack in her Seven-Phase Flash state or holds her Elemental Skill to move swiftly. She will absorb Void Rifts and gain a certain amount of Serpent's Subtlety.)
+
+「#ruby[星々][ほし|ぼし]よ、#ruby[静][しず]かに#ruby[眠][ねむ]れ。」 ("Another star goes out.")
+
+#ruby[蛇][じゃ]の#ruby[狡智][こう|ち]が50#ruby[以上][い|じょう]のときに#ruby[元素][げん|そ]#ruby[爆発][ばく|はつ]を#ruby[発動][はつ|どう]すると、#ruby[蛇][じゃ]の#ruby[狡智][こう|ち]を#ruby[全][すべ]て#ruby[消費][しょう|ひ]して#ruby[連続][れん|ぞく]#ruby[攻撃][こう|げき]を#ruby[行][おこな]い、#ruby[氷][こおり]#ruby[範囲][はん|い]ダメージを#ruby[与][あた]える。また、#ruby[発動][はつ|どう]#ruby[時][じ]に#ruby[持][も]っていた50を#ruby[超][こ]える#ruby[分][ぶん]の#ruby[蛇][じゃ]の#ruby[狡智][こう|ち]に#ruby[応][おう]じて、#ruby[元素][げん|そ]#ruby[爆発][ばく|はつ]のダメージがアップする。 (When Skirk has at least 50 Serpent's Subtlety, unleashing her Elemental Burst will expend all of her Serpent's Subtlety, performing consecutive attacks tthat deal AoE Cryo DMG. At the same time, the DMG dealt by an instance of this Elemental Burst can be increased by the amount of Serpent's Subtlety points over 50 points when it is unleashed.)
+
+スカークは#ruby[戦闘][せん|とう]に#ruby[際][さい]して#ruby[受][う]け#ruby[身][み]ではなく、#ruby[積極的][せっ|きょく|てき]に#ruby[戦][たたか]い#ruby[方][かた]を#ruby[変][か]えることで#ruby[相手][あい|て]の#ruby[不意][ふ|い]を#ruby[突][つ]く。 (Instead of simply responding to a crisis as it unfolds, Skirk prefers to catch her opponents off guard by switching up her fighting style.)
+
+「#ruby[七][しち]#ruby[相][そう]#ruby[一閃][いっ|せん]」#ruby[状態][じょう|たい]の#ruby[時][とき]、#ruby[彼女][かの|じょ]は#ruby[蛇][じゃ]の#ruby[狡智][こう|ち]を#ruby[消費][しょう|ひ]せずに#ruby[元素][げん|そ]#ruby[爆発][ばく|はつ]を#ruby[発動][はつ|どう]する、この#ruby[場合][ば|あい]、#ruby[周囲][しゅう|い]の#ruby[一定][いっ|てい]#ruby[範囲][はん|い]#ruby[内][うち]にある#ruby[虚境][きょ|きょう]の#ruby[裂][さ]け#ruby[目][め]を#ruby[吸収][きゅう|しゅう]し、スカークの#ruby[通常][つう|じょう]#ruby[攻撃][こう|げき]のダメージが#ruby[上][あ]がる。 (When Skirk is in the Seven-Phase Flash state, her Elemental Burst can be unleashed without expending any Serpent's Subtlety. Using her Elemental Burst at this point will absorb the Void Rifts around her in a fixed AoE, increasing her Normal Attack DMG.)
+
+#ruby[水][みず]または#ruby[氷][こおり]キャラの#ruby[仲間][なか|ま]と#ruby[協力][きょう|りょく]して#ruby[戦][たたか]うと、スカークの#ruby[元素][げん|そ]#ruby[爆発][ばく|はつ]および#ruby[七][しち]#ruby[相][そう]#ruby[一閃][いっ|せん]モードでの#ruby[通常][つう|じょう]#ruby[攻撃][こう|げき]のダメージが#ruby[上][あ]がる。 (When fighting alongside companions who wield Hydro or Cryo, Skirk's Normal Attack DMG dealt in the Seven-Phase Flash state, as well as her Elemental Burst DMG, will be increased.)
+
+#ruby[武芸][ぶ|げい]の#ruby[習得][しゅう|とく]には#ruby[多様][た|よう]な#ruby[術][じゅつ]の#ruby[会得][え|とく]が#ruby[不可欠][ふ|か|けつ]だ。#ruby[弟子][で|し]から「#ruby[師][し]」となった#ruby[彼女][かの|じょ]なら、よく#ruby[知][し]っているはずだ。スカークがチームにいるとき、チーム#ruby[全員][ぜん|いん]の#ruby[元素][げん|そ]タイプが#ruby[水][みず]と#ruby[氷][こおり]のみからなる#ruby[場合][ば|あい]、それぞれの#ruby[元素][げん|そ]スキルレベルが1#ruby[上][あ]がる。 (Only by constantly learning and adapting may a person become a true martial artist. Having gone from being a disciple to a master herself, Skirk must have acquired her own understanding of this. When Skirk is in the party, and all other party members are either Hydro or Cryo, party members' Elemental Skill Level is increased by 1.)
+
+スカークは#ruby[戦闘][せん|とう]に#ruby[長][た]けており、#ruby[様々][さま|ざま]な#ruby[戦闘][せん|とう]スタイルを#ruby[見][み]せる。#ruby[仲間][なか|ま]の#ruby[協力][きょう|りょく]のもと、#ruby[元素][げん|そ]スキルの#ruby[一回][いっ|かい]#ruby[押][お]しで#ruby[敵][てき]に#ruby[攻撃][こう|げき]を#ruby[仕掛][し|か]け#ruby[続][つづ]け、#ruby[重撃][じゅう|げき]と#ruby[元素][げん|そ]#ruby[爆発][ばく|はつ]をタイミングよく#ruby[発動][はつ|どう]することで、#ruby[虚境][きょ|きょう]の#ruby[裂][さ]け#ruby[目][め]を#ruby[吸収][きゅう|しゅう]し、#ruby[凄][すさ]まじい#ruby[攻勢][こう|げき]で#ruby[敵][てき]を#ruby[一掃][いっ|そう]する。また、#ruby[元素][げん|そ]スキルの#ruby[長押][なが|お]しで、フィールド#ruby[上][じょう]にある#ruby[虚境][きょ|きょう]の#ruby[裂][さ]け#ruby[目][め]を#ruby[吸収][きゅう|しゅう]し、#ruby[溜][た]まった「#ruby[蛇][じゃ]の#ruby[狡智][こう|ち]」で#ruby[元素][げん|そ]#ruby[爆発][ばく|はつ]を#ruby[発動][はつ|どう]して、#ruby[目][め]の#ruby[前][まえ]の#ruby[敵][てき]を#ruby[粉砕][ふん|さい]する。(Skirk is a skilled warrior, who is capable of adapting her fighting style to tackle whatever comes her way. With the support of her teammates, Skirk can tap her Elemental Skill while keeping up a steady barrage of Normal Attacks. Then unleash a Charged Attack or Elemental Burst at just the right moment, absorbing nearby Void Rifts and sweeping the battlefield with a ferocious offensive. Skirk can also choose to hold her Elemental Skill to absorb Void Rifts on the field, building up enough Serpent's Subtlety to unleash her Elemental Burst and crush all that lies in her path.)
+
+#ruby[俺][おれ]から#ruby[見][み]たスルトロッチは、#ruby[決][けっ]して#ruby[師][し]にはなれそうにない#ruby[人物][じん|ぶつ]だ。だから#ruby[今][いま]まで#ruby[通][とお]り#ruby[兄][あに]の#ruby[予言][よ|げん]が#ruby[実証][じっ|しょう]されると、#ruby[俺][おれ]の#ruby[運命][うん|めい]に#ruby[対][たい]する#ruby[不満][ふ|まん]はさらに#ruby[深][ふか]まった。#ruby[幸][さいわ]い、#ruby[今][いま]のところスカークは、「#ruby[極悪][ごく|あく]#ruby[騎][き]」の#ruby[悪][わる]い#ruby[部分][ぶ|ぶん]を#ruby[受][う]け#ruby[継][つ]いでいないようで、ほっとした。しかし、#ruby[幸][さいわ]いと#ruby[言][い]えるのはそこだけだ。#ruby[多][おお]くが#ruby[運命][うん|めい]から#ruby[逃][のが]れようとする#ruby[一方][いっ|ぽう]で、#ruby[生][い]き#ruby[残][のこ]るためその#ruby[束縛][そく|ばく]に#ruby[自][みずか]ら#ruby[足][あし]を#ruby[踏][ふ]み#ruby[入][い]れる#ruby[者][もの]もいる、これは#ruby[不可抗力][ふ|か|こう|りょく]なのだ。この#ruby[先][さき]も、こうした#ruby[馬鹿][ば|か]げたことは#ruby[起][お]こり#ruby[続][つづ]けるだろう。#ruby[俺][おれ]はまだ#ruby[色][いろ]んな#ruby[問][と]いの#ruby[答][こた]えを#ruby[探][さが]している——#ruby[貴様][き|さま]もそのはずだ。#ruby[今回][こん|かい]はここまでにしておこう。#ruby[後][あと]のことは、また#ruby[会][あ]う#ruby[時][とき]に。 (I never believed that Surtalogi was cut out to be a teacher, so when my brother's prophecy came true, as always, I found myself resenting fate all the more. Fortunately, thus far at least it seems that Skirk has not inherited the corrupt nature of her master, "The Foul" --- an undeniable relief. Yet in the end, that is all it is, and nothing more. Just as many struggle to escape their fate, others are pushed into its jaws to survive. Senseless, yet inevitable... A cruel irony, indeed. But who knows what the future holds? Perhaps more of such ironies lie ahead. There are many questions to which I still seek answers... As I'm sure you do, too. For now, let us leave it at that. We will, no doubt, have much to discuss when next we meet.)
