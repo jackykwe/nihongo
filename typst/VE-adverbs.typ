@@ -331,11 +331,11 @@
 )
 
 
-== Taste and texture
+== The five senses
 
 // @typstyle off
 #adverb_table(
-  [Verbs: taste and texture.], // caption
+  [Verbs: the five senses: sight, hearing, smell, taste, touch.], // caption
   "tbl:appendix-vocab-adverbs-taste-and-texture", // label
   [ペロペロ], [licking/lapping up; gobbling up], [],
   // [], [], [],

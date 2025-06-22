@@ -17,6 +17,8 @@
 - 私たち(からしたら)#ruby[寝][ね]る#ruby[時間][じ|かん]だろ？ (This is when we normally get into bed.)
 - ということで！(And here we are!)
 - みんな聞きましたね？ (You heard her, everyone.)
+- #ruby[教][おし]えていただけると#ruby[嬉][うれ]しいです。 // https://www.youtube.com/watch?v=DFZ_qaiWztA&t=23s
+
 
 - Conversation: // %https://www.youtube.com/shorts/PS3okUw-JgU
 
@@ -62,10 +64,34 @@
 
   女子: うん、おつかれ。
 
+== Business speak
+
+This is advanced territory and would probably only make sense later on in your learning.
+
+// https://www.instagram.com/reel/DD01U30SR4w/
+// @typstyle off
+#general_table(
+  [Business speak conversions.], // caption
+  "tbl:appendix-business-speak",  // label
+  (1fr, 3fr),  // column_sizes
+  (left, left),  // column_aligns
+  scale_factor: 0.8,
+  hline,
+  [*Normal speak*], [*Business speak*],
+  hline,
+  [#ruby[元気][げん|き]？#lb()How are you doing?], [ご#ruby[健勝][けん|しょう]にてお#ruby[過][す]ごしでしょうか？#lb()Has your health been alright?],
+  [ありがとう。#lb()Thank you.], [#ruby[深][ふか]く#ruby[御礼][おん|れい]#ruby[申][もう]し#ruby[上][あ]げます。#lb()I hereby express my deepest gratitude.],
+  [これ、お#ruby[前][まえ]の？#lb()Is this yours?], [すみません、こちら\<name>#ruby[様][さま]のものでよろしかったでしょうか？#lb()Sorry, is this your item?],
+  [お#ruby[前][まえ]、#ruby[誰][だれ]？#lb()Who are you?], [#ruby[大変][たい|へん]#ruby[申][もう]し#ruby[訳][わけ]ございません、お#ruby[名前][な|まえ]#ruby[頂戴][ちょう|だい]してもよろしかったでしょうか?#lb()I'm deeply sorry, but would you be okay to tell me your name?],
+  [ごめん。#lb()Sorry.], [この#ruby[度][たび]は#ruby[当方][とう|ほう]の#ruby[不手際][ふ|て|ぎわ]にてご#ruby[迷惑][めい|わく]をおかけしましたこと#ruby[大変][たい|へん]#ruby[申][もう]し#ruby[訳][わけ]ございません。#lb()This time, my ineptitude has caused you trouble, for that I'm deeply sorry.],
+  [お前キモいんだよ、マジで。#lb()You are disgusting.], [そうなんですねーーすごいですね、あ、すみませんちょっと#ruby[打][う]ち#ruby[合][あ]わせがございまして、こちらにて#ruby[失礼][しつ|れい]いたしますどうも。#lb()Wow that's great! Sorry I have a meeting to attend, I'll excuse myself here.],
+  // [], [],
+  hline,
+)
+
 
 == I don't know Japanese
 _See the main reel on #link("https://www.instagram.com/reel/DCWrFTISpc6/")[[IG]]._
-
 
 - #ruby[日本話][に|ほん|ご]#ruby[話][は]せません。 (I cannot speak Japanese.)
 - #ruby[日本話][に|ほん|ご]わかりません。 (I don't understand Japanese.)
@@ -75,6 +101,16 @@ _See the main reel on #link("https://www.instagram.com/reel/DCWrFTISpc6/")[[IG]]
 == #ruby[電車][でん|しゃ]#ruby[内][ない]で#ruby[耳][みみ]にするのアナウンス Announcements you hear on board trains
 
 Read the main article on #link("https://cotoacademy.com/japanese-train-announcements-meaning-%E3%81%A7%E3%82%93%E3%81%97%E3%82%83-%E3%82%A2%E3%83%8A%E3%82%A6%E3%83%B3%E3%82%B9/")[CA]. See a compilation of pre-departure announcements on #link("https://www.youtube.com/watch?v=oSI27VY3j2c")[YT].
+
+Interactions:
+- #ruby[何][なに]かお#ruby[困][こま]りですか？ (Do you need help?)
+- #ruby[電車][でん|しゃ]が#ruby[遅][おく]れています。 (The train is late.)
+- #ruby[最寄][も|よ]りの[#ruby[鉄道][てつ|どう]]#ruby[駅][えき]はどこですか？ (Where is the nearest train station?)
+- 〇〇を#ruby[往復][おう|ふく]する#ruby[旅行][りょ|こう]をしたいです。 (I want a round trip to 〇〇.)
+- 〇〇に#ruby[行][い]きたいです。どうしたらいいですか？ (I want to go to 〇〇. What should I do?)
+- 〇〇#ruby[行][ゆ]きの#ruby[電車][でん|しゃ]はどれですか？ (Which is the train heading to 〇〇?)
+- 〇〇#ruby[行][ゆ]きの#ruby[次][つぎ]の#ruby[電車][でん|しゃ]は#ruby[何時][なん|じ]ですか？ (When is the next train heading to 〇〇?)
+- 〇〇まであと#ruby[何駅][なん|えき]ですか？ (How many {more/remaining}(あと) stations until we reach 〇〇?)
 
 Before boarding a train:
 - まもなく、#ruby[電車][でん|しゃ]が#ruby[参][まい]ります。 (The train is coming soon.)
@@ -131,7 +167,7 @@ Emergency announcements:
 
 #ruby[大杖道][おお|じょう|どう]は７７#ruby[代][だい]#ruby[続][つづ]く#rruby[老舗][しにせ]だ。ここ#ruby[数年][すう|ねん]、#ruby[大杖道][おお|じょう|どう]の#ruby[面性][めん|せい]は#ruby[高][たか]まりつつある。それもすべて#ruby[道主][どう|しゅ]#ruby[胡桃][フー|タオ]の#ruby[尽力][じん|りょく]#ruby[植][う]える。 (Wangsheng has stood for 77 generations and has gained still greater fame in recent years, thanks to their eccentric young director, Hu Tao.)
 
-お#ruby[日様][ひ|さま]が#ruby[出][で]たら#ruby[日光浴][にっ|こう|よく]、お#ruby[月様][つき|さま]が#ruby[出][で]たら#ruby[月光浴][げっ|こう|よく]〜 (When the sun's out, bathe in sunlight. But when the moon's out, bathe in moonlight.)
+「お#ruby[日様][ひ|さま]が#ruby[出][で]たら#ruby[日光浴][にっ|こう|よく]、お#ruby[月様][つき|さま]が#ruby[出][で]たら#ruby[月光浴][げっ|こう|よく]〜」 ("When the sun's out, bathe in sunlight. But when the moon's out, bathe in moonlight.")
 
 #ruby[胡桃][フー|タオ]は#ruby[炎][ほのお]#ruby[元素][げん|そ]を#ruby[操][あやつ]り、#ruby[燃][も]え#ruby[盛][さか]る#ruby[炎][ほのお]によって#ruby[世][よ]の#ruby[不浄][ふ|じょう]を#ruby[祓][はら]う。HPを#ruby[消耗][しょう|もう]することで#ruby[胡桃][フー|タオ]はダメージを#ruby[上][あ]げることが#ruby[可能][か|のう]だ。 (Hu Tao manipulates Pyro with ease, and can sacrifice her HP to increase her damage output, cleansing the world of impurities with an unrelenting flame.)
 
@@ -149,7 +185,7 @@ Emergency announcements:
 
 #ruby[大杖道][おお|じょう|どう]はには、#ruby[生][せい]と#ruby[死][し]の#ruby[境][さかい]を渡り歩く#ruby[秘術][ひ|じゅつ]が#ruby[伝][つた]わっている。この#ruby[秘術][ひ|じゅつ]によって、#ruby[術者][じゅつ|しゃ]は#ruby[死][し]を#ruby[恐][おそ]れず#ruby[膨大][ぼう|だい]な#ruby[力][ちから]を#ruby[得][え]る。#ruby[天賦][てん|ぷ]「#ruby[血][ち]のかまど」を#ruby[解放][かい|ほう]すると、#ruby[胡桃][フー|タオ]のHPが#ruby[低][ひく]い#ruby[時][とき]、#ruby[炎][ほのお]ダメージが#ruby[上昇][じょう|しょう]する。 (Wangsheng has a long heritage. It's said that their directors pass down a secret technique to traverse between life and death. Unafraid in the face of death, they instead unleash yet greater power. Once the Talent "Sanguine Rouge" is unlocked, Hu Tao gains a Pyro DMG Bonus when her HP is low.)
 
-#ruby[燎原][りょう|げん]の#ruby[蝶][ちょう]！ (Pyre, pyre, pants on fire!)
+「#ruby[燎原][りょう|げん]の#ruby[蝶][ちょう]！」 ("Pyre, pyre, pants on fire!")
 
 灼熱の魂をフリー広範囲炎ダメージを与える
 敵に命中すると颯太をの hp 上限をもとに hp が回復する

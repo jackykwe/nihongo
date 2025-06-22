@@ -413,7 +413,8 @@ The following table is a condensed version, showing where the rules come from.
   [ばかり], [only? approximately? \<v te\>just (time)?], [], [],
   [くらい], [approximately/about/around], [], [],
   [より], [than], [], [],
-  [しか], [nothing but/no more than], [], [],
+  [しか], [nothing but/no more than], [], [#link("https://bunpro.jp/grammar_points/%E3%81%A0%E3%81%91%E3%81%A7")[[Bunpro]]],
+  [だけで], [with only], [], [#link("https://bunpro.jp/grammar_points/%E3%81%A0%E3%81%91%E3%81%A7")[[Bunpro]]],
   [ながら], [while], [], [],
   [ながらも], [despite], [], [],
   // TODO: ADD: sec:auxiliary-adjective-hoshii

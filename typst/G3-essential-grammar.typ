@@ -65,7 +65,7 @@ This is a common misconception! です and だ are two fundamentally different c
 
 - だ can be used both at the end of both complete sentences and relative clauses, whereas です can only be used at the end of complete sentences.
 
-  E.g. そうだど思います。 #textred[(In an indirect quote, it is wrong to quote です: it must be changed to だ.)]
+  E.g. そうだと思います。 #textred[(In an indirect quote, it is wrong to quote です: it must be changed to だ.)]
 
   E.g. 「はい、そうです」と答える。 (The only place where です can be in an embedded clause is in direct quotes.)
 
@@ -387,7 +387,9 @@ E.g. 学生*#textred[な]のに*、彼女は勉強しない。 (Despite being a 
 
 === General and contradiction connector particles けど(、けれど、けれども)、が <sec:general-and-contradiction-connector-particles>
 
-けど and が are used as general connectors of any two sentences, like how we construct running sentences in English using "and". Also, they can be used to express the idea of contradiction between the two sentences: in this usage, が is slightly more polite (stronger contradiction) than けど. Politer forms of けど are けれど and けれども (#highlight[???]). The schema is \<sentence 1\>{が/けど/けれど/けれども}、\<sentence 2\>.
+けど and が are used as general connectors of any two sentences, like how we construct running sentences in English using "and". They are also used to provide context.
+
+Furthermore, they can be used to express the idea of contradiction between the two sentences: in this usage, が is slightly more polite (stronger contradiction) than けど. Politer forms of けど are けれど and けれども (#highlight[???]). The schema is \<sentence 1\>{が/けど/けれど/けれども}、\<sentence 2\>.
 
 E.g. マトリックスを見た*けど*、面白かった。 (general connector; I watched "The Matrix" and it was interesting.)
 
@@ -521,7 +523,7 @@ E.g. #ruby[一生懸命][いっ|しょう|けん|めい]、*頑張っていく*�
 
 E.g. 色々な人*#ruby[付][つ]き#ruby[合][あ]ってきた*けど、いい人はまだ見つからない。 (temporal; Went out with various types of people up till the present, but a good person hasn't been found yet.; 付き合ってきた is the past-tense of 付き合ってくる.)
 
-E.g. 日本語をずっと前から*勉強してきて*、#ruby[結局][けっ|きょく]早めた。 (temporal; Studied Japanese from way back before, and eventually quit.; 勉強してきて is the て-form of 勉強してくる.)
+E.g. 日本語をずっと前から*勉強してきて*、#ruby[結局][けっ|きょく]やめた。 (temporal; Studied Japanese from way back before, and eventually quit.; 勉強してきて is the て-form of 勉強してくる.)
 
 
 == Potential form 〜#ruby[◯][〜え]る/〜られる/〜できる/#ruby[来][こ]られる <sec:potential-form>
@@ -564,7 +566,7 @@ E.g. 友達のおかげで、映画はタダで*見る{こと/の}ができた*�
 E.g. 久しぶりに彼の声が*聞く{こと/の}ができた*。 (For the first time in a long time, I was able to hear his voice.)
 
 
-=== Potential to exist: あり\ruby{得{え/う}る} <sec:potential-to-exist-arieru>
+=== Potential to exist: あり#ruby[得][え/う]る <sec:potential-to-exist-arieru>
 
 Interestingly, ある doesn't have a potential form. The round-about way of saying "possible to exist" is 「あることができる」, but this is almost never used. Instead, we use あり#ruby[得][え/う]る, which is actually a compound verb made from ある and the auxiliary verb #ruby[得][え]る (meaning to be able to), and not considered to be a potential form of ある by natives (see discussion on #link("https://www.reddit.com/r/LearnJapanese/comments/2wostw/potential\_%E3%81%82%E3%82%8B\_and\_%E3%81%84%E3%82%8B/")[Reddit]).
 
@@ -666,7 +668,7 @@ It is a misconception to parse 見えなくなった as "見えなく (adverb fo
 
 An adverb refers to a grammatical _function_, specifically the function of describing the _manner_ something is or some action is done. Since 見えなく does #underline[not] mean "in a manner that is not visible", it is #underline[not] serving the function of the adverb. "In English, you can say adverbs end in 'ly'. Does that mean that bully is an adverb or that silly is an adverb?"
 
-見えなく merely takes on the same grmamatical _form_ as adverbs. 見えない is in the _form_ of an い-adjectives, and so it conjugates like い-adjectives: #underline[conjugation rules are based on form, not function]. In Japanese, 見えなく is the #ruby[連用形][れん|よう|けい] (conjunctive form) of 見えない, the form used during conjugation with other grammatical units. No native will understand 見えなく as "in a manner that is not visible"; "it's just part of the form into which the word must _inflect_ to function properly in the sentence".
+見えなく merely takes on the same grammatical _form_ as adverbs. 見えない is in the _form_ of an い-adjectives, and so it conjugates like い-adjectives: #underline[conjugation rules are based on form, not function]. In Japanese, 見えなく is the #ruby[連用形][れん|よう|けい] (conjunctive form) of 見えない, the form used during conjugation with other grammatical units. No native will understand 見えなく as "in a manner that is not visible"; "it's just part of the form into which the word must _inflect_ to function properly in the sentence".
 
 Specifically, 見えなくなった is made of 見える + ない + なる. To link these into a phrase, each component must be converted into the 連用形 (actually ない comes after the #ruby[未然形][み|ぜん|けい] (nai stem of a verb) of 見える, which is 見え). Thus the required forms are 見え (未然形)、なく (連用形)、なった (past), resulting in 見えなくなった.
 
@@ -680,7 +682,7 @@ There are four ways to say "if" in Japanese.
 
 _The Takoboto dictionary refers to this as the "provisional form", for some reason._
 
-This is the simplest, most general conditional, and is a conjugation of nouns, adjectives and verbs. Refer to @appendix:conjugation-rules-summary for detailed conjugation rules. It means ``if \<future ...\>ば, then \<...\>". #underline[The focus is on the conditional predicate], i.e. the part before the ば, not on the statement that follows.
+This is the simplest, most general conditional, and is a conjugation of nouns, adjectives and verbs. Refer to @appendix:conjugation-rules-summary for detailed conjugation rules. It means "if \<future ...\>ば, then \<...\>". #underline[The focus is on the conditional predicate], i.e. the part before the ば, not on the statement that follows.
 
 The conjugation rule for nouns and な-adjectives is suffixing 「〜であれば」, which is actually using the conditional form あれば of the verb ある. 「である」 is a formal expression we will see much later (#highlight[???]).
 
@@ -713,7 +715,7 @@ E.g. 友達に*会えたら#textlightgrey[[ば]]*、#underline[買い物に行�
 
 E.g. お金が*あったら#textlightgrey[[ば]]*#underline[いいね]。 (If I had money, #underline[it would be good, huh?])
 
-There is also a second usage, to express surprise at an unexpected past outcome, via the schema \<past predicate/prior event\>たら#textlightgrey[[ば]]、\<unexpected past outcome\>.
+There is also a second usage, to express surprise at an unexpected *past* outcome, via the schema \<past predicate/prior event\>たら#textlightgrey[[ば]]、\<unexpected *past* outcome\>.
 
 E.g. #ruby[家][うち]に*帰ったら#textlightgrey[[ば]]*、誰もいなかった。 (When I went home, there was (unexpectedly) no one there.)
 
@@ -724,7 +726,7 @@ E.g. アメリカに*行ったら#textlightgrey[[ば]]*、たくさん#ruby[太]
 
 === Expected consequence conditionals with と <sec:expected-consequence-conditionals>
 
-_This is similar in nuance to the CだたらE construct (see @tbl:appendix-vocab-adverbs-grammatical[]), with the added element of _expectedness_._
+_This is similar in nuance to the CだたらE construct (see @tbl:appendix-vocab-adverbs-grammatical), with the added element of _expectedness_._
 
 AとB means that if A happens, then as a natural consequence B is _expected_ to happen. The schema is C[だ]とE. #textred[Note that the state-of-being だ must be made explicit for nouns and な-adjectives, for disambiguation with other usages of と!]
 
@@ -750,7 +752,7 @@ E.g. アリスさんが言う*なら#textlightgrey[[ば]]*問題ないよ。 (If
 E.g. 図書館はどこですか。図書館*なら#textlightgrey[[ば]]*、あそこです。 (Where is the library? If given that you're talking about the library, then it's over there.)
 
 
-=== もし as an uncertainty embellishment <sec:moshi-as-uncertainty-embellishment>
+=== もし as an uncertainty embellishment for conditionals <sec:moshi-as-uncertainty-embellishment>
 
 The adverb もし (and related ones like もしや、もしかし) are only a supplement to add the nuance of uncertainty on whether the predicate/condition is true ("perhaps/by any chance"). One of the four forms above must still be used.
 
@@ -763,6 +765,37 @@ E.g. *もし*時間がない*なら*、明日でもいいよ。 (contextual cond
 
 Expressing the idea that something must not be done, must be done, or that it's ok to do/not do is common in Japanese.
 
+// @typstyle off
+#general_table(
+  [Prohibition, requirement and permission summary.], // caption
+  "tbl:probition-requirement-permission-summary",  // label
+  (1fr, 0.5fr, 1.75fr, 2fr, 2fr),  // column_sizes ,
+  (center, center, left, left, left),  // column_aligns
+  scale_factor: 0.65,
+  hline,
+  [*Class*], [*Tense*], [*Normal*], [*Polite*], [*Translation*],
+  hline,
+  [#rc(2, 1)[Prohibition]], [Present], [You must not overexert.], [無理してはだめ。#lb()無理してはいけない。#lb()無理してはならない。#lb()無理しちゃだめ。#lb()無理しちゃいけない。#lb()無理しちゃならない。], [無理してはだめです。#lb()無理してはいけません。#lb()無理してはなりません。#lb()無理しちゃだめです。#lb()無理しちゃいけません。#lb()無理しちゃなりません。],
+  hline,
+  [Past], [You had to not overexert.], [無理してはだめだった。#lb()無理してはいけなかった。#lb()無理してはならなかった。#lb()無理しちゃだめだった。#lb()無理しちゃいけなかった。#lb()無理しちゃならなかった。], [無理してはだめでした。#lb()無理してはいけませんでした。#lb()無理してはなりませんでした。#lb()無理しちゃだめでした。#lb()無理しちゃいけませんでした。#lb()無理しちゃなりませんでした。],
+  hline,
+  [#rc(6, 1)[Requirement]], [#rc(3, 1)[Present]], [#rc(3, 1)[You must overexert.]], [無理しなくてはだめ。#lb()無理しなくてはいけない。#lb()無理しなくてはならない。#lb()無理しなくちゃ。], [無理しなくてはだめです。#lb()無理しなくてはいけません。#lb()無理しなくてはなりません。#lb()-],
+  [無理しないとだめ。#lb()無理しないといけない。#lb()無理しないとならない。#lb()無理しないと。], [無理しないとだめです。#lb()無理しないといけません。#lb()無理しないとなりません。#lb()-],
+  [無理しなければだめ。#lb()無理しなければいけない。#lb()無理しなければならない。#lb()無理しなきゃ。], [無理しなければだめです。#lb()無理しなければいけません。#lb()無理しなければなりません。#lb()-],
+  hline,
+  [#rc(3, 1)[Past]], [#rc(3, 1)[You had to overexert.]], [無理しなくてはだめだった。#lb()無理しなくてはいけなかった。#lb()無理しなくてはならなかった。], [無理しなくてはだめでした。#lb()無理しなくてはいけませんでした。#lb()無理しなくてはなりませんでした。],
+  [無理しないとだめだった。#lb()無理しないといけなかった。#lb()無理しないとならなかった。], [無理しないとだめでした。#lb()無理しないといけませんでした。#lb()無理しないとなりませんでした。],
+  [無理しなければだめだった。#lb()無理しなければいけなかった。#lb()無理しなければならなかった。], [無理しなければだめでした。#lb()無理しなければいけませんでした。#lb()無理しなければなりませんでした。],
+  hline,
+  [#rc(4, 1)[Permission]], [Present], [You can overexert.], [無理してもいい。#lb()無理しても大丈夫。#lb()無理しても構わない。], [無理してもいいです。#lb()無理しても大丈夫です。#lb()無理しても構いません。],
+  hline,
+  [Past], [You could overexert.], [無理してもよかった。#lb()無理しても大丈夫だった。#lb()無理しても構わなかった。], [無理してもよかったです。#lb()無理しても大丈夫でした。#lb()無理しても構いませんでした。],
+  hline,
+  [Present-negative], [There is no need to overexert.], [無理しなくてもいい。#lb()無理しなくても大丈夫。#lb()無理しなくても構わない。], [無理しなくてもいいです。#lb()無理しなくても大丈夫です。#lb()無理しなくても構いません。],
+  hline,
+  [Past-negative], [There was no need to overexert.], [無理しなくてもよかった。#lb()無理しなくても大丈夫だった。#lb()無理しなくても構わなかった。], [無理しなくてもよかったです。#lb()無理しなくても大丈夫でした。#lb()無理しなくても構いませんでした。],
+  hline,
+)
 
 === Prohibition (things that must not be done) 〜ては{だめ/いけない/ならない} <sec:prohibition>
 
@@ -770,7 +803,7 @@ There are three adjectives that convey prohibition: だめ、いけない、な�
 
 いけない comes from #ruby[行][い]けない which means bad/wrong/naughty, but when used in the prohibitory manner is written in 仮名 alone.
 
-All conjugations of the three adjectives are shown in @tbl:prohibition-conjugations. #textblue[The polite forms taken by いけない and ならない can be explained by interpreting them as present-negative forms of the verbs いける (meaning to go well) and なる (to become) respectively.]
+All conjugations of the three adjectives are shown in @tbl:prohibition-conjugations. #textblue[The polite forms taken by いけない and ならない can be explained by interpreting them as present-negative forms of the verbs いける (meaning to go well) and なる (to become) respectively.] #textred[Though be cautioned, don't mix form with function (@sec:decoupling-form-and-function-in-japanese-grammar).]
 
 // @typstyle off
 #general_table(
@@ -804,12 +837,13 @@ E.g. *泳いでは*なりません。 (Do not swim.)
 
 The contractions for expressing prohibition involve the following replacements. #textred[Note that the {だめ/いけない/ならない} must not be omitted for contracted prohibition.]
 
+$ "In short," wide "ては" mapsto "ちゃ," wide "では" mapsto "じゃ." $
+
 $
   overbrace(cdots て, "v te")"は{だめ/いけない/ならない}" &mapsto overbrace(cdots, "v te fragment")"ちゃ{だめ/いけない/ならない}" \
   overbrace(cdots で, "v te")"は{だめ/いけない/ならない}" &mapsto overbrace(cdots, "v te fragment")"じゃ{だめ/いけない/ならない}"
 $
 
-$ "Equivalently," wide "ては" mapsto "ちゃ," wide "では" mapsto "じゃ." $
 
 _The second form is used for verbs with endings in {ぐ,む,ぬ,ぶ}_; their て-forms use で.}
 
@@ -860,13 +894,13 @@ In casual speech, however, people default to either the \<v negative\>と{だめ
 
 The contractions for expressing requirement involve the following replacements. #textred[Note that the {だめ/いけない/ならない} is omitted for contracted requirement.]
 
+$ "In short," wide "なくて" mapsto "なくちゃ," wide "なければ" mapsto "なきゃ." $
+
 $
   "[first schema]" & wide & overbrace(cdots "なくて", "v te-negative")"は{だめ/いけない/ならない}" &mapsto overbrace(cdots "な", "v negative fragment")"くちゃ" \
   "[second schema]" & wide & overbrace(cdots "ない", "v negative")"と{だめ/いけない/ならない}" &mapsto overbrace(cdots "ない", "v negative")"と" \
   "[third schema]" & wide & overbrace(cdots "なければ", "v conditional-negative")"{だめ/いけない/ならない}" &mapsto overbrace(cdots "な", "v negative fragment")"きゃ"
 $
-
-$ "Equivalently," wide "なくて" mapsto "なくちゃ," wide "なければ" mapsto "なきゃ." $
 
 For the first schema contraction, なくちゃ is the colloquial form of なくては, which is an abbreviation of なくてはいけない. For the third schema contraction, なきゃ is the colloquial form of なければ, which is the conditional-negative form of the verb ある. #textorange[In a sense, every verb has two colloquial "requirement" forms: $cdots$なくちゃ and $cdots$なきゃ, based on their negative forms.]
 
@@ -948,7 +982,7 @@ E.g. *食べたくなくなった*。 (I became not wanting to eat.; to parse th
 
 The 「\<nn\>が欲しい」 construct means to want \<nn\>. To express that we want a verb \<v\> done, or that we want the listener to do \<v\>, we use the auxiliary adjective ほしい. This auxiliary usage is written in 仮名 alone.
 
-The auxiliary adjective ほしい is actually rarely used in practice, since there are other more appropriate ways to make requests (#highlight[???]).
+The auxiliary adjective ほしい is actually rarely used in practice, since there are other more appropriate ways to make requests (#highlight[???]). #textred[Note that 〜ほしい does NOT express that you want to do something yourself; that is expressed by 〜たい.]
 
 E.g. 大好きぬいぐるみが欲しい！ (I want a big stuffed doll!; ぬいぐるみ: stuffed toy)
 
@@ -997,7 +1031,7 @@ In order to perform an action (e.g. thinking, saying, hearing, variants of each,
 
 === Direct quotation 「...」と <sec:direct-quotation>
 
-The と particle is the quote marker particle, as first seen in @sec:building-clauses-and-sentences. The syntax is 「\<quote\>」と\<v\>. \<v\> can be anything like 言う、聞く、#ruby[呼][よ]ぶ (to call)、#ruby[叫][さく]ぶ (to scream)、#ruby[呟][つぶや]く (to mutter), etc. The \<v\> doesn't need to immediately follow と; other adverbs and sentence parts-of-speech can come in between, so long as \<v\> appears in the clause somewhere after と.
+The と particle is the quote marker particle, as first seen in @sec:building-clauses-and-sentences. The syntax is 「\<quote\>」と\<v\>. \<v\> can be anything like 言う、聞く、#ruby[呼][よ]ぶ (to call)、#ruby[叫][さけ]ぶ (to scream)、#ruby[呟][つぶや]く (to mutter), etc. The \<v\> doesn't need to immediately follow と; other adverbs and sentence parts-of-speech can come in between, so long as \<v\> appears in the clause somewhere after と.
 
 E.g. アリスが、*「*寒い*」と**言った*。 ("Cold", said Alice.)
 
@@ -1544,9 +1578,20 @@ E.g. ここは*つまんない*#super[つまらない]から、私*んち*#super
 E.g. *ったく*#super[まったく]、いつまでこんな*とこ*#super[ところ]で、グズグズ*すんだ*#super[するんだ]よ。 (Good grief, when are you going to linger in this kind of place until?; グズグズする: to linger/hesitate)
 
 
-=== Slang sentence ordering <sec:slang-sentence-ordering>
+=== Sentence ordering <sec:slang-sentence-ordering>
 
-A complete grammatically correct sentence typically ends with a verb. In Japanese slang, this is often bent. In conversations, it's typical to say the first thing that comes up in our thoughts, without thinking about how to structure the whole sentence properly. Often, this first thought is the verb. Once the verb has already out of your mouth, you'd then follow up with an explanation of what you mean: the surrounding context and such.
+A complete grammatically correct sentence typically ends with a verb.
+
+The usual ordering comprises of six elements:
+0. \<topic>*は*
+1. \<いつ>*に* (when)
+2. \<どこ>*で* (where)
+3. \<誰>*が* (who)
+4. \<誰>*と* (with who)
+5. \<どの>*ように* (how)
+6. \<何>を*する* (verb)
+
+In Japanese slang, this is often bent. In conversations, it's typical to say the first thing that comes up in our thoughts, without thinking about how to structure the whole sentence properly. Often, this first thought is the verb. Once the verb has already out of your mouth, you'd then follow up with an explanation of what you mean: the surrounding context and such.
 
 E.g. それは何？ (proper; What is that?)
 
@@ -1587,7 +1632,7 @@ E.g. あんなやつに*負けやがって*。じゃ、どうすんだよ？ (Lo
 E.g. やる#ruby[気][き]か？だったらさっさと*来やがれ*！ (You want to fight? If so, then hurry up and come on!; 〜やがれ is the imperative form of 〜やがる)
 
 
-=== The \ruby{何{なに} mispronunciation and filler word なんか}
+=== The #ruby[何][なに] mispronunciation and filler word なんか
 
 % When used to mean "what", 何 can be read as either なに or なん depending on the word that comes after (e.g. #ruby[何][なに]色 (what colour)、#ruby[何][なん]人 (how many people)).
 

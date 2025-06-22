@@ -15,6 +15,7 @@
   // [], [], [], [],
   hline,
   [#ruby[嬉][うれ]しい], [い], [happy/glad/delighted], [],
+  [#ruby[明][あか]るい], [い], [cheerful/spirited/sunny (mood)], [also in @tbl:appendix-vocab-adjectives-appearance-and-style, @tbl:appendix-vocab-adjectives-taste-and-texture],
   [#ruby[楽][たの]しい], [い], [fun/enjoyable/happy], [],
   [#ruby[欲][ほ]しい], [い], [desired/wanted], [],
   [\<v te\>ほしい], [い], [I want you to do \<v\>/I want \<v\> done], [#aux],
@@ -29,6 +30,7 @@
   // [], [], [], [],
   hline,
   [#ruby[悲][かな]しい], [い], [sad/miserable], [],
+  [#ruby[暗][くら]い], [い], [depressed/dispirited/dark (mood)], [also in @tbl:appendix-vocab-adjectives-appearance-and-style, @tbl:appendix-vocab-adjectives-taste-and-texture],
   [#ruby[恥][は]ずかしい], [い], [embarrassed/ashamed/humiliated], [],
   [#ruby[懐][なつ]かしい], [い], [nostalgic/fondly-remembered/missed], [],
   [#ruby[寂][さび]しい], [い], [lonely], [],
@@ -328,11 +330,13 @@ Only four colours were recognised as basic colours in ancient Japan: red, blue, 
   thickhline,
   [#ruby[裕福][ゆう|ふく]], [な], [wealthy/rich/affluent/well-off], [],
   [#ruby[豊][ゆた]か], [な], [rich/abundant/plentiful/ample], [#link("https://taigigo.jitenon.jp/word/p11942")[[TGG]]],
+  [#ruby[明][あか]るい], [い], [bright/rosy/encouraging (future/prospects)], [also in @tbl:appendix-vocab-adjectives-emotions, @tbl:appendix-vocab-adjectives-taste-and-texture],
   // [], [], [], [],
   hline,
   [#ruby[貧乏][びん|ぼう]], [な], [poor/poverty-stricken], [#link("https://dictionary.goo.ne.jp/thsrs/6586/meaning/m0u")[[goo]]],
   [#ruby[貧][まず]しい], [い], [lacking inner richness/poor/needy], [#link("https://taigigo.jitenon.jp/word/p11942")[[TGG]]; #link("https://dictionary.goo.ne.jp/thsrs/6586/meaning/m0u")[[goo]]],
   [#ruby[乏][とぼ]しい], [い], [shortage/scarce/limited/meagre], [#link("https://taigigo.jitenon.jp/word/p11942")[[TGG]]; #link("https://dictionary.goo.ne.jp/thsrs/6586/meaning/m0u")[[goo]]],
+  [#ruby[暗][くら]い], [い], [unpromising/hopeless (future/prospects)], [also in @tbl:appendix-vocab-adjectives-emotions, @tbl:appendix-vocab-adjectives-taste-and-texture],
   // [], [], [], [],
   thickhline,
   [#ruby[偉][えら]い], [い], [respected/great/famous/celebrated/distinguished], [also in @tbl:appendix-vocab-adjectives-agreeability],
@@ -378,6 +382,7 @@ Only four colours were recognised as basic colours in ancient Japan: red, blue, 
   [#ruby[強][つよ]い], [い], [strong/dependable; competent/skilled; rigid/solid], [],
   [#ruby[詳][くわ]しい], [い], [detailed/full], [],
   [に#ruby[詳][くわ]しい], [い], [knowledgeable/well-informed/familiar about], [],
+  [に#ruby[明][あか]るい], [い], [knowlwedgeable/well-informed/familiar about], [],
   [#ruby[流暢][りゅう|ちょう]], [な], [fluent (in a language)], [],
   [ペラペラ], [な], [fluent (speaking a foreign language)], [also an adverb],
   [ネイティブ], [な], [native], [also a noun],
@@ -394,6 +399,7 @@ Only four colours were recognised as basic colours in ancient Japan: red, blue, 
   [#ruby[無能][む|のう]], [の], [incapable/incompetent/inefficient], [],
   [#ruby[弱][よわ]い], [い], [weak/frail/tender; unskilled], [],
   [に#ruby[疎][うと]い], [い], [ignorant/ill-informed/unfamiliar about], [also in @tbl:appendix-vocab-adjectives-emotions],
+  [に#ruby[暗][くら]い], [い], [unfamiliar with/ignorant of], [],
   [#ruby[弱小][じゃく|しょう]], [な], [puniness; youth], [],
   [#ruby[頭][あたま]が#ruby[悪][わる]い], [い], [slow/weak-headed/dumb], [],
   [バカ], [な], [stupid/foolish/ridiculous], [(#ruby[馬鹿][ば|か])],
@@ -590,20 +596,19 @@ Only four colours were recognised as basic colours in ancient Japan: red, blue, 
 )
 
 
-== Taste and texture
+== The five senses
 _Read the main article for the five basic flavours on #link("https://cotoacademy.com/useful-words-describe-food-japanese-illustrated-guide/")[CTA]._
 
 #highlight[More #link("https://cotoacademy.com/useful-words-describe-food-japanese-illustrated-guide/")[here]]
 
 // @typstyle off
 #adjective_table(
-  [Adjectives: taste and texture.], // caption
+  [Adjectives: the five senses: sight, hearing, smell, taste, touch.], // caption
   "tbl:appendix-vocab-adjectives-taste-and-texture", // label
   [おいしい], [い], [good-tasting/delicious/tasty], [(#rruby[美味][おい]しい)],
   [うまい], [い], [delicious], [(#rruby[美味][うま]い/#ruby[旨][うま]い #link("https://business-textbooks.com/umai/")[[SKJnKKS]])],
-  [うめぇ/うめえ/うめー], [expression], [delicious/skilled/good], [colloquial],
   // [], [], [], [],
-  thickhline,
+  hline,
   [#ruby[酸][す]っぱい], [い], [sour], [],
   [#ruby[甘][あま]い], [い], [sweet], [],
   [#ruby[苦][にが]い], [い], [bitter], [],
@@ -616,6 +621,11 @@ _Read the main article for the five basic flavours on #link("https://cotoacademy
   thickhline,
   [きな#ruby[臭][くさ]い], [い], [smelling burnt/scorched], [also in @tbl:appendix-vocab-adjectives-emotions],
   // [], [], [], [],
+  thickhline,
+  [#ruby[明][あか]るい], [い], [light/bright/well-lit; bright (colour)], [also in @tbl:appendix-vocab-adjectives-emotions, @tbl:appendix-vocab-adjectives-appearance-and-style],
+  [#ruby[暗][くら]い], [い], [dark/dull/gloomy/murky; dark (colour)], [also in @tbl:appendix-vocab-adjectives-emotions, @tbl:appendix-vocab-adjectives-appearance-and-style],
+  // [], [], [], [],
+  thickhline,
 )
 
 

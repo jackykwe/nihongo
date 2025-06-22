@@ -1129,6 +1129,13 @@ Regarding the こそあど#ruby[言葉][こと|ば]:
   [Nouns: body parts.], // caption
   "tbl:appendix-vocab-nouns-body-parts", // label
   [#ruby[肉体][にく|たい]], [the body/the flesh/one's physique], [also: ボディー],
+  [#ruby[五感][ご|かん]], [the five senses], [],
+  [#ruby[視覚][し|かく]], [sense of sight/eyesight/vision], [],
+  [#ruby[聴覚][ちょう|かく]], [sense of hearing/auditory perception], [],
+  [#ruby[嗅覚][きゅう|かく]], [sense of smell/olfaction], [],
+  [#ruby[味覚][み|かく]], [sense of taste/palate], [],
+  [#ruby[触覚][しょっ|かく]], [sense of touch; tactile/haptic], [],
+  [#ruby[第六感][だい|ろっ|かん]], [the sixth sense/intuition], [],
   // [], [], [],
   hline,
   [#ruby[髪][かみ]], [hair (on the head)], [also: ヘア],
@@ -1476,6 +1483,7 @@ Regarding the こそあど#ruby[言葉][こと|ば]:
   [#ruby[円][えん]], [yen (Japanese monetary unit)], [],
   [#ruby[買][か]い#ruby[物][もの]], [the act of shopping/purchased goods], [],
   [#ruby[会計][かい|けい]], [bill (at a restaurant)], [also in @tbl:appendix-vocab-nouns-academic-fields],
+  [お#ruby[手洗][て|あら]い#ruby[会計][かい|けい]], [go-to-the-washroom-payment-method], [],
   [ビル], [bill/invoice], [],
   [#ruby[請求][せい|きゅう]], [charge/billing (for a service)], [also a verb; also in @tbl:appendix-vocab-nouns-interaction],
   // [], [], [],
@@ -2242,11 +2250,11 @@ Colours are often used as labels, together with the の particle.
 )
 
 
-== Taste and texture
+== The five senses
 
 // @typstyle off
 #noun_table(
-  [Nouns: taste and texture.], // caption
+  [Nouns: the five senses: sight, hearing, smell, taste, touch.], // caption
   "tbl:appendix-vocab-nouns-taste-and-texture", // label
   [#ruby[塩][しお]], [(common/table) salt], [],
   // [], [], [],
@@ -2274,6 +2282,7 @@ Colours are often used as labels, together with the の particle.
   thickhline,
   [#ruby[最小][さい|しょう]], [smallest/minimum], [],
   [#ruby[最大][さい|だい]], [biggest/maximum], [],
+  [#ruby[限界][げん|かい]], [limit/bound], [],
   // [], [], [],
   hline,
   [#ruby[最少][さい|しょう]], [fewest/least/smallest number of/minumum], [],

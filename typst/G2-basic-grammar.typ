@@ -114,7 +114,7 @@ Here are its various purposes:
 
   E.g. #ruby[昨日][き|のう]は*お兄ちゃんが*勉強を教えてくれた。まず、英語の勉強を教えてくれて、それから#ruby[国語][こく|ご]の勉強だった。でも、#ruby[算数][さん|すう]の#ruby[宿題][しゅく|だい]をしている#ruby[途中][と|ちゅう]に、*お兄ちゃんは*ゲームを始めた。(Yesterday, my big brother helped me study. To start with, he helped me with English, and then with Japanese. But he started playing a game while we were in the middle of doing my math homework; focus/topic shifted from brother teaching to brother playing game.)
 
-/ Softening implicit comparison with comma 、(in writing only): This is commonly done with time phrases such as #ruby[来週][らい|しゅう]、#ruby[先月][せん|げつ]、#ruby[今年][こ|とし]. // #ruby[先週][せん|しゅう]#ruby[今週][こん|しゅう]、#ruby[来週][らい|しゅう]、#ruby[先月][せん|げつ]、#ruby[今月][こん|げつ]、#ruby[来月][らい|げつ]、#ruby[先年}\ruby{今年][] (this year):
+/ Softening implicit comparison with comma 、(in writing only): This is commonly done with time phrases such as #ruby[来週][らい|しゅう]、#ruby[先月][せん|げつ]、#ruby[今年][こ|とし]. // #ruby[先週][せん|しゅう]#ruby[今週][こん|しゅう]、#ruby[来週][らい|しゅう]、#ruby[先月][せん|げつ]、#ruby[今月][こん|げつ]、#ruby[来月][らい|げつ]、#ruby[先年}[せん|ねん]#rruby{今年][ことし] (this year):
 
   E.g. #ruby[今年][こ|とし]、日本に行くんです。 (This year I'm going to Japan.)
 
@@ -256,7 +256,7 @@ Adjectives (adjective phrases) modify a noun that comes after it.
   // - Past-positive: \<い-adjective\>かった \<noun\>
   // - Past-negative: \<い-adjective\>くなかった \<noun\>
 
-  E.g. #ruby[値段][ね|だん]が#ruby[高][たか]いレストランは*あまり*好き*じゃない*。(I *don't really* like expensive restaurants.)#footnote[*あまり* is typically used as an intensifier modifier for _negative_ adjectives: "don't really, 25-50%'. It can also be used as a modifier for positive adjectives, ``excessive", but in those cases it must be trailing: 食べるあまり、#ruby[悲][かな]しさのあまり。(MT)]
+  E.g. #ruby[値段][ね|だん]が#ruby[高][たか]いレストランは*あまり*好き*じゃない*。(I *don't really* like expensive restaurants.)#footnote[*あまり* is typically used as an intensifier modifier for _negative_ adjectives: "don't really, 25-50%'. It can also be used as a modifier for positive adjectives, "excessive", but in those cases it must be trailing: 食べるあまり、#ruby[悲][かな]しさのあまり。(MT)]
 
   Regarding conjugation, one い-adjective family is an exception: いい. Historically, the word for good changed over time from #ruby[良][よ]い to いい, but conjugations are still take 良い as the base. Same applies to #ruby[格好][かっ|こ]いい, which takes 格好良い as the base. //Therefore:
 // - Present-positive: いい/かっこいい \<noun\>
