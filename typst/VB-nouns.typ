@@ -1332,7 +1332,12 @@ Regarding the こそあど#ruby[言葉][こと|ば]:
   // [], [], [],
   hline,
   [#ruby[作][つく]り], [the making/production/components of], [],
+  [#ruby[訂正][てい|せい]], [correction/amendment (of something that is clearly wrong)], [also a verb],
+  [#ruby[調整][ちょう|せい]], [adjustment/tuning/tailoring], [also a verb],
+  [#ruby[改修][かい|しゅう]], [modification with nuance of repurposing for new purpose], [],
   [#ruby[修正][しゅう|せい]], [amendment/correction/revision/modification/alteration/retouching/update/fix], [also a verb],
+  [#ruby[手直][て|なお]し], [modification that pushes an incomplete product towards completion], [also a verb],
+  [#ruby[添削][てん|さく]], [correction by adding/removing (usu. in education)], [also a verb],
   // [], [], [],
   hline,
   [#ruby[変化][へん|か]], [change/variation/alteration/mutation/transfiguration], [also a verb, in @tbl:appendix-vocab-nouns-meta-language],
@@ -2569,6 +2574,9 @@ _Read the main article on #link("https://www.sakuramani.com/the-solar-system-in-
   [うんこ/ウンコ], [poop], [],
   [クソ], [feces/excrement/dung/damned/blasted/stupid], [(#ruby[糞][くそ])],
   [ごみ/ゴミ], [trash/rubbish/garbage/refuse], [(#ruby[塵][ごみ])],
+  hline,
+  [ナプキン], [sanitary pad], [],
+  [ティッシュ], [tissue paper], [],
   // [], [], [],
 )
 

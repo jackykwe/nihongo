@@ -13,7 +13,8 @@
   - #link("https://jisho.org/")[Jisho dictionary] (MT)
   - #link("https://jotoba.com/")[Jotoba dictionary], an #link("https://www.reddit.com/r/LearnJapanese/comments/11mzx4s/comment/jbklflf/")[upgraded] version of Jisho
   - #link("https://bunpro.jp/")[bunpro dictionary] for JLPT classifications and example sentences
-- #link("https://dictionary.goo.ne.jp/")[goo dictionary] for synonyms and detailed definitions
+// - #link("https://dictionary.goo.ne.jp/")[goo dictionary] for synonyms and detailed definitions. DEFUNCT :(
+- #link("https://www.weblio.jp/")[Weblio dictionary] for J-J dictionary, apparently #link("https://www.reddit.com/r/LearnJapanese/comments/1lm8piz/comment/n05r3bg/?utm_source=share&utm_medium=web3x&utm_name=web3xcss&utm_term=1&utm_content=share_button")[most popular in Japan]
 - #link("https://thesaurus.weblio.jp")[Weblio theasurus] for antonyms
 - #link("https://jlptsensei.com/")[JLPT 先生] for grammar and 漢字 lists
 - Minna no nihongo books (XM)

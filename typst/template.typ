@@ -130,7 +130,7 @@
     #set list(indent: 1em) // mimic LaTeX, more comfortable too
     #set enum(indent: 1em) // mimic LaTeX, more comfortable too
     // Links surrounded by red box
-    #show link: link_object => box(outset: 0.25em, stroke: 1pt + rgb("#ff413655"))[#link_object]
+    #show link: link_object => box(outset: 0.25em, stroke: 0.5pt + rgb("#ff413655"))[#link_object]
 
     // Make section references follow style used in Table of Contents
     #show ref: it => {
