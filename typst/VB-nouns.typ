@@ -632,9 +632,6 @@ The readings of the intercardinal and secondary intercardinals are simply the co
   [#ruby[刻][とき]], [(referring to) time of day], [],
   [#ruby[秋][とき]], [important time], [also: #ruby[秋][あき]],
   // [], [], [],
-  hline,
-  [#ruby[時々][とき|どき]], [sometimes/occasionally], [],
-  // [], [], [],
   thickhline,
   [#ruby[今][いま]], [now/immediately], [also an adverb],
   [#ruby[今後][こん|ご]], [from now on (ongoing event)], [also an adverb, #link("https://dictionary.goo.ne.jp/thsrs/15272/meaning/m1u/")[[goo]]],
@@ -656,6 +653,8 @@ The readings of the intercardinal and secondary intercardinals are simply the co
   [#ruby[前夜][ぜん|や]], [last night/the previous night; the night before (festival, major event, etc.)], [],
   [#ruby[夜][よる]], [evening/night (slightly formal)], [also an adverb, #link("https://ja.hinative.com/questions/13398881")[[HN]], #link("https://dictionary.goo.ne.jp/thsrs/12925/meaning/m1u/")[[goo]]],
   [#ruby[今夜][こん|や]], [this evening/tonight (slightly formal)], [],
+  [#ruby[夜中][よ|なか]], [middle of the night/dead of night], [#link("https://ja.hinative.com/questions/18559244")[[HN]]],
+  [#ruby[夜中][や|ちゅう]], [during the night (literary)], [#link("https://ja.hinative.com/questions/18559244")[[HN]]],
   // [], [], [],
   thickhline,
   [#ruby[朝日][あさ|ひ]], [morning sun/rising sun (the event)], [#link("https://ja.hinative.com/questions/20406767")[[HN]]],
@@ -1433,8 +1432,9 @@ Regarding the こそあど#ruby[言葉][こと|ば]:
   [メンバ[ー]シップ], [membership], [],
   [#ruby[登録][とう|ろく]], [presence in register/records; registration/subscription (YouTube)], [also a verb; #link("https://dictionary.goo.ne.jp/word/%e7%99%bb%e9%8c%b2/")[[goo]]],
   [#ruby[入会][にゅう|かい]], [enrolment/admission into a club/society/mailing list], [also a verb; #link("https://ja.hinative.com/questions/22502664")[[HN]]],
-  [#ruby[加入][か|にゅう]], [becoming a member of (e.g. a group/project)], [also a verb; #link("https://ja.hinative.com/questions/22502664")[[HN]]],
   [#ruby[退会][たい|かい]], [withdrawal/resignation from a club/society/mailing list], [also a verb],
+  [#ruby[加入][か|にゅう]], [becoming a member of (e.g. a group/project)], [also a verb; #link("https://ja.hinative.com/questions/22502664")[[HN]], #link("https://thesaurus.weblio.jp/antonym/content/%E5%8A%A0%E5%85%A5")[[WB]]],
+  [#ruby[脱退][だっ|たい]], [withdrawal from/pulling out of (e.g. a group/project)], [#link("https://thesaurus.weblio.jp/antonym/content/%E5%8A%A0%E5%85%A5")[[WB]]],
   // [], [], [],
   thickhline,
   [#ruby[盗品][とう|ひん]], [stolen goods], [],
@@ -1882,7 +1882,7 @@ Colours are often used as labels, together with the の particle.
   // [], [], [],
   hline,
   [#ruby[魅力][み|りょく]], [charm/attraction/appeal], [],
-  [#ruby[味][あじ]], [charm/appeal/uniqueness/attractiveness], [also in @tbl:appendix-vocab-nouns-taste-and-texture],
+  [#ruby[味][あじ]], [charm/appeal/uniqueness/attractiveness], [also in @tbl:appendix-vocab-nouns-five-senses],
   [#ruby[愛嬌][あい|きょう]], [charm/attractiveness; courtesy], [],
   // [], [], [],
   thickhline,
@@ -2130,7 +2130,7 @@ Colours are often used as labels, together with the の particle.
   [#ruby[隠蔽][いん|ぺい]], [covering up/concealment/hiding/suppression], [also a verb],
   [#ruby[内緒][ない|しょ]], [secret (in/out-group, personal level)], [#link("https://ja.hinative.com/questions/6644230")[[HN]]],
   [#ruby[秘密][ひ|みつ]], [secret (official/corporate/country)], [childish; #link("https://ja.hinative.com/questions/6644230")[[HN]]],
-  [#ruby[隠][かく]し#ruby[事][ごと]], [secret/secrecy], [also a verb],
+  [#ruby[隠][かく]し#ruby[事][ごと]], [secret], [also a verb],
   // [], [], [],
   thickhline,
   [#ruby[確][たし]か], [sure/certain/confident; reliable/trustworthy/accurate/correct/exact], [also an adverb],
@@ -2260,7 +2260,7 @@ Colours are often used as labels, together with the の particle.
 // @typstyle off
 #noun_table(
   [Nouns: the five senses: sight, hearing, smell, taste, touch.], // caption
-  "tbl:appendix-vocab-nouns-taste-and-texture", // label
+  "tbl:appendix-vocab-nouns-five-senses", // label
   [#ruby[塩][しお]], [(common/table) salt], [],
   // [], [], [],
   thickhline,

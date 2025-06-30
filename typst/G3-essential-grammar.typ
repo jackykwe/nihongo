@@ -427,7 +427,7 @@ This is the verb/adjective version of the や particle (@sec:noun-related-partic
 
 E.g. 映画を見た*り*、本を読んだ*り*、昼寝した*りする*。(I do things like watch movies, read books, and take naps (among other things).)
 
-E.g. この大学の授業は簡単だった*り*、難しかった*りです*。(Classes in this university are sometimes easy, sometimes difficult (and sometimes other descriptors).)
+E.g. この大学の授業は簡単だった*り*、難しかった*りする*。(Classes in this university are sometimes easy, sometimes difficult (and sometimes other descriptors).)
 
 The tense of the entire sentence can be changed by conjugating the trailing する.
 

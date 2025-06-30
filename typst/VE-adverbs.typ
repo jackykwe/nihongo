@@ -91,6 +91,7 @@
   [#ruby[全部][ぜん|ぶ]], [entirely/wholly/altogether], [also a noun; #link("https://dictionary.goo.ne.jp/thsrs/13845/meaning/m0u")[[goo]]],
   [#ruby[全体][ぜん|たい]], [wholly/entirely], [#link("https://dictionary.goo.ne.jp/thsrs/13845/meaning/m0u")[[goo]]],
   [すべて], [entirely/completely/wholly], [(#ruby[全][すべ]て)],
+  [もれなく], [without exception], [(#ruby[漏][も]れなく)],
   // [], [], [],
   thickhline,
   [たくさん], [a lot/lots/plenty/much/a great deal; enough/too much], [(#ruby[沢山][たく|さん]); also an adjective],
@@ -173,8 +174,13 @@
   [#ruby[長][なが]い#ruby[間][あいだ]], [for quite some time/a long time], [also a noun],
   [ずっと], [the whole time/continuously; much (more); (by) far], [],
   [#ruby[引][ひ]き#ruby[続][つづ]き], [continuously/continually/continued/without a break], [],
-  [よく], [frequently/often], [(#ruby[良][よ]く); also in @tbl:appendix-vocab-adverbs-attitude],
-  [いつも], [always], [(#rruby[何時][いつ]も)],
+  hline,
+  [#ruby[滅多][めっ|た]に\<negative>], [seldom/rarely], [#link("https://www.instagram.com/reel/DBRCkyVorLg")[IG]],
+  [たまに], [occasionally/once in a while], [(#ruby[偶][たま]に); #link("https://www.instagram.com/reel/DBRCkyVorLg")[IG]],
+  [#ruby[時々][とき|どき]], [every now and then/from time to time/once in a while], [#link("https://www.instagram.com/reel/DBRCkyVorLg")[IG]],
+  [よく], [frequently/often], [(#ruby[良][よ]く); also in @tbl:appendix-vocab-adverbs-attitude; #link("https://www.instagram.com/reel/DBRCkyVorLg")[IG]],
+  [たいてい], [mostly/almost all/ordinarily/usually], [(#ruby[大抵][たい|てい]); #link("https://www.instagram.com/reel/DBRCkyVorLg")[IG]],
+  [いつも], [always], [(#rruby[何時][いつ]も); #link("https://www.instagram.com/reel/DBRCkyVorLg")[IG]],
   // [], [], [],
   thickhline,
   [これから], [from now on/in the future; from here], [also a noun],
@@ -223,7 +229,7 @@
   [#ruby[別][べつ]に], [separately/additionally/extra], [],
   // [], [], [],
   thickhline,
-  [ツンツン], [aloof/cold/unfriendly/standoffish], [#onomatopoeic; also a verb; also in @tbl:appendix-vocab-adverbs-taste-and-texture],
+  [ツンツン], [aloof/cold/unfriendly/standoffish], [#onomatopoeic; also a verb; also in @tbl:appendix-vocab-adverbs-five-senses],
   [デレデレ], [flirting/philandering/being lovestruck/fawning], [#onomatopoeic],
   // [], [], [],
 )
@@ -336,7 +342,7 @@
 // @typstyle off
 #adverb_table(
   [Verbs: the five senses: sight, hearing, smell, taste, touch.], // caption
-  "tbl:appendix-vocab-adverbs-taste-and-texture", // label
+  "tbl:appendix-vocab-adverbs-five-senses", // label
   [ペロペロ], [licking/lapping up; gobbling up], [],
   // [], [], [],
   thickhline,

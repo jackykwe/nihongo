@@ -68,7 +68,6 @@
 
 This is advanced territory and would probably only make sense later on in your learning.
 
-// https://www.instagram.com/reel/DD01U30SR4w/
 // @typstyle off
 #general_table(
   [Business speak conversions.], // caption
@@ -79,12 +78,23 @@ This is advanced territory and would probably only make sense later on in your l
   hline,
   [*Normal speak*], [*Business speak*],
   hline,
+  // https://www.instagram.com/reel/DD01U30SR4w/
   [#ruby[元気][げん|き]？#lb()How are you doing?], [ご#ruby[健勝][けん|しょう]にてお#ruby[過][す]ごしでしょうか？#lb()Has your health been alright?],
   [ありがとう。#lb()Thank you.], [#ruby[深][ふか]く#ruby[御礼][おん|れい]#ruby[申][もう]し#ruby[上][あ]げます。#lb()I hereby express my deepest gratitude.],
   [これ、お#ruby[前][まえ]の？#lb()Is this yours?], [すみません、こちら\<name>#ruby[様][さま]のものでよろしかったでしょうか？#lb()Sorry, is this your item?],
   [お#ruby[前][まえ]、#ruby[誰][だれ]？#lb()Who are you?], [#ruby[大変][たい|へん]#ruby[申][もう]し#ruby[訳][わけ]ございません、お#ruby[名前][な|まえ]#ruby[頂戴][ちょう|だい]してもよろしかったでしょうか?#lb()I'm deeply sorry, but would you be okay to tell me your name?],
   [ごめん。#lb()Sorry.], [この#ruby[度][たび]は#ruby[当方][とう|ほう]の#ruby[不手際][ふ|て|ぎわ]にてご#ruby[迷惑][めい|わく]をおかけしましたこと#ruby[大変][たい|へん]#ruby[申][もう]し#ruby[訳][わけ]ございません。#lb()This time, my ineptitude has caused you trouble, for that I'm deeply sorry.],
   [お前キモいんだよ、マジで。#lb()You are disgusting.], [そうなんですねーーすごいですね、あ、すみませんちょっと#ruby[打][う]ち#ruby[合][あ]わせがございまして、こちらにて#ruby[失礼][しつ|れい]いたしますどうも。#lb()Wow that's great! Sorry I have a meeting to attend, I'll excuse myself here.],
+  // https://www.instagram.com/reel/DEKXIQ-yPOs/
+  [#ruby[了解][りょう|かい]しました。#lb()Understood.], [#ruby[承知][しょう|ち]しました。#lb()Understood.],
+  [すみません。もう#ruby[一度][いち|ど]お#ruby[願][ねが]いします。#lb()Sorry, one more time please.], [#ruby[恐][おそ]れ#ruby[入][い]りますが、もう#ruby[一度][いち|ど]お#ruby[願][ねが]いできますでしょうか？#lb()Sorry to trouble you, but could you repeat that one more time?],
+  [どうしますか？#lb()What would you like to do?], [いかがいたしましょうか？#lb()What can I do for you?],
+  [どうしたらいいですか？#lb()What should we do?], [#ruby[皆][みな]さんだったら#ruby[何][なん]と#ruby[応][こた]えますか？#lb()How should we respond?],
+  [ありがとうございます。#lb()Thank you very much.], [#ruby[心][こころ]より#ruby[感謝][かん|しゃ]#ruby[申][もう]し#ruby[上][あ]げます。#lb()I express my heartfelt gratitude.],
+  [#ruby[知][し]らないです。#lb()I don't know.], [#ruby[存][ぞん]じ#ruby[上][あ]げません。#lb()I don't know.],
+  [それやっておきます。#lb()I'll do that.], [こちら#ruby[対応][たい|おう]させていただきます。#lb()I will assist you with handling that.],
+  [ちょっと待ってください。#lb()Please wait for a while.], [#ruby[少々][しょう|しょう]お#ruby[待][ま]ちいただけますでしょうか？#lb()Could you please wait a moment?],
+  [#ruby[後][あと]で#ruby[連絡][れん|らく]します。#lb()I'll contact you later.], [#ruby[後][のち]ほど#ruby[改][あらた]めてご#ruby[連絡][れん|らく]いたします。#lb()I will contact you again later.],
   // [], [],
   hline,
 )
