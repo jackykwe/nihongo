@@ -5,7 +5,7 @@
 = Phrases
 
 - #ruby[写真][しゃ|しん]を#ruby[取][と]りたいですけど、#ruby[手伝][てつ|だ]ってくれませんか？ (I want to take a photo, can you help me?)
-  - Shorter form: #ruby[写真][しゃ|しん]を#ruby[撮][と]ってもらえませんか？
+  - Shorter form: #ruby[写真][しゃ|しん]を#ruby[撮][と]ってもらえませんか？ #link("https://www.instagram.com/reel/DC4eNo1SxW2/")[[IG]]
 - 待ち時間はどのくらいですか。 (How long is the wait?) // https://www.youtube.com/watch?v=ZlwcPM4zRlQ
 - はぁ！？
 - バカにしてる？ (Are you making fun of me?) してないしてない。
@@ -78,15 +78,17 @@ This is advanced territory and would probably only make sense later on in your l
   hline,
   [*Normal speak*], [*Business speak*],
   hline,
-  // https://www.instagram.com/reel/DD01U30SR4w/
-  [#ruby[元気][げん|き]？#lb()How are you doing?], [ご#ruby[健勝][けん|しょう]にてお#ruby[過][す]ごしでしょうか？#lb()Has your health been alright?],
+  //
+  [-], [これからご#ruby[迷惑][めい|わく]をおかけすることも#ruby[多][おお]いかと#ruby[思][おも]いますが、#ruby[何卒][なに|とぞ]ご#ruby[指導][し|どう]ご#ruby[鞭撻][べん|たつ]のほど、よろしくお#ruby[願][ね]い#ruby[申][もう]し#ruby[上][あ]げます。#link("https://www.instagram.com/reel/DFnHJI5JryY/")[[IG]]#lb()From now on I may cause you much trouble, but I humbly request your guidance and encouragement.],
+  thickhline,
+  [#ruby[元気][げん|き]？#lb()How are you doing?], [ご#ruby[健勝][けん|しょう]にてお#ruby[過][す]ごしでしょうか？#link("https://www.instagram.com/reel/DD01U30SR4w/")[[IG]]#lb()Has your health been alright?],
   [ありがとう。#lb()Thank you.], [#ruby[深][ふか]く#ruby[御礼][おん|れい]#ruby[申][もう]し#ruby[上][あ]げます。#lb()I hereby express my deepest gratitude.],
   [これ、お#ruby[前][まえ]の？#lb()Is this yours?], [すみません、こちら\<name>#ruby[様][さま]のものでよろしかったでしょうか？#lb()Sorry, is this your item?],
   [お#ruby[前][まえ]、#ruby[誰][だれ]？#lb()Who are you?], [#ruby[大変][たい|へん]#ruby[申][もう]し#ruby[訳][わけ]ございません、お#ruby[名前][な|まえ]#ruby[頂戴][ちょう|だい]してもよろしかったでしょうか?#lb()I'm deeply sorry, but would you be okay to tell me your name?],
   [ごめん。#lb()Sorry.], [この#ruby[度][たび]は#ruby[当方][とう|ほう]の#ruby[不手際][ふ|て|ぎわ]にてご#ruby[迷惑][めい|わく]をおかけしましたこと#ruby[大変][たい|へん]#ruby[申][もう]し#ruby[訳][わけ]ございません。#lb()This time, my ineptitude has caused you trouble, for that I'm deeply sorry.],
   [お前キモいんだよ、マジで。#lb()You are disgusting.], [そうなんですねーーすごいですね、あ、すみませんちょっと#ruby[打][う]ち#ruby[合][あ]わせがございまして、こちらにて#ruby[失礼][しつ|れい]いたしますどうも。#lb()Wow that's great! Sorry I have a meeting to attend, I'll excuse myself here.],
-  // https://www.instagram.com/reel/DEKXIQ-yPOs/
-  [#ruby[了解][りょう|かい]しました。#lb()Understood.], [#ruby[承知][しょう|ち]しました。#lb()Understood.],
+  thickhline,
+  [#ruby[了解][りょう|かい]しました。#lb()Understood.], [#ruby[承知][しょう|ち]しました。#link("https://www.instagram.com/reel/DEKXIQ-yPOs/")[[IG]]#lb()Understood.],
   [すみません。もう#ruby[一度][いち|ど]お#ruby[願][ねが]いします。#lb()Sorry, one more time please.], [#ruby[恐][おそ]れ#ruby[入][い]りますが、もう#ruby[一度][いち|ど]お#ruby[願][ねが]いできますでしょうか？#lb()Sorry to trouble you, but could you repeat that one more time?],
   [どうしますか？#lb()What would you like to do?], [いかがいたしましょうか？#lb()What can I do for you?],
   [どうしたらいいですか？#lb()What should we do?], [#ruby[皆][みな]さんだったら#ruby[何][なん]と#ruby[応][こた]えますか？#lb()How should we respond?],
@@ -95,6 +97,7 @@ This is advanced territory and would probably only make sense later on in your l
   [それやっておきます。#lb()I'll do that.], [こちら#ruby[対応][たい|おう]させていただきます。#lb()I will assist you with handling that.],
   [ちょっと待ってください。#lb()Please wait for a while.], [#ruby[少々][しょう|しょう]お#ruby[待][ま]ちいただけますでしょうか？#lb()Could you please wait a moment?],
   [#ruby[後][あと]で#ruby[連絡][れん|らく]します。#lb()I'll contact you later.], [#ruby[後][のち]ほど#ruby[改][あらた]めてご#ruby[連絡][れん|らく]いたします。#lb()I will contact you again later.],
+  thickhline,
   // [], [],
   hline,
 )
@@ -106,6 +109,40 @@ _See the main reel on #link("https://www.instagram.com/reel/DCWrFTISpc6/")[[IG]]
 - #ruby[日本話][に|ほん|ご]#ruby[話][は]せません。 (I cannot speak Japanese.)
 - #ruby[日本話][に|ほん|ご]わかりません。 (I don't understand Japanese.)
 - #ruby[申][もう]し#ruby[訳][わけ]ございません。#ruby[努力][ど|りょく]はしているのですが、#ruby[日本語][に|ほん|ご]の#ruby[文法][ぶん|ぽう]が#ruby[非常][ひ|じょう]に#ruby[難][むずか]しく、#ruby[何][なに]をおっしゃっているが#ruby[理解][り|かい]することができません。#ruby[誠][まこと]に#ruby[恐縮][きょう|しゅく]ではございますが、#ruby[英語][えい|ご]で#ruby[話][はな]して#ruby[頂][いただ]くことは#ruby[可能][か|のう]でしょうか。 よろしくお願い#ruby[致][いた]します。 (I'm deeply sorry. I'm doing my best but, Japanese grammar is extremely difficult so, I can't understand what you're saying. I'm afraid but, would you possibly speak in English? Thank you in advance.)
+
+
+== Closure of Goo dictionary
+
+=== First part
+
+いつもgooサービスをご#ruby[利用][り|よう]いただき、#ruby[誠][まこと]にありがとうございます。
+
+「goo#ruby[辞書][じ|しょ]」は2025#ruby[年][ねん]6#ruby[月][がつ]25#ruby[日][にち]（#ruby[水][すい]）をもちまして、サービスを#ruby[終了][しゅう|りょう]することとなりました。
+
+#ruby[突然][とつ|ぜん]のお#ruby[知][し]らせとなりますことを#ruby[深][ふか]くお#ruby[詫][わ]びいたしますとともに、1999#ruby[年][ねん]より#ruby[長][なが]きに#ruby[渡][わた]りご#ruby[愛顧][あい|こ]いただきましたこと、#ruby[心][こころ]より#ruby[御礼][おん|れい]#ruby[申][もう]し#ruby[上][あ]げます。
+
+───────────────
+
+「goo#ruby[辞書][じ|しょ]」サービス#ruby[終了][しゅう|りょう]#ruby[日時][にち|じ]
+
+2025#ruby[年][ねん]6#ruby[月][がつ]25#ruby[日][にち]（#ruby[水][すい]）13:00#ruby[予定][よ|てい]
+
+───────────────
+
+これまで「goo#ruby[辞書][じ|しょ]」をご#ruby[利用][り|よう]いただき、#ruby[誠][まこと]にありがとうございました。
+
+#ruby[皆][みな]さまに#ruby[心][ここり]より#ruby[感謝][かん|しゃ]#ruby[申][もう]し#ruby[上][あ]げますとともに、サービス#ruby[終了][しゅう|りょう]によりご#ruby[迷惑][めい|わく]をおかけしますことを#ruby[深][ふか]くお#ruby[詫][わ]び#ruby[申][もう]し#ruby[上][あ]げます。
+
+
+=== Second part
+
+（2025#ruby[年][ねん]6#ruby[月][がつ]25#ruby[日][にち] #ruby[追記][つい|き]）
+
+いつもgooサービスをご#ruby[利用][り|よう]いただき、#ruby[誠][まこと]にありがとうございます。
+
+「goo#ruby[辞書][じ|しょ]」は、2025#ruby[年][ねん]6#ruby[月][がつ]25#ruby[日][にち]（#ruby[水][すい]）13#ruby[時][じ]をもちまして、サービスを#ruby[終了][しゅう|りょう]いたしました。
+
+1999#ruby[年][ねん]より#ruby[長][なが]きに#ruby[渡][わた]りご#ruby[愛顧][あい|こ]を#ruby[賜][たまわ]りましたこと、またサービス#ruby[終了][しゅう|りょう]に#ruby[際][さい]し、SNSやメールを#ruby[通][つう]じて#ruby[多][おお]くの#ruby[温][あたた]かいお#ruby[言葉][こと|ば]を#ruby[頂戴][ちょう|だい]しましたこと、#ruby[心][こころ]より#ruby[御礼][おん|れい]#ruby[申][もう]し#ruby[上][あ]げます。
 
 
 == #ruby[電車][でん|しゃ]#ruby[内][ない]で#ruby[耳][みみ]にするのアナウンス Announcements you hear on board trains

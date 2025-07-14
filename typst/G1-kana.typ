@@ -89,6 +89,31 @@ Some preliminary notes:
   - The different pronuncations #rruby[今日][きょう], #ruby[今日][こん|にち] and #ruby[今日][こん|じつ] are each preferred in different contexts.
 
 
+=== カタカナと漢字で#ruby[紛][まぎ]らわしいグリフ Confusing glyphs
+
+// @typstyle off
+#general_table(
+  [Potentially confusing glyphs between カタカナ and 漢字. In general, カタカナ glyphs are smaller than the 漢字 ones.], // caption
+  "tbl:confusing-glyphs",  // label
+  (auto, auto),  // column_sizes
+  (center, center),  // column_aligns
+  scale_factor: 1,
+  hline,
+  [*漢字*], [*カタカナ*],
+  hline,
+  [#ruby[工][こう]], [エ],
+  [#ruby[才][さい]], [オ],
+  [#ruby[力][ちから]], [カ],
+  [#ruby[二][に]], [ニ],
+  [#ruby[夕][ゆう]], [タ],
+  [#ruby[千][ち]], [チ],
+  [#ruby[八][はち]], [ハ],
+  [#ruby[口][くち]], [ロ],
+  // [#ruby[][]], [],
+  hline,
+)
+
+
 == Pronunciation <sec:pronunciation>
 It is not practical to memorise or attempt to logically create rules for pitches, especially since it can change depending on the context or the dialect. Even the intonations provided in dictionaries are there for guidance; they morph when used in different contexts.
 
@@ -99,6 +124,7 @@ Some special notes:
 - In the modern 東京 dialect, ず and づ are pronounced exactly the same way: "zu", as expressed in their identical Hepburn romanisation (@sec:hepburn-romanisation).
 - When in the middle of words, がぎぐげご may be pronounced with a "ng-" start instead of a "g-" start. This is a regional variation (that's not too uncommon); both ways are acceptable (see #link("https://www.tofugu.com/japanese/japanese-pronunciation/\#nasal-")[Tofugu] article).
 - The native Japanese speaker will pronounce the "v" family (ヴ、ヴァ、ヴィ、ヴェ、ヴォ、ヴュ) as /b/.
+- The native Japanese speaker will close their mouth at the end of pronouncing a trailing 「ん」 (e.g. #ruby[日本][にっ|ぽん]).
 - Vowel extensions (@sec:vowel-extension) are pronounced as vowel extensions; do not pronounce the extender if it's a different vowel! For example, #ruby[先生][せん|せい] is pronounced _sen-se_ with an elongated trailing "e" vowel. There is no "i" vowel sound!
 - Almost every 漢字 character has two different readings (see @sec:on-yomi-and-kun-yomi):
 

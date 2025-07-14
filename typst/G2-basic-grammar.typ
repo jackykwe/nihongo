@@ -340,8 +340,8 @@ Some verbs have two forms: transitive and intransitive. These two forms sometime
 
 #textred[*#underline[DO NOT]* confuse transitivity with passiveness.] English dictionaries like to define verbs using the "to ..." construct, and this is carried over to English-Japanese dictionaries. Intransitive verbs are _often_ defined using passive voice, but
 $
-  "passive voice" &#sym.arrow.r.double.not "verb is intransitive"\
-  "verb is intransitive" &#sym.arrow.r.double.not "passive voice"
+         "passive voice" & #sym.arrow.r.double.not "verb is intransitive" \
+  "verb is intransitive" & #sym.arrow.r.double.not "passive voice"
 $
 A counterexample to the first implication is "The apple was eaten.". Here, "eat" is transitive (the direct object is the apple, and the subject, now oblique/non-obligatory, is omitted)! A counterexample to the second implication is "I slept". Here, "sleep" is intransitive, and active voice is used.
 
@@ -350,8 +350,8 @@ Thus we can't use the passive voice as a marker for intransitivity. In fact, in 
 #textpurple[
   In fact, #textred[in English only and not in Japanese,] the converse of the two implications above are true, because intransitive verbs do not have a passive form, due to the lack of objects (and thus no object to promote to subject role, which is part of passivisation).
   $
-    "passive voice" &#sym.arrow.r.double "verb is transitive" \
-    "verb is intransitive" &#sym.arrow.r.double "active voice"
+           "passive voice" & #sym.arrow.r.double "verb is transitive" \
+    "verb is intransitive" & #sym.arrow.r.double "active voice"
   $
   (In fact these two are now contrapositives, i.e. they convey the same meaning.)
 ]
@@ -484,6 +484,12 @@ Thus we can't use the passive voice as a marker for intransitivity. In fact, in 
   E.g. #ruby[勝][か]ち*へ*#ruby[向][む]かう。(Go towards victory.)
 
 - で: context marker; "by way of". It provides supplementary context: where, what, how.
+
+  Concretely, context of four kinds:
+  - at/in place (location of action)
+  - by/with (means of action)
+  - in/during time (limits of action)
+  - within place (limits of action)
 
   E.g. #ruby[映画館][えい|が|かん]*で*見た。(Saw at movie theatre.)
 
@@ -689,36 +695,109 @@ Read more about these nuances at Sources #link("https://bunpro.jp/grammar_points
 //
 #general_table(
   [caption], // caption
-  "tbl:explanatory-conjugations",  // label
-  (0.75fr, 1fr, 0.75fr, 1fr, 1fr, 1fr, 1fr),  // column_sizes
-  (center, center, left, left, left, left, left),  // column_aligns
+  "tbl:explanatory-conjugations", // label
+  (0.75fr, 1fr, 0.75fr, 1fr, 1fr, 1fr, 1fr), // column_sizes
+  (center, center, left, left, left, left, left), // column_aligns
   scale_factor: 0.5,
   hline,
-  table.header[#rc(2, 1)[*の Purpose*]][#rc(2, 1)[*Category*]][#rc(2, 1)[*Dictionary form*]][#rc(1, 2)[#align(center)[*Positive*]]][#rc(1, 2)[#align(center)[*Negative*]]][*Present*][*Past*][*Present*][*Past*],
+  table.header[#rc(2, 1)[*の Purpose*]][#rc(2, 1)[*Category*]][#rc(2, 1)[*Dictionary form*]][#rc(1, 2)[#align(
+        center,
+      )[*Positive*]]][#rc(1, 2)[#align(center)[*Negative*]]][*Present*][*Past*][*Present*][*Past*],
   hlinea(start: 3, end: 5, y: 1),
   hlinea(start: 5, end: 7, y: 1),
   hline,
-  [Possession], [Noun], [「」], [「」#textgreen[の[だ]#super[\*]]], [#textlightgrey[「」のだった]], [#textlightgrey[「」のじゃない]], [#textlightgrey[「」のじゃなかった]],
+  [Possession],
+  [Noun],
+  [「」],
+  [「」#textgreen[の[だ]#super[\*]]],
+  [#textlightgrey[「」のだった]],
+  [#textlightgrey[「」のじゃない]],
+  [#textlightgrey[「」のじゃなかった]],
   hline,
-  [#rc(2, 1)[Generic noun]], [な-adjective], [「」], [「」#textred[な]#textgreen[の]], [「」だった#textgreen[の]], [「」じゃない#textgreen[の]], [「」じゃなかった#textgreen[の]],
-  [い-adjective/verb], [「」], [「」#textgreen[の]], [「」\<conj\>#textgreen[の]], [「」\<conj\>#textgreen[の]], [「」\<conj\>#textgreen[の]],
+  [#rc(2, 1)[Generic noun]],
+  [な-adjective],
+  [「」],
+  [「」#textred[な]#textgreen[の]],
+  [「」だった#textgreen[の]],
+  [「」じゃない#textgreen[の]],
+  [「」じゃなかった#textgreen[の]],
+  [い-adjective/verb],
+  [「」],
+  [「」#textgreen[の]],
+  [「」\<conj\>#textgreen[の]],
+  [「」\<conj\>#textgreen[の]],
+  [「」\<conj\>#textgreen[の]],
   hline,
-  [#rc(8, 1)[Explanatory]], [#rc(4, 1)[Noun/な-adjective]], [「」], [「」#textred[な]#textgreen[の[だ]#super[\*\*]。]], [「」だった#textgreen[の[だ]#super[\*\*]。]], [「」じゃない#textgreen[の[だ]#super[\*\*]。]], [「」じゃなかった#textgreen[の[だ]#super[\*\*]。]],
-  [], [「」#textred[な]#textgreen[のです。]], [「」だった#textgreen[のです。]], [「」じゃない#textgreen[のです。]], [「」じゃなかった#textgreen[のです。]],
-  [], [「」#textgreen[#textred[な]んだ。]], [「」だった#textgreen[んだ。]], [「」じゃない#textgreen[んだ。]], [「」じゃなかった#textgreen[んだ。]],
-  [], [「」#textgreen[#textred[な]んです。]], [「」だった#textgreen[んです。]], [「」じゃない#textgreen[んです。]], [「」じゃなかった#textgreen[んです。]],
+  [#rc(8, 1)[Explanatory]],
+  [#rc(4, 1)[Noun/な-adjective]],
+  [「」],
+  [「」#textred[な]#textgreen[の[だ]#super[\*\*]。]],
+  [「」だった#textgreen[の[だ]#super[\*\*]。]],
+  [「」じゃない#textgreen[の[だ]#super[\*\*]。]],
+  [「」じゃなかった#textgreen[の[だ]#super[\*\*]。]],
+  [],
+  [「」#textred[な]#textgreen[のです。]],
+  [「」だった#textgreen[のです。]],
+  [「」じゃない#textgreen[のです。]],
+  [「」じゃなかった#textgreen[のです。]],
+  [],
+  [「」#textgreen[#textred[な]んだ。]],
+  [「」だった#textgreen[んだ。]],
+  [「」じゃない#textgreen[んだ。]],
+  [「」じゃなかった#textgreen[んだ。]],
+  [],
+  [「」#textgreen[#textred[な]んです。]],
+  [「」だった#textgreen[んです。]],
+  [「」じゃない#textgreen[んです。]],
+  [「」じゃなかった#textgreen[んです。]],
   hline,
-  [#rc(4, 1)[い-adjective/verbs]], [「」], [「」#textgreen[の[だ]#super[\*\*]。]], [「」\<conj\>#textgreen[の[だ]#super[\*\*]。]], [「」\<conj\>#textgreen[の[だ]#super[\*\*]。]], [「」\<conj\>#textgreen[の[だ]#super[\*\*]。]],
-  [], [「」#textgreen[のです。]], [「」\<conj\>#textgreen[のです。]], [「」\<conj\>#textgreen[のです。]], [「」\<conj\>#textgreen[のです。]],
-  [], [「」#textgreen[んだ。]], [「」\<conj\>#textgreen[んだ。]], [「」\<conj\>#textgreen[んだ。]], [「」\<conj\>#textgreen[んだ。]],
-  [], [「」#textgreen[んです。]], [「」\<conj\>#textgreen[んです。]], [「」\<conj\>#textgreen[んです。]], [「」\<conj\>#textgreen[んです。]],
+  [#rc(4, 1)[い-adjective/verbs]],
+  [「」],
+  [「」#textgreen[の[だ]#super[\*\*]。]],
+  [「」\<conj\>#textgreen[の[だ]#super[\*\*]。]],
+  [「」\<conj\>#textgreen[の[だ]#super[\*\*]。]],
+  [「」\<conj\>#textgreen[の[だ]#super[\*\*]。]],
+  [],
+  [「」#textgreen[のです。]],
+  [「」\<conj\>#textgreen[のです。]],
+  [「」\<conj\>#textgreen[のです。]],
+  [「」\<conj\>#textgreen[のです。]],
+  [],
+  [「」#textgreen[んだ。]],
+  [「」\<conj\>#textgreen[んだ。]],
+  [「」\<conj\>#textgreen[んだ。]],
+  [「」\<conj\>#textgreen[んだ。]],
+  [],
+  [「」#textgreen[んです。]],
+  [「」\<conj\>#textgreen[んです。]],
+  [「」\<conj\>#textgreen[んです。]],
+  [「」\<conj\>#textgreen[んです。]],
   hline,
-  [#rc(4, 1)[Special]], [#rc(2, 1)[Noun/な-adjective]], [「」], [], [#textlightgrey[「」#textred[な]んだった。]], [#textlightgrey[「」#textred[な]んじゃない。]], [#textlightgrey[「」#textred[な]んじゃなかった。]],
-  [], [], [#textwhite[「」#textwhite[な]んだったです。]], [#textlightgrey[「」#textred[な]んじゃありません。]], [#textwhite[「」#textwhite[な]んじゃなかった。]],
+  [#rc(4, 1)[Special]],
+  [#rc(2, 1)[Noun/な-adjective]],
+  [「」],
+  [],
+  [#textlightgrey[「」#textred[な]んだった。]],
+  [#textlightgrey[「」#textred[な]んじゃない。]],
+  [#textlightgrey[「」#textred[な]んじゃなかった。]],
+  [],
+  [],
+  [#textwhite[「」#textwhite[な]んだったです。]],
+  [#textlightgrey[「」#textred[な]んじゃありません。]],
+  [#textwhite[「」#textwhite[な]んじゃなかった。]],
   hline,
-  [#rc(2, 1)[い-adjective/verbs]], [「」], [], [「」#textgreen[んだった。]], [「」#textgreen[んじゃない。]], [「」#textgreen[んじゃなかった。]],
-  [], [], [#textwhite[「」んだったです。]], [「」#textgreen[んじゃありません。]], [#textwhite[「」んじゃなかったです。]],
-  hline
+  [#rc(2, 1)[い-adjective/verbs]],
+  [「」],
+  [],
+  [「」#textgreen[んだった。]],
+  [「」#textgreen[んじゃない。]],
+  [「」#textgreen[んじゃなかった。]],
+  [],
+  [],
+  [#textwhite[「」んだったです。]],
+  [「」#textgreen[んじゃありません。]],
+  [#textwhite[「」んじゃなかったです。]],
+  hline,
 )
 
 // #textred[*This section is downright confusing, I think it requires knowledge of how to ask questions (e.g. じゃない？じゃん？じゃないか？) as well as knowledge of polite form んです in order to truly appreciate these forms. Move on for now.*]

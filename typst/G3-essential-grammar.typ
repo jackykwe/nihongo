@@ -230,7 +230,7 @@ See more detail in @sec:indirect-quotation.
 
 === Modifying question words with suffixes か、も、でも
 
-「」か refers to a particular existence (some\textasciitilde), 「」も refers to the universal (every\textasciitilde), and 「」でも refers to a non-particular existence (any\textasciitilde) (not to be confused with でも for "but"). Question words and their variants are showed in @tbl:question-word-modifications.
+「」か refers to a particular existence (some \~), 「」も refers to the universal (every \~), and 「」でも refers to a non-particular existence (any \~) (not to be confused with でも for "but"). Question words and their variants are showed in @tbl:question-word-modifications.
 
 // @typstyle off
 #general_table(
