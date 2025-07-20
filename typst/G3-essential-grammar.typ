@@ -649,7 +649,7 @@ E.g. #ruby[地下][ち|か]に入って、富士山が*見えなくなった*。
 
 === 〜なくなる versus 〜ないようになる
 
-In the final example in the previous section, *見えないようになった* is also acceptable. #textpurple[Both mean the same, though 見え#underline[ないようになった focuses on the _change_]. 見え#underline[なくなった focuses on the _result_], and is more commonly used. (#link("https://hinative.com/questions/16062152")[[HN]], #link("https://oshiete.goo.ne.jp/qa/4973106.html")[[goo]]), [GMN]]
+In the final example in the previous section, *見えないようになった* is also acceptable. #textpurple[Both mean the same, though 見え#underline[ないようになった focuses on the _change_]. 見え#underline[なくなった focuses on the _result_], and is more commonly used. (#link("https://hinative.com/questions/16062152")[[HN]]), [GMN]]
 
 E.g. #ruby[地下][ち|か]に入って、富士山が*見えなくなった*。 (After going underground, Mt.~Fuji became #underline[not visible].；見える #sym.arrow 見えない #sym.arrow 見えなくなる #sym.arrow 見えなくなった)
 
@@ -1315,11 +1315,15 @@ As a non-typical use case, もらう can be used by the giver speaker if they wa
 E.g. その#ruby[時計][と|けい]は私から*もらった*のよ。 (He received that watch from me.)
 
 
-=== Soliciting favours (#neq request) with auxiliary verbs てくれる、てもらえる} <sec:soliciting-favours-kureru-moraeru>
+=== Soliciting favours (#neq request) with auxiliary verbs てくれる、てもらえる <sec:soliciting-favours-kureru-moraeru>
 
 _Not to be confused with making requests (@sec:making-requests)! Asking for favours is softer and less direct: "would you do X for me", while making a request is more direct: "please do X"._
 
-The previous sections dealt with expressing the _actual event_ of giving a gift or favour. The _solicitation_ of a positive favour can be expressed as a question with \<v te\>てくれる？ or \<v te\>てもらえる？ (note the potential form of もらえる). Because the speaker is the recipient of the favour, あげる is not applicable.
+The previous sections dealt with expressing the _actual event_ of giving a gift or favour. The _solicitation_ of a positive favour can be expressed as a question with \<v te\>てくれる？ or \<v te\>てもらえる？ Because the speaker is the recipient of the favour, あげる is not applicable.
+
+Note the potential form of もらえる. 「もらいますか？」 is used to when discussing or suggesting the idea of having someone else perform a favour. 「もらえますか？」 is a direct and polite way to request a favour. #link("https://www.instagram.com/p/DC4eNo1SxW2/c/17998516703539530/")[[IG]]
+- E.g. 「写真を取ってもらいますか？」 (Shall we ask that passerby to take a photo for us?)
+- E.g. 「写真を取ってもらえますか？」 (Excuse me, could you take a photo for us?)
 
 #textorange[〜てくれる is used to ask for favours, but when its imperative form is used, it becomes a command 〜てくれ (@sec:imperative-form).]
 
