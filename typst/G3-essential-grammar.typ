@@ -1035,7 +1035,7 @@ The と particle is the quote marker particle, as first seen in @sec:building-cl
 
 E.g. アリスが、*「*寒い*」と**言った*。 ("Cold", said Alice.)
 
-E.g. *「*寒い*」と*アイリスが田中に*言った*。 ("Cold", said Alice to Tanaka)
+E.g. *「*寒い*」と*アイリスが田中に*言った*。 ("Cold", said Alice to Tanaka.)
 
 E.g. *「*今日は授業がない*」と*先生から*聞いた*んだけど。 (It is that I heard from the teacher "there is no class today"...)
 

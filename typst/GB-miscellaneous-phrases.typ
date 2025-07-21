@@ -111,6 +111,29 @@ _See the main reel on #link("https://www.instagram.com/reel/DCWrFTISpc6/")[[IG]]
 - #ruby[申][もう]し#ruby[訳][わけ]ございません。#ruby[努力][ど|りょく]はしているのですが、#ruby[日本語][に|ほん|ご]の#ruby[文法][ぶん|ぽう]が#ruby[非常][ひ|じょう]に#ruby[難][むずか]しく、#ruby[何][なに]をおっしゃっているが#ruby[理解][り|かい]することができません。#ruby[誠][まこと]に#ruby[恐縮][きょう|しゅく]ではございますが、#ruby[英語][えい|ご]で#ruby[話][はな]して#ruby[頂][いただ]くことは#ruby[可能][か|のう]でしょうか。 よろしくお願い#ruby[致][いた]します。 (I'm deeply sorry. I'm doing my best but, Japanese grammar is extremely difficult so, I can't understand what you're saying. I'm afraid but, would you possibly speak in English? Thank you in advance.)
 
 
+== ヤクザ speak
+
+This is advanced territory and would probably only make sense later on in your learning.
+
+// @typstyle off
+#general_table(
+  [Yakuza speak conversions.], // caption
+  "tbl:appendix-yakuza-speak",  // label
+  (1fr, 3fr),  // column_sizes
+  (left, left),  // column_aligns
+  scale_factor: 0.8,
+  hline,
+  [*Normal speak*], [*Yakuza speak*],
+  hline,
+  [やめてください。#lb()Please stop.], [やめろこら。#link("https://www.instagram.com/reel/DFNRmMTvFMR/")[[IG]]#lb()Stop it.],
+  [あなたが#ruby[嫌][きら]いです。#lb()I don't like you.], [#rruby[一昨日][おととい]#ruby[来][き]やがれクソ#ruby[野郎][や|ろう]。#lb()"Come here the day before yesterday" Don't you dare come here again you piece of shit.],
+  [あなたは#ruby[頭][あたま]が#ruby[悪][わる]いです。#lb()You are stupid.], [#ruby[頭][あたま]#ruby[湧][わ]いてんのかてめえ？#lb()"Is your head infested?" Are you crazy?],
+  [#ruby[静][しず]かにしてください。#lb()Please be quiet.], [#ruby[汚][きた]ねえ#ruby[口][くち]#ruby[閉][と]じろカス。#link("https://www.instagram.com/reel/DFAY0Omvs9e/")[[IG]]#lb()Shut your dirty trap you scum.],
+  // [], [],
+  hline,
+)
+
+
 == Closure of Goo dictionary
 
 === First part

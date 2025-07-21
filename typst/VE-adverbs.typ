@@ -19,7 +19,7 @@
   [まず], [firstly], [(#ruby[先][ま]ず)],
   [#ruby[取][と]りあえず], [first of all/right away], [also in Tables~@tbl:appendix-vocab-adverbs-time, @tbl:appendix-vocab-adverbs-knowledge-truth-and-reality],
   [#ruby[次][つ]いで], [secondly/next/subsequently], [also a #conjunction],
-  [{CだからE#lb(){}[CですからE]}], [therefore (to speaker, E is a natural consequence of C; strong expression of speaker's attitude)], [{#conjunction; also an expression; #link("https://www.youtube.com/watch?v=DSYc2BQrJEY")[[MCJ]]#lb(){}[polite]}],
+  [{CだからE#lb(){}[CですからE]}], [therefore (to speaker, E is a natural consequence of C; strong expression of speaker's attitude)], [{#conjunction; also an expression; #link("https://www.youtube.com/watch?v=DSYc2BQrJEY")[[MCJ]]#lb(){}[丁寧語]}],
   [CそれでE], [(objective そ) therefore (general cause-and-effect; E must have certainly happened (either past or now))], [#conjunction, #link("https://www.youtube.com/watch?v=DSYc2BQrJEY")[[MCJ]]],
   [CそこでE], [(objective そ) therefore (C is problem/situation, E is action taken to solve/improve/advance)], [#conjunction, #link("https://www.youtube.com/watch?v=DSYc2BQrJEY")[[MCJ]]],
   [CするとE], [thereupon (E happens _immediately_ after C)], [#conjunction; #link("https://www.youtube.com/watch?v=DSYc2BQrJEY")[[MCJ]]],
@@ -278,13 +278,15 @@
   [あんあふうに], [approximately in that way (distant)], [(あんな#ruby[風][ふう]に)],
   // [], [], [],
   thickhline,
-  [キラキラ], [glittering/sparkling/glistening/twinkling], [#onomatopoeic],
+  [キラキラ], [glittering/sparkling/glistening/twinkling (beautiful)], [#onomatopoeic],
+  [メラメラ（と）], [flaring up/bursting into flames], [#onomatopoeic],
   [ぴょんぴょん], [hopping/skipping/lightly and repeatedly jumping], [#onomatopoeic],
   [チュッ], [with a smooch/light smacking sound], [#onomatopoeic],
   [プチュッ], [kissing loudly/smooching; squirting/gushing], [#onomatopoeic],
   [ちょこちょこ], [with small quick steps/toddling], [#onomatopoeic],
   [むにゃむにゃ], [mumbling incomprehensibly/mutteringly/murmuringly], [#onomatopoeic],
   [だらだら（と）], [in drops/dripping/trickling/streaming/flowing], [#onomatopoeic, also in @tbl:appendix-vocab-adverbs-attitude],
+  [ぶくぶく（と）], [bubbling/foaming; buldging/swelling; loose-fitting/baggy (clothing)], [#onomatopoeic],
   // [], [], [],
 )
 
@@ -302,7 +304,7 @@
   [\<with\>と#ruby[一緒][いっ|しょ]に\<verb\>], [together with], [],
   // [], [], [],
   thickhline,
-  [どうか], [please/if you would/would you mind (sentence starter)], [polite; also a pronoun],
+  [どうか], [please/if you would/would you mind (sentence starter)], [丁寧語; also a pronoun],
   [どうぞ], [please/by all means/certainly/of course/go ahead/feel free to; here you are (passing something)], [],
   [#ruby[是非][ぜ|ひ]], [certainly/without fail/by all means], [],
   [ぜひぜひ], [certainly/by all means], [(#ruby[是非是非][ぜ|ひ|ぜ|ひ])],
@@ -342,7 +344,7 @@
 #adverb_table(
   [Verbs: ability.], // caption
   "tbl:appendix-vocab-adverbs-ability", // label
-  [ペラペラ], [fluently (speaking a foreign language)], [also an adjective],
+  [ペラペラ], [fluently (speaking a foreign language)], [#onomatopoeic; also an adjective],
   // [], [], [],
 )
 
