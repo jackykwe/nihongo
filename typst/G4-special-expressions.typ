@@ -111,13 +111,13 @@ E.g. #ruby[外国人][がい|こく|じん]に質問を*聞かれた*が、答�
 
 E.g. このパッケージには、あらゆる物が*#ruby[含][ふく]まれている*。 (Everything is included in this package.; あらゆる: all, #ruby[含][ふく]む: to contain)
 
-% Because an indirect sentence is more polite in Japanese, the passive voice is used to show a level of politeness above the normal ます form.
+// % Because an indirect sentence is more polite in Japanese, the passive voice is used to show a level of politeness above the normal ます form.
 In a similar sense to how it's more polite to address someone indirectly, and how it's more polite to ask negative questions than positive ones (@sec:positive-negative-questions), the passive form makes the sentence less direct because the subject (now the experiencer) does not directly perform the action. In increasing levels of politeness of expressing "what will you do?":
 + (active voice) どうする？
 + (active voice, polite) どうしますか。
 + (passive voice, polite) どうされますか。
-+ (#highlight[???] voice, honorific, S#highlight[???]) どうなさいますか。
-+ (#highlight[???] voice, honorific, less certainty, S#highlight[???]) どうなさいますでしょうか。
++ (#highlight[???] voice, 尊敬語, S#highlight[???]) どうなさいますか。
++ (#highlight[???] voice, 尊敬語, less certainty, S#highlight[???]) どうなさいますでしょうか。
 
 With increasing indirection and politeness, the sentence grows longer and longer.
 

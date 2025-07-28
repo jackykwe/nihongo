@@ -61,7 +61,7 @@ This is a common misconception! です and だ are two fundamentally different c
 
 - だ is declarative, whereas です is polite.
 
-  E.g. そうだ is the declarative form of そう. そうです is the polite form of そう (see @tbl:appendix-verb-conjugations), but not the polite form of そうだ!
+  E.g. 「そうだ」 is the declarative form of 「そう」. 「そうです」 is the polite form of 「そう」 (see @tbl:appendix-verb-conjugations), but not the polite form of 「そうだ」!
 
 - だ can be used both at the end of both complete sentences and relative clauses, whereas です can only be used at the end of complete sentences.
 
@@ -234,7 +234,7 @@ See more detail in @sec:indirect-quotation.
 
 // @typstyle off
 #general_table(
-  [Question words and their modified variants. Treat these all as normal nouns. #super[#sym.dagger]: 誰も is usually used in negative sentences to mean nobody can do the verb, and to express the positive universal everybody we typically use #ruby[皆][みんあ]\[さん\]; #super[#sym.dagger.double]: 何も is used exclusively in negative sentences.], // caption
+  [Question words and their modified variants. Treat these all as normal nouns. #super[#sym.dagger]: 誰も is usually used in negative sentences to mean nobody can do the verb, and to express the positive universal everybody we typically use #ruby[皆][みんな]\[さん\]; #super[#sym.dagger.double]: 何も is used exclusively in negative sentences.], // caption
   "tbl:question-word-modifications",  // label
   (0.8fr, 1fr, 0.8fr, 1fr, 0.8fr, 1fr, 0.8fr, 1fr),  // column_sizes
   (right, center, right, center, right, center, right, center),  // column_aligns
@@ -1362,7 +1362,7 @@ $ "ください" > "ちょうだい" > "なさい" > "imperative form." $
 
 ください。 is the most common way of making requests. It is a special conjugation of くださる, the honorific form of くれる (@sec:giving, @sec:soliciting-favours-kureru-moraeru). #textred[〜ください must come at the end of the sentence or relative clause, just like です、ます.]
 
-On its own, くれる/ください can mean "please give me/hand me an object" as a transitive verb, using the schema \<object\>をください.
+On its own, くれる/ください can mean "please give me/hand me an object" as a transitive verb, using the schema \<object\>をください. This is useful for ordering items at a store.
 
 E.g. それ*をください*。 (Please give me that.)
 
@@ -1586,7 +1586,7 @@ E.g. *ったく*#super[まったく]、いつまでこんな*とこ*#super[と�
 
 A complete grammatically correct sentence typically ends with a verb.
 
-The usual ordering comprises of six elements:
+The usual ordering comprises of six elements #link("https://www.instagram.com/reel/DG2PNcjMuRF/")[[IG]]:
 0. \<topic>*は*
 1. \<いつ>*に* (when)
 2. \<どこ>*で* (where)
@@ -1638,7 +1638,7 @@ E.g. やる#ruby[気][き]か？だったらさっさと*来やがれ*！ (You w
 
 === The #ruby[何][なに] mispronunciation and filler word なんか
 
-% When used to mean "what", 何 can be read as either なに or なん depending on the word that comes after (e.g. #ruby[何][なに]色 (what colour)、#ruby[何][なん]人 (how many people)).
+// % When used to mean "what", 何 can be read as either なに or なん depending on the word that comes after (e.g. #ruby[何][なに]色 (what colour)、#ruby[何][なん]人 (how many people)).
 
 #ruby[何][なに]か means "something" and its correct reading is なにか, but in slang it is often contracted to なにか.
 

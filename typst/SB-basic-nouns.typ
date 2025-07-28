@@ -515,7 +515,7 @@
 
 _Read the main article on #link("https://www.tofugu.com/japanese/japanese-counter-wa/")[Tofugu]._
 
-% Be careful: many winged animals don't use the 羽 counter: flying insects, winged monsters, and flying dinosaurs all use #ruby[匹][ひき] (@tbl:appendix-vocab-basic-nouns-counting-small-animals) or #ruby[頭][とう] (@tbl:appendix-vocab-basic-nouns-counting-big-animals).
+// % Be careful: many winged animals don't use the 羽 counter: flying insects, winged monsters, and flying dinosaurs all use #ruby[匹][ひき] (@tbl:appendix-vocab-basic-nouns-counting-small-animals) or #ruby[頭][とう] (@tbl:appendix-vocab-basic-nouns-counting-big-animals).
 
 All birds are counted with #ruby[羽][わ] except _very_ big birds like ostriches and emus, those use #ruby[頭][とう] (@tbl:appendix-vocab-basic-nouns-counting-big-animals).
 

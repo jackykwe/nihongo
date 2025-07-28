@@ -449,11 +449,11 @@ Thus we can't use the passive voice as a marker for intransitivity. In fact, in 
 
 - に: target marker, suffixed to the #underline[target] (physical or abstract) of any verb (transitive or non-transitive). The target is #underline[emphasised as the final destination]. The notion of a "target" is not restricted to motion verbs; the #underline[location of objects] is the target of the verbs for existence (ある and いる); #underline[time] (e.g. today, last week) is also a common target.
 
-  % E.g. ボブは日本*に*行った。(Bob went to Japan.)
+  // E.g. ボブは日本*に*行った。(Bob went to Japan.)
 
   E.g. #ruby[家][いえ]*に*帰らない。(Not go back home.; #ruby[家][いえ] means home, #ruby[家][うち] means own home.)
 
-  % E.g. #ruby[部屋][へ|や]*に*来る。(Come to room.)
+  // E.g. #ruby[部屋][へ|や]*に*来る。(Come to room.)
 
   E.g. #ruby[椅子][い|す]が#ruby[台所][だい|どころ]にあった。(Chair was in the kitchen.)
 
@@ -475,7 +475,7 @@ Thus we can't use the passive voice as a marker for intransitivity. In fact, in 
 
   The start and end can be specified with 「*\<from\>から\<to\>まで*」.
 
-  E.g. #ruby[宿題][しゅく|だい]を今日*から*明日*まで*する。(cWill do homework from today to tomorrow.)
+  E.g. #ruby[宿題][しゅく|だい]を今日*から*明日*まで*する。(Will do homework from today to tomorrow.)
 
 - へ: direction marker, suffixed to direction of verbs (transitive or non-transitive). Pronounced え. Unlike に, which specifies target/destination, へ specifies the general direction we're heading towards, from the starting point. Also, unlike に, it does not guarantee that the target is the final destination. #textred[へ is restricted to verbs with a physical direction (in the physical or abstract sense) like 行く、来る、#ruby[向][む]かう; verbs like なる (become) have no direction associated with it and so clauses containing なる as the trailing verb cannot use へ!]
 
@@ -632,7 +632,7 @@ Noun-related particles are used to connect nouns together.
   // % 静かな部屋が、アリスのだ。
 
   / Abstract noun/explanatory: の as a sentence-ending particle // % (after a clause-ending verb or い-adjective)
-    conveys an explanatory tone in responses, and explanation-seeking tone in questions. It represents the abstract noun "the thing is...", and is believed to be an abbreviation of 「〜のです」. の can also be used as a suffix to な-adjectives or state-of-being noun-phrases, though in those cases *#textred[な]の* must be used in order to differentiate it from the possession marker or generic noun purposes of の. #textorange[One exception to this disambiguating function is な-adjectives: both generic noun and explanatory purposes use 〜なの. *Prefer 〜なん{だ/です} for explanatory.*]}
+    conveys an explanatory tone in responses, and explanation-seeking tone in questions. It represents the abstract noun "the thing is...", and is believed to be an abbreviation of 「〜のです」. の can also be used as a suffix to な-adjectives or state-of-being noun-phrases, though in those cases *#textred[な]の* must be used in order to differentiate it from the possession marker or generic noun purposes of の. #textorange[One exception to this disambiguating function is な-adjectives: both generic noun and explanatory purposes use 〜なの. *Prefer 〜なん{だ/です} for explanatory.*]
     // just as な was required in their conjugation rules (@tbl:grammar-conjugation-summary),
 
     E.g. #ruby[今][いま]は#ruby[忙][いそが]しい*の*？今は忙しい*の*[だ]。(Is it that you are busy now? The thing is that I'm busy now.; 忙しい: busy; the absence of the trailing だ in the response is feminine; adult males add the だ in the response; #textred[だ cannot be used in the question])

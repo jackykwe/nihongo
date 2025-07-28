@@ -98,6 +98,10 @@ This is advanced territory and would probably only make sense later on in your l
   [ちょっと待ってください。#lb()Please wait for a while.], [#ruby[少々][しょう|しょう]お#ruby[待][ま]ちいただけますでしょうか？#lb()Could you please wait a moment?],
   [#ruby[後][あと]で#ruby[連絡][れん|らく]します。#lb()I'll contact you later.], [#ruby[後][のち]ほど#ruby[改][あらた]めてご#ruby[連絡][れん|らく]いたします。#lb()I will contact you again later.],
   thickhline,
+  [知ってる？#lb()Do you know?], [ご#ruby[存知][ぞん|じ]でしょうか？#link("https://www.instagram.com/reel/DHBKorfybyl/")[[IG]]#lb()Do you know?],
+  [私のミスです。#lb()It's my fault.], [こちらの#ruby[不手際][ふ|て|ぎわ]です。It's my clumsiness/ineptitude.],
+  [たしかにそうだね。#lb()It is indeed so.], [おっしゃる#ruby[通][とお]りです。#lb()Just as you said.],
+  [#ruby[今][いま]#ruby[忙][いそが]しい。#lb()I'm busy now.], [ただ#ruby[今][いま]#ruby[立][た]て#ruby[込][こ]んでおります。#lb()At the moment, I have my hands full.],
   // [], [],
   hline,
 )

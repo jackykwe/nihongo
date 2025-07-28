@@ -456,8 +456,10 @@ The following table is a condensed version, showing where the rules come from.
   hline,
   table.header[*Schema (short)*][*Schema name/purpose*][*Schemae*][*Sections*],
   hline,
+  // [], [], [], [],
   [に行く/に来る], [to go/come and then do], [\<v stem\>に行く/に来る], [@sec:verb-stems],
   [へ行く/へ来る], [to go/come for the purpose of doing], [\<v stem\>へ行く/へ来る], [@sec:verb-stems],
+  [◯かどうか#lb()◯か◯か], [binary whether or not \<positive>], [\<positive>かどうか#lb()\<positive>か\<negative>か], [@sec:ka-question-embedded-clauses],
   [てある], [resultant state (implicit preparation)], [\<v te\>ある], [@sec:resultant-state-tearu],
   [ておく/とく], [completed action (explicit preparation)], [\<v te\>おく/\<v te fragment\>とく], [@sec:auxiliary-verb-teoku],
   [ていく], [spatial/temporal do and go], [\<v te\>いく], [@sec:auxiliary-verbs-teiku-tekiru],
@@ -489,5 +491,6 @@ The following table is a condensed version, showing where the rules come from.
   [てください。/て], [honorific request], [{\<v te\>ください。#lb()\<v te\>}], [@sec:honorific-requests],
   [てちょうだい。], [casual request], [\<v te\>ちょうだい。], [@sec:casual-requests],
   [なさい/な], [polite firm request], [{\<v stem\>なさい#lb()\<v stem\>な}], [@sec:polite-firm-requests],
+  // [], [], [], [],
   hline,
 )
