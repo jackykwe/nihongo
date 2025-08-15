@@ -1,0 +1,17 @@
+services:
+  frontend:
+    build:
+      context: frontend
+    ports:
+      - 80:80
+
+  backend:
+    build:
+      context: backend
+    ports:
+      - 3000:3000
+    volumes:
+      - type: bind
+        source: ../typst/nihongo-gakushuu-kyouzai.pdf
+        target: /nihongo/typst/nihongo-gakushuu-kyouzai.pdf
+    working_dir: /nihongo/dev-server/backend
