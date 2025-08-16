@@ -1,6 +1,6 @@
 mod utils;
 
-use std::path::Path;
+use std::{path::Path, time::Duration};
 
 use anyhow::Context;
 use axum::{
@@ -114,11 +114,14 @@ async fn websocket_upgrade_handler(
 
 async fn websocket_handler(ws: WebSocket, app_state: AppState) {
     tracing::debug!("websocket_handler fired");
-    let (mut ws_sender, mut ws_receiver) = ws.split();
 
     let client_connection_id = Uuid::new_v4().to_string();
     tracing::info!("[{}] New client connected", client_connection_id);
 
+    let (mut ws_sender, mut ws_receiver) = ws.split();
+    let (ws_sender_queue_tx, mut ws_sender_queue_rx) = tokio::sync::mpsc::channel(16);
+
+    // Listen to incoming messages from client
     let client_connection_id_receiver_clone = client_connection_id.clone();
     tokio::spawn(async move {
         loop {
@@ -132,7 +135,7 @@ async fn websocket_handler(ws: WebSocket, app_state: AppState) {
                         );
                     }
                     Err(e) => {
-                        tracing::debug!("websocket_handler receiver code path 1");
+                        tracing::trace!("ws_receiver code path 1");
                         tracing::warn!(
                             "[{}] Client disconnected: {}",
                             client_connection_id_receiver_clone,
@@ -142,7 +145,7 @@ async fn websocket_handler(ws: WebSocket, app_state: AppState) {
                     }
                 },
                 None => {
-                    tracing::debug!("websocket_handler receiver code path 2");
+                    tracing::trace!("ws_receiver code path 2");
                     tracing::warn!(
                         "[{}] Client disconnected",
                         client_connection_id_receiver_clone
@@ -153,15 +156,46 @@ async fn websocket_handler(ws: WebSocket, app_state: AppState) {
         }
     });
 
-    let mut watch_stream = WatchStream::new(app_state.file_content_rx.clone());
-    while let Some(latest_file_content) = watch_stream.next().await {
-        if let Err(e) = ws_sender
-            .send(ws::Message::binary(latest_file_content))
-            .await
-        {
-            tracing::debug!("websocket_handler sender code path");
-            tracing::warn!("[{}] Client disconnected: {}", client_connection_id, e);
-            break;
+    // Produce to ws_sender queue/buffer: listen to file changes
+    let ws_sender_queue_tx1: tokio::sync::mpsc::Sender<ws::Message> = ws_sender_queue_tx.clone();
+    tokio::spawn(async move {
+        let mut watch_stream = WatchStream::new(app_state.file_content_rx.clone());
+        while let Some(latest_file_content) = watch_stream.next().await {
+            if ws_sender_queue_tx1
+                .send(ws::Message::binary(latest_file_content))
+                .await
+                .is_err()
+            {
+                break;
+            }
         }
-    }
+    });
+
+    // Produce to ws_sender queue/buffer: minutely websocket ping
+    tokio::spawn(async move {
+        loop {
+            tokio::time::sleep(Duration::from_secs(60)).await;
+            // https://developer.mozilla.org/en-US/docs/Web/API/WebSockets_API/Writing_WebSocket_servers#pings_and_pongs_the_heartbeat_of_websockets
+            if ws_sender_queue_tx
+                .send(ws::Message::Ping("keepalive".into()))
+                .await
+                .is_err()
+            {
+                break;
+            }
+        }
+    });
+
+    // Consume from ws_sender queue/buffer: send messages to client
+    tokio::spawn(async move {
+        while let Some(msg) = ws_sender_queue_rx.recv().await {
+            if let Err(e) = ws_sender.send(msg).await {
+                tracing::debug!("ws_sender code path");
+                tracing::warn!("[{}] Client disconnected: {}", client_connection_id, e);
+                break;
+            }
+        }
+    });
+
+    // The above tasks are detached tasks and will outlive this task (websocket_handler).
 }
