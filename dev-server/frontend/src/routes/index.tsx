@@ -1,7 +1,13 @@
 import Box from "@mui/material/Box";
 import CircularProgress from "@mui/material/CircularProgress";
-import { useEffect, useRef, useState } from "react";
+import { createFileRoute } from "@tanstack/react-router";
 import { format } from "date-fns";
+import { useEffect, useRef, useState } from "react";
+import "../App.css";
+
+export const Route = createFileRoute("/")({
+  component: App,
+});
 
 const rerenderPDF = (
   pdfContainerRef: React.RefObject<HTMLDivElement | null>,
@@ -63,7 +69,7 @@ const connectWs = (
   };
 };
 
-export default function Home() {
+function App() {
   const pdfContainerRef = useRef<HTMLDivElement | null>(null);
 
   const [statusText, setStatusText] = useState("Idle");
@@ -79,7 +85,14 @@ export default function Home() {
   }, []);
 
   return (
-    <>
+    <Box
+      sx={{
+        height: "100vh",
+        boxSizing: "border-box", // Include padding in calculation of total height: https://stackoverflow.com/a/41663710
+        display: "flex",
+        flexDirection: "column",
+      }}
+    >
       <Box
         sx={{
           // Keyframes in sx courtesy of https://stackoverflow.com/a/74923103
@@ -109,6 +122,6 @@ export default function Home() {
       >
         <CircularProgress color="inherit" />
       </Box>
-    </>
+    </Box>
   );
 }

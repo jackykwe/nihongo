@@ -12,6 +12,7 @@ services:
       - 3000:3000
     volumes:
       - type: bind
-        source: ../typst/nihongo-gakushuu-kyouzai.pdf
-        target: /nihongo/typst/nihongo-gakushuu-kyouzai.pdf
+        source: ../typst
+        target: /nihongo/typst
+        read_only: true
     working_dir: /nihongo/dev-server/backend

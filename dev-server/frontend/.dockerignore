@@ -1,4 +1,4 @@
-.react-router
-build
+.tanstack
+dist
 node_modules
 README.md
