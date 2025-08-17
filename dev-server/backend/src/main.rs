@@ -1,6 +1,6 @@
 mod utils;
 
-use std::{path::Path, time::Duration};
+use std::{path::Path, process::Stdio, time::Duration};
 
 use anyhow::Context;
 use axum::{
@@ -17,8 +17,13 @@ use notify::{
     EventKind, RecursiveMode, Watcher,
     event::{AccessKind, AccessMode},
 };
+use tempfile::{NamedTempFile, TempPath};
+use tokio::{
+    io::{AsyncBufReadExt, BufReader},
+    process::Command,
+    task::JoinHandle,
+};
 use tokio_stream::wrappers::WatchStream;
-use tower_http::services::ServeFile;
 use utils::{errors::global_fallback, logging::setup_env_tracing};
 use uuid::Uuid;
 
@@ -26,12 +31,12 @@ use crate::utils::top_level_listener::get_optionally_hot_reloading_listener;
 
 #[derive(Clone)]
 struct AppState {
-    file_content_rx: tokio::sync::watch::Receiver<Vec<u8>>,
-    // client_senders: Arc<RwLock<HashMap<String, UnboundedSender<ws::Message>>>>,
+    pdf_content_rx: tokio::sync::watch::Receiver<Vec<u8>>,
+    pdf_page_rx: tokio::sync::watch::Receiver<u64>,
 }
 
-fn get_latest_file_binary(watched_file_path: &Path) -> Vec<u8> {
-    std::fs::read(watched_file_path).expect("Unable to read file")
+fn get_latest_pdf_binary(watched_pdf_path: &Path) -> Vec<u8> {
+    std::fs::read(watched_pdf_path).expect("Unable to read file")
 }
 
 /// Dev: `systemfd --no-pid -s http::3000 -- cargo watch -x run`
@@ -41,62 +46,138 @@ async fn main() -> anyhow::Result<()> {
     // Choose one of `RUST_LOG={trace|debug|info|warn|error}`.
     setup_env_tracing(tracing::Level::DEBUG);
 
-    // let watched_file_path = Path::new("test.txt")
-    let watched_file_path = Path::new("../../typst/nihongo-gakushuu-kyouzai.pdf")
+    let watched_pdf_path = Path::new("../../typst/nihongo-gakushuu-kyouzai.pdf")
         .canonicalize()
         .unwrap();
-    let watched_file_parent = watched_file_path.parent().unwrap();
+    let watched_pdf_parent_path = watched_pdf_path.parent().unwrap().to_owned();
     tracing::info!(
         "Serving {}, with parent {}",
-        watched_file_path.to_string_lossy(),
-        watched_file_parent.to_string_lossy()
+        watched_pdf_path.to_string_lossy(),
+        watched_pdf_parent_path.to_string_lossy()
     );
 
-    let (file_content_tx, file_content_rx) = tokio::sync::watch::channel(Vec::new());
-    file_content_tx
-        .send(get_latest_file_binary(&watched_file_path))
-        // The following call fails if no sockets exist to receive the value. Ignore such failures.
-        .unwrap_or(());
-    let watched_file_path_clone = watched_file_path.clone();
+    let (pdf_content_tx, pdf_content_rx) =
+        tokio::sync::watch::channel(get_latest_pdf_binary(&watched_pdf_path));
+    let (pdf_page_tx, pdf_page_rx) = tokio::sync::watch::channel(1);
+
     let mut watcher = notify::RecommendedWatcher::new(
         move |result: Result<notify::Event, notify::Error>| {
             let event = result.unwrap();
-            tracing::debug!("EventHandler fired: {:?}, paths: {:?}", event, event.paths);
+            tracing::trace!("EventHandler fired: {:?}, paths: {:?}", event, event.paths);
             // if event.kind.is_modify() {
             if let EventKind::Access(AccessKind::Close(AccessMode::Write)) = event.kind {
                 // Bridge notify into the async world: https://www.reddit.com/r/rust/comments/q6nyc6/comment/hgdggg7/?utm_source=share&utm_medium=web3x&utm_name=web3xcss&utm_term=1&utm_content=share_button
                 // send a message to all connected clients
-                file_content_tx
-                    .send(get_latest_file_binary(&watched_file_path_clone))
-                    // The following call fails if no sockets exist to receive the value. Ignore such failures.
+                pdf_content_tx
+                    .send(get_latest_pdf_binary(&watched_pdf_path))
+                    // send fails if no receivers exist (e.g. no open websockets). Ignore such failures.
                     .unwrap_or(());
             }
         },
         notify::Config::default(),
     )?;
     watcher
-        .watch(watched_file_parent, RecursiveMode::NonRecursive)
+        .watch(&watched_pdf_parent_path, RecursiveMode::NonRecursive)
         .with_context(|| {
             format!(
                 "Unable to setup listener for parent directory {}",
-                watched_file_parent.to_string_lossy()
+                watched_pdf_parent_path.to_string_lossy()
             )
         })?;
+
+    let pdf_content_rx1 = pdf_content_rx.clone();
+    tokio::spawn(async move {
+        let mut watch_stream = WatchStream::new(pdf_content_rx1);
+        let mut previous_tempfile: Option<TempPath> = None;
+        let mut previous_diffpdf_task: Option<JoinHandle<()>> = None;
+        while let Some(latest_pdf_content) = watch_stream.next().await {
+            let latest_tf = NamedTempFile::new().expect("Unable to create temporary file");
+            tokio::fs::write(latest_tf.path(), latest_pdf_content)
+                .await
+                .expect("Unable to write to temporary file");
+            let latest_tfp = latest_tf.into_temp_path();
+
+            let latest_tfp_clone = latest_tfp.as_os_str().to_owned();
+            if let Some(previous_tfp) = previous_tempfile {
+                if let Some(handle) = previous_diffpdf_task {
+                    handle.abort();
+                    // Wait for successful abort before starting a new diff-pdf process
+                    handle.await.unwrap_or(());
+                }
+
+                let pdf_page_tx_clone = pdf_page_tx.clone();
+                previous_diffpdf_task = Some(tokio::spawn(async move {
+                    // See https://docs.rs/tokio/latest/tokio/process/index.html#examples
+                    let mut cmd = Command::new("stdbuf");
+                    cmd.args(["-oL", "diff-pdf", "--dpi=72", "-v"]);
+                    cmd.arg(previous_tfp.as_os_str().to_owned());
+                    cmd.arg(latest_tfp_clone.as_os_str().to_owned());
+                    // cmd.arg(latest_tfp_clone);
+                    cmd.stdout(Stdio::piped());
+                    // cmd.stderr(Stdio::null());
+                    cmd.kill_on_drop(true);
+
+                    let mut child = cmd.spawn().expect("diff-pdf failed to start");
+
+                    let stdout: tokio::process::ChildStdout = child
+                        .stdout
+                        .take()
+                        .expect("Failed to get stdout of diff-pdf");
+                    let mut stdout_reader = BufReader::new(stdout).lines();
+                    let mut string_to_parse: Option<String> = None;
+                    while let Some(line) = stdout_reader
+                        .next_line()
+                        .await
+                        .expect("Unable to get diff-pdf stdout next line")
+                    {
+                        tracing::info!(line);
+                        if line.ends_with(" 0 pixels that differ") {
+                            continue;
+                        }
+                        if line.ends_with(" pages differ.") {
+                            // last line of diff-pdf
+                            break;
+                        }
+                        string_to_parse = Some(line);
+                        break;
+                    }
+
+                    child.kill().await.expect("Failed to kill diff-pdf process");
+                    // Drop child handle only after we've ensured it has finished:
+                    // see https://docs.rs/tokio/latest/tokio/process/index.html#unix-processes
+                    // and https://docs.rs/tokio/latest/tokio/process/struct.Command.html#method.kill_on_drop
+
+                    if let Some(s) = string_to_parse {
+                        let page_num = s
+                            .chars()
+                            .skip(5)
+                            .take_while(|c| *c != ' ')
+                            .collect::<String>()
+                            .parse::<u64>()
+                            .expect("Unable to get changed page number");
+                        pdf_page_tx_clone
+                            .send(page_num + 1)
+                            // send fails if no receivers exist (e.g. no open websockets). Ignore such failures.
+                            .unwrap_or(());
+                    }
+                }));
+            }
+            previous_tempfile = Some(latest_tfp);
+        }
+    });
 
     // Sets up developer ergonomics: hot reloading
     let listener = get_optionally_hot_reloading_listener()
         .await
         .with_context(|| "Unable to setup axum listener")?;
-
     axum::serve(
         listener,
         Router::new()
             .route("/ws", any(websocket_upgrade_handler))
             .with_state(AppState {
-                // client_senders: Arc::new(RwLock::new(HashMap::new())),
-                file_content_rx,
+                pdf_content_rx,
+                pdf_page_rx,
             })
-            .route_service("/pdf", ServeFile::new(watched_file_path))
             .fallback(global_fallback),
     )
     .await?;
@@ -128,7 +209,7 @@ async fn websocket_handler(ws: WebSocket, app_state: AppState) {
             match ws_receiver.next().await {
                 Some(msg) => match msg {
                     Ok(msg) => {
-                        tracing::info!(
+                        tracing::trace!(
                             "[{}] Received {:?}",
                             client_connection_id_receiver_clone,
                             msg
@@ -159,10 +240,25 @@ async fn websocket_handler(ws: WebSocket, app_state: AppState) {
     // Produce to ws_sender queue/buffer: listen to file changes
     let ws_sender_queue_tx1: tokio::sync::mpsc::Sender<ws::Message> = ws_sender_queue_tx.clone();
     tokio::spawn(async move {
-        let mut watch_stream = WatchStream::new(app_state.file_content_rx.clone());
-        while let Some(latest_file_content) = watch_stream.next().await {
+        let mut watch_stream = WatchStream::new(app_state.pdf_content_rx);
+        while let Some(pdf_content) = watch_stream.next().await {
             if ws_sender_queue_tx1
-                .send(ws::Message::binary(latest_file_content))
+                .send(ws::Message::binary(pdf_content))
+                .await
+                .is_err()
+            {
+                break;
+            }
+        }
+    });
+
+    // Produce to ws_sender queue/buffer: listen to file changes
+    let ws_sender_queue_tx2: tokio::sync::mpsc::Sender<ws::Message> = ws_sender_queue_tx.clone();
+    tokio::spawn(async move {
+        let mut watch_stream = WatchStream::new(app_state.pdf_page_rx);
+        while let Some(pdf_page) = watch_stream.next().await {
+            if ws_sender_queue_tx2
+                .send(ws::Message::Text(pdf_page.to_string().into()))
                 .await
                 .is_err()
             {

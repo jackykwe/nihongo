@@ -2,21 +2,12 @@ import Box from "@mui/material/Box";
 import CircularProgress from "@mui/material/CircularProgress";
 import { createFileRoute } from "@tanstack/react-router";
 import { format } from "date-fns";
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useState } from "react";
 import "../App.css";
 
 export const Route = createFileRoute("/")({
   component: App,
 });
-
-const rerenderPDF = (
-  pdfContainerRef: React.RefObject<HTMLDivElement | null>,
-  blobUrl: string
-) => {
-  if (pdfContainerRef.current) {
-    pdfContainerRef.current.innerHTML = `<iframe src="${blobUrl}" type="application/pdf" width="100%" height="100%" />`;
-  }
-};
 
 const connectWs = (
   setStatusText: React.Dispatch<React.SetStateAction<string>>,
@@ -26,7 +17,8 @@ const connectWs = (
       color: string | undefined;
     }>
   >,
-  pdfContainerRef: React.RefObject<HTMLDivElement | null>
+  setBlobUrl: React.Dispatch<React.SetStateAction<string | undefined>>,
+  setUrlHash: React.Dispatch<React.SetStateAction<string>>
 ) => {
   const ws = new WebSocket(
     `${window.location.protocol === "https:" ? "wss:" : "ws:"}//${window.location.hostname}:3000/ws`
@@ -41,14 +33,21 @@ const connectWs = (
   };
 
   ws.onmessage = (event) => {
-    setStatusText(
-      `Connected (updated: ${format(new Date(), "yyMMdd HHmmss")})`
-    );
-    setStatusFormatting({
-      background: "#008000",
-      color: "white",
-    });
-    rerenderPDF(pdfContainerRef, URL.createObjectURL(event.data as Blob));
+    switch (typeof event.data) {
+      case "object":
+        setStatusText(
+          `Connected (updated: ${format(new Date(), "yyMMdd HHmmss")})`
+        );
+        setStatusFormatting({
+          background: "#008000",
+          color: "white",
+        });
+        setBlobUrl(URL.createObjectURL(event.data as Blob));
+        break;
+      case "string":
+        setUrlHash(`#page=${event.data}`);
+        break;
+    }
   };
 
   ws.onclose = function () {
@@ -70,8 +69,6 @@ const connectWs = (
 };
 
 function App() {
-  const pdfContainerRef = useRef<HTMLDivElement | null>(null);
-
   const [statusText, setStatusText] = useState("Idle");
   const [statusFormatting, setStatusFormatting] = useState<{
     background: string | undefined;
@@ -80,8 +77,11 @@ function App() {
     background: "black",
     color: "white",
   });
+  const [blobUrl, setBlobUrl] = useState<string | undefined>(undefined);
+  const [urlHash, setUrlHash] = useState("");
+
   useEffect(() => {
-    connectWs(setStatusText, setStatusFormatting, pdfContainerRef);
+    connectWs(setStatusText, setStatusFormatting, setBlobUrl, setUrlHash);
   }, []);
 
   return (
@@ -118,9 +118,11 @@ function App() {
           height: "100%",
         }}
         id="pdfContainer"
-        ref={pdfContainerRef}
       >
-        <CircularProgress color="inherit" />
+        {blobUrl === undefined ? <CircularProgress color="inherit" /> : null}
+        {blobUrl ? (
+          <iframe src={`${blobUrl}${urlHash}`} width="100%" height="100%" />
+        ) : null}
       </Box>
     </Box>
   );
