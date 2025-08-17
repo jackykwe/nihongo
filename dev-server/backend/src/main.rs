@@ -1,6 +1,6 @@
 mod utils;
 
-use std::{path::Path, process::Stdio, time::Duration};
+use std::{path::Path, time::Duration};
 
 use anyhow::Context;
 use axum::{
@@ -13,16 +13,12 @@ use axum::{
     routing::any,
 };
 use futures_util::{SinkExt, StreamExt};
+use lopdf::IncrementalDocument;
 use notify::{
     EventKind, RecursiveMode, Watcher,
     event::{AccessKind, AccessMode},
 };
-use tempfile::{NamedTempFile, TempPath};
-use tokio::{
-    io::{AsyncBufReadExt, BufReader},
-    process::Command,
-    task::JoinHandle,
-};
+use tokio::task::JoinHandle;
 use tokio_stream::wrappers::WatchStream;
 use utils::{errors::global_fallback, logging::setup_env_tracing};
 use uuid::Uuid;
@@ -63,9 +59,12 @@ async fn main() -> anyhow::Result<()> {
     let mut watcher = notify::RecommendedWatcher::new(
         move |result: Result<notify::Event, notify::Error>| {
             let event = result.unwrap();
-            tracing::trace!("EventHandler fired: {:?}, paths: {:?}", event, event.paths);
+            if event.paths.contains(&watched_pdf_path) {
+                tracing::trace!("EventHandler fired: {:?}", event);
+            }
             // if event.kind.is_modify() {
             if let EventKind::Access(AccessKind::Close(AccessMode::Write)) = event.kind {
+                tracing::debug!("Interested EventHandler fired: {:?}", event);
                 // Bridge notify into the async world: https://www.reddit.com/r/rust/comments/q6nyc6/comment/hgdggg7/?utm_source=share&utm_medium=web3x&utm_name=web3xcss&utm_term=1&utm_content=share_button
                 // send a message to all connected clients
                 pdf_content_tx
@@ -88,81 +87,64 @@ async fn main() -> anyhow::Result<()> {
     let pdf_content_rx1 = pdf_content_rx.clone();
     tokio::spawn(async move {
         let mut watch_stream = WatchStream::new(pdf_content_rx1);
-        let mut previous_tempfile: Option<TempPath> = None;
+        let mut previous_tempfile: Option<Vec<u8>> = None;
         let mut previous_diffpdf_task: Option<JoinHandle<()>> = None;
         while let Some(latest_pdf_content) = watch_stream.next().await {
-            let latest_tf = NamedTempFile::new().expect("Unable to create temporary file");
-            tokio::fs::write(latest_tf.path(), latest_pdf_content)
-                .await
-                .expect("Unable to write to temporary file");
-            let latest_tfp = latest_tf.into_temp_path();
+            if previous_tempfile.is_none() {
+                previous_tempfile = Some(latest_pdf_content);
+                continue;
+            }
 
-            let latest_tfp_clone = latest_tfp.as_os_str().to_owned();
-            if let Some(previous_tfp) = previous_tempfile {
-                if let Some(handle) = previous_diffpdf_task {
-                    handle.abort();
-                    // Wait for successful abort before starting a new diff-pdf process
-                    handle.await.unwrap_or(());
-                }
+            let previous_pdf_content = previous_tempfile.unwrap();
+            if latest_pdf_content == previous_pdf_content {
+                tracing::error!("PREV CURR CONTENT IDENTICAL, SKIPPING");
+                previous_tempfile = Some(latest_pdf_content);
+                continue;
+            }
 
-                let pdf_page_tx_clone = pdf_page_tx.clone();
-                previous_diffpdf_task = Some(tokio::spawn(async move {
-                    // See https://docs.rs/tokio/latest/tokio/process/index.html#examples
-                    let mut cmd = Command::new("stdbuf");
-                    cmd.args(["-oL", "diff-pdf", "--dpi=72", "-v"]);
-                    cmd.arg(previous_tfp.as_os_str().to_owned());
-                    cmd.arg(latest_tfp_clone.as_os_str().to_owned());
-                    // cmd.arg(latest_tfp_clone);
-                    cmd.stdout(Stdio::piped());
-                    // cmd.stderr(Stdio::null());
-                    cmd.kill_on_drop(true);
+            if let Some(handle) = previous_diffpdf_task {
+                handle.abort();
+                // Wait for successful abort before starting a new diff-pdf process
+                handle.await.unwrap_or(());
+            }
 
-                    let mut child = cmd.spawn().expect("diff-pdf failed to start");
-
-                    let stdout: tokio::process::ChildStdout = child
-                        .stdout
-                        .take()
-                        .expect("Failed to get stdout of diff-pdf");
-                    let mut stdout_reader = BufReader::new(stdout).lines();
-                    let mut string_to_parse: Option<String> = None;
-                    while let Some(line) = stdout_reader
-                        .next_line()
+            let pdf_page_tx_clone = pdf_page_tx.clone();
+            let latest_pdf_content_clone = latest_pdf_content.clone();
+            previous_diffpdf_task = Some(tokio::spawn(async move {
+                let previous_pdf = IncrementalDocument::load_from(previous_pdf_content.as_slice())
+                    .await
+                    .expect("Unable to parse previous PDF content");
+                let previous_pdf = previous_pdf.get_prev_documents();
+                let current_pdf =
+                    IncrementalDocument::load_from(latest_pdf_content_clone.as_slice())
                         .await
-                        .expect("Unable to get diff-pdf stdout next line")
-                    {
-                        tracing::info!(line);
-                        if line.ends_with(" 0 pixels that differ") {
-                            continue;
-                        }
-                        if line.ends_with(" pages differ.") {
-                            // last line of diff-pdf
-                            break;
-                        }
-                        string_to_parse = Some(line);
-                        break;
-                    }
+                        .expect("Unable to parse previous PDF content");
+                let current_pdf = current_pdf.get_prev_documents();
 
-                    child.kill().await.expect("Failed to kill diff-pdf process");
-                    // Drop child handle only after we've ensured it has finished:
-                    // see https://docs.rs/tokio/latest/tokio/process/index.html#unix-processes
-                    // and https://docs.rs/tokio/latest/tokio/process/struct.Command.html#method.kill_on_drop
-
-                    if let Some(s) = string_to_parse {
-                        let page_num = s
-                            .chars()
-                            .skip(5)
-                            .take_while(|c| *c != ' ')
-                            .collect::<String>()
-                            .parse::<u64>()
-                            .expect("Unable to get changed page number");
+                let mut page_id_zipped_stream = tokio_stream::iter(
+                    std::iter::zip(previous_pdf.page_iter(), current_pdf.page_iter()).enumerate(),
+                );
+                while let Some((i, (previous_page_id, current_page_id))) =
+                    page_id_zipped_stream.next().await
+                {
+                    let left = previous_pdf.get_page_content(previous_page_id).unwrap();
+                    let right = current_pdf.get_page_content(current_page_id).unwrap();
+                    if left == right {
+                        tracing::warn!("PAGE {} EQUAL", i + 1);
+                    } else {
+                        tracing::warn!("PAGE {} UNEQUAL", i + 1);
                         pdf_page_tx_clone
-                            .send(page_num + 1)
+                            .send(
+                                u64::try_from(i + 1)
+                                    .expect("Page number cannot be converted from usize to u64"),
+                            )
                             // send fails if no receivers exist (e.g. no open websockets). Ignore such failures.
                             .unwrap_or(());
+                        break;
                     }
-                }));
-            }
-            previous_tempfile = Some(latest_tfp);
+                }
+            }));
+            previous_tempfile = Some(latest_pdf_content);
         }
     });
 
