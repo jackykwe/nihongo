@@ -13,7 +13,7 @@ use axum::{
     routing::any,
 };
 use futures_util::{SinkExt, StreamExt};
-use lopdf::IncrementalDocument;
+use lopdf::Document;
 use notify::{
     EventKind, RecursiveMode, Watcher,
     event::{AccessKind, AccessMode},
@@ -31,8 +31,10 @@ struct AppState {
     pdf_page_rx: tokio::sync::watch::Receiver<u64>,
 }
 
-fn get_latest_pdf_binary(watched_pdf_path: &Path) -> Vec<u8> {
-    std::fs::read(watched_pdf_path).expect("Unable to read file")
+async fn get_latest_pdf_binary(watched_pdf_path: &Path) -> Vec<u8> {
+    tokio::fs::read(watched_pdf_path)
+        .await
+        .expect("Unable to read file")
 }
 
 /// Dev: `systemfd --no-pid -s http::3000 -- cargo watch -x run`
@@ -40,7 +42,7 @@ fn get_latest_pdf_binary(watched_pdf_path: &Path) -> Vec<u8> {
 async fn main() -> anyhow::Result<()> {
     // Default: this crate will log up to debug messages. Override via `RUST_LOG=` environment variable.
     // Choose one of `RUST_LOG={trace|debug|info|warn|error}`.
-    setup_env_tracing(tracing::Level::DEBUG);
+    setup_env_tracing(tracing::Level::INFO);
 
     let watched_pdf_path = Path::new("../../typst/nihongo-gakushuu-kyouzai.pdf")
         .canonicalize()
@@ -53,24 +55,22 @@ async fn main() -> anyhow::Result<()> {
     );
 
     let (pdf_content_tx, pdf_content_rx) =
-        tokio::sync::watch::channel(get_latest_pdf_binary(&watched_pdf_path));
+        tokio::sync::watch::channel(get_latest_pdf_binary(&watched_pdf_path).await);
     let (pdf_page_tx, pdf_page_rx) = tokio::sync::watch::channel(1);
+    let (bridge_tx, bridge_rx) = tokio::sync::watch::channel(());
 
+    let watched_pdf_path_clone = watched_pdf_path.clone();
     let mut watcher = notify::RecommendedWatcher::new(
         move |result: Result<notify::Event, notify::Error>| {
             let event = result.unwrap();
-            if event.paths.contains(&watched_pdf_path) {
+            if event.paths.contains(&watched_pdf_path_clone) {
                 tracing::trace!("EventHandler fired: {:?}", event);
             }
             // if event.kind.is_modify() {
             if let EventKind::Access(AccessKind::Close(AccessMode::Write)) = event.kind {
-                tracing::debug!("Interested EventHandler fired: {:?}", event);
+                tracing::debug!("Interesting EventHandler fired: {:?}", event);
                 // Bridge notify into the async world: https://www.reddit.com/r/rust/comments/q6nyc6/comment/hgdggg7/?utm_source=share&utm_medium=web3x&utm_name=web3xcss&utm_term=1&utm_content=share_button
-                // send a message to all connected clients
-                pdf_content_tx
-                    .send(get_latest_pdf_binary(&watched_pdf_path))
-                    // send fails if no receivers exist (e.g. no open websockets). Ignore such failures.
-                    .unwrap_or(());
+                bridge_tx.send(()).unwrap_or(());
             }
         },
         notify::Config::default(),
@@ -84,55 +84,47 @@ async fn main() -> anyhow::Result<()> {
             )
         })?;
 
-    let pdf_content_rx1 = pdf_content_rx.clone();
     tokio::spawn(async move {
-        let mut watch_stream = WatchStream::new(pdf_content_rx1);
-        let mut previous_tempfile: Option<Vec<u8>> = None;
-        let mut previous_diffpdf_task: Option<JoinHandle<()>> = None;
-        while let Some(latest_pdf_content) = watch_stream.next().await {
-            if previous_tempfile.is_none() {
-                previous_tempfile = Some(latest_pdf_content);
+        let mut bridge_stream = WatchStream::new(bridge_rx);
+        let mut old_pdf: Option<Document> = None;
+        let mut previous_diff_task: Option<JoinHandle<()>> = None;
+        while let Some(_) = bridge_stream.next().await {
+            // File change signal from synchronous notify library
+
+            let new_pdf = Document::load(&watched_pdf_path)
+                .await
+                .expect("Unable to parse previous PDF content");
+
+            if old_pdf.is_none() {
+                old_pdf = Some(new_pdf);
                 continue;
             }
 
-            let previous_pdf_content = previous_tempfile.unwrap();
-            if latest_pdf_content == previous_pdf_content {
-                tracing::error!("PREV CURR CONTENT IDENTICAL, SKIPPING");
-                previous_tempfile = Some(latest_pdf_content);
-                continue;
-            }
-
-            if let Some(handle) = previous_diffpdf_task {
+            if let Some(handle) = previous_diff_task {
                 handle.abort();
                 // Wait for successful abort before starting a new diff-pdf process
                 handle.await.unwrap_or(());
             }
 
+            let pdf_content_tx_clone = pdf_content_tx.clone();
             let pdf_page_tx_clone = pdf_page_tx.clone();
-            let latest_pdf_content_clone = latest_pdf_content.clone();
-            previous_diffpdf_task = Some(tokio::spawn(async move {
-                let previous_pdf = IncrementalDocument::load_from(previous_pdf_content.as_slice())
-                    .await
-                    .expect("Unable to parse previous PDF content");
-                let previous_pdf = previous_pdf.get_prev_documents();
-                let current_pdf =
-                    IncrementalDocument::load_from(latest_pdf_content_clone.as_slice())
-                        .await
-                        .expect("Unable to parse previous PDF content");
-                let current_pdf = current_pdf.get_prev_documents();
-
-                let mut page_id_zipped_stream = tokio_stream::iter(
-                    std::iter::zip(previous_pdf.page_iter(), current_pdf.page_iter()).enumerate(),
-                );
-                while let Some((i, (previous_page_id, current_page_id))) =
-                    page_id_zipped_stream.next().await
+            let new_pdf_clone = new_pdf.clone();
+            let watched_pdf_path_clone = watched_pdf_path.clone();
+            previous_diff_task = Some(tokio::spawn(async move {
+                let old_pdf = old_pdf.unwrap();
+                while let Some((i, (old_page_id, new_page_id))) = tokio_stream::iter(
+                    std::iter::zip(old_pdf.page_iter(), new_pdf_clone.page_iter()).enumerate(),
+                )
+                .next()
+                .await
                 {
-                    let left = previous_pdf.get_page_content(previous_page_id).unwrap();
-                    let right = current_pdf.get_page_content(current_page_id).unwrap();
-                    if left == right {
-                        tracing::warn!("PAGE {} EQUAL", i + 1);
-                    } else {
-                        tracing::warn!("PAGE {} UNEQUAL", i + 1);
+                    let old_content = old_pdf.get_page_content(old_page_id).unwrap();
+                    let new_content = new_pdf_clone.get_page_content(new_page_id).unwrap();
+                    if old_content != new_content {
+                        pdf_content_tx_clone
+                            .send(get_latest_pdf_binary(&watched_pdf_path_clone).await)
+                            // send fails if no receivers exist (e.g. no open websockets). Ignore such failures.
+                            .unwrap_or(());
                         pdf_page_tx_clone
                             .send(
                                 u64::try_from(i + 1)
@@ -144,7 +136,7 @@ async fn main() -> anyhow::Result<()> {
                     }
                 }
             }));
-            previous_tempfile = Some(latest_pdf_content);
+            old_pdf = Some(new_pdf); // TODO shift in
         }
     });
 
@@ -267,6 +259,15 @@ async fn websocket_handler(ws: WebSocket, app_state: AppState) {
     // Consume from ws_sender queue/buffer: send messages to client
     tokio::spawn(async move {
         while let Some(msg) = ws_sender_queue_rx.recv().await {
+            match &msg {
+                ws::Message::Binary(_) => {
+                    tracing::info!("[{}] sending binary", client_connection_id);
+                }
+                ws::Message::Text(b) => {
+                    tracing::info!("[{}] sending text {}", client_connection_id, b.to_string());
+                }
+                _ => {}
+            }
             if let Err(e) = ws_sender.send(msg).await {
                 tracing::debug!("ws_sender code path");
                 tracing::warn!("[{}] Client disconnected: {}", client_connection_id, e);
