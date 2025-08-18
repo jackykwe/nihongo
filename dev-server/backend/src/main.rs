@@ -1,6 +1,6 @@
 mod utils;
 
-use std::{path::Path, time::Duration};
+use std::{path::Path, sync::Arc, time::Duration};
 
 use anyhow::Context;
 use axum::{
@@ -18,7 +18,7 @@ use notify::{
     EventKind, RecursiveMode, Watcher,
     event::{AccessKind, AccessMode},
 };
-use tokio::task::JoinHandle;
+use tokio::{sync::RwLock, task::JoinHandle};
 use tokio_stream::wrappers::WatchStream;
 use utils::{errors::global_fallback, logging::setup_env_tracing};
 use uuid::Uuid;
@@ -85,8 +85,12 @@ async fn main() -> anyhow::Result<()> {
         })?;
 
     tokio::spawn(async move {
-        let mut bridge_stream = WatchStream::new(bridge_rx);
-        let mut old_pdf: Option<Document> = None;
+        let mut bridge_stream = WatchStream::from_changes(bridge_rx);
+        let old_pdf_shared = Arc::new(RwLock::new(
+            Document::load(&watched_pdf_path)
+                .await
+                .expect("Unable to parse previous PDF content"),
+        ));
         let mut previous_diff_task: Option<JoinHandle<()>> = None;
         while let Some(_) = bridge_stream.next().await {
             // File change signal from synchronous notify library
@@ -95,48 +99,45 @@ async fn main() -> anyhow::Result<()> {
                 .await
                 .expect("Unable to parse previous PDF content");
 
-            if old_pdf.is_none() {
-                old_pdf = Some(new_pdf);
-                continue;
-            }
-
             if let Some(handle) = previous_diff_task {
                 handle.abort();
                 // Wait for successful abort before starting a new diff-pdf process
                 handle.await.unwrap_or(());
             }
 
+            let old_pdf_clone = old_pdf_shared.clone();
             let pdf_content_tx_clone = pdf_content_tx.clone();
             let pdf_page_tx_clone = pdf_page_tx.clone();
-            let new_pdf_clone = new_pdf.clone();
             let watched_pdf_path_clone = watched_pdf_path.clone();
             previous_diff_task = Some(tokio::spawn(async move {
-                let old_pdf = old_pdf.unwrap();
-                while let Some((i, (old_page_id, new_page_id))) = tokio_stream::iter(
-                    std::iter::zip(old_pdf.page_iter(), new_pdf_clone.page_iter()).enumerate(),
-                )
-                .next()
-                .await
-                {
-                    let old_content = old_pdf.get_page_content(old_page_id).unwrap();
-                    let new_content = new_pdf_clone.get_page_content(new_page_id).unwrap();
-                    if old_content != new_content {
-                        pdf_content_tx_clone
-                            .send(get_latest_pdf_binary(&watched_pdf_path_clone).await)
-                            // send fails if no receivers exist (e.g. no open websockets). Ignore such failures.
-                            .unwrap_or(());
-                        pdf_page_tx_clone
-                            .send(
-                                u64::try_from(i + 1)
-                                    .expect("Page number cannot be converted from usize to u64"),
-                            )
-                            // send fails if no receivers exist (e.g. no open websockets). Ignore such failures.
-                            .unwrap_or(());
-                        break;
+                let old_pdf = old_pdf_clone.read().await;
+                let mut zip = tokio_stream::iter(
+                    std::iter::zip((*old_pdf).page_iter(), new_pdf.page_iter()).enumerate(),
+                );
+                while let Some((i, (old_page_id, new_page_id))) = zip.next().await {
+                    let old_content = (*old_pdf).get_page_content(old_page_id).unwrap();
+                    let new_content = new_pdf.get_page_content(new_page_id).unwrap();
+                    if old_content == new_content {
+                        continue;
                     }
+
+                    pdf_content_tx_clone
+                        .send(get_latest_pdf_binary(&watched_pdf_path_clone).await)
+                        // send fails if no receivers exist (e.g. no open websockets). Ignore such failures.
+                        .unwrap_or(());
+                    pdf_page_tx_clone
+                        .send(
+                            u64::try_from(i + 1)
+                                .expect("Page number cannot be converted from usize to u64"),
+                        )
+                        // send fails if no receivers exist (e.g. no open websockets). Ignore such failures.
+                        .unwrap_or(());
+                    break;
                 }
+                drop(zip);
+                drop(old_pdf);
+                *(old_pdf_clone.write().await) = new_pdf;
             }));
-            old_pdf = Some(new_pdf); // TODO shift in
         }
     });
 
@@ -163,12 +164,12 @@ async fn websocket_upgrade_handler(
     ws: WebSocketUpgrade,
     State(app_state): State<AppState>,
 ) -> impl IntoResponse {
-    tracing::debug!("websocket_upgrade_handler fired");
+    tracing::trace!("websocket_upgrade_handler fired");
     ws.on_upgrade(|socket| websocket_handler(socket, app_state))
 }
 
 async fn websocket_handler(ws: WebSocket, app_state: AppState) {
-    tracing::debug!("websocket_handler fired");
+    tracing::trace!("websocket_handler fired");
 
     let client_connection_id = Uuid::new_v4().to_string();
     tracing::info!("[{}] New client connected", client_connection_id);
