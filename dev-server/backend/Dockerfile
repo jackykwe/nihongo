@@ -6,4 +6,4 @@ RUN cargo install --path .
 
 FROM debian:bookworm-slim
 COPY --from=builder /usr/local/cargo/bin/app /usr/local/bin/app
-CMD ["app"]
+CMD ["app", "--diff-strategy", "sync", "../../typst/nihongo-gakushuu-kyouzai.pdf"]

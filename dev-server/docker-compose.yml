@@ -16,3 +16,4 @@ services:
         target: /nihongo/typst
         read_only: true
     working_dir: /nihongo/dev-server/backend
+    command: app --diff-strategy sync /nihongo/typst/nihongo-gakushuu-kyouzai.pdf
