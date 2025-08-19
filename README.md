@@ -1,8 +1,10 @@
+日本語の文法をまだ勉強中から、不自然なところは勘弁してお願いします。
+
 # 日本語学習教材
 
 [ここにコンパイルしたの PDF を調べます。View the compiled PDF here.](https://jackykwe.github.io/nihongo/nihongo-gakushuu-kyouzai.pdf)
 
-_This repository was previously written using LaTeX, but grew to the point where PDF compilation of all content cumulatively takes a ridiculous $\gg$ 30min. Using Typst, the look and feel of the compiled PDF looks just as clean, with a 5s compilation time at time of writing this._
+このレポジトリは過去に「LaTeX」で書いたけど、レポジトリが大きくなった、すべてをコンパイルする時間がありえない３０分以上のほどになった。今「Typst」で書く、コンパイルした PDF のルックアンドフィールが相変わらず清楚で、コンパイルする時間が短い５秒です。
 
 # 作者のノート
 
@@ -10,4 +12,4 @@ _This repository was previously written using LaTeX, but grew to the point where
 
 # デブサーバー
 
-`dev-server` フォルダに `docker compose up -d` とデブサーバーを発動する。もし `dev-server` フォルダ中に修正があったら、`docker compose down && docker compose up -d --build` と修正を有効になる。
+`dev-server` フォルダに `docker compose up -d` とデブサーバーを発動する。もし `dev-server` フォルダ中に修正があったら、`docker compose down && docker compose up -d --build` と修正を有効になされる。
