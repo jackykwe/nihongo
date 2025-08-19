@@ -205,6 +205,8 @@
   [ぶらぶら], [(walking) leisurely/aimlessly], [#onomatopoeic, also a verb],
   [#ruby[遠慮][えん|りょ]なく], [without reservation/freely], [],
   [#ruby[静][しず]かに], [calmly/quietly/gently/peacefully], [also an expression],
+  [ヒソヒソ（と）], [in a whisper/in a low voice], [#toukyouben],
+  [こちょこちょ], [in a whisper], [#kansaiben; #onomatopoeic; also in @tbl:appendix-vocab-adverbs-five-senses],
   // [], [], [],
   hline,
   [ちゃんと], [diligently/seriously/earnestly; properly/perfectly/exactly/regularly; quickly], [#onomatopoeic],
@@ -375,6 +377,9 @@
   [ぽかぽか], [pleasantly warm], [#onomatopoeic; also a verb],
   [むしむし], [hot and humid/sultry], [#onomatopoeic; also a verb],
   [ひんやり], [(pleasantly) cool/chilly], [#onomatopoeic; also a verb],
+  // [], [], [],
+  hline,
+  [こちょこちょ], [tickling; kitchy-koo/goochie-goo (interjection said while tickling)], [#onomatopoeic; also in @tbl:appendix-vocab-adverbs-attitude],
   // [], [], [],
 )
 

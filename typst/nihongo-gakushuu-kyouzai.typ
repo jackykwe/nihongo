@@ -1,7 +1,7 @@
 #import "template.typ": * // import everything from template file
 #show: template // show everything rule (i.e. the entire document)
 
-#outline()
+#outline() <toc>
 
 #pagebreak()
 

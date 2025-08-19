@@ -99,9 +99,12 @@ This is advanced territory and would probably only make sense later on in your l
   [#ruby[後][あと]で#ruby[連絡][れん|らく]します。#lb()I'll contact you later.], [#ruby[後][のち]ほど#ruby[改][あらた]めてご#ruby[連絡][れん|らく]いたします。#lb()I will contact you again later.],
   thickhline,
   [知ってる？#lb()Do you know?], [ご#ruby[存知][ぞん|じ]でしょうか？#link("https://www.instagram.com/reel/DHBKorfybyl/")[[IG]]#lb()Do you know?],
-  [私のミスです。#lb()It's my fault.], [こちらの#ruby[不手際][ふ|て|ぎわ]です。It's my clumsiness/ineptitude.],
+  [私のミスです。#lb()It's my fault.], [こちらの#ruby[不手際][ふ|て|ぎわ]です。#lb()It's my clumsiness/ineptitude.],
   [たしかにそうだね。#lb()It is indeed so.], [おっしゃる#ruby[通][とお]りです。#lb()Just as you said.],
   [#ruby[今][いま]#ruby[忙][いそが]しい。#lb()I'm busy now.], [ただ#ruby[今][いま]#ruby[立][た]て#ruby[込][こ]んでおります。#lb()At the moment, I have my hands full.],
+  // [], [],
+  thickhline,
+  [なに？ん？え？なんて？#lb()What?#lb()なんて#ruby[言][い]ったの？#lb()What did you say?#lb()もう#ruby[一回][いっ|かい]#ruby[言][い]って。#lb()Say it again.#lb()ごめん、#ruby[聞][き]こえなかった。#lb()Sorry, I didn't hear you.], [なんとおっしゃいましたか？#lb()I beg your pardon?#lb()もう#ruby[一度][いち|ど]#ruby[言][い]っていただけますか？#lb()Could you say it again, please?#lb()#ruby[恐][おそ]れ#ruby[入][い]りますが、もう#ruby[一度][いち|ど]うお#ruby[伺][うかが]いしてもよろしいでしょうか？#link("https://www.instagram.com/reel/DHc10l6SDHU/")[[IG]]#lb()Excuse me, but may I ask you again?],
   // [], [],
   hline,
 )

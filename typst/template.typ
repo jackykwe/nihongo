@@ -81,18 +81,19 @@
       header: [
         #set par(leading: 0.65em, spacing: 0.65em)
         #grid(
-          columns: 3, // equivalent to (1fr, 1fr, 1fr) which are fractional units
+          columns: 3,
+          // equivalent to (1fr, 1fr, 1fr) which are fractional units
           align(left)[#box(width: 100%)[
-              *ジャッキー・カン*\
-              kung.jwe\@gmail.com
-            ]],
+            *ジャッキー・カン*\
+            kung.jwe\@gmail.com
+          ]],
           align(center)[#box(width: 100%)[
-              #text(fill: gray)[#_get_now]
-            ]],
+            #text(fill: gray)[#_get_now]
+          ]],
           align(right)[#box(width: 100%)[
-              *#ruby[日本語学習教材][に|ほん|ご|がく|しゅう|きょう|ざい]*\
-              @appendix:conjugation-rules-summary
-            ]],
+            *#ruby[日本語学習教材][に|ほん|ご|がく|しゅう|きょう|ざい]*\
+            #link(<toc>)[Table of Contents], @appendix:conjugation-rules-summary
+          ]],
         )
         #line(length: 100%)
       ],
@@ -165,6 +166,8 @@
 #let conjunction = smallcaps[conjunction]
 #let onomatopoeic = smallcaps[onomatopoeic]
 #let yojijukugo = smallcaps[四字熟語]
+#let toukyouben = smallcaps[東京弁]
+#let kansaiben = smallcaps[関西弁]
 #let proverb = smallcaps[proverb]
 #let exception(str) = text(fill: red)[#highlight[*#str*]]
 #let rc(r, c, content) = table.cell(rowspan: r, colspan: c)[#content]
@@ -488,7 +491,8 @@
       caption: caption,
       table(
         columns: (4fr, 1fr, 12fr, 5fr, 4fr, 1fr, 12fr, 3fr),
-        inset: (x, y) => (x: 0.5em, y: 0.6em), // em will scale with font size, so no need scale factor here.
+        inset: (x, y) => (x: 0.5em, y: 0.6em),
+        // em will scale with font size, so no need scale factor here.
         align: (left, center, left, left, left, center, left, left),
         table.hline(stroke: rule_width + black),
         table.header(
@@ -500,8 +504,8 @@
           [Notes],
           [Action],
           [Cat.],
-          [Meaning],
-          [Notes],
+
+          [Meaning], [Notes],
         ),
         table.hline(start: 0, end: 4, y: 1, stroke: rule_width + black),
         table.hline(start: 4, end: 8, y: 1, stroke: rule_width + black),

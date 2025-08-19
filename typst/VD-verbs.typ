@@ -382,7 +382,7 @@
   hline,
   [-], [], [], [], [ムカつく], [う], [to feel irritated/offended/angry; to feel sick/nauseous], [],
   [-], [], [], [], [ムカムカする], [E], [to feel sick/queasy/nauseated/disgusted; to feel angry/offended], [#onomatopoeic; also an adverb],
-  [-], [], [], [], [#ruby[腹][はら]が立つ], [う], [to take offense/get angry/be furious], [],
+  [-], [], [], [], [#ruby[腹][はら]が#ruby[立][た]つ], [う], [to take offense/get angry/be furious], [],
   [-], [], [], [], [いら#ruby[立][だ]つ], [う], [to be irritated/annoyed; to lose patience], [(#ruby[苛立][いら|だ]つ)],
   [-], [], [], [], [イライラする], [E], [to be irritated/annoyed; to fret/worry/be on the edge; to be impatient/lose patience], [(#ruby[苛々][いら|いら]する); #onomatopoeic],
   [-], [], [], [], [#ruby[気][き]に#ruby[障][さわ]る], [う], [to be offended/hurt (feelings)/rubbed the wrong way/get on one's nerves], [],
@@ -990,8 +990,8 @@
 
 == Education and correctness
 #highlight[#link(
-    "https://japanese.stackexchange.com/questions/56962/standard-mathematical-operations-expressed-in-japanese",
-  )[MATH]]
+  "https://japanese.stackexchange.com/questions/56962/standard-mathematical-operations-expressed-in-japanese",
+)[MATH]]
 
 // @typstyle off
 #verb_table(
