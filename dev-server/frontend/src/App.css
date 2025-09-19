@@ -1,6 +1,0 @@
-.mark-borders {
-    border: 3px dashed black;
-  > * {
-    border: 1px solid red;
-  }
-}
