@@ -113,6 +113,7 @@
   "tbl:appendix-vocab-verbs-directions", // label
   [-], [], [], [], [#ruby[行][い]く], [う], [to go/move through/proceed/reach (information/phase)], [],
   [-], [], [], [], [\<v te\>て[い]く], [う], [{to \<v te\> and go (spatial#lb()to \<v te\> gradually/progressively into the future (temporal)}], [(#ruby[行][い]く); #aux, [formal]],
+  [], [], [], [], [ハシゴする], [E], [to go to several places in succession (e.g. barhopping)], [(#ruby[梯子][はし|ご]する)],
   [#ruby[持][も]っていく], [う], [to take/bring/carry something along], [], [-], [], [], [],
   [#ruby[進][すす]める], [る], [to advance/move forward], [also in @tbl:appendix-vocab-verbs-courtesy], [#ruby[進][すす]む], [う], [to advance/go forward], [also in @tbl:appendix-vocab-verbs-courtesy],
   [-], [], [], [], [#ruby[出][で]かける], [る], [to go out (outing/excursion)], [(#ruby[出][で]#ruby[掛][か]ける); also in @tbl:appendix-vocab-verbs-production],
@@ -227,7 +228,7 @@
   [#ruby[抜][ぬ]け#ruby[出][だ]す], [う], [to slip out/sneak away/break free], [], [#ruby[抜][ぬ]け#ruby[出][で]る], [る], [to slip out/steal out], [],
   [#ruby[抜][ぬ]き#ruby[出][だ]す], [う], [to pick/single/select out], [], [？], [], [], [],
   [\<v stem>#ruby[抜][ぬ]く], [う], [to do thoroughly/completely/to the end], [#suffix], [], [], [], [],
-  [#ruby[張][は]る], [う], [to pull tight (rope); to stretch/spread/strain/tighten (tent/net)], [also in @tbl:appendix-vocab-verbs-directions], [-], [], [], [],
+  [#ruby[張][は]る], [う], [to pull tight (rope); to stretch/spread/strain/tighten (tent/net); to fill/span (space/math)], [also in @tbl:appendix-vocab-verbs-directions], [-], [], [], [],
   // [], [], [], [], [], [], [], [],
   thickhline,
   [#ruby[減][へ]らす], [う], [to decrease], [], [#ruby[減][へ]る], [#exception[う]], [to decrease], [],

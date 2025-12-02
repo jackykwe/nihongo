@@ -4,7 +4,7 @@
 
 [ここにコンパイルしたの PDF を調べます。View the compiled PDF here.](https://jackykwe.github.io/nihongo/nihongo-gakushuu-kyouzai.pdf)
 
-このレポジトリは過去に「LaTeX」で書いたけど、レポジトリが大きくなった、すべてをコンパイルする時間がありえない３０分以上のほどになった。今「Typst」で書く、コンパイルした PDF のルックアンドフィールが相変わらず清楚で、コンパイルする時間が短い５秒です。
+このレポジトリは過去に「LaTeX」で書いたけど、レポジトリが大きくなりました、すべてをコンパイルする時間がありえない３０分のほどになりました。今「Typst」で書く、コンパイルした PDF のルックアンドフィールが相変わらず清楚で、コンパイルする時間が短い５秒です。
 
 # 作者のノート
 
@@ -12,4 +12,4 @@
 
 # デブサーバー
 
-`dev-server` フォルダに `docker compose up -d` とデブサーバーを発動する。もし `dev-server` フォルダ中に修正があったら、`docker compose down && docker compose up -d --build` と修正を有効になされる。
+`dev-server` フォルダに `docker compose up -d` とデブサーバーを発動します。もし `dev-server` フォルダ中に修正があったら、`docker compose down && docker compose up -d --build` と修正を有効になされます。
